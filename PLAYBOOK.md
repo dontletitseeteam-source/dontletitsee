@@ -127,3 +127,31 @@ scenes*.js). Use `python3` wherever older notes say `python`.
     at the top of PROGRESS.md and the ledger and report clearly.
 - If you cannot finish, write the reason at the top of PROGRESS.md, commit, push, and report.
 - End with a short report: part made (or not), duration, queue date, branch + vote counts, spend.
+
+## 6. Performance loop (learn from every reel, then raise the standard)
+The owner's goal: make the 2 YouTube channels (@dontletitsee, @lexter2025) and the Instagram @dontletitsee
+grow. Standard to beat: every part should be better than the last one at the same job (hook, pacing,
+payoff, choice card). Once per IST day, in the FIRST creator run of that day (skip if `series/ANALYTICS.md`
+already has a section for today), do a short review (about 10 tool calls, keep it cheap):
+1. **Collect** numbers for every post that has been live for at least 6 hours (Composio, always name the
+   account; never use proxy_execute for YouTube):
+   - Instagram `instagram_deash-cooker`: use COMPOSIO_SEARCH_TOOLS to find the media-insights tool (plays /
+     reach / likes / comments / saves / shares / average watch time). Fall back to INSTAGRAM_GET_IG_MEDIA
+     (like and comment counts) if insights are not available.
+   - YouTube, both channels (`youtube_regin-mont`, `youtube_rachel-brod`): YOUTUBE_GET_VIDEO_DETAILS_BATCH with
+     parts statistics (views, likes, comments) for the video ids in queue.json.
+   - A/B comment votes (step 8 of section 4) are also a signal: lots of A/B replies = the choice card works.
+2. **Log** one table row per post (id, platform, age in hours, views/plays, likes, comments, saves/shares,
+   avg watch time if known) under a new dated section in `series/ANALYTICS.md`. Never invent numbers; write
+   "n/a" when a metric is not available.
+3. **Learn** (3–6 lines in the same section): which hooks, titles, captions and parts got more views, comments
+   or watch time, and what to change. Numbers will be small at first: do not over-react to one post, look for
+   patterns across 3+ posts, and change ONE thing at a time so you can tell what worked.
+4. **Apply** the lessons in the next parts you build. Levers you may change: the first 2 seconds (hook line and
+   first image), caption and YouTube title wording, cover image, pacing, where the choice card lands, how
+   strongly the comment call to action is phrased, rules/rule-card moments, ending cliffhangers. Keep fixed:
+   the house style (section 1), exactly the three hashtags `#horror #scarystories #horrorstory`, 80–100 s
+   length, the 3 PM IST posting time, and the series/story outline unless the votes change the branch.
+5. Put a "Next improvements" list (max 3 items) at the top of `series/ANALYTICS.md` and read it before writing
+   every script. Never take actions that publish or message on the owner's behalf (no replying to comments,
+   no following/DMs): analysis only.
