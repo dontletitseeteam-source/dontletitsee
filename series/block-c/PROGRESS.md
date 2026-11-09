@@ -1,5 +1,9 @@
 # BLOCK C — progress log
 
+**Status 2026-11-10 01:05 IST (creator run):** queue full through 2026-11-12. Part 2 (2026-11-13) waits for the
+A/B vote on Part 1, which posts 2026-11-12 15:00 IST; build it on/after 2026-11-12 23:00 IST. Apply ANALYTICS
+"Next improvements" #1 (hook in the first 2 s) in Part 2.
+
 ## Part 1 "The List" — QUEUED for 2026-11-12 (built 2026-11-09 by the cloud creator)
 - Output: `outputs/block-c-p1.mp4` (89.7 s, 11.4 MB, −14.4 LUFS) + `outputs/block-c-p1.jpg`;
   jsDelivr @ commit `66cf285` (both verified HTTP 200). Queue id `block-c-p1`.
