@@ -1,0 +1,47 @@
+{
+  "channel": {
+    "name": "Don't Let It See",
+    "instagram": {"composio_account": "instagram_deash-cooker", "username": "dontletitsee"},
+    "youtube": {"composio_account": "youtube_regin-mont", "channel_id": "UCz8ROLj5ujxy15MeVs3QA2Q", "handle": "@dontletitsee"},
+    "post_time_ist": "15:00",
+    "hashtags": "#horror #scarystories #horrorstory"
+  },
+  "posts": [
+    {
+      "id": "floor0-p1",
+      "date": "2026-11-09",
+      "local_video": "C:/reels/floor-0/FLOOR_0_part1.mp4",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/a4d49760-a142-4ea6-810c-14598060ad5a.mp4",
+      "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/5a7874cf-8693-46a7-8959-477179eea783.jpg",
+      "ig_caption": "The elevator in my building just stopped at a floor that doesn't exist.\n\nFLOOR 0 \u00b7 Part 1 of 3\nA or B? Tell me in the comments \ud83d\udc47\nPart 2 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+      "yt_title": "The elevator stopped at a floor that doesn't exist | FLOOR 0 \u00b7 Part 1 #shorts",
+      "yt_description": "The elevator in your building just stopped at a floor that doesn't exist. Something inside is texting you.\n\nFLOOR 0 \u00b7 Part 1 of 3. A or B? Tell me in the comments. Part 2 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+      "instagram": {"status": "published", "container_id": "18123140524807960", "media_id": "18124268906319453", "permalink": "https://www.instagram.com/reel/Dfg_wMkDxMV/", "updated": "2026-11-09T15:00:11+05:30"},
+      "youtube": {"status": "blocked_quota", "note": "Composio's shared YouTube upload quota was exhausted on 2026-11-09; upload as soon as quota resets (13:30 IST)."}
+    },
+    {
+      "id": "floor0-p2",
+      "date": "2026-11-10",
+      "local_video": "C:/reels/floor-0/FLOOR_0_part2.mp4",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/c8527513-5f63-4b2a-8b4f-46284e10a045.mp4",
+      "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/6a6d2250-2ca7-4882-a686-fc543cf01350.jpg",
+      "ig_caption": "I went home. Someone was already there.\n\nFLOOR 0 \u00b7 Part 2 of 3\nMissed Part 1? It's on the profile.\nPart 3 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+      "yt_title": "I went home. Someone was already there. | FLOOR 0 \u00b7 Part 2 #shorts",
+      "yt_description": "You took the stairs home. Your door was open. Someone was on your couch.\n\nFLOOR 0 \u00b7 Part 2 of 3. Part 3 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+      "instagram": {"status": "queued"},
+      "youtube": {"status": "queued"}
+    },
+    {
+      "id": "floor0-p3",
+      "date": "2026-11-11",
+      "local_video": "C:/reels/floor-0/FLOOR_0_part3.mp4",
+      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/af628cf8-f879-4b1a-9f3b-a24605c9d315.mp4",
+      "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/8e646521-276a-4327-b68d-e4498b5ddbf0.jpg",
+      "ig_caption": "I got in. There was only one button.\n\nFLOOR 0 \u00b7 Part 3 of 3 (finale)\nNow go back and read Part 1's texts again.\nA new series starts tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+      "yt_title": "There was only one button: 0 | FLOOR 0 \u00b7 Part 3 (finale) #shorts",
+      "yt_description": "You got in. Floor 0 is your lobby, backwards, and it is full.\n\nFLOOR 0 \u00b7 Part 3 of 3 (finale). Watch Part 1 again after this. A new series starts tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+      "instagram": {"status": "queued"},
+      "youtube": {"status": "queued"}
+    }
+  ]
+}

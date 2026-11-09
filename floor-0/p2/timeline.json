@@ -1,0 +1,1094 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 53.524,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Last night... floor zero took your face.",
+   "src_start": 0.101,
+   "src_end": 3.19,
+   "start": 0.3,
+   "end": 3.389,
+   "words": [
+    {
+     "text": "Last",
+     "start": 0.35,
+     "end": 0.576
+    },
+    {
+     "text": "night...",
+     "start": 0.652,
+     "end": 1.293
+    },
+    {
+     "text": "floor",
+     "start": 1.558,
+     "end": 1.859
+    },
+    {
+     "text": "zero",
+     "start": 1.935,
+     "end": 2.237
+    },
+    {
+     "text": "took",
+     "start": 2.312,
+     "end": 2.463
+    },
+    {
+     "text": "your",
+     "start": 2.539,
+     "end": 2.765
+    },
+    {
+     "text": "face.",
+     "start": 2.992,
+     "end": 3.389
+    }
+   ],
+   "captions": [
+    {
+     "text": "LAST NIGHT...",
+     "start": 0.35,
+     "word_idx": 0,
+     "end": 1.558
+    },
+    {
+     "text": "FLOOR [0]",
+     "start": 1.558,
+     "word_idx": 2,
+     "end": 2.312
+    },
+    {
+     "text": "{TOOK YOUR FACE.}",
+     "start": 2.312,
+     "word_idx": 4,
+     "end": 3.509
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "So you don't get in. You take the stairs.",
+   "src_start": 3.573,
+   "src_end": 6.31,
+   "start": 3.839,
+   "end": 6.576,
+   "words": [
+    {
+     "text": "So",
+     "start": 3.889,
+     "end": 4.04
+    },
+    {
+     "text": "you",
+     "start": 4.153,
+     "end": 4.266
+    },
+    {
+     "text": "don't",
+     "start": 4.342,
+     "end": 4.568
+    },
+    {
+     "text": "get",
+     "start": 4.644,
+     "end": 4.719
+    },
+    {
+     "text": "in.",
+     "start": 4.795,
+     "end": 5.398
+    },
+    {
+     "text": "You",
+     "start": 5.474,
+     "end": 5.549
+    },
+    {
+     "text": "take",
+     "start": 5.663,
+     "end": 5.776
+    },
+    {
+     "text": "the",
+     "start": 5.814,
+     "end": 5.851
+    },
+    {
+     "text": "stairs.",
+     "start": 6.153,
+     "end": 6.576
+    }
+   ],
+   "captions": [
+    {
+     "text": "SO YOU DON'T",
+     "start": 3.889,
+     "word_idx": 0,
+     "end": 4.644
+    },
+    {
+     "text": "GET IN.",
+     "start": 4.644,
+     "word_idx": 3,
+     "end": 5.474
+    },
+    {
+     "text": "YOU TAKE THE [STAIRS.]",
+     "start": 5.474,
+     "word_idx": 5,
+     "end": 6.696
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Eight floors. In the dark.",
+   "src_start": 6.629,
+   "src_end": 8.58,
+   "start": 6.926,
+   "end": 8.877,
+   "words": [
+    {
+     "text": "Eight",
+     "start": 6.976,
+     "end": 7.09
+    },
+    {
+     "text": "floors.",
+     "start": 7.165,
+     "end": 8.071
+    },
+    {
+     "text": "In",
+     "start": 8.108,
+     "end": 8.146
+    },
+    {
+     "text": "the",
+     "start": 8.222,
+     "end": 8.297
+    },
+    {
+     "text": "dark.",
+     "start": 8.373,
+     "end": 8.877
+    }
+   ],
+   "captions": [
+    {
+     "text": "[8] FLOORS.",
+     "start": 6.976,
+     "word_idx": 0,
+     "end": 8.108
+    },
+    {
+     "text": "IN THE DARK.",
+     "start": 8.108,
+     "word_idx": 2,
+     "end": 8.997
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "Your hallway. Your door.",
+   "src_start": 8.931,
+   "src_end": 10.89,
+   "start": 9.277,
+   "end": 11.236,
+   "words": [
+    {
+     "text": "Your",
+     "start": 9.327,
+     "end": 9.478
+    },
+    {
+     "text": "hallway.",
+     "start": 9.554,
+     "end": 10.459
+    },
+    {
+     "text": "Your",
+     "start": 10.535,
+     "end": 10.686
+    },
+    {
+     "text": "door.",
+     "start": 10.761,
+     "end": 11.236
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR HALLWAY.",
+     "start": 9.327,
+     "word_idx": 0,
+     "end": 10.535
+    },
+    {
+     "text": "YOUR DOOR.",
+     "start": 10.535,
+     "word_idx": 2,
+     "end": 11.356
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "It's open. Just a crack.",
+   "src_start": 11.195,
+   "src_end": 13.0,
+   "start": 11.586,
+   "end": 13.391,
+   "words": [
+    {
+     "text": "It's",
+     "start": 11.636,
+     "end": 11.787
+    },
+    {
+     "text": "open.",
+     "start": 11.862,
+     "end": 12.542
+    },
+    {
+     "text": "Just",
+     "start": 12.617,
+     "end": 12.768
+    },
+    {
+     "text": "a",
+     "start": 12.844,
+     "end": 12.881
+    },
+    {
+     "text": "crack.",
+     "start": 12.919,
+     "end": 13.391
+    }
+   ],
+   "captions": [
+    {
+     "text": "{IT'S OPEN.}",
+     "start": 11.636,
+     "word_idx": 0,
+     "end": 12.617
+    },
+    {
+     "text": "JUST A CRACK.",
+     "start": 12.617,
+     "word_idx": 2,
+     "end": 13.511
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "The TV is on.",
+   "src_start": 13.308,
+   "src_end": 14.5,
+   "start": 13.691,
+   "end": 14.882,
+   "words": [
+    {
+     "text": "The",
+     "start": 13.741,
+     "end": 13.816
+    },
+    {
+     "text": "TV",
+     "start": 13.892,
+     "end": 14.194
+    },
+    {
+     "text": "is",
+     "start": 14.269,
+     "end": 14.345
+    },
+    {
+     "text": "on.",
+     "start": 14.42,
+     "end": 14.882
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE TV IS ON.",
+     "start": 13.741,
+     "word_idx": 0,
+     "end": 15.002
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Someone is sitting on your couch.",
+   "src_start": 14.667,
+   "src_end": 16.33,
+   "start": 15.232,
+   "end": 16.895,
+   "words": [
+    {
+     "text": "Someone",
+     "start": 15.282,
+     "end": 15.584
+    },
+    {
+     "text": "is",
+     "start": 15.66,
+     "end": 15.735
+    },
+    {
+     "text": "sitting",
+     "start": 15.773,
+     "end": 15.962
+    },
+    {
+     "text": "on",
+     "start": 16.037,
+     "end": 16.112
+    },
+    {
+     "text": "your",
+     "start": 16.188,
+     "end": 16.263
+    },
+    {
+     "text": "couch.",
+     "start": 16.339,
+     "end": 16.895
+    }
+   ],
+   "captions": [
+    {
+     "text": "SOMEONE IS SITTING",
+     "start": 15.282,
+     "word_idx": 0,
+     "end": 16.037
+    },
+    {
+     "text": "ON YOUR COUCH.",
+     "start": 16.037,
+     "word_idx": 3,
+     "end": 17.015
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "In your spot.",
+   "src_start": 16.478,
+   "src_end": 17.52,
+   "start": 17.095,
+   "end": 18.137,
+   "words": [
+    {
+     "text": "In",
+     "start": 17.145,
+     "end": 17.296
+    },
+    {
+     "text": "your",
+     "start": 17.372,
+     "end": 17.523
+    },
+    {
+     "text": "spot.",
+     "start": 17.598,
+     "end": 18.137
+    }
+   ],
+   "captions": [
+    {
+     "text": "IN [YOUR SPOT.]",
+     "start": 17.145,
+     "word_idx": 0,
+     "end": 18.257
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Then your phone buzzes.",
+   "src_start": 17.837,
+   "src_end": 19.05,
+   "start": 18.537,
+   "end": 19.75,
+   "words": [
+    {
+     "text": "Then",
+     "start": 18.587,
+     "end": 18.662
+    },
+    {
+     "text": "your",
+     "start": 18.738,
+     "end": 18.813
+    },
+    {
+     "text": "phone",
+     "start": 18.889,
+     "end": 19.115
+    },
+    {
+     "text": "buzzes.",
+     "start": 19.228,
+     "end": 19.75
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN YOUR PHONE",
+     "start": 18.587,
+     "word_idx": 0,
+     "end": 19.228
+    },
+    {
+     "text": "[BUZZES.]",
+     "start": 19.228,
+     "word_idx": 3,
+     "end": 19.87
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "It's from your own number.",
+   "src_start": 19.308,
+   "src_end": 20.68,
+   "start": 19.95,
+   "end": 21.322,
+   "words": [
+    {
+     "text": "It's",
+     "start": 20.0,
+     "end": 20.113
+    },
+    {
+     "text": "from",
+     "start": 20.189,
+     "end": 20.264
+    },
+    {
+     "text": "your",
+     "start": 20.34,
+     "end": 20.491
+    },
+    {
+     "text": "own",
+     "start": 20.604,
+     "end": 20.717
+    },
+    {
+     "text": "number.",
+     "start": 20.793,
+     "end": 21.322
+    }
+   ],
+   "captions": [
+    {
+     "text": "IT'S FROM",
+     "start": 20.0,
+     "word_idx": 0,
+     "end": 20.34
+    },
+    {
+     "text": "[YOUR OWN NUMBER.]",
+     "start": 20.34,
+     "word_idx": 2,
+     "end": 21.442
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Go back downstairs.",
+   "src_start": 20.856,
+   "src_end": 22.22,
+   "start": 21.622,
+   "end": 22.986,
+   "words": [
+    {
+     "text": "Go",
+     "start": 21.672,
+     "end": 21.823
+    },
+    {
+     "text": "back",
+     "start": 21.898,
+     "end": 22.049
+    },
+    {
+     "text": "downstairs.",
+     "start": 22.125,
+     "end": 22.986
+    }
+   ],
+   "captions": [
+    {
+     "text": "{GO BACK DOWNSTAIRS.}",
+     "start": 21.672,
+     "word_idx": 0,
+     "end": 23.106
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "You push the door open.",
+   "src_start": 22.516,
+   "src_end": 23.94,
+   "start": 23.386,
+   "end": 24.81,
+   "words": [
+    {
+     "text": "You",
+     "start": 23.436,
+     "end": 23.587
+    },
+    {
+     "text": "push",
+     "start": 23.7,
+     "end": 23.813
+    },
+    {
+     "text": "the",
+     "start": 23.889,
+     "end": 23.964
+    },
+    {
+     "text": "door",
+     "start": 24.078,
+     "end": 24.191
+    },
+    {
+     "text": "open.",
+     "start": 24.379,
+     "end": 24.81
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU PUSH THE",
+     "start": 23.436,
+     "word_idx": 0,
+     "end": 24.078
+    },
+    {
+     "text": "DOOR OPEN.",
+     "start": 24.078,
+     "word_idx": 3,
+     "end": 24.93
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "It turns around.",
+   "src_start": 24.101,
+   "src_end": 25.11,
+   "start": 25.11,
+   "end": 26.119,
+   "words": [
+    {
+     "text": "It",
+     "start": 25.16,
+     "end": 25.235
+    },
+    {
+     "text": "turns",
+     "start": 25.349,
+     "end": 25.5
+    },
+    {
+     "text": "around.",
+     "start": 25.537,
+     "end": 26.119
+    }
+   ],
+   "captions": [
+    {
+     "text": "IT TURNS AROUND.",
+     "start": 25.16,
+     "word_idx": 0,
+     "end": 26.239
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "It's you.",
+   "src_start": 25.384,
+   "src_end": 26.19,
+   "start": 26.619,
+   "end": 27.425,
+   "words": [
+    {
+     "text": "It's",
+     "start": 26.669,
+     "end": 26.895
+    },
+    {
+     "text": "you.",
+     "start": 26.971,
+     "end": 27.425
+    }
+   ],
+   "captions": [
+    {
+     "text": "[IT'S YOU.]",
+     "start": 26.669,
+     "word_idx": 0,
+     "end": 27.545
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "But you've never smiled like that.",
+   "src_start": 26.441,
+   "src_end": 28.37,
+   "start": 27.825,
+   "end": 29.755,
+   "words": [
+    {
+     "text": "But",
+     "start": 27.875,
+     "end": 28.026
+    },
+    {
+     "text": "you've",
+     "start": 28.064,
+     "end": 28.328
+    },
+    {
+     "text": "never",
+     "start": 28.479,
+     "end": 28.63
+    },
+    {
+     "text": "smiled",
+     "start": 28.705,
+     "end": 29.083
+    },
+    {
+     "text": "like",
+     "start": 29.158,
+     "end": 29.309
+    },
+    {
+     "text": "that.",
+     "start": 29.385,
+     "end": 29.755
+    }
+   ],
+   "captions": [
+    {
+     "text": "BUT YOU'VE NEVER",
+     "start": 27.875,
+     "word_idx": 0,
+     "end": 28.705
+    },
+    {
+     "text": "{SMILED LIKE THAT.}",
+     "start": 28.705,
+     "word_idx": 3,
+     "end": 29.875
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "The door slams shut.",
+   "src_start": 28.705,
+   "src_end": 29.97,
+   "start": 30.605,
+   "end": 31.87,
+   "words": [
+    {
+     "text": "The",
+     "start": 30.655,
+     "end": 30.692
+    },
+    {
+     "text": "door",
+     "start": 30.73,
+     "end": 30.956
+    },
+    {
+     "text": "slams",
+     "start": 31.032,
+     "end": 31.334
+    },
+    {
+     "text": "shut.",
+     "start": 31.409,
+     "end": 31.87
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE DOOR",
+     "start": 30.655,
+     "word_idx": 0,
+     "end": 31.032
+    },
+    {
+     "text": "{SLAMS SHUT.}",
+     "start": 31.032,
+     "word_idx": 2,
+     "end": 31.99
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "Smart lock... unrecognized face.",
+   "src_start": 30.214,
+   "src_end": 32.52,
+   "start": 32.22,
+   "end": 34.526,
+   "words": [
+    {
+     "text": "Smart",
+     "start": 32.27,
+     "end": 32.572
+    },
+    {
+     "text": "lock...",
+     "start": 32.647,
+     "end": 33.251
+    },
+    {
+     "text": "unrecognized",
+     "start": 33.326,
+     "end": 33.93
+    },
+    {
+     "text": "face.",
+     "start": 34.006,
+     "end": 34.526
+    }
+   ],
+   "captions": [
+    {
+     "text": "SMART LOCK...",
+     "start": 32.27,
+     "word_idx": 0,
+     "end": 33.326
+    },
+    {
+     "text": "{UNRECOGNIZED FACE.}",
+     "start": 33.326,
+     "word_idx": 2,
+     "end": 34.646
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "You don't live here anymore.",
+   "src_start": 32.78,
+   "src_end": 34.12,
+   "start": 34.826,
+   "end": 36.165,
+   "words": [
+    {
+     "text": "You",
+     "start": 34.876,
+     "end": 34.951
+    },
+    {
+     "text": "don't",
+     "start": 34.989,
+     "end": 35.178
+    },
+    {
+     "text": "live",
+     "start": 35.253,
+     "end": 35.328
+    },
+    {
+     "text": "here",
+     "start": 35.404,
+     "end": 35.555
+    },
+    {
+     "text": "anymore.",
+     "start": 35.63,
+     "end": 36.165
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU DON'T LIVE",
+     "start": 34.876,
+     "word_idx": 0,
+     "end": 35.404
+    },
+    {
+     "text": "HERE ANYMORE.",
+     "start": 35.404,
+     "word_idx": 3,
+     "end": 36.285
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "Down the hall... the elevator opens.",
+   "src_start": 34.365,
+   "src_end": 36.65,
+   "start": 36.865,
+   "end": 39.15,
+   "words": [
+    {
+     "text": "Down",
+     "start": 36.915,
+     "end": 37.066
+    },
+    {
+     "text": "the",
+     "start": 37.142,
+     "end": 37.217
+    },
+    {
+     "text": "hall...",
+     "start": 37.406,
+     "end": 37.897
+    },
+    {
+     "text": "the",
+     "start": 37.934,
+     "end": 37.972
+    },
+    {
+     "text": "elevator",
+     "start": 38.048,
+     "end": 38.425
+    },
+    {
+     "text": "opens.",
+     "start": 38.5,
+     "end": 39.15
+    }
+   ],
+   "captions": [
+    {
+     "text": "DOWN THE HALL...",
+     "start": 36.915,
+     "word_idx": 0,
+     "end": 37.934
+    },
+    {
+     "text": "THE ELEVATOR OPENS.",
+     "start": 37.934,
+     "word_idx": 3,
+     "end": 39.27
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Lit. Empty. Waiting.",
+   "src_start": 36.856,
+   "src_end": 39.01,
+   "start": 39.45,
+   "end": 41.605,
+   "words": [
+    {
+     "text": "Lit.",
+     "start": 39.5,
+     "end": 40.18
+    },
+    {
+     "text": "Empty.",
+     "start": 40.406,
+     "end": 41.01
+    },
+    {
+     "text": "Waiting.",
+     "start": 41.236,
+     "end": 41.605
+    }
+   ],
+   "captions": [
+    {
+     "text": "LIT.",
+     "start": 39.5,
+     "word_idx": 0,
+     "end": 40.406
+    },
+    {
+     "text": "EMPTY.",
+     "start": 40.406,
+     "word_idx": 1,
+     "end": 41.236
+    },
+    {
+     "text": "{WAITING.}",
+     "start": 41.236,
+     "word_idx": 2,
+     "end": 41.725
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "The display says zero.",
+   "src_start": 39.158,
+   "src_end": 40.64,
+   "start": 41.955,
+   "end": 43.437,
+   "words": [
+    {
+     "text": "The",
+     "start": 42.005,
+     "end": 42.042
+    },
+    {
+     "text": "display",
+     "start": 42.269,
+     "end": 42.495
+    },
+    {
+     "text": "says",
+     "start": 42.571,
+     "end": 42.797
+    },
+    {
+     "text": "zero.",
+     "start": 42.873,
+     "end": 43.437
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE DISPLAY SAYS",
+     "start": 42.005,
+     "word_idx": 0,
+     "end": 42.873
+    },
+    {
+     "text": "[0].",
+     "start": 42.873,
+     "word_idx": 3,
+     "end": 43.557
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "You're on floor eight.",
+   "src_start": 40.856,
+   "src_end": 42.08,
+   "start": 43.637,
+   "end": 44.862,
+   "words": [
+    {
+     "text": "You're",
+     "start": 43.687,
+     "end": 43.838
+    },
+    {
+     "text": "on",
+     "start": 43.914,
+     "end": 43.989
+    },
+    {
+     "text": "floor",
+     "start": 44.065,
+     "end": 44.291
+    },
+    {
+     "text": "eight.",
+     "start": 44.442,
+     "end": 44.862
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU'RE ON FLOOR [8].",
+     "start": 43.687,
+     "word_idx": 0,
+     "end": 44.982
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "text": "Rule number two. Once it has your face... floor zero is home.",
+   "src_start": 42.365,
+   "src_end": 47.827,
+   "start": 45.462,
+   "end": 50.924,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 45.512,
+     "end": 45.813
+    },
+    {
+     "text": "number",
+     "start": 45.889,
+     "end": 46.191
+    },
+    {
+     "text": "two.",
+     "start": 46.342,
+     "end": 47.172
+    },
+    {
+     "text": "Once",
+     "start": 47.285,
+     "end": 47.398
+    },
+    {
+     "text": "it",
+     "start": 47.436,
+     "end": 47.474
+    },
+    {
+     "text": "has",
+     "start": 47.549,
+     "end": 47.7
+    },
+    {
+     "text": "your",
+     "start": 47.776,
+     "end": 47.927
+    },
+    {
+     "text": "face...",
+     "start": 48.002,
+     "end": 48.832
+    },
+    {
+     "text": "floor",
+     "start": 48.983,
+     "end": 49.134
+    },
+    {
+     "text": "zero",
+     "start": 49.21,
+     "end": 49.587
+    },
+    {
+     "text": "is",
+     "start": 49.813,
+     "end": 49.964
+    },
+    {
+     "text": "home.",
+     "start": 50.04,
+     "end": 50.644
+    }
+   ],
+   "captions": []
+  }
+ ]
+}

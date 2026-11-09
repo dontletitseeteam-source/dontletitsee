@@ -1,0 +1,5 @@
+node_modules/
+**/out/
+*.wav
+*.npy
+creator.lock
