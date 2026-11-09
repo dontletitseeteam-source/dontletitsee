@@ -39,8 +39,8 @@
       },
       "youtube_old": {
         "status": "blocked_quota",
-        "note": "429 Composio shared YouTube upload quota still exhausted (2026-11-10 01:35 IST); retry next run",
-        "updated": "2026-11-09T20:05:00Z"
+        "note": "429 Composio shared YouTube upload quota still exhausted (2026-11-10 04:35 IST); retry next run",
+        "updated": "2026-11-09T23:05:00Z"
       }
     },
     {
