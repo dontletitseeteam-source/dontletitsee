@@ -3,3 +3,4 @@ node_modules/
 *.wav
 *.npy
 creator.lock
+__pycache__/

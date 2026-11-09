@@ -46,7 +46,12 @@ New series workspace (once per series):
 S=<slug>; mkdir -p $S && cp -r floor-0/engine $S/engine && cp -r floor-0/fonts $S/fonts && cp -r floor-0/audio $S/audio
 cd $S/engine && rm -f part1.js part2.js part3.js && npm install --silent
 ```
-Existing series: `cd <slug>/engine && npm install --silent` (node_modules is not committed).
+Existing series: `cd <slug>/engine && npm install --silent` (node_modules is not committed). If `<slug>/audio`
+or `<slug>/fonts` is missing, copy it again from `floor-0/`. Commit `<slug>/audio` and `<slug>/fonts` (later runs
+need them); do not add a `.gitignore` that hides `audio/` (it would also hide `p<n>/audio/vo.mp3`).
+**Before generating any voice, check `series/<slug>/PROGRESS.md` and `<slug>/p<n>/audio/`: if `vo.mp3` +
+`words_raw.json` already exist for the part, reuse them (they were paid for) and only rebuild the script lines.**
+Git identity for every commit: `git config user.name Claude; git config user.email noreply@anthropic.com`.
 Then reset `scripts.py` (keep the `LINES`/`HOLD` dicts), and replace `mix.py`'s part functions with your
 own. Write new set painters in `<slug>/engine/sets.js` (one function per location, same conventions as
 scenes*.js). Use `python3` wherever older notes say `python`.
