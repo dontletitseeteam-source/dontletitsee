@@ -16,7 +16,7 @@ poster. They communicate only through `queue.json` in this repo. **Always `git p
   change as the story moves). The HUD must carry story information.
 - Word-synced bold captions (Montserrat Black, uppercase, 1–4 words per chunk). Script markup:
   `[word]` = lime key word, `{word}` = red threat word.
-- Each part **80–100 s**, 25–32 VO lines, 185–210 spoken words (see the voice budget in section 5). Hook in the first 2 s. Something changes
+- Each part **80–100 s**, 25–32 VO lines, 190–230 spoken words (see the credit pace in section 5). Hook in the first 2 s. Something changes
   every 1–3 s (caption, cut, camera move, sound hit).
 - Every part except a finale ends on a **choice card** ("WHAT DO YOU DO?" A/B, "COMMENT A OR B",
   "PART N+1 TOMORROW"). Parts 2+ open with a 3–5 s "previously" recap that states the winning choice
@@ -104,18 +104,26 @@ scenes*.js). Use `python3` wherever older notes say `python`.
 - Never publish to Instagram/YouTube yourself; only add to the queue. Never touch @eatlabyss (the owner's
   other Instagram) or any other account.
 - Never delete queue entries, outputs or other series' files. No Higgsfield (no credits, no login here).
-- ElevenLabs is the only paid tool, and its credits are LIMITED. On 2026-11-09 the account had 39,717 credits
-  left for the 26 parts still needing a voice (2026-11-13 → 2026-12-08); they do not refill before the run ends.
-  Text-to-speech costs **1 credit per character sent, tags included** (BLOCK C Part 1: 1,644 characters =
-  1,643 credits, of which ~480 were tags). **Voice budget per part: at most 1,350 characters of `text`,
-  tags included** (≈ 190–210 spoken words, which is still ~80–90 s with this narrator). Use few tags (about
-  8 at most: one mood tag per section such as `[low, tense]` or `[whispering]`); make pauses with "…", full
-  stops and short sentences instead of repeating `[short pause]`. Count the characters
-  (`python3 -c "print(len(open('vo_prompt.txt').read()))"`) BEFORE calling `creative_generate_speech`, and save
-  the exact text as `<slug>/p<n>/audio/vo_prompt.txt`. One take per part; regenerate only if the take is broken
-  (wrong words, cut off, garbled), never just for style. Do NOT generate new SFX or music: use the library
-  in `floor-0/audio/`. This budget overrides anything else that allows extra ElevenLabs generations. Log
-  "VO characters: N" in PROGRESS.md for every part. If ElevenLabs fails, reuse library audio; if the VO itself
-  fails (including "not enough credits"), note it at the top of PROGRESS.md and report clearly.
+- ElevenLabs is the only paid tool, and its credits are LIMITED and do not refill before the run ends. The
+  owner's instruction (2026-11-09): **spend them fully on quality; it is fine if they run out after ~23–25
+  days (around 2026-12-02 … 12-04), but use them well and make them last as long as is sensible.** Ledger:
+  `series/ELEVENLABS.md` (balance + every spend). Text-to-speech costs **1 credit per character sent, tags
+  included** (BLOCK C Part 1: 1,644 characters = 1,643 credits).
+  - **Pace: about 1,800 credits per part on average** (voice + transcript), so the balance lasts to ~Dec 3.
+    Before writing the voice text, read the ledger and compute `remaining ÷ parts you still want to make`;
+    if that is above 1,800 you may spend more (richer delivery, a key SFX), if below, tighten.
+  - Spend where it shows: expressive delivery tags (`[whispering]`, `[low, tense]`, `[slow]`, `[short pause]`
+    at real beats), a full 190–230-word script. Do not waste: no throwaway takes; regenerate only when a take
+    is broken (wrong words, cut off, garbled, flat at the key line). A new SFX or sting only when it clearly
+    lifts a key moment and `floor-0/audio/` has nothing close (log its cost).
+  - Count characters (`python3 -c "print(len(open('vo_prompt.txt').read()))"`) BEFORE
+    `creative_generate_speech`, save the exact text as `<slug>/p<n>/audio/vo_prompt.txt`, and after each
+    generation append the credits it cost (the tool result shows them; if not, use the character count) to the
+    ledger with the new balance.
+  - **End on a finale, not mid-story:** when the balance will cover only ~3 more parts, plan so the current
+    series' finale is made with the last credits (shorten or merge planned parts if needed). After that, write
+    "CREDITS USED UP" at the top of the ledger and stop making parts (the posters keep posting what is queued).
+  - If ElevenLabs fails, reuse library audio; if the VO itself fails (including "not enough credits"), note it
+    at the top of PROGRESS.md and the ledger and report clearly.
 - If you cannot finish, write the reason at the top of PROGRESS.md, commit, push, and report.
 - End with a short report: part made (or not), duration, queue date, branch + vote counts, spend.
