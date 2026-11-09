@@ -1,0 +1,50 @@
+"""BLOCK C series scripts: (spoken line, gap before it in the edit, caption chunks [(n_words, display)]).
+Markup: [x] lime keyword, {x} red threat word."""
+
+P1 = [
+    ("The last student in room thirteen left you a list.", 0.30,
+     [(3, "THE LAST STUDENT"), (3, "IN ROOM [13]"), (4, "LEFT YOU A [LIST.]")]),
+    ("Taped inside the wardrobe.", 0.35, [(2, "TAPED INSIDE"), (2, "THE WARDROBE.")]),
+    ("Block C night rules.", 0.40, [(2, "[BLOCK C]"), (2, "NIGHT RULES.")]),
+    ("One. Roll call is at twelve oh seven. Answer only to your own name.", 0.45,
+     [(1, "ONE."), (3, "ROLL CALL IS"), (4, "AT [12:07.]"), (3, "ANSWER ONLY TO"), (3, "YOUR [OWN NAME.]")]),
+    ("Two. The warden never knocks.", 0.45, [(1, "TWO."), (2, "THE WARDEN"), (2, "{NEVER KNOCKS.}")]),
+    ("Three. If your roommate's bed is empty after one, don't look under it.", 0.45,
+     [(1, "THREE."), (3, "IF YOUR ROOMMATE'S"), (3, "BED IS EMPTY"), (2, "AFTER [1 AM,]"), (4, "{DON'T LOOK} UNDER IT.")]),
+    ("Four. The mess opens at three for someone. Not for you.", 0.45,
+     [(1, "FOUR."), (3, "THE MESS OPENS"), (2, "AT [3 AM]"), (2, "FOR SOMEONE."), (3, "{NOT FOR YOU.}")]),
+    ("Five. Block C has forty-two students.", 0.45, [(1, "FIVE."), (3, "BLOCK C HAS"), (2, "[42] STUDENTS.")]),
+    ("If the group chat says forty-three, leave it.", 0.20, [(4, "IF THE GROUP CHAT"), (2, "SAYS {43,}"), (2, "[LEAVE IT.]")]),
+    ("Six is scratched out.", 0.50, [(2, "SIX IS"), (2, "{SCRATCHED OUT.}")]),
+    ("So hard the paper tore.", 0.25, [(3, "SO HARD THE"), (2, "PAPER {TORE.}")]),
+    ("Your roommate laughs. Senior prank. Go to sleep.", 0.55,
+     [(3, "YOUR ROOMMATE LAUGHS."), (2, "SENIOR PRANK."), (3, "GO TO SLEEP.")]),
+    ("Then the Block C group pings.", 0.50, [(4, "THEN THE [BLOCK C]"), (2, "GROUP [PINGS.]")]),
+    ("The warden of Block C died six years ago.", 0.30,
+     [(2, "THE WARDEN"), (3, "OF BLOCK C"), (1, "{DIED}"), (3, "SIX YEARS AGO.")]),
+    ("Roll call never stopped.", 0.40, [(2, "ROLL CALL"), (2, "{NEVER STOPPED.}")]),
+    ("Your phone says twelve oh six.", 0.60, [(3, "YOUR PHONE SAYS"), (3, "[12:06.]")]),
+    ("The corridor lights go out. One by one.", 0.35, [(3, "THE CORRIDOR LIGHTS"), (2, "GO {OUT.}"), (3, "ONE BY ONE.")]),
+    ("Footsteps. Slow. Heavy. Stopping at every door.", 0.50,
+     [(1, "{FOOTSTEPS.}"), (1, "SLOW."), (1, "HEAVY."), (4, "STOPPING AT EVERY DOOR.")]),
+    ("A name. And from inside room nine... present.", 0.40,
+     [(2, "A NAME."), (3, "AND FROM INSIDE"), (2, "ROOM [9]..."), (1, "[PRESENT.]")]),
+    ("Ten. Eleven. Twelve. Every door answers.", 0.40, [(1, "[10.]"), (1, "[11.]"), (1, "[12.]"), (3, "EVERY DOOR ANSWERS.")]),
+    ("Your roommate is already under the blanket. Shaking.", 0.45,
+     [(3, "YOUR ROOMMATE IS"), (4, "ALREADY UNDER THE BLANKET."), (1, "{SHAKING.}")]),
+    ("The footsteps stop. Outside room thirteen.", 0.50, [(3, "THE FOOTSTEPS {STOP.}"), (3, "OUTSIDE ROOM [13.]")]),
+    ("Under the door... two shadows. Feet.", 0.45, [(3, "UNDER THE DOOR..."), (2, "TWO SHADOWS."), (1, "{FEET.}")]),
+    ("Pages turn.", 0.50, [(2, "PAGES TURN.")]),
+    ("It calls Kabir. Your roommate whispers... present.", 0.45,
+     [(3, "IT CALLS [KABIR.]"), (3, "YOUR ROOMMATE WHISPERS..."), (1, "[PRESENT.]")]),
+    ("Then it calls your name.", 0.60, [(3, "THEN IT CALLS"), (2, "{YOUR NAME.}")]),
+    ("You moved in today. You're not on any register.", 0.50,
+     [(4, "YOU MOVED IN TODAY."), (2, "YOU'RE NOT"), (3, "ON ANY REGISTER.")]),
+    ("Nobody here knows your name.", 0.50, [(2, "NOBODY HERE"), (3, "KNOWS YOUR NAME.")]),
+    ("It does.", 0.60, [(2, "{IT DOES.}")]),
+    ("What do you do?", 0.50, []),
+]
+P1_HOLD = 3.6
+
+LINES = {1: P1}
+HOLD = {1: P1_HOLD}
