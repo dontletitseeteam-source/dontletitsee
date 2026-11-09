@@ -1,21 +1,30 @@
 # BLOCK C — progress log
 
-## Part 1 "The List" — target date 2026-11-12 — VOICE DONE, NOT YET RENDERED
-The first cloud test run (2026-11-09 15:26 IST) wrote the script and paid for the voiceover, but could not
-download it (sandbox network blocked `elevenlabsusercontent.com`) or push (GitHub 403). Both are being fixed.
-The paid take was saved here from the owner's PC, so **do NOT generate Part 1's voice again**:
-- `block-c/p1/audio/vo.mp3` — ElevenLabs eleven_v4, voice BVPhWQykET1TSvfGzrUr, 87.6 s raw
-  (flow `YHXGyGdZN9LOCZNvIo1D`, node `JZeNdwB5YWoN87h4rPtV`, generation `wZ0gtqJRJUiXWQaU06do`, 1,643 credits)
-- `block-c/p1/audio/words_raw.json` — eleven_scribe_v1 word timings (session `TRnVEmvJPFaUObiXLR2m`);
-  matches the prompt word for word
-- `block-c/p1/audio/vo_prompt.txt` — the exact spoken text with audio tags
-
-Next run: rebuild `scripts.py` P1 from `vo_prompt.txt` (split into ~28 lines at the `[short pause]` marks; caption
-word counts must match the spoken words), then prep_vo → build_timeline → part1.js → mix → finalize → outputs/ →
-queue entry dated 2026-11-12.
-
-Story beats: the last occupant's rules list (rules 1–5 read aloud, 6 scratched out so hard the paper tore);
-roommate **Kabir** laughs it off; BLOCK C group pings: the warden died six years ago, roll call never stopped;
-12:06 → corridor lights die one by one; footsteps stop at every door, each room answers "present"; feet under the
-door of Room 13, pages turn; it calls Kabir ("present"), then calls YOUR name — you moved in today, you're on no
-register. "Nobody here knows your name. It does." Choice: **A) answer "Present"**  **B) stay silent**.
+## Part 1 "The List" — QUEUED for 2026-11-12 (built 2026-11-09 by the cloud creator)
+- Output: `outputs/block-c-p1.mp4` (89.7 s, 11.4 MB, −14.4 LUFS) + `outputs/block-c-p1.jpg`;
+  jsDelivr @ commit `66cf285` (both verified HTTP 200). Queue id `block-c-p1`.
+- Voice: the saved take was reused (`block-c/p1/audio/vo.mp3`, `words_raw.json`, `vo_prompt.txt`), so this run
+  spent **0 ElevenLabs credits**. (That take cost 1,643 credits, before the ledger's starting balance.)
+  `scripts.py` P1 = 30 lines / 200 words, matching the transcript word for word.
+- Workspace: `block-c/engine` (FLOOR 0 engine copy). Changes: `drawHUD` takes `rows` + `ampm`; `render.js` cover
+  title from `P.coverTitle`; `drawPhone` takes `date` and `contact.initial`; new `sets.js` with drawRoom (room 13:
+  wardrobe + list, Kabir's bed left, your bed right, barred window, study lamp, door far left with a light gap +
+  feet shadows), drawList (the rules paper, torch pool, lime highlight per rule, rule 6 scribbled + torn),
+  drawGroupChat (BLOCK C group, sender names), drawHostelCorridor (doors 9–14, green tubes, notice board, barred
+  window, per-door glow), drawWarden (too tall, long coat, register book, face never shown), drawDoorGap,
+  drawRegister (night roll-call register), drawPlate (BLOCK C · 13). mix.py: part1 + `noise_burst` for paper/page
+  sounds; SFX are ducked 5 dB under the voice.
+- HUD: PART 1 · 11:52 PM → 12:04 → 12:06 → 12:07 AM · BATTERY 31%→30% · ROOM 13 · BLOCK C · HEADCOUNT 42 →
+  **43 (red) the moment it calls your name**.
+- Story told: the list (rules 1–5 read and highlighted, rule 6 scratched out so hard the paper tore); roommate
+  **Kabir** laughs it off, lamp off; BLOCK C group (Arjun: "new guy in 13 found the list yet?", Rohan: "lol go to
+  sleep", Dev: "the warden of block C died six years ago" / "roll call never stopped."); 12:06; corridor tubes die
+  far→near; the warden walks out of the dark toward room 9; rooms 9, 10, 11, 12 answer (light under each door);
+  Kabir shaking under the blanket; footsteps stop outside 13; two feet shadows under the door; pages turn; it calls
+  Kabir ("present", he goes still); it calls YOUR name; register insert: a new row for room 13 being written in red
+  ink; "Nobody here knows your name. It does." — the light under the door turns red.
+- Choice offered: **A) ANSWER "PRESENT"** (it already knows your name)  **B) STAY SILENT** (and hope it moves on).
+- Open threads for Part 2: the red-ink row in the register; headcount now 43; Kabir answered and went still;
+  rule 2 (the warden never knocks) is next. Names already used: Kabir Mehta (roommate, room 13), Ankit Sharma (9),
+  Rohan Verma (10), Dev Malik (11), Imran Khan (12), Arjun (group chat).
+- Votes: count on Part 1's IG media + YT video once they are posted (queue.json entry `block-c-p1`).
