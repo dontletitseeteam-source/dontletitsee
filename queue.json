@@ -36,6 +36,11 @@
         "url": "https://youtube.com/shorts/Dwb3U1DZWv0",
         "note": "uploaded manually by the owner on 2026-11-09 (Composio quota was exhausted)",
         "updated": "2026-11-09T10:34:25Z"
+      },
+      "youtube_old": {
+        "status": "blocked_quota",
+        "note": "429 Composio shared YouTube upload quota exhausted (2026-11-09 17:10 IST); retry next run",
+        "updated": "2026-11-09T11:40:00Z"
       }
     },
     {
