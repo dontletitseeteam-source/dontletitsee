@@ -1,0 +1,20 @@
+{
+  "note": "YouTube channels the uploader routine posts to. key = the field inside each queue.json post (missing = queued). account = Composio account id, always passed explicitly (proxy_execute always uses the default account, so never use it for YouTube).",
+  "channels": [
+    {
+      "key": "youtube",
+      "account": "youtube_regin-mont",
+      "channel_id": "UCz8ROLj5ujxy15MeVs3QA2Q",
+      "handle": "@dontletitsee",
+      "enabled": true
+    },
+    {
+      "key": "youtube_old",
+      "account": "youtube_rachel-brod",
+      "channel_id": "UCIhPJ7Vth_4Pk1k_ve0OyVw",
+      "handle": "@lexter2025",
+      "enabled": false,
+      "note": "Connected 2026-11-09. Disabled until the owner confirms this is the old channel they want the reels on."
+    }
+  ]
+}
