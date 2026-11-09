@@ -1,6 +1,6 @@
 # Series 2 — BLOCK C  (posts 2026-11-12 → 2026-11-19, 8 parts)
 
-Slug: `block-c` · Workspace: `C:\reels\block-c\` · Caption name: `BLOCK C`
+Slug: `block-c` · Workspace: `block-c/` (in this repo) · Caption name: `BLOCK C`
 
 ## Premise
 You move into an old college hostel mid-semester, Room 13, Block C. Taped inside the wardrobe door is a
@@ -21,7 +21,7 @@ of locations to reuse, and a rule list that gives every part a clear "rule of th
 ## HUD rows
 `PART n` · time · `BATTERY` · `ROOM 13 · BLOCK C` · `HEADCOUNT 42` (changes when the story does: 43, 41…).
 
-## Sets to build once (in `C:\reels\block-c\engine\sets.js`)
+## Sets to build once (in `block-c/engine/sets.js`)
 - Hostel room (front view): two iron beds, wardrobe with the taped list, study table + lamp, window bars,
   door with a gap under it (corridor light / shadows of feet).
 - Corridor (reuse/adapt `drawCorridor`): green-ish tube lights, room doors numbered 9–16, notice board.
