@@ -1,4 +1,4 @@
-// FLOOR 0 — generic compositor and frame renderer
+// BLOCK C (FLOOR 0 engine) — generic compositor and frame renderer
 // usage: node render.js <part> --stills 0.5,3.4   (PNGs into ../p<part>/out/stills)
 //        node render.js <part> --video            (-> ../p<part>/out/video_noaudio.mp4)
 //        node render.js <part> --keys             (-> ../p<part>/keys.json, for the sound mix)
@@ -67,7 +67,7 @@ async function main() {
     D.vignette(ctx, 0.7);
     const g = ctx.createLinearGradient(0, 1150, 0, 1700); g.addColorStop(0, 'rgba(3,5,12,0)'); g.addColorStop(1, 'rgba(3,5,12,0.85)');
     ctx.fillStyle = g; ctx.fillRect(0, 1150, W, 770);
-    D.drawCaption(ctx, 'FLOOR [0]', 1, { y: 1380, size: 150 });
+    D.drawCaption(ctx, P.coverTitle || 'FLOOR [0]', 1, { y: 1380, size: P.coverSize || 150 });
     ctx.save(); ctx.font = '40px Mono700'; ctx.fillStyle = D.C.red; ctx.textBaseline = 'alphabetic';
     D.spaced(ctx, `PART ${PART}`, 540, 1500, 12, 'center'); ctx.restore();
     fs.writeFileSync(args[2], await canvas.encode('jpeg', 92));

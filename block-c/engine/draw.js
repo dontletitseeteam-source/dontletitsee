@@ -292,7 +292,7 @@ function drawHUD(ctx, h) {
   ctx.shadowColor = 'rgba(0,0,0,0.6)'; ctx.shadowBlur = 18;
   const tw = ctx.measureText(h.time).width;
   ctx.fillText(h.time, x - 2, y + 92);
-  ctx.font = '30px Osw600'; ctx.fillText('AM', x + tw + 8, y + 92);
+  ctx.font = '30px Osw600'; ctx.fillText(h.ampm || 'AM', x + tw + 8, y + 92);
   ctx.shadowBlur = 0;
   // rule
   ctx.fillStyle = 'rgba(238,241,247,0.22)'; ctx.fillRect(x, y + 112, 290, 2);
@@ -300,7 +300,7 @@ function drawHUD(ctx, h) {
   const row = (label, val, yy, vcol) => {
     ctx.fillStyle = 'rgba(238,241,247,0.62)'; spaced(ctx, label, x, yy, 2.2);
     ctx.fillStyle = vcol || 'rgba(238,241,247,0.92)'; ctx.font = '22px Mono700';
-    let vx = x + 158;
+    let vx = x + (h.labelW || 158);
     if (val[0] === '▲' || val[0] === '▼') {
       const up = val[0] === '▲';
       ctx.beginPath();
@@ -311,9 +311,12 @@ function drawHUD(ctx, h) {
     }
     spaced(ctx, val, vx, yy, 2.2); ctx.font = '22px Mono500';
   };
-  row('BATTERY', h.battery, y + 146);
-  row('ELEVATOR', h.elevator, y + 178, h.elevatorCol);
-  row('LOCATION', h.location, y + 210, h.locationCol);
+  if (h.rows) h.rows.forEach(([lab, val, col], i) => row(lab, val, y + 146 + i * 32, col));
+  else {
+    row('BATTERY', h.battery, y + 146);
+    row('ELEVATOR', h.elevator, y + 178, h.elevatorCol);
+    row('LOCATION', h.location, y + 210, h.locationCol);
+  }
   ctx.restore();
 }
 

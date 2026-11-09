@@ -1,4 +1,4 @@
-"""FLOOR 0 — sound mix for one part:  python mix.py <part>
+"""BLOCK C — sound mix for one part:  python mix.py <part>
 
 Assembles the re-spaced voiceover from p<part>/timeline.json, lays every SFX
 cue on the key times exported by render.js (p<part>/keys.json), rides the
@@ -108,156 +108,102 @@ heartbeat = load("heartbeat.mp3"); whisper = load("whisper.mp3")
 tick_soft = load("tick.mp3", "lowpass=f=2500,volume=0.6")
 
 
+def noise_burst(dur, lo, hi, seed=0, attack=0.01):
+    """filtered noise burst (page flick / paper)"""
+    rng = np.random.default_rng(seed)
+    n = int(dur * SR); x = rng.standard_normal(n).astype(np.float32)
+    X = np.fft.rfft(x); f = np.fft.rfftfreq(n, 1 / SR); X[(f < lo) | (f > hi)] = 0
+    x = np.fft.irfft(X, n).astype(np.float32)
+    env = np.minimum(1, np.arange(n) / (attack * SR)) * np.exp(-np.linspace(0, 6, n))
+    x = x * env; x /= (np.abs(x).max() + 1e-9)
+    return np.stack([x, x], 1)
+
+
 def part1():
-    F0, F1 = K["flash"], K["slamStart"]
-    music = np.pad(load("music.mp3"), ((0, N), (0, 0)))[:N] * automation([
-        (0, -20), (K["zero"], -20), (K["zero"] + 0.3, -15), (K["interiorStart"], -15), (K["lights"], -12),
-        (K["smile"] - 0.15, -12), (K["smile"] - 0.02, -26), (F0 - 0.02, -26), (F0, -80), (F1 + 0.35, -80), (F1 + 0.6, -14), (K["aloneStart"], -14),
-        (K["aloneStart"] + 0.3, -20), (K["dingBack"], -20), (K["dingBack"] + 0.3, -12), (K["choice"], -11),
-        (DUR - 1.4, -13), (DUR, -40)])
-    hum = bed("hum.mp3") * automation([
-        (0, -2), (K["phoneStart"], -2), (K["phoneStart"] + 0.05, -9), (K["tooLate"], -9), (K["tooLate"] + 0.05, -2),
-        (K["typingStart"], -2), (K["typingStart"] + 0.05, -9), (F0, -9), (F0 + 0.01, -80), (F1, -80), (F1 + 0.05, 0),
-        (K["lockStart"], 0), (K["lockStart"] + 0.05, -9), (K["aloneStart"], -9), (K["aloneStart"] + 0.05, 1), (DUR, -6)]) * db(2)
-    place(motor_down, 0.0, -10, fi=0.02, fo=0.6, maxlen=K["zero"] + 0.1)
-    place(ding, K["zero"] - 0.04, 1)
-    place(boom, K["zero"] + 0.25, -15, fo=0.5)
-    place(door_open, K["doorOpen0"] - 0.1, 1, fo=0.4)
-    place(buzz, K["buzz"] - 0.03, -22, maxlen=1.0, fo=0.15)
-    place(tick, K["msg1"] - 0.02, -2)
-    place(boom, K["tooLate"] + 0.02, -15, fo=0.6)
-    place(heartbeat, K["tooLate"] + 0.15, -17, fi=0.3, fo=1.2, maxlen=6.5)
-    place(whisper, K["interiorStart"] + 0.2, -14, fi=0.8, fo=1.2)
-    place(tick_soft, K["notMoving"] + 0.35, -6)
-    place(tick_soft, K["lights"] - 0.04, -3)
-    place(riser, K["smile"] - 0.06 - len(riser) / SR, -15, fi=2.5, fo=0.004)
-    place(tick, K["smile"] - 0.27, -6)
-    place(shutter, F0 - 0.03, 1, fo=0.3)
-    place(stinger, F0 + 0.01, -7, fo=0.3, maxlen=0.9)
-    place(boom, F0 + 0.02, -10, fo=0.4, maxlen=0.9)
-    place(slam, K["slam"] - 0.01, -5)
-    place(boom, K["slam"] + 0.02, -14, fo=0.6)
-    place(motor, K["upStart"] + 0.25, -9, fi=0.4, fo=0.4, maxlen=K["eight"] - K["upStart"] + 0.2)
-    for tc in K["floorChanges"]:
-        if K["upStart"] < tc <= K["eight"] + 0.05 or K["aloneStart"] < tc < K["dingBack"]:
-            place(tick_soft, tc, -12)
-    place(ding_far, K["eight"] + 0.02, 0)
-    place(buzz, K["notif"] - 0.03, -22, maxlen=1.0, fo=0.15)
-    place(boom, K["unlocked"], -17, fo=0.5)
-    place(stinger, K["face"] - 0.02, -12, fo=0.6)
-    place(heartbeat, K["aloneStart"] + 0.05, -15, fi=0.4, fo=0.8, maxlen=K["dingBack"] - K["aloneStart"])
-    place(motor_down, K["aloneStart"] + 0.55, -15, fi=0.3, fo=0.3, maxlen=K["dingBack"] - K["aloneStart"] - 0.5)
-    place(ding, K["dingBack"] - 0.03, 3)
-    place(boom, K["dingBack"], -11, fo=0.5)
-    place(door_open, K["doorBack0"] - 0.1, 1, fo=0.4)
-    place(boom, K["floorZero"], -18, fo=0.5)
-    place(whisper, K["empty"] - 0.3, -15, fi=0.4, fo=0.8, maxlen=2.0)
+    lights_off = load("lights_off.mp3"); stairs = load("stairs.mp3", "highpass=f=700")
+    step = load("boom.mp3", "lowpass=f=240")[: int(0.5 * SR)]
+    sent = load("sent.mp3"); typing = load("typing.mp3"); slam_w = load("door_slam_wood.mp3")
+    page = noise_burst(0.32, 1500, 7000, 3, 0.02) * 0.6
+    page2 = noise_burst(0.28, 1200, 6000, 7, 0.03) * 0.6
+    paper = noise_burst(0.5, 800, 5000, 11, 0.05) * 0.5
+    c0 = K["corridor"]
+    m1 = np.pad(load("music.mp3"), ((0, N), (0, 0)))[:N] * automation([
+        (0, -19), (K["list"], -17), (K["tore"] - 0.1, -15), (K["tore"] + 0.05, -26), (K["kabir"], -20), (K["sleep"] + 0.3, -18),
+        (K["chat"], -16), (K["died"], -12), (K["lock"], -15), (c0 - 0.3, -16), (c0 + 0.6, -80), (DUR, -80)])
+    m2 = np.pad(load("music_p3.mp3"), ((0, N), (0, 0)))
+    off = int(c0 * SR); m2 = np.concatenate([np.zeros((off, 2), np.float32), m2])[:N] * automation([
+        (0, -80), (c0, -80), (c0 + 0.4, -22), (K["steps"], -18), (K["name"], -15), (K["blanket"], -16), (K["stop"], -13),
+        (K["gap"], -17), (K["yourName"] - 0.1, -17), (K["nameW"] - 0.05, -30), (K["nameW"] + 0.4, -11), (K["register"], -13),
+        (K["does"] - 0.15, -12), (K["does"] - 0.05, -30), (K["choice"], -13), (DUR - 1.4, -14), (DUR, -40)])
+    music = m1 + m2
+    # room tone / tube hum: hum in the corridor until the lights die; low room tone otherwise
+    hum = bed("hum.mp3", "lowpass=f=700") * automation([(0, -14), (DUR, -14)])
+    hum += bed("hum.mp3", "highpass=f=1200") * automation([
+        (0, -80), (0.0, -10), (K["room1"], -10), (K["room1"] + 0.05, -80), (c0, -80), (c0 + 0.05, -5),
+        (K["out"][2], -8), (K["out"][4], -12), (K["out"][4] + 0.08, -80), (DUR, -80)])
+    # opening: plate -> room
+    place(boom, 0.05, -16, fo=0.6, maxlen=2.0)
+    place(paper, K["push"] + 0.3, -10)
+    place(boom, K["list"] + 0.05, -17, fo=0.5, maxlen=1.5)
+    # rules: a soft tick on each rule number, paper rustles
+    for k in ["r1", "r2", "r3", "r4", "r5"]:
+        place(tick_soft, K[k] - 0.02, -12)
+    place(whisper, K["underbed"] - 0.1, -14, fi=0.2, fo=0.5, maxlen=1.6)
+    place(boom, K["underbed"] + 0.02, -17, fo=0.5, maxlen=1.2)
+    place(paper, K["r6"] + 0.2, -10)
+    place(stinger, K["tore"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(boom, K["tore"], -13, fo=0.6, maxlen=1.6)
+    # lamp click
+    place(tick, K["sleep"] + 0.33, -6, maxlen=0.4)
+    # group chat
+    place(sent, K["chat"] + 0.12, -12)
+    place(buzz, K["ping"] - 0.03, -22, maxlen=1.0, fo=0.15)
+    place(sent, K["ping"], -10)
+    place(sent, K["m3"] - 0.02, -10)
+    place(boom, K["died"], -16, fo=0.6, maxlen=1.6)
+    place(sent, K["m4"] - 0.02, -10)
+    place(whisper, K["m4"] + 0.1, -16, fi=0.3, fo=0.8, maxlen=2.0)
+    place(boom, K["twelve"], -18, fo=0.5, maxlen=1.4)
+    # lights die one by one
+    pk = peak_time(lights_off[: int(1.2 * SR)])
+    for i, tt in enumerate(K["out"]):
+        place(lights_off, tt - pk, -6 - i * 0.5, fo=0.3, maxlen=pk + 0.6)
+    place(boom, K["out"][4] + 0.05, -15, fo=0.8, maxlen=2.0)
+    # footsteps (heavy, slow)
+    for i, tt in enumerate(K["footsteps"]):
+        place(step, tt, -4 if tt < K["name"] else -2, fo=0.25)
+        place(stairs[: int(0.12 * SR)], tt, -24, fo=0.05)
+    place(heartbeat, K["steps"] + 0.3, -18, fi=0.6, fo=0.8, maxlen=K["blanket"] - K["steps"])
+    # doors answer: a soft door latch tick + boom per number
+    place(tick_soft, K["present9"] + 0.3, -10)
+    for k in ["ten", "eleven", "twelve2"]:
+        place(boom, K[k] + 0.02, -18, fo=0.4, maxlen=0.9)
+        place(tick_soft, K[k] + 0.35, -12)
+    # the stop outside 13
+    place(boom, K["stopW"] + 0.05, -12, fo=0.6, maxlen=1.8)
+    place(heartbeat, K["stopW"] + 0.2, -16, fi=0.2, fo=0.8, maxlen=K["yourName"] - K["stopW"])
+    # under the door
+    place(riser, K["two"] - 0.4, -20, fi=0.4, fo=0.3, maxlen=1.6)
+    place(boom, K["feet"], -14, fo=0.6, maxlen=1.4)
+    place(page, K["pages"][0] - 0.05, -6)
+    place(page2, K["pages"][1] - 0.05, -6)
+    place(page, K["kabirCall"] + 0.1, -12)
+    # your name
+    place(stinger, K["nameW"] - 0.03, -8, fo=0.4, maxlen=1.4)
+    place(boom, K["nameW"], -10, fo=0.6, maxlen=2.2)
+    place(paper, K["register"] + 0.15, -14)
+    place(whisper, K["nobody"] + 0.1, -15, fi=0.5, fo=0.6, maxlen=2.4)
+    place(riser, K["does"] - 0.06 - len(riser) / SR, -16, fi=2.5, fo=0.004)
+    place(slam_w, K["does"] - 0.02, -9)
+    place(boom, K["does"] + 0.02, -8, fo=0.6, maxlen=2.0)
     place(boom, K["choice"] - 0.1, -16, fo=0.8, maxlen=2.5)
     return music, hum
 
 
-def part2():
-    stairs = load("stairs.mp3", "aecho=0.8:0.5:60|120:0.3|0.2"); steps = load("stairs.mp3", "lowpass=f=1400")
-    creak = load("door_creak.mp3"); slam_w = load("door_slam_wood.mp3"); denied = load("lock_denied.mp3")
-    lights_off = load("lights_off.mp3"); smile_st = load("smile_stinger.mp3")
-    music = np.pad(load("music_p2.mp3"), ((0, N), (0, 0)))[:N] * automation([
-        (0, -17), (K["stairs"], -15), (K["gap"], -13), (K["chat"], -18), (K["push"], -12),
-        (K["smiled"] - 0.7, -13), (K["smiled"] - 0.5, -28), (K["smiled"] + 0.05, -11), (K["slam"], -12),
-        (K["alone"], -15), (K["hall"], -12), (K["rule"], -10), (DUR - 1.2, -13), (DUR, -40)])
-    hum = bed("hum.mp3") * automation([
-        (0, -2), (K["stairs"], -2), (K["stairs"] + 0.05, -14), (K["corridor"], -14), (K["corridor"] + 0.05, -4),
-        (K["gap"], -4), (K["gap"] + 0.05, -14), (K["phone"], -14), (K["push"], -14), (K["alone"], -6),
-        (K["alone"] + 1.3, -6), (K["alone"] + 1.5, -60), (DUR, -60)])
-    tv_auto = automation([(0, -80), (K["corridor"], -80), (K["corridor"] + 0.1, -26), (K["door8c"], -20), (K["gap"], -11),
-                          (K["phone"], -18), (K["push"], -13), (K["pushOpen"] + 0.3, -8), (K["slam"] + 0.02, -8),
-                          (K["slam"] + 0.06, -30), (K["lock"], -40), (K["alone"], -34), (K["alone"] + 0.5, -80), (DUR, -80)])
-    tv = bed("tv.mp3") * tv_auto
-    # recap
-    place(ding_far, 0.02, -4)
-    place(shutter, K["recapB"], -10, fo=0.3)
-    place(boom, K["recapB"] + 0.02, -14, fo=0.4, maxlen=0.8)
-    place(tick, K["recapC"] + 0.05, -10)
-    place(boom, K["lobby"] - 0.15, -18, fo=0.6, maxlen=1.5)
-    # walk + climb
-    place(steps, K["turn"] + 0.25, -16, fi=0.1, fo=0.3, maxlen=K["stairs"] - K["turn"])
-    place(stairs, K["stairs"], -7, fi=0.05, fo=0.4, maxlen=K["corridor"] - K["stairs"] + 0.1)
-    place(steps, K["corridor"], -18, fi=0.1, fo=0.4, maxlen=1.6)
-    # phone from "Me"
-    place(buzz, K["buzz"] - 0.03, -25, maxlen=1.0, fo=0.15)
-    place(tick, K["msg"] - 0.02, -2)
-    # the door, the turn, the grin
-    place(creak, K["pushOpen"] - 0.1, -1, fo=0.3)
-    place(whisper, K["turn2"] - 0.1, -14, fi=0.2, fo=0.5, maxlen=1.6)
-    place(boom, K["itsYou"] + 0.02, -15, fo=0.6)
-    place(heartbeat, K["itsYou"], -17, fi=0.2, fo=0.6, maxlen=K["smiled"] - K["itsYou"] - 0.4)
-    pk = peak_time(smile_st)
-    place(smile_st, K["smileEnd"] + 0.04 - pk, -6, fo=0.4)
-    place(slam_w, K["slam"] - 0.03, -6)
-    place(boom, K["slam"] + 0.02, -12, fo=0.6)
-    # smart lock refuses you
-    place(buzz, K["lock"] + 0.12, -22, maxlen=0.6, fo=0.12)
-    place(denied, K["unrec"] - 0.05, -4)
-    place(boom, K["unrec"], -16, fo=0.5)
-    # lights out, the elevator opens
-    place(lights_off, K["alone"] + 0.25, -10, fo=0.4)
-    place(ding, K["ding"], 3)
-    place(door_open, K["ding"] + 0.25, 1, fo=0.4)
-    place(heartbeat, K["lit"], -21, fi=0.3, fo=0.8, maxlen=K["rule"] - K["lit"])
-    place(boom, K["zero"], -18, fo=0.5)
-    place(boom, K["eight"] + 0.05, -17, fo=0.5)
-    place(boom, K["rule"] + 0.05, -14, fo=0.8, maxlen=2.5)
-    return music, hum + tv
-
-
-def part3():
-    button = load("button.mp3"); descent = load("descent.mp3"); crowd = load("crowd.mp3")
-    typing = load("typing.mp3"); sent = load("sent.mp3"); stretch = load("stretch.mp3")
-    music = np.pad(load("music_p3.mp3"), ((0, N), (0, 0)))[:N] * automation([
-        (0, -18), (K["goDown"], -14), (K["ding"], -13), (K["full"], -10), (K["buzzShot"], -16), (K["rises"], -12),
-        (K["lookOut"], -10), (K["send2"] - 0.25, -12), (K["send2"] - 0.1, -28), (K["flash"] - 0.02, -28),
-        (K["flash"], -80), (K["rule"] + 0.2, -80), (K["rule"] + 0.6, -15), (K["loop"], -22), (DUR, -40)])
-    hum = bed("hum.mp3", "lowpass=f=900") * automation([
-        (0, -6), (K["ding"], -6), (K["open0"], -6), (K["open0"] + 0.3, -60), (DUR, -60)])
-    hum += bed("hum.mp3", "highpass=f=1500") * automation([
-        (0, -80), (K["open0"], -80), (K["open0"] + 0.4, -6), (K["buzzShot"], -6), (K["buzzShot"] + 0.05, -14),
-        (K["rises"], -14), (K["rises"] + 0.05, -80), (DUR, -80)])
-    hum += bed("hum.mp3") * automation([(0, -80), (K["lookOut"], -80), (K["lookOut"] + 0.05, -2), (K["flash"], -2), (K["flash"] + 0.01, -80), (K["loop"], -80), (K["loop"] + 0.05, -2), (DUR, -2)])
-    crowd_bed = bed("crowd.mp3") * automation([(0, -80), (K["full"], -80), (K["full"] + 0.05, -9), (K["buzzShot"], -9), (K["buzzShot"] + 0.3, -18), (K["rises"], -18), (K["rises"] + 0.3, -80), (DUR, -80)])
-    place(button, K["press"], 2)
-    place(door_open, K["doorsClose"] - 0.1, 0, fo=0.4)
-    place(descent, K["goDown"] - 0.2, -9, fi=0.3, fo=0.5, maxlen=K["ding"] - K["goDown"] + 0.3)
-    place(motor_down, K["down2"], -14, fi=0.2, fo=0.4, maxlen=K["ding"] - K["down2"])
-    place(ding, K["ding"], 0)
-    place(door_open, K["open0"], -4, fo=0.4)
-    place(boom, K["open0"] + 0.15, -11, fo=0.6)
-    place(stinger, K["full"] - 0.02, -14, fo=0.4)
-    place(boom, K["full"], -15, fo=0.6)
-    place(boom, K["tall"] + 0.05, -18, fo=0.6)
-    place(stretch, K["taller"] + 0.6, -2, fo=0.4)
-    place(stretch, K["tallerWord"] - 0.4, -4, fo=0.5)
-    place(buzz, K["buzz"] - 0.03, -22, maxlen=1.0, fo=0.15)
-    t0, t1 = K["type0"], K["send1"] - 0.25
-    while t0 < t1:
-        place(typing, t0, -8, maxlen=min(len(typing) / SR, t1 - t0), fo=0.05); t0 += len(typing) / SR
-    place(sent, K["send1"] - 0.02, -3)
-    place(motor, K["rises"] + 0.1, -9, fi=0.4, fo=0.5, maxlen=K["lobbyDing"] - K["rises"])
-    place(heartbeat, K["rises"], -15, fi=0.3, fo=0.6, maxlen=K["lobbyDing"] - K["rises"])
-    place(ding, K["lobbyDing"], 2)
-    place(door_open, K["lobbyDing"] + 0.25, 0, fo=0.4)
-    place(typing, K["type2a"], -8, maxlen=K["send2"] - 0.35 - K["type2a"], fo=0.05)
-    place(sent, K["send2"] + 0.05, -9)
-    F0 = K["flash"]
-    place(shutter, F0 - 0.03, 1, fo=0.3)
-    place(stinger, F0 + 0.01, -7, fo=0.3, maxlen=0.9)
-    place(boom, F0 + 0.02, -10, fo=0.4, maxlen=0.9)
-    place(boom, K["rule"] + 0.25, -14, fo=0.8, maxlen=2.5)
-    place(motor_down, K["loop"], -10, fi=0.02, fo=0.4)
-    return music, hum + crowd_bed
-
-
-music, beds = {1: part1, 2: part2, 3: part3}[PART]()
+music, beds = {1: part1}[PART]()
 music = music * duck_gain
 beds = beds * duck_gain
+sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice
 mix = vo2 + music + beds + sfx
 np.save(str(OUT / "stems.npy"), np.stack([vo2[:, 0], music[:, 0], beds[:, 0], sfx[:, 0]]))
 peak = float(np.max(np.abs(mix)))

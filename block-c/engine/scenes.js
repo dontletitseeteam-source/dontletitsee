@@ -298,7 +298,7 @@ function drawPhone(ctx, t, st) {
   ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
   if (st.screen === 'lock') {
     ctx.font = '34px Inter500'; ctx.fillStyle = 'rgba(225,232,248,0.82)';
-    ctx.fillText('Sunday, November 9', p.cx, sy0 + 170);
+    ctx.fillText(st.date || 'Sunday, November 9', p.cx, sy0 + 170);
     ctx.font = '196px Inter600'; ctx.fillStyle = '#eef2fb';
     ctx.fillText(st.time || '12:08', p.cx, sy0 + 370);
     let ny = sy0 + 430;
@@ -356,9 +356,9 @@ function drawPhone(ctx, t, st) {
     if (ct.avatar === 'me') {
       ctx.strokeStyle = '#eef1f7'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(p.cx, sy0 + 138, 15, 0, 7); ctx.stroke();
       ctx.beginPath(); ctx.moveTo(p.cx, sy0 + 153); ctx.lineTo(p.cx, sy0 + 186); ctx.moveTo(p.cx - 18, sy0 + 186); ctx.lineTo(p.cx, sy0 + 166); ctx.lineTo(p.cx + 18, sy0 + 186); ctx.stroke();
-    } else { ctx.font = '50px Inter600'; ctx.fillStyle = '#d9deec'; ctx.fillText('?', p.cx, sy0 + 168); }
+    } else { ctx.font = '50px Inter600'; ctx.fillStyle = '#d9deec'; ctx.fillText(ct.initial || '?', p.cx, sy0 + 168); }
     ctx.font = '30px Inter600'; ctx.fillStyle = ct.hl ? C.lime : '#eef1f8'; ctx.fillText(ct.name, p.cx, sy0 + 246);
-    ctx.font = '23px Inter400'; ctx.fillStyle = 'rgba(200,206,224,0.6)'; ctx.fillText(st.sub || 'Text Message · Today 12:08 AM', p.cx, sy0 + 344);
+    ctx.font = '23px Inter400'; ctx.fillStyle = 'rgba(200,206,224,0.6)'; if (st.sub !== '') ctx.fillText(st.sub || 'Text Message · Today 12:08 AM', p.cx, sy0 + 344);
     ctx.textAlign = 'left';
     let by = sy0 + 380;
     for (const b of st.bubbles || []) {
