@@ -54,20 +54,24 @@
       "yt_title": "I went home. Someone was already there. | FLOOR 0 · Part 2 #shorts",
       "yt_description": "You took the stairs home. Your door was open. Someone was on your couch.\n\nFLOOR 0 · Part 2 of 3. Part 3 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
       "instagram": {
-        "status": "queued"
+        "status": "published",
+        "container_id": "18123411505807960",
+        "media_id": "17961343959258765",
+        "permalink": "https://www.instagram.com/reel/Dfjm753FI6_/",
+        "updated": "2026-11-10T09:45:00Z"
       },
       "youtube": {
-        "status": "uploaded_private",
+        "status": "published",
         "video_id": "5BlBOAPvHxg",
         "url": "https://youtube.com/shorts/5BlBOAPvHxg",
-        "updated": "2026-11-10T08:06:00Z",
+        "updated": "2026-11-10T09:45:00Z",
         "note": "uploaded private 13:32 IST; publish at 14:55+"
       },
       "youtube_old": {
-        "status": "uploaded_private",
+        "status": "published",
         "video_id": "p_vUipPE5Do",
         "url": "https://youtube.com/shorts/p_vUipPE5Do",
-        "updated": "2026-11-10T08:06:00Z",
+        "updated": "2026-11-10T09:45:00Z",
         "note": "uploaded private 13:32 IST; publish at 14:55+"
       }
     },
