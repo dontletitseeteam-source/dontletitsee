@@ -10,10 +10,33 @@ How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric t
    the threat in one line; recap after the hook, never before it.
 2. (queued, test after #1) Stronger comment CTA: put the A/B choice card ~5 s before the end and say the
    letters out loud in the VO, not only on screen (FLOOR 0 P1: 1 comment on 626 IG views).
-3. (note) YouTube metadata matters: FLOOR 0 P1 went up manually with the bare title "FLOOR 0 · Part 1" and
-   "#horrorstories"; the queued hook titles are the standard. Compare YT views once the hook titles are live.
+3. (keep) YouTube hook titles: P2 with the hook title "I went home. Someone was already there." has 413 views vs
+   180 for P1's bare manual title on @dontletitsee. Keep every yt_title a self-contained hook sentence first,
+   series name after the bar. Not a test lever; just the standard.
 
 ## Day log
+## 2026-11-12 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 58 | 791 | 636 | 17 | 2 | 0 / 0 | 17.2 s | 46.9% |
+| floor0-p2 | Instagram (media 17961343959258765) | 34 | 173 | 150 | 2 | 0 | 0 / 0 | 7.6 s | 72.3% |
+| floor0-p3 | Instagram (media 18139990045726049) | 10 | 135 | 110 | 1 | 0 | 0 / 0 | 12.6 s | 52.2% |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 58 | 180 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 34 | 413 | n/a | 8 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 10 | 10 | n/a | 0 | 0 | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 35 | 15 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 34 | 15 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 10 | 124 | n/a | 2 | 0 | n/a | n/a | n/a |
+
+Lessons (first 3-post pattern on IG):
+- IG skip rate 46.9% / 72.3% / 52.2% and avg watch 17.2 / 7.6 / 12.6 s: every sequel underperforms the series
+  opener, and IG hands sequels much less reach (150 and 110 vs 636). Confirmed pattern -> test #1 (zero-context
+  hook in the first 2 s) goes into BLOCK C Part 2 as planned; nothing else changes in that part.
+- P1 is plateauing on IG (789 -> 791): growth now depends on each new reel standing on its own.
+- YouTube does not punish sequels the same way: P2 (hook title) 413 views is the best YT post so far, more than
+  2x P1's bare manual title (180). Hook-sentence titles are the standard (improvement #3).
+- @lexter2025 is erratic (15 / 15 / 124): one post caught the Shorts feed; too early for a pattern.
+- Comments: 2 total across 9 posts, 0 on YouTube. The CTA test (#2) is next after the hook test reads out.
 ## 2026-11-11 (IST 01:12 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|

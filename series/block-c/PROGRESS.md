@@ -1,5 +1,9 @@
 # BLOCK C — progress log
 
+**Status 2026-11-12 01:15 IST (creator run):** queue full through 2026-11-12; nothing built. Part 2 (2026-11-13) waits
+for the A/B vote on Part 1 (posts today 15:00 IST); build it on/after 2026-11-12 23:00 IST. ANALYTICS review done for
+2026-11-12 (3-post pattern: sequels lose IG viewers in 3 s; Part 2 must open on a zero-context hook).
+
 **Status 2026-11-11 01:12 IST (creator run):** queue full through 2026-11-12; nothing built. Part 2 (2026-11-13) still
 waits for the A/B vote on Part 1 (posts 2026-11-12 15:00 IST); build it on/after 2026-11-12 23:00 IST. ANALYTICS
 review done for 2026-11-11 (FLOOR 0 P2 skip rate 71%: Part 2's hook must work with zero context).
