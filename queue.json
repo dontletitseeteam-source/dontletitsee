@@ -42,6 +42,22 @@
         "video_id": "fYJ1fkaSb9I",
         "url": "https://youtube.com/shorts/fYJ1fkaSb9I",
         "updated": "2026-11-10T08:06:00Z"
+      },
+      "post": {
+        "youtube": {
+          "status": "published",
+          "video_id": "Dwb3U1DZWv0",
+          "url": "https://youtube.com/shorts/Dwb3U1DZWv0",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        },
+        "youtube_old": {
+          "status": "published",
+          "video_id": "fYJ1fkaSb9I",
+          "url": "https://youtube.com/shorts/fYJ1fkaSb9I",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        }
       }
     },
     {
@@ -73,6 +89,22 @@
         "url": "https://youtube.com/shorts/p_vUipPE5Do",
         "updated": "2026-11-10T09:45:00Z",
         "note": "uploaded private 13:32 IST; publish at 14:55+"
+      },
+      "post": {
+        "youtube": {
+          "status": "published",
+          "video_id": "5BlBOAPvHxg",
+          "url": "https://youtube.com/shorts/5BlBOAPvHxg",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        },
+        "youtube_old": {
+          "status": "published",
+          "video_id": "p_vUipPE5Do",
+          "url": "https://youtube.com/shorts/p_vUipPE5Do",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        }
       }
     },
     {
@@ -102,6 +134,22 @@
         "video_id": "JCo1PoJNhIM",
         "url": "https://youtube.com/shorts/JCo1PoJNhIM",
         "updated": "2026-11-11T09:46:00Z"
+      },
+      "post": {
+        "youtube": {
+          "status": "published",
+          "video_id": "TND9mmqAZtw",
+          "url": "https://youtube.com/shorts/TND9mmqAZtw",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        },
+        "youtube_old": {
+          "status": "published",
+          "video_id": "JCo1PoJNhIM",
+          "url": "https://youtube.com/shorts/JCo1PoJNhIM",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        }
       }
     },
     {
@@ -130,6 +178,22 @@
         "video_id": "OkUHaOECktc",
         "url": "https://youtube.com/shorts/OkUHaOECktc",
         "updated": "2026-11-12T09:46:00Z"
+      },
+      "post": {
+        "youtube": {
+          "status": "published",
+          "video_id": "hxEWbQl3dCE",
+          "url": "https://youtube.com/shorts/hxEWbQl3dCE",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        },
+        "youtube_old": {
+          "status": "published",
+          "video_id": "OkUHaOECktc",
+          "url": "https://youtube.com/shorts/OkUHaOECktc",
+          "updated": "2026-11-12T14:02:50+00:00",
+          "note": "found existing public upload via duplicate check"
+        }
       }
     }
   ]
