@@ -1,0 +1,1841 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 90.763,
+ "lines": [
+  {
+   "id": 1,
+   "text": "The dead warden of your hostel just called your name.",
+   "src_start": 0.025,
+   "src_end": 2.97,
+   "start": 0.15,
+   "end": 3.095,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.2,
+     "end": 0.275
+    },
+    {
+     "text": "dead",
+     "start": 0.426,
+     "end": 0.577
+    },
+    {
+     "text": "warden",
+     "start": 0.728,
+     "end": 1.03
+    },
+    {
+     "text": "of",
+     "start": 1.068,
+     "end": 1.106
+    },
+    {
+     "text": "your",
+     "start": 1.181,
+     "end": 1.332
+    },
+    {
+     "text": "hostel",
+     "start": 1.483,
+     "end": 1.785
+    },
+    {
+     "text": "just",
+     "start": 1.86,
+     "end": 2.011
+    },
+    {
+     "text": "called",
+     "start": 2.125,
+     "end": 2.238
+    },
+    {
+     "text": "your",
+     "start": 2.313,
+     "end": 2.464
+    },
+    {
+     "text": "name.",
+     "start": 2.653,
+     "end": 3.095
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE {DEAD} WARDEN",
+     "start": 0.2,
+     "word_idx": 0,
+     "end": 1.068
+    },
+    {
+     "text": "OF YOUR HOSTEL",
+     "start": 1.068,
+     "word_idx": 3,
+     "end": 1.86
+    },
+    {
+     "text": "JUST CALLED [YOUR NAME.]",
+     "start": 1.86,
+     "word_idx": 6,
+     "end": 3.215
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "And you answered.",
+   "src_start": 3.271,
+   "src_end": 5.102,
+   "start": 3.395,
+   "end": 5.225,
+   "words": [
+    {
+     "text": "And",
+     "start": 3.445,
+     "end": 3.595
+    },
+    {
+     "text": "you",
+     "start": 3.671,
+     "end": 3.746
+    },
+    {
+     "text": "answered.",
+     "start": 3.822,
+     "end": 4.501
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND YOU {ANSWERED.}",
+     "start": 3.445,
+     "word_idx": 0,
+     "end": 5.345
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Present.",
+   "src_start": 5.072,
+   "src_end": 5.74,
+   "start": 5.525,
+   "end": 6.194,
+   "words": [
+    {
+     "text": "Present.",
+     "start": 5.575,
+     "end": 5.749
+    }
+   ],
+   "captions": [
+    {
+     "text": "[PRESENT.]",
+     "start": 5.575,
+     "word_idx": 0,
+     "end": 6.314
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "The word leaves your mouth before you can stop it.",
+   "src_start": 5.895,
+   "src_end": 8.36,
+   "start": 6.594,
+   "end": 9.058,
+   "words": [
+    {
+     "text": "The",
+     "start": 6.644,
+     "end": 6.661
+    },
+    {
+     "text": "word",
+     "start": 6.736,
+     "end": 6.963
+    },
+    {
+     "text": "leaves",
+     "start": 7.038,
+     "end": 7.189
+    },
+    {
+     "text": "your",
+     "start": 7.265,
+     "end": 7.415
+    },
+    {
+     "text": "mouth",
+     "start": 7.566,
+     "end": 7.717
+    },
+    {
+     "text": "before",
+     "start": 7.868,
+     "end": 8.019
+    },
+    {
+     "text": "you",
+     "start": 8.057,
+     "end": 8.095
+    },
+    {
+     "text": "can",
+     "start": 8.17,
+     "end": 8.321
+    },
+    {
+     "text": "stop",
+     "start": 8.397,
+     "end": 8.623
+    },
+    {
+     "text": "it.",
+     "start": 8.736,
+     "end": 9.058
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE WORD",
+     "start": 6.644,
+     "word_idx": 0,
+     "end": 7.038
+    },
+    {
+     "text": "LEAVES YOUR MOUTH",
+     "start": 7.038,
+     "word_idx": 2,
+     "end": 7.868
+    },
+    {
+     "text": "BEFORE YOU",
+     "start": 7.868,
+     "word_idx": 5,
+     "end": 8.17
+    },
+    {
+     "text": "CAN {STOP IT.}",
+     "start": 8.17,
+     "word_idx": 7,
+     "end": 9.178
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "Behind the door, the pages stop.",
+   "src_start": 8.812,
+   "src_end": 10.65,
+   "start": 9.508,
+   "end": 11.346,
+   "words": [
+    {
+     "text": "Behind",
+     "start": 9.558,
+     "end": 9.602
+    },
+    {
+     "text": "the",
+     "start": 9.677,
+     "end": 9.753
+    },
+    {
+     "text": "door,",
+     "start": 9.904,
+     "end": 10.206
+    },
+    {
+     "text": "the",
+     "start": 10.357,
+     "end": 10.432
+    },
+    {
+     "text": "pages",
+     "start": 10.621,
+     "end": 10.809
+    },
+    {
+     "text": "stop.",
+     "start": 10.885,
+     "end": 11.346
+    }
+   ],
+   "captions": [
+    {
+     "text": "BEHIND THE DOOR,",
+     "start": 9.558,
+     "word_idx": 0,
+     "end": 10.357
+    },
+    {
+     "text": "THE PAGES {STOP.}",
+     "start": 10.357,
+     "word_idx": 3,
+     "end": 11.466
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "A pen scratches. Slow. Like it's learning how to spell you.",
+   "src_start": 11.023,
+   "src_end": 15.07,
+   "start": 11.796,
+   "end": 15.844,
+   "words": [
+    {
+     "text": "A",
+     "start": 11.846,
+     "end": 11.868
+    },
+    {
+     "text": "pen",
+     "start": 11.981,
+     "end": 12.094
+    },
+    {
+     "text": "scratches.",
+     "start": 12.17,
+     "end": 13.075
+    },
+    {
+     "text": "Slow.",
+     "start": 13.302,
+     "end": 14.132
+    },
+    {
+     "text": "Like",
+     "start": 14.208,
+     "end": 14.283
+    },
+    {
+     "text": "it's",
+     "start": 14.358,
+     "end": 14.509
+    },
+    {
+     "text": "learning",
+     "start": 14.585,
+     "end": 14.887
+    },
+    {
+     "text": "how",
+     "start": 14.962,
+     "end": 15.038
+    },
+    {
+     "text": "to",
+     "start": 15.113,
+     "end": 15.189
+    },
+    {
+     "text": "spell",
+     "start": 15.34,
+     "end": 15.491
+    },
+    {
+     "text": "you.",
+     "start": 15.566,
+     "end": 15.792
+    }
+   ],
+   "captions": [
+    {
+     "text": "A PEN SCRATCHES.",
+     "start": 11.846,
+     "word_idx": 0,
+     "end": 13.302
+    },
+    {
+     "text": "SLOW.",
+     "start": 13.302,
+     "word_idx": 3,
+     "end": 14.208
+    },
+    {
+     "text": "LIKE IT'S LEARNING HOW",
+     "start": 14.208,
+     "word_idx": 4,
+     "end": 15.113
+    },
+    {
+     "text": "TO {SPELL YOU.}",
+     "start": 15.113,
+     "word_idx": 8,
+     "end": 15.964
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Then the feet walk on.",
+   "src_start": 15.422,
+   "src_end": 16.82,
+   "start": 16.294,
+   "end": 17.692,
+   "words": [
+    {
+     "text": "Then",
+     "start": 16.344,
+     "end": 16.495
+    },
+    {
+     "text": "the",
+     "start": 16.57,
+     "end": 16.645
+    },
+    {
+     "text": "feet",
+     "start": 16.721,
+     "end": 16.947
+    },
+    {
+     "text": "walk",
+     "start": 17.061,
+     "end": 17.174
+    },
+    {
+     "text": "on.",
+     "start": 17.249,
+     "end": 17.692
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN THE",
+     "start": 16.344,
+     "word_idx": 0,
+     "end": 16.721
+    },
+    {
+     "text": "FEET WALK ON.",
+     "start": 16.721,
+     "word_idx": 2,
+     "end": 17.812
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "Fourteen. Fifteen. Sixteen. Then nothing.",
+   "src_start": 17.201,
+   "src_end": 20.73,
+   "start": 18.042,
+   "end": 21.571,
+   "words": [
+    {
+     "text": "Fourteen.",
+     "start": 18.092,
+     "end": 18.803
+    },
+    {
+     "text": "Fifteen.",
+     "start": 18.841,
+     "end": 19.709
+    },
+    {
+     "text": "Sixteen.",
+     "start": 19.86,
+     "end": 20.69
+    },
+    {
+     "text": "Then",
+     "start": 20.765,
+     "end": 20.916
+    },
+    {
+     "text": "nothing.",
+     "start": 20.992,
+     "end": 21.445
+    }
+   ],
+   "captions": [
+    {
+     "text": "[14.]",
+     "start": 18.092,
+     "word_idx": 0,
+     "end": 18.841
+    },
+    {
+     "text": "[15.]",
+     "start": 18.841,
+     "word_idx": 1,
+     "end": 19.86
+    },
+    {
+     "text": "[16.]",
+     "start": 19.86,
+     "word_idx": 2,
+     "end": 20.765
+    },
+    {
+     "text": "THEN {NOTHING.}",
+     "start": 20.765,
+     "word_idx": 3,
+     "end": 21.691
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Across the room, Kabir hasn't moved.",
+   "src_start": 21.255,
+   "src_end": 23.29,
+   "start": 22.071,
+   "end": 24.106,
+   "words": [
+    {
+     "text": "Across",
+     "start": 22.121,
+     "end": 22.175
+    },
+    {
+     "text": "the",
+     "start": 22.25,
+     "end": 22.288
+    },
+    {
+     "text": "room,",
+     "start": 22.326,
+     "end": 22.854
+    },
+    {
+     "text": "Kabir",
+     "start": 22.929,
+     "end": 23.231
+    },
+    {
+     "text": "hasn't",
+     "start": 23.307,
+     "end": 23.533
+    },
+    {
+     "text": "moved.",
+     "start": 23.609,
+     "end": 24.106
+    }
+   ],
+   "captions": [
+    {
+     "text": "ACROSS THE ROOM,",
+     "start": 22.121,
+     "word_idx": 0,
+     "end": 22.929
+    },
+    {
+     "text": "[KABIR] HASN'T MOVED.",
+     "start": 22.929,
+     "word_idx": 3,
+     "end": 24.226
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "You whisper his name.",
+   "src_start": 23.551,
+   "src_end": 24.59,
+   "start": 24.456,
+   "end": 25.495,
+   "words": [
+    {
+     "text": "You",
+     "start": 24.506,
+     "end": 24.528
+    },
+    {
+     "text": "whisper",
+     "start": 24.566,
+     "end": 24.83
+    },
+    {
+     "text": "his",
+     "start": 24.905,
+     "end": 24.981
+    },
+    {
+     "text": "name.",
+     "start": 25.056,
+     "end": 25.434
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU WHISPER HIS NAME.",
+     "start": 24.506,
+     "word_idx": 0,
+     "end": 25.615
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Nothing. Just the blanket. Rising. Falling. Too slow.",
+   "src_start": 24.856,
+   "src_end": 29.99,
+   "start": 25.945,
+   "end": 31.08,
+   "words": [
+    {
+     "text": "Nothing.",
+     "start": 25.995,
+     "end": 26.448
+    },
+    {
+     "text": "Just",
+     "start": 26.825,
+     "end": 26.976
+    },
+    {
+     "text": "the",
+     "start": 27.014,
+     "end": 27.052
+    },
+    {
+     "text": "blanket.",
+     "start": 27.203,
+     "end": 27.769
+    },
+    {
+     "text": "Rising.",
+     "start": 27.958,
+     "end": 28.561
+    },
+    {
+     "text": "Falling.",
+     "start": 28.939,
+     "end": 29.542
+    },
+    {
+     "text": "Too",
+     "start": 30.146,
+     "end": 30.222
+    },
+    {
+     "text": "slow.",
+     "start": 30.373,
+     "end": 30.976
+    }
+   ],
+   "captions": [
+    {
+     "text": "NOTHING.",
+     "start": 25.995,
+     "word_idx": 0,
+     "end": 26.825
+    },
+    {
+     "text": "JUST THE BLANKET.",
+     "start": 26.825,
+     "word_idx": 1,
+     "end": 27.958
+    },
+    {
+     "text": "RISING.",
+     "start": 27.958,
+     "word_idx": 4,
+     "end": 28.939
+    },
+    {
+     "text": "FALLING.",
+     "start": 28.939,
+     "word_idx": 5,
+     "end": 30.146
+    },
+    {
+     "text": "{TOO SLOW.}",
+     "start": 30.146,
+     "word_idx": 6,
+     "end": 31.2
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "Twelve forty. The group pings.",
+   "src_start": 30.355,
+   "src_end": 32.3,
+   "start": 31.63,
+   "end": 33.575,
+   "words": [
+    {
+     "text": "Twelve",
+     "start": 31.68,
+     "end": 31.841
+    },
+    {
+     "text": "forty.",
+     "start": 31.992,
+     "end": 32.671
+    },
+    {
+     "text": "The",
+     "start": 32.709,
+     "end": 32.747
+    },
+    {
+     "text": "group",
+     "start": 32.86,
+     "end": 32.973
+    },
+    {
+     "text": "pings.",
+     "start": 33.048,
+     "end": 33.501
+    }
+   ],
+   "captions": [
+    {
+     "text": "[12:40.]",
+     "start": 31.68,
+     "word_idx": 0,
+     "end": 32.709
+    },
+    {
+     "text": "THE GROUP [PINGS.]",
+     "start": 32.709,
+     "word_idx": 2,
+     "end": 33.695
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "Who answered in thirteen?",
+   "src_start": 32.608,
+   "src_end": 33.83,
+   "start": 33.925,
+   "end": 35.147,
+   "words": [
+    {
+     "text": "Who",
+     "start": 33.975,
+     "end": 33.997
+    },
+    {
+     "text": "answered",
+     "start": 34.148,
+     "end": 34.298
+    },
+    {
+     "text": "in",
+     "start": 34.374,
+     "end": 34.449
+    },
+    {
+     "text": "thirteen?",
+     "start": 34.525,
+     "end": 35.147
+    }
+   ],
+   "captions": [
+    {
+     "text": "WHO ANSWERED",
+     "start": 33.975,
+     "word_idx": 0,
+     "end": 34.374
+    },
+    {
+     "text": "IN [13?]",
+     "start": 34.374,
+     "word_idx": 2,
+     "end": 35.267
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "New guys always answer.",
+   "src_start": 34.063,
+   "src_end": 35.51,
+   "start": 35.497,
+   "end": 36.944,
+   "words": [
+    {
+     "text": "New",
+     "start": 35.547,
+     "end": 35.623
+    },
+    {
+     "text": "guys",
+     "start": 35.698,
+     "end": 36.0
+    },
+    {
+     "text": "always",
+     "start": 36.189,
+     "end": 36.378
+    },
+    {
+     "text": "answer.",
+     "start": 36.604,
+     "end": 36.944
+    }
+   ],
+   "captions": [
+    {
+     "text": "NEW GUYS",
+     "start": 35.547,
+     "word_idx": 0,
+     "end": 36.189
+    },
+    {
+     "text": "ALWAYS {ANSWER.}",
+     "start": 36.189,
+     "word_idx": 2,
+     "end": 37.064
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "Then Dev sends a photo. Tonight's register.",
+   "src_start": 35.842,
+   "src_end": 38.27,
+   "start": 37.394,
+   "end": 39.822,
+   "words": [
+    {
+     "text": "Then",
+     "start": 37.444,
+     "end": 37.476
+    },
+    {
+     "text": "Dev",
+     "start": 37.552,
+     "end": 37.778
+    },
+    {
+     "text": "sends",
+     "start": 37.854,
+     "end": 38.005
+    },
+    {
+     "text": "a",
+     "start": 38.08,
+     "end": 38.118
+    },
+    {
+     "text": "photo.",
+     "start": 38.155,
+     "end": 38.684
+    },
+    {
+     "text": "Tonight's",
+     "start": 38.835,
+     "end": 39.174
+    },
+    {
+     "text": "register.",
+     "start": 39.212,
+     "end": 39.74
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN DEV SENDS",
+     "start": 37.444,
+     "word_idx": 0,
+     "end": 38.08
+    },
+    {
+     "text": "A PHOTO.",
+     "start": 38.08,
+     "word_idx": 3,
+     "end": 38.835
+    },
+    {
+     "text": "TONIGHT'S [REGISTER.]",
+     "start": 38.835,
+     "word_idx": 5,
+     "end": 39.942
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "Every name, in blue ink.",
+   "src_start": 38.624,
+   "src_end": 40.18,
+   "start": 40.222,
+   "end": 41.778,
+   "words": [
+    {
+     "text": "Every",
+     "start": 40.272,
+     "end": 40.315
+    },
+    {
+     "text": "name,",
+     "start": 40.391,
+     "end": 40.919
+    },
+    {
+     "text": "in",
+     "start": 40.957,
+     "end": 40.994
+    },
+    {
+     "text": "blue",
+     "start": 41.07,
+     "end": 41.296
+    },
+    {
+     "text": "ink.",
+     "start": 41.372,
+     "end": 41.778
+    }
+   ],
+   "captions": [
+    {
+     "text": "EVERY NAME,",
+     "start": 40.272,
+     "word_idx": 0,
+     "end": 40.957
+    },
+    {
+     "text": "IN [BLUE INK.]",
+     "start": 40.957,
+     "word_idx": 2,
+     "end": 41.898
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "Except one. Room thirteen. In red.",
+   "src_start": 40.651,
+   "src_end": 43.43,
+   "start": 42.078,
+   "end": 44.857,
+   "words": [
+    {
+     "text": "Except",
+     "start": 42.128,
+     "end": 42.182
+    },
+    {
+     "text": "one.",
+     "start": 42.333,
+     "end": 42.635
+    },
+    {
+     "text": "Room",
+     "start": 43.012,
+     "end": 43.163
+    },
+    {
+     "text": "thirteen.",
+     "start": 43.314,
+     "end": 44.22
+    },
+    {
+     "text": "In",
+     "start": 44.295,
+     "end": 44.371
+    },
+    {
+     "text": "red.",
+     "start": 44.446,
+     "end": 44.857
+    }
+   ],
+   "captions": [
+    {
+     "text": "EXCEPT ONE.",
+     "start": 42.128,
+     "word_idx": 0,
+     "end": 43.012
+    },
+    {
+     "text": "ROOM [13.]",
+     "start": 43.012,
+     "word_idx": 2,
+     "end": 44.295
+    },
+    {
+     "text": "IN {RED.}",
+     "start": 44.295,
+     "word_idx": 4,
+     "end": 44.977
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "Your name. In handwriting you've never seen.",
+   "src_start": 43.648,
+   "src_end": 46.3,
+   "start": 45.257,
+   "end": 47.909,
+   "words": [
+    {
+     "text": "Your",
+     "start": 45.307,
+     "end": 45.458
+    },
+    {
+     "text": "name.",
+     "start": 45.534,
+     "end": 46.062
+    },
+    {
+     "text": "In",
+     "start": 46.137,
+     "end": 46.213
+    },
+    {
+     "text": "handwriting",
+     "start": 46.288,
+     "end": 46.817
+    },
+    {
+     "text": "you've",
+     "start": 46.854,
+     "end": 47.118
+    },
+    {
+     "text": "never",
+     "start": 47.232,
+     "end": 47.345
+    },
+    {
+     "text": "seen.",
+     "start": 47.496,
+     "end": 47.909
+    }
+   ],
+   "captions": [
+    {
+     "text": "{YOUR NAME.}",
+     "start": 45.307,
+     "word_idx": 0,
+     "end": 46.137
+    },
+    {
+     "text": "IN HANDWRITING",
+     "start": 46.137,
+     "word_idx": 2,
+     "end": 46.854
+    },
+    {
+     "text": "YOU'VE NEVER SEEN.",
+     "start": 46.854,
+     "word_idx": 4,
+     "end": 48.029
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "Dev types. Red ink means it has your voice now.",
+   "src_start": 46.441,
+   "src_end": 49.4,
+   "start": 48.409,
+   "end": 51.368,
+   "words": [
+    {
+     "text": "Dev",
+     "start": 48.459,
+     "end": 48.61
+    },
+    {
+     "text": "types.",
+     "start": 48.685,
+     "end": 49.289
+    },
+    {
+     "text": "Red",
+     "start": 49.44,
+     "end": 49.591
+    },
+    {
+     "text": "ink",
+     "start": 49.667,
+     "end": 49.818
+    },
+    {
+     "text": "means",
+     "start": 49.893,
+     "end": 50.044
+    },
+    {
+     "text": "it",
+     "start": 50.119,
+     "end": 50.195
+    },
+    {
+     "text": "has",
+     "start": 50.27,
+     "end": 50.346
+    },
+    {
+     "text": "your",
+     "start": 50.421,
+     "end": 50.572
+    },
+    {
+     "text": "voice",
+     "start": 50.648,
+     "end": 50.95
+    },
+    {
+     "text": "now.",
+     "start": 51.101,
+     "end": 51.368
+    }
+   ],
+   "captions": [
+    {
+     "text": "DEV TYPES.",
+     "start": 48.459,
+     "word_idx": 0,
+     "end": 49.44
+    },
+    {
+     "text": "RED INK MEANS",
+     "start": 49.44,
+     "word_idx": 2,
+     "end": 50.119
+    },
+    {
+     "text": "IT HAS {YOUR VOICE} NOW.",
+     "start": 50.119,
+     "word_idx": 5,
+     "end": 51.488
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Don't talk tonight. Not even in your sleep.",
+   "src_start": 49.61,
+   "src_end": 51.99,
+   "start": 51.718,
+   "end": 54.098,
+   "words": [
+    {
+     "text": "Don't",
+     "start": 51.768,
+     "end": 51.919
+    },
+    {
+     "text": "talk",
+     "start": 51.995,
+     "end": 52.146
+    },
+    {
+     "text": "tonight.",
+     "start": 52.221,
+     "end": 52.901
+    },
+    {
+     "text": "Not",
+     "start": 52.976,
+     "end": 53.052
+    },
+    {
+     "text": "even",
+     "start": 53.127,
+     "end": 53.278
+    },
+    {
+     "text": "in",
+     "start": 53.353,
+     "end": 53.429
+    },
+    {
+     "text": "your",
+     "start": 53.504,
+     "end": 53.58
+    },
+    {
+     "text": "sleep.",
+     "start": 53.768,
+     "end": 54.098
+    }
+   ],
+   "captions": [
+    {
+     "text": "DON'T TALK TONIGHT.",
+     "start": 51.768,
+     "word_idx": 0,
+     "end": 52.976
+    },
+    {
+     "text": "NOT EVEN IN YOUR SLEEP.",
+     "start": 52.976,
+     "word_idx": 3,
+     "end": 54.218
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "Then, right at your door...",
+   "src_start": 52.252,
+   "src_end": 53.94,
+   "start": 54.698,
+   "end": 56.386,
+   "words": [
+    {
+     "text": "Then,",
+     "start": 54.748,
+     "end": 55.352
+    },
+    {
+     "text": "right",
+     "start": 55.465,
+     "end": 55.578
+    },
+    {
+     "text": "at",
+     "start": 55.616,
+     "end": 55.654
+    },
+    {
+     "text": "your",
+     "start": 55.729,
+     "end": 55.88
+    },
+    {
+     "text": "door...",
+     "start": 56.031,
+     "end": 56.386
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN, RIGHT AT YOUR DOOR...",
+     "start": 54.748,
+     "word_idx": 0,
+     "end": 56.506
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "A knock.",
+   "src_start": 54.129,
+   "src_end": 54.78,
+   "start": 56.786,
+   "end": 57.437,
+   "words": [
+    {
+     "text": "A",
+     "start": 56.836,
+     "end": 56.846
+    },
+    {
+     "text": "knock.",
+     "start": 56.921,
+     "end": 57.437
+    }
+   ],
+   "captions": [
+    {
+     "text": "A {KNOCK.}",
+     "start": 56.836,
+     "word_idx": 0,
+     "end": 57.557
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "text": "Soft. Three times.",
+   "src_start": 55.044,
+   "src_end": 56.72,
+   "start": 58.687,
+   "end": 60.363,
+   "words": [
+    {
+     "text": "Soft.",
+     "start": 58.737,
+     "end": 59.492
+    },
+    {
+     "text": "Three",
+     "start": 59.567,
+     "end": 59.643
+    },
+    {
+     "text": "times.",
+     "start": 59.718,
+     "end": 60.363
+    }
+   ],
+   "captions": [
+    {
+     "text": "SOFT.",
+     "start": 58.737,
+     "word_idx": 0,
+     "end": 59.567
+    },
+    {
+     "text": "[THREE] TIMES.",
+     "start": 59.567,
+     "word_idx": 1,
+     "end": 60.483
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "text": "Not a fist. Knuckles. Polite.",
+   "src_start": 56.856,
+   "src_end": 59.36,
+   "start": 60.713,
+   "end": 63.217,
+   "words": [
+    {
+     "text": "Not",
+     "start": 60.763,
+     "end": 60.838
+    },
+    {
+     "text": "a",
+     "start": 60.914,
+     "end": 60.989
+    },
+    {
+     "text": "fist.",
+     "start": 61.065,
+     "end": 61.819
+    },
+    {
+     "text": "Knuckles.",
+     "start": 61.857,
+     "end": 62.649
+    },
+    {
+     "text": "Polite.",
+     "start": 62.725,
+     "end": 63.217
+    }
+   ],
+   "captions": [
+    {
+     "text": "NOT A FIST.",
+     "start": 60.763,
+     "word_idx": 0,
+     "end": 61.857
+    },
+    {
+     "text": "KNUCKLES.",
+     "start": 61.857,
+     "word_idx": 3,
+     "end": 62.725
+    },
+    {
+     "text": "{POLITE.}",
+     "start": 62.725,
+     "word_idx": 4,
+     "end": 63.337
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "text": "Rule two. The warden never knocks.",
+   "src_start": 59.573,
+   "src_end": 62.06,
+   "start": 63.717,
+   "end": 66.204,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 63.767,
+     "end": 63.918
+    },
+    {
+     "text": "two.",
+     "start": 64.069,
+     "end": 64.673
+    },
+    {
+     "text": "The",
+     "start": 64.71,
+     "end": 64.748
+    },
+    {
+     "text": "warden",
+     "start": 64.824,
+     "end": 65.276
+    },
+    {
+     "text": "never",
+     "start": 65.352,
+     "end": 65.578
+    },
+    {
+     "text": "knocks.",
+     "start": 65.654,
+     "end": 66.204
+    }
+   ],
+   "captions": [
+    {
+     "text": "RULE [TWO.]",
+     "start": 63.767,
+     "word_idx": 0,
+     "end": 64.71
+    },
+    {
+     "text": "THE WARDEN {NEVER KNOCKS.}",
+     "start": 64.71,
+     "word_idx": 2,
+     "end": 66.324
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "text": "So whatever is knocking... is not the warden.",
+   "src_start": 62.214,
+   "src_end": 64.89,
+   "start": 66.554,
+   "end": 69.23,
+   "words": [
+    {
+     "text": "So",
+     "start": 66.604,
+     "end": 66.68
+    },
+    {
+     "text": "whatever",
+     "start": 66.755,
+     "end": 67.057
+    },
+    {
+     "text": "is",
+     "start": 67.133,
+     "end": 67.208
+    },
+    {
+     "text": "knocking...",
+     "start": 67.284,
+     "end": 68.038
+    },
+    {
+     "text": "is",
+     "start": 68.114,
+     "end": 68.189
+    },
+    {
+     "text": "not",
+     "start": 68.265,
+     "end": 68.491
+    },
+    {
+     "text": "the",
+     "start": 68.567,
+     "end": 68.642
+    },
+    {
+     "text": "warden.",
+     "start": 68.755,
+     "end": 69.23
+    }
+   ],
+   "captions": [
+    {
+     "text": "SO WHATEVER IS",
+     "start": 66.604,
+     "word_idx": 0,
+     "end": 67.284
+    },
+    {
+     "text": "KNOCKING...",
+     "start": 67.284,
+     "word_idx": 3,
+     "end": 68.114
+    },
+    {
+     "text": "IS {NOT} THE WARDEN.",
+     "start": 68.114,
+     "word_idx": 4,
+     "end": 69.35
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "text": "Then it speaks. Through the door.",
+   "src_start": 65.082,
+   "src_end": 67.06,
+   "start": 69.73,
+   "end": 71.708,
+   "words": [
+    {
+     "text": "Then",
+     "start": 69.78,
+     "end": 69.856
+    },
+    {
+     "text": "it",
+     "start": 69.931,
+     "end": 70.007
+    },
+    {
+     "text": "speaks.",
+     "start": 70.082,
+     "end": 70.837
+    },
+    {
+     "text": "Through",
+     "start": 70.95,
+     "end": 71.063
+    },
+    {
+     "text": "the",
+     "start": 71.139,
+     "end": 71.176
+    },
+    {
+     "text": "door.",
+     "start": 71.214,
+     "end": 71.708
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN IT SPEAKS.",
+     "start": 69.78,
+     "word_idx": 0,
+     "end": 70.95
+    },
+    {
+     "text": "THROUGH THE DOOR.",
+     "start": 70.95,
+     "word_idx": 3,
+     "end": 71.828
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "text": "In your voice.",
+   "src_start": 67.271,
+   "src_end": 68.63,
+   "start": 72.108,
+   "end": 73.467,
+   "words": [
+    {
+     "text": "In",
+     "start": 72.158,
+     "end": 72.309
+    },
+    {
+     "text": "your",
+     "start": 72.46,
+     "end": 72.686
+    },
+    {
+     "text": "voice.",
+     "start": 72.762,
+     "end": 73.467
+    }
+   ],
+   "captions": [
+    {
+     "text": "IN {YOUR VOICE.}",
+     "start": 72.158,
+     "word_idx": 0,
+     "end": 73.587
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "text": "Every breath. Every crack. Exactly you.",
+   "src_start": 68.856,
+   "src_end": 72.35,
+   "start": 73.867,
+   "end": 77.362,
+   "words": [
+    {
+     "text": "Every",
+     "start": 73.917,
+     "end": 74.144
+    },
+    {
+     "text": "breath.",
+     "start": 74.295,
+     "end": 75.049
+    },
+    {
+     "text": "Every",
+     "start": 75.163,
+     "end": 75.276
+    },
+    {
+     "text": "crack.",
+     "start": 75.427,
+     "end": 76.182
+    },
+    {
+     "text": "Exactly",
+     "start": 76.521,
+     "end": 76.861
+    },
+    {
+     "text": "you.",
+     "start": 77.012,
+     "end": 77.314
+    }
+   ],
+   "captions": [
+    {
+     "text": "EVERY BREATH.",
+     "start": 73.917,
+     "word_idx": 0,
+     "end": 75.163
+    },
+    {
+     "text": "EVERY CRACK.",
+     "start": 75.163,
+     "word_idx": 2,
+     "end": 76.521
+    },
+    {
+     "text": "{EXACTLY YOU.}",
+     "start": 76.521,
+     "word_idx": 4,
+     "end": 77.482
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "text": "Hey. It's me. Open up. I'm locked out.",
+   "src_start": 72.742,
+   "src_end": 75.33,
+   "start": 77.812,
+   "end": 80.399,
+   "words": [
+    {
+     "text": "Hey.",
+     "start": 77.862,
+     "end": 78.126
+    },
+    {
+     "text": "It's",
+     "start": 78.164,
+     "end": 78.277
+    },
+    {
+     "text": "me.",
+     "start": 78.352,
+     "end": 78.881
+    },
+    {
+     "text": "Open",
+     "start": 78.994,
+     "end": 79.107
+    },
+    {
+     "text": "up.",
+     "start": 79.182,
+     "end": 79.635
+    },
+    {
+     "text": "I'm",
+     "start": 79.661,
+     "end": 79.711
+    },
+    {
+     "text": "locked",
+     "start": 79.786,
+     "end": 80.013
+    },
+    {
+     "text": "out.",
+     "start": 80.088,
+     "end": 80.399
+    }
+   ],
+   "captions": [
+    {
+     "text": "HEY.",
+     "start": 77.862,
+     "word_idx": 0,
+     "end": 78.164
+    },
+    {
+     "text": "IT'S ME.",
+     "start": 78.164,
+     "word_idx": 1,
+     "end": 78.994
+    },
+    {
+     "text": "{OPEN UP.}",
+     "start": 78.994,
+     "word_idx": 3,
+     "end": 79.661
+    },
+    {
+     "text": "I'M LOCKED OUT.",
+     "start": 79.661,
+     "word_idx": 5,
+     "end": 80.519
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "text": "Behind you, Kabir's bed creaks.",
+   "src_start": 75.851,
+   "src_end": 77.72,
+   "start": 80.949,
+   "end": 82.818,
+   "words": [
+    {
+     "text": "Behind",
+     "start": 80.999,
+     "end": 81.023
+    },
+    {
+     "text": "you,",
+     "start": 81.098,
+     "end": 81.4
+    },
+    {
+     "text": "Kabir's",
+     "start": 81.438,
+     "end": 81.853
+    },
+    {
+     "text": "bed",
+     "start": 81.966,
+     "end": 82.079
+    },
+    {
+     "text": "creaks.",
+     "start": 82.23,
+     "end": 82.818
+    }
+   ],
+   "captions": [
+    {
+     "text": "BEHIND YOU,",
+     "start": 80.999,
+     "word_idx": 0,
+     "end": 81.438
+    },
+    {
+     "text": "KABIR'S BED CREAKS.",
+     "start": 81.438,
+     "word_idx": 2,
+     "end": 82.938
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "text": "The blanket is flat. His bed is empty.",
+   "src_start": 77.827,
+   "src_end": 80.48,
+   "start": 83.218,
+   "end": 85.871,
+   "words": [
+    {
+     "text": "The",
+     "start": 83.268,
+     "end": 83.278
+    },
+    {
+     "text": "blanket",
+     "start": 83.353,
+     "end": 83.655
+    },
+    {
+     "text": "is",
+     "start": 83.731,
+     "end": 83.806
+    },
+    {
+     "text": "flat.",
+     "start": 83.882,
+     "end": 84.561
+    },
+    {
+     "text": "His",
+     "start": 84.636,
+     "end": 84.712
+    },
+    {
+     "text": "bed",
+     "start": 84.787,
+     "end": 85.014
+    },
+    {
+     "text": "is",
+     "start": 85.165,
+     "end": 85.24
+    },
+    {
+     "text": "empty.",
+     "start": 85.391,
+     "end": 85.871
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE BLANKET IS",
+     "start": 83.268,
+     "word_idx": 0,
+     "end": 83.882
+    },
+    {
+     "text": "{FLAT.}",
+     "start": 83.882,
+     "word_idx": 3,
+     "end": 84.636
+    },
+    {
+     "text": "HIS BED IS {EMPTY.}",
+     "start": 84.636,
+     "word_idx": 4,
+     "end": 85.991
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "text": "What do you do?",
+   "src_start": 80.698,
+   "src_end": 81.44,
+   "start": 86.421,
+   "end": 87.163,
+   "words": [
+    {
+     "text": "What",
+     "start": 86.471,
+     "end": 86.478
+    },
+    {
+     "text": "do",
+     "start": 86.553,
+     "end": 86.591
+    },
+    {
+     "text": "you",
+     "start": 86.628,
+     "end": 86.704
+    },
+    {
+     "text": "do?",
+     "start": 86.779,
+     "end": 87.163
+    }
+   ],
+   "captions": []
+  }
+ ]
+}

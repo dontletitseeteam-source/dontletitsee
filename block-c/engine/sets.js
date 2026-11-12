@@ -194,7 +194,7 @@ function drawRoom(ctx, t, st = {}) {
     drawStick(ctx, { x: -200, y: 1350, s: 0.92, view: 'front', bust: true, arm: kb.arm || 'down', headDY: -Math.abs(Math.sin(t * 15)) * 12 * laugh, headDX: kb.headDX || 0, fill: C.navy1 });
     blanket(ctx, -300, 230, 42, 0, t);
   } else if (kb.mode === 'lump') {
-    blanket(ctx, -310, 230, 92, kb.shake || 0, t, '#323e7a');
+    blanket(ctx, -310, 230, 92 + (kb.breath || 0) * 26 * Math.sin(t * 2 * Math.PI / 3.2), kb.shake || 0, t, '#323e7a');
   } else blanket(ctx, -310, 230, 6, 0, t, '#222b56');
   // you in your bed (sitting up), or blanket only
   if (st.meBed) {
@@ -460,7 +460,8 @@ function drawDoorGap(ctx, t, st = {}) {
   const g = ctx.createLinearGradient(100, 0, 980, 0); g.addColorStop(0, '#1a2247'); g.addColorStop(1, '#141b3b');
   ctx.fillStyle = g; ctx.fillRect(100, -600, 880, 1830);
   ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = 6; ctx.strokeRect(180, 330, 720, 760);
-  ctx.fillStyle = '#5a6488'; ctx.fillRect(860, 520, 70, 16); ctx.fillRect(900, 496, 18, 64);
+  ctx.save(); ctx.translate(909, 528); ctx.rotate(st.handle || 0); ctx.fillStyle = '#5a6488'; ctx.fillRect(-49, -8, 70, 16); ctx.restore();
+  ctx.fillStyle = '#5a6488'; ctx.fillRect(900, 496, 18, 64);
   // floor
   const fg = ctx.createLinearGradient(0, 1240, 0, 1920); fg.addColorStop(0, '#0b1024'); fg.addColorStop(1, '#03050b');
   ctx.fillStyle = fg; ctx.fillRect(-600, 1240, W + 1200, 1200);

@@ -77,7 +77,7 @@ P2 = [
      [(3, "DON'T TALK TONIGHT."), (5, "NOT EVEN IN YOUR SLEEP.")]),
     ("Then, right at your door...", 0.60, [(5, "THEN, RIGHT AT YOUR DOOR...")]),
     ("A knock.", 0.40, [(2, "A {KNOCK.}")]),
-    ("Soft. Three times.", 0.35, [(1, "SOFT."), (2, "[THREE] TIMES.")]),
+    ("Soft. Three times.", 1.25, [(1, "SOFT."), (2, "[THREE] TIMES.")]),
     ("Not a fist. Knuckles. Polite.", 0.35, [(3, "NOT A FIST."), (1, "KNUCKLES."), (1, "{POLITE.}")]),
     ("Rule two. The warden never knocks.", 0.50, [(2, "RULE [TWO.]"), (4, "THE WARDEN {NEVER KNOCKS.}")]),
     ("So whatever is knocking... is not the warden.", 0.35,
