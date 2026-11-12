@@ -1,7 +1,7 @@
+# BLOCK C — progress log
+
 **Status 2026-11-13 01:50 IST (creator run):** Part 2 built and QUEUED for 2026-11-13. Next: Part 3 (2026-11-14) after
 the Part 2 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-13 done.
-
-# BLOCK C — progress log
 
 **Status 2026-11-12 11:11 IST (creator run):** queue full through 2026-11-12; nothing built. Part 2 (2026-11-13) still waits for the A/B vote on Part 1 (posts today 15:00 IST); build it on/after 2026-11-12 23:00 IST. ANALYTICS review for 2026-11-12 already done.
 
