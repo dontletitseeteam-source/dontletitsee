@@ -1,3 +1,6 @@
+**Status 2026-11-13 01:50 IST (creator run):** Part 2 built and QUEUED for 2026-11-13. Next: Part 3 (2026-11-14) after
+the Part 2 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-13 done.
+
 # BLOCK C — progress log
 
 **Status 2026-11-12 11:11 IST (creator run):** queue full through 2026-11-12; nothing built. Part 2 (2026-11-13) still waits for the A/B vote on Part 1 (posts today 15:00 IST); build it on/after 2026-11-12 23:00 IST. ANALYTICS review for 2026-11-12 already done.
@@ -13,6 +16,31 @@ review done for 2026-11-11 (FLOOR 0 P2 skip rate 71%: Part 2's hook must work wi
 **Status 2026-11-10 01:05 IST (creator run):** queue full through 2026-11-12. Part 2 (2026-11-13) waits for the
 A/B vote on Part 1, which posts 2026-11-12 15:00 IST; build it on/after 2026-11-12 23:00 IST. Apply ANALYTICS
 "Next improvements" #1 (hook in the first 2 s) in Part 2.
+
+## Part 2 "Present" — QUEUED for 2026-11-13 (branch A)
+- Vote on Part 1: **A = 1** (YouTube @dontletitsee, the channel's first comment), B = 0; Instagram 0 comments,
+  @lexter2025 0 comments. Branch A (you answered "Present"). Recap stamp says "YOU SAID A" (one vote, so not "most of you").
+- Output: `outputs/block-c-p2.mp4` (90.8 s, 10.7 MB, −14.3 LUFS) + `outputs/block-c-p2.jpg`; jsDelivr @ `4001efd`
+  (both HTTP 200). Queue id `block-c-p2`.
+- Voice: 1,677 credits (eleven_v4, Jack), transcript 0. 33 lines / 194 words. Files in `block-c/p2/audio/`.
+- **Test #1 applied (hook in the first 2 s):** frame 1 = the red light under the door with two feet shadows, burned-in
+  hook "MY HOSTEL · 12:07 AM / A DEAD WARDEN / KNOWS MY NAME" (0–3.2 s), first VO line is a zero-context hook ("The dead
+  warden of your hostel just called your name."); recap ("YOU SAID A") comes AFTER the hook. Nothing else changed
+  (choice card and CTA as in Part 1) so the test reads cleanly. Compare Part 2's IG skip rate / avg watch with 52-54% / 15 s.
+- Story: "Present" leaves your mouth; pages stop; a pen writes your row in red ink, slowly; the feet walk on past 14, 15,
+  16 into the dark; Kabir under the blanket breathing too slowly; 12:40 group: Dev "who answered in 13?", Arjun "new guys
+  always answer.", Dev sends a photo of tonight's register (all blue P marks, one red row: room 13, your name, circled);
+  Dev: "red ink means it has your voice now" / "don't talk tonight. not even in your sleep."; 12:58 three soft knocks;
+  rule 2 (the warden never knocks) so it is not the warden; it speaks through the door in YOUR voice ("Hey. It's me. Open
+  up. I'm locked out."), the handle turns; behind you Kabir's bed creaks, the blanket is flat, his bed is empty.
+- HUD: PART 2 · 12:07 → 12:09 → 12:40 → 12:58 AM · BATTERY 30→28→27% · ROOM 13 · BLOCK C → **13 · ALONE** (red) ·
+  HEADCOUNT 43 (red) · VOICE YOURS → **NOT YOURS** (red, when Dev says it has your voice).
+- Engine: `sets.js` drawRoom kabir.breath (slow blanket rise), drawDoorGap handle rotation; `part2.js` adds an `overlay`
+  (hook title + recap stamp); mix part2 with synthesized pen scratch + 3 knuckle knocks in the gap.
+- Choice offered: **A) OPEN THE DOOR** (it sounds exactly like you)  **B) LOOK UNDER THE GAP** (see what is standing there).
+- Open threads for Part 3: who/what is outside in your voice; Kabir's bed is empty after ~1 AM (rule 3: don't look under
+  it) — Part 3 per bible: what's outside (feet facing the wrong way / the register on the floor with tomorrow's date), then
+  the empty bed at 1:04 AM, choice A) look under the bed B) leave the room. Votes: Part 2 IG media + YT video in queue.json.
 
 ## Part 1 "The List" — QUEUED for 2026-11-12 (built 2026-11-09 by the cloud creator)
 - Output: `outputs/block-c-p1.mp4` (89.7 s, 11.4 MB, −14.4 LUFS) + `outputs/block-c-p1.jpg`;
