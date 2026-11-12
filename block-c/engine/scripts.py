@@ -46,5 +46,53 @@ P1 = [
 ]
 P1_HOLD = 3.6
 
-LINES = {1: P1}
-HOLD = {1: P1_HOLD}
+P2 = [
+    ("The dead warden of your hostel just called your name.", 0.15,
+     [(3, "THE {DEAD} WARDEN"), (3, "OF YOUR HOSTEL"), (4, "JUST CALLED [YOUR NAME.]")]),
+    ("And you answered.", 0.30, [(3, "AND YOU {ANSWERED.}")]),
+    ("Present.", 0.30, [(1, "[PRESENT.]")]),
+    ("The word leaves your mouth before you can stop it.", 0.40,
+     [(2, "THE WORD"), (3, "LEAVES YOUR MOUTH"), (2, "BEFORE YOU"), (3, "CAN {STOP IT.}")]),
+    ("Behind the door, the pages stop.", 0.45, [(3, "BEHIND THE DOOR,"), (3, "THE PAGES {STOP.}")]),
+    ("A pen scratches. Slow. Like it's learning how to spell you.", 0.45,
+     [(3, "A PEN SCRATCHES."), (1, "SLOW."), (4, "LIKE IT'S LEARNING HOW"), (3, "TO {SPELL YOU.}")]),
+    ("Then the feet walk on.", 0.45, [(2, "THEN THE"), (3, "FEET WALK ON.")]),
+    ("Fourteen. Fifteen. Sixteen. Then nothing.", 0.35, [(1, "[14.]"), (1, "[15.]"), (1, "[16.]"), (2, "THEN {NOTHING.}")]),
+    ("Across the room, Kabir hasn't moved.", 0.50, [(3, "ACROSS THE ROOM,"), (3, "[KABIR] HASN'T MOVED.")]),
+    ("You whisper his name.", 0.35, [(4, "YOU WHISPER HIS NAME.")]),
+    ("Nothing. Just the blanket. Rising. Falling. Too slow.", 0.45,
+     [(1, "NOTHING."), (3, "JUST THE BLANKET."), (1, "RISING."), (1, "FALLING."), (2, "{TOO SLOW.}")]),
+    ("Twelve forty. The group pings.", 0.55, [(2, "[12:40.]"), (3, "THE GROUP [PINGS.]")]),
+    ("Who answered in thirteen?", 0.35, [(2, "WHO ANSWERED"), (2, "IN [13?]")]),
+    ("New guys always answer.", 0.35, [(2, "NEW GUYS"), (2, "ALWAYS {ANSWER.}")]),
+    ("Then Dev sends a photo. Tonight's register.", 0.45,
+     [(3, "THEN DEV SENDS"), (2, "A PHOTO."), (2, "TONIGHT'S [REGISTER.]")]),
+    ("Every name, in blue ink.", 0.40, [(2, "EVERY NAME,"), (3, "IN [BLUE INK.]")]),
+    ("Except one. Room thirteen. In red.", 0.30, [(2, "EXCEPT ONE."), (2, "ROOM [13.]"), (2, "IN {RED.}")]),
+    ("Your name. In handwriting you've never seen.", 0.40,
+     [(2, "{YOUR NAME.}"), (2, "IN HANDWRITING"), (3, "YOU'VE NEVER SEEN.")]),
+    ("Dev types. Red ink means it has your voice now.", 0.50,
+     [(2, "DEV TYPES."), (3, "RED INK MEANS"), (5, "IT HAS {YOUR VOICE} NOW.")]),
+    ("Don't talk tonight. Not even in your sleep.", 0.35,
+     [(3, "DON'T TALK TONIGHT."), (5, "NOT EVEN IN YOUR SLEEP.")]),
+    ("Then, right at your door...", 0.60, [(5, "THEN, RIGHT AT YOUR DOOR...")]),
+    ("A knock.", 0.40, [(2, "A {KNOCK.}")]),
+    ("Soft. Three times.", 0.35, [(1, "SOFT."), (2, "[THREE] TIMES.")]),
+    ("Not a fist. Knuckles. Polite.", 0.35, [(3, "NOT A FIST."), (1, "KNUCKLES."), (1, "{POLITE.}")]),
+    ("Rule two. The warden never knocks.", 0.50, [(2, "RULE [TWO.]"), (4, "THE WARDEN {NEVER KNOCKS.}")]),
+    ("So whatever is knocking... is not the warden.", 0.35,
+     [(3, "SO WHATEVER IS"), (1, "KNOCKING..."), (4, "IS {NOT} THE WARDEN.")]),
+    ("Then it speaks. Through the door.", 0.50, [(3, "THEN IT SPEAKS."), (3, "THROUGH THE DOOR.")]),
+    ("In your voice.", 0.40, [(3, "IN {YOUR VOICE.}")]),
+    ("Every breath. Every crack. Exactly you.", 0.40, [(2, "EVERY BREATH."), (2, "EVERY CRACK."), (2, "{EXACTLY YOU.}")]),
+    ("Hey. It's me. Open up. I'm locked out.", 0.45,
+     [(1, "HEY."), (2, "IT'S ME."), (2, "{OPEN UP.}"), (3, "I'M LOCKED OUT.")]),
+    ("Behind you, Kabir's bed creaks.", 0.55, [(2, "BEHIND YOU,"), (3, "KABIR'S BED CREAKS.")]),
+    ("The blanket is flat. His bed is empty.", 0.40,
+     [(3, "THE BLANKET IS"), (1, "{FLAT.}"), (4, "HIS BED IS {EMPTY.}")]),
+    ("What do you do?", 0.55, []),
+]
+P2_HOLD = 3.6
+
+LINES = {1: P1, 2: P2}
+HOLD = {1: P1_HOLD, 2: P2_HOLD}
