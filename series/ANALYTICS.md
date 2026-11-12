@@ -15,6 +15,30 @@ How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric t
    series name after the bar. Not a test lever; just the standard.
 
 ## Day log
+## 2026-11-13 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 82 | 793 | 638 | 17 | 2 | 0 / 0 | 17.2 s | 46.9% |
+| floor0-p2 | Instagram (media 17961343959258765) | 58 | 176 | 151 | 2 | 0 | 0 / 0 | 7.5 s | 72.4% |
+| floor0-p3 | Instagram (media 18139990045726049) | 34 | 138 | 113 | 1 | 0 | 0 / 0 | 12.4 s | 52.5% |
+| block-c-p1 | Instagram (media 17998129476019732) | 10 | 137 | 106 | 0 | 0 | 0 / 0 | 15.2 s | 54.1% |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 82 | 186 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 58 | 431 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 34 | 47 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 10 | 298 | n/a | 10 | 1 ("A") | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 59 | 16 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 58 | 16 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 34 | 147 | n/a | 1 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @lexter2025 (OkUHaOECktc) | 10 | 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- BLOCK C P1 (a new series opener) still got only 106 IG reach at 10 h, same as the sequels (110-151): IG reach has
+  settled at ~100-150 per reel; FLOOR 0 P1's 638 was the new-account boost, not "Part 1" magic. Growth on IG must
+  come from a lower skip rate (now 52-72% on every reel after the first) -> hook test #1 starts in Part 2 as planned.
+- YouTube @dontletitsee is now the strongest channel: BLOCK C P1 298 views + 10 likes in 10 h (best start yet) and the
+  channel's FIRST comment, an A vote. The hook-sentence title + the spoken A/B card can pull replies on YT.
+- @lexter2025 BLOCK C P1 shows 0 views at 10 h (may still be processing/unlisted); 3 of 4 posts there sit at ~16.
+- IG avg watch 15.2 s on a 90 s reel: viewers still leave before the story turns; keep the threat on screen early.
 ## 2026-11-12 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
