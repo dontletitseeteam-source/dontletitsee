@@ -3,18 +3,47 @@
 How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric that is not available.
 
 ## Next improvements (max 3, read before writing every script)
-1. **Hook in the first 2 seconds** (the one change being tested now): open on the scariest image of the part
-   with a short burned-in hook line on screen from frame 1 (no slow establishing shot, no logo/plate first).
-   Goal: IG skip rate below 47.5% and avg watch above 17.0 s. First part that can carry it: BLOCK C Part 2.
-   Must work with ZERO context (FLOOR 0 P2 had 71% skip): a stranger who never saw the previous part should get
-   the threat in one line; recap after the hook, never before it.
-2. (queued, test after #1) Stronger comment CTA: put the A/B choice card ~5 s before the end and say the
-   letters out loud in the VO, not only on screen (FLOOR 0 P1: 1 comment on 626 IG views).
-3. (keep) YouTube hook titles: P2 with the hook title "I went home. Someone was already there." has 413 views vs
-   180 for P1's bare manual title on @dontletitsee. Keep every yt_title a self-contained hook sentence first,
-   series name after the bar. Not a test lever; just the standard.
+1. **Stronger comment CTA** (the one change being tested now, from BLOCK C Part 3): the narrator SAYS the letters
+   out loud ("A: open it. B: run. Comment A or B.") over the choice card, the card lands ~6-8 s before the end and
+   stays up to the last frame. Goal: any A/B comments on IG (0 so far on 5 posts) and more than 1 on YouTube.
+2. (standard now, keep) **Zero-context hook in the first 2 s**: scariest image + burned-in hook line on frame 1,
+   first VO line a self-contained threat, recap after the hook. Test #1 result (Part 2): IG avg watch 21.6 s, best
+   ever (P1 15.8 s), skip rate unchanged (55.2% vs 53.6%). Next hook lever (queued, after #1): a SHORTER on-screen
+   hook (max 6 words) + motion in frame 1, to attack the 3-second skip rate.
+3. (keep) YouTube hook titles: a self-contained hook sentence first, series name after the bar.
 
 ## Day log
+## 2026-11-14 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 106 | 795 | 638 | 17 | 2 | 0 / 0 | 17.2 s | 46.9% |
+| floor0-p2 | Instagram (media 17961343959258765) | 82 | 180 | 154 | 2 | 0 | 0 / 0 | 7.7 s | 72.3% |
+| floor0-p3 | Instagram (media 18139990045726049) | 58 | 140 | 114 | 1 | 0 | 0 / 0 | 12.7 s | 52.1% |
+| block-c-p1 | Instagram (media 17998129476019732) | 34 | 139 | 107 | 0 | 0 | 0 / 0 | 15.8 s | 53.6% |
+| block-c-p2 | Instagram (media 18120370895001266) | 10 | 144 | 108 | 3 | 0 | 0 / 0 | **21.6 s** | 55.2% |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 106 | 186 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 82 | 437 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 58 | 281 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 34 | 340 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 10 | 110 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 83 | 16 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 82 | 16 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 58 | 147 | n/a | 1 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @lexter2025 (OkUHaOECktc) | 34 | 3 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @lexter2025 (9VpoKsAuj_Y) | 10 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- Hook test #1 (Part 2) read-out: IG avg watch 21.6 s, the best of all 5 reels (P1 15.8, FLOOR 0 P1 17.2) and +36% over
+  the series opener; the 3-second skip rate did NOT move (55.2% vs 52-54%). The zero-context hook keeps the people who
+  stay; it does not yet stop the swipe. Hook-first becomes the standard; the skip rate needs a later, separate lever.
+- IG reach is flat at ~105-115 per reel regardless of content (4 reels in a row): reach follows watch time and shares,
+  and we still have 0 saves / 0 shares / 0 comments on every reel after the first. Comments are the weakest signal.
+- Part 2 drew 0 A/B votes on all 3 platforms (Part 1 drew 1). The on-screen-only card is not pulling replies -> test #2
+  (spoken A/B letters + earlier, longer card) goes into Part 3; nothing else in the format changes.
+- YouTube @dontletitsee: Part 2 110 views at 10 h vs Part 1 298 at 10 h; FLOOR 0 P3 kept climbing (47 -> 281), so YT
+  Shorts views arrive late; do not judge a YT title before ~34 h.
+- @lexter2025: BLOCK C P1 3 views and P2 1 view, vs 16-147 for FLOOR 0: the uploads there look nearly invisible to the
+  feed (worth the owner checking the channel's visibility/Shorts settings); nothing the creator can change.
 ## 2026-11-13 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
