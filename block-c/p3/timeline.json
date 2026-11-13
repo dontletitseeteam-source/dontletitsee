@@ -1,0 +1,1748 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 84.723,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Something outside your hostel room is talking in your voice.",
+   "src_start": 0.176,
+   "src_end": 3.42,
+   "start": 0.15,
+   "end": 3.394,
+   "words": [
+    {
+     "text": "Something",
+     "start": 0.2,
+     "end": 0.502
+    },
+    {
+     "text": "outside",
+     "start": 0.577,
+     "end": 0.955
+    },
+    {
+     "text": "your",
+     "start": 1.03,
+     "end": 1.106
+    },
+    {
+     "text": "hostel",
+     "start": 1.181,
+     "end": 1.558
+    },
+    {
+     "text": "room",
+     "start": 1.634,
+     "end": 1.785
+    },
+    {
+     "text": "is",
+     "start": 1.86,
+     "end": 2.011
+    },
+    {
+     "text": "talking",
+     "start": 2.087,
+     "end": 2.389
+    },
+    {
+     "text": "in",
+     "start": 2.464,
+     "end": 2.54
+    },
+    {
+     "text": "your",
+     "start": 2.653,
+     "end": 2.766
+    },
+    {
+     "text": "voice.",
+     "start": 2.992,
+     "end": 3.394
+    }
+   ],
+   "captions": [
+    {
+     "text": "SOMETHING OUTSIDE",
+     "start": 0.2,
+     "word_idx": 0,
+     "end": 1.03
+    },
+    {
+     "text": "YOUR HOSTEL ROOM",
+     "start": 1.03,
+     "word_idx": 2,
+     "end": 1.86
+    },
+    {
+     "text": "IS TALKING IN {YOUR VOICE.}",
+     "start": 1.86,
+     "word_idx": 5,
+     "end": 3.514
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "And you just opened the door.",
+   "src_start": 3.875,
+   "src_end": 5.66,
+   "start": 3.694,
+   "end": 5.479,
+   "words": [
+    {
+     "text": "And",
+     "start": 3.744,
+     "end": 3.895
+    },
+    {
+     "text": "you",
+     "start": 3.97,
+     "end": 4.121
+    },
+    {
+     "text": "just",
+     "start": 4.196,
+     "end": 4.423
+    },
+    {
+     "text": "opened",
+     "start": 4.498,
+     "end": 4.725
+    },
+    {
+     "text": "the",
+     "start": 4.8,
+     "end": 4.876
+    },
+    {
+     "text": "door.",
+     "start": 5.027,
+     "end": 5.442
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND YOU JUST",
+     "start": 3.744,
+     "word_idx": 0,
+     "end": 4.498
+    },
+    {
+     "text": "{OPENED} THE DOOR.",
+     "start": 4.498,
+     "word_idx": 3,
+     "end": 5.599
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "The bolt slides. The door swings in.",
+   "src_start": 5.966,
+   "src_end": 8.46,
+   "start": 5.879,
+   "end": 8.373,
+   "words": [
+    {
+     "text": "The",
+     "start": 5.929,
+     "end": 5.951
+    },
+    {
+     "text": "bolt",
+     "start": 6.064,
+     "end": 6.177
+    },
+    {
+     "text": "slides.",
+     "start": 6.328,
+     "end": 7.208
+    },
+    {
+     "text": "The",
+     "start": 7.259,
+     "end": 7.309
+    },
+    {
+     "text": "door",
+     "start": 7.46,
+     "end": 7.611
+    },
+    {
+     "text": "swings",
+     "start": 7.649,
+     "end": 7.913
+    },
+    {
+     "text": "in.",
+     "start": 7.988,
+     "end": 8.373
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE BOLT SLIDES.",
+     "start": 5.929,
+     "word_idx": 0,
+     "end": 7.259
+    },
+    {
+     "text": "THE DOOR SWINGS IN.",
+     "start": 7.259,
+     "word_idx": 3,
+     "end": 8.493
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "Nobody.",
+   "src_start": 9.374,
+   "src_end": 9.69,
+   "start": 9.223,
+   "end": 9.539,
+   "words": [
+    {
+     "text": "Nobody.",
+     "start": 9.273,
+     "end": 9.539
+    }
+   ],
+   "captions": [
+    {
+     "text": "{NOBODY.}",
+     "start": 9.273,
+     "word_idx": 0,
+     "end": 9.659
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "The corridor is empty. Every tube light dead. Every door shut.",
+   "src_start": 9.988,
+   "src_end": 14.26,
+   "start": 9.939,
+   "end": 14.212,
+   "words": [
+    {
+     "text": "The",
+     "start": 9.989,
+     "end": 10.065
+    },
+    {
+     "text": "corridor",
+     "start": 10.14,
+     "end": 10.518
+    },
+    {
+     "text": "is",
+     "start": 10.593,
+     "end": 10.669
+    },
+    {
+     "text": "empty.",
+     "start": 10.744,
+     "end": 11.537
+    },
+    {
+     "text": "Every",
+     "start": 11.574,
+     "end": 11.801
+    },
+    {
+     "text": "tube",
+     "start": 11.876,
+     "end": 12.103
+    },
+    {
+     "text": "light",
+     "start": 12.178,
+     "end": 12.405
+    },
+    {
+     "text": "dead.",
+     "start": 12.48,
+     "end": 13.084
+    },
+    {
+     "text": "Every",
+     "start": 13.159,
+     "end": 13.386
+    },
+    {
+     "text": "door",
+     "start": 13.461,
+     "end": 13.688
+    },
+    {
+     "text": "shut.",
+     "start": 13.763,
+     "end": 14.212
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE CORRIDOR IS",
+     "start": 9.989,
+     "word_idx": 0,
+     "end": 10.744
+    },
+    {
+     "text": "[EMPTY.]",
+     "start": 10.744,
+     "word_idx": 3,
+     "end": 11.574
+    },
+    {
+     "text": "EVERY TUBE LIGHT DEAD.",
+     "start": 11.574,
+     "word_idx": 4,
+     "end": 13.159
+    },
+    {
+     "text": "EVERY DOOR SHUT.",
+     "start": 13.159,
+     "word_idx": 8,
+     "end": 14.332
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "No footsteps. No breathing. Nothing.",
+   "src_start": 14.516,
+   "src_end": 17.24,
+   "start": 14.612,
+   "end": 17.336,
+   "words": [
+    {
+     "text": "No",
+     "start": 14.662,
+     "end": 14.813
+    },
+    {
+     "text": "footsteps.",
+     "start": 14.926,
+     "end": 15.744
+    },
+    {
+     "text": "No",
+     "start": 15.768,
+     "end": 15.794
+    },
+    {
+     "text": "breathing.",
+     "start": 15.945,
+     "end": 16.737
+    },
+    {
+     "text": "Nothing.",
+     "start": 16.775,
+     "end": 17.336
+    }
+   ],
+   "captions": [
+    {
+     "text": "NO FOOTSTEPS.",
+     "start": 14.662,
+     "word_idx": 0,
+     "end": 15.768
+    },
+    {
+     "text": "NO BREATHING.",
+     "start": 15.768,
+     "word_idx": 2,
+     "end": 16.775
+    },
+    {
+     "text": "{NOTHING.}",
+     "start": 16.775,
+     "word_idx": 4,
+     "end": 17.456
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Whatever spoke a second ago is gone.",
+   "src_start": 17.79,
+   "src_end": 19.56,
+   "start": 17.736,
+   "end": 19.506,
+   "words": [
+    {
+     "text": "Whatever",
+     "start": 17.786,
+     "end": 17.833
+    },
+    {
+     "text": "spoke",
+     "start": 17.908,
+     "end": 18.059
+    },
+    {
+     "text": "a",
+     "start": 18.135,
+     "end": 18.21
+    },
+    {
+     "text": "second",
+     "start": 18.361,
+     "end": 18.512
+    },
+    {
+     "text": "ago",
+     "start": 18.625,
+     "end": 18.738
+    },
+    {
+     "text": "is",
+     "start": 18.852,
+     "end": 18.965
+    },
+    {
+     "text": "gone.",
+     "start": 19.154,
+     "end": 19.506
+    }
+   ],
+   "captions": [
+    {
+     "text": "WHATEVER SPOKE A",
+     "start": 17.786,
+     "word_idx": 0,
+     "end": 18.361
+    },
+    {
+     "text": "SECOND AGO",
+     "start": 18.361,
+     "word_idx": 3,
+     "end": 18.852
+    },
+    {
+     "text": "IS {GONE.}",
+     "start": 18.852,
+     "word_idx": 5,
+     "end": 19.626
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "Then you look down.",
+   "src_start": 20.004,
+   "src_end": 21.0,
+   "start": 20.056,
+   "end": 21.052,
+   "words": [
+    {
+     "text": "Then",
+     "start": 20.106,
+     "end": 20.128
+    },
+    {
+     "text": "you",
+     "start": 20.203,
+     "end": 20.279
+    },
+    {
+     "text": "look",
+     "start": 20.354,
+     "end": 20.43
+    },
+    {
+     "text": "down.",
+     "start": 20.505,
+     "end": 21.052
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN YOU LOOK [DOWN.]",
+     "start": 20.106,
+     "word_idx": 0,
+     "end": 21.172
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "At your feet, lying open, is the register.",
+   "src_start": 21.158,
+   "src_end": 23.86,
+   "start": 21.452,
+   "end": 24.155,
+   "words": [
+    {
+     "text": "At",
+     "start": 21.502,
+     "end": 21.578
+    },
+    {
+     "text": "your",
+     "start": 21.653,
+     "end": 21.804
+    },
+    {
+     "text": "feet,",
+     "start": 21.88,
+     "end": 22.332
+    },
+    {
+     "text": "lying",
+     "start": 22.408,
+     "end": 22.634
+    },
+    {
+     "text": "open,",
+     "start": 22.71,
+     "end": 23.238
+    },
+    {
+     "text": "is",
+     "start": 23.314,
+     "end": 23.389
+    },
+    {
+     "text": "the",
+     "start": 23.427,
+     "end": 23.465
+    },
+    {
+     "text": "register.",
+     "start": 23.54,
+     "end": 24.155
+    }
+   ],
+   "captions": [
+    {
+     "text": "AT YOUR FEET,",
+     "start": 21.502,
+     "word_idx": 0,
+     "end": 22.408
+    },
+    {
+     "text": "LYING OPEN,",
+     "start": 22.408,
+     "word_idx": 3,
+     "end": 23.314
+    },
+    {
+     "text": "IS THE [REGISTER.]",
+     "start": 23.314,
+     "word_idx": 5,
+     "end": 24.275
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "You pick it up. The date at the top is wrong.",
+   "src_start": 24.101,
+   "src_end": 26.67,
+   "start": 24.605,
+   "end": 27.174,
+   "words": [
+    {
+     "text": "You",
+     "start": 24.655,
+     "end": 24.73
+    },
+    {
+     "text": "pick",
+     "start": 24.806,
+     "end": 24.881
+    },
+    {
+     "text": "it",
+     "start": 24.957,
+     "end": 25.032
+    },
+    {
+     "text": "up.",
+     "start": 25.108,
+     "end": 25.686
+    },
+    {
+     "text": "The",
+     "start": 25.737,
+     "end": 25.787
+    },
+    {
+     "text": "date",
+     "start": 25.862,
+     "end": 25.938
+    },
+    {
+     "text": "at",
+     "start": 26.013,
+     "end": 26.089
+    },
+    {
+     "text": "the",
+     "start": 26.126,
+     "end": 26.164
+    },
+    {
+     "text": "top",
+     "start": 26.24,
+     "end": 26.466
+    },
+    {
+     "text": "is",
+     "start": 26.542,
+     "end": 26.617
+    },
+    {
+     "text": "wrong.",
+     "start": 26.692,
+     "end": 27.174
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU PICK IT UP.",
+     "start": 24.655,
+     "word_idx": 0,
+     "end": 25.737
+    },
+    {
+     "text": "THE DATE AT",
+     "start": 25.737,
+     "word_idx": 4,
+     "end": 26.126
+    },
+    {
+     "text": "THE TOP IS {WRONG.}",
+     "start": 26.126,
+     "word_idx": 7,
+     "end": 27.294
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Fourteen eleven. Tomorrow.",
+   "src_start": 26.969,
+   "src_end": 29.41,
+   "start": 27.524,
+   "end": 29.965,
+   "words": [
+    {
+     "text": "Fourteen",
+     "start": 27.574,
+     "end": 28.027
+    },
+    {
+     "text": "eleven.",
+     "start": 28.253,
+     "end": 29.196
+    },
+    {
+     "text": "Tomorrow.",
+     "start": 29.234,
+     "end": 29.965
+    }
+   ],
+   "captions": [
+    {
+     "text": "[14 / 11.]",
+     "start": 27.574,
+     "word_idx": 0,
+     "end": 29.234
+    },
+    {
+     "text": "{TOMORROW.}",
+     "start": 29.234,
+     "word_idx": 2,
+     "end": 30.085
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "Room thirteen. Your name. Already in red.",
+   "src_start": 29.761,
+   "src_end": 33.1,
+   "start": 30.365,
+   "end": 33.704,
+   "words": [
+    {
+     "text": "Room",
+     "start": 30.415,
+     "end": 30.641
+    },
+    {
+     "text": "thirteen.",
+     "start": 30.717,
+     "end": 31.66
+    },
+    {
+     "text": "Your",
+     "start": 31.698,
+     "end": 31.924
+    },
+    {
+     "text": "name.",
+     "start": 32.075,
+     "end": 32.604
+    },
+    {
+     "text": "Already",
+     "start": 32.679,
+     "end": 33.056
+    },
+    {
+     "text": "in",
+     "start": 33.132,
+     "end": 33.207
+    },
+    {
+     "text": "red.",
+     "start": 33.283,
+     "end": 33.704
+    }
+   ],
+   "captions": [
+    {
+     "text": "ROOM [13.]",
+     "start": 30.415,
+     "word_idx": 0,
+     "end": 31.698
+    },
+    {
+     "text": "YOUR NAME.",
+     "start": 31.698,
+     "word_idx": 2,
+     "end": 32.679
+    },
+    {
+     "text": "ALREADY IN {RED.}",
+     "start": 32.679,
+     "word_idx": 4,
+     "end": 33.824
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "And where the mark should be, one word.",
+   "src_start": 33.308,
+   "src_end": 35.52,
+   "start": 34.104,
+   "end": 36.315,
+   "words": [
+    {
+     "text": "And",
+     "start": 34.154,
+     "end": 34.229
+    },
+    {
+     "text": "where",
+     "start": 34.305,
+     "end": 34.38
+    },
+    {
+     "text": "the",
+     "start": 34.455,
+     "end": 34.531
+    },
+    {
+     "text": "mark",
+     "start": 34.606,
+     "end": 34.757
+    },
+    {
+     "text": "should",
+     "start": 34.833,
+     "end": 34.984
+    },
+    {
+     "text": "be,",
+     "start": 35.059,
+     "end": 35.625
+    },
+    {
+     "text": "one",
+     "start": 35.663,
+     "end": 35.814
+    },
+    {
+     "text": "word.",
+     "start": 35.965,
+     "end": 36.315
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND WHERE",
+     "start": 34.154,
+     "word_idx": 0,
+     "end": 34.455
+    },
+    {
+     "text": "THE MARK SHOULD BE,",
+     "start": 34.455,
+     "word_idx": 2,
+     "end": 35.663
+    },
+    {
+     "text": "ONE WORD.",
+     "start": 35.663,
+     "word_idx": 6,
+     "end": 36.435
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "Left.",
+   "src_start": 35.799,
+   "src_end": 36.46,
+   "start": 37.315,
+   "end": 37.976,
+   "words": [
+    {
+     "text": "Left.",
+     "start": 37.365,
+     "end": 37.976
+    }
+   ],
+   "captions": [
+    {
+     "text": "{LEFT.}",
+     "start": 37.365,
+     "word_idx": 0,
+     "end": 38.096
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "Not absent. Not late. Left.",
+   "src_start": 36.78,
+   "src_end": 39.27,
+   "start": 38.376,
+   "end": 40.866,
+   "words": [
+    {
+     "text": "Not",
+     "start": 38.426,
+     "end": 38.577
+    },
+    {
+     "text": "absent.",
+     "start": 38.652,
+     "end": 39.332
+    },
+    {
+     "text": "Not",
+     "start": 39.445,
+     "end": 39.558
+    },
+    {
+     "text": "late.",
+     "start": 39.634,
+     "end": 40.313
+    },
+    {
+     "text": "Left.",
+     "start": 40.539,
+     "end": 40.866
+    }
+   ],
+   "captions": [
+    {
+     "text": "NOT ABSENT.",
+     "start": 38.426,
+     "word_idx": 0,
+     "end": 39.445
+    },
+    {
+     "text": "NOT LATE.",
+     "start": 39.445,
+     "word_idx": 2,
+     "end": 40.539
+    },
+    {
+     "text": "{LEFT.}",
+     "start": 40.539,
+     "word_idx": 4,
+     "end": 40.986
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "You slam the door. Bolt it. Back against it.",
+   "src_start": 39.629,
+   "src_end": 42.18,
+   "start": 41.316,
+   "end": 43.867,
+   "words": [
+    {
+     "text": "You",
+     "start": 41.366,
+     "end": 41.385
+    },
+    {
+     "text": "slam",
+     "start": 41.46,
+     "end": 41.687
+    },
+    {
+     "text": "the",
+     "start": 41.762,
+     "end": 41.838
+    },
+    {
+     "text": "door.",
+     "start": 41.951,
+     "end": 42.366
+    },
+    {
+     "text": "Bolt",
+     "start": 42.441,
+     "end": 42.592
+    },
+    {
+     "text": "it.",
+     "start": 42.668,
+     "end": 43.02
+    },
+    {
+     "text": "Back",
+     "start": 43.071,
+     "end": 43.121
+    },
+    {
+     "text": "against",
+     "start": 43.196,
+     "end": 43.573
+    },
+    {
+     "text": "it.",
+     "start": 43.649,
+     "end": 43.867
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU SLAM THE DOOR.",
+     "start": 41.366,
+     "word_idx": 0,
+     "end": 42.441
+    },
+    {
+     "text": "BOLT IT.",
+     "start": 42.441,
+     "word_idx": 4,
+     "end": 43.071
+    },
+    {
+     "text": "BACK AGAINST IT.",
+     "start": 43.071,
+     "word_idx": 6,
+     "end": 43.987
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "One oh four.",
+   "src_start": 42.441,
+   "src_end": 43.32,
+   "start": 44.817,
+   "end": 45.696,
+   "words": [
+    {
+     "text": "One",
+     "start": 44.867,
+     "end": 44.942
+    },
+    {
+     "text": "oh",
+     "start": 45.018,
+     "end": 45.168
+    },
+    {
+     "text": "four.",
+     "start": 45.319,
+     "end": 45.696
+    }
+   ],
+   "captions": [
+    {
+     "text": "[1:04 AM.]",
+     "start": 44.867,
+     "word_idx": 0,
+     "end": 45.816
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "Rule three. If your roommate's bed is empty after one, don't look under it.",
+   "src_start": 43.497,
+   "src_end": 47.9,
+   "start": 46.096,
+   "end": 50.499,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 46.146,
+     "end": 46.297
+    },
+    {
+     "text": "three.",
+     "start": 46.448,
+     "end": 47.102
+    },
+    {
+     "text": "If",
+     "start": 47.153,
+     "end": 47.203
+    },
+    {
+     "text": "your",
+     "start": 47.278,
+     "end": 47.354
+    },
+    {
+     "text": "roommate's",
+     "start": 47.429,
+     "end": 47.806
+    },
+    {
+     "text": "bed",
+     "start": 47.882,
+     "end": 47.957
+    },
+    {
+     "text": "is",
+     "start": 48.033,
+     "end": 48.108
+    },
+    {
+     "text": "empty",
+     "start": 48.184,
+     "end": 48.41
+    },
+    {
+     "text": "after",
+     "start": 48.486,
+     "end": 48.788
+    },
+    {
+     "text": "one,",
+     "start": 48.863,
+     "end": 49.354
+    },
+    {
+     "text": "don't",
+     "start": 49.391,
+     "end": 49.618
+    },
+    {
+     "text": "look",
+     "start": 49.693,
+     "end": 49.769
+    },
+    {
+     "text": "under",
+     "start": 49.844,
+     "end": 50.071
+    },
+    {
+     "text": "it.",
+     "start": 50.335,
+     "end": 50.499
+    }
+   ],
+   "captions": [
+    {
+     "text": "RULE [THREE.]",
+     "start": 46.146,
+     "word_idx": 0,
+     "end": 47.153
+    },
+    {
+     "text": "IF YOUR ROOMMATE'S",
+     "start": 47.153,
+     "word_idx": 2,
+     "end": 47.882
+    },
+    {
+     "text": "BED IS {EMPTY} AFTER",
+     "start": 47.882,
+     "word_idx": 5,
+     "end": 48.863
+    },
+    {
+     "text": "ONE,",
+     "start": 48.863,
+     "word_idx": 9,
+     "end": 49.391
+    },
+    {
+     "text": "DON'T {LOOK UNDER} IT.",
+     "start": 49.391,
+     "word_idx": 10,
+     "end": 50.619
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "Your phone buzzes. Kabir.",
+   "src_start": 48.025,
+   "src_end": 49.64,
+   "start": 50.999,
+   "end": 52.613,
+   "words": [
+    {
+     "text": "Your",
+     "start": 51.049,
+     "end": 51.2
+    },
+    {
+     "text": "phone",
+     "start": 51.313,
+     "end": 51.426
+    },
+    {
+     "text": "buzzes.",
+     "start": 51.539,
+     "end": 52.131
+    },
+    {
+     "text": "Kabir.",
+     "start": 52.155,
+     "end": 52.613
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR PHONE BUZZES.",
+     "start": 51.049,
+     "word_idx": 0,
+     "end": 52.155
+    },
+    {
+     "text": "[KABIR.]",
+     "start": 52.155,
+     "word_idx": 3,
+     "end": 52.733
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Bro where are you? I'm in the washroom since twelve.",
+   "src_start": 49.837,
+   "src_end": 52.34,
+   "start": 53.013,
+   "end": 55.517,
+   "words": [
+    {
+     "text": "Bro",
+     "start": 53.063,
+     "end": 53.29
+    },
+    {
+     "text": "where",
+     "start": 53.365,
+     "end": 53.441
+    },
+    {
+     "text": "are",
+     "start": 53.516,
+     "end": 53.592
+    },
+    {
+     "text": "you?",
+     "start": 53.667,
+     "end": 54.063
+    },
+    {
+     "text": "I'm",
+     "start": 54.082,
+     "end": 54.12
+    },
+    {
+     "text": "in",
+     "start": 54.195,
+     "end": 54.233
+    },
+    {
+     "text": "the",
+     "start": 54.271,
+     "end": 54.346
+    },
+    {
+     "text": "washroom",
+     "start": 54.46,
+     "end": 54.724
+    },
+    {
+     "text": "since",
+     "start": 54.799,
+     "end": 54.95
+    },
+    {
+     "text": "twelve.",
+     "start": 55.026,
+     "end": 55.517
+    }
+   ],
+   "captions": [
+    {
+     "text": "BRO WHERE ARE YOU?",
+     "start": 53.063,
+     "word_idx": 0,
+     "end": 54.082
+    },
+    {
+     "text": "I'M IN THE [WASHROOM]",
+     "start": 54.082,
+     "word_idx": 4,
+     "end": 54.799
+    },
+    {
+     "text": "SINCE [12.]",
+     "start": 54.799,
+     "word_idx": 8,
+     "end": 55.637
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "Don't open the door for anyone. It does voices.",
+   "src_start": 52.478,
+   "src_end": 55.38,
+   "start": 55.917,
+   "end": 58.818,
+   "words": [
+    {
+     "text": "Don't",
+     "start": 55.967,
+     "end": 56.193
+    },
+    {
+     "text": "open",
+     "start": 56.306,
+     "end": 56.419
+    },
+    {
+     "text": "the",
+     "start": 56.495,
+     "end": 56.57
+    },
+    {
+     "text": "door",
+     "start": 56.684,
+     "end": 56.797
+    },
+    {
+     "text": "for",
+     "start": 56.91,
+     "end": 57.023
+    },
+    {
+     "text": "anyone.",
+     "start": 57.099,
+     "end": 57.74
+    },
+    {
+     "text": "It",
+     "start": 57.778,
+     "end": 57.853
+    },
+    {
+     "text": "does",
+     "start": 57.929,
+     "end": 58.155
+    },
+    {
+     "text": "voices.",
+     "start": 58.608,
+     "end": 58.818
+    }
+   ],
+   "captions": [
+    {
+     "text": "DON'T OPEN THE",
+     "start": 55.967,
+     "word_idx": 0,
+     "end": 56.684
+    },
+    {
+     "text": "DOOR FOR ANYONE.",
+     "start": 56.684,
+     "word_idx": 3,
+     "end": 57.778
+    },
+    {
+     "text": "IT DOES {VOICES.}",
+     "start": 57.778,
+     "word_idx": 6,
+     "end": 58.938
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "Since twelve.",
+   "src_start": 55.648,
+   "src_end": 56.82,
+   "start": 59.218,
+   "end": 60.39,
+   "words": [
+    {
+     "text": "Since",
+     "start": 59.268,
+     "end": 59.57
+    },
+    {
+     "text": "twelve.",
+     "start": 59.646,
+     "end": 60.39
+    }
+   ],
+   "captions": [
+    {
+     "text": "SINCE {12.}",
+     "start": 59.268,
+     "word_idx": 0,
+     "end": 60.51
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "text": "So who was breathing under his blanket all night?",
+   "src_start": 57.082,
+   "src_end": 59.43,
+   "start": 60.84,
+   "end": 63.188,
+   "words": [
+    {
+     "text": "So",
+     "start": 60.89,
+     "end": 61.041
+    },
+    {
+     "text": "who",
+     "start": 61.117,
+     "end": 61.192
+    },
+    {
+     "text": "was",
+     "start": 61.268,
+     "end": 61.418
+    },
+    {
+     "text": "breathing",
+     "start": 61.494,
+     "end": 61.796
+    },
+    {
+     "text": "under",
+     "start": 61.871,
+     "end": 61.947
+    },
+    {
+     "text": "his",
+     "start": 62.06,
+     "end": 62.173
+    },
+    {
+     "text": "blanket",
+     "start": 62.286,
+     "end": 62.551
+    },
+    {
+     "text": "all",
+     "start": 62.626,
+     "end": 62.702
+    },
+    {
+     "text": "night?",
+     "start": 62.852,
+     "end": 63.188
+    }
+   ],
+   "captions": [
+    {
+     "text": "SO WHO WAS",
+     "start": 60.89,
+     "word_idx": 0,
+     "end": 61.494
+    },
+    {
+     "text": "{BREATHING}",
+     "start": 61.494,
+     "word_idx": 3,
+     "end": 61.871
+    },
+    {
+     "text": "UNDER HIS BLANKET ALL NIGHT?",
+     "start": 61.871,
+     "word_idx": 4,
+     "end": 63.308
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "text": "Then, from under his bed, a breath.",
+   "src_start": 59.648,
+   "src_end": 62.13,
+   "start": 64.088,
+   "end": 66.57,
+   "words": [
+    {
+     "text": "Then,",
+     "start": 64.138,
+     "end": 64.716
+    },
+    {
+     "text": "from",
+     "start": 64.767,
+     "end": 64.817
+    },
+    {
+     "text": "under",
+     "start": 64.893,
+     "end": 65.044
+    },
+    {
+     "text": "his",
+     "start": 65.157,
+     "end": 65.27
+    },
+    {
+     "text": "bed,",
+     "start": 65.572,
+     "end": 65.912
+    },
+    {
+     "text": "a",
+     "start": 65.949,
+     "end": 66.025
+    },
+    {
+     "text": "breath.",
+     "start": 66.1,
+     "end": 66.57
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN, FROM UNDER",
+     "start": 64.138,
+     "word_idx": 0,
+     "end": 65.157
+    },
+    {
+     "text": "HIS BED,",
+     "start": 65.157,
+     "word_idx": 3,
+     "end": 65.949
+    },
+    {
+     "text": "A {BREATH.}",
+     "start": 65.949,
+     "word_idx": 5,
+     "end": 66.69
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "text": "Slow. Too slow.",
+   "src_start": 62.441,
+   "src_end": 64.35,
+   "start": 66.97,
+   "end": 68.879,
+   "words": [
+    {
+     "text": "Slow.",
+     "start": 67.02,
+     "end": 67.888
+    },
+    {
+     "text": "Too",
+     "start": 67.926,
+     "end": 68.228
+    },
+    {
+     "text": "slow.",
+     "start": 68.303,
+     "end": 68.879
+    }
+   ],
+   "captions": [
+    {
+     "text": "SLOW.",
+     "start": 67.02,
+     "word_idx": 0,
+     "end": 67.926
+    },
+    {
+     "text": "{TOO SLOW.}",
+     "start": 67.926,
+     "word_idx": 1,
+     "end": 68.999
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "text": "And a whisper, in Kabir's voice.",
+   "src_start": 64.478,
+   "src_end": 66.61,
+   "start": 69.329,
+   "end": 71.461,
+   "words": [
+    {
+     "text": "And",
+     "start": 69.379,
+     "end": 69.455
+    },
+    {
+     "text": "a",
+     "start": 69.53,
+     "end": 69.606
+    },
+    {
+     "text": "whisper,",
+     "start": 69.644,
+     "end": 70.323
+    },
+    {
+     "text": "in",
+     "start": 70.361,
+     "end": 70.436
+    },
+    {
+     "text": "Kabir's",
+     "start": 70.512,
+     "end": 70.889
+    },
+    {
+     "text": "voice.",
+     "start": 70.964,
+     "end": 71.461
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND A WHISPER,",
+     "start": 69.379,
+     "word_idx": 0,
+     "end": 70.361
+    },
+    {
+     "text": "IN [KABIR'S] VOICE.",
+     "start": 70.361,
+     "word_idx": 3,
+     "end": 71.581
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "text": "Don't look. Just come closer.",
+   "src_start": 66.818,
+   "src_end": 68.64,
+   "start": 71.861,
+   "end": 73.683,
+   "words": [
+    {
+     "text": "Don't",
+     "start": 71.911,
+     "end": 72.062
+    },
+    {
+     "text": "look.",
+     "start": 72.138,
+     "end": 72.741
+    },
+    {
+     "text": "Just",
+     "start": 72.817,
+     "end": 72.892
+    },
+    {
+     "text": "come",
+     "start": 72.968,
+     "end": 73.043
+    },
+    {
+     "text": "closer.",
+     "start": 73.119,
+     "end": 73.683
+    }
+   ],
+   "captions": [
+    {
+     "text": "DON'T LOOK.",
+     "start": 71.911,
+     "word_idx": 0,
+     "end": 72.817
+    },
+    {
+     "text": "JUST {COME CLOSER.}",
+     "start": 72.817,
+     "word_idx": 2,
+     "end": 73.803
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "text": "What do you do?",
+   "src_start": 68.856,
+   "src_end": 69.66,
+   "start": 74.583,
+   "end": 75.388,
+   "words": [
+    {
+     "text": "What",
+     "start": 74.633,
+     "end": 74.709
+    },
+    {
+     "text": "do",
+     "start": 74.746,
+     "end": 74.784
+    },
+    {
+     "text": "you",
+     "start": 74.86,
+     "end": 74.935
+    },
+    {
+     "text": "do?",
+     "start": 75.048,
+     "end": 75.388
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 29,
+   "text": "A. Look under the bed.",
+   "src_start": 69.912,
+   "src_end": 71.47,
+   "start": 75.738,
+   "end": 77.295,
+   "words": [
+    {
+     "text": "A.",
+     "start": 75.788,
+     "end": 76.278
+    },
+    {
+     "text": "Look",
+     "start": 76.316,
+     "end": 76.467
+    },
+    {
+     "text": "under",
+     "start": 76.542,
+     "end": 76.693
+    },
+    {
+     "text": "the",
+     "start": 76.769,
+     "end": 76.844
+    },
+    {
+     "text": "bed.",
+     "start": 76.995,
+     "end": 77.295
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 30,
+   "text": "B. Get out of the room.",
+   "src_start": 71.648,
+   "src_end": 73.2,
+   "start": 77.595,
+   "end": 79.147,
+   "words": [
+    {
+     "text": "B.",
+     "start": 77.645,
+     "end": 78.211
+    },
+    {
+     "text": "Get",
+     "start": 78.249,
+     "end": 78.325
+    },
+    {
+     "text": "out",
+     "start": 78.4,
+     "end": 78.475
+    },
+    {
+     "text": "of",
+     "start": 78.513,
+     "end": 78.551
+    },
+    {
+     "text": "the",
+     "start": 78.626,
+     "end": 78.702
+    },
+    {
+     "text": "room.",
+     "start": 78.853,
+     "end": 79.147
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 31,
+   "text": "Comment A or B.",
+   "src_start": 73.384,
+   "src_end": 74.81,
+   "start": 79.497,
+   "end": 80.923,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 79.547,
+     "end": 79.925
+    },
+    {
+     "text": "A",
+     "start": 80.151,
+     "end": 80.302
+    },
+    {
+     "text": "or",
+     "start": 80.377,
+     "end": 80.528
+    },
+    {
+     "text": "B.",
+     "start": 80.642,
+     "end": 80.923
+    }
+   ],
+   "captions": []
+  }
+ ]
+}

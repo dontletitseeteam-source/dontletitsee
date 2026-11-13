@@ -259,7 +259,74 @@ def part2():
     return m1, hum
 
 
-music, beds = {1: part1, 2: part2}[PART]()
+def part3():
+    slam_w = load("door_slam_wood.mp3"); creak = load("door_creak.mp3"); dopen = load("door_open.mp3")
+    sent = load("sent.mp3")
+    bolt = noise_burst(0.28, 900, 5000, 7, 0.02) * 0.7
+    page = noise_burst(0.32, 1500, 7000, 3, 0.02) * 0.6
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    m1 = np.pad(load("music_p3.mp3"), ((0, N), (0, 0)))[:N] * automation([
+        (0, -13), (K["opened"], -15), (K["swings"] - 0.2, -24), (K["nobody"] + 0.4, -17), (K["corridor"], -16),
+        (K["gone"], -18), (K["feet"], -15), (K["pick"], -16), (K["tomorrow"], -12), (K["room13"], -15), (K["mark"], -18),
+        (K["left"] - 0.1, -30), (K["left"] + 0.5, -11), (K["notAbs"], -14), (K["slam"], -15), (K["time"], -18),
+        (K["rule"], -14), (K["buzz"], -17), (K["since"], -13), (K["flash"], -15), (K["under"] - 0.2, -28), (K["under"] + 0.6, -18),
+        (K["whisper"], -14), (K["closer"], -16), (K["comeW"], -11), (K["choice"], -13), (DUR - 1.4, -14), (DUR, -40)])
+    hum = bed("hum.mp3", "lowpass=f=700") * automation([(0, -16), (K["nobody"], -22), (K["slam"], -16), (DUR, -16)])
+    # hook: hit on frame 1, handle rattling
+    place(boom, 0.0, -10, fo=0.8, maxlen=2.2)
+    place(stinger, 0.0, -14, fo=0.6, maxlen=1.4)
+    place(heartbeat, 0.3, -18, fi=0.3, fo=0.6, maxlen=3.0)
+    place(creak, 0.4, -16, fo=0.4, maxlen=1.2)
+    place(boom, K["openedW"], -15, fo=0.6, maxlen=1.4)
+    place(bolt, K["slides"] - 0.05, -6)
+    place(dopen, K["swings"] - 0.1, -10, fo=0.5, maxlen=2.0)
+    place(creak, K["swings"], -12, fo=0.5, maxlen=1.6)
+    place(whisper, K["nobody"] - 0.1, -20, fi=0.3, fo=0.6, maxlen=1.6)
+    place(boom, K["dead"], -18, fo=0.6, maxlen=1.4)
+    place(boom, K["nothing"], -16, fo=0.8, maxlen=1.8)
+    place(riser, K["down"] - 0.2, -24, fi=0.8, fo=0.3, maxlen=K["regW"] - K["down"] + 0.2)
+    place(stinger, K["regW"] - 0.03, -13, fo=0.5, maxlen=1.0)
+    place(page, K["pick"] + 0.05, -8); place(page, K["pick"] + 0.5, -10)
+    place(boom, K["wrong"], -15, fo=0.6, maxlen=1.4)
+    place(stinger, K["tomorrow"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(boom, K["tomorrow"], -12, fo=0.6, maxlen=1.8)
+    place(boom, K["red"], -15, fo=0.6, maxlen=1.4)
+    place(heartbeat, K["mark"] + 0.1, -16, fi=0.3, fo=0.3, maxlen=K["left"] - K["mark"])
+    place(riser, K["left"] - 0.06 - len(riser) / SR, -18, fi=2.0, fo=0.004)
+    place(slam_w, K["left"] - 0.02, -12)
+    place(boom, K["left"], -7, fo=0.6, maxlen=2.4)
+    place(stinger, K["left"], -10, fo=0.6, maxlen=1.4)
+    place(boom, K["left2"], -15, fo=0.6, maxlen=1.4)
+    place(slam_w, K["slamW"] - 0.02, -5)
+    place(boom, K["slamW"], -10, fo=0.6, maxlen=1.6)
+    place(bolt, K["boltW"] - 0.05, -5)
+    place(heartbeat, K["backW"], -15, fi=0.2, fo=0.6, maxlen=K["rule"] - K["backW"])
+    place(tick_soft, K["time"] + 0.05, -10)
+    place(boom, K["lookW"], -13, fo=0.6, maxlen=1.6)
+    place(buzz, K["buzzW"] - 0.03, -20, maxlen=0.6, fo=0.15)
+    place(sent, K["buzzW"], -10); place(sent, K["m1"], -11); place(sent, K["m2"], -11)
+    place(boom, K["voicesW"], -14, fo=0.6, maxlen=1.6)
+    place(stinger, K["since"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(boom, K["since"], -12, fo=0.6, maxlen=1.8)
+    place(shutter, K["flash"] - 0.02, -12)
+    place(boom, K["breathingW"], -14, fo=0.6, maxlen=1.6)
+    # the breath under the bed: slow, low, in the gaps
+    for tt in [K["under"] - 0.7, K["breathW"] + 0.75, K["slow"] + 2.1]:
+        place(breath, tt, -12, fi=0.4, fo=0.6, maxlen=1.6)
+    place(heartbeat, K["slow"], -15, fi=0.3, fo=0.6, maxlen=K["closer"] - K["slow"])
+    place(whisper, K["whisper"] + 0.2, -15, fi=0.3, fo=0.6, maxlen=1.8)
+    place(stinger, K["kvoice"] - 0.03, -10, fo=0.5, maxlen=1.2)
+    place(boom, K["kvoice"], -12, fo=0.6, maxlen=1.8)
+    place(creak, K["closer"] + 0.2, -16, fo=0.4, maxlen=1.2)
+    place(riser, K["comeW"] - 0.06 - len(riser) / SR, -18, fi=2.0, fo=0.004)
+    place(boom, K["comeW"], -8, fo=0.6, maxlen=2.2)
+    place(boom, K["choice"] - 0.1, -16, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, hum
+
+
+music, beds = {1: part1, 2: part2, 3: part3}[PART]()
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

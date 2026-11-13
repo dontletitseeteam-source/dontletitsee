@@ -99,7 +99,7 @@ P3 = [
      [(2, "SOMETHING OUTSIDE"), (3, "YOUR HOSTEL ROOM"), (5, "IS TALKING IN {YOUR VOICE.}")]),
     ("And you just opened the door.", 0.30, [(3, "AND YOU JUST"), (3, "{OPENED} THE DOOR.")]),
     ("The bolt slides. The door swings in.", 0.40, [(3, "THE BOLT SLIDES."), (4, "THE DOOR SWINGS IN.")]),
-    ("Nobody.", 0.45, [(1, "{NOBODY.}")]),
+    ("Nobody.", 0.85, [(1, "{NOBODY.}")]),
     ("The corridor is empty. Every tube light dead. Every door shut.", 0.40,
      [(3, "THE CORRIDOR IS"), (1, "[EMPTY.]"), (4, "EVERY TUBE LIGHT DEAD."), (3, "EVERY DOOR SHUT.")]),
     ("No footsteps. No breathing. Nothing.", 0.40, [(2, "NO FOOTSTEPS."), (2, "NO BREATHING."), (1, "{NOTHING.}")]),
@@ -114,11 +114,11 @@ P3 = [
      [(2, "ROOM [13.]"), (2, "YOUR NAME."), (3, "ALREADY IN {RED.}")]),
     ("And where the mark should be, one word.", 0.40,
      [(2, "AND WHERE"), (4, "THE MARK SHOULD BE,"), (2, "ONE WORD.")]),
-    ("Left.", 0.70, [(1, "{LEFT.}")]),
+    ("Left.", 1.00, [(1, "{LEFT.}")]),
     ("Not absent. Not late. Left.", 0.40, [(2, "NOT ABSENT."), (2, "NOT LATE."), (1, "{LEFT.}")]),
     ("You slam the door. Bolt it. Back against it.", 0.45,
      [(4, "YOU SLAM THE DOOR."), (2, "BOLT IT."), (3, "BACK AGAINST IT.")]),
-    ("One oh four.", 0.55, [(3, "[1:04 AM.]")]),
+    ("One oh four.", 0.95, [(3, "[1:04 AM.]")]),
     ("Rule three. If your roommate's bed is empty after one, don't look under it.", 0.40,
      [(2, "RULE [THREE.]"), (3, "IF YOUR ROOMMATE'S"), (4, "BED IS {EMPTY} AFTER"), (1, "ONE,"), (4, "DON'T {LOOK UNDER} IT.")]),
     ("Your phone buzzes. Kabir.", 0.50, [(3, "YOUR PHONE BUZZES."), (1, "[KABIR.]")]),
@@ -129,16 +129,16 @@ P3 = [
     ("Since twelve.", 0.40, [(2, "SINCE {12.}")]),
     ("So who was breathing under his blanket all night?", 0.45,
      [(3, "SO WHO WAS"), (1, "{BREATHING}"), (5, "UNDER HIS BLANKET ALL NIGHT?")]),
-    ("Then, from under his bed, a breath.", 0.55, [(3, "THEN, FROM UNDER"), (2, "HIS BED,"), (2, "A {BREATH.}")]),
+    ("Then, from under his bed, a breath.", 0.90, [(3, "THEN, FROM UNDER"), (2, "HIS BED,"), (2, "A {BREATH.}")]),
     ("Slow. Too slow.", 0.40, [(1, "SLOW."), (2, "{TOO SLOW.}")]),
     ("And a whisper, in Kabir's voice.", 0.45, [(3, "AND A WHISPER,"), (3, "IN [KABIR'S] VOICE.")]),
     ("Don't look. Just come closer.", 0.40, [(2, "DON'T LOOK."), (3, "JUST {COME CLOSER.}")]),
-    ("What do you do?", 0.70, []),
+    ("What do you do?", 0.90, []),
     ("A. Look under the bed.", 0.35, []),
     ("B. Get out of the room.", 0.30, []),
     ("Comment A or B.", 0.35, []),
 ]
-P3_HOLD = 3.4
+P3_HOLD = 3.8
 
 LINES = {1: P1, 2: P2, 3: P3}
 HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD}

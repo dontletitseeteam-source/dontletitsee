@@ -336,7 +336,7 @@ function drawList(ctx, t, st = {}) {
 
 // ---------- GROUP CHAT (overlays the shared phone frame) ----------
 function drawGroupChat(ctx, t, st) {
-  S.drawPhone(ctx, t, { screen: 'chat', bubbles: [], contact: { name: 'BLOCK C', initial: 'C', hl: st.hlName }, sub: st.sub || '42 members · muted', scale: st.scale, shake: st.shake, date: st.date, bg: st.bg });
+  S.drawPhone(ctx, t, { screen: 'chat', bubbles: [], contact: { name: st.name || 'BLOCK C', initial: st.initial || 'C', hl: st.hlName }, sub: st.sub || '42 members · muted', scale: st.scale, shake: st.shake, date: st.date, bg: st.bg });
   const p = S.PH;
   ctx.save();
   const bob = Math.sin(t * 1.3) * 6; const [sx, sy] = st.shake || [0, 0];
@@ -531,6 +531,17 @@ function drawRegister(ctx, t, st = {}) {
     for (let i = 0; i < 60; i++) { const xx = 290 + i * 8.5, yy = y - 14 + Math.sin(i * 1.9) * 26 * (0.5 + hash(i) * 0.6) - (i % 7 === 0 ? 24 : 0); ctx.lineTo(xx, yy); }
     ctx.stroke(); ctx.restore();
   }
+  const mk = clamp(st.mark || 0);
+  if (mk > 0) {
+    ctx.save(); ctx.globalAlpha = mk; ctx.translate(912, y - 22); ctx.rotate(-0.12); const sc = lerp(1.6, 1, E.out(mk)); ctx.scale(sc, sc);
+    ctx.font = '64px Osw700'; ctx.fillStyle = '#c4102a'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('LEFT', 0, 0);
+    ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 5; ctx.strokeRect(-76, -42, 152, 84);
+    ctx.restore();
+  }
+  if (st.dateHL > 0) {
+    ctx.save(); ctx.globalAlpha = clamp(st.dateHL); ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 6;
+    ctx.beginPath(); ctx.ellipse(x1 - 120, 398, 110, 46, -0.05, 0, Math.PI * 2 * clamp(st.dateHL * 1.2)); ctx.stroke(); ctx.restore();
+  }
   const ca = clamp(st.circle || 0);
   if (ca > 0) {
     ctx.save(); ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 7; ctx.beginPath(); ctx.ellipse(905, y - 20, 62, 50, -0.2, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * ca); ctx.stroke(); ctx.restore();
@@ -565,4 +576,104 @@ function drawPlate(ctx, t, st = {}) {
   if (L < 1) { ctx.fillStyle = `rgba(0,0,5,${(1 - L) * 0.6})`; ctx.fillRect(-600, -600, W + 1200, H + 1200); }
 }
 
-module.exports = { drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };
+// ---------- DOORWAY (inside room 13, looking at the door; it swings in onto the dead corridor) ----------
+// st: {open 0..1, bolt 0..1 (slid), book 0..1 (register on the threshold), me {x,y,s} (you, from behind), dark}
+function drawDoorway(ctx, t, st = {}) {
+  const op = clamp(st.open || 0);
+  ctx.fillStyle = '#03040a'; ctx.fillRect(-600, -600, W + 1200, H + 1200);
+  ctx.fillStyle = '#10162e'; ctx.fillRect(-600, -600, W + 1200, 1840);
+  ctx.fillStyle = '#2a3253'; ctx.fillRect(60, -600, 960, 1840);
+  // the corridor beyond (visible through the opening)
+  ctx.save(); ctx.beginPath(); ctx.rect(100, -600, 880, 1840); ctx.clip();
+  ctx.translate(540, 760); ctx.scale(0.58, 0.58); ctx.translate(-540, -860);
+  drawHostelCorridor(ctx, t, { lights: [0, 0, 0, 0, 0], moon: st.moon ?? 0.9, warden: st.warden });
+  ctx.restore();
+  // room floor
+  const fg = ctx.createLinearGradient(0, 1240, 0, 1920); fg.addColorStop(0, '#0b1024'); fg.addColorStop(1, '#03050b');
+  ctx.fillStyle = fg; ctx.fillRect(-600, 1240, W + 1200, 1200);
+  // moonlight spilling in through the opening
+  if (op > 0.05) {
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    const sg = ctx.createLinearGradient(0, 1240, 0, 1920); sg.addColorStop(0, `rgba(90,120,200,${0.22 * op})`); sg.addColorStop(1, 'rgba(90,120,200,0)');
+    poly(ctx, [[100 + 880 * (1 - op) * 0.2, 1240], [980, 1240], [1350, 1920], [-200, 1920]], sg); ctx.restore();
+  }
+  // the register, lying open on the threshold
+  const bk = clamp(st.book || 0);
+  if (bk > 0) {
+    ctx.save(); ctx.globalAlpha = bk; ctx.translate(560, 1268);
+    poly(ctx, [[-170, 0], [0, -12], [0, 40], [-190, 46]], '#a9a495'); poly(ctx, [[0, -12], [170, 0], [190, 46], [0, 40]], '#b9b4a4');
+    ctx.fillStyle = 'rgba(26,33,64,0.55)'; for (let i = 0; i < 4; i++) { ctx.fillRect(-150 + i * 4, 4 + i * 9, 120, 3); ctx.fillRect(24, 4 + i * 9, 120 - i * 6, 3); }
+    ctx.fillStyle = '#c4102a'; ctx.fillRect(30, 34, 110, 4);
+    ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(-2, -12, 4, 52);
+    ctx.restore();
+    glow(ctx, 560, 1280, 260, 'rgba(160,180,240,A)', 0.12 * bk);
+  }
+  // the door panel, hinged on the left, swinging toward you
+  const ang = op * 1.38, sn = Math.sin(ang), cs = Math.cos(ang);
+  const fx = 100 + 880 * cs, top = -600 - 260 * sn, bot = 1240 + 150 * sn;
+  const g = ctx.createLinearGradient(100, 0, Math.max(fx, 101), 0); g.addColorStop(0, '#1a2247'); g.addColorStop(1, op > 0 ? '#0e1430' : '#141b3b');
+  poly(ctx, [[100, -600], [fx, top], [fx, bot], [100, 1240]], g);
+  if (op < 0.02) {
+    ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = 6; ctx.strokeRect(180, 330, 720, 760);
+    // gap strip (dim: the corridor is dead)
+    ctx.fillStyle = 'rgba(90,120,200,0.55)'; ctx.fillRect(100, 1228, 880, 12);
+  }
+  // handle + tower bolt on the free edge
+  const hx = 100 + (909 - 100) * cs, hy = 528 + (top + 600) * 0.3;
+  ctx.fillStyle = '#5a6488'; ctx.fillRect(hx - 9, hy - 32, 18, 64);
+  if (op < 0.3) {
+    const b = clamp(st.bolt ?? 1);
+    ctx.fillRect(hx - 70, 830, 60, 22); ctx.fillStyle = '#8a94b8'; ctx.fillRect(hx - 64 + lerp(30, 0, b), 836, 60, 10); ctx.fillRect(hx - 50 + lerp(30, 0, b), 820, 12, 26);
+  }
+  if (st.me) drawStick(ctx, { view: 'back', fill: '#05070f', color: 'rgba(225,232,250,0.9)', ...st.me });
+  if (st.dark > 0) { ctx.fillStyle = `rgba(1,2,6,${st.dark})`; ctx.fillRect(-600, -600, W + 1200, H + 1200); }
+}
+
+// ---------- UNDER KABIR'S BED (floor level, the dark under the iron frame) ----------
+// st: {hand 0..1 (long fingers slide out of the dark), breath 0..1, moon}
+function drawUnderBed(ctx, t, st = {}) {
+  ctx.fillStyle = '#02030a'; ctx.fillRect(-600, -600, W + 1200, H + 1200);
+  // wall far behind (barely visible) + floor
+  ctx.fillStyle = '#0c1126'; ctx.fillRect(-600, -600, W + 1200, 1100);
+  let g = ctx.createLinearGradient(0, 1040, 0, 2000); g.addColorStop(0, '#0b1024'); g.addColorStop(1, '#04060d');
+  ctx.fillStyle = g; ctx.fillRect(-600, 1040, W + 1200, 1100);
+  ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = 3;
+  for (let i = -8; i < 16; i++) { ctx.beginPath(); ctx.moveTo(540 + i * 90, 1040); ctx.lineTo(540 + i * 330, 2100); ctx.stroke(); }
+  // moonlight shaft across the floor (from the window, right)
+  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  g = ctx.createLinearGradient(1100, 0, 300, 0); g.addColorStop(0, `rgba(110,140,220,${0.20 * (st.moon ?? 1)})`); g.addColorStop(1, 'rgba(110,140,220,0)');
+  poly(ctx, [[1300, 1300], [1300, 1900], [200, 2000], [420, 1400]], g); ctx.restore();
+  // bed: mattress underside + iron frame, very close
+  ctx.fillStyle = '#121933'; ctx.fillRect(-600, 380, W + 1200, 240);
+  ctx.strokeStyle = '#3a4469'; ctx.lineWidth = 22; ctx.beginPath(); ctx.moveTo(-600, 630); ctx.lineTo(W + 600, 630); ctx.stroke();
+  ctx.lineWidth = 26; for (const x of [40, 1040]) { ctx.beginPath(); ctx.moveTo(x, 630); ctx.lineTo(x, 1180); ctx.stroke(); }
+  // the black under the bed
+  g = ctx.createLinearGradient(0, 640, 0, 1180); g.addColorStop(0, '#000'); g.addColorStop(1, '#010104');
+  ctx.fillStyle = g; ctx.fillRect(54, 642, 972, 538);
+  // blanket edge hanging down over the opening, it moves with a slow breath
+  const br = (st.breath || 0) * Math.sin(t * 2 * Math.PI / 3.4);
+  ctx.beginPath(); ctx.moveTo(-600, 600);
+  for (let i = 0; i <= 24; i++) { const x = -600 + i * (W + 1200) / 24; ctx.lineTo(x, 770 + Math.sin(i * 1.3) * 24 + noise1(i * 0.7) * 30 + br * 22 * Math.sin(i * 0.4 + 1)); }
+  ctx.lineTo(W + 600, 600); ctx.closePath(); ctx.fillStyle = '#273163'; ctx.fill();
+  ctx.strokeStyle = 'rgba(160,180,240,0.12)'; ctx.lineWidth = 3; ctx.stroke();
+  // dust in the moonlight, pushed by the breath
+  ctx.fillStyle = 'rgba(200,215,255,0.35)';
+  for (let i = 0; i < 26; i++) { const x = 300 + hash(i * 3.1) * 700 + br * 30 * hash(i), y = 1200 + hash(i * 7.7) * 500 + Math.sin(t * 0.6 + i) * 12; ctx.fillRect(x, y, 3, 3); }
+  // the hand: long pale fingers sliding out of the dark onto the lit floor
+  const h = clamp(st.hand || 0);
+  if (h > 0) {
+    ctx.save(); ctx.translate(560, 1160 + 120 * E.out(h)); ctx.globalAlpha = clamp(h * 3);
+    ctx.strokeStyle = '#b9c2dc'; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    ctx.lineWidth = 30; ctx.beginPath(); ctx.moveTo(-30, -260); ctx.lineTo(-10, -40); ctx.stroke();
+    ctx.lineWidth = 9;
+    const fl = [[-58, 1.0], [-22, 1.25], [14, 1.2], [46, 1.0]];
+    for (const [ox, k] of fl) { const L = (90 + 70 * h) * k; ctx.beginPath(); ctx.moveTo(ox * 0.6, -30); ctx.quadraticCurveTo(ox, L * 0.5, ox * 1.3 + (noise1(t * 1.5 + ox) - 0.5) * 8, L); ctx.stroke(); }
+    ctx.lineWidth = 9; ctx.beginPath(); ctx.moveTo(-50, -60); ctx.quadraticCurveTo(-110, -20, -120, 30); ctx.stroke();
+    ctx.restore();
+    // the rest of the arm stays in the dark
+    g = ctx.createLinearGradient(0, 640, 0, 1250); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(0.75, 'rgba(0,0,0,0.85)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g; ctx.fillRect(54, 790, 972, 400);
+  }
+}
+
+module.exports = { drawDoorway, drawUnderBed, drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };
