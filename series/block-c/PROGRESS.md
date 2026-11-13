@@ -1,5 +1,37 @@
 # BLOCK C — progress log
 
+**Status 2026-11-14 01:55 IST (creator run):** Part 3 built and QUEUED for 2026-11-14. Next: Part 4 (2026-11-15) after
+the Part 3 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-14 done.
+
+## Part 3 "Left" — QUEUED for 2026-11-14 (branch A, no votes)
+- Vote on Part 2: **A = 0, B = 0** (Instagram 0 comments, YouTube @dontletitsee 0, @lexter2025 0). No votes -> the scarier
+  branch, A (you open the door). Recap stamp says "YOU CHOSE A / YOU OPENED THE DOOR".
+- Output: `outputs/block-c-p3.mp4` (84.7 s, 10.3 MB, −14.1 LUFS) + `outputs/block-c-p3.jpg` (cover "DON'T LOOK", the hand
+  under the bed); jsDelivr @ `8c0764d` (both HTTP 200). Queue id `block-c-p3`.
+- Voice: 1,620 credits (eleven_v4, Jack), transcript 0. 31 lines / 194 words. Files in `block-c/p3/audio/`.
+- **Test #2 applied (stronger CTA), hook-first kept as the standard:** the narrator now SAYS the choice ("What do you do?
+  A. Look under the bed. B. Get out of the room. Comment A or B."); the card lands ~11.7 s before the end (VO lines 28-31 +
+  3.8 s hold), each option lights up lime while it is read, A/B pop when spoken, a bobbing arrow points at the comments,
+  footer "MOST VOTES DECIDE PART 4 · TOMORROW 3 PM". Compare Part 3's A/B comment count with Part 1 (1) and Part 2 (0).
+- Hook: frame 1 = the red door gap with the feet + the handle turning, burned-in "MY HOSTEL DOOR · 12:58 AM / IT TALKS IN /
+  MY VOICE"; first VO line "Something outside your hostel room is talking in your voice."
+- Story: the bolt slides, the door swings in; nobody, the corridor dead (tubes off, doors shut); at your feet the register
+  lies open: dated 14 / 11 (tomorrow), your red row, and in the MARK column one word stamped in red: LEFT ("Not absent. Not
+  late. Left." -> foreshadows rule 6); you slam and bolt the door; 1:04 AM; rule 3; Kabir texts: "bro where are you? i'm in
+  the washroom since 12" / "don't open the door for anyone. it does voices." -> so what was breathing under his blanket all
+  night (flashback to 12:40)? A slow breath under his bed; a whisper in Kabir's voice: "Don't look. Just come closer."; long
+  pale fingers slide out from under the bed.
+- HUD: PART 3 · 12:58 → 1:04 → 1:05 AM · BATTERY 27→26% · ROOM 13 · ALONE → **13 · LEFT** · HEADCOUNT 43 · KABIR MISSING →
+  WASHROOM (lime) → **UNDER BED · BREATHING** (red).
+- Engine: `sets.js` adds drawDoorway (door swings in onto the dead corridor, bolt, register on the threshold, you from
+  behind) and drawUnderBed (the dark under the iron bed, hanging blanket edge that breathes, dust, the hand);
+  drawRegister gets `mark` (red LEFT stamp) + `dateHL`; drawGroupChat takes `name`/`initial` (1:1 chat with Kabir).
+  mix part3: bolt noise, door open/creak, slowed low "breath" from whisper.mp3 in the gaps, ticks on the spoken A/B.
+- Choice offered: **A) LOOK UNDER THE BED** (rule 3 says never)  **B) GET OUT OF THE ROOM** (it is still in the corridor).
+- Open threads for Part 4 (bible): branch payoff (A: what is under the bed / B: the corridor, the washroom where "Kabir" is),
+  then the 3 AM mess bell rings for the whole block. Choice: A) go to the mess  B) hide in the washroom. Kabir is (says he is)
+  in the washroom; the thing does voices (yours, Kabir's). The register for 14/11 marks you LEFT.
+
 **Status 2026-11-13 11:11 IST (creator run):** queue full through 2026-11-13 (Part 2 URLs re-verified HTTP 200); nothing built. Part 3 (2026-11-14) waits for the A/B vote on Part 2 (posts today 15:00 IST); build it on/after 2026-11-13 23:00 IST. ANALYTICS review for 2026-11-13 already done.
 
 **Status 2026-11-13 01:50 IST (creator run):** Part 2 built and QUEUED for 2026-11-13. Next: Part 3 (2026-11-14) after
