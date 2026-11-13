@@ -12,3 +12,4 @@ BLOCK C Part 1's voice was already paid before this balance and is saved in `blo
 |---|---|---|---|---|
 | 2026-11-09 | — | starting balance | — | 39,717 |
 | 2026-11-13 | BLOCK C · Part 2 | voice (eleven_v4, Jack, 1,677 chars) + scribe transcript (0) | 1,677 | 38,040 |
+| 2026-11-14 | BLOCK C · Part 3 | voice (eleven_v4, Jack, 1,620 chars) + scribe transcript (0) | 1,620 | 36,420 |
