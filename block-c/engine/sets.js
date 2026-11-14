@@ -487,6 +487,15 @@ function drawDoorGap(ctx, t, st = {}) {
       ctx.restore();
     }
   }
+  // PART 4: the whole block walking past the door (feet shadow pairs crossing the strip)
+  for (const wx of st.walkers || []) {
+    for (const o of [-60, 40]) {
+      const x = wx + o + (o < 0 ? 1 : -1) * 18 * Math.sin(t * 7 + wx);
+      if (x < 40 || x > 1040) continue;
+      ctx.fillStyle = '#000'; ctx.fillRect(x, 1224, 60, 20);
+      poly(ctx, [[x, 1242], [x + 60, 1242], [x + 60 + (x - 540) * 0.5 + 50, 1920], [x + (x - 540) * 0.5 - 50, 1920]], 'rgba(0,0,0,0.7)');
+    }
+  }
   // a page turning: a thin shadow sweeps the strip
   if (page > 0 && page < 1) { const x = lerp(cx0(st), cx0(st) + 260, page); ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(x, 1226, 26, 18); }
   ctx.fillStyle = `rgba(1,2,6,${st.dark ?? 0})`; ctx.fillRect(-600, -600, W + 1200, H + 1200);
@@ -659,6 +668,81 @@ function drawUnderBed(ctx, t, st = {}) {
   // dust in the moonlight, pushed by the breath
   ctx.fillStyle = 'rgba(200,215,255,0.35)';
   for (let i = 0; i < 26; i++) { const x = 300 + hash(i * 3.1) * 700 + br * 30 * hash(i), y = 1200 + hash(i * 7.7) * 500 + Math.sin(t * 0.6 + i) * 12; ctx.fillRect(x, y, 3, 3); }
+  // PART 4: the torch beam inside the dark (items, the wrapped shape, the scratched number)
+  const tr = clamp(st.torch || 0);
+  if (tr > 0) {
+    ctx.save(); ctx.beginPath(); ctx.rect(54, 642, 972, 538); ctx.clip();
+    // inside: far wall + floor receding to a vanishing point
+    ctx.fillStyle = '#151b30'; ctx.fillRect(54, 642, 972, 230);
+    let fg2 = ctx.createLinearGradient(0, 860, 0, 1180); fg2.addColorStop(0, '#1a2138'); fg2.addColorStop(1, '#2a3150');
+    ctx.fillStyle = fg2; ctx.fillRect(54, 860, 972, 320);
+    ctx.strokeStyle = 'rgba(0,0,0,0.4)'; ctx.lineWidth = 3;
+    for (let i = -6; i <= 6; i++) { ctx.beginPath(); ctx.moveTo(540 + i * 60, 860); ctx.lineTo(540 + i * 210, 1180); ctx.stroke(); }
+    ctx.beginPath(); ctx.moveTo(54, 860); ctx.lineTo(1026, 860); ctx.stroke();
+    if (st.items) {
+      // one slipper
+      ctx.save(); ctx.translate(205, 1118); ctx.rotate(-0.25); rrect(ctx, -70, -22, 140, 44, 20); ctx.fillStyle = '#3c5a8a'; ctx.fill();
+      ctx.strokeStyle = '#7f9cc8'; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(-10, -20); ctx.quadraticCurveTo(25, -48, 55, -18); ctx.stroke(); ctx.restore();
+      // the steel mess plate (thali)
+      ctx.save(); ctx.translate(865, 1122);
+      ctx.beginPath(); ctx.ellipse(0, 0, 92, 26, 0, 0, 7); ctx.fillStyle = '#9aa4b8'; ctx.fill();
+      ctx.beginPath(); ctx.ellipse(0, -2, 74, 19, 0, 0, 7); ctx.fillStyle = '#c3cad8'; ctx.fill();
+      ctx.beginPath(); ctx.ellipse(-28, -4, 18, 5, 0, 0, 7); ctx.fillStyle = '#e8ecf4'; ctx.fill(); ctx.restore();
+    }
+    const sh = clamp(st.shape || 0);
+    if (sh > 0) {
+      ctx.save(); ctx.globalAlpha = sh;
+      // the wrapped shape: head near you (front left), feet into the far wall (back right), longer than the bed
+      const path = [[250, 1050], [420, 1010], [640, 950], [860, 900], [1080, 860], [1080, 905], [870, 955], [660, 1020], [440, 1090], [270, 1135]];
+      const br2 = Math.sin(t * 2 * Math.PI / 3.4) * 6 * (st.breath ?? 1);
+      ctx.beginPath(); path.forEach(([x, y], i) => { const yy = y + (i < 5 ? -br2 : 0); i ? ctx.lineTo(x, yy) : ctx.moveTo(x, yy); }); ctx.closePath();
+      ctx.fillStyle = '#3a4789'; ctx.fill(); ctx.strokeStyle = 'rgba(190,205,250,0.45)'; ctx.lineWidth = 4; ctx.stroke();
+      ctx.strokeStyle = 'rgba(10,14,30,0.55)'; ctx.lineWidth = 5;
+      for (const [x0, y0, x1, y1] of [[380, 1030, 420, 1100], [520, 990, 560, 1060], [690, 945, 720, 1005], [850, 905, 880, 950], [990, 880, 1010, 915]]) { ctx.beginPath(); ctx.moveTo(x0, y0 - br2); ctx.quadraticCurveTo(x0 + 30, (y0 + y1) / 2, x1, y1); ctx.stroke(); }
+      // the head: smooth, pale, no face; turns toward you
+      const ht = clamp(st.headTurn || 0);
+      const hx = 205, hy = 1088 - br2 * 0.5, hr = 66;
+      ctx.beginPath(); ctx.arc(hx, hy, hr, 0, 7); ctx.fillStyle = '#0d1226'; ctx.fill();
+      if (ht > 0) {
+        ctx.save(); ctx.beginPath(); ctx.arc(hx, hy, hr, 0, 7); ctx.clip();
+        ctx.beginPath(); ctx.ellipse(hx + lerp(70, 0, ht), hy, hr * lerp(0.2, 1, ht), hr, 0, 0, 7);
+        const hg = ctx.createRadialGradient(hx - 18, hy - 22, 6, hx, hy, hr); hg.addColorStop(0, '#f2f4fa'); hg.addColorStop(1, '#a9b2cb');
+        ctx.fillStyle = hg; ctx.fill(); ctx.restore();
+      }
+      ctx.lineWidth = 5; ctx.strokeStyle = `rgba(238,241,247,${0.35 + 0.55 * ht})`; ctx.beginPath(); ctx.arc(hx, hy, hr, 0, 7); ctx.stroke();
+      ctx.restore();
+    }
+    const sc = clamp(st.scratch || 0);
+    if (sc > 0) {
+      ctx.save(); ctx.beginPath(); ctx.rect(330, 900, 420 * sc, 300); ctx.clip();
+      ctx.translate(540, 1150); ctx.transform(1, 0, -0.35, 0.55, 0, 0);
+      ctx.font = '300px Osw700'; ctx.textAlign = 'center';
+      ctx.lineWidth = 9; ctx.strokeStyle = 'rgba(0,0,0,0.75)'; ctx.strokeText('43', 6, 6);
+      ctx.lineWidth = 5; ctx.strokeStyle = 'rgba(225,215,190,0.95)'; ctx.strokeText('43', 0, 0);
+      ctx.strokeStyle = 'rgba(225,215,190,0.55)'; ctx.lineWidth = 2;
+      for (let i = 0; i < 40; i++) { const x = -150 + hash(i * 1.7) * 300, y = -220 + hash(i * 3.3) * 220; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 10 + hash(i) * 30, y + 6 + hash(i * 2) * 20); ctx.stroke(); }
+      ctx.restore();
+    }
+    // dust in the beam
+    ctx.fillStyle = 'rgba(240,235,215,0.7)';
+    for (let i = 0; i < 40; i++) { const x = 60 + hash(i * 5.1) * 960 + Math.sin(t * 0.4 + i) * 20, y = 820 + hash(i * 9.7) * 340 + Math.cos(t * 0.5 + i * 2) * 14; ctx.fillRect(x, y, 3, 3); }
+    // darkness with a torch-shaped hole
+    const tx = st.tx ?? 540, ty = st.ty ?? 1060, R = (st.tr ?? 420) * (0.6 + 0.4 * tr);
+    const fl = tr * (st.flick ? (0.55 + 0.45 * noise1(t * 30)) : 1);
+    const mg = ctx.createRadialGradient(tx, ty, R * 0.15, tx, ty, R);
+    mg.addColorStop(0, `rgba(0,0,0,${1 - fl})`); mg.addColorStop(0.6, `rgba(0,0,0,${1 - 0.75 * fl})`); mg.addColorStop(1, 'rgba(0,0,0,1)');
+    ctx.fillStyle = mg; ctx.fillRect(54, 642, 972, 538);
+    ctx.globalCompositeOperation = 'lighter';
+    const wg = ctx.createRadialGradient(tx, ty, 0, tx, ty, R * 0.8); wg.addColorStop(0, `rgba(255,240,200,${0.16 * fl})`); wg.addColorStop(1, 'rgba(255,240,200,0)');
+    ctx.fillStyle = wg; ctx.fillRect(54, 642, 972, 538);
+    ctx.restore();
+    // the blanket edge stays on top (redraw over the beam)
+    ctx.beginPath(); ctx.moveTo(-600, 600);
+    for (let i = 0; i <= 24; i++) { const x = -600 + i * (W + 1200) / 24; ctx.lineTo(x, 770 + Math.sin(i * 1.3) * 24 + noise1(i * 0.7) * 30 + br * 22 * Math.sin(i * 0.4 + 1)); }
+    ctx.lineTo(W + 600, 600); ctx.closePath(); ctx.fillStyle = '#273163'; ctx.fill();
+    ctx.lineWidth = 26; ctx.strokeStyle = '#3a4469'; for (const x of [40, 1040]) { ctx.beginPath(); ctx.moveTo(x, 630); ctx.lineTo(x, 1180); ctx.stroke(); }
+  }
+  if (st.dark) { ctx.fillStyle = `rgba(0,0,2,${st.dark})`; ctx.fillRect(-600, -600, W + 1200, H + 1200); }
   // the hand: long pale fingers sliding out of the dark onto the lit floor
   const h = clamp(st.hand || 0);
   if (h > 0) {
@@ -672,7 +756,7 @@ function drawUnderBed(ctx, t, st = {}) {
     ctx.restore();
     // the rest of the arm stays in the dark
     g = ctx.createLinearGradient(0, 640, 0, 1250); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(0.75, 'rgba(0,0,0,0.85)'); g.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = g; ctx.fillRect(54, 790, 972, 400);
+    if (!tr) { ctx.fillStyle = g; ctx.fillRect(54, 790, 972, 400); }
   }
 }
 

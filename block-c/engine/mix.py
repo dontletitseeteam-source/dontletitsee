@@ -326,7 +326,73 @@ def part3():
     return m1, hum
 
 
-music, beds = {1: part1, 2: part2, 3: part3}[PART]()
+def part4():
+    creak = load("door_creak.mp3"); sent = load("sent.mp3"); stairs = load("stairs.mp3"); crowd = load("crowd.mp3")
+    lights = load("lights_off.mp3"); button = load("button.mp3")
+    scratch = noise_burst(0.9, 2500, 9000, 2, 0.05) * 0.5
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    # the mess bell: a struck bell made from partials, ringing out
+    tb = np.arange(int(3.5 * SR)) / SR
+    bellw = sum(a * np.sin(2 * np.pi * f * tb) * np.exp(-tb * d) for f, a, d in [(523, 0.5, 1.2), (1046, 0.25, 2.0), (1318, 0.2, 2.6), (1568, 0.12, 3.5), (262, 0.3, 0.9)])
+    clang = np.stack([bellw, bellw], 1).astype(np.float32) * 0.6
+    m1 = np.pad(load("music_p2.mp3"), ((0, N), (0, 0)))[:N] * automation([
+        (0, -13), (K["look"], -15), (K["torchW"], -17), (K["beam"], -18), (K["shape"], -14), (K["long"], -16),
+        (K["turned"], -18), (K["noface"], -13), (K["whisper"], -17), (K["present"] - 0.1, -32), (K["present"] + 0.6, -12),
+        (K["diesW"], -40), (K["back"], -40), (K["back"] + 0.5, -18), (K["n43"], -12), (K["phone"], -17), (K["bell"] - 0.2, -34),
+        (K["mess"], -16), (K["doors"], -14), (K["steps"], -15), (K["rule"], -14), (K["buzz"], -17), (K["voicesW"], -12),
+        (K["choice"], -13), (DUR - 1.4, -14), (DUR, -40)])
+    hum = bed("hum.mp3", "lowpass=f=700") * automation([(0, -16), (K["diesW"], -26), (K["back"], -16), (DUR, -16)])
+    # hook: hit on frame 1 + the breath
+    place(boom, 0.0, -10, fo=0.8, maxlen=2.2)
+    place(stinger, 0.0, -14, fo=0.6, maxlen=1.4)
+    place(breath, 0.2, -12, fi=0.2, fo=0.6, maxlen=1.6)
+    place(heartbeat, 0.4, -18, fi=0.3, fo=0.6, maxlen=2.6)
+    place(boom, K["lookW"], -15, fo=0.6, maxlen=1.4)
+    place(button, K["torchW"] - 0.02, -8)
+    place(scratch, K["hand"] + 0.3, -14)
+    place(stinger, K["fastW"] - 0.03, -12, fo=0.5, maxlen=1.0)
+    place(riser, K["shapeW"] - 0.06 - len(riser) / SR, -20, fi=2.0, fo=0.004)
+    place(boom, K["shapeW"], -12, fo=0.6, maxlen=1.8)
+    place(boom, K["longW"], -15, fo=0.6, maxlen=1.4)
+    place(breath, K["long"] + 1.2, -14, fi=0.3, fo=0.6, maxlen=1.4)
+    place(stinger, K["hereW"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(boom, K["hereW"], -12, fo=0.6, maxlen=1.6)
+    place(creak, K["turned"] + 0.2, -16, fo=0.4, maxlen=1.2)
+    place(boom, K["faceW"], -10, fo=0.6, maxlen=2.0)
+    place(heartbeat, K["faceW"] + 0.3, -15, fi=0.3, fo=0.5, maxlen=K["whisper"] - K["faceW"])
+    place(whisper, K["whisper"] + 0.2, -15, fi=0.3, fo=0.6, maxlen=1.8)
+    place(stinger, K["voiceW"] - 0.03, -10, fo=0.5, maxlen=1.2)
+    place(riser, K["present"] - 0.06 - len(riser) / SR, -18, fi=2.0, fo=0.004)
+    place(boom, K["present"] + 0.05, -6, fo=0.6, maxlen=2.4)
+    place(stinger, K["present"] + 0.05, -9, fo=0.6, maxlen=1.4)
+    place(lights, K["diesW"] - 0.05, -10, maxlen=1.2, fo=0.3)
+    for c in ["c1", "c2", "c3"]:
+        place(heartbeat, K[c] - 0.05, -10, maxlen=0.7, fo=0.2)
+    place(button, K["back"] + 0.02, -9)
+    place(scratch, K["scratchW"], -10); place(scratch, K["scratchW"] + 0.8, -12)
+    place(boom, K["n43"], -8, fo=0.6, maxlen=2.2)
+    place(stinger, K["n43"], -10, fo=0.6, maxlen=1.4)
+    place(boom, K["t259"] + 0.1, -12, fo=0.6, maxlen=1.8)
+    place(boom, K["goneW"], -14, fo=0.6, maxlen=1.4)
+    place(clang, K["bellW"] - 0.02, -4, fo=1.0)
+    place(clang, K["bellW"] + 0.9, -8, fo=1.0)
+    place(clang, K["threeW"] - 0.05, -12, fo=1.0)
+    place(lights, K["mess"] + 0.1, -16, maxlen=1.0, fo=0.3)
+    place(boom, K["onceW"], -9, fo=0.6, maxlen=2.0)
+    place(creak, K["onceW"] - 0.05, -10, fo=0.4, maxlen=1.4)
+    place(stairs, K["steps"] - 0.3, -10, fi=0.4, fo=0.8, maxlen=K["rule"] - K["steps"] + 0.6)
+    place(boom, K["notYou"], -12, fo=0.6, maxlen=1.6)
+    place(buzz, K["buzzW"] - 0.03, -20, maxlen=0.6, fo=0.15)
+    place(sent, K["buzzW"], -10); place(sent, K["m1"], -11); place(sent, K["m2"], -11)
+    place(stinger, K["voicesW"] - 0.03, -10, fo=0.5, maxlen=1.2)
+    place(boom, K["voicesW"], -9, fo=0.6, maxlen=2.0)
+    place(boom, K["choice"] - 0.1, -16, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, hum
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4}[PART]()
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice
