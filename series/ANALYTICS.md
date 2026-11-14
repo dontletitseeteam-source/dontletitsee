@@ -3,16 +3,50 @@
 How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric that is not available.
 
 ## Next improvements (max 3, read before writing every script)
-1. **Stronger comment CTA** (the one change being tested now, from BLOCK C Part 3): the narrator SAYS the letters
-   out loud ("A: open it. B: run. Comment A or B.") over the choice card, the card lands ~6-8 s before the end and
-   stays up to the last frame. Goal: any A/B comments on IG (0 so far on 5 posts) and more than 1 on YouTube.
-2. (standard now, keep) **Zero-context hook in the first 2 s**: scariest image + burned-in hook line on frame 1,
-   first VO line a self-contained threat, recap after the hook. Test #1 result (Part 2): IG avg watch 21.6 s, best
-   ever (P1 15.8 s), skip rate unchanged (55.2% vs 53.6%). Next hook lever (queued, after #1): a SHORTER on-screen
-   hook (max 6 words) + motion in frame 1, to attack the 3-second skip rate.
-3. (keep) YouTube hook titles: a self-contained hook sentence first, series name after the bar.
+1. **Shorter on-screen hook + motion in frame 1** (the one change being tested now, from BLOCK C Part 4): burned-in hook
+   max 6 words in 2 lines, the threat MOVING on frame 1 (no static establishing shot), first VO line <= 9 words.
+   Goal: IG 3-second skip rate below 55% (Part 3: 62.8%, Parts 1-2: 53.6 / 54.7%).
+2. (keep, test #2 read-out = no effect yet) Spoken A/B CTA over a card ~10 s before the end: 0 votes on Part 3 on all
+   3 platforms (Part 1: 1, Part 2: 0). Keep it (costs nothing) but stop expecting comments from the card alone;
+   next comment lever after the hook test: a one-word answer prompt in the IG caption's FIRST line.
+3. (keep) YouTube hook titles: a self-contained hook sentence first, series name after the bar. BLOCK C P2's
+   "dead warden knows my name"-style hook title is the best YT post yet (692 views at 34 h).
 
 ## Day log
+## 2026-11-15 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 130 | 796 | 639 | 17 | 2 | 0 / 0 | 17.2 s | 46.9% |
+| floor0-p2 | Instagram (media 17961343959258765) | 106 | 180 | 154 | 2 | 0 | 0 / 0 | 7.7 s | 72.3% |
+| floor0-p3 | Instagram (media 18139990045726049) | 82 | 140 | 114 | 1 | 0 | 0 / 0 | 12.7 s | 52.1% |
+| block-c-p1 | Instagram (media 17998129476019732) | 58 | 139 | 107 | 0 | 0 | 0 / 0 | 15.8 s | 53.6% |
+| block-c-p2 | Instagram (media 18120370895001266) | 34 | 145 | 109 | 3 | 0 | 0 / 0 | 21.4 s | 54.7% |
+| block-c-p3 | Instagram (media 18025383203947619) | 10 | 122 | 106 | 2 | 0 | **1** / 0 | 6.9 s | 62.8% |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 130 | 189 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 106 | 441 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 82 | 288 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 58 | 433 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 34 | **692** | n/a | **14** | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @dontletitsee (qlkqMo9AiCM) | 10 | 98 | n/a | 3 | 0 | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 107 | 16 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 106 | 15 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 82 | 150 | n/a | 2 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @lexter2025 (OkUHaOECktc) | 58 | 6 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @lexter2025 (9VpoKsAuj_Y) | 34 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @lexter2025 (EXSttZutpns) | 10 | 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- CTA test #2 (spoken A/B + longer card, Part 3): 0 A/B comments on IG, @dontletitsee and @lexter2025. Across 3 BLOCK C
+  parts the card has drawn 1 vote total; the card is seen by too few people (IG avg watch 7-21 s on ~90 s reels) to
+  pull replies. The comment problem is really a retention problem.
+- Part 3 lost the opening: IG skip rate 62.8% (P1 53.6, P2 54.7) and avg watch 6.9 s (P2 21.4). Its frame-1 hook was
+  a 3-line text block over a near-static door gap. Pattern across 6 IG reels: the reels with the most text and least
+  motion on frame 1 (FLOOR 0 P2, BLOCK C P3) have the worst skip rates -> test the queued lever: max-6-word hook +
+  moving threat on frame 1 (Part 4).
+- YouTube @dontletitsee keeps compounding: BLOCK C P2 692 views at 34 h (best ever, P1 433 at 58 h); P3 98 at 10 h
+  is on P2's pace (110 at 10 h). YT is the growth channel; keep hook-sentence titles.
+- First save ever on IG (Part 3). @lexter2025 BLOCK C uploads still get 0-6 views (public, processed): the channel
+  is not being surfaced; nothing to change on the creator side.
 ## 2026-11-14 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
