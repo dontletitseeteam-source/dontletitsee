@@ -140,5 +140,52 @@ P3 = [
 ]
 P3_HOLD = 3.8
 
-LINES = {1: P1, 2: P2, 3: P3}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD}
+P4 = [
+    ("Something is breathing under your roommate's bed.", 0.15,
+     [(3, "SOMETHING IS {BREATHING}"), (4, "UNDER YOUR ROOMMATE'S BED.")]),
+    ("And you're going to look.", 0.30, [(2, "AND YOU'RE"), (3, "GOING TO {LOOK.}")]),
+    ("You kneel on the cold floor. Torch on.", 0.40, [(3, "YOU KNEEL ON"), (3, "THE COLD FLOOR."), (2, "[TORCH ON.]")]),
+    ("The hand slides back into the dark.", 0.40, [(3, "THE {HAND} SLIDES"), (4, "BACK INTO THE DARK.")]),
+    ("Fast. Like it knows the light.", 0.35, [(1, "{FAST.}"), (5, "LIKE IT KNOWS THE [LIGHT.]")]),
+    ("The beam crawls in. Dust. One slipper. A steel mess plate.", 0.45,
+     [(4, "THE BEAM CRAWLS IN."), (1, "DUST."), (2, "ONE SLIPPER."), (4, "A STEEL [MESS PLATE.]")]),
+    ("Then a shape, lying flat, wrapped in Kabir's blanket.", 0.50,
+     [(3, "THEN A {SHAPE,}"), (2, "LYING FLAT,"), (4, "WRAPPED IN [KABIR'S] BLANKET.")]),
+    ("Too long to be a person.", 0.45, [(3, "{TOO LONG}"), (3, "TO BE A PERSON.")]),
+    ("Its feet reach the far wall. Its head is right here.", 0.40,
+     [(3, "ITS FEET REACH"), (3, "THE FAR WALL."), (3, "ITS HEAD IS"), (2, "{RIGHT HERE.}")]),
+    ("Turned toward you.", 0.40, [(3, "TURNED {TOWARD YOU.}")]),
+    ("No face. Just a smooth, pale circle.", 0.45, [(2, "{NO FACE.}"), (5, "JUST A SMOOTH, PALE CIRCLE.")]),
+    ("Then it whispers, in your voice.", 0.45, [(3, "THEN IT WHISPERS,"), (3, "IN {YOUR VOICE.}")]),
+    ("Present.", 0.70, [(1, "{PRESENT.}")]),
+    ("Your torch dies.", 0.60, [(3, "YOUR TORCH {DIES.}")]),
+    ("Black.", 0.50, [(1, "BLACK.")]),
+    ("You count. One. Two. Three.", 0.60, [(2, "YOU COUNT."), (1, "ONE."), (1, "TWO."), (1, "THREE.")]),
+    ("The light comes back. Nothing under the bed.", 0.50,
+     [(4, "THE LIGHT COMES BACK."), (1, "[NOTHING]"), (3, "UNDER THE BED.")]),
+    ("Only a number, scratched deep into the floor.", 0.40,
+     [(3, "ONLY A NUMBER,"), (2, "{SCRATCHED} DEEP"), (3, "INTO THE FLOOR.")]),
+    ("Forty-three.", 0.60, [(1, "{43.}")]),
+    ("You check your phone.", 0.60, [(4, "YOU CHECK YOUR PHONE.")]),
+    ("Two fifty-nine.", 0.35, [(2, "[2:59 AM.]")]),
+    ("Two hours. Gone.", 0.40, [(2, "TWO HOURS."), (1, "{GONE.}")]),
+    ("Then the bell.", 0.70, [(3, "THEN THE {BELL.}")]),
+    ("The mess bell. Three o'clock.", 0.50, [(3, "THE MESS BELL."), (2, "[3 O'CLOCK.]")]),
+    ("Every door in Block C opens at once.", 0.40, [(3, "EVERY DOOR IN"), (2, "[BLOCK C]"), (3, "OPENS {AT ONCE.}")]),
+    ("Footsteps. All of them, walking to the mess. Nobody talking.", 0.40,
+     [(1, "FOOTSTEPS."), (3, "ALL OF THEM,"), (4, "WALKING TO THE [MESS.]"), (2, "{NOBODY TALKING.}")]),
+    ("Rule four. The mess opens at three for someone. Not for you.", 0.45,
+     [(2, "RULE [FOUR.]"), (3, "THE MESS OPENS"), (2, "AT [3]"), (2, "FOR SOMEONE."), (3, "{NOT FOR YOU.}")]),
+    ("Your phone buzzes. Kabir. Washroom. Now. Don't go with them.", 0.50,
+     [(3, "YOUR PHONE BUZZES."), (1, "[KABIR.]"), (2, "[WASHROOM.] NOW."), (4, "DON'T GO WITH THEM.")]),
+    ("But Kabir told you himself.", 0.45, [(3, "BUT KABIR TOLD"), (2, "YOU HIMSELF.")]),
+    ("It does voices.", 0.35, [(3, "IT DOES {VOICES.}")]),
+    ("What do you do?", 0.90, []),
+    ("A. Follow them to the mess.", 0.35, []),
+    ("B. Hide in the washroom.", 0.30, []),
+    ("Comment A or B.", 0.35, []),
+]
+P4_HOLD = 3.8
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD}
