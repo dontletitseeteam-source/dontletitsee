@@ -1,5 +1,37 @@
 # BLOCK C — progress log
 
+**Status 2026-11-15 01:40 IST (creator run):** Part 4 built and QUEUED for 2026-11-15. Next: Part 5 (2026-11-16) after
+the Part 4 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-15 done.
+
+## Part 4 "Under the bed" — QUEUED for 2026-11-15 (branch A, no votes)
+- Vote on Part 3: **A = 0, B = 0** (Instagram 0 comments, YouTube @dontletitsee 0, @lexter2025 0). No votes -> the scarier
+  branch, A (you look under the bed). Recap stamp "YOU CHOSE A / YOU LOOKED UNDER THE BED".
+- Output: `outputs/block-c-p4.mp4` (89.0 s, 11.8 MB, −14.0 LUFS) + `outputs/block-c-p4.jpg` (cover "NO FACE", the pale
+  faceless head under the bed); jsDelivr @ `7b788ef` (both HTTP 200). Queue id `block-c-p4`.
+- Voice: 1,694 credits (eleven_v4, Jack), transcript 0. 34 lines / 197 words. Files in `block-c/p4/audio/`.
+- **Test #3 applied (short hook + motion on frame 1):** burned-in hook is 5 words ("DON'T LOOK / UNDER HIS BED", no
+  kicker line), frame 1 = the pale hand already crawling out of the dark at the camera with a fast push-in + shake;
+  first VO line 7 words ("Something is breathing under your roommate's bed."). CTA kept as in Part 3 (spoken A/B card).
+  Compare Part 4's IG 3-second skip rate with Part 3 (62.8%) and Parts 1-2 (53.6 / 54.7%).
+- Story: you kneel, torch on; the hand slides back "like it knows the light"; the beam finds dust, one slipper, a steel
+  mess plate; a shape lying flat wrapped in Kabir's blanket, too long to be a person (it runs past the bed into the wall),
+  its head right by you; it turns: no face, a smooth pale circle; it whispers "Present." in YOUR voice (VOICE MATCH · YOU
+  · 100%); the torch dies; black, you count to three; light back: nothing under the bed, only "43" scratched into the
+  floor; phone: 2:59 — two hours gone; the 3 AM mess bell; every door in Block C opens at once; the whole block walks past
+  your door to the mess, nobody talking; rule 4; Kabir texts "washroom. now." / "don't go with them" — but Kabir himself
+  said it does voices (his 1:05 message ringed red).
+- HUD: PART 4 · 1:05 → 1:06 → 2:59 → 3:00 AM · BATTERY 26→25→**19%** · ROOM 13 · LEFT · HEADCOUNT 43 · UNDER BED
+  BREATHING → NOT KABIR → EMPTY (lime) → LOST TIME 1 H 53 M → MESS OPEN → KABIR WASHROOM? → KABIR VOICE?
+- Engine: `sets.js` drawUnderBed gets the torch beam (st.torch/tx/ty/tr/flick, items: slipper + steel thali, shape +
+  headTurn: the wrapped faceless figure, scratch: the carved "43", dark); drawDoorGap gets `walkers` (feet shadows
+  passing the door). `mix.py` part4: synthesized mess bell (partials), torch click (button.mp3), scratch noise, stairs bed
+  for the walking block, heartbeat on each count, music_p2 underscore.
+- Choice offered: **A) FOLLOW THEM TO THE MESS** (rule 4: not for you)  **B) HIDE IN THE WASHROOM** (if that is really Kabir).
+- Open threads for Part 5 (bible): the mess at 3 AM — 42 plates served, everyone eating silently, your plate has your name
+  and tomorrow's date; group chat shows 43 members. Choice: A) leave the group  B) scroll up. (If B wins, start in the
+  washroom: "Kabir" is there or isn't, then the mess pulls you in anyway.) The thing does voices (yours, Kabir's); the
+  register for 14/11 marks you LEFT; 43 scratched under Kabir's bed; you lost ~2 hours.
+
 **Status 2026-11-14 01:55 IST (creator run):** Part 3 built and QUEUED for 2026-11-14. Next: Part 4 (2026-11-15) after
 the Part 3 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-14 done.
 
