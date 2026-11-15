@@ -392,7 +392,85 @@ def part4():
     return m1, hum
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4}[PART]()
+def part5():
+    creak = load("door_creak.mp3"); sent = load("sent.mp3"); stairs = load("stairs.mp3"); typing = load("typing.mp3")
+    lights = load("lights_off.mp3")
+    creak_low = load("door_creak.mp3", "asetrate=48000*0.7,aresample=48000,lowpass=f=2500")
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    pen = noise_burst(0.22, 2500, 8000, 5, 0.01) * 0.45
+    # steel spoon on a steel plate: short metallic partials (one for the whole hall, slightly smeared = unison)
+    tc = np.arange(int(0.6 * SR)) / SR
+    cl = sum(a * np.sin(2 * np.pi * f * tc) * np.exp(-tc * d) for f, a, d in [(2310, 0.5, 14), (3470, 0.35, 18), (5120, 0.2, 24), (1290, 0.25, 10)])
+    cl = np.stack([cl, cl], 1).astype(np.float32)
+    clink = cl * 0.5
+    for d_ms, g in [(9, 0.6), (17, 0.5), (26, 0.4), (38, 0.3), (51, 0.25)]:
+        i = int(d_ms / 1000 * SR); clink[i:] += cl[: len(cl) - i] * g * 0.5
+    tb = np.arange(int(3.5 * SR)) / SR
+    bellw = sum(a * np.sin(2 * np.pi * f * tb) * np.exp(-tb * d) for f, a, d in [(523, 0.5, 1.2), (1046, 0.25, 2.0), (1318, 0.2, 2.6), (1568, 0.12, 3.5), (262, 0.3, 0.9)])
+    clang = np.stack([bellw, bellw], 1).astype(np.float32) * 0.6
+    m1 = np.pad(load("music_p2.mp3"), ((0, N), (0, 0)))[:N] * automation([
+        (0, -15), (K["stairs"], -17), (K["plates"], -18), (K["chew"], -22), (K["practise"], -15), (K["counter"], -16),
+        (K["warden"], -12), (K["empty"], -16), (K["plate"], -18), (K["tomW"], -13), (K["rule"], -15), (K["sit"], -18),
+        (K["stopW"] - 0.05, -18), (K["stopW"] + 0.05, -40), (K["turnW"], -40), (K["onceW"], -12), (K["reg"], -15),
+        (K["buzz"], -17), (K["n43W"], -13), (K["typing"], -16), (K["now"], -12), (K["choice"], -13), (DUR - 1.4, -14), (DUR, -40)])
+    hum = bed("hum.mp3", "lowpass=f=900") * automation([(0, -14), (K["stopW"], -14), (K["stopW"] + 0.1, -20), (K["buzz"], -18), (DUR, -18)])
+    # spoons: one unison clink each time the hall's spoons hit the plates
+    def downs(a, b, w, ph):
+        out = []; k = int(np.floor((a * w - ph) / (2 * np.pi))) - 1
+        while True:
+            tt = (ph - np.pi / 2 + 2 * np.pi * k) / w
+            if tt > b: break
+            if tt >= a: out.append(tt)
+            k += 1
+        return out
+    for tt in downs(0.0, K["spoon"], 2.4, 1.2) + downs(K["chew"] + 1.6, K["practise"], 2.4, 1.2):
+        place(clink, tt, -14)
+    for tt in [K["down1"], K["down2"]]: place(clink, tt + 0.25, -9)
+    for tt in downs(K["practise"], K["counter"], 5.2, 0.0): place(clink, tt, -13)
+    for tt in downs(K["counter"], K["stopW"], 2.4, 1.2): place(clink, tt, -20)
+    # hook: distant mess bell tail + hit
+    place(clang, 0.0, -16, fo=1.0)
+    place(boom, 0.05, -14, fo=0.8, maxlen=2.0)
+    place(boom, K["chairW"], -15, fo=0.6, maxlen=1.4)
+    place(stairs, K["stairs"] - 0.2, -12, fi=0.3, fo=0.6, maxlen=K["lights"] - K["stairs"] + 0.4)
+    place(boom, K["spokeW"], -16, fo=0.6, maxlen=1.2)
+    place(lights, K["lights"] + 0.05, -18, maxlen=0.8, fo=0.3)
+    place(breath, K["chew"] + 0.1, -14, fi=0.2, fo=0.5, maxlen=1.4)
+    place(stinger, K["practiseW"] - 0.03, -14, fo=0.5, maxlen=1.0)
+    place(riser, K["tallW"] - 0.06 - len(riser) / SR, -20, fi=2.0, fo=0.004)
+    place(boom, K["tallW"], -12, fo=0.6, maxlen=1.8)
+    place(stinger, K["wardenW"] - 0.03, -10, fo=0.6, maxlen=1.4)
+    place(boom, K["wardenW"], -8, fo=0.6, maxlen=2.2)
+    place(boom, K["emptyW"], -15, fo=0.6, maxlen=1.4)
+    place(tick, K["roomW"], -12)
+    place(pen, K["dateW"] - 0.05, -14); place(pen, K["dateW"] + 0.25, -15)
+    place(stinger, K["tomW"] - 0.03, -10, fo=0.5, maxlen=1.2)
+    place(boom, K["tomW"], -9, fo=0.6, maxlen=2.0)
+    place(boom, K["notYou"] + 0.05, -12, fo=0.6, maxlen=1.6)
+    place(heartbeat, K["sit"], -12, fi=0.1, fo=0.4, maxlen=K["stop"] - K["sit"] + 0.2)
+    place(clink, K["stopW"] - 0.02, -6)
+    place(boom, K["stopW"] + 0.05, -10, fo=0.6, maxlen=1.6)
+    place(creak_low, K["turnW"] - 0.1, -9, fo=0.4, maxlen=1.5)
+    place(creak_low, K["turnW"] + 0.12, -12, fo=0.4, maxlen=1.3)
+    place(riser, K["onceW"] - 0.06 - len(riser) / SR, -18, fi=2.0, fo=0.004)
+    place(boom, K["onceW"], -6, fo=0.6, maxlen=2.4)
+    place(stinger, K["toward"], -9, fo=0.6, maxlen=1.4)
+    place(creak, K["regOpenW"] - 0.1, -16, fo=0.4, maxlen=1.0)
+    for i in range(8): place(pen, K["penW"] + i * 0.27, -13 - (i % 2) * 2)
+    place(buzz, K["buzzW"] - 0.03, -18, maxlen=0.6, fo=0.15)
+    place(sent, K["buzzW"], -10)
+    place(stinger, K["n43W"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(boom, K["n43W"], -10, fo=0.6, maxlen=1.8)
+    place(boom, K["leaveW"], -14, fo=0.6, maxlen=1.4)
+    place(typing, K["typingW"] - 0.1, -12, fi=0.05, fo=0.3, maxlen=K["choice"] - K["typingW"])
+    place(boom, K["now"] + 0.05, -8, fo=0.6, maxlen=2.0)
+    place(boom, K["choice"] - 0.1, -16, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, hum
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5}[PART]()
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

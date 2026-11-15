@@ -363,6 +363,17 @@ function drawGroupChat(ctx, t, st) {
     ctx.restore();
     y += (bh + 22) * clamp(a * 3);
   }
+  if (st.typing > 0) {
+    const ty = st.typing;
+    ctx.save(); ctx.globalAlpha = clamp(ty * 2);
+    ctx.font = '25px Inter600'; ctx.fillStyle = st.typingCol || '#ff6b7a'; ctx.textAlign = 'left'; ctx.fillText(st.typingFrom || '+91 ••••• •••43', x0 + 40, y + 30);
+    rrect(ctx, x0 + 34, y + 46, 150, 86, 40); ctx.fillStyle = '#262c3f'; ctx.fill();
+    for (let i = 0; i < 3; i++) {
+      const k = 0.5 + 0.5 * Math.sin(t * 9 - i * 0.9);
+      ctx.beginPath(); ctx.arc(x0 + 76 + i * 33, y + 89 - k * 7, 10, 0, 7); ctx.fillStyle = `rgba(190,196,216,${0.45 + 0.55 * k})`; ctx.fill();
+    }
+    ctx.restore();
+  }
   ctx.restore();
 }
 
@@ -760,4 +771,170 @@ function drawUnderBed(ctx, t, st = {}) {
   }
 }
 
-module.exports = { drawDoorway, drawUnderBed, drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };
+
+// ---------- MESS HALL AT 3 AM (front elevation, bright tube lights; students seen from behind) ----------
+// st: {lights 0..1, lift (fn i->0..1 or number), stop (0..1 freezes spoons), turn 0..1 (heads turn: pale blank faces),
+//      warden 0..1, book 0..1, page, emptyHL 0..1 (glow on the empty chair), steam 0..1, me {x,y,s}, dark}
+const MROWS = [ { y: 1035, s: 0.46, n: 15, x0: 70, dx: 66 }, { y: 1240, s: 0.64, n: 12, x0: 40, dx: 92 }, { y: 1530, s: 0.92, n: 8, x0: 0, dx: 134 } ];
+const MEMPTY = { row: 2, i: 7 };
+function messSeat(r, i) { const R = MROWS[r]; return [R.x0 + R.dx * (i + 0.5) + (r === 1 ? 20 : 0), R.y]; }
+function drawStudentBack(ctx, x, y, s, st) {
+  const lw = 8.5; const col = st.col || C.white;
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  ctx.strokeStyle = col; ctx.lineWidth = lw; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  const lift = clamp(st.lift ?? 0);
+  ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(0, -142);
+  // resting arm
+  ctx.moveTo(0, -130); ctx.lineTo(-30, -72); ctx.lineTo(-22, -40);
+  // spoon arm: elbow out, hand up to the mouth and back down to the plate
+  const ex = 40 + 10 * lift, ey = lerp(-78, -150, lift), hx = lerp(26, 12, lift), hy = lerp(-40, -176, lift);
+  ctx.moveTo(0, -130); ctx.lineTo(ex, ey); ctx.lineTo(hx, hy);
+  ctx.stroke();
+  ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(hx, hy); ctx.lineTo(hx - 6, hy - 22); ctx.stroke();
+  const turn = clamp(st.turn || 0);
+  const hx0 = lerp(0, -4, turn), hy0 = -188;
+  ctx.beginPath(); ctx.arc(hx0, hy0, 40, 0, Math.PI * 2);
+  ctx.fillStyle = turn > 0 ? `rgb(${Math.round(lerp(11, 214, turn))},${Math.round(lerp(16, 219, turn))},${Math.round(lerp(34, 232, turn))})` : C.navy1;
+  ctx.fill(); ctx.lineWidth = lw; ctx.stroke();
+  if (turn > 0.6) { ctx.save(); ctx.globalAlpha = (turn - 0.6) / 0.4 * 0.35; ctx.fillStyle = '#ffffff'; ctx.beginPath(); ctx.ellipse(hx0 - 12, hy0 - 14, 12, 8, -0.5, 0, 7); ctx.fill(); ctx.restore(); }
+  ctx.restore();
+}
+function steamLines(ctx, x, y, s, t, a, seed = 0) {
+  if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha = a * 0.35; ctx.strokeStyle = '#dfe8ff'; ctx.lineWidth = 4 * s; ctx.lineCap = 'round';
+  for (let k = 0; k < 3; k++) {
+    const ph = ((t * 0.6 + k / 3 + hash(seed)) % 1);
+    ctx.globalAlpha = a * 0.35 * Math.sin(ph * Math.PI);
+    ctx.beginPath();
+    for (let j = 0; j <= 10; j++) { const yy = y - j * 9 * s - ph * 40 * s; const xx = x + (k - 1) * 16 * s + Math.sin(j * 0.8 + t * 3 + k) * 7 * s; j ? ctx.lineTo(xx, yy) : ctx.moveTo(xx, yy); }
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+function drawMess(ctx, t, st = {}) {
+  const Lt = (st.lights ?? 1) * flicker(t, 33, 0.03);
+  // wall
+  const wg = ctx.createLinearGradient(0, -600, 0, 1000); wg.addColorStop(0, '#1f2a5c'); wg.addColorStop(0.55, '#33458e'); wg.addColorStop(1, '#2c3c7c');
+  ctx.fillStyle = wg; ctx.fillRect(-700, -700, W + 1400, 1700);
+  // tiled wainscot
+  ctx.fillStyle = '#26346c'; ctx.fillRect(-700, 690, W + 1400, 320);
+  ctx.strokeStyle = 'rgba(10,16,40,0.35)'; ctx.lineWidth = 2;
+  for (let x = -700; x < W + 700; x += 60) { ctx.beginPath(); ctx.moveTo(x, 690); ctx.lineTo(x, 1010); ctx.stroke(); }
+  for (let y = 690; y < 1010; y += 60) { ctx.beginPath(); ctx.moveTo(-700, y); ctx.lineTo(W + 700, y); ctx.stroke(); }
+  ctx.fillStyle = '#1a2452'; ctx.fillRect(-700, 682, W + 1400, 10);
+  // notice board + wall clock (3:00)
+  rrect(ctx, 820, 330, 190, 250, 6); ctx.fillStyle = '#5b4a32'; ctx.fill();
+  ctx.fillStyle = '#d9d4c2'; ctx.fillRect(842, 352, 146, 96); ctx.fillStyle = '#c9c4b0'; ctx.fillRect(850, 460, 120, 100);
+  ctx.font = '22px Mono700'; ctx.fillStyle = '#1a2140'; ctx.textAlign = 'center'; ctx.fillText('MESS', 915, 390); ctx.font = '16px Mono500'; ctx.fillText('MENU · SUN', 915, 418);
+  ctx.save(); ctx.translate(915, 632); ctx.scale(0.75, 0.75); ctx.beginPath(); ctx.arc(0, 0, 70, 0, 7); ctx.fillStyle = '#e8ebf2'; ctx.fill(); ctx.lineWidth = 8; ctx.strokeStyle = '#141a33'; ctx.stroke();
+  ctx.strokeStyle = '#141a33'; ctx.lineCap = 'round'; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(0, -50); ctx.stroke();
+  ctx.lineWidth = 9; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(36, 0); ctx.stroke(); ctx.restore();
+  ctx.textAlign = 'left';
+  // serving counter + the warden behind it
+  const wa = st.warden ?? 1;
+  if (wa > 0) { ctx.save(); ctx.globalAlpha = wa; drawWarden(ctx, 600, 1000, 0.66, { t, book: st.book ?? 0.3, page: st.page || 0, rim: 0.9, rimCol: '#7f92d6', col: '#03050b' }); ctx.restore(); }
+  const cg = ctx.createLinearGradient(0, 820, 0, 1000); cg.addColorStop(0, '#5a679a'); cg.addColorStop(1, '#3a4573');
+  ctx.fillStyle = cg; ctx.fillRect(330, 830, 440, 175); ctx.fillStyle = '#7d8bc0'; ctx.fillRect(316, 818, 468, 16);
+  for (const [px, pw] of [[380, 90], [500, 110], [640, 90]]) {
+    rrect(ctx, px, 760, pw, 64, 14); ctx.fillStyle = '#9aa3c0'; ctx.fill(); ctx.fillStyle = '#6c7596'; ctx.fillRect(px, 760, pw, 10);
+    steamLines(ctx, px + pw / 2, 752, 1.2, t, st.steam ?? 1, px);
+  }
+  // floor
+  const fg = ctx.createLinearGradient(0, 1000, 0, 2000); fg.addColorStop(0, '#24306a'); fg.addColorStop(1, '#0f1534');
+  ctx.fillStyle = fg; ctx.fillRect(-700, 1000, W + 1400, 1300);
+  // rows of tables, back to front
+  const liftOf = (r, i) => typeof st.lift === 'function' ? st.lift(r, i) : (st.lift ?? 0);
+  MROWS.forEach((R, r) => {
+    const s = R.s;
+    // table top beyond the students (they face the counter)
+    ctx.fillStyle = '#5d6a9e'; ctx.fillRect(-700, R.y - 150 * s, W + 1400, 26 * s);
+    ctx.fillStyle = '#3d4878'; ctx.fillRect(-700, R.y - 124 * s, W + 1400, 50 * s);
+    // plates on the table between the students
+    for (let i = 0; i < R.n; i++) {
+      const [x] = messSeat(r, i);
+      ctx.beginPath(); ctx.ellipse(x + R.dx * 0.5 * (i % 2 ? -0.1 : 0.1), R.y - 146 * s, 38 * s, 9 * s, 0, 0, 7); ctx.fillStyle = '#c6cbd8'; ctx.fill();
+      steamLines(ctx, x, R.y - 156 * s, s, t, (st.steam ?? 1) * 0.6, r * 31 + i);
+    }
+    // bench
+    ctx.fillStyle = '#141b3c'; ctx.fillRect(-700, R.y + 2 * s, W + 1400, 26 * s);
+    for (let i = 0; i < R.n; i++) {
+      const [x, y] = messSeat(r, i);
+      if (r === MEMPTY.row && i === MEMPTY.i) {
+        // the empty place: covered plate with a white card, a stool, a glow
+        const hl = st.emptyHL || 0;
+        if (hl > 0) glow(ctx, x, y - 120 * s, 260 * s, 'rgba(198,255,58,A)', 0.22 * hl);
+        rrect(ctx, x - 50 * s, y - 182 * s, 100 * s, 40 * s, 20 * s); ctx.fillStyle = '#d6dbe6'; ctx.fill();
+        ctx.beginPath(); ctx.arc(x, y - 186 * s, 6 * s, 0, 7); ctx.fill();
+        ctx.save(); ctx.translate(x + 4 * s, y - 196 * s); ctx.rotate(-0.08); ctx.fillStyle = '#ffffff'; ctx.fillRect(-26 * s, -16 * s, 52 * s, 30 * s); ctx.restore();
+        ctx.strokeStyle = hl > 0 ? C.lime : 'rgba(238,241,247,0.5)'; ctx.lineWidth = 5 * s;
+        ctx.strokeRect(x - 40 * s, y - 96 * s, 80 * s, 96 * s);
+        continue;
+      }
+      const lift = (st.stop ? lerp(liftOf(r, i), 0.15, clamp(st.stop)) : liftOf(r, i));
+      const tt = clamp((st.turn || 0) * 1.0 - hash(r * 50 + i) * 0.06);
+      drawStudentBack(ctx, x, y, s, { lift, turn: tt });
+    }
+  });
+  // you: in the doorway, foreground left
+  if (st.me) drawStick(ctx, { x: st.me.x, y: st.me.y, s: st.me.s, arm: st.me.arm, lit: st.me.lit, view: 'back', walk: st.me.walk });
+  // tube lights (bright, cold)
+  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  for (const [y, w, xs] of [[90, 260, [130, 540, 950]], [230, 200, [180, 540, 900]], [340, 160, [230, 540, 850]]]) {
+    for (const x of xs) {
+      const g = ctx.createRadialGradient(x, y, 10, x, y, w * 1.6); g.addColorStop(0, `rgba(190,240,215,${0.28 * Lt})`); g.addColorStop(1, 'rgba(190,240,215,0)');
+      ctx.fillStyle = g; ctx.fillRect(x - w * 1.6, y - w * 1.6, w * 3.2, w * 3.2);
+    }
+  }
+  const lg = ctx.createLinearGradient(0, 0, 0, 1900); lg.addColorStop(0, `rgba(150,215,190,${0.16 * Lt})`); lg.addColorStop(1, 'rgba(150,215,190,0)');
+  ctx.fillStyle = lg; ctx.fillRect(-700, -700, W + 1400, 2700);
+  ctx.restore();
+  for (const [y, w, xs] of [[90, 260, [130, 540, 950]], [230, 200, [180, 540, 900]], [340, 160, [230, 540, 850]]]) for (const x of xs) {
+    rrect(ctx, x - w / 2, y - 7, w, 14, 7); ctx.fillStyle = `rgba(240,255,248,${0.35 + 0.65 * Lt})`; ctx.fill();
+  }
+  if (Lt < 1) { ctx.fillStyle = `rgba(0,0,6,${(1 - Lt) * 0.7})`; ctx.fillRect(-700, -700, W + 1400, 2900); }
+  if (st.dark > 0) { ctx.fillStyle = `rgba(2,3,10,${st.dark})`; ctx.fillRect(-700, -700, W + 1400, 2900); }
+}
+const messEmpty = () => { const [x, y] = messSeat(MEMPTY.row, MEMPTY.i); return [x, y, MROWS[MEMPTY.row].s]; };
+
+// ---------- COVERED PLATE close-up: steel thali under a dome, a folded card: ROOM 13 + tomorrow's date ----------
+// st: {room 0..1 (card readable/lime), date 0..1 (date written in red), steam, lift (dome lift 0..1), dark}
+function drawCoveredPlate(ctx, t, st = {}) {
+  const Lt = flicker(t, 41, 0.03);
+  const tg = ctx.createLinearGradient(0, -600, 0, 2400); tg.addColorStop(0, '#2c3a78'); tg.addColorStop(0.45, '#4b5893'); tg.addColorStop(1, '#273266');
+  ctx.fillStyle = tg; ctx.fillRect(-700, -700, W + 1400, 3300);
+  ctx.strokeStyle = 'rgba(10,14,36,0.35)'; ctx.lineWidth = 3; for (let y = 300; y < 2400; y += 220) { ctx.beginPath(); ctx.moveTo(-700, y); ctx.lineTo(W + 700, y); ctx.stroke(); }
+  // thali
+  ctx.beginPath(); ctx.ellipse(540, 1180, 430, 150, 0, 0, 7); ctx.fillStyle = '#9ea6bf'; ctx.fill();
+  ctx.beginPath(); ctx.ellipse(540, 1170, 400, 132, 0, 0, 7); ctx.fillStyle = '#c3c9da'; ctx.fill();
+  // dome
+  const lift = clamp(st.lift || 0);
+  ctx.save(); ctx.translate(0, -lift * 30);
+  ctx.beginPath(); ctx.moveTo(190, 1160); ctx.bezierCurveTo(200, 830, 880, 830, 890, 1160); ctx.closePath();
+  const dg = ctx.createLinearGradient(190, 0, 890, 0); dg.addColorStop(0, '#8d96b3'); dg.addColorStop(0.35, '#e3e7f1'); dg.addColorStop(1, '#7c86a6');
+  ctx.fillStyle = dg; ctx.fill();
+  ctx.beginPath(); ctx.ellipse(540, 1160, 350, 40, 0, 0, Math.PI); ctx.fillStyle = '#6f7998'; ctx.fill();
+  ctx.beginPath(); ctx.ellipse(540, 866, 38, 18, 0, 0, 7); ctx.fillStyle = '#b9c0d4'; ctx.fill();
+  ctx.restore();
+  steamLines(ctx, 230, 1150, 2.2, t, st.steam ?? 1, 3); steamLines(ctx, 850, 1150, 2.2, t, st.steam ?? 1, 7);
+  // folded card leaning on the dome
+  ctx.save(); ctx.translate(540, 960); ctx.rotate(-0.05);
+  ctx.fillStyle = 'rgba(0,0,0,0.35)'; ctx.fillRect(-250, -150, 510, 310);
+  ctx.fillStyle = '#f4f2ea'; ctx.fillRect(-260, -160, 520, 310);
+  ctx.fillStyle = 'rgba(0,0,0,0.06)'; ctx.fillRect(-260, 92, 520, 58);
+  ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+  ctx.font = '30px Mono700'; ctx.fillStyle = '#1a2140'; spaced(ctx, 'BLOCK C · MESS', 0, -100, 6, 'center');
+  ctx.font = '120px Osw700'; ctx.fillStyle = st.room > 0 ? '#1a2140' : '#1a2140'; ctx.fillText('ROOM 13', 0, 30);
+  const da = clamp(st.date || 0);
+  if (da > 0) {
+    ctx.save(); ctx.beginPath(); ctx.rect(-240, 50, 480 * da, 90); ctx.clip();
+    ctx.font = '62px Osw600'; ctx.fillStyle = '#c4102a'; ctx.fillText('16 / 11', 0, 122); ctx.restore();
+  }
+  ctx.restore();
+  if (st.room > 0) { ctx.save(); ctx.globalAlpha = clamp(st.room); ctx.strokeStyle = C.lime; ctx.lineWidth = 7; ctx.beginPath(); ctx.ellipse(540, 945, 290, 105, -0.05, 0, Math.PI * 2 * clamp(st.room * 1.3)); ctx.stroke(); ctx.restore(); }
+  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  const lg = ctx.createRadialGradient(540, 400, 50, 540, 400, 1400); lg.addColorStop(0, `rgba(170,225,205,${0.22 * Lt})`); lg.addColorStop(1, 'rgba(170,225,205,0)');
+  ctx.fillStyle = lg; ctx.fillRect(-700, -700, W + 1400, 3300); ctx.restore();
+  if (st.dark > 0) { ctx.fillStyle = `rgba(2,3,10,${st.dark})`; ctx.fillRect(-700, -700, W + 1400, 3300); }
+}
+
+module.exports = { drawMess, drawCoveredPlate, drawStudentBack, messSeat, messEmpty, MROWS,  drawDoorway, drawUnderBed, drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };

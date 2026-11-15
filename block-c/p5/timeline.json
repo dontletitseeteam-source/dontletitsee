@@ -1,0 +1,1771 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 87.744,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Forty-two students are eating dinner at three in the morning.",
+   "src_start": 0.101,
+   "src_end": 3.33,
+   "start": 0.15,
+   "end": 3.379,
+   "words": [
+    {
+     "text": "Forty-two",
+     "start": 0.2,
+     "end": 0.728
+    },
+    {
+     "text": "students",
+     "start": 0.804,
+     "end": 1.181
+    },
+    {
+     "text": "are",
+     "start": 1.257,
+     "end": 1.408
+    },
+    {
+     "text": "eating",
+     "start": 1.558,
+     "end": 1.709
+    },
+    {
+     "text": "dinner",
+     "start": 1.785,
+     "end": 2.011
+    },
+    {
+     "text": "at",
+     "start": 2.125,
+     "end": 2.238
+    },
+    {
+     "text": "three",
+     "start": 2.351,
+     "end": 2.464
+    },
+    {
+     "text": "in",
+     "start": 2.54,
+     "end": 2.615
+    },
+    {
+     "text": "the",
+     "start": 2.653,
+     "end": 2.691
+    },
+    {
+     "text": "morning.",
+     "start": 2.766,
+     "end": 3.379
+    }
+   ],
+   "captions": [
+    {
+     "text": "FORTY-TWO STUDENTS",
+     "start": 0.2,
+     "word_idx": 0,
+     "end": 1.257
+    },
+    {
+     "text": "ARE EATING DINNER",
+     "start": 1.257,
+     "word_idx": 2,
+     "end": 2.125
+    },
+    {
+     "text": "AT {3 IN THE MORNING.}",
+     "start": 2.125,
+     "word_idx": 5,
+     "end": 3.499
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "And one chair is waiting for you.",
+   "src_start": 3.842,
+   "src_end": 5.48,
+   "start": 3.679,
+   "end": 5.317,
+   "words": [
+    {
+     "text": "And",
+     "start": 3.729,
+     "end": 3.761
+    },
+    {
+     "text": "one",
+     "start": 3.837,
+     "end": 3.988
+    },
+    {
+     "text": "chair",
+     "start": 4.063,
+     "end": 4.289
+    },
+    {
+     "text": "is",
+     "start": 4.365,
+     "end": 4.44
+    },
+    {
+     "text": "waiting",
+     "start": 4.516,
+     "end": 4.818
+    },
+    {
+     "text": "for",
+     "start": 4.893,
+     "end": 4.969
+    },
+    {
+     "text": "you.",
+     "start": 5.082,
+     "end": 5.317
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND ONE {CHAIR}",
+     "start": 3.729,
+     "word_idx": 0,
+     "end": 4.365
+    },
+    {
+     "text": "IS WAITING FOR YOU.",
+     "start": 4.365,
+     "word_idx": 3,
+     "end": 5.437
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "You followed them down the stairs.",
+   "src_start": 6.042,
+   "src_end": 7.74,
+   "start": 5.717,
+   "end": 7.415,
+   "words": [
+    {
+     "text": "You",
+     "start": 5.767,
+     "end": 5.788
+    },
+    {
+     "text": "followed",
+     "start": 5.864,
+     "end": 6.09
+    },
+    {
+     "text": "them",
+     "start": 6.166,
+     "end": 6.317
+    },
+    {
+     "text": "down",
+     "start": 6.392,
+     "end": 6.468
+    },
+    {
+     "text": "the",
+     "start": 6.543,
+     "end": 6.618
+    },
+    {
+     "text": "stairs.",
+     "start": 6.883,
+     "end": 7.373
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU FOLLOWED",
+     "start": 5.767,
+     "word_idx": 0,
+     "end": 6.166
+    },
+    {
+     "text": "THEM DOWN THE STAIRS.",
+     "start": 6.166,
+     "word_idx": 2,
+     "end": 7.535
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "Nobody looked back. Nobody spoke.",
+   "src_start": 8.025,
+   "src_end": 10.45,
+   "start": 7.765,
+   "end": 10.19,
+   "words": [
+    {
+     "text": "Nobody",
+     "start": 7.815,
+     "end": 8.117
+    },
+    {
+     "text": "looked",
+     "start": 8.192,
+     "end": 8.343
+    },
+    {
+     "text": "back.",
+     "start": 8.419,
+     "end": 9.098
+    },
+    {
+     "text": "Nobody",
+     "start": 9.249,
+     "end": 9.551
+    },
+    {
+     "text": "spoke.",
+     "start": 9.626,
+     "end": 10.19
+    }
+   ],
+   "captions": [
+    {
+     "text": "NOBODY LOOKED BACK.",
+     "start": 7.815,
+     "word_idx": 0,
+     "end": 9.249
+    },
+    {
+     "text": "{NOBODY SPOKE.}",
+     "start": 9.249,
+     "word_idx": 3,
+     "end": 10.31
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "The mess hall lights are already on.",
+   "src_start": 10.872,
+   "src_end": 12.76,
+   "start": 10.59,
+   "end": 12.478,
+   "words": [
+    {
+     "text": "The",
+     "start": 10.64,
+     "end": 10.661
+    },
+    {
+     "text": "mess",
+     "start": 10.775,
+     "end": 10.888
+    },
+    {
+     "text": "hall",
+     "start": 10.963,
+     "end": 11.039
+    },
+    {
+     "text": "lights",
+     "start": 11.114,
+     "end": 11.341
+    },
+    {
+     "text": "are",
+     "start": 11.416,
+     "end": 11.567
+    },
+    {
+     "text": "already",
+     "start": 11.642,
+     "end": 12.02
+    },
+    {
+     "text": "on.",
+     "start": 12.095,
+     "end": 12.478
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE MESS HALL",
+     "start": 10.64,
+     "word_idx": 0,
+     "end": 11.114
+    },
+    {
+     "text": "LIGHTS ARE [ALREADY ON.]",
+     "start": 11.114,
+     "word_idx": 3,
+     "end": 12.598
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Steel plates on every table. Rice. Dal. Still steaming.",
+   "src_start": 13.082,
+   "src_end": 17.64,
+   "start": 12.878,
+   "end": 17.436,
+   "words": [
+    {
+     "text": "Steel",
+     "start": 12.928,
+     "end": 13.154
+    },
+    {
+     "text": "plates",
+     "start": 13.23,
+     "end": 13.532
+    },
+    {
+     "text": "on",
+     "start": 13.645,
+     "end": 13.758
+    },
+    {
+     "text": "every",
+     "start": 13.909,
+     "end": 14.06
+    },
+    {
+     "text": "table.",
+     "start": 14.437,
+     "end": 14.89
+    },
+    {
+     "text": "Rice.",
+     "start": 14.966,
+     "end": 15.683
+    },
+    {
+     "text": "Dal.",
+     "start": 15.72,
+     "end": 16.4
+    },
+    {
+     "text": "Still",
+     "start": 16.475,
+     "end": 16.702
+    },
+    {
+     "text": "steaming.",
+     "start": 16.852,
+     "end": 17.436
+    }
+   ],
+   "captions": [
+    {
+     "text": "STEEL PLATES ON",
+     "start": 12.928,
+     "word_idx": 0,
+     "end": 13.909
+    },
+    {
+     "text": "EVERY TABLE.",
+     "start": 13.909,
+     "word_idx": 3,
+     "end": 14.966
+    },
+    {
+     "text": "RICE.",
+     "start": 14.966,
+     "word_idx": 5,
+     "end": 15.72
+    },
+    {
+     "text": "DAL.",
+     "start": 15.72,
+     "word_idx": 6,
+     "end": 16.475
+    },
+    {
+     "text": "[STILL STEAMING.]",
+     "start": 16.475,
+     "word_idx": 7,
+     "end": 17.556
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Everyone sits perfectly straight.",
+   "src_start": 17.988,
+   "src_end": 20.31,
+   "start": 17.836,
+   "end": 20.158,
+   "words": [
+    {
+     "text": "Everyone",
+     "start": 17.886,
+     "end": 18.339
+    },
+    {
+     "text": "sits",
+     "start": 18.49,
+     "end": 18.792
+    },
+    {
+     "text": "perfectly",
+     "start": 18.867,
+     "end": 19.395
+    },
+    {
+     "text": "straight.",
+     "start": 19.546,
+     "end": 20.158
+    }
+   ],
+   "captions": [
+    {
+     "text": "EVERYONE SITS",
+     "start": 17.886,
+     "word_idx": 0,
+     "end": 18.867
+    },
+    {
+     "text": "{PERFECTLY STRAIGHT.}",
+     "start": 18.867,
+     "word_idx": 2,
+     "end": 20.278
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "They lift the spoon. Put it down. Lift. Down.",
+   "src_start": 20.629,
+   "src_end": 24.43,
+   "start": 20.558,
+   "end": 24.359,
+   "words": [
+    {
+     "text": "They",
+     "start": 20.608,
+     "end": 20.759
+    },
+    {
+     "text": "lift",
+     "start": 20.835,
+     "end": 20.91
+    },
+    {
+     "text": "the",
+     "start": 20.985,
+     "end": 21.061
+    },
+    {
+     "text": "spoon.",
+     "start": 21.174,
+     "end": 21.891
+    },
+    {
+     "text": "Put",
+     "start": 21.967,
+     "end": 22.042
+    },
+    {
+     "text": "it",
+     "start": 22.118,
+     "end": 22.193
+    },
+    {
+     "text": "down.",
+     "start": 22.268,
+     "end": 23.023
+    },
+    {
+     "text": "Lift.",
+     "start": 23.099,
+     "end": 23.853
+    },
+    {
+     "text": "Down.",
+     "start": 24.042,
+     "end": 24.359
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEY LIFT THE SPOON.",
+     "start": 20.608,
+     "word_idx": 0,
+     "end": 21.967
+    },
+    {
+     "text": "PUT IT DOWN.",
+     "start": 21.967,
+     "word_idx": 4,
+     "end": 23.099
+    },
+    {
+     "text": "LIFT.",
+     "start": 23.099,
+     "word_idx": 7,
+     "end": 24.042
+    },
+    {
+     "text": "DOWN.",
+     "start": 24.042,
+     "word_idx": 8,
+     "end": 24.479
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Nobody is chewing.",
+   "src_start": 24.78,
+   "src_end": 26.12,
+   "start": 24.809,
+   "end": 26.149,
+   "words": [
+    {
+     "text": "Nobody",
+     "start": 24.859,
+     "end": 25.236
+    },
+    {
+     "text": "is",
+     "start": 25.312,
+     "end": 25.463
+    },
+    {
+     "text": "chewing.",
+     "start": 25.538,
+     "end": 26.149
+    }
+   ],
+   "captions": [
+    {
+     "text": "{NOBODY IS CHEWING.}",
+     "start": 24.859,
+     "word_idx": 0,
+     "end": 26.269
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "Like they're practising how to eat.",
+   "src_start": 26.497,
+   "src_end": 28.19,
+   "start": 26.499,
+   "end": 28.192,
+   "words": [
+    {
+     "text": "Like",
+     "start": 26.549,
+     "end": 26.568
+    },
+    {
+     "text": "they're",
+     "start": 26.643,
+     "end": 26.794
+    },
+    {
+     "text": "practising",
+     "start": 26.869,
+     "end": 27.322
+    },
+    {
+     "text": "how",
+     "start": 27.398,
+     "end": 27.473
+    },
+    {
+     "text": "to",
+     "start": 27.549,
+     "end": 27.7
+    },
+    {
+     "text": "eat.",
+     "start": 27.775,
+     "end": 28.192
+    }
+   ],
+   "captions": [
+    {
+     "text": "LIKE THEY'RE",
+     "start": 26.549,
+     "word_idx": 0,
+     "end": 26.869
+    },
+    {
+     "text": "{PRACTISING} HOW TO EAT.",
+     "start": 26.869,
+     "word_idx": 2,
+     "end": 28.312
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Behind the counter, someone very tall is serving.",
+   "src_start": 28.478,
+   "src_end": 31.53,
+   "start": 28.692,
+   "end": 31.743,
+   "words": [
+    {
+     "text": "Behind",
+     "start": 28.742,
+     "end": 29.043
+    },
+    {
+     "text": "the",
+     "start": 29.081,
+     "end": 29.119
+    },
+    {
+     "text": "counter,",
+     "start": 29.194,
+     "end": 29.798
+    },
+    {
+     "text": "someone",
+     "start": 30.025,
+     "end": 30.251
+    },
+    {
+     "text": "very",
+     "start": 30.326,
+     "end": 30.628
+    },
+    {
+     "text": "tall",
+     "start": 30.704,
+     "end": 30.93
+    },
+    {
+     "text": "is",
+     "start": 31.006,
+     "end": 31.157
+    },
+    {
+     "text": "serving.",
+     "start": 31.308,
+     "end": 31.743
+    }
+   ],
+   "captions": [
+    {
+     "text": "BEHIND THE COUNTER,",
+     "start": 28.742,
+     "word_idx": 0,
+     "end": 30.025
+    },
+    {
+     "text": "SOMEONE {VERY TALL}",
+     "start": 30.025,
+     "word_idx": 3,
+     "end": 31.006
+    },
+    {
+     "text": "IS SERVING.",
+     "start": 31.006,
+     "word_idx": 6,
+     "end": 31.863
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "Long coat. The register under one arm.",
+   "src_start": 31.799,
+   "src_end": 34.23,
+   "start": 32.093,
+   "end": 34.524,
+   "words": [
+    {
+     "text": "Long",
+     "start": 32.143,
+     "end": 32.37
+    },
+    {
+     "text": "coat.",
+     "start": 32.445,
+     "end": 33.049
+    },
+    {
+     "text": "The",
+     "start": 33.087,
+     "end": 33.124
+    },
+    {
+     "text": "register",
+     "start": 33.351,
+     "end": 33.577
+    },
+    {
+     "text": "under",
+     "start": 33.653,
+     "end": 33.879
+    },
+    {
+     "text": "one",
+     "start": 33.955,
+     "end": 34.03
+    },
+    {
+     "text": "arm.",
+     "start": 34.105,
+     "end": 34.524
+    }
+   ],
+   "captions": [
+    {
+     "text": "LONG COAT.",
+     "start": 32.143,
+     "word_idx": 0,
+     "end": 33.087
+    },
+    {
+     "text": "THE [REGISTER] UNDER ONE ARM.",
+     "start": 33.087,
+     "word_idx": 2,
+     "end": 34.644
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "The warden.",
+   "src_start": 34.516,
+   "src_end": 35.32,
+   "start": 34.974,
+   "end": 35.778,
+   "words": [
+    {
+     "text": "The",
+     "start": 35.024,
+     "end": 35.1
+    },
+    {
+     "text": "warden.",
+     "start": 35.175,
+     "end": 35.778
+    }
+   ],
+   "captions": [
+    {
+     "text": "{THE WARDEN.}",
+     "start": 35.024,
+     "word_idx": 0,
+     "end": 35.898
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "At the end of the last table, one empty chair.",
+   "src_start": 35.714,
+   "src_end": 38.42,
+   "start": 36.328,
+   "end": 39.034,
+   "words": [
+    {
+     "text": "At",
+     "start": 36.378,
+     "end": 36.388
+    },
+    {
+     "text": "the",
+     "start": 36.463,
+     "end": 36.538
+    },
+    {
+     "text": "end",
+     "start": 36.614,
+     "end": 36.689
+    },
+    {
+     "text": "of",
+     "start": 36.727,
+     "end": 36.765
+    },
+    {
+     "text": "the",
+     "start": 36.84,
+     "end": 36.916
+    },
+    {
+     "text": "last",
+     "start": 37.029,
+     "end": 37.142
+    },
+    {
+     "text": "table,",
+     "start": 37.218,
+     "end": 37.897
+    },
+    {
+     "text": "one",
+     "start": 37.972,
+     "end": 38.123
+    },
+    {
+     "text": "empty",
+     "start": 38.199,
+     "end": 38.501
+    },
+    {
+     "text": "chair.",
+     "start": 38.576,
+     "end": 39.034
+    }
+   ],
+   "captions": [
+    {
+     "text": "AT THE END OF THE LAST TABLE,",
+     "start": 36.378,
+     "word_idx": 0,
+     "end": 37.972
+    },
+    {
+     "text": "ONE [EMPTY CHAIR.]",
+     "start": 37.972,
+     "word_idx": 7,
+     "end": 39.154
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "A covered plate. A card on top.",
+   "src_start": 38.667,
+   "src_end": 40.84,
+   "start": 39.434,
+   "end": 41.607,
+   "words": [
+    {
+     "text": "A",
+     "start": 39.484,
+     "end": 39.559
+    },
+    {
+     "text": "covered",
+     "start": 39.635,
+     "end": 39.861
+    },
+    {
+     "text": "plate.",
+     "start": 39.937,
+     "end": 40.578
+    },
+    {
+     "text": "A",
+     "start": 40.616,
+     "end": 40.692
+    },
+    {
+     "text": "card",
+     "start": 40.767,
+     "end": 40.993
+    },
+    {
+     "text": "on",
+     "start": 41.069,
+     "end": 41.144
+    },
+    {
+     "text": "top.",
+     "start": 41.295,
+     "end": 41.607
+    }
+   ],
+   "captions": [
+    {
+     "text": "A COVERED PLATE.",
+     "start": 39.484,
+     "word_idx": 0,
+     "end": 40.616
+    },
+    {
+     "text": "A [CARD] ON TOP.",
+     "start": 40.616,
+     "word_idx": 3,
+     "end": 41.727
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "Room thirteen.",
+   "src_start": 41.082,
+   "src_end": 42.45,
+   "start": 42.007,
+   "end": 43.375,
+   "words": [
+    {
+     "text": "Room",
+     "start": 42.057,
+     "end": 42.359
+    },
+    {
+     "text": "thirteen.",
+     "start": 42.585,
+     "end": 43.375
+    }
+   ],
+   "captions": [
+    {
+     "text": "[ROOM 13.]",
+     "start": 42.057,
+     "word_idx": 0,
+     "end": 43.495
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "And a date. Tomorrow's.",
+   "src_start": 42.742,
+   "src_end": 44.62,
+   "start": 43.725,
+   "end": 45.602,
+   "words": [
+    {
+     "text": "And",
+     "start": 43.775,
+     "end": 43.85
+    },
+    {
+     "text": "a",
+     "start": 43.926,
+     "end": 44.001
+    },
+    {
+     "text": "date.",
+     "start": 44.19,
+     "end": 44.756
+    },
+    {
+     "text": "Tomorrow's.",
+     "start": 44.832,
+     "end": 45.602
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND A DATE.",
+     "start": 43.775,
+     "word_idx": 0,
+     "end": 44.832
+    },
+    {
+     "text": "{TOMORROW'S.}",
+     "start": 44.832,
+     "word_idx": 3,
+     "end": 45.722
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "Rule four. The mess opens at three for someone.",
+   "src_start": 44.931,
+   "src_end": 48.14,
+   "start": 46.152,
+   "end": 49.361,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 46.202,
+     "end": 46.429
+    },
+    {
+     "text": "four.",
+     "start": 46.58,
+     "end": 47.309
+    },
+    {
+     "text": "The",
+     "start": 47.36,
+     "end": 47.41
+    },
+    {
+     "text": "mess",
+     "start": 47.523,
+     "end": 47.636
+    },
+    {
+     "text": "opens",
+     "start": 47.712,
+     "end": 47.938
+    },
+    {
+     "text": "at",
+     "start": 48.014,
+     "end": 48.165
+    },
+    {
+     "text": "three",
+     "start": 48.24,
+     "end": 48.467
+    },
+    {
+     "text": "for",
+     "start": 48.542,
+     "end": 48.768
+    },
+    {
+     "text": "someone.",
+     "start": 48.995,
+     "end": 49.361
+    }
+   ],
+   "captions": [
+    {
+     "text": "RULE [FOUR.]",
+     "start": 46.202,
+     "word_idx": 0,
+     "end": 47.36
+    },
+    {
+     "text": "THE MESS OPENS",
+     "start": 47.36,
+     "word_idx": 2,
+     "end": 48.014
+    },
+    {
+     "text": "AT [3]",
+     "start": 48.014,
+     "word_idx": 5,
+     "end": 48.542
+    },
+    {
+     "text": "FOR SOMEONE.",
+     "start": 48.542,
+     "word_idx": 7,
+     "end": 49.481
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "Not for you. So why is your plate here?",
+   "src_start": 48.327,
+   "src_end": 50.71,
+   "start": 49.661,
+   "end": 52.044,
+   "words": [
+    {
+     "text": "Not",
+     "start": 49.711,
+     "end": 49.862
+    },
+    {
+     "text": "for",
+     "start": 49.938,
+     "end": 50.013
+    },
+    {
+     "text": "you.",
+     "start": 50.089,
+     "end": 50.692
+    },
+    {
+     "text": "So",
+     "start": 50.768,
+     "end": 50.919
+    },
+    {
+     "text": "why",
+     "start": 50.994,
+     "end": 51.07
+    },
+    {
+     "text": "is",
+     "start": 51.145,
+     "end": 51.221
+    },
+    {
+     "text": "your",
+     "start": 51.296,
+     "end": 51.372
+    },
+    {
+     "text": "plate",
+     "start": 51.485,
+     "end": 51.598
+    },
+    {
+     "text": "here?",
+     "start": 51.674,
+     "end": 52.044
+    }
+   ],
+   "captions": [
+    {
+     "text": "{NOT FOR YOU.}",
+     "start": 49.711,
+     "word_idx": 0,
+     "end": 50.768
+    },
+    {
+     "text": "SO WHY IS",
+     "start": 50.768,
+     "word_idx": 3,
+     "end": 51.296
+    },
+    {
+     "text": "YOUR PLATE HERE?",
+     "start": 51.296,
+     "word_idx": 6,
+     "end": 52.164
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "You don't sit.",
+   "src_start": 50.969,
+   "src_end": 52.21,
+   "start": 52.544,
+   "end": 53.785,
+   "words": [
+    {
+     "text": "You",
+     "start": 52.594,
+     "end": 52.82
+    },
+    {
+     "text": "don't",
+     "start": 52.896,
+     "end": 53.273
+    },
+    {
+     "text": "sit.",
+     "start": 53.462,
+     "end": 53.785
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU DON'T SIT.",
+     "start": 52.594,
+     "word_idx": 0,
+     "end": 53.905
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "And every spoon stops.",
+   "src_start": 52.478,
+   "src_end": 54.2,
+   "start": 54.285,
+   "end": 56.007,
+   "words": [
+    {
+     "text": "And",
+     "start": 54.335,
+     "end": 54.562
+    },
+    {
+     "text": "every",
+     "start": 54.712,
+     "end": 54.863
+    },
+    {
+     "text": "spoon",
+     "start": 54.939,
+     "end": 55.316
+    },
+    {
+     "text": "stops.",
+     "start": 55.392,
+     "end": 56.007
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND EVERY",
+     "start": 54.335,
+     "word_idx": 0,
+     "end": 54.939
+    },
+    {
+     "text": "{SPOON STOPS.}",
+     "start": 54.939,
+     "word_idx": 2,
+     "end": 56.127
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "Forty-two heads turn. At once.",
+   "src_start": 54.441,
+   "src_end": 56.69,
+   "start": 56.507,
+   "end": 58.756,
+   "words": [
+    {
+     "text": "Forty-two",
+     "start": 56.557,
+     "end": 57.01
+    },
+    {
+     "text": "heads",
+     "start": 57.161,
+     "end": 57.312
+    },
+    {
+     "text": "turn.",
+     "start": 57.651,
+     "end": 58.066
+    },
+    {
+     "text": "At",
+     "start": 58.142,
+     "end": 58.217
+    },
+    {
+     "text": "once.",
+     "start": 58.293,
+     "end": 58.756
+    }
+   ],
+   "captions": [
+    {
+     "text": "FORTY-TWO HEADS TURN.",
+     "start": 56.557,
+     "word_idx": 0,
+     "end": 58.142
+    },
+    {
+     "text": "{AT ONCE.}",
+     "start": 58.142,
+     "word_idx": 3,
+     "end": 58.876
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "text": "Toward you.",
+   "src_start": 56.931,
+   "src_end": 57.78,
+   "start": 59.056,
+   "end": 59.905,
+   "words": [
+    {
+     "text": "Toward",
+     "start": 59.106,
+     "end": 59.484
+    },
+    {
+     "text": "you.",
+     "start": 59.559,
+     "end": 59.905
+    }
+   ],
+   "captions": [
+    {
+     "text": "{TOWARD YOU.}",
+     "start": 59.106,
+     "word_idx": 0,
+     "end": 60.025
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "text": "The warden opens the register.",
+   "src_start": 58.063,
+   "src_end": 59.7,
+   "start": 60.455,
+   "end": 62.092,
+   "words": [
+    {
+     "text": "The",
+     "start": 60.505,
+     "end": 60.581
+    },
+    {
+     "text": "warden",
+     "start": 60.656,
+     "end": 60.958
+    },
+    {
+     "text": "opens",
+     "start": 61.033,
+     "end": 61.26
+    },
+    {
+     "text": "the",
+     "start": 61.335,
+     "end": 61.411
+    },
+    {
+     "text": "register.",
+     "start": 61.864,
+     "end": 62.092
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE WARDEN",
+     "start": 60.505,
+     "word_idx": 0,
+     "end": 61.033
+    },
+    {
+     "text": "OPENS THE [REGISTER.]",
+     "start": 61.033,
+     "word_idx": 2,
+     "end": 62.212
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "text": "You hear a pen. Writing your row.",
+   "src_start": 59.95,
+   "src_end": 61.98,
+   "start": 62.492,
+   "end": 64.522,
+   "words": [
+    {
+     "text": "You",
+     "start": 62.542,
+     "end": 62.617
+    },
+    {
+     "text": "hear",
+     "start": 62.693,
+     "end": 62.768
+    },
+    {
+     "text": "a",
+     "start": 62.844,
+     "end": 62.919
+    },
+    {
+     "text": "pen.",
+     "start": 63.221,
+     "end": 63.598
+    },
+    {
+     "text": "Writing",
+     "start": 63.749,
+     "end": 63.9
+    },
+    {
+     "text": "your",
+     "start": 63.976,
+     "end": 64.127
+    },
+    {
+     "text": "row.",
+     "start": 64.24,
+     "end": 64.522
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU HEAR A {PEN.}",
+     "start": 62.542,
+     "word_idx": 0,
+     "end": 63.749
+    },
+    {
+     "text": "WRITING [YOUR ROW.]",
+     "start": 63.749,
+     "word_idx": 4,
+     "end": 64.642
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "text": "Your phone buzzes.",
+   "src_start": 62.214,
+   "src_end": 63.34,
+   "start": 65.072,
+   "end": 66.198,
+   "words": [
+    {
+     "text": "Your",
+     "start": 65.122,
+     "end": 65.273
+    },
+    {
+     "text": "phone",
+     "start": 65.424,
+     "end": 65.575
+    },
+    {
+     "text": "buzzes.",
+     "start": 65.688,
+     "end": 66.198
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR PHONE BUZZES.",
+     "start": 65.122,
+     "word_idx": 0,
+     "end": 66.318
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "text": "The Block C group. Forty-three members.",
+   "src_start": 63.573,
+   "src_end": 66.15,
+   "start": 66.598,
+   "end": 69.175,
+   "words": [
+    {
+     "text": "The",
+     "start": 66.648,
+     "end": 66.723
+    },
+    {
+     "text": "Block",
+     "start": 66.874,
+     "end": 67.025
+    },
+    {
+     "text": "C",
+     "start": 67.101,
+     "end": 67.252
+    },
+    {
+     "text": "group.",
+     "start": 67.327,
+     "end": 67.931
+    },
+    {
+     "text": "Forty-three",
+     "start": 68.006,
+     "end": 68.459
+    },
+    {
+     "text": "members.",
+     "start": 68.535,
+     "end": 69.175
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE [BLOCK C] GROUP.",
+     "start": 66.648,
+     "word_idx": 0,
+     "end": 68.006
+    },
+    {
+     "text": "{43 MEMBERS.}",
+     "start": 68.006,
+     "word_idx": 4,
+     "end": 69.295
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "text": "Rule five. If it says forty-three, leave it.",
+   "src_start": 66.441,
+   "src_end": 69.63,
+   "start": 69.625,
+   "end": 72.815,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 69.675,
+     "end": 69.826
+    },
+    {
+     "text": "five.",
+     "start": 69.977,
+     "end": 70.656
+    },
+    {
+     "text": "If",
+     "start": 70.732,
+     "end": 70.807
+    },
+    {
+     "text": "it",
+     "start": 70.883,
+     "end": 70.958
+    },
+    {
+     "text": "says",
+     "start": 71.071,
+     "end": 71.185
+    },
+    {
+     "text": "forty-three,",
+     "start": 71.26,
+     "end": 72.166
+    },
+    {
+     "text": "leave",
+     "start": 72.241,
+     "end": 72.392
+    },
+    {
+     "text": "it.",
+     "start": 72.468,
+     "end": 72.815
+    }
+   ],
+   "captions": [
+    {
+     "text": "RULE [FIVE.]",
+     "start": 69.675,
+     "word_idx": 0,
+     "end": 70.732
+    },
+    {
+     "text": "IF IT SAYS {43,}",
+     "start": 70.732,
+     "word_idx": 2,
+     "end": 72.241
+    },
+    {
+     "text": "[LEAVE IT.]",
+     "start": 72.241,
+     "word_idx": 6,
+     "end": 72.935
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "text": "But the forty-third member is typing.",
+   "src_start": 69.837,
+   "src_end": 71.81,
+   "start": 73.265,
+   "end": 75.238,
+   "words": [
+    {
+     "text": "But",
+     "start": 73.315,
+     "end": 73.39
+    },
+    {
+     "text": "the",
+     "start": 73.465,
+     "end": 73.541
+    },
+    {
+     "text": "forty-third",
+     "start": 73.654,
+     "end": 74.145
+    },
+    {
+     "text": "member",
+     "start": 74.296,
+     "end": 74.447
+    },
+    {
+     "text": "is",
+     "start": 74.522,
+     "end": 74.598
+    },
+    {
+     "text": "typing.",
+     "start": 74.673,
+     "end": 75.238
+    }
+   ],
+   "captions": [
+    {
+     "text": "BUT THE 43RD",
+     "start": 73.315,
+     "word_idx": 0,
+     "end": 74.296
+    },
+    {
+     "text": "MEMBER IS {TYPING.}",
+     "start": 74.296,
+     "word_idx": 3,
+     "end": 75.358
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "text": "Right now.",
+   "src_start": 72.025,
+   "src_end": 72.79,
+   "start": 75.538,
+   "end": 76.302,
+   "words": [
+    {
+     "text": "Right",
+     "start": 75.588,
+     "end": 75.814
+    },
+    {
+     "text": "now.",
+     "start": 75.89,
+     "end": 76.302
+    }
+   ],
+   "captions": [
+    {
+     "text": "{RIGHT NOW.}",
+     "start": 75.588,
+     "word_idx": 0,
+     "end": 76.422
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "text": "What do you do?",
+   "src_start": 73.007,
+   "src_end": 73.8,
+   "start": 77.202,
+   "end": 77.996,
+   "words": [
+    {
+     "text": "What",
+     "start": 77.252,
+     "end": 77.328
+    },
+    {
+     "text": "do",
+     "start": 77.365,
+     "end": 77.403
+    },
+    {
+     "text": "you",
+     "start": 77.479,
+     "end": 77.554
+    },
+    {
+     "text": "do?",
+     "start": 77.63,
+     "end": 77.996
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 32,
+   "text": "A. Leave the group.",
+   "src_start": 74.139,
+   "src_end": 75.62,
+   "start": 78.346,
+   "end": 79.827,
+   "words": [
+    {
+     "text": "A.",
+     "start": 78.396,
+     "end": 78.924
+    },
+    {
+     "text": "Leave",
+     "start": 78.999,
+     "end": 79.15
+    },
+    {
+     "text": "the",
+     "start": 79.226,
+     "end": 79.301
+    },
+    {
+     "text": "group.",
+     "start": 79.49,
+     "end": 79.827
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 33,
+   "text": "B. Scroll up and see who it is.",
+   "src_start": 75.799,
+   "src_end": 78.04,
+   "start": 80.127,
+   "end": 82.368,
+   "words": [
+    {
+     "text": "B.",
+     "start": 80.177,
+     "end": 80.743
+    },
+    {
+     "text": "Scroll",
+     "start": 80.781,
+     "end": 81.083
+    },
+    {
+     "text": "up",
+     "start": 81.158,
+     "end": 81.309
+    },
+    {
+     "text": "and",
+     "start": 81.385,
+     "end": 81.46
+    },
+    {
+     "text": "see",
+     "start": 81.535,
+     "end": 81.686
+    },
+    {
+     "text": "who",
+     "start": 81.724,
+     "end": 81.762
+    },
+    {
+     "text": "it",
+     "start": 81.837,
+     "end": 81.913
+    },
+    {
+     "text": "is.",
+     "start": 81.988,
+     "end": 82.368
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 34,
+   "text": "Comment A or B.",
+   "src_start": 78.214,
+   "src_end": 79.44,
+   "start": 82.718,
+   "end": 83.944,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 82.768,
+     "end": 83.07
+    },
+    {
+     "text": "A",
+     "start": 83.221,
+     "end": 83.447
+    },
+    {
+     "text": "or",
+     "start": 83.523,
+     "end": 83.598
+    },
+    {
+     "text": "B.",
+     "start": 83.711,
+     "end": 83.944
+    }
+   ],
+   "captions": []
+  }
+ ]
+}
