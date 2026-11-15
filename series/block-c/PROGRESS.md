@@ -1,6 +1,37 @@
 # BLOCK C — progress log
 
-**Status 2026-11-16 01:35 IST (creator run, in progress):** Part 5 voice + transcript PAID and saved in `block-c/p5/audio/` (1,753 credits), script P5 in `engine/scripts.py`. Branch A (Part 4 votes A 0 / B 0). If this run dies, reuse the audio and finish the build.
+**Status 2026-11-16 02:00 IST (creator run):** Part 5 built and QUEUED for 2026-11-16. Next: Part 6 (2026-11-17) after the
+Part 5 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-16 done. Credits left 32,973
+(~18 parts at 1,800): BLOCK C Parts 6-8, then a new ~8-part series, then a last series ending on a finale ~Dec 3-4.
+
+## Part 5 "The mess at 3 AM" — QUEUED for 2026-11-16 (branch A, no votes)
+- Vote on Part 4: **A = 0, B = 0** (Instagram 0 comments; YouTube @dontletitsee 1 comment, "shooting it rn", not a vote;
+  @lexter2025 0). No votes -> the scarier branch, A (follow them to the mess). Recap stamp "YOU CHOSE A / YOU FOLLOWED THEM
+  TO THE MESS" over line 3.
+- Output: `outputs/block-c-p5.mp4` (87.7 s, 14.7 MB, −14.1 LUFS; SFX ~15 dB under the voice) + `outputs/block-c-p5.jpg`
+  (cover "DINNER AT 3 AM" over the hall of turned pale faces); jsDelivr @ `927c89c` (both HTTP 200). Queue id `block-c-p5`.
+- Voice: 1,753 credits (eleven_v4, Jack), transcript 0. 34 lines / 195 words. Files in `block-c/p5/audio/`.
+- **Test #4 applied (bright, recognizable frame 1):** frame 1 = the WELL-LIT mess hall wide (tube lights, 3 rows of students
+  from behind lifting spoons in unison, the warden at the counter, steaming pots), slow push-in; burned-in hook smaller and
+  4 words ("DINNER AT / 3 AM"); first VO line "Forty-two students are eating dinner at three in the morning." Compare
+  Part 5's IG 3-second skip rate with Part 4 (69.6%), Part 3 (62.8%) and the bright openers (46.9 / 53.6%).
+- Story: the hall lit, plates of rice and dal still steaming; everyone sits perfectly straight, spoons up/down in unison,
+  nobody chewing ("like they're practising how to eat"); the warden serving behind the counter, register under one arm;
+  the one empty chair at the end of the last table: a covered plate, a card "ROOM 13" and tomorrow's date (16 / 11);
+  rule 4 ("not for you — so why is your plate here?"); you don't sit; every spoon stops; 42 heads turn at once — smooth
+  pale blank faces (like the thing under the bed); the warden opens the register, a pen writes your row in red; phone:
+  BLOCK C group, 43 members; rule 5; "the forty-third member is typing. Right now." (+91 ••••• •••43).
+- HUD: PART 5 · 3:00 → 3:01 AM · BATTERY 19→18% · ROOM 13 · LEFT · HEADCOUNT 43 · MESS OPEN → SPOONS IN SYNC → SERVING
+  WARDEN → EMPTY CHAIR 1 → PLATE ROOM 13 (lime) → PLATE DATE 16 / 11 → HEADS TURNED → GROUP 43 MEMBERS → MEMBER 43 TYPING…
+- Engine: `sets.js` adds drawMess (bright hall, 3 rows of seated students from behind via drawStudentBack with lift/stop/
+  turn, counter + warden, empty place with covered plate, `me`), drawCoveredPlate (dome + card ROOM 13 + red date), messSeat/
+  messEmpty helpers; drawGroupChat gets `typing` (+ `typingFrom`). `mix.py` part5: synthesized unison spoon clinks on every
+  down-beat, silence + clink when the spoons stop, low creaks for the heads turning, pen scratches, typing.mp3.
+- Choice offered: **A) LEAVE THE GROUP** (rule 5 says leave it)  **B) SCROLL UP · SEE WHO IT IS** (who is member 43?).
+- Open threads for Part 6 (bible "43"): the new member is you (your number, your photo, typing); messages from "you" ask
+  others to open their doors. Choice: A) warn everyone  B) stay quiet. If A (leave) wins: you leave, but "you" re-add
+  yourself / the group shows "You left" and then "+91…43 added you"; if B wins: scroll up to your own photo. The warden
+  wrote your row in red; plate dated 16/11; Kabir still unaccounted for (last texted "washroom. now.").
 
 **Status 2026-11-15 11:11 IST (creator run):** queue full through 2026-11-15 (Part 4 jsDelivr URLs re-verified live); nothing built. Part 5 (2026-11-16) waits for the A/B vote on Part 4 (posts today 15:00 IST); build it on/after 2026-11-15 23:00 IST. ANALYTICS review for 2026-11-15 already done.
 
