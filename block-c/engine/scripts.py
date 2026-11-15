@@ -187,5 +187,50 @@ P4 = [
 ]
 P4_HOLD = 3.8
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD}
+P5 = [
+    ("Forty-two students are eating dinner at three in the morning.", 0.15,
+     [(2, "FORTY-TWO STUDENTS"), (3, "ARE EATING DINNER"), (5, "AT {3 IN THE MORNING.}")]),
+    ("And one chair is waiting for you.", 0.30, [(3, "AND ONE {CHAIR}"), (4, "IS WAITING FOR YOU.")]),
+    ("You followed them down the stairs.", 0.40, [(2, "YOU FOLLOWED"), (4, "THEM DOWN THE STAIRS.")]),
+    ("Nobody looked back. Nobody spoke.", 0.35, [(3, "NOBODY LOOKED BACK."), (2, "{NOBODY SPOKE.}")]),
+    ("The mess hall lights are already on.", 0.40, [(3, "THE MESS HALL"), (4, "LIGHTS ARE [ALREADY ON.]")]),
+    ("Steel plates on every table. Rice. Dal. Still steaming.", 0.40,
+     [(3, "STEEL PLATES ON"), (2, "EVERY TABLE."), (1, "RICE."), (1, "DAL."), (2, "[STILL STEAMING.]")]),
+    ("Everyone sits perfectly straight.", 0.40, [(2, "EVERYONE SITS"), (2, "{PERFECTLY STRAIGHT.}")]),
+    ("They lift the spoon. Put it down. Lift. Down.", 0.40,
+     [(4, "THEY LIFT THE SPOON."), (3, "PUT IT DOWN."), (1, "LIFT."), (1, "DOWN.")]),
+    ("Nobody is chewing.", 0.45, [(3, "{NOBODY IS CHEWING.}")]),
+    ("Like they're practising how to eat.", 0.35, [(2, "LIKE THEY'RE"), (4, "{PRACTISING} HOW TO EAT.")]),
+    ("Behind the counter, someone very tall is serving.", 0.50,
+     [(3, "BEHIND THE COUNTER,"), (3, "SOMEONE {VERY TALL}"), (2, "IS SERVING.")]),
+    ("Long coat. The register under one arm.", 0.35, [(2, "LONG COAT."), (5, "THE [REGISTER] UNDER ONE ARM.")]),
+    ("The warden.", 0.45, [(2, "{THE WARDEN.}")]),
+    ("At the end of the last table, one empty chair.", 0.55,
+     [(7, "AT THE END OF THE LAST TABLE,"), (3, "ONE [EMPTY CHAIR.]")]),
+    ("A covered plate. A card on top.", 0.40, [(3, "A COVERED PLATE."), (4, "A [CARD] ON TOP.")]),
+    ("Room thirteen.", 0.40, [(2, "[ROOM 13.]")]),
+    ("And a date. Tomorrow's.", 0.35, [(3, "AND A DATE."), (1, "{TOMORROW'S.}")]),
+    ("Rule four. The mess opens at three for someone.", 0.55,
+     [(2, "RULE [FOUR.]"), (3, "THE MESS OPENS"), (2, "AT [3]"), (2, "FOR SOMEONE.")]),
+    ("Not for you. So why is your plate here?", 0.30, [(3, "{NOT FOR YOU.}"), (3, "SO WHY IS"), (3, "YOUR PLATE HERE?")]),
+    ("You don't sit.", 0.50, [(3, "YOU DON'T SIT.")]),
+    ("And every spoon stops.", 0.50, [(2, "AND EVERY"), (2, "{SPOON STOPS.}")]),
+    ("Forty-two heads turn. At once.", 0.50, [(3, "FORTY-TWO HEADS TURN."), (2, "{AT ONCE.}")]),
+    ("Toward you.", 0.30, [(2, "{TOWARD YOU.}")]),
+    ("The warden opens the register.", 0.55, [(2, "THE WARDEN"), (3, "OPENS THE [REGISTER.]")]),
+    ("You hear a pen. Writing your row.", 0.40, [(4, "YOU HEAR A {PEN.}"), (3, "WRITING [YOUR ROW.]")]),
+    ("Your phone buzzes.", 0.55, [(3, "YOUR PHONE BUZZES.")]),
+    ("The Block C group. Forty-three members.", 0.40, [(4, "THE [BLOCK C] GROUP."), (2, "{43 MEMBERS.}")]),
+    ("Rule five. If it says forty-three, leave it.", 0.45,
+     [(2, "RULE [FIVE.]"), (4, "IF IT SAYS {43,}"), (2, "[LEAVE IT.]")]),
+    ("But the forty-third member is typing.", 0.45, [(3, "BUT THE 43RD"), (3, "MEMBER IS {TYPING.}")]),
+    ("Right now.", 0.30, [(2, "{RIGHT NOW.}")]),
+    ("What do you do?", 0.90, []),
+    ("A. Leave the group.", 0.35, []),
+    ("B. Scroll up and see who it is.", 0.30, []),
+    ("Comment A or B.", 0.35, []),
+]
+P5_HOLD = 3.8
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD}

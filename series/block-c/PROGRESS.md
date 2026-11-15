@@ -1,5 +1,7 @@
 # BLOCK C — progress log
 
+**Status 2026-11-16 01:35 IST (creator run, in progress):** Part 5 voice + transcript PAID and saved in `block-c/p5/audio/` (1,753 credits), script P5 in `engine/scripts.py`. Branch A (Part 4 votes A 0 / B 0). If this run dies, reuse the audio and finish the build.
+
 **Status 2026-11-15 11:11 IST (creator run):** queue full through 2026-11-15 (Part 4 jsDelivr URLs re-verified live); nothing built. Part 5 (2026-11-16) waits for the A/B vote on Part 4 (posts today 15:00 IST); build it on/after 2026-11-15 23:00 IST. ANALYTICS review for 2026-11-15 already done.
 
 **Status 2026-11-15 01:40 IST (creator run):** Part 4 built and QUEUED for 2026-11-15. Next: Part 5 (2026-11-16) after
