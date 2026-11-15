@@ -3,16 +3,54 @@
 How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric that is not available.
 
 ## Next improvements (max 3, read before writing every script)
-1. **Shorter on-screen hook + motion in frame 1** (the one change being tested now, from BLOCK C Part 4): burned-in hook
-   max 6 words in 2 lines, the threat MOVING on frame 1 (no static establishing shot), first VO line <= 9 words.
-   Goal: IG 3-second skip rate below 55% (Part 3: 62.8%, Parts 1-2: 53.6 / 54.7%).
-2. (keep, test #2 read-out = no effect yet) Spoken A/B CTA over a card ~10 s before the end: 0 votes on Part 3 on all
-   3 platforms (Part 1: 1, Part 2: 0). Keep it (costs nothing) but stop expecting comments from the card alone;
-   next comment lever after the hook test: a one-word answer prompt in the IG caption's FIRST line.
-3. (keep) YouTube hook titles: a self-contained hook sentence first, series name after the bar. BLOCK C P2's
-   "dead warden knows my name"-style hook title is the best YT post yet (692 views at 34 h).
+1. **Bright, recognizable frame 1** (the one change being tested now, from BLOCK C Part 5): open on a WELL-LIT, everyday
+   wide set the viewer recognizes in 0.5 s (mess hall under tube lights, people in it), not a dark close-up; burned-in hook
+   kept short (max 6 words) and smaller so the picture dominates. Goal: IG 3-second skip rate back under 55%
+   (P4 69.6%, P3 62.8%; the two best openers, FLOOR 0 P1 46.9% / BLOCK C P1 53.6%, were both bright, plain objects).
+2. (queued, next lever) Sequel decay: skip rate and YT views fall with every part number (IG skip 53.6 -> 54.7 -> 62.8 ->
+   69.6; YT @dontletitsee at 10 h: 110 / 98 / 47). Make each part read as a standalone story for cold viewers; candidate
+   test for Part 6: drop "Part n" from the YouTube title (keep it in the description).
+3. (keep) YouTube hook titles: a self-contained hook sentence first, series name after the bar. The spoken A/B card stays
+   (0 votes in 3 parts; it costs nothing) but comments are a retention problem, not a CTA problem.
 
 ## Day log
+## 2026-11-16 (IST 01:20 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 154 | 796 | 639 | 17 | 2 | 0 / 0 | 17.2 s | 46.9% |
+| floor0-p2 | Instagram (media 17961343959258765) | 130 | 180 | 154 | 2 | 0 | 0 / 0 | 7.7 s | 72.3% |
+| floor0-p3 | Instagram (media 18139990045726049) | 106 | 140 | 114 | 1 | 0 | 0 / 0 | 12.7 s | 52.1% |
+| block-c-p1 | Instagram (media 17998129476019732) | 82 | 139 | 107 | 0 | 0 | 0 / 0 | 15.8 s | 53.6% |
+| block-c-p2 | Instagram (media 18120370895001266) | 58 | 145 | 109 | 3 | 0 | 0 / 0 | 21.4 s | 54.7% |
+| block-c-p3 | Instagram (media 18025383203947619) | 34 | 122 | 106 | 2 | 0 | 1 / 0 | 6.9 s | 62.8% |
+| block-c-p4 | Instagram (media 18121550692965483) | 10 | 121 | 104 | 0 | 0 | 0 / 0 | 9.6 s | **69.6%** |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 154 | 189 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 130 | 441 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 106 | 289 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 82 | 435 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 58 | **729** | n/a | 14 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @dontletitsee (qlkqMo9AiCM) | 34 | 212 | n/a | 5 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @dontletitsee (ukrud0UGmYY) | 10 | 47 | n/a | 1 | 1 | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 131 | 16 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 130 | 15 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 106 | 150 | n/a | 2 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @lexter2025 (OkUHaOECktc) | 82 | 6 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @lexter2025 (9VpoKsAuj_Y) | 58 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @lexter2025 (EXSttZutpns) | 34 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @lexter2025 (7k7CA5H1L6I) | 10 | 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- Test #3 (max-6-word hook + moving threat on frame 1, Part 4) FAILED: IG skip rate 69.6% (P3 62.8%), avg watch 9.6 s. Motion
+  alone did not stop the swipe. A contact sheet of the first 2 s of 5 reels shows the pattern: the two best openers
+  (FLOOR 0 P1 46.9%, BLOCK C P1 53.6%) are bright mid-blue frames of a plain, instantly readable object (elevator floor
+  display, room-number plate); P3/P4 open on near-black frames (door gap, under-bed dark) with a big red text block.
+  Next single lever: a bright, recognizable wide set on frame 1 (Part 5: the lit mess hall full of students).
+- Sequel decay on both platforms: IG skip rate rises every part (53.6, 54.7, 62.8, 69.6) and YT @dontletitsee views at 10 h
+  fall (110, 98, 47); P3 is at 212 views at 34 h vs P2 729. Cold viewers meet "Part 4" mid-story. Queued lever: make the
+  part read standalone and test dropping "Part n" from the YT title.
+- Votes on Part 4: A 0 / B 0 on all 3 platforms (the one YT comment, "shooting it rn", is not a vote). 4 parts, 1 vote.
+- IG reach still flat at ~104-109 per BLOCK C reel; @lexter2025 BLOCK C uploads still 0-6 views (nothing to change here).
+
 ## 2026-11-15 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
