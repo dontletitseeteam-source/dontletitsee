@@ -7,8 +7,10 @@ Part 6 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS revi
 ## Part 6 "43" — QUEUED for 2026-11-17 (branch A, 1 vote)
 - Vote on Part 5: **A = 1** (YouTube @dontletitsee "Leave the group! First comment"), B = 0; Instagram 0 comments,
   @lexter2025 0. Branch A (you leave the group). Recap stamp "YOU SAID A / YOU LEFT THE GROUP" over lines 3-4.
-- Output: `outputs/block-c-p6.mp4` + `outputs/block-c-p6.jpg` (cover "MEMBER 43 [IS ME]" over the photo-of-you-from-behind
-  shot). Queue id `block-c-p6`.
+- Output: `outputs/block-c-p6.mp4` (86.7 s, 14.5 MB, −13.9 LUFS; SFX ~9 dB under the voice) + `outputs/block-c-p6.jpg`
+  (cover "MEMBER 43 [IS ME]" over the photo-of-you-from-behind shot); jsDelivr @ `2a87c8b` (jpg 200 at once; the mp4 gave
+  404/503 for ~15 min, then HTTP 200 video/mp4). Queue id `block-c-p6`; the entry also carries `video_url_fallback`
+  (raw.githubusercontent, verified 200) in case jsDelivr fails again at post time.
 - Voice: 1,676 credits (eleven_v4, Jack), transcript 0. 35 lines / 192 words. Files in `block-c/p6/audio/`.
 - Standard kept: bright frame 1 (the lit mess hall, 42 pale blank faces turned at camera, slow push-in), small hook
   "MEMBER 43 / IS ME". **Test #5 (the one change): the YouTube title has no "Part 6"** (series name only; part number in
