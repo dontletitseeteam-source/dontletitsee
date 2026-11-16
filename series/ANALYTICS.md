@@ -3,17 +3,55 @@
 How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric that is not available.
 
 ## Next improvements (max 3, read before writing every script)
-1. **Bright, recognizable frame 1** (the one change being tested now, from BLOCK C Part 5): open on a WELL-LIT, everyday
-   wide set the viewer recognizes in 0.5 s (mess hall under tube lights, people in it), not a dark close-up; burned-in hook
-   kept short (max 6 words) and smaller so the picture dominates. Goal: IG 3-second skip rate back under 55%
-   (P4 69.6%, P3 62.8%; the two best openers, FLOOR 0 P1 46.9% / BLOCK C P1 53.6%, were both bright, plain objects).
-2. (queued, next lever) Sequel decay: skip rate and YT views fall with every part number (IG skip 53.6 -> 54.7 -> 62.8 ->
-   69.6; YT @dontletitsee at 10 h: 110 / 98 / 47). Make each part read as a standalone story for cold viewers; candidate
-   test for Part 6: drop "Part n" from the YouTube title (keep it in the description).
-3. (keep) YouTube hook titles: a self-contained hook sentence first, series name after the bar. The spoken A/B card stays
-   (0 votes in 3 parts; it costs nothing) but comments are a retention problem, not a CTA problem.
+1. **Bright, recognizable frame 1 is now the STANDARD** (confirmed: BLOCK C P5 IG skip rate 42.9%, the best of all 8 reels,
+   vs P4 69.6% / P3 62.8%; 3 bright openers = 46.8 / 53.1 / 42.9%, 3 dark openers = 71.9 / 62.8 / 69.6%). Every part opens
+   on a WELL-LIT, everyday wide set readable in 0.5 s, threat present but small; burned-in hook max ~6 words, picture dominates.
+2. **The one change being tested now (from BLOCK C Part 6): drop "Part n" from the YouTube title** (series name stays after
+   the bar, "Part n" moves to the description). Sequel decay on YT @dontletitsee: P2 730 views, P3 223, P4 185, P5 61 at 10 h
+   (P4 was 47 at 10 h). Compare Part 6's YT views at 10 h / 34 h with P4 (47 / 185) and P5 (61 at 10 h).
+3. (keep) Hook-sentence YouTube titles first; spoken A/B card stays. Comments follow retention: P5 (best skip rate) drew the
+   first vote in 4 parts ("Leave the group!").
 
 ## Day log
+## 2026-11-17 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 178 | 798 | 639 | 17 | 2 | 0 / 0 | 17.3 s | 46.8% |
+| floor0-p2 | Instagram (media 17961343959258765) | 154 | 182 | 155 | 2 | 0 | 0 / 0 | 8.0 s | 71.9% |
+| floor0-p3 | Instagram (media 18139990045726049) | 130 | 142 | 115 | 1 | 0 | 0 / 0 | 13.1 s | 51.7% |
+| block-c-p1 | Instagram (media 17998129476019732) | 106 | 141 | 108 | 0 | 0 | 0 / 0 | 16.0 s | 53.1% |
+| block-c-p2 | Instagram (media 18120370895001266) | 82 | 145 | 109 | 3 | 0 | 0 / 0 | 21.4 s | 54.7% |
+| block-c-p3 | Instagram (media 18025383203947619) | 58 | 122 | 106 | 2 | 0 | 1 / 0 | 6.9 s | 62.8% |
+| block-c-p4 | Instagram (media 18121550692965483) | 34 | 121 | 104 | 0 | 0 | 0 / 0 | 9.6 s | 69.6% |
+| block-c-p5 | Instagram (media 18170937118477416) | 10 | 114 | 95 | **5** | 0 | 0 / 0 | 15.1 s | **42.9%** |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 178 | 196 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 154 | 445 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 130 | 289 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 106 | 431 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 82 | 730 | n/a | 14 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @dontletitsee (qlkqMo9AiCM) | 58 | 223 | n/a | 5 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @dontletitsee (ukrud0UGmYY) | 34 | 185 | n/a | 4 | 1 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @dontletitsee (nZ98OLaMWPw) | 10 | 61 | n/a | 1 | 1 ("Leave the group!") | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 155 | 16 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 154 | 15 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 130 | 150 | n/a | 2 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @lexter2025 (OkUHaOECktc) | 106 | 6 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @lexter2025 (9VpoKsAuj_Y) | 82 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @lexter2025 (EXSttZutpns) | 58 | 2 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @lexter2025 (7k7CA5H1L6I) | 34 | 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @lexter2025 (YQQRKnVqCzU) | 10 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- Test #4 (bright, recognizable frame 1, Part 5) WORKED: IG skip rate 42.9%, the best of all 8 reels (P4 69.6, P3 62.8), avg
+  watch 15.1 s (P4 9.6) and 5 likes (most since FLOOR 0 P1). Across 6 reels the split is clean: bright plain-object/wide-set
+  openers 42.9-53.1%, near-black openers 62.8-71.9%. Bright frame 1 becomes the standard for every part.
+- Reach did not follow yet (95 at 10 h, the usual ~100): IG still caps a sequel's distribution; better retention is the lever
+  that should lift it over the next days. Re-check P5 reach at 34 h.
+- Comments follow retention: P5 drew the first vote in 4 parts (YT @dontletitsee "Leave the group! First comment", = A).
+- YT sequel decay continues (10-h views P2 110, P3 98, P4 47, P5 61; P4 grew to 185 by 34 h). Next single lever (Part 6):
+  drop "Part n" from the YT title so cold Shorts viewers do not see a sequel number.
+- @lexter2025 BLOCK C uploads still 0-6 views; nothing the creator can change (owner may want to check the channel).
+
 ## 2026-11-16 (IST 01:20 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
