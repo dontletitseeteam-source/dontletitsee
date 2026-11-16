@@ -1,5 +1,7 @@
 # BLOCK C — progress log
 
+**Status 2026-11-16 11:11 IST (creator run):** queue full through 2026-11-16 (Part 5 jsDelivr URLs re-verified HTTP 200); nothing built. Part 6 (2026-11-17) waits for the A/B vote on Part 5 (posts today 15:00 IST); build it on/after 2026-11-16 23:00 IST. ANALYTICS review for 2026-11-16 already done. Credits 32,973.
+
 **Status 2026-11-16 02:00 IST (creator run):** Part 5 built and QUEUED for 2026-11-16. Next: Part 6 (2026-11-17) after the
 Part 5 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-16 done. Credits left 32,973
 (~18 parts at 1,800): BLOCK C Parts 6-8, then a new ~8-part series, then a last series ending on a finale ~Dec 3-4.
