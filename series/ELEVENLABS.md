@@ -15,3 +15,4 @@ BLOCK C Part 1's voice was already paid before this balance and is saved in `blo
 | 2026-11-14 | BLOCK C · Part 3 | voice (eleven_v4, Jack, 1,620 chars) + scribe transcript (0) | 1,620 | 36,420 |
 | 2026-11-15 | BLOCK C · Part 4 | voice (eleven_v4, Jack, 1,694 chars) + scribe transcript (0) | 1,694 | 34,726 |
 | 2026-11-16 | BLOCK C · Part 5 | voice (eleven_v4, Jack, 1,753 chars) + scribe transcript (0) | 1,753 | 32,973 |
+| 2026-11-17 | BLOCK C · Part 6 | voice (eleven_v4, Jack, 1,676 chars) + scribe transcript (0) | 1,676 | 31,297 |

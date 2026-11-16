@@ -232,5 +232,50 @@ P5 = [
 ]
 P5_HOLD = 3.8
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD}
+P6 = [
+    ("The new member of your hostel group chat has your face.", 0.15,
+     [(3, "THE NEW MEMBER"), (5, "OF YOUR HOSTEL GROUP CHAT"), (3, "HAS {YOUR FACE.}")]),
+    ("And your number.", 0.40, [(3, "AND {YOUR NUMBER.}")]),
+    ("You tap leave group.", 0.50, [(2, "YOU TAP"), (2, "[LEAVE GROUP.]")]),
+    ("You left.", 0.40, [(2, "[YOU LEFT.]")]),
+    ("For one second, it's quiet.", 1.10, [(3, "FOR ONE SECOND,"), (2, "IT'S QUIET.")]),
+    ("Forty-two heads are still turned toward you.", 0.50,
+     [(2, "FORTY-TWO HEADS"), (3, "ARE STILL TURNED"), (2, "{TOWARD YOU.}")]),
+    ("Nobody moves. Nobody has eyes.", 0.45, [(2, "NOBODY MOVES."), (3, "{NOBODY HAS EYES.}")]),
+    ("Then your phone buzzes again.", 0.60, [(3, "THEN YOUR PHONE"), (2, "BUZZES AGAIN.")]),
+    ("Member forty-three added you back.", 0.45, [(2, "MEMBER {43}"), (3, "{ADDED YOU} BACK.")]),
+    ("You tap the name.", 0.50, [(4, "YOU TAP THE NAME.")]),
+    ("Group info. Member forty-three.", 0.45, [(2, "GROUP INFO."), (2, "MEMBER {43.}")]),
+    ("The profile photo is you.", 0.80, [(3, "THE PROFILE PHOTO"), (2, "{IS YOU.}")]),
+    ("Taken a second ago. From behind you.", 0.45, [(4, "TAKEN A SECOND AGO."), (3, "{FROM BEHIND YOU.}")]),
+    ("You can see the back of your own head.", 0.50, [(4, "YOU CAN SEE THE"), (5, "BACK OF YOUR {OWN HEAD.}")]),
+    ("You don't turn around.", 0.90, [(4, "YOU DON'T TURN AROUND.")]),
+    ("The number is yours.", 0.50, [(2, "THE NUMBER"), (2, "IS {YOURS.}")]),
+    ("Your name. Your room. Thirteen.", 0.45, [(2, "YOUR NAME."), (2, "YOUR ROOM."), (1, "[13.]")]),
+    ("And it is typing.", 0.50, [(4, "AND IT IS {TYPING.}")]),
+    ("Guys. It's me. Room thirteen.", 0.55, [(1, "GUYS."), (2, "IT'S ME."), (2, "ROOM [13.]")]),
+    ("I'm locked out. Can someone open their door?", 0.40,
+     [(3, "I'M LOCKED OUT."), (2, "CAN SOMEONE"), (3, "{OPEN THEIR DOOR?}")]),
+    ("You never sent that.", 0.90, [(4, "YOU {NEVER SENT} THAT.")]),
+    ("Your phone has been in your hand the whole time.", 0.40,
+     [(4, "YOUR PHONE HAS BEEN"), (3, "IN YOUR HAND"), (3, "[THE WHOLE TIME.]")]),
+    ("Dev is in his room. Upstairs.", 0.55, [(5, "DEV IS IN HIS ROOM."), (1, "UPSTAIRS.")]),
+    ("Dev replies.", 0.80, [(2, "DEV REPLIES.")]),
+    ("Coming. Opening my door.", 0.40, [(1, "COMING."), (3, "{OPENING MY DOOR.}")]),
+    ("Rule one. Answer only to your own name.", 0.60,
+     [(2, "RULE [ONE.]"), (3, "ANSWER ONLY TO"), (3, "YOUR [OWN NAME.]")]),
+    ("Dev just answered to yours.", 0.45, [(3, "DEV JUST ANSWERED"), (2, "{TO YOURS.}")]),
+    ("Far above you, a bolt slides open.", 1.00, [(3, "FAR ABOVE YOU,"), (4, "A BOLT {SLIDES OPEN.}")]),
+    ("And forty-two students stand up. At once.", 0.70,
+     [(3, "AND FORTY-TWO STUDENTS"), (2, "{STAND UP.}"), (2, "{AT ONCE.}")]),
+    ("They're going to room eleven.", 0.45, [(2, "THEY'RE GOING"), (3, "TO {ROOM 11.}")]),
+    ("You can still type.", 0.90, [(4, "YOU CAN STILL [TYPE.]")]),
+    ("What do you do?", 1.10, []),
+    ("A. Warn everyone. Tell them it isn't you.", 0.35, []),
+    ("B. Stay quiet. It's learning how you type.", 0.30, []),
+    ("Comment A or B.", 0.35, []),
+]
+P6_HOLD = 4.2
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD}
