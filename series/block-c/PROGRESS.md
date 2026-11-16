@@ -1,5 +1,39 @@
 # BLOCK C — progress log
 
+**Status 2026-11-17 ~02:30 IST (creator run):** Part 6 built and QUEUED for 2026-11-17. Next: Part 7 (2026-11-18) after the
+Part 6 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-17 done. Credits left 31,297
+(~17 parts at 1,800): BLOCK C Parts 7-8, then a new ~8-part series, then a last series ending on a finale ~Dec 3-4.
+
+## Part 6 "43" — QUEUED for 2026-11-17 (branch A, 1 vote)
+- Vote on Part 5: **A = 1** (YouTube @dontletitsee "Leave the group! First comment"), B = 0; Instagram 0 comments,
+  @lexter2025 0. Branch A (you leave the group). Recap stamp "YOU SAID A / YOU LEFT THE GROUP" over lines 3-4.
+- Output: `outputs/block-c-p6.mp4` + `outputs/block-c-p6.jpg` (cover "MEMBER 43 [IS ME]" over the photo-of-you-from-behind
+  shot). Queue id `block-c-p6`.
+- Voice: 1,676 credits (eleven_v4, Jack), transcript 0. 35 lines / 192 words. Files in `block-c/p6/audio/`.
+- Standard kept: bright frame 1 (the lit mess hall, 42 pale blank faces turned at camera, slow push-in), small hook
+  "MEMBER 43 / IS ME". **Test #5 (the one change): the YouTube title has no "Part 6"** (series name only; part number in
+  the description). Compare YT views at 10 h / 34 h with P4 (47 / 185) and P5 (61 at 10 h).
+- Story: you tap Exit group -> "You left"; one second of quiet, 42 eyeless faces still turned to you; buzz: "+91 … 43 added
+  you"; you tap the name: contact info of member 43 = Room 13, YOUR number "(You)", About "Block C · Room 13"; the profile
+  photo is you from behind, standing in the mess, timestamp 3:01 NOW; you don't turn around; "it" types and sends, on YOUR
+  side of the chat: "guys its me. room 13" / "im locked out. can someone open their door?" — your phone was in your hand
+  the whole time; Dev (room 11, upstairs) replies "coming. opening my door"; rule 1 (answer only to your own name) — Dev
+  answered to yours; a bolt slides open upstairs; the 42 students stand up at once and walk to room 11; you can still type
+  ("thats not m…").
+- HUD: PART 6 · 3:01 → 3:02 AM · BATTERY 18→17% · ROOM 13 · LEFT · HEADCOUNT 43 · GROUP 43 MEMBERS → LEFT (lime) → ADDED BACK
+  → MEMBER 43 = YOU → NUMBER MATCH 100% → SENT AS YOU → DEV ROOM 11 → DEV ANSWERED → ROOM 11 OPEN → HEADCOUNT MOVING.
+- Engine: `sets.js` adds drawMemberInfo (contact screen: square photo = drawMess with you from behind, name/number/about rows
+  with highlight rings, red "3:01 · NOW" tag); drawGroupChat gets system pills (`sys`, ring, tap ripple), your-side bubbles
+  (`mine`, ✓✓), an Exit-group action sheet (`sheet`/`tap`), `footer`, and passes `compose` (keyboard); drawStudentBack/drawMess
+  get `rise` (students stand up, staggered). `mix.py` part6: music_p3 underscore, synthesized bench scrape for 42 standing at
+  once, bolt noise, sent/typing/button UI sounds, shutter on "the photo is you", heartbeat under "you don't turn around".
+- Choice offered: **A) WARN EVERYONE** (tell them it isn't you)  **B) STAY QUIET** (it's learning how you type).
+- Open threads for Part 7 (bible "The scratched rule"): under light, the scratched rule 6 reads "If the warden calls a name
+  twice, that student leaves Block C." The warden has called your name twice. Choice: A) run for the gate B) find the last
+  occupant of Room 13. Fold in the branch: A (warn) -> your warning arrives as "thats not me" but the group sees it sent by
+  member 43 too / nobody believes; B (quiet) -> member 43 writes in your exact style. Dev's door is open; the 42 are at room
+  11; Kabir still missing; plates dated 16/11.
+
 **Status 2026-11-16 11:11 IST (creator run):** queue full through 2026-11-16 (Part 5 jsDelivr URLs re-verified HTTP 200); nothing built. Part 6 (2026-11-17) waits for the A/B vote on Part 5 (posts today 15:00 IST); build it on/after 2026-11-16 23:00 IST. ANALYTICS review for 2026-11-16 already done. Credits 32,973.
 
 **Status 2026-11-16 02:00 IST (creator run):** Part 5 built and QUEUED for 2026-11-16. Next: Part 6 (2026-11-17) after the

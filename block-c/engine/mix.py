@@ -470,7 +470,68 @@ def part5():
     return m1, hum
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5}[PART]()
+def part6():
+    creak = load("door_creak.mp3"); sent = load("sent.mp3"); stairs = load("stairs.mp3"); typing = load("typing.mp3")
+    btn = load("button.mp3"); lock = load("lock_denied.mp3")
+    creak_low = load("door_creak.mp3", "asetrate=48000*0.7,aresample=48000,lowpass=f=2500")
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    shut_far = load("shutter.mp3", "lowpass=f=3000")
+    bolt = noise_burst(0.35, 600, 4000, 11, 0.02) * 0.5
+    # benches scraping back: long low noise, slightly smeared (42 at once)
+    scrape = noise_burst(1.2, 120, 1400, 23, 0.06) * 0.7
+    for d_ms, g in [(14, 0.7), (31, 0.55), (52, 0.4)]:
+        i = int(d_ms / 1000 * SR); scrape[i:] += scrape[: len(scrape) - i] * g * 0.5
+    m1 = np.pad(load("music_p3.mp3"), ((0, N), (0, 0)))[:N] * automation([
+        (0, -15), (K["tap"], -17), (K["leftW"], -40), (K["quiet"], -40), (K["heads"], -18), (K["eyesW"], -13),
+        (K["buzz"], -17), (K["addedW"], -13), (K["info"], -17), (K["isYouW"], -12), (K["head"], -16), (K["turn"], -40),
+        (K["num"], -16), (K["thirteenW"], -13), (K["typing"], -16), (K["neverW"], -12), (K["hand"], -17), (K["dev"], -19),
+        (K["reply"], -16), (K["rule"], -15), (K["yoursW2"], -12), (K["bolt"], -18), (K["openW"], -14), (K["onceW"], -11),
+        (K["going"], -14), (K["type"], -19), (K["choice"], -13), (DUR - 1.4, -14), (DUR, -40)])
+    hum = bed("hum.mp3", "lowpass=f=900") * automation([(0, -14), (K["dev"], -14), (K["dev"] + 0.1, -22), (K["reply"], -16), (K["bolt"], -22), (K["stand"], -14), (DUR, -18)])
+    place(boom, 0.05, -12, fo=0.8, maxlen=2.0)
+    place(stinger, 0.0, -14, fo=0.5, maxlen=1.2)
+    place(typing, K["number"], -16, fo=0.3, maxlen=K["tap"] - K["number"])
+    place(boom, K["numberW"], -14, fo=0.6, maxlen=1.4)
+    place(btn, K["leaveW"], -10)
+    place(sent, K["leftW"], -12)
+    place(boom, K["leftW"] + 0.05, -16, fo=0.6, maxlen=1.2)
+    place(breath, K["eyes"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.6)
+    place(stinger, K["eyesW"] - 0.03, -12, fo=0.5, maxlen=1.2)
+    place(buzz, K["buzzW"] - 0.03, -16, maxlen=0.6, fo=0.15)
+    place(sent, K["addedW"], -10)
+    place(boom, K["addedW"], -10, fo=0.6, maxlen=1.8)
+    place(btn, K["nameW"], -12)
+    place(riser, K["isYouW"] - 0.06 - len(riser) / SR, -18, fi=2.0, fo=0.004)
+    place(shut_far, K["isYouW"] - 0.02, -12)
+    place(boom, K["isYouW"], -8, fo=0.6, maxlen=2.2)
+    place(stinger, K["behindW"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(boom, K["ownW"], -10, fo=0.6, maxlen=1.8)
+    place(heartbeat, K["turn"], -11, fi=0.1, fo=0.4, maxlen=K["num"] - K["turn"] + 0.2)
+    place(tick, K["yoursW"], -12); place(tick, K["roomW"], -13)
+    place(boom, K["thirteenW"], -10, fo=0.6, maxlen=1.6)
+    place(typing, K["typingW"] - 0.1, -13, fi=0.05, fo=0.3, maxlen=K["msg1W"] - K["typingW"] + 0.1)
+    place(sent, K["msg1W"], -10); place(sent, K["msg2W"], -10)
+    place(stinger, K["neverW"] - 0.03, -10, fo=0.5, maxlen=1.2)
+    place(boom, K["neverW"], -8, fo=0.6, maxlen=2.0)
+    place(creak_low, K["dev"] + 0.2, -16, fo=0.4, maxlen=1.4)
+    place(typing, K["replyW"] - 0.1, -15, fo=0.3, maxlen=K["comingW"] - K["replyW"])
+    place(sent, K["comingW"], -10)
+    place(boom, K["ownNameW"], -14, fo=0.6, maxlen=1.4)
+    place(stinger, K["yoursW2"] - 0.03, -10, fo=0.5, maxlen=1.4)
+    place(boom, K["yoursW2"], -9, fo=0.6, maxlen=2.0)
+    place(bolt, K["boltW"] + 0.05, -10); place(creak, K["openW"], -13, fo=0.4, maxlen=1.4)
+    place(scrape, K["standW"] - 0.05, -8, fo=0.4)
+    place(riser, K["onceW"] - 0.06 - len(riser) / SR, -18, fi=2.0, fo=0.004)
+    place(boom, K["onceW"], -6, fo=0.6, maxlen=2.4)
+    place(stairs, K["going"] - 0.1, -10, fi=0.2, fo=0.6, maxlen=K["type"] - K["going"] + 0.4)
+    place(typing, K["type"] + 0.3, -15, fo=0.3, maxlen=K["choice"] - K["type"] - 0.3)
+    place(boom, K["choice"] - 0.1, -16, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, hum
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6}[PART]()
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

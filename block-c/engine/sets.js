@@ -336,7 +336,7 @@ function drawList(ctx, t, st = {}) {
 
 // ---------- GROUP CHAT (overlays the shared phone frame) ----------
 function drawGroupChat(ctx, t, st) {
-  S.drawPhone(ctx, t, { screen: 'chat', bubbles: [], contact: { name: st.name || 'BLOCK C', initial: st.initial || 'C', hl: st.hlName }, sub: st.sub || '42 members · muted', scale: st.scale, shake: st.shake, date: st.date, bg: st.bg });
+  S.drawPhone(ctx, t, { screen: 'chat', bubbles: [], contact: { name: st.name || 'BLOCK C', initial: st.initial || 'C', hl: st.hlName }, sub: st.sub || '42 members · muted', scale: st.scale, shake: st.shake, date: st.date, bg: st.bg, compose: st.compose });
   const p = S.PH;
   ctx.save();
   const bob = Math.sin(t * 1.3) * 6; const [sx, sy] = st.shake || [0, 0];
@@ -346,6 +346,36 @@ function drawGroupChat(ctx, t, st) {
   let y = y0 + 400;
   for (const m of st.msgs || []) {
     const a = clamp(m.a); if (a <= 0) continue;
+    if (m.sys) { // centred system pill ("You left", "+91 … added you")
+      ctx.save(); ctx.globalAlpha = clamp(a * 2);
+      const ss = lerp(0.7, 1, E.outBack(a)); ctx.translate(p.cx, y + 34); ctx.scale(ss, ss); ctx.translate(-p.cx, -(y + 34));
+      ctx.font = '30px Inter500'; const tw = ctx.measureText(m.text).width;
+      rrect(ctx, p.cx - tw / 2 - 30, y, tw + 60, 68, 34); ctx.fillStyle = m.bg || 'rgba(52,58,82,0.95)'; ctx.fill();
+      if (m.ring > 0) { ctx.lineWidth = 5; ctx.strokeStyle = m.ringCol || C.red; ctx.globalAlpha *= clamp(m.ring); ctx.stroke(); ctx.globalAlpha = clamp(a * 2); }
+      ctx.fillStyle = m.fg || 'rgba(225,230,245,0.9)'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(m.text, p.cx, y + 35);
+      if (m.tap > 0 && m.tap < 1) { ctx.beginPath(); ctx.arc(p.cx - 60, y + 34, 30 + 70 * m.tap, 0, 7); ctx.fillStyle = `rgba(255,255,255,${0.35 * (1 - m.tap)})`; ctx.fill(); }
+      ctx.restore();
+      y += (68 + 26) * clamp(a * 3);
+      continue;
+    }
+    if (m.mine) { // your own side (right, blue) - sent "by you"
+      ctx.save(); ctx.globalAlpha = clamp(a * 2);
+      ctx.font = '38px Inter500';
+      const words = m.text.split(' '); const lines = []; let cur = '';
+      for (const w of words) { const tst = cur ? cur + ' ' + w : w; if (ctx.measureText(tst).width > sw - 170 && cur) { lines.push(cur); cur = w; } else cur = tst; }
+      lines.push(cur);
+      const bw = Math.max(...lines.map(l => ctx.measureText(l).width)) + 60, bh = 34 + lines.length * 48 + 30;
+      const bx = x0 + sw - 34 - bw;
+      const ss = lerp(0.7, 1, E.outBack(a)); ctx.translate(bx + bw, y); ctx.scale(ss, ss); ctx.translate(-(bx + bw), -y);
+      rrect(ctx, bx, y, bw, bh, 30); ctx.fillStyle = m.bg || '#2a5fd8'; ctx.fill();
+      if (m.ring > 0) { ctx.lineWidth = 6; ctx.strokeStyle = C.red; ctx.save(); ctx.globalAlpha *= clamp(m.ring); ctx.stroke(); ctx.restore(); }
+      ctx.fillStyle = '#f4f6fb'; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+      lines.forEach((l, k) => ctx.fillText(l, bx + 30, y + 58 + k * 48));
+      ctx.font = '20px Inter400'; ctx.fillStyle = 'rgba(225,232,255,0.7)'; ctx.textAlign = 'right'; ctx.fillText((m.time || '') + '  ✓✓', bx + bw - 18, y + bh - 10);
+      ctx.restore();
+      y += (bh + 22) * clamp(a * 3);
+      continue;
+    }
     ctx.save(); ctx.globalAlpha = clamp(a * 2);
     const s = lerp(0.7, 1, E.outBack(a)); ctx.translate(x0 + 34, y); ctx.scale(s, s); ctx.translate(-(x0 + 34), -y);
     ctx.font = '25px Inter600'; ctx.fillStyle = m.col || '#7fb0ff'; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
@@ -374,6 +404,75 @@ function drawGroupChat(ctx, t, st) {
     }
     ctx.restore();
   }
+  if (st.footer) { // replaces the input bar
+    ctx.fillStyle = 'rgba(20,24,40,0.98)'; ctx.fillRect(x0, y0 + sh - 160, sw, 160);
+    ctx.font = '27px Inter500'; ctx.fillStyle = st.footerCol || 'rgba(200,206,224,0.75)'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(st.footer, p.cx, y0 + sh - 92);
+  }
+  if (st.sheet > 0) { // action sheet: Exit group
+    const k = E.out(clamp(st.sheet));
+    ctx.fillStyle = `rgba(0,0,0,${0.45 * k})`; ctx.fillRect(x0, y0, sw, sh);
+    const hy = y0 + sh - 430 * k;
+    rrect(ctx, x0 + 20, hy, sw - 40, 250, 36); ctx.fillStyle = 'rgba(44,49,70,0.98)'; ctx.fill();
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.font = '24px Inter500'; ctx.fillStyle = 'rgba(200,206,224,0.6)'; ctx.fillText('Exit "BLOCK C"?', p.cx, hy + 52);
+    ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fillRect(x0 + 20, hy + 100, sw - 40, 2);
+    const tp = st.tap || 0;
+    if (tp > 0 && tp < 1) { ctx.save(); rrect(ctx, x0 + 20, hy + 102, sw - 40, 148, 36); ctx.clip(); ctx.beginPath(); ctx.arc(p.cx, hy + 176, 60 + 300 * tp, 0, 7); ctx.fillStyle = `rgba(255,90,100,${0.35 * (1 - tp)})`; ctx.fill(); ctx.restore(); }
+    ctx.font = '44px Inter600'; ctx.fillStyle = '#ff5a64'; ctx.fillText('Exit group', p.cx, hy + 176);
+    rrect(ctx, x0 + 20, hy + 268, sw - 40, 120, 36); ctx.fillStyle = 'rgba(44,49,70,0.98)'; ctx.fill();
+    ctx.font = '42px Inter600'; ctx.fillStyle = '#7fa8ff'; ctx.fillText('Cancel', p.cx, hy + 328);
+  }
+  ctx.restore();
+}
+
+// ---------- CONTACT INFO of member 43: the profile photo is a photo of YOU, from behind, in the mess hall ----------
+// st: {photo 0..1 (loads in), zoom (photo zoom 1..), hlNum, hlAbout, scale, shake, bg, rec (red 'just now' tag)}
+function drawMemberInfo(ctx, t, st = {}) {
+  S.drawPhone(ctx, t, { screen: 'info', scale: st.scale, shake: st.shake, bg: st.bg });
+  const p = S.PH;
+  ctx.save();
+  const bob = Math.sin(t * 1.3) * 6; const [sx, sy] = st.shake || [0, 0];
+  ctx.translate(p.cx + sx, p.cy + bob + sy); ctx.rotate(-0.035); ctx.scale(st.scale || 1, st.scale || 1); ctx.translate(-p.cx, -p.cy);
+  const x0 = p.cx - p.w / 2 + 20, y0 = p.cy - p.h / 2 + 20, sw = p.w - 40, sh = p.h - 40;
+  rrect(ctx, x0, y0, sw, sh, 74); ctx.clip();
+  ctx.fillStyle = '#0d1122'; ctx.fillRect(x0, y0, sw, sh);
+  // photo (square, top)
+  const ph = sw, py = y0;
+  ctx.save(); ctx.beginPath(); ctx.rect(x0, py, sw, ph); ctx.clip();
+  const pa = clamp(st.photo ?? 1);
+  if (pa > 0) {
+    const z = 0.43 * (st.zoom || 1);
+    ctx.save(); ctx.translate(x0 + sw / 2, py + ph / 2); ctx.scale(z, z); ctx.translate(-540, -(st.photoCy || 1380));
+    if (pa < 1) ctx.filter = `blur(${((1 - pa) * 30).toFixed(1)}px)`;
+    drawMess(ctx, t, { lift: 0.15, stop: 1, turn: 1, me: { x: 540, y: 2120, s: 1.75 } });
+    ctx.restore();
+  }
+  if (pa < 1) { ctx.fillStyle = `rgba(13,17,34,${1 - pa})`; ctx.fillRect(x0, py, sw, ph); }
+  const sg = ctx.createLinearGradient(0, py + ph - 200, 0, py + ph); sg.addColorStop(0, 'rgba(13,17,34,0)'); sg.addColorStop(1, 'rgba(13,17,34,0.95)');
+  ctx.fillStyle = sg; ctx.fillRect(x0, py + ph - 200, sw, 200);
+  ctx.restore();
+  // back arrow + rec tag
+  ctx.font = '54px Inter400'; ctx.fillStyle = '#eef1f8'; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic'; ctx.fillText('‹', x0 + 40, y0 + 120);
+  if (st.rec > 0) {
+    ctx.save(); ctx.globalAlpha = clamp(st.rec); rrect(ctx, x0 + sw - 250, y0 + 80, 210, 54, 27); ctx.fillStyle = 'rgba(196,16,42,0.9)'; ctx.fill();
+    ctx.font = '26px Mono700'; ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.fillText('3:01 · NOW', x0 + sw - 145, y0 + 116); ctx.restore();
+  }
+  // name + number
+  let y = py + ph + 20;
+  ctx.textAlign = 'center';
+  ctx.font = '50px Inter600'; ctx.fillStyle = '#f0f2f8'; ctx.fillText('Room 13', p.cx, y + 40);
+  ctx.font = '25px Mono500'; ctx.fillStyle = 'rgba(200,206,224,0.6)'; ctx.fillText('MEMBER 43 OF 43', p.cx, y + 86);
+  y += 130;
+  const row = (label, val, hl, yy, col) => {
+    rrect(ctx, x0 + 30, yy, sw - 60, 120, 26); ctx.fillStyle = 'rgba(34,39,58,0.95)'; ctx.fill();
+    if (hl > 0) { ctx.save(); ctx.globalAlpha = clamp(hl); ctx.lineWidth = 6; ctx.strokeStyle = col || C.lime; ctx.stroke(); ctx.restore(); }
+    ctx.textAlign = 'left'; ctx.font = '22px Inter500'; ctx.fillStyle = 'rgba(200,206,224,0.55)'; ctx.fillText(label, x0 + 64, yy + 42);
+    ctx.font = '40px Inter600'; ctx.fillStyle = hl > 0.5 ? (col || C.lime) : '#eef1f8'; ctx.fillText(val, x0 + 64, yy + 94);
+  };
+  row('Phone', '+91 98•••  ••043  (You)', st.hlNum || 0, y, C.red);
+  row('About', 'Block C · Room 13', st.hlAbout || 0, y + 140, C.red);
+  rrect(ctx, p.cx - 80, y0 + 26, 160, 46, 23); ctx.fillStyle = '#000'; ctx.fill();
   ctx.restore();
 }
 
@@ -782,7 +881,12 @@ function drawStudentBack(ctx, x, y, s, st) {
   const lw = 8.5; const col = st.col || C.white;
   ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
   ctx.strokeStyle = col; ctx.lineWidth = lw; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-  const lift = clamp(st.lift ?? 0);
+  const rise = clamp(st.rise || 0);
+  if (rise > 0) { // standing up: body lifts off the bench, legs straighten
+    ctx.translate(0, -105 * rise);
+    ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(-18, 105 * rise); ctx.moveTo(0, 0); ctx.lineTo(18, 105 * rise); ctx.stroke();
+  }
+  const lift = clamp(st.lift ?? 0) * (1 - rise);
   ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(0, -142);
   // resting arm
   ctx.moveTo(0, -130); ctx.lineTo(-30, -72); ctx.lineTo(-22, -40);
@@ -872,7 +976,8 @@ function drawMess(ctx, t, st = {}) {
       }
       const lift = (st.stop ? lerp(liftOf(r, i), 0.15, clamp(st.stop)) : liftOf(r, i));
       const tt = clamp((st.turn || 0) * 1.0 - hash(r * 50 + i) * 0.06);
-      drawStudentBack(ctx, x, y, s, { lift, turn: tt });
+      const rr = st.rise ? clamp(st.rise * 1.25 - hash(r * 70 + i) * 0.25) : 0;
+      drawStudentBack(ctx, x, y, s, { lift, turn: tt, rise: rr });
     }
   });
   // you: in the doorway, foreground left
@@ -937,4 +1042,4 @@ function drawCoveredPlate(ctx, t, st = {}) {
   if (st.dark > 0) { ctx.fillStyle = `rgba(2,3,10,${st.dark})`; ctx.fillRect(-700, -700, W + 1400, 3300); }
 }
 
-module.exports = { drawMess, drawCoveredPlate, drawStudentBack, messSeat, messEmpty, MROWS,  drawDoorway, drawUnderBed, drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };
+module.exports = { drawMemberInfo, drawMess, drawCoveredPlate, drawStudentBack, messSeat, messEmpty, MROWS,  drawDoorway, drawUnderBed, drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };
