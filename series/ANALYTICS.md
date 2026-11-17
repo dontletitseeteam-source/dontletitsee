@@ -6,13 +6,54 @@ How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric t
 1. **Bright, recognizable frame 1 is now the STANDARD** (confirmed: BLOCK C P5 IG skip rate 42.9%, the best of all 8 reels,
    vs P4 69.6% / P3 62.8%; 3 bright openers = 46.8 / 53.1 / 42.9%, 3 dark openers = 71.9 / 62.8 / 69.6%). Every part opens
    on a WELL-LIT, everyday wide set readable in 0.5 s, threat present but small; burned-in hook max ~6 words, picture dominates.
-2. **The one change being tested now (from BLOCK C Part 6): drop "Part n" from the YouTube title** (series name stays after
-   the bar, "Part n" moves to the description). Sequel decay on YT @dontletitsee: P2 730 views, P3 223, P4 185, P5 61 at 10 h
-   (P4 was 47 at 10 h). Compare Part 6's YT views at 10 h / 34 h with P4 (47 / 185) and P5 (61 at 10 h).
+2. **Keep "Part n" OUT of the YouTube title** (test #5, first read positive: P6 99 views at 10 h vs P5 61 / P4 47; confirm at 34 h
+   vs P5 246 / P4 185). Series name stays after the bar, "Part n" lives in the description.
 3. (keep) Hook-sentence YouTube titles first; spoken A/B card stays. Comments follow retention: P5 (best skip rate) drew the
    first vote in 4 parts ("Leave the group!").
 
 ## Day log
+## 2026-11-18 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 202 | 798 | 639 | 17 | 2 | 0 / 0 | 17.3 s | 46.8% |
+| floor0-p2 | Instagram (media 17961343959258765) | 178 | 182 | 155 | 2 | 0 | 0 / 0 | 8.0 s | 71.9% |
+| floor0-p3 | Instagram (media 18139990045726049) | 154 | 142 | 115 | 1 | 0 | 0 / 0 | 13.1 s | 51.7% |
+| block-c-p1 | Instagram (media 17998129476019732) | 130 | 141 | 108 | 0 | 0 | 0 / 0 | 16.0 s | 53.1% |
+| block-c-p2 | Instagram (media 18120370895001266) | 106 | 145 | 109 | 3 | 0 | 0 / 0 | 21.4 s | 54.7% |
+| block-c-p3 | Instagram (media 18025383203947619) | 82 | 122 | 106 | 2 | 0 | 1 / 0 | 6.9 s | 62.8% |
+| block-c-p4 | Instagram (media 18121550692965483) | 58 | 121 | 104 | 0 | 0 | 0 / 0 | 9.6 s | 69.6% |
+| block-c-p5 | Instagram (media 18170937118477416) | 34 | 126 | 105 | 5 | 0 | 0 / 0 | 15.6 s | 44.7% |
+| block-c-p6 | Instagram (media 18099611141131915) | 10 | **40** | **36** | 0 | 0 | 0 / 0 | 13.1 s | 50.0% |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 202 | 198 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 178 | 446 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 154 | 291 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 130 | 431 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 106 | 731 | n/a | 14 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @dontletitsee (qlkqMo9AiCM) | 82 | 225 | n/a | 5 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @dontletitsee (ukrud0UGmYY) | 58 | 211 | n/a | 4 | 1 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @dontletitsee (nZ98OLaMWPw) | 34 | **246** | n/a | 3 | **5** | n/a | n/a | n/a |
+| block-c-p6 | YouTube @dontletitsee (q3U-mDEVkEU) | 10 | **99** | n/a | 1 | 2 ("i sat B", then "A", same viewer) | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 179 | 16 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 178 | 15 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 154 | 150 | n/a | 2 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @lexter2025 (OkUHaOECktc) | 130 | 6 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @lexter2025 (9VpoKsAuj_Y) | 106 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @lexter2025 (EXSttZutpns) | 82 | 3 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @lexter2025 (7k7CA5H1L6I) | 58 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @lexter2025 (YQQRKnVqCzU) | 34 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p6 | YouTube @lexter2025 (aNEiQD4olF0) | 10 | 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- Test #5 (no "Part n" in the YT title, Part 6) looks POSITIVE on its first read: 99 views at 10 h, the best 10-h start since
+  P2 (110), vs P5 61 and P4 47. One post only: keep the change and confirm at 34 h before calling it the standard.
+- YT @dontletitsee: the bright-opener part P5 kept climbing (61 -> 246 at 34 h, more than P3/P4 at 58-82 h) and drew 5 comments,
+  the most of any video. Bright frame 1 + standalone hook helps on YouTube too.
+- IG Part 6 collapsed in distribution: reach 36 at 10 h (every other reel 95-155) even though skip rate (50.0%) and avg watch
+  (13.1 s) were normal. The content did not change the retention numbers, so this looks like IG throttling the 9th same-series
+  reel (or a late feed push); not a content lever yet. Re-check at 34 h before acting.
+- Votes: Part 6 drew 2 YT comments from one viewer ("i sat B", then "A" a minute later) -> counted as 1 voter, final answer A.
+- @lexter2025: still 0-6 views on every BLOCK C upload (nothing the creator can change).
+
 ## 2026-11-17 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
