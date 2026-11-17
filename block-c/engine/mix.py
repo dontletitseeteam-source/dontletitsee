@@ -531,7 +531,59 @@ def part6():
     return m1, hum
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6}[PART]()
+def part7():
+    sent = load("sent.mp3"); typing = load("typing.mp3"); stairs = load("stairs.mp3"); btn = load("button.mp3")
+    lights_off = load("lights_off.mp3"); door_slam = load("door_slam_wood.mp3")
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    voice_far = load("whisper.mp3", "lowpass=f=700,asetrate=48000*0.7,aresample=48000,aecho=0.8:0.7:120|260:0.4|0.25")
+    pen = noise_burst(0.5, 1500, 6000, 31, 0.02) * 0.4
+    paper = noise_burst(0.6, 800, 5000, 41, 0.03) * 0.5
+    run = load("stairs.mp3", "atempo=1.6")
+    m1 = np.pad(load("music_p2.mp3"), ((0, N), (0, 0)))[:N] * automation([
+        (0, -15), (K["type"], -17), (K["sentW"], -16), (K["n43W"], -12), (K["two"], -15), (K["rohan"], -17), (K["doesW"], -12),
+        (K["dev"], -17), (K["outW"], -40), (K["stair"], -40), (K["stairW"], -20), (K["nameW"], -14), (K["againW"], -11),
+        (K["run"], -13), (K["list"], -18), (K["hold"], -18), (K["wordsW"], -14), (K["twiceW"], -12), (K["leftW"], -11),
+        (K["note"], -17), (K["findW"], -13), (K["steps"], -18), (K["downW"], -13), (K["choice"], -14), (DUR - 1.4, -14), (DUR, -40)])
+    hum = bed("hum.mp3", "lowpass=f=900") * automation([(0, -13), (K["outW"], -13), (K["outW"] + 0.1, -40), (K["list"], -24), (DUR, -24)])
+    place(boom, 0.05, -12, fo=0.8, maxlen=2.0)
+    place(stinger, 0.0, -14, fo=0.5, maxlen=1.2)
+    place(load("door_creak.mp3"), K["openW"] - 0.1, -12, fo=0.4, maxlen=1.4)
+    place(typing, K["type"] + 0.1, -13, fi=0.05, fo=0.2, maxlen=K["sentW"] - K["type"] - 0.2)
+    place(sent, K["sentW"], -9)
+    place(sent, K["n43W"], -9)
+    place(stinger, K["n43W"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(boom, K["sameSecW"], -10, fo=0.6, maxlen=1.8)
+    place(boom, K["twoW"], -11, fo=0.6, maxlen=1.6)
+    place(sent, K["realW"] - 0.3, -12); place(sent, K["arjun"] + 0.1, -12)
+    place(breath, K["does"] - 0.1, -13, fi=0.2, fo=0.5, maxlen=1.6)
+    place(stinger, K["doesW"] - 0.03, -10, fo=0.5, maxlen=1.4)
+    place(boom, K["devDoorW"], -13, fo=0.6, maxlen=1.4)
+    for i in range(5): place(lights_off, K["outW"] - 0.25 + (4 - i) * 0.12, -13 - i, maxlen=0.6, fo=0.2)
+    place(boom, K["floorW"], -12, fo=0.8, maxlen=2.0)
+    place(voice_far, K["stairW"], -14, fi=0.3, fo=0.6, maxlen=K["call"] - K["stairW"] + 0.4)
+    place(pen, K["nameW"], -12)
+    place(riser, K["againW"] - 0.06 - len(riser) / SR, -18, fi=2.0, fo=0.004)
+    place(pen, K["againW"], -9); place(boom, K["againW"], -6, fo=0.6, maxlen=2.4)
+    place(run, K["runW"] - 0.1, -9, fo=0.3, maxlen=K["list"] - K["runW"])
+    place(door_slam, K["list"] - 0.05, -9, maxlen=1.2, fo=0.4)
+    place(paper, K["listW"], -12)
+    place(btn, K["lightW"], -11)
+    place(heartbeat, K["dents"], -12, fi=0.1, fo=0.4, maxlen=K["rule"] - K["dents"] + 0.2)
+    place(stinger, K["wordsW"] - 0.03, -12, fo=0.5, maxlen=1.2)
+    place(boom, K["twiceW"], -9, fo=0.6, maxlen=1.8)
+    place(boom, K["blockW"], -10, fo=0.6, maxlen=1.8)
+    place(stinger, K["leftW"] - 0.03, -9, fo=0.5, maxlen=1.4); place(boom, K["leftW"], -7, fo=0.6, maxlen=2.2)
+    place(breath, K["note"] + 0.2, -14, fi=0.2, fo=0.5, maxlen=1.8)
+    place(boom, K["findW"], -10, fo=0.6, maxlen=1.8)
+    place(stairs, K["steps"] - 0.1, -10, fi=0.3, fo=0.6, maxlen=K["choice"] - K["steps"])
+    place(boom, K["downW"], -10, fo=0.6, maxlen=1.8)
+    place(boom, K["choice"] - 0.1, -16, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, hum
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7}[PART]()
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

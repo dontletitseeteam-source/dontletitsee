@@ -323,6 +323,45 @@ function drawList(ctx, t, st = {}) {
   for (let i = 0; i <= 22; i++) { const a = (i / 22) * Math.PI * 2; const rr = (i % 2 ? 46 : 70) + hash(i * 5.1) * 30; const px = cx + Math.cos(a) * rr * 2.2, py = cy + Math.sin(a) * rr * 0.75; i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
   ctx.closePath(); ctx.fillStyle = '#18242c'; ctx.fill(); ctx.strokeStyle = '#e8e6de'; ctx.lineWidth = 3; ctx.stroke(); ctx.restore();
   ctx.fillStyle = ink; ctx.font = '70px Osw700'; ctx.fillText('6.', P.x0 + 40, r6.y + 4);
+  // PART 7: a light held behind the paper -> the pressed-in words of rule 6 show through, plus a note
+  const bk = clamp(st.back || 0);
+  if (bk > 0) {
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    const bx = st.bx ?? 540, by = st.by ?? r6.y;
+    const wg = ctx.createRadialGradient(bx, by, 40, bx, by, 760);
+    wg.addColorStop(0, `rgba(255,214,150,${0.55 * bk})`); wg.addColorStop(0.5, `rgba(255,190,120,${0.22 * bk})`); wg.addColorStop(1, 'rgba(255,190,120,0)');
+    ctx.fillStyle = wg; ctx.fillRect(P.x0, P.y0, P.x1 - P.x0, P.y1 - P.y0);
+    ctx.restore();
+    // the tear lets raw light through
+    ctx.save(); ctx.beginPath();
+    for (let i = 0; i <= 22; i++) { const a = (i / 22) * Math.PI * 2; const rr = (i % 2 ? 46 : 70) + hash(i * 5.1) * 30; const px = cx + Math.cos(a) * rr * 2.2, py = cy + Math.sin(a) * rr * 0.75; i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
+    ctx.closePath(); ctx.fillStyle = `rgba(255,236,200,${0.85 * bk})`; ctx.fill(); ctx.restore();
+    const rv = clamp(st.reveal || 0);
+    if (rv > 0) {
+      const txt = ['If the warden calls a name', 'twice, that student', 'leaves Block C.'];
+      ctx.save(); ctx.font = '46px Inter700'; ctx.textAlign = 'left';
+      txt.forEach((ln, k) => {
+        const a = clamp(rv * 3 - k);
+        if (a <= 0) return;
+        const yy = r6.y - 12 + k * 66;
+        ctx.save(); ctx.beginPath(); ctx.rect(P.x0 + 140, yy - 60, 680 * a, 80); ctx.clip();
+        ctx.shadowColor = 'rgba(120,20,10,0.9)'; ctx.shadowBlur = 10;
+        ctx.fillStyle = '#5a0c12'; ctx.fillText(ln, P.x0 + 152, yy + 3);
+        ctx.shadowBlur = 0; ctx.fillStyle = k === 1 ? '#fff4e0' : 'rgba(255,240,220,0.95)'; ctx.fillText(ln, P.x0 + 150, yy);
+        ctx.restore();
+      });
+      if (st.hlTwice > 0) { ctx.save(); ctx.globalAlpha = clamp(st.hlTwice); ctx.strokeStyle = C.red; ctx.lineWidth = 7; ctx.beginPath(); ctx.ellipse(P.x0 + 230, r6.y + 40, 100, 44, -0.05, 0, Math.PI * 2 * clamp(st.hlTwice * 1.2)); ctx.stroke(); ctx.restore(); }
+      ctx.restore();
+    }
+    const nt = clamp(st.note || 0);
+    if (nt > 0) {
+      ctx.save(); ctx.font = '48px Inter600'; ctx.textAlign = 'left';
+      const ny = r6.y + 250;
+      ctx.beginPath(); ctx.rect(P.x0 + 140, ny - 60, 640 * nt, 150); ctx.clip();
+      ctx.shadowColor = 'rgba(255,40,60,0.8)'; ctx.shadowBlur = 18; ctx.fillStyle = '#ff4a5c'; ctx.fillText('i never left.', P.x0 + 170, ny); ctx.fillText('find me.', P.x0 + 170, ny + 64);
+      ctx.restore();
+    }
+  }
   // signature
   ctx.font = '36px Inter500'; ctx.fillStyle = 'rgba(20,26,54,0.7)'; ctx.fillText('— R. 13', P.x1 - 190, P.y1 - 60);
   ctx.restore();
@@ -526,6 +565,14 @@ function drawHostelCorridor(ctx, t, st = {}) {
     ctx.fillStyle = 'rgba(210,214,224,0.75)'; ctx.fillRect(nx - pw / 2, ny - ph / 2, pw, ph);
     ctx.font = `${Math.round(46 / dm)}px Osw700`; ctx.fillStyle = '#0b1022'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.fillText(label, nx, ny + 2); ctx.textBaseline = 'alphabetic';
+    const op = (st.open || {})[label] || 0;
+    if (op > 0) { // door standing open: warm room light fills the frame, the leaf swung in
+      poly(ctx, [P(X, -200, d1), P(X, -200, d2), P(X, FLR, d2), P(X, FLR, d1)], `rgba(255,214,160,${0.85 * op})`);
+      ctx.save(); ctx.globalCompositeOperation = 'lighter'; poly(ctx, [P(X, FLR, d1), P(X, FLR, d2), P(X + side * -260, FLR, d2 + 0.1), P(X + side * -260, FLR, d1 - 0.2)], `rgba(255,200,140,${0.35 * op})`); ctx.restore();
+      ctx.save(); ctx.globalCompositeOperation = 'lighter';
+      const [ax, ay] = P(X, FLR, (d1 + d2) / 2);
+      glow(ctx, ax - side * 120 / d1, ay, 900 / d1, 'rgba(255,210,150,A)', 0.6 * op); ctx.restore();
+    }
     // light under the door when the room answers
     const gl = glowD[label] || 0;
     if (gl > 0) {
@@ -656,6 +703,12 @@ function drawRegister(ctx, t, st = {}) {
     ctx.font = '64px Osw700'; ctx.fillStyle = '#c4102a'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('LEFT', 0, 0);
     ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 5; ctx.strokeRect(-76, -42, 152, 84);
     ctx.restore();
+  }
+  const nc = st.calls || 0;
+  for (let k = 0; k < nc; k++) {
+    const a = clamp(nc - k);
+    ctx.save(); ctx.globalAlpha = a; ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 9; ctx.lineCap = 'round';
+    const xx = 870 + k * 40; ctx.beginPath(); ctx.moveTo(xx, y - 62); ctx.lineTo(xx - 6, y + 14 - 76 * (1 - a)); ctx.stroke(); ctx.restore();
   }
   if (st.dateHL > 0) {
     ctx.save(); ctx.globalAlpha = clamp(st.dateHL); ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 6;
