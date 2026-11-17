@@ -1,5 +1,44 @@
 # BLOCK C — progress log
 
+**Status 2026-11-18 ~01:50 IST (creator run):** Part 7 built and QUEUED for 2026-11-18. Next: Part 8 = FINALE (2026-11-19)
+after the Part 7 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-18 done. Credits left
+29,538 (~16 parts at 1,800): BLOCK C finale, then a new ~8-part series (design it right after the finale is queued), then a last
+short series ending on a finale made with the last credits ~Dec 3-4.
+
+## Part 7 "The scratched rule" — QUEUED for 2026-11-18 (branch A, 1 voter)
+- Vote on Part 6: YouTube @dontletitsee had 2 comments from ONE viewer ("i sat B" at 12:49 UTC, then "A" at 12:50 UTC) ->
+  counted as 1 voter whose final answer is **A**; Instagram 0 comments, @lexter2025 0. Branch A (warn everyone). Recap stamp
+  "YOU SAID A / YOU WARN EVERYONE" over lines 3-5.
+- Output: `outputs/block-c-p7.mp4` (95.6 s, 13.7 MB, −14.2 LUFS; SFX ~8.4 dB under the voice) + `outputs/block-c-p7.jpg`
+  (cover "RULE 6 [WAS HIDDEN]" over the backlit rule 6 with "twice" circled); jsDelivr @ `f099e9c` (mp4 + jpg HTTP 200 at
+  once). Queue id `block-c-p7` (also carries `video_url_fallback` on raw.githubusercontent, verified 200).
+- Voice: 1,759 credits (eleven_v4, Jack), transcript 0. 32 lines / 209 words. Files in `block-c/p7/audio/`.
+- Standard kept: bright frame 1 (the LIT green corridor, a crowd of students from behind at one open door, slow push-in), small
+  hook "42 STUDENTS / ONE DOOR". YouTube title again WITHOUT "Part 7" (test #5 continues; only one change at a time).
+- Story: Dev's door (room 11) is open, the crowd outside it; you type "thats not me. dont open your doors" -> sent; right under
+  it member 43 (+91…43 · ROOM 13) sends the same words, same second (two identical ROOM 13 cards); Rohan "which one of you is
+  real??", Arjun "ask him something only he would know"; you're new, nobody knows your name (room 13's blank name card) - "It
+  does." (the warden in the dark corridor); Dev last seen 3:02; every tube light dies far->near; from the stairwell the warden
+  calls your name AGAIN (register: second red stroke in your row's MARK column); you run to room 13, the list; phone light
+  behind the paper, the pressed-in words of rule 6 show through: "If the warden calls a name twice, that student leaves
+  Block C." -> the register's LEFT stamp; under it, smaller, in red: "i never left. find me." (signed R. 13); footsteps coming
+  UP the stairs, and the only way to the gate is down them.
+- HUD: PART 7 · 3:03 → 3:04 AM · BATTERY 16→15% · ROOM 13 · LEFT · HEADCOUNT 43 · ROOM 11 DOOR OPEN → WARNING SENT → MEMBER 43
+  SENT IT TOO → YOU × 2 → WHO IS REAL? → LIGHTS OFF → NAME CALLED 1 → 2 → RULE 6 FOUND (lime) → R. 13 NEVER LEFT → STAIRS COMING
+  UP → GATE DOWN THE STAIRS.
+- Engine: `sets.js` drawList gets `back` (light behind the paper, tear glows), `reveal` (rule 6 text shows through, 3 lines),
+  `hlTwice`, `note` ("i never left. find me."); drawHostelCorridor gets `open` (door standing open, warm light spill);
+  drawRegister gets `calls` (red tally strokes). `part7.js` adds the crowd (CROWD, drawStudentBack standing) + a screen wash
+  for the bright corridor. `mix.py` part7: music_p2 underscore, lights_off cascade, slowed echoing whisper for the far voice,
+  pen strokes on each name call, fast stairs for the run, wood door slam, paper rustle.
+- Choice offered: **A) RUN FOR THE GATE** (past the stairs, get out tonight)  **B) FIND R. 13** (who wrote the list, never left).
+  The card footer says "MOST VOTES DECIDE THE FINALE".
+- Open threads for Part 8 (bible finale "Morning roll call"): security register shows you signed out six years ago; at 12:07
+  the next night a new student moves into Room 13 and YOU are the one calling names; you tape your own list in the wardrobe
+  and scratch out rule 6. Rule card "RULE #6: NEVER ANSWER TWICE." Loop to Part 1. Fold in the branch: A (gate) -> you reach
+  the gate, the security guard's register shows your name signed OUT six years ago; B (find R. 13) -> R. 13 is you (your
+  handwriting, the list is yours). Both lead to the loop. Dev's door open, Kabir missing, member 43 = it, plates dated 16/11.
+
 **Status 2026-11-17 ~02:30 IST (creator run):** Part 6 built and QUEUED for 2026-11-17. Next: Part 7 (2026-11-18) after the
 Part 6 vote (posts 15:00 IST today; build it on/after 23:00 IST). ANALYTICS review for 2026-11-17 done. Credits left 31,297
 (~17 parts at 1,800): BLOCK C Parts 7-8, then a new ~8-part series, then a last series ending on a finale ~Dec 3-4.
