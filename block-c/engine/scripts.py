@@ -277,5 +277,48 @@ P6 = [
 ]
 P6_HOLD = 4.2
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD}
+
+P7 = [
+    ("Forty-two students are standing outside one door.", 0.15,
+     [(3, "FORTY-TWO STUDENTS"), (2, "ARE STANDING"), (2, "OUTSIDE {ONE DOOR.}")]),
+    ("Room eleven. Dev's room. It's open.", 0.40, [(2, "[ROOM 11.]"), (2, "DEV'S ROOM."), (2, "{IT'S OPEN.}")]),
+    ("You type fast.", 0.55, [(3, "YOU TYPE FAST.")]),
+    ("That's not me. Don't open your doors.", 0.35, [(3, "[THAT'S NOT ME.]"), (4, "DON'T OPEN YOUR DOORS.")]),
+    ("Sent.", 0.35, [(1, "[SENT.]")]),
+    ("And right under it, member forty-three sends the same thing.", 0.60,
+     [(4, "AND RIGHT UNDER IT,"), (3, "MEMBER {43} SENDS"), (3, "{THE SAME THING.}")]),
+    ("Same words. Same second.", 0.40, [(2, "SAME WORDS."), (2, "{SAME SECOND.}")]),
+    ("Now there are two of you in the group.", 0.50, [(4, "NOW THERE ARE"), (5, "{TWO OF YOU} IN THE GROUP.")]),
+    ("Rohan. Which one of you is real?", 0.55, [(1, "ROHAN."), (6, "WHICH ONE OF YOU {IS REAL?}")]),
+    ("Arjun. Ask him something only he would know.", 0.40, [(1, "ARJUN."), (3, "ASK HIM SOMETHING"), (4, "ONLY HE WOULD [KNOW.]")]),
+    ("But you're new here. Nobody knows your name.", 0.50, [(4, "BUT YOU'RE NEW HERE."), (4, "{NOBODY} KNOWS YOUR NAME.")]),
+    ("It does.", 0.70, [(2, "{IT DOES.}")]),
+    ("Dev hasn't typed since he opened his door.", 0.60, [(3, "DEV HASN'T TYPED"), (5, "SINCE HE {OPENED HIS DOOR.}")]),
+    ("Then the tube lights go out. Every floor.", 0.70, [(6, "THEN THE TUBE LIGHTS {GO OUT.}"), (2, "EVERY FLOOR.")]),
+    ("And from the stairwell, a voice you've heard once before.", 0.60,
+     [(4, "AND FROM THE STAIRWELL,"), (3, "A VOICE YOU'VE"), (3, "HEARD [ONCE] BEFORE.")]),
+    ("The warden calls your name.", 0.50, [(2, "THE WARDEN"), (3, "{CALLS YOUR NAME.}")]),
+    ("Again.", 0.70, [(1, "{AGAIN.}")]),
+    ("You run. Back to room thirteen.", 0.80, [(2, "YOU RUN."), (4, "BACK TO [ROOM 13.]")]),
+    ("The wardrobe. The list.", 0.40, [(2, "THE WARDROBE."), (2, "[THE LIST.]")]),
+    ("Rule six is scratched out. But whoever wrote it pressed hard.", 0.50,
+     [(5, "RULE [SIX] IS SCRATCHED OUT."), (4, "BUT WHOEVER WROTE IT"), (2, "{PRESSED HARD.}")]),
+    ("You hold your phone light behind the paper.", 0.45, [(4, "YOU HOLD YOUR PHONE"), (4, "[LIGHT] BEHIND THE PAPER.")]),
+    ("And the dents turn into words.", 0.50, [(6, "AND THE DENTS TURN INTO [WORDS.]")]),
+    ("Rule six. If the warden calls a name twice,", 0.70,
+     [(2, "RULE [SIX.]"), (4, "IF THE WARDEN CALLS"), (3, "A NAME {TWICE,}")]),
+    ("that student leaves Block C.", 0.20, [(5, "THAT STUDENT {LEAVES BLOCK C.}")]),
+    ("Leaves. Like the register said. Left.", 0.70, [(1, "LEAVES."), (4, "LIKE THE [REGISTER] SAID."), (1, "{LEFT.}")]),
+    ("Below it, smaller. I never left. Find me.", 0.80, [(3, "BELOW IT, SMALLER."), (3, "[I NEVER LEFT.]"), (2, "{FIND ME.}")]),
+    ("Footsteps on the stairs. Coming up.", 0.80, [(4, "FOOTSTEPS ON THE STAIRS."), (2, "{COMING UP.}")]),
+    ("And the only way to the gate is down those stairs.", 0.50,
+     [(5, "AND THE ONLY WAY"), (3, "TO THE [GATE]"), (3, "IS {DOWN THOSE STAIRS.}")]),
+    ("What do you do?", 1.00, []),
+    ("A. Run for the gate. Get out tonight.", 0.35, []),
+    ("B. Find who wrote the list. They never left.", 0.30, []),
+    ("Comment A or B.", 0.35, []),
+]
+P7_HOLD = 4.2
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD}
