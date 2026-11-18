@@ -320,5 +320,42 @@ P7 = [
 ]
 P7_HOLD = 4.2
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD}
+P8 = [
+    ("The hostel register says you left Block C six years ago.", 0.15,
+     [(3, "THE HOSTEL REGISTER"), (3, "SAYS YOU {LEFT}"), (2, "BLOCK C"), (3, "{SIX YEARS AGO.}")]),
+    ("It's three oh four. Footsteps on the stairs.", 0.45, [(4, "IT'S [3:04.]"), (2, "{FOOTSTEPS}"), (2, "ON THE STAIRS.")]),
+    ("You don't run. You look for whoever wrote the list.", 0.45,
+     [(3, "YOU DON'T RUN."), (4, "YOU LOOK FOR WHOEVER"), (3, "WROTE [THE LIST.]")]),
+    ("I never left. Find me.", 0.45, [(3, "[I NEVER LEFT.]"), (2, "{FIND ME.}")]),
+    ("Behind the wardrobe, scratched into the wall, hundreds of tally marks.", 0.50,
+     [(3, "BEHIND THE WARDROBE,"), (4, "SCRATCHED INTO THE WALL,"), (4, "{HUNDREDS} OF TALLY MARKS.")]),
+    ("And under them, a name.", 0.45, [(3, "AND UNDER THEM,"), (2, "A [NAME.]")]),
+    ("Your name.", 0.55, [(2, "{YOUR NAME.}")]),
+    ("In your handwriting.", 0.45, [(3, "IN {YOUR HANDWRITING.}")]),
+    ("Same slant as the list. Same sevens.", 0.45, [(5, "SAME SLANT AS THE LIST."), (2, "SAME [SEVENS.]")]),
+    ("You wrote the rules.", 0.55, [(4, "{YOU WROTE THE RULES.}")]),
+    ("The footsteps stop outside room thirteen.", 0.70, [(3, "THE FOOTSTEPS {STOP}"), (3, "OUTSIDE [ROOM 13.]")]),
+    ("The door opens on its own.", 0.45, [(3, "THE DOOR OPENS"), (3, "{ON ITS OWN.}")]),
+    ("The warden holds out the register. And a pen.", 0.50,
+     [(3, "THE WARDEN HOLDS"), (3, "OUT THE [REGISTER.]"), (3, "AND A {PEN.}")]),
+    ("Its sleeve slides back. On its wrist, a hostel tag. Room thirteen.", 0.50,
+     [(4, "ITS SLEEVE SLIDES BACK."), (3, "ON ITS WRIST,"), (3, "A HOSTEL TAG."), (2, "{ROOM 13.}")]),
+    ("It was the last student too.", 0.55, [(6, "IT WAS {THE LAST STUDENT} TOO.")]),
+    ("You take the pen.", 0.70, [(4, "YOU TAKE THE {PEN.}")]),
+    ("The coat fits.", 0.55, [(3, "THE COAT {FITS.}")]),
+    ("Twelve oh seven, the next night. A new student moves into room thirteen.", 0.90,
+     [(3, "[12:07,]"), (3, "THE NEXT NIGHT."), (3, "A NEW STUDENT"), (2, "MOVES INTO"), (2, "[ROOM 13.]")]),
+    ("The last student in room thirteen left him a list.", 0.45,
+     [(3, "THE LAST STUDENT"), (3, "IN ROOM [13]"), (4, "LEFT HIM A [LIST.]")]),
+    ("And scratched out rule six. So hard the paper tore.", 0.40,
+     [(3, "AND SCRATCHED OUT"), (2, "RULE [SIX.]"), (3, "SO HARD THE"), (2, "PAPER {TORE.}")]),
+    ("Rule six. Never answer twice.", 0.60, [(2, "RULE [SIX.]"), (3, "{NEVER ANSWER TWICE.}")]),
+    ("Then you walk the corridor, and call his name.", 0.60,
+     [(5, "THEN YOU WALK THE CORRIDOR,"), (4, "AND {CALL HIS NAME.}")]),
+    ("Would you answer? A, yes. B, never.", 0.90, []),
+    ("Comment A or B. A new story starts tomorrow.", 0.35, []),
+]
+P8_HOLD = 3.6
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD}
