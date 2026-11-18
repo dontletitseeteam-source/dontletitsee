@@ -88,6 +88,28 @@ Social Media Today on Instagram ranking (watch time, likes per reach, sends per 
 viewed-vs-swiped-away metric; easyviral.ai pattern notes (story Shorts 30-50 s, hook = picture + text + voice in the
 first second; its own caveat: not a formal study).
 
+## Post-mortem: BLOCK C (8 parts, 2026-11-12 … 11-19; numbers pulled 2026-11-19 01:15 IST, P8 not live yet)
+| Part | IG views | IG skip rate | IG avg watch | YT views (@dontletitsee) | YT stay rate (engaged/views) | YT avg viewed | Comments (IG / YT) |
+|---|---|---|---|---|---|---|---|
+| P1 The List (90 s, dark open) | 142 | 52.6% | 15.9 s | 431 | 43% | 50.7% | 0 / 1 |
+| P2 Present (91 s) | 145 | 54.7% | 21.4 s | 733 | 47% | 53.2% | 0 / 0 |
+| P3 Left (85 s, dark) | 122 | 62.8% | 6.9 s | 225 | 53% | 40.8% | 0 / 0 |
+| P4 Under the bed (89 s, dark) | 121 | 69.6% | 9.6 s | 218 | 65%* | 42.9%* | 0 / 1 |
+| P5 Mess at 3 AM (88 s, BRIGHT) | 126 | 44.7% | 15.6 s | 340 | n/a (lag) | n/a | 0 / 5 |
+| P6 43 (87 s, bright, no "Part n" in YT title) | 105 | 55.9% | 12.0 s | 314 | n/a | n/a | 0 / 3 |
+| P7 Scratched rule (96 s, bright) | 151 | 44.6% | 21.2 s | 145 (10 h) | n/a | n/a | 0 / 0 |
+| P8 Finale (76 s, bright) | — | — | — | — | — | — | — |
+*partial (analytics lag ~2 days).
+
+Worked: (1) bright, recognizable frame 1 (skip 44.6-55.9% vs 62.8-69.6% dark); (2) YouTube hook-sentence titles without
+"Part n" (P6 314 views at 34 h vs P5 246 / P4 185); (3) concrete, relatable hostel details + one clear "wrong" object per
+part (plate with tomorrow's date, member 43) drew the only comments.
+Mistakes: (1) a continuing plot shown to strangers: IG reach stayed flat at ~105-130 per part, no part broke out;
+(2) 85-96 s runtime: YouTube avg viewed 41-53%, IG viewers leave at 7-21 s; (3) the A/B vote carried too much weight:
+0-1 voters on 5 of 7 cards, so "the votes decide" never really happened.
+Rules for the next series: standalone 55-70 s episodes with one SHOWN entity (title + cover + first 3 s); A/B answerable
+inside the episode ("which rule would you break"); every episode must work as somebody's first video.
+
 ## Ideas for the next series (creator decides; all original, none of them a copy)
 Format sketch: **"NIGHT SHIFT"**: each episode is one ordinary night job, the handover note with its rules, the
 rule that breaks, one poster-image entity, a twist. The bible's candidate premises fit as episodes: 24-hour
@@ -97,5 +119,10 @@ the one apartment whose lights stay on in a power cut. A/B options: "which rule 
 next?". Stay clear of the @play.malo premises listed in PLAYBOOK section 1.
 
 ## Research log (newest first; PLAYBOOK section 7)
+### 2026-11-19 (creator run, BLOCK C finale queued)
+No new competitor scan (last one 2026-11-18, next due on/after Monday 2026-11-23). YouTube retention (YOUTUBE_QUERY_ANALYTICS,
+youtube_regin-mont, 11-09..11-18; needs maxResults with the video dimension): engaged/views P1 43%, P2 47%, P3 53%, FLOOR 0
+P1 51%, P2 49%, P3 34%; avg viewed BLOCK C 41-53% vs FLOOR 0 59-61% (P2 175% = replays). Confirms: shorter is better.
+Post-mortem above; NIGHT SHIFT (`series/night-shift/SERIES.md`) designed from it.
 ### 2026-11-18 (owner session)
 Scan and post-mortem above. Next scan: the first creator run on or after Monday 2026-11-23.

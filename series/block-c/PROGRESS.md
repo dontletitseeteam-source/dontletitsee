@@ -1,5 +1,36 @@
 # BLOCK C — progress log
 
+**COMPLETE (2026-11-19 ~02:30 IST): all 8 parts queued. Next series: NIGHT SHIFT (`series/night-shift/SERIES.md`), Episode 1 for 2026-11-20.**
+
+**Status 2026-11-19 ~02:30 IST (creator run):** Part 8 (FINALE) built and QUEUED for 2026-11-19. ANALYTICS review for 2026-11-19
+done. Credits left 28,114 (19 episodes to make through 2026-12-08 -> ~1,480 each). BLOCK C post-mortem in `series/RESEARCH.md`.
+
+## Part 8 "Morning roll call" (FINALE) — QUEUED for 2026-11-19 (branch B, no votes)
+- Vote on Part 7: **A = 0, B = 0** (Instagram 0 comments; YouTube @dontletitsee 0; @lexter2025 0). No votes -> the scarier
+  branch, B (find R. 13). Recap stamp "YOU CHOSE B / YOU LOOK FOR R. 13" over line 3.
+- Output: `outputs/block-c-p8.mp4` (76.1 s, 10.8 MB, −14.0 LUFS; SFX/music ~12 dB under the voice) + `outputs/block-c-p8.jpg`
+  (cover "THE WARDEN WAS ME" over the warden's arm, sleeve slid back, hostel tag "BLOCK C · 13", holding the red pen over the
+  register); jsDelivr @ `a9f1c67` (mp4 + jpg HTTP 200 at once; raw.githubusercontent fallback 200). Queue id `block-c-p8`.
+- Voice: 1,424 credits (eleven_v4, Jack), transcript 0. 24 lines / 175 words (shorter, ≤ 80 s as planned). Files in `block-c/p8/audio/`.
+- Standard kept: bright frame 1 (the register page in daylight, row 13 = your red-ink name stamped LEFT, date 19 / 11 / 2020
+  circled on "six years ago"), small hook "I LEFT HERE / 6 YEARS AGO". YT title is a hook sentence, no "Part 8".
+- Story: 3:04, footsteps on the stairs; you don't run, you look for R. 13; "i never left. find me."; behind the wardrobe the wall
+  is covered in tally marks (hundreds of roll calls) and under them a name scratched and traced in red: yours, your handwriting
+  (split: the list's 12:07 vs the wall — same slant, same sevens); you wrote the rules (signature R. 13 ringed); the footsteps
+  stop at room 13, the bolt slides itself, the door opens on its own; the warden holds out the register and a pen; its sleeve
+  slides back: a hostel tag, BLOCK C · 13 — it was the last student too; you take the pen; the coat fits. 12:07 the next night:
+  a new student moves into room 13 (lit room, his bag); "the last student in room thirteen left him a list" (loop to Part 1's
+  first line); you scratch out rule 6 so hard the paper tears; rule card "RULE #6 · NEVER ANSWER TWICE."; you walk the dark
+  corridor and call his name: the light under his door turns red (Part 1's last image).
+- Choice offered (answerable, no next part): **Would you answer? A) YES · PRESENT  B) NEVER**, then "BLOCK C · THE END / A NEW
+  STORY TOMORROW · 3 PM".
+- Engine: `sets.js` adds drawTallyWall (wall behind the wardrobe: 117 tally groups, red scribble name, ring, sliding wardrobe
+  edge, torch pool), drawOffer (lit doorway, coat, sleeve that slides back to show the wrist + hostel tag, pen, register with an
+  empty red row, your hand taking the pen), `scribble` helper; drawRegister gets `bright` + `time`; drawList gets `scratch`
+  (0 = rule 6 still readable, animates the scratching; tear only at 1). `mix.py` part8: music_p3 underscore, then Part 1's
+  music.mp3 from "12:07, the next night" (callback), scratch bursts on the tallies, bolt + creak, stretch on the sleeve, pen
+  strokes for the scratch-out, a paper-tear burst, lights_off cascade.
+
 **Status 2026-11-18 11:11 IST (creator run):** queue full through 2026-11-18 (Part 7 jsDelivr mp4 + jpg re-verified HTTP 200); nothing built. Part 8 = FINALE (2026-11-19) waits for the A/B vote on Part 7 (posts today 15:00 IST); build it on/after 2026-11-18 23:00 IST. ANALYTICS review for 2026-11-18 already done. Credits 29,538.
 
 **Status 2026-11-18 ~01:50 IST (creator run):** Part 7 built and QUEUED for 2026-11-18. Next: Part 8 = FINALE (2026-11-19)
