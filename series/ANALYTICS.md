@@ -8,15 +8,60 @@ entity per episode (shown, on the cover, in the title), titles that state the sc
 Full brief, post-mortem and competitor scan: `series/RESEARCH.md`; weekly research loop: PLAYBOOK section 7.
 
 ## Next improvements (max 3, read before writing every script)
-1. **Bright, recognizable frame 1 is now the STANDARD** (confirmed: BLOCK C P5 IG skip rate 42.9%, the best of all 8 reels,
-   vs P4 69.6% / P3 62.8%; 3 bright openers = 46.8 / 53.1 / 42.9%, 3 dark openers = 71.9 / 62.8 / 69.6%). Every part opens
-   on a WELL-LIT, everyday wide set readable in 0.5 s, threat present but small; burned-in hook max ~6 words, picture dominates.
-2. **Keep "Part n" OUT of the YouTube title** (test #5, first read positive: P6 99 views at 10 h vs P5 61 / P4 47; confirm at 34 h
-   vs P5 246 / P4 185). Series name stays after the bar, "Part n" lives in the description.
-3. (keep) Hook-sentence YouTube titles first; spoken A/B card stays. Comments follow retention: P5 (best skip rate) drew the
-   first vote in 4 parts ("Leave the group!").
+1. **Bright, recognizable frame 1 is the STANDARD** (4 bright openers 44.6-53% IG skip vs 3 dark 62.8-71.9%; P7 44.6% + 21.2 s
+   avg watch). Every part opens on a WELL-LIT, everyday wide set readable in 0.5 s, threat present but small; burned-in hook
+   max ~6 words, picture dominates.
+2. **YouTube title = a hook sentence that states the scary image, no "Part n" — STANDARD** (test #5 confirmed 2026-11-19: P6 314
+   views at 34 h vs P5 246 / P4 185; P7 145 at 10 h vs P6 99). Series name after the bar, part number only in the description.
+3. **Next test = the standalone episode format** (series after BLOCK C, `series/RESEARCH.md`): one nameable entity SHOWN in the
+   first 3 s and on the cover, complete story + twist in 55-70 s. Compare its IG reach/skip and YT 34-h views with BLOCK C P5-P7.
 
 ## Day log
+## 2026-11-19 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 226 | 798 | 639 | 17 | 2 | 0 / 0 | 17.3 s | 46.8% |
+| floor0-p2 | Instagram (media 17961343959258765) | 202 | 182 | 155 | 2 | 0 | 0 / 0 | 8.0 s | 71.9% |
+| floor0-p3 | Instagram (media 18139990045726049) | 178 | 142 | 115 | 1 | 0 | 0 / 0 | 13.1 s | 51.7% |
+| block-c-p1 | Instagram (media 17998129476019732) | 154 | 142 | 109 | 0 | 0 | 0 / 0 | 15.9 s | 52.6% |
+| block-c-p2 | Instagram (media 18120370895001266) | 130 | 145 | 109 | 3 | 0 | 0 / 0 | 21.4 s | 54.7% |
+| block-c-p3 | Instagram (media 18025383203947619) | 106 | 122 | 106 | 2 | 0 | 1 / 0 | 6.9 s | 62.8% |
+| block-c-p4 | Instagram (media 18121550692965483) | 82 | 121 | 104 | 0 | 0 | 0 / 0 | 9.6 s | 69.6% |
+| block-c-p5 | Instagram (media 18170937118477416) | 58 | 126 | 105 | 5 | 0 | 0 / 0 | 15.6 s | 44.7% |
+| block-c-p6 | Instagram (media 18099611141131915) | 34 | **105** | **86** | 3 | 0 | 0 / 0 | 12.0 s | 55.9% |
+| block-c-p7 | Instagram (media 18221781823348380) | 10 | **151** | **132** | 2 | 0 | 1 / 0 | **21.2 s** | **44.6%** |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 226 | 198 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 202 | 446 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 178 | 291 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 154 | 431 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 130 | 733 | n/a | 14 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @dontletitsee (qlkqMo9AiCM) | 106 | 225 | n/a | 6 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @dontletitsee (ukrud0UGmYY) | 82 | 218 | n/a | 5 | 1 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @dontletitsee (nZ98OLaMWPw) | 58 | 340 | n/a | 5 | 5 | n/a | n/a | n/a |
+| block-c-p6 | YouTube @dontletitsee (q3U-mDEVkEU) | 34 | **314** | n/a | 5 | 3 (one more "A") | n/a | n/a | n/a |
+| block-c-p7 | YouTube @dontletitsee (OWkQH00IxPY) | 10 | **145** | n/a | 4 | 0 | n/a | n/a | n/a |
+| floor0-p1 | YouTube @lexter2025 (fYJ1fkaSb9I) | 226 | 16 | n/a | 2 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @lexter2025 (p_vUipPE5Do) | 202 | 15 | n/a | 1 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @lexter2025 (JCo1PoJNhIM) | 178 | 150 | n/a | 2 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @lexter2025 (OkUHaOECktc) | 154 | 6 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @lexter2025 (9VpoKsAuj_Y) | 130 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @lexter2025 (EXSttZutpns) | 106 | 2 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @lexter2025 (7k7CA5H1L6I) | 82 | 1 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @lexter2025 (YQQRKnVqCzU) | 58 | 2 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p6 | YouTube @lexter2025 (aNEiQD4olF0) | 34 | 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+| block-c-p7 | YouTube @lexter2025 (PaO36I-cqHI) | 10 | 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- Bright frame 1 holds across 4 posts: P7 (lit corridor + crowd from behind) IG skip rate 44.6% and avg watch 21.2 s (ties the
+  best, P2 21.4), P5 44.7%; the bright openers are now 44.6-53%, the dark ones 62.8-71.9%. P7 also had the best 10-h IG reach of
+  BLOCK C (132; P6 had 36 at 10 h). Standard confirmed, nothing to change.
+- IG P6's 10-h collapse (reach 36) was a late push, not a throttle: 86 reach by 34 h. No content lever there.
+- Test #5 (no "Part n" in the YT title) CONFIRMED: P6 314 views at 34 h vs P5 246 / P4 185 at 34 h; P7 145 at 10 h vs P6 99,
+  P5 61, P4 47. Hook-sentence title without a part number is now the standard.
+- Votes stay near zero (P7: 0 on IG, 0 on both YT channels; across 7 cards the votes came from 2 viewers). The A/B card does not
+  drive comments at this audience size; RESEARCH.md's standalone format (shown entity, twist inside the video) is the next lever.
+- @lexter2025: 0-2 views on every BLOCK C upload (nothing the creator can change).
+
 ## 2026-11-18 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
