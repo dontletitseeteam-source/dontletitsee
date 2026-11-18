@@ -1,0 +1,1481 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 76.088,
+ "lines": [
+  {
+   "id": 1,
+   "text": "The hostel register says you left Block C six years ago.",
+   "src_start": 0.086,
+   "src_end": 3.68,
+   "start": 0.15,
+   "end": 3.744,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.2,
+     "end": 0.215
+    },
+    {
+     "text": "hostel",
+     "start": 0.291,
+     "end": 0.668
+    },
+    {
+     "text": "register",
+     "start": 0.743,
+     "end": 1.196
+    },
+    {
+     "text": "says",
+     "start": 1.272,
+     "end": 1.498
+    },
+    {
+     "text": "you",
+     "start": 1.574,
+     "end": 1.649
+    },
+    {
+     "text": "left",
+     "start": 1.762,
+     "end": 1.875
+    },
+    {
+     "text": "Block",
+     "start": 1.951,
+     "end": 2.177
+    },
+    {
+     "text": "C",
+     "start": 2.253,
+     "end": 2.479
+    },
+    {
+     "text": "six",
+     "start": 2.63,
+     "end": 2.857
+    },
+    {
+     "text": "years",
+     "start": 2.932,
+     "end": 3.158
+    },
+    {
+     "text": "ago.",
+     "start": 3.347,
+     "end": 3.574
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE HOSTEL REGISTER",
+     "start": 0.2,
+     "word_idx": 0,
+     "end": 1.272
+    },
+    {
+     "text": "SAYS YOU {LEFT}",
+     "start": 1.272,
+     "word_idx": 3,
+     "end": 1.951
+    },
+    {
+     "text": "BLOCK C",
+     "start": 1.951,
+     "word_idx": 6,
+     "end": 2.63
+    },
+    {
+     "text": "{SIX YEARS AGO.}",
+     "start": 2.63,
+     "word_idx": 8,
+     "end": 3.864
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "It's three oh four. Footsteps on the stairs.",
+   "src_start": 4.176,
+   "src_end": 7.09,
+   "start": 4.194,
+   "end": 7.108,
+   "words": [
+    {
+     "text": "It's",
+     "start": 4.244,
+     "end": 4.395
+    },
+    {
+     "text": "three",
+     "start": 4.471,
+     "end": 4.546
+    },
+    {
+     "text": "oh",
+     "start": 4.622,
+     "end": 4.772
+    },
+    {
+     "text": "four.",
+     "start": 4.848,
+     "end": 5.376
+    },
+    {
+     "text": "Footsteps",
+     "start": 5.678,
+     "end": 6.206
+    },
+    {
+     "text": "on",
+     "start": 6.244,
+     "end": 6.282
+    },
+    {
+     "text": "the",
+     "start": 6.357,
+     "end": 6.395
+    },
+    {
+     "text": "stairs.",
+     "start": 6.433,
+     "end": 7.024
+    }
+   ],
+   "captions": [
+    {
+     "text": "IT'S [3:04.]",
+     "start": 4.244,
+     "word_idx": 0,
+     "end": 5.678
+    },
+    {
+     "text": "{FOOTSTEPS}",
+     "start": 5.678,
+     "word_idx": 4,
+     "end": 6.357
+    },
+    {
+     "text": "ON THE STAIRS.",
+     "start": 6.357,
+     "word_idx": 6,
+     "end": 7.228
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "You don't run. You look for whoever wrote the list.",
+   "src_start": 7.459,
+   "src_end": 10.38,
+   "start": 7.558,
+   "end": 10.478,
+   "words": [
+    {
+     "text": "You",
+     "start": 7.608,
+     "end": 7.645
+    },
+    {
+     "text": "don't",
+     "start": 7.683,
+     "end": 7.872
+    },
+    {
+     "text": "run.",
+     "start": 7.947,
+     "end": 8.702
+    },
+    {
+     "text": "You",
+     "start": 8.778,
+     "end": 8.853
+    },
+    {
+     "text": "look",
+     "start": 8.928,
+     "end": 9.079
+    },
+    {
+     "text": "for",
+     "start": 9.155,
+     "end": 9.23
+    },
+    {
+     "text": "whoever",
+     "start": 9.306,
+     "end": 9.608
+    },
+    {
+     "text": "wrote",
+     "start": 9.645,
+     "end": 9.834
+    },
+    {
+     "text": "the",
+     "start": 9.872,
+     "end": 9.91
+    },
+    {
+     "text": "list.",
+     "start": 9.985,
+     "end": 10.381
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU DON'T RUN.",
+     "start": 7.608,
+     "word_idx": 0,
+     "end": 8.778
+    },
+    {
+     "text": "YOU LOOK FOR WHOEVER",
+     "start": 8.778,
+     "word_idx": 3,
+     "end": 9.645
+    },
+    {
+     "text": "WROTE [THE LIST.]",
+     "start": 9.645,
+     "word_idx": 7,
+     "end": 10.598
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "I never left. Find me.",
+   "src_start": 10.818,
+   "src_end": 12.86,
+   "start": 10.928,
+   "end": 12.97,
+   "words": [
+    {
+     "text": "I",
+     "start": 10.978,
+     "end": 11.054
+    },
+    {
+     "text": "never",
+     "start": 11.129,
+     "end": 11.356
+    },
+    {
+     "text": "left.",
+     "start": 11.431,
+     "end": 12.073
+    },
+    {
+     "text": "Find",
+     "start": 12.337,
+     "end": 12.563
+    },
+    {
+     "text": "me.",
+     "start": 12.639,
+     "end": 12.884
+    }
+   ],
+   "captions": [
+    {
+     "text": "[I NEVER LEFT.]",
+     "start": 10.978,
+     "word_idx": 0,
+     "end": 12.337
+    },
+    {
+     "text": "{FIND ME.}",
+     "start": 12.337,
+     "word_idx": 3,
+     "end": 13.09
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "Behind the wardrobe, scratched into the wall, hundreds of tally marks.",
+   "src_start": 13.233,
+   "src_end": 17.29,
+   "start": 13.47,
+   "end": 17.527,
+   "words": [
+    {
+     "text": "Behind",
+     "start": 13.52,
+     "end": 13.822
+    },
+    {
+     "text": "the",
+     "start": 13.86,
+     "end": 13.898
+    },
+    {
+     "text": "wardrobe,",
+     "start": 13.973,
+     "end": 14.728
+    },
+    {
+     "text": "scratched",
+     "start": 14.803,
+     "end": 15.181
+    },
+    {
+     "text": "into",
+     "start": 15.294,
+     "end": 15.407
+    },
+    {
+     "text": "the",
+     "start": 15.445,
+     "end": 15.483
+    },
+    {
+     "text": "wall,",
+     "start": 15.558,
+     "end": 16.086
+    },
+    {
+     "text": "hundreds",
+     "start": 16.162,
+     "end": 16.539
+    },
+    {
+     "text": "of",
+     "start": 16.615,
+     "end": 16.69
+    },
+    {
+     "text": "tally",
+     "start": 16.728,
+     "end": 16.992
+    },
+    {
+     "text": "marks.",
+     "start": 17.218,
+     "end": 17.502
+    }
+   ],
+   "captions": [
+    {
+     "text": "BEHIND THE WARDROBE,",
+     "start": 13.52,
+     "word_idx": 0,
+     "end": 14.803
+    },
+    {
+     "text": "SCRATCHED INTO THE WALL,",
+     "start": 14.803,
+     "word_idx": 3,
+     "end": 16.162
+    },
+    {
+     "text": "{HUNDREDS} OF TALLY MARKS.",
+     "start": 16.162,
+     "word_idx": 7,
+     "end": 17.647
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "And under them, a name.",
+   "src_start": 17.711,
+   "src_end": 19.36,
+   "start": 17.977,
+   "end": 19.626,
+   "words": [
+    {
+     "text": "And",
+     "start": 18.027,
+     "end": 18.077
+    },
+    {
+     "text": "under",
+     "start": 18.153,
+     "end": 18.379
+    },
+    {
+     "text": "them,",
+     "start": 18.492,
+     "end": 18.908
+    },
+    {
+     "text": "a",
+     "start": 18.983,
+     "end": 19.058
+    },
+    {
+     "text": "name.",
+     "start": 19.134,
+     "end": 19.549
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND UNDER THEM,",
+     "start": 18.027,
+     "word_idx": 0,
+     "end": 18.983
+    },
+    {
+     "text": "A [NAME.]",
+     "start": 18.983,
+     "word_idx": 3,
+     "end": 19.746
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Your name.",
+   "src_start": 19.799,
+   "src_end": 20.64,
+   "start": 20.176,
+   "end": 21.017,
+   "words": [
+    {
+     "text": "Your",
+     "start": 20.226,
+     "end": 20.452
+    },
+    {
+     "text": "name.",
+     "start": 20.528,
+     "end": 20.924
+    }
+   ],
+   "captions": [
+    {
+     "text": "{YOUR NAME.}",
+     "start": 20.226,
+     "word_idx": 0,
+     "end": 21.137
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "In your handwriting.",
+   "src_start": 21.007,
+   "src_end": 22.23,
+   "start": 21.467,
+   "end": 22.69,
+   "words": [
+    {
+     "text": "In",
+     "start": 21.517,
+     "end": 21.592
+    },
+    {
+     "text": "your",
+     "start": 21.668,
+     "end": 21.894
+    },
+    {
+     "text": "handwriting.",
+     "start": 21.97,
+     "end": 22.649
+    }
+   ],
+   "captions": [
+    {
+     "text": "IN {YOUR HANDWRITING.}",
+     "start": 21.517,
+     "word_idx": 0,
+     "end": 22.81
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Same slant as the list. Same sevens.",
+   "src_start": 22.871,
+   "src_end": 25.36,
+   "start": 23.14,
+   "end": 25.63,
+   "words": [
+    {
+     "text": "Same",
+     "start": 23.19,
+     "end": 23.213
+    },
+    {
+     "text": "slant",
+     "start": 23.288,
+     "end": 23.59
+    },
+    {
+     "text": "as",
+     "start": 23.666,
+     "end": 23.741
+    },
+    {
+     "text": "the",
+     "start": 23.779,
+     "end": 23.817
+    },
+    {
+     "text": "list.",
+     "start": 23.892,
+     "end": 24.458
+    },
+    {
+     "text": "Same",
+     "start": 24.647,
+     "end": 24.873
+    },
+    {
+     "text": "sevens.",
+     "start": 25.024,
+     "end": 25.565
+    }
+   ],
+   "captions": [
+    {
+     "text": "SAME SLANT AS THE LIST.",
+     "start": 23.19,
+     "word_idx": 0,
+     "end": 24.647
+    },
+    {
+     "text": "SAME [SEVENS.]",
+     "start": 24.647,
+     "word_idx": 5,
+     "end": 25.75
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "You wrote the rules.",
+   "src_start": 25.837,
+   "src_end": 27.2,
+   "start": 26.18,
+   "end": 27.543,
+   "words": [
+    {
+     "text": "You",
+     "start": 26.23,
+     "end": 26.456
+    },
+    {
+     "text": "wrote",
+     "start": 26.532,
+     "end": 26.758
+    },
+    {
+     "text": "the",
+     "start": 26.833,
+     "end": 26.871
+    },
+    {
+     "text": "rules.",
+     "start": 26.909,
+     "end": 27.456
+    }
+   ],
+   "captions": [
+    {
+     "text": "{YOU WROTE THE RULES.}",
+     "start": 26.23,
+     "word_idx": 0,
+     "end": 27.663
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "The footsteps stop outside room thirteen.",
+   "src_start": 27.64,
+   "src_end": 30.0,
+   "start": 28.243,
+   "end": 30.603,
+   "words": [
+    {
+     "text": "The",
+     "start": 28.293,
+     "end": 28.301
+    },
+    {
+     "text": "footsteps",
+     "start": 28.377,
+     "end": 28.83
+    },
+    {
+     "text": "stop",
+     "start": 28.981,
+     "end": 29.132
+    },
+    {
+     "text": "outside",
+     "start": 29.207,
+     "end": 29.584
+    },
+    {
+     "text": "room",
+     "start": 29.698,
+     "end": 29.811
+    },
+    {
+     "text": "thirteen.",
+     "start": 29.886,
+     "end": 30.478
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE FOOTSTEPS {STOP}",
+     "start": 28.293,
+     "word_idx": 0,
+     "end": 29.207
+    },
+    {
+     "text": "OUTSIDE [ROOM 13.]",
+     "start": 29.207,
+     "word_idx": 3,
+     "end": 30.723
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "The door opens on its own.",
+   "src_start": 30.327,
+   "src_end": 31.84,
+   "start": 31.053,
+   "end": 32.566,
+   "words": [
+    {
+     "text": "The",
+     "start": 31.103,
+     "end": 31.141
+    },
+    {
+     "text": "door",
+     "start": 31.216,
+     "end": 31.443
+    },
+    {
+     "text": "opens",
+     "start": 31.594,
+     "end": 31.82
+    },
+    {
+     "text": "on",
+     "start": 31.896,
+     "end": 31.933
+    },
+    {
+     "text": "its",
+     "start": 31.971,
+     "end": 32.122
+    },
+    {
+     "text": "own.",
+     "start": 32.198,
+     "end": 32.499
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE DOOR OPENS",
+     "start": 31.103,
+     "word_idx": 0,
+     "end": 31.896
+    },
+    {
+     "text": "{ON ITS OWN.}",
+     "start": 31.896,
+     "word_idx": 3,
+     "end": 32.686
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "The warden holds out the register. And a pen.",
+   "src_start": 32.23,
+   "src_end": 34.8,
+   "start": 33.066,
+   "end": 35.636,
+   "words": [
+    {
+     "text": "The",
+     "start": 33.116,
+     "end": 33.138
+    },
+    {
+     "text": "warden",
+     "start": 33.251,
+     "end": 33.515
+    },
+    {
+     "text": "holds",
+     "start": 33.628,
+     "end": 33.741
+    },
+    {
+     "text": "out",
+     "start": 33.817,
+     "end": 33.892
+    },
+    {
+     "text": "the",
+     "start": 33.93,
+     "end": 33.968
+    },
+    {
+     "text": "register.",
+     "start": 34.043,
+     "end": 34.76
+    },
+    {
+     "text": "And",
+     "start": 34.949,
+     "end": 35.024
+    },
+    {
+     "text": "a",
+     "start": 35.1,
+     "end": 35.138
+    },
+    {
+     "text": "pen.",
+     "start": 35.175,
+     "end": 35.616
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE WARDEN HOLDS",
+     "start": 33.116,
+     "word_idx": 0,
+     "end": 33.817
+    },
+    {
+     "text": "OUT THE [REGISTER.]",
+     "start": 33.817,
+     "word_idx": 3,
+     "end": 34.949
+    },
+    {
+     "text": "AND A {PEN.}",
+     "start": 34.949,
+     "word_idx": 6,
+     "end": 35.756
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "Its sleeve slides back. On its wrist, a hostel tag. Room thirteen.",
+   "src_start": 35.271,
+   "src_end": 40.26,
+   "start": 36.136,
+   "end": 41.125,
+   "words": [
+    {
+     "text": "Its",
+     "start": 36.186,
+     "end": 36.261
+    },
+    {
+     "text": "sleeve",
+     "start": 36.337,
+     "end": 36.638
+    },
+    {
+     "text": "slides",
+     "start": 36.714,
+     "end": 37.016
+    },
+    {
+     "text": "back.",
+     "start": 37.091,
+     "end": 37.469
+    },
+    {
+     "text": "On",
+     "start": 37.771,
+     "end": 37.922
+    },
+    {
+     "text": "its",
+     "start": 37.997,
+     "end": 38.072
+    },
+    {
+     "text": "wrist,",
+     "start": 38.148,
+     "end": 38.752
+    },
+    {
+     "text": "a",
+     "start": 38.789,
+     "end": 38.827
+    },
+    {
+     "text": "hostel",
+     "start": 38.903,
+     "end": 39.205
+    },
+    {
+     "text": "tag.",
+     "start": 39.28,
+     "end": 39.657
+    },
+    {
+     "text": "Room",
+     "start": 40.11,
+     "end": 40.337
+    },
+    {
+     "text": "thirteen.",
+     "start": 40.488,
+     "end": 41.07
+    }
+   ],
+   "captions": [
+    {
+     "text": "ITS SLEEVE SLIDES BACK.",
+     "start": 36.186,
+     "word_idx": 0,
+     "end": 37.771
+    },
+    {
+     "text": "ON ITS WRIST,",
+     "start": 37.771,
+     "word_idx": 4,
+     "end": 38.789
+    },
+    {
+     "text": "A HOSTEL TAG.",
+     "start": 38.789,
+     "word_idx": 7,
+     "end": 40.11
+    },
+    {
+     "text": "{ROOM 13.}",
+     "start": 40.11,
+     "word_idx": 10,
+     "end": 41.245
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "It was the last student too.",
+   "src_start": 40.694,
+   "src_end": 42.23,
+   "start": 41.675,
+   "end": 43.211,
+   "words": [
+    {
+     "text": "It",
+     "start": 41.725,
+     "end": 41.735
+    },
+    {
+     "text": "was",
+     "start": 41.811,
+     "end": 41.886
+    },
+    {
+     "text": "the",
+     "start": 41.962,
+     "end": 41.999
+    },
+    {
+     "text": "last",
+     "start": 42.037,
+     "end": 42.264
+    },
+    {
+     "text": "student",
+     "start": 42.339,
+     "end": 42.716
+    },
+    {
+     "text": "too.",
+     "start": 42.792,
+     "end": 43.169
+    }
+   ],
+   "captions": [
+    {
+     "text": "IT WAS {THE LAST STUDENT} TOO.",
+     "start": 41.725,
+     "word_idx": 0,
+     "end": 43.331
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "You take the pen.",
+   "src_start": 42.727,
+   "src_end": 43.58,
+   "start": 43.911,
+   "end": 44.763,
+   "words": [
+    {
+     "text": "You",
+     "start": 43.961,
+     "end": 43.976
+    },
+    {
+     "text": "take",
+     "start": 44.051,
+     "end": 44.127
+    },
+    {
+     "text": "the",
+     "start": 44.202,
+     "end": 44.278
+    },
+    {
+     "text": "pen.",
+     "start": 44.466,
+     "end": 44.709
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU TAKE THE {PEN.}",
+     "start": 43.961,
+     "word_idx": 0,
+     "end": 44.883
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "The coat fits.",
+   "src_start": 43.995,
+   "src_end": 45.16,
+   "start": 45.313,
+   "end": 46.478,
+   "words": [
+    {
+     "text": "The",
+     "start": 45.363,
+     "end": 45.393
+    },
+    {
+     "text": "coat",
+     "start": 45.469,
+     "end": 45.771
+    },
+    {
+     "text": "fits.",
+     "start": 45.922,
+     "end": 46.428
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE COAT {FITS.}",
+     "start": 45.363,
+     "word_idx": 0,
+     "end": 46.598
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "Twelve oh seven, the next night. A new student moves into room thirteen.",
+   "src_start": 45.535,
+   "src_end": 49.63,
+   "start": 47.378,
+   "end": 51.473,
+   "words": [
+    {
+     "text": "Twelve",
+     "start": 47.428,
+     "end": 47.579
+    },
+    {
+     "text": "oh",
+     "start": 47.73,
+     "end": 47.881
+    },
+    {
+     "text": "seven,",
+     "start": 48.032,
+     "end": 48.409
+    },
+    {
+     "text": "the",
+     "start": 48.447,
+     "end": 48.485
+    },
+    {
+     "text": "next",
+     "start": 48.56,
+     "end": 48.786
+    },
+    {
+     "text": "night.",
+     "start": 48.937,
+     "end": 49.39
+    },
+    {
+     "text": "A",
+     "start": 49.428,
+     "end": 49.466
+    },
+    {
+     "text": "new",
+     "start": 49.617,
+     "end": 49.692
+    },
+    {
+     "text": "student",
+     "start": 49.768,
+     "end": 50.069
+    },
+    {
+     "text": "moves",
+     "start": 50.145,
+     "end": 50.296
+    },
+    {
+     "text": "into",
+     "start": 50.371,
+     "end": 50.522
+    },
+    {
+     "text": "room",
+     "start": 50.598,
+     "end": 50.749
+    },
+    {
+     "text": "thirteen.",
+     "start": 50.824,
+     "end": 51.416
+    }
+   ],
+   "captions": [
+    {
+     "text": "[12:07,]",
+     "start": 47.428,
+     "word_idx": 0,
+     "end": 48.447
+    },
+    {
+     "text": "THE NEXT NIGHT.",
+     "start": 48.447,
+     "word_idx": 3,
+     "end": 49.428
+    },
+    {
+     "text": "A NEW STUDENT",
+     "start": 49.428,
+     "word_idx": 6,
+     "end": 50.145
+    },
+    {
+     "text": "MOVES INTO",
+     "start": 50.145,
+     "word_idx": 9,
+     "end": 50.598
+    },
+    {
+     "text": "[ROOM 13.]",
+     "start": 50.598,
+     "word_idx": 11,
+     "end": 51.593
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "The last student in room thirteen left him a list.",
+   "src_start": 50.025,
+   "src_end": 52.42,
+   "start": 51.923,
+   "end": 54.318,
+   "words": [
+    {
+     "text": "The",
+     "start": 51.973,
+     "end": 52.011
+    },
+    {
+     "text": "last",
+     "start": 52.086,
+     "end": 52.237
+    },
+    {
+     "text": "student",
+     "start": 52.313,
+     "end": 52.615
+    },
+    {
+     "text": "in",
+     "start": 52.652,
+     "end": 52.69
+    },
+    {
+     "text": "room",
+     "start": 52.765,
+     "end": 52.916
+    },
+    {
+     "text": "thirteen",
+     "start": 52.992,
+     "end": 53.369
+    },
+    {
+     "text": "left",
+     "start": 53.445,
+     "end": 53.596
+    },
+    {
+     "text": "him",
+     "start": 53.633,
+     "end": 53.671
+    },
+    {
+     "text": "a",
+     "start": 53.747,
+     "end": 53.822
+    },
+    {
+     "text": "list.",
+     "start": 54.011,
+     "end": 54.318
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE LAST STUDENT",
+     "start": 51.973,
+     "word_idx": 0,
+     "end": 52.652
+    },
+    {
+     "text": "IN ROOM [13]",
+     "start": 52.652,
+     "word_idx": 3,
+     "end": 53.445
+    },
+    {
+     "text": "LEFT HIM A [LIST.]",
+     "start": 53.445,
+     "word_idx": 6,
+     "end": 54.438
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "And scratched out rule six. So hard the paper tore.",
+   "src_start": 52.761,
+   "src_end": 56.02,
+   "start": 54.718,
+   "end": 57.976,
+   "words": [
+    {
+     "text": "And",
+     "start": 54.768,
+     "end": 54.786
+    },
+    {
+     "text": "scratched",
+     "start": 54.862,
+     "end": 55.239
+    },
+    {
+     "text": "out",
+     "start": 55.315,
+     "end": 55.39
+    },
+    {
+     "text": "rule",
+     "start": 55.466,
+     "end": 55.617
+    },
+    {
+     "text": "six.",
+     "start": 55.768,
+     "end": 56.447
+    },
+    {
+     "text": "So",
+     "start": 56.522,
+     "end": 56.673
+    },
+    {
+     "text": "hard",
+     "start": 56.824,
+     "end": 57.051
+    },
+    {
+     "text": "the",
+     "start": 57.126,
+     "end": 57.202
+    },
+    {
+     "text": "paper",
+     "start": 57.352,
+     "end": 57.503
+    },
+    {
+     "text": "tore.",
+     "start": 57.541,
+     "end": 57.976
+    }
+   ],
+   "captions": [
+    {
+     "text": "AND SCRATCHED OUT",
+     "start": 54.768,
+     "word_idx": 0,
+     "end": 55.466
+    },
+    {
+     "text": "RULE [SIX.]",
+     "start": 55.466,
+     "word_idx": 3,
+     "end": 56.522
+    },
+    {
+     "text": "SO HARD THE",
+     "start": 56.522,
+     "word_idx": 5,
+     "end": 57.352
+    },
+    {
+     "text": "PAPER {TORE.}",
+     "start": 57.352,
+     "word_idx": 8,
+     "end": 58.096
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "Rule six. Never answer twice.",
+   "src_start": 56.516,
+   "src_end": 58.74,
+   "start": 58.576,
+   "end": 60.8,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 58.626,
+     "end": 58.664
+    },
+    {
+     "text": "six.",
+     "start": 58.739,
+     "end": 59.494
+    },
+    {
+     "text": "Never",
+     "start": 59.645,
+     "end": 59.796
+    },
+    {
+     "text": "answer",
+     "start": 59.872,
+     "end": 60.173
+    },
+    {
+     "text": "twice.",
+     "start": 60.249,
+     "end": 60.717
+    }
+   ],
+   "captions": [
+    {
+     "text": "RULE [SIX.]",
+     "start": 58.626,
+     "word_idx": 0,
+     "end": 59.645
+    },
+    {
+     "text": "{NEVER ANSWER TWICE.}",
+     "start": 59.645,
+     "word_idx": 2,
+     "end": 60.92
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "Then you walk the corridor, and call his name.",
+   "src_start": 59.12,
+   "src_end": 61.66,
+   "start": 61.4,
+   "end": 63.94,
+   "words": [
+    {
+     "text": "Then",
+     "start": 61.45,
+     "end": 61.601
+    },
+    {
+     "text": "you",
+     "start": 61.677,
+     "end": 61.752
+    },
+    {
+     "text": "walk",
+     "start": 61.865,
+     "end": 61.978
+    },
+    {
+     "text": "the",
+     "start": 62.016,
+     "end": 62.054
+    },
+    {
+     "text": "corridor,",
+     "start": 62.129,
+     "end": 62.884
+    },
+    {
+     "text": "and",
+     "start": 62.96,
+     "end": 63.035
+    },
+    {
+     "text": "call",
+     "start": 63.111,
+     "end": 63.262
+    },
+    {
+     "text": "his",
+     "start": 63.375,
+     "end": 63.488
+    },
+    {
+     "text": "name.",
+     "start": 63.639,
+     "end": 63.94
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN YOU WALK THE CORRIDOR,",
+     "start": 61.45,
+     "word_idx": 0,
+     "end": 62.96
+    },
+    {
+     "text": "AND {CALL HIS NAME.}",
+     "start": 62.96,
+     "word_idx": 5,
+     "end": 64.06
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "text": "Would you answer? A, yes. B, never.",
+   "src_start": 61.988,
+   "src_end": 65.71,
+   "start": 64.84,
+   "end": 68.563,
+   "words": [
+    {
+     "text": "Would",
+     "start": 64.89,
+     "end": 65.041
+    },
+    {
+     "text": "you",
+     "start": 65.079,
+     "end": 65.117
+    },
+    {
+     "text": "answer?",
+     "start": 65.192,
+     "end": 66.022
+    },
+    {
+     "text": "A,",
+     "start": 66.098,
+     "end": 66.626
+    },
+    {
+     "text": "yes.",
+     "start": 66.702,
+     "end": 67.456
+    },
+    {
+     "text": "B,",
+     "start": 67.57,
+     "end": 68.06
+    },
+    {
+     "text": "never.",
+     "start": 68.136,
+     "end": 68.563
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 24,
+   "text": "Comment A or B. A new story starts tomorrow.",
+   "src_start": 65.912,
+   "src_end": 69.488,
+   "start": 68.913,
+   "end": 72.488,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 68.963,
+     "end": 69.34
+    },
+    {
+     "text": "A",
+     "start": 69.491,
+     "end": 69.642
+    },
+    {
+     "text": "or",
+     "start": 69.717,
+     "end": 69.793
+    },
+    {
+     "text": "B.",
+     "start": 69.868,
+     "end": 70.472
+    },
+    {
+     "text": "A",
+     "start": 70.51,
+     "end": 70.548
+    },
+    {
+     "text": "new",
+     "start": 70.623,
+     "end": 70.774
+    },
+    {
+     "text": "story",
+     "start": 70.849,
+     "end": 71.151
+    },
+    {
+     "text": "starts",
+     "start": 71.227,
+     "end": 71.529
+    },
+    {
+     "text": "tomorrow.",
+     "start": 71.604,
+     "end": 72.208
+    }
+   ],
+   "captions": []
+  }
+ ]
+}

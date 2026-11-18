@@ -313,15 +313,19 @@ function drawList(ctx, t, st = {}) {
   });
   // rule 6: scratched out so hard the paper tore
   const r6 = R[5];
+  const scr = st.scratch ?? 1;
+  if (scr < 1) { ctx.save(); ctx.font = '46px Inter600'; ctx.fillStyle = ink; ['If the warden calls a name', 'twice, that student', 'leaves Block C.'].forEach((ln, k) => ctx.fillText(ln, P.x0 + 150, r6.y - 12 + k * 66)); ctx.restore(); }
   ctx.save(); ctx.strokeStyle = '#0a0d1e'; ctx.lineWidth = 9; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
   ctx.beginPath(); let x = P.x0 + 150, y = r6.y - 30; ctx.moveTo(x, y);
-  for (let i = 0; i < 46; i++) { x = P.x0 + 150 + hash(i * 3.3) * 600; y = r6.y - 50 + (i % 2) * 70 + hash(i * 1.7) * 30 + Math.floor(i / 16) * 40; ctx.lineTo(x, y); }
+  for (let i = 0; i < Math.floor(46 * scr); i++) { x = P.x0 + 150 + hash(i * 3.3) * 600; y = r6.y - 50 + (i % 2) * 70 + hash(i * 1.7) * 30 + Math.floor(i / 16) * 40; ctx.lineTo(x, y); }
   ctx.stroke(); ctx.restore();
   // the tear
-  ctx.save(); ctx.beginPath();
   const cx = 520, cy = r6.y + 30;
+  if (scr >= 0.97) {
+  ctx.save(); ctx.beginPath();
   for (let i = 0; i <= 22; i++) { const a = (i / 22) * Math.PI * 2; const rr = (i % 2 ? 46 : 70) + hash(i * 5.1) * 30; const px = cx + Math.cos(a) * rr * 2.2, py = cy + Math.sin(a) * rr * 0.75; i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
   ctx.closePath(); ctx.fillStyle = '#18242c'; ctx.fill(); ctx.strokeStyle = '#e8e6de'; ctx.lineWidth = 3; ctx.stroke(); ctx.restore();
+  }
   ctx.fillStyle = ink; ctx.font = '70px Osw700'; ctx.fillText('6.', P.x0 + 40, r6.y + 4);
   // PART 7: a light held behind the paper -> the pressed-in words of rule 6 show through, plus a note
   const bk = clamp(st.back || 0);
@@ -673,7 +677,7 @@ function drawRegister(ctx, t, st = {}) {
   const ink = '#1a2140';
   ctx.fillStyle = ink; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
   ctx.font = '40px Mono700'; spaced(ctx, 'BLOCK C · NIGHT ROLL CALL', 140, 350, 3);
-  ctx.font = '34px Mono500'; ctx.fillStyle = 'rgba(26,33,64,0.8)'; ctx.fillText('12:07 AM', 140, 410); ctx.textAlign = 'right'; ctx.fillText(st.date || '12 / 11', x1 - 50, 410); ctx.textAlign = 'left';
+  ctx.font = '34px Mono500'; ctx.fillStyle = 'rgba(26,33,64,0.8)'; ctx.fillText(st.time || '12:07 AM', 140, 410); ctx.textAlign = 'right'; ctx.fillText(st.date || '12 / 11', x1 - 50, 410); ctx.textAlign = 'left';
   // columns
   ctx.fillStyle = 'rgba(26,33,64,0.55)'; ctx.fillRect(130, 450, x1 - 180, 4);
   for (const cx of [250, 820]) ctx.fillRect(cx, 450, 3, 1180);
@@ -719,8 +723,9 @@ function drawRegister(ctx, t, st = {}) {
     ctx.save(); ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 7; ctx.beginPath(); ctx.ellipse(905, y - 20, 62, 50, -0.2, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * ca); ctx.stroke(); ctx.restore();
   }
   ctx.restore();
-  glow(ctx, st.lx ?? 540, st.ly ?? 1000, 900, 'rgba(120,140,200,A)', 0.08);
-  const dg = ctx.createRadialGradient(540, 1000, 300, 540, 1000, 1100); dg.addColorStop(0, 'rgba(2,3,8,0)'); dg.addColorStop(1, 'rgba(2,3,8,0.85)');
+  glow(ctx, st.lx ?? 540, st.ly ?? 1000, 900, 'rgba(120,140,200,A)', 0.08 + 0.1 * (st.bright || 0));
+  if (st.bright > 0) { ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = `rgba(150,140,110,${0.28 * st.bright})`; ctx.fillRect(-600, -600, W + 1200, H + 1200); ctx.restore(); }
+  const dg = ctx.createRadialGradient(540, 1000, 300 + 300 * (st.bright || 0), 540, 1000, 1100 + 300 * (st.bright || 0)); dg.addColorStop(0, 'rgba(2,3,8,0)'); dg.addColorStop(1, `rgba(2,3,8,${0.85 - 0.45 * (st.bright || 0)})`);
   ctx.fillStyle = dg; ctx.fillRect(-600, -600, W + 1200, H + 1200);
 }
 
@@ -1095,4 +1100,118 @@ function drawCoveredPlate(ctx, t, st = {}) {
   if (st.dark > 0) { ctx.fillStyle = `rgba(2,3,10,${st.dark})`; ctx.fillRect(-700, -700, W + 1400, 3300); }
 }
 
-module.exports = { drawMemberInfo, drawMess, drawCoveredPlate, drawStudentBack, messSeat, messEmpty, MROWS,  drawDoorway, drawUnderBed, drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };
+// ---------- PART 8: the wall behind the wardrobe (tally marks + a name in your handwriting) ----------
+// st: {tally 0..1 (how many groups visible), name 0..1 (red scribble writes on), ring 0..1, tx, ty, tr, dark, edge 0..1 (wardrobe edge slid away)}
+function scribble(ctx, x, y, w, k, col = '#c4102a', lw = 7) {
+  ctx.save(); ctx.beginPath(); ctx.rect(x - 20, y - 90, (w + 40) * clamp(k), 140); ctx.clip();
+  ctx.strokeStyle = col; ctx.lineWidth = lw; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  ctx.beginPath(); ctx.moveTo(x, y - 10);
+  const n = Math.round(w / 8.5);
+  for (let i = 0; i < n; i++) { const xx = x + i * 8.5, yy = y - 14 + Math.sin(i * 1.9) * 26 * (0.5 + hash(i) * 0.6) - (i % 7 === 0 ? 24 : 0); ctx.lineTo(xx, yy); }
+  ctx.stroke(); ctx.restore();
+}
+function drawTallyWall(ctx, t, st = {}) {
+  ctx.fillStyle = '#0a0e1c'; ctx.fillRect(-600, -600, W + 1200, H + 1200);
+  const wg = ctx.createLinearGradient(0, -200, 0, 2200); wg.addColorStop(0, '#5d6680'); wg.addColorStop(1, '#4a5269');
+  ctx.fillStyle = wg; ctx.fillRect(-600, -400, W + 1200, 2600);
+  // damp patches + cracks
+  for (let i = 0; i < 14; i++) { ctx.fillStyle = `rgba(20,24,40,${0.05 + hash(i * 7.7) * 0.08})`; ctx.beginPath(); ctx.ellipse(hash(i) * 1300 - 100, hash(i * 3.1) * 2000, 80 + hash(i * 2) * 160, 50 + hash(i * 5) * 90, 0, 0, 7); ctx.fill(); }
+  // tally groups: rows of 4 strokes + a slash, scratched (pale grooves with a dark edge)
+  const tal = clamp(st.tally ?? 1);
+  const groups = []; for (let r = 0; r < 13; r++) for (let c = 0; c < 9; c++) groups.push([90 + c * 104 + (r % 2) * 18 + (hash(r * 9 + c) - 0.5) * 14, 220 + r * 92 + (hash(c * 3 + r) - 0.5) * 12, r * 9 + c]);
+  const nShow = Math.floor(groups.length * tal);
+  ctx.lineCap = 'round';
+  for (let gi = 0; gi < nShow; gi++) {
+    const [gx, gy, id] = groups[gi];
+    const fresh = gi > nShow - 6 ? 1 : 0;
+    for (let s = 0; s < 5; s++) {
+      const x0 = s < 4 ? gx + s * 16 : gx - 8, y0 = s < 4 ? gy : gy + 50, x1 = s < 4 ? gx + s * 16 + (hash(id + s) - 0.5) * 8 : gx + 66, y1 = s < 4 ? gy + 64 : gy + 12;
+      ctx.strokeStyle = 'rgba(15,18,32,0.8)'; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(x0 + 2, y0 + 2); ctx.lineTo(x1 + 2, y1 + 2); ctx.stroke();
+      ctx.strokeStyle = fresh ? 'rgba(235,236,240,0.95)' : 'rgba(205,210,222,0.75)'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
+    }
+  }
+  // under them: a name, scratched and traced in red
+  const nm = clamp(st.name || 0);
+  if (nm > 0) {
+    ctx.save(); ctx.globalAlpha = 0.6; scribble(ctx, 262, 1462, 520, nm, '#20253a', 12); ctx.restore();
+    scribble(ctx, 260, 1460, 520, nm, '#c4102a', 7);
+  }
+  if (st.ring > 0) { ctx.save(); ctx.strokeStyle = C.red; ctx.lineWidth = 7; ctx.beginPath(); ctx.ellipse(520, 1440, 330, 110, -0.04, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * clamp(st.ring)); ctx.stroke(); ctx.restore(); }
+  // the wardrobe's steel edge, slid away to the left
+  const ed = st.edge ?? 1;
+  ctx.fillStyle = '#25343e'; ctx.fillRect(-600, -600, lerp(1100, 600, ed) - 600 + 30 * (1 - ed), 3200);
+  ctx.fillStyle = '#3d505c'; ctx.fillRect(lerp(1100, 600, ed) - 600, -600, 22, 3200);
+  // torch pool
+  const tx = st.tx ?? 540, ty = st.ty ?? 960, tr = st.tr ?? 820;
+  const dg = ctx.createRadialGradient(tx, ty, tr * 0.25, tx, ty, tr);
+  dg.addColorStop(0, 'rgba(2,3,8,0)'); dg.addColorStop(1, `rgba(2,3,8,${st.dark ?? 0.85})`);
+  ctx.fillStyle = dg; ctx.fillRect(-600, -600, W + 1200, H + 1200);
+  glow(ctx, tx, ty, tr * 0.7, 'rgba(210,225,255,A)', 0.1);
+}
+
+// ---------- PART 8: the warden holds out the register and a pen (from the doorway, toward you) ----------
+// st: {sleeve 0..1 (slides back, shows the wrist + hostel tag), take 0..1 (your hand takes the pen), rim}
+function drawOffer(ctx, t, st = {}) {
+  ctx.fillStyle = '#03040a'; ctx.fillRect(-600, -600, W + 1200, H + 1200);
+  // dark doorway, the coat filling it
+  ctx.fillStyle = '#10162e'; ctx.fillRect(-600, -600, W + 1200, H + 1200);
+  const cg = ctx.createLinearGradient(0, -600, 0, 2000); cg.addColorStop(0, '#5a6a8c'); cg.addColorStop(1, '#2c3656');
+  ctx.fillStyle = cg; ctx.fillRect(100, -600, 880, 2600); // the lit corridor behind it
+  ctx.fillStyle = '#2a3253'; ctx.fillRect(60, -600, 40, 2600); ctx.fillRect(980, -600, 40, 2600);
+  const j = (i, a = 3) => (noise1(t * 2.1 + i * 11.3) - 0.5) * a;
+  poly(ctx, [[300 + j(1), -600], [820 + j(2), -600], [900 + j(3), 2000], [220 + j(4), 2000]], '#03040a');
+  ctx.strokeStyle = 'rgba(163,58,74,0.55)'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(300, -600); ctx.lineTo(220, 2000); ctx.moveTo(820, -600); ctx.lineTo(900, 2000); ctx.stroke();
+  // the open register held out (lower middle, perspective)
+  ctx.save(); ctx.translate(560, 1250); ctx.rotate(-0.06);
+  poly(ctx, [[-330, -40], [0, -70], [0, 170], [-360, 200]], '#b3ae9e'); poly(ctx, [[0, -70], [330, -40], [360, 200], [0, 170]], '#c2bdac');
+  ctx.fillStyle = 'rgba(26,33,64,0.55)'; for (let i = 0; i < 7; i++) { ctx.fillRect(-300 + i * 4, -20 + i * 26, 250, 4); ctx.fillRect(30, -40 + i * 26, 270 - i * 6, 4); }
+  ctx.fillStyle = 'rgba(26,33,64,0.8)'; ctx.font = '26px Mono700'; ctx.fillText('19 / 11', 180, -50);
+  // the last row: empty, waiting
+  ctx.strokeStyle = '#c4102a'; ctx.lineWidth = 4; ctx.setLineDash([12, 10]); ctx.beginPath(); ctx.moveTo(40, 150); ctx.lineTo(320, 158); ctx.stroke(); ctx.setLineDash([]);
+  ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(-3, -70, 6, 240);
+  ctx.restore();
+  // long arm from the coat: sleeve + wrist + hand holding the pen out
+  const sl = clamp(st.sleeve || 0);
+  const wx0 = 640, wy0 = 700, hx = 700, hy = 1040;
+  // wrist (pale, thin) visible where the sleeve slid back
+  ctx.save(); ctx.strokeStyle = '#9aa0b4'; ctx.lineCap = 'round'; ctx.lineWidth = 30;
+  ctx.beginPath(); ctx.moveTo(lerp(hx - 10, wx0 + 20, sl), lerp(hy - 80, wy0 + 60, sl)); ctx.lineTo(hx, hy - 30); ctx.stroke();
+  // fingers
+  ctx.lineWidth = 9; for (let i = 0; i < 4; i++) { ctx.beginPath(); ctx.moveTo(hx - 12 + i * 10, hy - 20); ctx.quadraticCurveTo(hx - 30 + i * 16, hy + 50, hx - 40 + i * 20, hy + 96 + (i === 1 || i === 2 ? 14 : 0)); ctx.stroke(); }
+  // the pen between the fingers
+  ctx.save(); ctx.translate(hx - 30, hy + 60); ctx.rotate(-0.9);
+  const tk = clamp(st.take || 0); ctx.translate(-120 * tk, 40 * tk);
+  ctx.fillStyle = '#0a0d1a'; ctx.fillRect(-90, -9, 180, 18); ctx.fillStyle = '#c4102a'; ctx.fillRect(-90, -9, 30, 18); ctx.beginPath(); ctx.moveTo(90, -9); ctx.lineTo(118, 0); ctx.lineTo(90, 9); ctx.fill();
+  ctx.restore();
+  // the hostel tag on the wrist
+  if (sl > 0.25) {
+    const a = clamp((sl - 0.25) / 0.4);
+    const tgx = lerp(hx - 10, wx0 + 20, 0.55), tgy = lerp(hy - 80, wy0 + 60, 0.55) + 30;
+    ctx.save(); ctx.globalAlpha = a; ctx.translate(tgx, tgy); ctx.rotate(-0.25);
+    rrect(ctx, -110, -30, 220, 60, 10); ctx.fillStyle = '#e7e3d6'; ctx.fill(); ctx.strokeStyle = '#8a8574'; ctx.lineWidth = 3; ctx.stroke();
+    ctx.fillStyle = '#14193a'; ctx.font = '30px Osw700'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('BLOCK C · 13', 0, 2);
+    ctx.restore();
+  }
+  // the sleeve (black coat cuff) sliding back up the arm
+  const cx = lerp(hx - 10, wx0, sl), cy = lerp(hy - 90, wy0, sl);
+  ctx.strokeStyle = 'rgba(125,139,192,0.8)'; ctx.lineWidth = 128; ctx.beginPath(); ctx.moveTo(420, 300); ctx.lineTo(cx, cy); ctx.stroke();
+  ctx.strokeStyle = '#151b33'; ctx.lineWidth = 120;
+  ctx.beginPath(); ctx.moveTo(420, 300); ctx.lineTo(cx, cy); ctx.stroke();
+  ctx.fillStyle = '#0a0e1e'; ctx.beginPath(); ctx.ellipse(cx, cy, 62, 40, Math.atan2(cy - 300, cx - 420) + Math.PI / 2, 0, 7); ctx.fill();
+  if (st.rim > 0) { ctx.strokeStyle = `rgba(200,90,110,${0.7 * st.rim})`; ctx.lineWidth = 4; const dx = cx - 420, dy = cy - 300, L = Math.hypot(dx, dy), nx = -dy / L * 60, ny = dx / L * 60; ctx.beginPath(); ctx.moveTo(420 + nx, 300 + ny); ctx.lineTo(cx + nx, cy + ny); ctx.stroke(); }
+  ctx.restore();
+  // your hand reaching in from the bottom
+  const tk2 = clamp(st.take || 0);
+  if (tk2 > 0) {
+    ctx.save(); ctx.strokeStyle = 'rgba(238,241,247,0.95)'; ctx.lineWidth = 9; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    const ex = lerp(380, 560, E.out(tk2)), ey = lerp(2100, 1180, E.out(tk2));
+    ctx.beginPath(); ctx.moveTo(200, 2100); ctx.lineTo(ex - 40, ey + 200); ctx.lineTo(ex, ey); ctx.stroke();
+    ctx.restore();
+  }
+  // cold light from the corridor on everything
+  glow(ctx, 600, 1100, 900, 'rgba(140,160,220,A)', 0.12);
+  const dg = ctx.createRadialGradient(560, 1100, 300, 560, 1100, 1150); dg.addColorStop(0, 'rgba(2,3,8,0)'); dg.addColorStop(1, 'rgba(2,3,8,0.8)');
+  ctx.fillStyle = dg; ctx.fillRect(-600, -600, W + 1200, H + 1200);
+}
+
+module.exports = { drawTallyWall, drawOffer, scribble, drawMemberInfo, drawMess, drawCoveredPlate, drawStudentBack, messSeat, messEmpty, MROWS,  drawDoorway, drawUnderBed, drawWarden, drawRoom, drawList, listLayout, drawGroupChat, drawHostelCorridor, doorDepth, corrP: P, drawDoorGap, drawRegister, drawPlate, RD, FL };
