@@ -52,7 +52,11 @@ of locations to reuse, and a rule list that gives every part a clear "rule of th
    inside the wardrobe and scratch out rule 6. Rule card: "RULE #6: NEVER ANSWER TWICE." Loop to Part 1.
 
 ## After BLOCK C
-Design the next series the same way (8 parts, original premise, fixed sets, rules list, loop ending).
+**Updated 2026-11-18 (owner):** do NOT design the next series the same way. First write the BLOCK C post-mortem
+(PLAYBOOK section 7), then follow `series/RESEARCH.md`: standalone 55–70 s episodes in a repeatable format (one
+place/job, its rules, one poster-image entity, a twist per episode), about 1,300 credits each so the run lasts to
+2026-12-08. Keep the house look, fixed sets per episode where possible, and the spoken A/B question.
+Older note: 8 parts, original premise, fixed sets, rules list, loop ending.
 Candidate premises (pick one, all original): a 24-hour pharmacy night shift that gets prescriptions for
 people who died that day; a sleeper train coach where the ticket checker counts one extra passenger every
 station; a food-delivery rider's last order to an address that only exists after midnight; a smart speaker

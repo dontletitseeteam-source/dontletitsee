@@ -16,11 +16,18 @@ poster. They communicate only through `queue.json` in this repo. **Always `git p
   change as the story moves). The HUD must carry story information.
 - Word-synced bold captions (Montserrat Black, uppercase, 1–4 words per chunk). Script markup:
   `[word]` = lime key word, `{word}` = red threat word.
-- Each part **80–100 s**, 25–32 VO lines, 190–230 spoken words (see the credit pace in section 5). Hook in the first 2 s. Something changes
-  every 1–3 s (caption, cut, camera move, sound hit).
-- Every part except a finale ends on a **choice card** ("WHAT DO YOU DO?" A/B, "COMMENT A OR B",
-  "PART N+1 TOMORROW"). Parts 2+ open with a 3–5 s "previously" recap that states the winning choice
-  ("MOST OF YOU SAID B."). Finales end on a rule card + a twist that loops back to Part 1.
+- **Owner directive 2026-11-18: from the series after BLOCK C on, read `series/RESEARCH.md` first. It overrides
+  the older lines of this section where they differ.** In short: every post is a **standalone episode** a
+  stranger understands with zero context (complete story, a scare you can SEE, twist inside the video); a series
+  is a repeatable format, not one continuing plot; no "previously" recap; one nameable poster-image entity per
+  episode, shown, on the cover and in the title.
+- Each episode **55–70 s**, 18–24 VO lines, 135–170 spoken words (see the credit pace in section 5). (BLOCK C's
+  finale, Part 8, keeps its format; aim for ≤ 80 s.) Hook in the first second: picture + on-screen text + voice
+  together, on a bright readable frame. Something changes every 1–3 s (caption, cut, camera move, sound hit); never
+  hold one picture longer than 3 s.
+- Every episode ends on a spoken **A/B question** ("COMMENT A OR B") that does not leave the story unfinished:
+  e.g. which rule would you break, or which place/job the next episode visits (the votes pick it). Finales of a
+  continuing series (BLOCK C) end on a rule card + a twist that loops back to Part 1.
 - Original stories only. Do NOT reuse @play.malo premises (flights/Red-Eye/Layover, subway, asylum, theme
   park/Jollyland, 13th floor, parking Level -4, mall, hospital visiting hours, motel/No Vacancy, cabin,
   Camera 6, Dead Air) or any existing film/game.
@@ -68,7 +75,7 @@ scenes*.js). Use `python3` wherever older notes say `python`.
    transcript with `creative_get_flow_run_status` (it returns `words` and `words_download_url`). Download
    the VO with curl from `creative_get_generations` → full_res_url. Save `<slug>/p<n>/audio/vo.mp3` and
    `<slug>/p<n>/audio/words_raw.json` (`{"words": [...]}`).
-4. `cd <slug>/engine && python3 prep_vo.py <n> && python3 build_timeline.py <n>` (target 80–100 s).
+4. `cd <slug>/engine && python3 prep_vo.py <n> && python3 build_timeline.py <n>` (target 55–70 s; BLOCK C Part 8 ≤ 80 s).
 5. Write `part<n>.js` (shots keyed to word onsets `Wd(line, word)`), add `part<n>()` to `mix.py`
    (SFX under speech at least 8 dB below the voice; big hits in the gaps), `node render.js <n> --keys`.
 6. QA: `node render.js <n> --stills t1,…` (15–25 times), tile them with ffmpeg
@@ -109,11 +116,12 @@ scenes*.js). Use `python3` wherever older notes say `python`.
   days (around 2026-12-02 … 12-04), but use them well and make them last as long as is sensible.** Ledger:
   `series/ELEVENLABS.md` (balance + every spend). Text-to-speech costs **1 credit per character sent, tags
   included** (BLOCK C Part 1: 1,644 characters = 1,643 credits).
-  - **Pace: about 1,800 credits per part on average** (voice + transcript), so the balance lasts to ~Dec 3.
-    Before writing the voice text, read the ledger and compute `remaining ÷ parts you still want to make`;
-    if that is above 1,800 you may spend more (richer delivery, a key SFX), if below, tighten.
+  - **Pace (updated 2026-11-18): about 1,300 credits per episode** (voice + transcript). With 55–70 s episodes
+    the balance (29,538 after BLOCK C Part 7) now lasts the whole run, to 2026-12-08: one post every day.
+    Before writing the voice text, read the ledger and compute `remaining ÷ episodes still to make up to
+    2026-12-08`; if that is above 1,300 you may spend more (richer delivery, a key SFX), if below, tighten.
   - Spend where it shows: expressive delivery tags (`[whispering]`, `[low, tense]`, `[slow]`, `[short pause]`
-    at real beats), a full 190–230-word script. Do not waste: no throwaway takes; regenerate only when a take
+    at real beats), a full 135–170-word script. Do not waste: no throwaway takes; regenerate only when a take
     is broken (wrong words, cut off, garbled, flat at the key line). A new SFX or sting only when it clearly
     lifts a key moment and `floor-0/audio/` has nothing close (log its cost).
   - Count characters (`python3 -c "print(len(open('vo_prompt.txt').read()))"`) BEFORE
@@ -150,8 +158,37 @@ already has a section for today), do a short review (about 10 tool calls, keep i
 4. **Apply** the lessons in the next parts you build. Levers you may change: the first 2 seconds (hook line and
    first image), caption and YouTube title wording, cover image, pacing, where the choice card lands, how
    strongly the comment call to action is phrased, rules/rule-card moments, ending cliffhangers. Keep fixed:
-   the house style (section 1), exactly the three hashtags `#horror #scarystories #horrorstory`, 80–100 s
-   length, the 3 PM IST posting time, and the series/story outline unless the votes change the branch.
+   the house style (section 1), exactly the three hashtags `#horror #scarystories #horrorstory`, the 55–70 s
+   length, the 3 PM IST posting time, the owner directives in `series/RESEARCH.md`, and the series outline
+   unless the votes change it.
 5. Put a "Next improvements" list (max 3 items) at the top of `series/ANALYTICS.md` and read it before writing
    every script. Never take actions that publish or message on the owner's behalf (no replying to comments,
    no following/DMs): analysis only.
+
+## 7. Research and post-mortem loop (owner directive 2026-11-18)
+The owner wants every part made after studying our own mistakes and the horror channels that are actually
+growing. `series/RESEARCH.md` holds the brief, the post-mortems and the research log; read it before designing a
+series and before writing every script.
+1. **Weekly competitor scan**: in the first creator run on or after each Monday (IST), and whenever you design a
+   new series; skip it if the RESEARCH.md log already has an entry from the last 6 days. About 6 tool calls:
+   - Composio workbench, account `youtube_regin-mont` (never proxy_execute for YouTube): YOUTUBE_SEARCH_YOU_TUBE
+     with type `video`, videoDuration `short`, order `viewCount`, maxResults 25, publishedAfter = 14 days ago, for
+     3–4 queries ("animated horror story #shorts", "scary story animation shorts", "rules horror story #shorts",
+     plus one for the format you are working in). Then YOUTUBE_GET_VIDEO_DETAILS_BATCH (parts snippet,
+     statistics, contentDetails) and YOUTUBE_LIST_CHANNELS (part statistics,snippet; ids comma-separated) for the
+     top channels. In workbench code give each tool result its own variable name (the code checker rejects a
+     result variable that is reused for other data). On a YouTube quota error, skip the scan this run.
+   - If a web search tool is available, 2–3 searches for Shorts/Reels ranking news or breakout horror formats.
+   - Log a dated entry under "Research log" in RESEARCH.md: the 8–12 most useful hits (views, length, channel
+     subscribers and start date, title/format) and 3–5 patterns, compared with our last week. Turn at most ONE
+     finding into the next test in the ANALYTICS "Next improvements" list.
+   - Learn patterns (length, hook, format, kind of image, title shape), never copy a competitor's story,
+     characters, art or exact title wording.
+2. **YouTube retention, weekly with the scan**: YOUTUBE_QUERY_ANALYTICS (account `youtube_regin-mont`, ids
+   `channel==MINE`, startDate `2026-11-09`, endDate today, dimensions `video`, metrics
+   `views,engagedViews,averageViewDuration,averageViewPercentage`). Stay rate = engagedViews ÷ views (YouTube's
+   twin of the Instagram skip rate). The report lags ~2 days. Log it in the same entry.
+3. **Series post-mortem**: when a series' last part is queued, before designing the next one, add
+   "Post-mortem: <series>" to RESEARCH.md: one row per part (IG views, skip rate, avg watch; YouTube views, stay
+   rate; comments), 3 things that worked, 3 mistakes, 3 rules for the next series. Design the next series from it.
+4. Final report of the run: one line on what the research found and what changed because of it.

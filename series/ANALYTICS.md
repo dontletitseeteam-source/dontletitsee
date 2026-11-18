@@ -2,6 +2,11 @@
 
 How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric that is not available.
 
+## Owner directives 2026-11-18 (keep this block; it is not one of the 3 improvements)
+From the series after BLOCK C: standalone episodes in a repeatable format, 55–70 s, one nameable poster-image
+entity per episode (shown, on the cover, in the title), titles that state the scary image not the series name.
+Full brief, post-mortem and competitor scan: `series/RESEARCH.md`; weekly research loop: PLAYBOOK section 7.
+
 ## Next improvements (max 3, read before writing every script)
 1. **Bright, recognizable frame 1 is now the STANDARD** (confirmed: BLOCK C P5 IG skip rate 42.9%, the best of all 8 reels,
    vs P4 69.6% / P3 62.8%; 3 bright openers = 46.8 / 53.1 / 42.9%, 3 dark openers = 71.9 / 62.8 / 69.6%). Every part opens
