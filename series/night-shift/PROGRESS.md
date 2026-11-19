@@ -1,8 +1,29 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-19 ~11:45 IST (creator run):** Episode 1 built and QUEUED for 2026-11-20. Credits left 26,811
-(18 episodes to make 2026-11-21 … 12-08 -> ~1,490 each; pace OK). Next: Episode 2 (sleeper train) for 2026-11-21; it does
-not depend on a vote (standalone format), so it can be built any time. No competitor scan due until Monday 2026-11-23.
+**Status 2026-11-20 ~01:45 IST (creator run):** Episode 2 built and QUEUED for 2026-11-21. Credits left 25,443
+(17 episodes to make 2026-11-22 … 12-08 -> ~1,497 each; pace OK). Next: Episode 3 (food-delivery rider) for 2026-11-22;
+standalone, no vote dependency. Competitor scan due on the first run on/after Monday 2026-11-23.
+
+## Episode 2 "The sleeper train" — QUEUED for 2026-11-21
+- Output: `outputs/night-shift-p2.mp4` (69.7 s, 11.7 MB, −13.8 LUFS; stems: VO −18.1 dB RMS, SFX −26.1, beds −32.3, music −35.2)
+  + `outputs/night-shift-p2.jpg` (cover: his upside-down face, smiling, "HE HANGS {UPSIDE DOWN}", "NIGHT SHIFT · 3 AM");
+  jsDelivr @ `bb4c237` (mp4 + jpg HTTP 200 on first try; raw fallback 200). Queue id `night-shift-p2`.
+- Voice: 1,368 credits (eleven_v4, Jack), transcript 0. 23 lines / 156 words. Files in `night-shift/p2/audio/`.
+- Standard kept: bright frame 1 (lit sleeper coach looking down the aisle, two pale arms hanging from a top berth),
+  hook box "72 BERTHS. / 73 PASSENGERS."; the entity SHOWN: arms at 0-3 s and 5-8 s, full upside-down man in the aisle at 43-46 s,
+  his face (poster image) 46-51 s. Applied today's analytics lesson: YT title starts with the concrete image + "my"
+  ("A man hung upside down from my train's top berth, face level with mine").
+- Story: 3 AM, 72 berths, you count 73; first night as ticket checker; note on the chart: 1 count every passenger at every
+  stop, 2 if you count 73 never count again, 3 never look up at the top berths + "There is no berth 73. Don't sit in it."; next
+  station: clicker 073; chart says 72 names; rule 2 kept -> someone above counts for you (71, 72, 73; rule 2 bent); rule 3 broken:
+  you look up: a man hangs upside down from the top berth, face level with yours; he smiles: "You forgot to count yourself.";
+  tunnel, lights die, back on: he's gone; the chart has a new red line: 73 SAM K. T.T.E.; your seat plate turns from 63 to 73.
+- HUD: SHIFT 2 · 3:00→3:17 · COACH S7 SLEEPER · COUNT 72→73→71/72→73 · RULES 3 → RULE 2 KEPT/BENT → RULE 3 BROKEN · BERTHS 72 →
+  UB 41 OCCUPIED → EMPTY → BERTH 73 YOU.
+- Choice offered: **Which rule would you break? A) RULE 2 · COUNT AGAIN  B) RULE 3 · LOOK UP**.
+- Engine: new `engine/sets_train.js` (drawCoach perspective aisle with day/night-lamp/station/dark modes + hanger arms/full,
+  drawTTE, drawChart, drawTrainNote, drawClicker, drawHangerFace, drawSeat); `part2.js`; `mix.py` part2 (synthesized rail rumble
+  bed + clacks, clicker clicks). Easter egg: the note is signed "— R."; you are SAM again (the pharmacy badge name).
 
 ## Episode 1 "The all-night pharmacy" — QUEUED for 2026-11-20
 - Output: `outputs/night-shift-p1.mp4` (69.4 s, 12.0 MB, −13.9 LUFS; SFX ~13 dB under the voice) + `outputs/night-shift-p1.jpg`
