@@ -4,3 +4,6 @@ node_modules/
 *.npy
 creator.lock
 __pycache__/
+# working render copies (published copies live in outputs/)
+*_part[0-9]*.mp4
+night-shift/cover.jpg
