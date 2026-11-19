@@ -36,5 +36,38 @@ P1 = [
 ]
 P1_HOLD = 2.2
 
-LINES = {1: P1}
-HOLD = {1: P1_HOLD}
+# Episode 2 — The sleeper train (the passenger hanging upside down from the top berth)
+P2 = [
+    ("Three in the morning. Seventy-two berths. You count seventy-three.", 0.15,
+     [(4, "[3 AM.]"), (2, "[72] BERTHS."), (3, "YOU COUNT {73.}")]),
+    ("Two pale arms hang down from a top berth.", 0.30, [(3, "TWO {PALE ARMS}"), (3, "HANG DOWN FROM"), (3, "A [TOP BERTH.]")]),
+    ("Your first night as ticket checker. The last one left a note.", 0.40,
+     [(3, "YOUR FIRST NIGHT"), (3, "AS [TICKET CHECKER.]"), (3, "THE LAST ONE"), (3, "LEFT A [NOTE.]")]),
+    ("One. Count every passenger at every stop.", 0.35, [(1, "ONE."), (3, "COUNT EVERY PASSENGER"), (3, "AT [EVERY STOP.]")]),
+    ("Two. If you count seventy-three, never count again.", 0.35,
+     [(1, "TWO."), (3, "IF YOU COUNT"), (1, "{73,}"), (3, "[NEVER] COUNT AGAIN.")]),
+    ("Three. Never look up at the top berths.", 0.35, [(1, "THREE."), (3, "{NEVER LOOK UP}"), (4, "AT THE [TOP BERTHS.]")]),
+    ("Under them: There is no berth seventy-three. Don't sit in it.", 0.35,
+     [(2, "UNDER THEM:"), (5, "[THERE IS NO BERTH 73.]"), (4, "{DON'T SIT IN IT.}")]),
+    ("Next station. You count. Seventy-three.", 0.45, [(2, "NEXT STATION."), (2, "YOU [COUNT.]"), (1, "{73.}")]),
+    ("The chart says seventy-two names.", 0.30, [(3, "THE CHART SAYS"), (2, "[72 NAMES.]")]),
+    ("Rule two. You don't count again.", 0.40, [(2, "[RULE 2.]"), (4, "YOU DON'T COUNT AGAIN.")]),
+    ("Above you, someone does. Seventy-one. Seventy-two.", 0.40,
+     [(2, "{ABOVE YOU,}"), (2, "SOMEONE [DOES.]"), (1, "71."), (1, "72.")]),
+    ("Seventy-three.", 0.30, [(1, "{73.}")]),
+    ("Rule three. Never look up.", 0.45, [(2, "[RULE 3.]"), (3, "{NEVER LOOK UP.}")]),
+    ("You look up.", 0.40, [(3, "YOU {LOOK UP.}")]),
+    ("A man hangs upside down from the top berth.", 0.30, [(2, "A MAN"), (3, "{HANGS UPSIDE DOWN}"), (4, "FROM THE [TOP BERTH.]")]),
+    ("His face is level with yours.", 0.30, [(3, "HIS [FACE] IS"), (3, "{LEVEL WITH YOURS.}")]),
+    ("He smiles. You forgot to count yourself.", 0.45, [(2, "HE {SMILES.}"), (3, "YOU FORGOT TO"), (2, "{COUNT YOURSELF.}")]),
+    ("A tunnel. The lights die.", 0.50, [(2, "A [TUNNEL.]"), (3, "THE LIGHTS {DIE.}")]),
+    ("When they come back, he's gone.", 0.50, [(4, "WHEN THEY COME BACK,"), (2, "HE'S [GONE.]")]),
+    ("The chart has a new line. Berth seventy-three.", 0.45, [(3, "THE CHART HAS"), (3, "A [NEW LINE.]"), (2, "{BERTH 73.}")]),
+    ("Your name. And you're sitting in it.", 0.40, [(2, "{YOUR NAME.}"), (2, "AND YOU'RE"), (3, "[SITTING IN IT.]")]),
+    ("Which rule would you break? A, two. B, three.", 0.60, []),
+    ("Comment A or B.", 0.30, []),
+]
+P2_HOLD = 2.2
+
+LINES = {1: P1, 2: P2}
+HOLD = {1: P1_HOLD, 2: P2_HOLD}
