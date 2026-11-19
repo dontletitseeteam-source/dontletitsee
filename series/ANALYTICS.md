@@ -12,11 +12,49 @@ Full brief, post-mortem and competitor scan: `series/RESEARCH.md`; weekly resear
    avg watch). Every part opens on a WELL-LIT, everyday wide set readable in 0.5 s, threat present but small; burned-in hook
    max ~6 words, picture dominates.
 2. **YouTube title = a hook sentence that states the scary image, no "Part n" — STANDARD** (test #5 confirmed 2026-11-19: P6 314
-   views at 34 h vs P5 246 / P4 185; P7 145 at 10 h vs P6 99). Series name after the bar, part number only in the description.
+   views at 34 h vs P5 246 / P4 185; P7 766 at 34 h, P8 273 at 10 h). Series name after the bar, part number only in the
+   description. Best shape: first-person "my/your" + one concrete wrong detail in the first 6 words.
 3. **Next test = the standalone episode format** (series after BLOCK C, `series/RESEARCH.md`): one nameable entity SHOWN in the
    first 3 s and on the cover, complete story + twist in 55-70 s. Compare its IG reach/skip and YT 34-h views with BLOCK C P5-P7.
 
 ## Day log
+## 2026-11-20 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 250 | 799 | 640 | 17 | 2 | 0 / 0 | 17.3 s | 46.7% |
+| floor0-p2 | Instagram (media 17961343959258765) | 226 | 184 | 156 | 2 | 0 | 0 / 0 | 8.3 s | 71.4% |
+| floor0-p3 | Instagram (media 18139990045726049) | 202 | 143 | 116 | 1 | 0 | 0 / 0 | 13.4 s | 51.2% |
+| block-c-p1 | Instagram (media 17998129476019732) | 178 | 143 | 110 | 0 | 0 | 0 / 0 | 16.5 s | 52.2% |
+| block-c-p2 | Instagram (media 18120370895001266) | 154 | 148 | 110 | 4 | 0 | 0 / 0 | 22.0 s | 54.2% |
+| block-c-p3 | Instagram (media 18025383203947619) | 130 | 124 | 107 | 3 | 0 | 1 / 0 | 7.6 s | 62.3% |
+| block-c-p4 | Instagram (media 18121550692965483) | 106 | 122 | 105 | 1 | 0 | 0 / 0 | 10.3 s | 69.0% |
+| block-c-p5 | Instagram (media 18170937118477416) | 82 | 127 | 106 | 5 | 0 | 0 / 0 | 15.5 s | 44.3% |
+| block-c-p6 | Instagram (media 18099611141131915) | 58 | 105 | 86 | 3 | 0 | 0 / 0 | 12.0 s | 55.9% |
+| block-c-p7 | Instagram (media 18221781823348380) | 34 | 152 | 132 | 2 | 0 | 1 / 0 | 21.1 s | 45.0% |
+| block-c-p8 | Instagram (media 18117069296233249) | 10 | **122** | **99** | 0 | 0 | 1 / 0 | 11.4 s | **44.6%** |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 250 | 198 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 226 | 446 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 202 | 291 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 178 | 435 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 154 | 733 | n/a | 14 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @dontletitsee (qlkqMo9AiCM) | 130 | 225 | n/a | 6 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @dontletitsee (ukrud0UGmYY) | 106 | 222 | n/a | 5 | 1 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @dontletitsee (nZ98OLaMWPw) | 82 | 347 | n/a | 5 | 5 | n/a | n/a | n/a |
+| block-c-p6 | YouTube @dontletitsee (q3U-mDEVkEU) | 58 | 447 | n/a | 7 | 4 | n/a | n/a | n/a |
+| block-c-p7 | YouTube @dontletitsee (OWkQH00IxPY) | 34 | **766** | n/a | **16** | 0 | n/a | n/a | n/a |
+| block-c-p8 | YouTube @dontletitsee (EYT6ES7onKs) | 10 | **273** | n/a | 4 | 0 | n/a | n/a | n/a |
+| floor0-p1 … block-c-p8 | YouTube @lexter2025 (11 videos) | 10-250 | 16 / 15 / 150 / 6 / 1 / 2 / 0 / 2 / 0 / 0 / 0 | n/a | 0-2 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- YouTube is accelerating on the hook-sentence titles: P7 ("...sent my message before I did") 766 views at 34 h, the best 34-h number
+  so far (P6 314, P5 246, P4 185); P8 273 at 10 h (P7 145, P6 99). Three titles in a row without "Part n" now beat every numbered one.
+- The strongest titles name a personal violation of YOUR thing (my face, my message, my name in the register). NIGHT SHIFT titles
+  should keep "you/your/my" + one concrete wrong detail in the first 6 words.
+- IG skip rate stays ≤ 45% on bright openers (P5 44.3, P7 45.0, P8 44.6). Reach at 10 h is flat around 100-130; IG growth is not
+  coming from the opener any more, it is the per-post reach ceiling of a small account.
+- Comments/votes still near zero on IG (0 on P6-P8); a few on YT. No change to the A/B card yet: the standalone format starts today.
+- @lexter2025 keeps getting 0-2 views per upload; nothing the creator can change.
+
 ## 2026-11-19 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
