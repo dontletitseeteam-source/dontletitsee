@@ -1,0 +1,1403 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 69.431,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Two in the morning. A barefoot man waits at your counter.",
+   "src_start": 0.101,
+   "src_end": 4.055,
+   "start": 0.15,
+   "end": 4.105,
+   "words": [
+    {
+     "text": "Two",
+     "start": 0.2,
+     "end": 0.351
+    },
+    {
+     "text": "in",
+     "start": 0.426,
+     "end": 0.502
+    },
+    {
+     "text": "the",
+     "start": 0.577,
+     "end": 0.615
+    },
+    {
+     "text": "morning.",
+     "start": 0.653,
+     "end": 1.181
+    },
+    {
+     "text": "A",
+     "start": 1.634,
+     "end": 1.709
+    },
+    {
+     "text": "barefoot",
+     "start": 1.785,
+     "end": 2.162
+    },
+    {
+     "text": "man",
+     "start": 2.238,
+     "end": 2.464
+    },
+    {
+     "text": "waits",
+     "start": 2.54,
+     "end": 2.766
+    },
+    {
+     "text": "at",
+     "start": 2.804,
+     "end": 2.842
+    },
+    {
+     "text": "your",
+     "start": 2.917,
+     "end": 2.992
+    },
+    {
+     "text": "counter.",
+     "start": 3.068,
+     "end": 3.54
+    }
+   ],
+   "captions": [
+    {
+     "text": "[2 AM.]",
+     "start": 0.2,
+     "word_idx": 0,
+     "end": 1.634
+    },
+    {
+     "text": "A {BAREFOOT} MAN",
+     "start": 1.634,
+     "word_idx": 4,
+     "end": 2.54
+    },
+    {
+     "text": "WAITS AT YOUR COUNTER.",
+     "start": 2.54,
+     "word_idx": 7,
+     "end": 4.225
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "A paper tag is tied to his big toe.",
+   "src_start": 4.025,
+   "src_end": 6.59,
+   "start": 4.405,
+   "end": 6.969,
+   "words": [
+    {
+     "text": "A",
+     "start": 4.455,
+     "end": 4.53
+    },
+    {
+     "text": "paper",
+     "start": 4.605,
+     "end": 4.832
+    },
+    {
+     "text": "tag",
+     "start": 4.983,
+     "end": 5.209
+    },
+    {
+     "text": "is",
+     "start": 5.285,
+     "end": 5.36
+    },
+    {
+     "text": "tied",
+     "start": 5.436,
+     "end": 5.662
+    },
+    {
+     "text": "to",
+     "start": 5.7,
+     "end": 5.738
+    },
+    {
+     "text": "his",
+     "start": 5.813,
+     "end": 5.888
+    },
+    {
+     "text": "big",
+     "start": 5.964,
+     "end": 6.19
+    },
+    {
+     "text": "toe.",
+     "start": 6.266,
+     "end": 6.643
+    }
+   ],
+   "captions": [
+    {
+     "text": "A PAPER {TAG}",
+     "start": 4.455,
+     "word_idx": 0,
+     "end": 5.285
+    },
+    {
+     "text": "IS TIED TO",
+     "start": 5.285,
+     "word_idx": 3,
+     "end": 5.813
+    },
+    {
+     "text": "HIS {BIG TOE.}",
+     "start": 5.813,
+     "word_idx": 6,
+     "end": 7.089
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Your first night shift. The last pharmacist left you three rules.",
+   "src_start": 6.818,
+   "src_end": 10.72,
+   "start": 7.369,
+   "end": 11.271,
+   "words": [
+    {
+     "text": "Your",
+     "start": 7.419,
+     "end": 7.57
+    },
+    {
+     "text": "first",
+     "start": 7.645,
+     "end": 7.872
+    },
+    {
+     "text": "night",
+     "start": 7.947,
+     "end": 8.098
+    },
+    {
+     "text": "shift.",
+     "start": 8.174,
+     "end": 8.778
+    },
+    {
+     "text": "The",
+     "start": 9.004,
+     "end": 9.042
+    },
+    {
+     "text": "last",
+     "start": 9.079,
+     "end": 9.306
+    },
+    {
+     "text": "pharmacist",
+     "start": 9.381,
+     "end": 9.91
+    },
+    {
+     "text": "left",
+     "start": 10.023,
+     "end": 10.136
+    },
+    {
+     "text": "you",
+     "start": 10.212,
+     "end": 10.287
+    },
+    {
+     "text": "three",
+     "start": 10.362,
+     "end": 10.589
+    },
+    {
+     "text": "rules.",
+     "start": 10.664,
+     "end": 11.271
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR FIRST [NIGHT SHIFT.]",
+     "start": 7.419,
+     "word_idx": 0,
+     "end": 9.004
+    },
+    {
+     "text": "THE LAST PHARMACIST",
+     "start": 9.004,
+     "word_idx": 4,
+     "end": 10.023
+    },
+    {
+     "text": "LEFT YOU [3 RULES.]",
+     "start": 10.023,
+     "word_idx": 7,
+     "end": 11.391
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "One. Fill every prescription, even the paper ones.",
+   "src_start": 11.044,
+   "src_end": 14.71,
+   "start": 11.621,
+   "end": 15.287,
+   "words": [
+    {
+     "text": "One.",
+     "start": 11.671,
+     "end": 12.199
+    },
+    {
+     "text": "Fill",
+     "start": 12.426,
+     "end": 12.652
+    },
+    {
+     "text": "every",
+     "start": 12.803,
+     "end": 13.03
+    },
+    {
+     "text": "prescription,",
+     "start": 13.105,
+     "end": 14.086
+    },
+    {
+     "text": "even",
+     "start": 14.199,
+     "end": 14.313
+    },
+    {
+     "text": "the",
+     "start": 14.35,
+     "end": 14.388
+    },
+    {
+     "text": "paper",
+     "start": 14.464,
+     "end": 14.69
+    },
+    {
+     "text": "ones.",
+     "start": 14.765,
+     "end": 15.287
+    }
+   ],
+   "captions": [
+    {
+     "text": "ONE.",
+     "start": 11.671,
+     "word_idx": 0,
+     "end": 12.426
+    },
+    {
+     "text": "FILL EVERY PRESCRIPTION,",
+     "start": 12.426,
+     "word_idx": 1,
+     "end": 14.199
+    },
+    {
+     "text": "EVEN THE [PAPER ONES.]",
+     "start": 14.199,
+     "word_idx": 4,
+     "end": 15.407
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "Two. If he's in today's obituaries, he waits outside.",
+   "src_start": 14.969,
+   "src_end": 18.56,
+   "start": 15.637,
+   "end": 19.228,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 15.687,
+     "end": 16.177
+    },
+    {
+     "text": "If",
+     "start": 16.366,
+     "end": 16.517
+    },
+    {
+     "text": "he's",
+     "start": 16.555,
+     "end": 16.668
+    },
+    {
+     "text": "in",
+     "start": 16.743,
+     "end": 16.819
+    },
+    {
+     "text": "today's",
+     "start": 16.932,
+     "end": 17.121
+    },
+    {
+     "text": "obituaries,",
+     "start": 17.196,
+     "end": 18.102
+    },
+    {
+     "text": "he",
+     "start": 18.177,
+     "end": 18.253
+    },
+    {
+     "text": "waits",
+     "start": 18.291,
+     "end": 18.479
+    },
+    {
+     "text": "outside.",
+     "start": 18.555,
+     "end": 19.228
+    }
+   ],
+   "captions": [
+    {
+     "text": "TWO.",
+     "start": 15.687,
+     "word_idx": 0,
+     "end": 16.366
+    },
+    {
+     "text": "IF HE'S",
+     "start": 16.366,
+     "word_idx": 1,
+     "end": 16.743
+    },
+    {
+     "text": "IN TODAY'S {OBITUARIES,}",
+     "start": 16.743,
+     "word_idx": 3,
+     "end": 18.177
+    },
+    {
+     "text": "HE WAITS [OUTSIDE.]",
+     "start": 18.177,
+     "word_idx": 6,
+     "end": 19.348
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Three. Never ask why he's cold.",
+   "src_start": 18.818,
+   "src_end": 21.32,
+   "start": 19.578,
+   "end": 22.08,
+   "words": [
+    {
+     "text": "Three.",
+     "start": 19.628,
+     "end": 20.194
+    },
+    {
+     "text": "Never",
+     "start": 20.458,
+     "end": 20.76
+    },
+    {
+     "text": "ask",
+     "start": 20.911,
+     "end": 21.062
+    },
+    {
+     "text": "why",
+     "start": 21.137,
+     "end": 21.213
+    },
+    {
+     "text": "he's",
+     "start": 21.288,
+     "end": 21.439
+    },
+    {
+     "text": "cold.",
+     "start": 21.515,
+     "end": 21.935
+    }
+   ],
+   "captions": [
+    {
+     "text": "THREE.",
+     "start": 19.628,
+     "word_idx": 0,
+     "end": 20.458
+    },
+    {
+     "text": "{NEVER ASK}",
+     "start": 20.458,
+     "word_idx": 1,
+     "end": 21.137
+    },
+    {
+     "text": "WHY HE'S [COLD.]",
+     "start": 21.137,
+     "word_idx": 3,
+     "end": 22.2
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Under them: I left early. Sorry.",
+   "src_start": 21.793,
+   "src_end": 24.29,
+   "start": 22.43,
+   "end": 24.927,
+   "words": [
+    {
+     "text": "Under",
+     "start": 22.48,
+     "end": 22.523
+    },
+    {
+     "text": "them:",
+     "start": 22.637,
+     "end": 23.203
+    },
+    {
+     "text": "I",
+     "start": 23.24,
+     "end": 23.278
+    },
+    {
+     "text": "left",
+     "start": 23.354,
+     "end": 23.505
+    },
+    {
+     "text": "early.",
+     "start": 23.58,
+     "end": 24.335
+    },
+    {
+     "text": "Sorry.",
+     "start": 24.523,
+     "end": 24.901
+    }
+   ],
+   "captions": [
+    {
+     "text": "UNDER THEM:",
+     "start": 22.48,
+     "word_idx": 0,
+     "end": 23.24
+    },
+    {
+     "text": "[I LEFT EARLY.]",
+     "start": 23.24,
+     "word_idx": 2,
+     "end": 24.523
+    },
+    {
+     "text": "SORRY.",
+     "start": 24.523,
+     "word_idx": 5,
+     "end": 25.047
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "He slides a slip across. It's wet. And freezing.",
+   "src_start": 24.543,
+   "src_end": 28.07,
+   "start": 25.377,
+   "end": 28.903,
+   "words": [
+    {
+     "text": "He",
+     "start": 25.427,
+     "end": 25.437
+    },
+    {
+     "text": "slides",
+     "start": 25.588,
+     "end": 25.739
+    },
+    {
+     "text": "a",
+     "start": 25.777,
+     "end": 25.814
+    },
+    {
+     "text": "slip",
+     "start": 25.89,
+     "end": 26.041
+    },
+    {
+     "text": "across.",
+     "start": 26.116,
+     "end": 26.833
+    },
+    {
+     "text": "It's",
+     "start": 27.022,
+     "end": 27.248
+    },
+    {
+     "text": "wet.",
+     "start": 27.286,
+     "end": 27.928
+    },
+    {
+     "text": "And",
+     "start": 28.003,
+     "end": 28.078
+    },
+    {
+     "text": "freezing.",
+     "start": 28.229,
+     "end": 28.903
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE SLIDES A [SLIP]",
+     "start": 25.427,
+     "word_idx": 0,
+     "end": 26.116
+    },
+    {
+     "text": "ACROSS.",
+     "start": 26.116,
+     "word_idx": 4,
+     "end": 27.022
+    },
+    {
+     "text": "IT'S WET.",
+     "start": 27.022,
+     "word_idx": 5,
+     "end": 28.003
+    },
+    {
+     "text": "AND {FREEZING.}",
+     "start": 28.003,
+     "word_idx": 7,
+     "end": 29.023
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Name: Thomas Hale.",
+   "src_start": 28.327,
+   "src_end": 30.27,
+   "start": 29.203,
+   "end": 31.146,
+   "words": [
+    {
+     "text": "Name:",
+     "start": 29.253,
+     "end": 30.083
+    },
+    {
+     "text": "Thomas",
+     "start": 30.31,
+     "end": 30.536
+    },
+    {
+     "text": "Hale.",
+     "start": 30.612,
+     "end": 31.065
+    }
+   ],
+   "captions": [
+    {
+     "text": "NAME:",
+     "start": 29.253,
+     "word_idx": 0,
+     "end": 30.31
+    },
+    {
+     "text": "[THOMAS HALE.]",
+     "start": 30.31,
+     "word_idx": 1,
+     "end": 31.266
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "Today's paper. Thomas Hale. Died this morning.",
+   "src_start": 30.798,
+   "src_end": 33.92,
+   "start": 31.496,
+   "end": 34.618,
+   "words": [
+    {
+     "text": "Today's",
+     "start": 31.546,
+     "end": 31.603
+    },
+    {
+     "text": "paper.",
+     "start": 31.641,
+     "end": 32.094
+    },
+    {
+     "text": "Thomas",
+     "start": 32.471,
+     "end": 32.849
+    },
+    {
+     "text": "Hale.",
+     "start": 32.924,
+     "end": 33.302
+    },
+    {
+     "text": "Died",
+     "start": 33.679,
+     "end": 33.83
+    },
+    {
+     "text": "this",
+     "start": 33.905,
+     "end": 34.056
+    },
+    {
+     "text": "morning.",
+     "start": 34.132,
+     "end": 34.618
+    }
+   ],
+   "captions": [
+    {
+     "text": "TODAY'S PAPER.",
+     "start": 31.546,
+     "word_idx": 0,
+     "end": 32.471
+    },
+    {
+     "text": "[THOMAS HALE.]",
+     "start": 32.471,
+     "word_idx": 2,
+     "end": 33.679
+    },
+    {
+     "text": "{DIED THIS MORNING.}",
+     "start": 33.679,
+     "word_idx": 4,
+     "end": 34.738
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Rule two. You ask him to wait outside.",
+   "src_start": 34.214,
+   "src_end": 36.68,
+   "start": 35.068,
+   "end": 37.534,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 35.118,
+     "end": 35.269
+    },
+    {
+     "text": "two.",
+     "start": 35.42,
+     "end": 35.722
+    },
+    {
+     "text": "You",
+     "start": 36.099,
+     "end": 36.174
+    },
+    {
+     "text": "ask",
+     "start": 36.25,
+     "end": 36.401
+    },
+    {
+     "text": "him",
+     "start": 36.476,
+     "end": 36.552
+    },
+    {
+     "text": "to",
+     "start": 36.589,
+     "end": 36.627
+    },
+    {
+     "text": "wait",
+     "start": 36.703,
+     "end": 36.778
+    },
+    {
+     "text": "outside.",
+     "start": 36.854,
+     "end": 37.457
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 2.]",
+     "start": 35.118,
+     "word_idx": 0,
+     "end": 36.099
+    },
+    {
+     "text": "YOU ASK HIM",
+     "start": 36.099,
+     "word_idx": 2,
+     "end": 36.589
+    },
+    {
+     "text": "TO WAIT {OUTSIDE.}",
+     "start": 36.589,
+     "word_idx": 5,
+     "end": 37.654
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "He doesn't move. Frost spreads under his fingers.",
+   "src_start": 36.856,
+   "src_end": 39.85,
+   "start": 37.934,
+   "end": 40.928,
+   "words": [
+    {
+     "text": "He",
+     "start": 37.984,
+     "end": 38.059
+    },
+    {
+     "text": "doesn't",
+     "start": 38.135,
+     "end": 38.361
+    },
+    {
+     "text": "move.",
+     "start": 38.55,
+     "end": 38.927
+    },
+    {
+     "text": "Frost",
+     "start": 39.116,
+     "end": 39.493
+    },
+    {
+     "text": "spreads",
+     "start": 39.568,
+     "end": 39.87
+    },
+    {
+     "text": "under",
+     "start": 39.984,
+     "end": 40.097
+    },
+    {
+     "text": "his",
+     "start": 40.172,
+     "end": 40.248
+    },
+    {
+     "text": "fingers.",
+     "start": 40.323,
+     "end": 40.889
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE {DOESN'T MOVE.}",
+     "start": 37.984,
+     "word_idx": 0,
+     "end": 39.116
+    },
+    {
+     "text": "[FROST] SPREADS",
+     "start": 39.116,
+     "word_idx": 3,
+     "end": 39.984
+    },
+    {
+     "text": "UNDER HIS FINGERS.",
+     "start": 39.984,
+     "word_idx": 5,
+     "end": 41.048
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "You fill it fast. Your hands are shaking.",
+   "src_start": 39.95,
+   "src_end": 42.27,
+   "start": 41.278,
+   "end": 43.598,
+   "words": [
+    {
+     "text": "You",
+     "start": 41.328,
+     "end": 41.403
+    },
+    {
+     "text": "fill",
+     "start": 41.479,
+     "end": 41.554
+    },
+    {
+     "text": "it",
+     "start": 41.63,
+     "end": 41.705
+    },
+    {
+     "text": "fast.",
+     "start": 41.781,
+     "end": 42.46
+    },
+    {
+     "text": "Your",
+     "start": 42.535,
+     "end": 42.611
+    },
+    {
+     "text": "hands",
+     "start": 42.724,
+     "end": 42.837
+    },
+    {
+     "text": "are",
+     "start": 42.913,
+     "end": 42.988
+    },
+    {
+     "text": "shaking.",
+     "start": 43.064,
+     "end": 43.598
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU FILL IT [FAST.]",
+     "start": 41.328,
+     "word_idx": 0,
+     "end": 42.535
+    },
+    {
+     "text": "YOUR HANDS ARE {SHAKING.}",
+     "start": 42.535,
+     "word_idx": 4,
+     "end": 43.718
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "Then you hear yourself ask: why are you so cold?",
+   "src_start": 42.441,
+   "src_end": 45.52,
+   "start": 44.048,
+   "end": 47.127,
+   "words": [
+    {
+     "text": "Then",
+     "start": 44.098,
+     "end": 44.249
+    },
+    {
+     "text": "you",
+     "start": 44.324,
+     "end": 44.4
+    },
+    {
+     "text": "hear",
+     "start": 44.475,
+     "end": 44.551
+    },
+    {
+     "text": "yourself",
+     "start": 44.626,
+     "end": 45.004
+    },
+    {
+     "text": "ask:",
+     "start": 45.079,
+     "end": 45.758
+    },
+    {
+     "text": "why",
+     "start": 45.834,
+     "end": 45.909
+    },
+    {
+     "text": "are",
+     "start": 45.985,
+     "end": 46.06
+    },
+    {
+     "text": "you",
+     "start": 46.136,
+     "end": 46.211
+    },
+    {
+     "text": "so",
+     "start": 46.324,
+     "end": 46.438
+    },
+    {
+     "text": "cold?",
+     "start": 46.513,
+     "end": 47.117
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN YOU HEAR YOURSELF",
+     "start": 44.098,
+     "word_idx": 0,
+     "end": 45.079
+    },
+    {
+     "text": "ASK:",
+     "start": 45.079,
+     "word_idx": 4,
+     "end": 45.834
+    },
+    {
+     "text": "{WHY ARE YOU SO COLD?}",
+     "start": 45.834,
+     "word_idx": 5,
+     "end": 47.247
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "He leans in. They keep us cold. Downstairs.",
+   "src_start": 45.686,
+   "src_end": 49.22,
+   "start": 47.677,
+   "end": 51.212,
+   "words": [
+    {
+     "text": "He",
+     "start": 47.727,
+     "end": 47.878
+    },
+    {
+     "text": "leans",
+     "start": 48.029,
+     "end": 48.18
+    },
+    {
+     "text": "in.",
+     "start": 48.256,
+     "end": 48.859
+    },
+    {
+     "text": "They",
+     "start": 48.973,
+     "end": 49.086
+    },
+    {
+     "text": "keep",
+     "start": 49.161,
+     "end": 49.312
+    },
+    {
+     "text": "us",
+     "start": 49.425,
+     "end": 49.539
+    },
+    {
+     "text": "cold.",
+     "start": 49.727,
+     "end": 50.293
+    },
+    {
+     "text": "Downstairs.",
+     "start": 50.444,
+     "end": 51.212
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE LEANS IN.",
+     "start": 47.727,
+     "word_idx": 0,
+     "end": 48.973
+    },
+    {
+     "text": "[THEY KEEP US COLD.]",
+     "start": 48.973,
+     "word_idx": 3,
+     "end": 50.444
+    },
+    {
+     "text": "{DOWNSTAIRS.}",
+     "start": 50.444,
+     "word_idx": 7,
+     "end": 51.332
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "The lights die. Then he's gone.",
+   "src_start": 49.384,
+   "src_end": 51.39,
+   "start": 51.762,
+   "end": 53.768,
+   "words": [
+    {
+     "text": "The",
+     "start": 51.812,
+     "end": 51.849
+    },
+    {
+     "text": "lights",
+     "start": 51.887,
+     "end": 52.189
+    },
+    {
+     "text": "die.",
+     "start": 52.264,
+     "end": 52.944
+    },
+    {
+     "text": "Then",
+     "start": 53.019,
+     "end": 53.095
+    },
+    {
+     "text": "he's",
+     "start": 53.132,
+     "end": 53.245
+    },
+    {
+     "text": "gone.",
+     "start": 53.321,
+     "end": 53.768
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE LIGHTS {DIE.}",
+     "start": 51.812,
+     "word_idx": 0,
+     "end": 53.019
+    },
+    {
+     "text": "THEN HE'S [GONE.]",
+     "start": 53.019,
+     "word_idx": 3,
+     "end": 53.888
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "His slip was signed by the pharmacist who left early.",
+   "src_start": 51.629,
+   "src_end": 54.04,
+   "start": 54.268,
+   "end": 56.678,
+   "words": [
+    {
+     "text": "His",
+     "start": 54.318,
+     "end": 54.336
+    },
+    {
+     "text": "slip",
+     "start": 54.412,
+     "end": 54.563
+    },
+    {
+     "text": "was",
+     "start": 54.638,
+     "end": 54.789
+    },
+    {
+     "text": "signed",
+     "start": 54.902,
+     "end": 55.016
+    },
+    {
+     "text": "by",
+     "start": 55.091,
+     "end": 55.167
+    },
+    {
+     "text": "the",
+     "start": 55.242,
+     "end": 55.318
+    },
+    {
+     "text": "pharmacist",
+     "start": 55.355,
+     "end": 55.77
+    },
+    {
+     "text": "who",
+     "start": 55.846,
+     "end": 55.921
+    },
+    {
+     "text": "left",
+     "start": 56.035,
+     "end": 56.148
+    },
+    {
+     "text": "early.",
+     "start": 56.336,
+     "end": 56.678
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIS SLIP WAS SIGNED",
+     "start": 54.318,
+     "word_idx": 0,
+     "end": 55.091
+    },
+    {
+     "text": "BY THE {PHARMACIST}",
+     "start": 55.091,
+     "word_idx": 4,
+     "end": 55.846
+    },
+    {
+     "text": "WHO [LEFT EARLY.]",
+     "start": 55.846,
+     "word_idx": 7,
+     "end": 56.798
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "In the tray, tomorrow's slips are waiting.",
+   "src_start": 54.271,
+   "src_end": 56.53,
+   "start": 57.128,
+   "end": 59.388,
+   "words": [
+    {
+     "text": "In",
+     "start": 57.178,
+     "end": 57.197
+    },
+    {
+     "text": "the",
+     "start": 57.235,
+     "end": 57.273
+    },
+    {
+     "text": "tray,",
+     "start": 57.348,
+     "end": 57.952
+    },
+    {
+     "text": "tomorrow's",
+     "start": 58.065,
+     "end": 58.48
+    },
+    {
+     "text": "slips",
+     "start": 58.518,
+     "end": 58.707
+    },
+    {
+     "text": "are",
+     "start": 58.782,
+     "end": 58.858
+    },
+    {
+     "text": "waiting.",
+     "start": 59.046,
+     "end": 59.388
+    }
+   ],
+   "captions": [
+    {
+     "text": "IN THE TRAY,",
+     "start": 57.178,
+     "word_idx": 0,
+     "end": 58.065
+    },
+    {
+     "text": "[TOMORROW'S] SLIPS",
+     "start": 58.065,
+     "word_idx": 3,
+     "end": 58.782
+    },
+    {
+     "text": "ARE WAITING.",
+     "start": 58.782,
+     "word_idx": 5,
+     "end": 59.508
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "The top one has your name.",
+   "src_start": 56.77,
+   "src_end": 58.2,
+   "start": 59.788,
+   "end": 61.218,
+   "words": [
+    {
+     "text": "The",
+     "start": 59.838,
+     "end": 59.848
+    },
+    {
+     "text": "top",
+     "start": 59.961,
+     "end": 60.074
+    },
+    {
+     "text": "one",
+     "start": 60.15,
+     "end": 60.301
+    },
+    {
+     "text": "has",
+     "start": 60.414,
+     "end": 60.527
+    },
+    {
+     "text": "your",
+     "start": 60.603,
+     "end": 60.678
+    },
+    {
+     "text": "name.",
+     "start": 60.867,
+     "end": 61.218
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE TOP ONE",
+     "start": 59.838,
+     "word_idx": 0,
+     "end": 60.414
+    },
+    {
+     "text": "HAS {YOUR NAME.}",
+     "start": 60.414,
+     "word_idx": 3,
+     "end": 61.338
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Which rule would you break? A, two. B, three.",
+   "src_start": 58.365,
+   "src_end": 62.38,
+   "start": 61.818,
+   "end": 65.833,
+   "words": [
+    {
+     "text": "Which",
+     "start": 61.868,
+     "end": 62.019
+    },
+    {
+     "text": "rule",
+     "start": 62.094,
+     "end": 62.245
+    },
+    {
+     "text": "would",
+     "start": 62.321,
+     "end": 62.472
+    },
+    {
+     "text": "you",
+     "start": 62.547,
+     "end": 62.698
+    },
+    {
+     "text": "break?",
+     "start": 62.887,
+     "end": 63.453
+    },
+    {
+     "text": "A,",
+     "start": 63.528,
+     "end": 64.056
+    },
+    {
+     "text": "two.",
+     "start": 64.207,
+     "end": 64.811
+    },
+    {
+     "text": "B,",
+     "start": 64.962,
+     "end": 65.339
+    },
+    {
+     "text": "three.",
+     "start": 65.415,
+     "end": 65.833
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 21,
+   "text": "Comment A or B.",
+   "src_start": 62.922,
+   "src_end": 64.02,
+   "start": 66.133,
+   "end": 67.231,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 66.183,
+     "end": 66.23
+    },
+    {
+     "text": "A",
+     "start": 66.381,
+     "end": 66.607
+    },
+    {
+     "text": "or",
+     "start": 66.683,
+     "end": 66.758
+    },
+    {
+     "text": "B.",
+     "start": 66.909,
+     "end": 67.231
+    }
+   ],
+   "captions": []
+  }
+ ]
+}
