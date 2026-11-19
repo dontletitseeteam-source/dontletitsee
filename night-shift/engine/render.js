@@ -69,7 +69,7 @@ async function main() {
     ctx.fillStyle = g; ctx.fillRect(0, 1150, W, 770);
     D.drawCaption(ctx, P.coverTitle || 'FLOOR [0]', 1, { y: 1380, size: P.coverSize || 150 });
     ctx.save(); ctx.font = '40px Mono700'; ctx.fillStyle = D.C.red; ctx.textBaseline = 'alphabetic';
-    D.spaced(ctx, `PART ${PART}`, 540, 1500, 12, 'center'); ctx.restore();
+    D.spaced(ctx, P.coverSub || `PART ${PART}`, 540, 1500, 12, "center"); ctx.restore();
     fs.writeFileSync(args[2], await canvas.encode('jpeg', 92));
     console.log('cover', args[2]);
     return;
