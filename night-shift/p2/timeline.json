@@ -1,0 +1,1398 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 69.744,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Three in the morning. Seventy-two berths. You count seventy-three.",
+   "src_start": 0.101,
+   "src_end": 4.7,
+   "start": 0.15,
+   "end": 4.749,
+   "words": [
+    {
+     "text": "Three",
+     "start": 0.2,
+     "end": 0.351
+    },
+    {
+     "text": "in",
+     "start": 0.426,
+     "end": 0.502
+    },
+    {
+     "text": "the",
+     "start": 0.54,
+     "end": 0.577
+    },
+    {
+     "text": "morning.",
+     "start": 0.653,
+     "end": 1.408
+    },
+    {
+     "text": "Seventy-two",
+     "start": 1.709,
+     "end": 2.238
+    },
+    {
+     "text": "berths.",
+     "start": 2.313,
+     "end": 3.03
+    },
+    {
+     "text": "You",
+     "start": 3.294,
+     "end": 3.445
+    },
+    {
+     "text": "count",
+     "start": 3.521,
+     "end": 3.747
+    },
+    {
+     "text": "seventy-three.",
+     "start": 3.823,
+     "end": 4.728
+    }
+   ],
+   "captions": [
+    {
+     "text": "[3 AM.]",
+     "start": 0.2,
+     "word_idx": 0,
+     "end": 1.709
+    },
+    {
+     "text": "[72] BERTHS.",
+     "start": 1.709,
+     "word_idx": 4,
+     "end": 3.294
+    },
+    {
+     "text": "YOU COUNT {73.}",
+     "start": 3.294,
+     "word_idx": 6,
+     "end": 4.869
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "Two pale arms hang down from a top berth.",
+   "src_start": 5.276,
+   "src_end": 7.91,
+   "start": 5.049,
+   "end": 7.683,
+   "words": [
+    {
+     "text": "Two",
+     "start": 5.099,
+     "end": 5.131
+    },
+    {
+     "text": "pale",
+     "start": 5.207,
+     "end": 5.433
+    },
+    {
+     "text": "arms",
+     "start": 5.584,
+     "end": 5.886
+    },
+    {
+     "text": "hang",
+     "start": 5.961,
+     "end": 6.112
+    },
+    {
+     "text": "down",
+     "start": 6.188,
+     "end": 6.414
+    },
+    {
+     "text": "from",
+     "start": 6.49,
+     "end": 6.565
+    },
+    {
+     "text": "a",
+     "start": 6.641,
+     "end": 6.716
+    },
+    {
+     "text": "top",
+     "start": 6.792,
+     "end": 6.942
+    },
+    {
+     "text": "berth.",
+     "start": 7.018,
+     "end": 7.622
+    }
+   ],
+   "captions": [
+    {
+     "text": "TWO {PALE ARMS}",
+     "start": 5.099,
+     "word_idx": 0,
+     "end": 5.961
+    },
+    {
+     "text": "HANG DOWN FROM",
+     "start": 5.961,
+     "word_idx": 3,
+     "end": 6.641
+    },
+    {
+     "text": "A [TOP BERTH.]",
+     "start": 6.641,
+     "word_idx": 6,
+     "end": 7.803
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Your first night as ticket checker. The last one left a note.",
+   "src_start": 8.302,
+   "src_end": 11.67,
+   "start": 8.083,
+   "end": 11.451,
+   "words": [
+    {
+     "text": "Your",
+     "start": 8.133,
+     "end": 8.158
+    },
+    {
+     "text": "first",
+     "start": 8.271,
+     "end": 8.385
+    },
+    {
+     "text": "night",
+     "start": 8.46,
+     "end": 8.686
+    },
+    {
+     "text": "as",
+     "start": 8.762,
+     "end": 8.837
+    },
+    {
+     "text": "ticket",
+     "start": 8.913,
+     "end": 9.139
+    },
+    {
+     "text": "checker.",
+     "start": 9.215,
+     "end": 9.781
+    },
+    {
+     "text": "The",
+     "start": 10.045,
+     "end": 10.12
+    },
+    {
+     "text": "last",
+     "start": 10.271,
+     "end": 10.422
+    },
+    {
+     "text": "one",
+     "start": 10.498,
+     "end": 10.649
+    },
+    {
+     "text": "left",
+     "start": 10.724,
+     "end": 10.8
+    },
+    {
+     "text": "a",
+     "start": 10.875,
+     "end": 10.951
+    },
+    {
+     "text": "note.",
+     "start": 11.026,
+     "end": 11.451
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR FIRST NIGHT",
+     "start": 8.133,
+     "word_idx": 0,
+     "end": 8.762
+    },
+    {
+     "text": "AS [TICKET CHECKER.]",
+     "start": 8.762,
+     "word_idx": 3,
+     "end": 10.045
+    },
+    {
+     "text": "THE LAST ONE",
+     "start": 10.045,
+     "word_idx": 6,
+     "end": 10.724
+    },
+    {
+     "text": "LEFT A [NOTE.]",
+     "start": 10.724,
+     "word_idx": 9,
+     "end": 11.571
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "One. Count every passenger at every stop.",
+   "src_start": 12.025,
+   "src_end": 15.16,
+   "start": 11.801,
+   "end": 14.935,
+   "words": [
+    {
+     "text": "One.",
+     "start": 11.851,
+     "end": 12.379
+    },
+    {
+     "text": "Count",
+     "start": 12.605,
+     "end": 12.907
+    },
+    {
+     "text": "every",
+     "start": 12.983,
+     "end": 13.209
+    },
+    {
+     "text": "passenger",
+     "start": 13.285,
+     "end": 13.813
+    },
+    {
+     "text": "at",
+     "start": 13.888,
+     "end": 14.039
+    },
+    {
+     "text": "every",
+     "start": 14.115,
+     "end": 14.341
+    },
+    {
+     "text": "stop.",
+     "start": 14.417,
+     "end": 14.935
+    }
+   ],
+   "captions": [
+    {
+     "text": "ONE.",
+     "start": 11.851,
+     "word_idx": 0,
+     "end": 12.605
+    },
+    {
+     "text": "COUNT EVERY PASSENGER",
+     "start": 12.605,
+     "word_idx": 1,
+     "end": 13.888
+    },
+    {
+     "text": "AT [EVERY STOP.]",
+     "start": 13.888,
+     "word_idx": 4,
+     "end": 15.055
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "Two. If you count seventy-three, never count again.",
+   "src_start": 15.422,
+   "src_end": 18.76,
+   "start": 15.285,
+   "end": 18.624,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 15.335,
+     "end": 15.826
+    },
+    {
+     "text": "If",
+     "start": 16.015,
+     "end": 16.09
+    },
+    {
+     "text": "you",
+     "start": 16.165,
+     "end": 16.241
+    },
+    {
+     "text": "count",
+     "start": 16.354,
+     "end": 16.467
+    },
+    {
+     "text": "seventy-three,",
+     "start": 16.543,
+     "end": 17.524
+    },
+    {
+     "text": "never",
+     "start": 17.599,
+     "end": 17.826
+    },
+    {
+     "text": "count",
+     "start": 17.901,
+     "end": 18.052
+    },
+    {
+     "text": "again.",
+     "start": 18.128,
+     "end": 18.624
+    }
+   ],
+   "captions": [
+    {
+     "text": "TWO.",
+     "start": 15.335,
+     "word_idx": 0,
+     "end": 16.015
+    },
+    {
+     "text": "IF YOU COUNT",
+     "start": 16.015,
+     "word_idx": 1,
+     "end": 16.543
+    },
+    {
+     "text": "{73,}",
+     "start": 16.543,
+     "word_idx": 4,
+     "end": 17.599
+    },
+    {
+     "text": "[NEVER] COUNT AGAIN.",
+     "start": 17.599,
+     "word_idx": 5,
+     "end": 18.744
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Three. Never look up at the top berths.",
+   "src_start": 19.044,
+   "src_end": 21.66,
+   "start": 18.974,
+   "end": 21.589,
+   "words": [
+    {
+     "text": "Three.",
+     "start": 19.024,
+     "end": 19.816
+    },
+    {
+     "text": "Never",
+     "start": 19.929,
+     "end": 20.156
+    },
+    {
+     "text": "look",
+     "start": 20.231,
+     "end": 20.307
+    },
+    {
+     "text": "up",
+     "start": 20.382,
+     "end": 20.533
+    },
+    {
+     "text": "at",
+     "start": 20.571,
+     "end": 20.608
+    },
+    {
+     "text": "the",
+     "start": 20.684,
+     "end": 20.759
+    },
+    {
+     "text": "top",
+     "start": 20.873,
+     "end": 20.986
+    },
+    {
+     "text": "berths.",
+     "start": 21.061,
+     "end": 21.589
+    }
+   ],
+   "captions": [
+    {
+     "text": "THREE.",
+     "start": 19.024,
+     "word_idx": 0,
+     "end": 19.929
+    },
+    {
+     "text": "{NEVER LOOK UP}",
+     "start": 19.929,
+     "word_idx": 1,
+     "end": 20.571
+    },
+    {
+     "text": "AT THE [TOP BERTHS.]",
+     "start": 20.571,
+     "word_idx": 4,
+     "end": 21.709
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Under them: There is no berth seventy-three. Don't sit in it.",
+   "src_start": 22.063,
+   "src_end": 25.75,
+   "start": 21.939,
+   "end": 25.626,
+   "words": [
+    {
+     "text": "Under",
+     "start": 21.989,
+     "end": 22.065
+    },
+    {
+     "text": "them:",
+     "start": 22.14,
+     "end": 22.706
+    },
+    {
+     "text": "There",
+     "start": 22.744,
+     "end": 22.895
+    },
+    {
+     "text": "is",
+     "start": 22.97,
+     "end": 23.121
+    },
+    {
+     "text": "no",
+     "start": 23.197,
+     "end": 23.348
+    },
+    {
+     "text": "berth",
+     "start": 23.423,
+     "end": 23.65
+    },
+    {
+     "text": "seventy-three.",
+     "start": 23.725,
+     "end": 24.668
+    },
+    {
+     "text": "Don't",
+     "start": 24.706,
+     "end": 24.933
+    },
+    {
+     "text": "sit",
+     "start": 25.008,
+     "end": 25.084
+    },
+    {
+     "text": "in",
+     "start": 25.159,
+     "end": 25.235
+    },
+    {
+     "text": "it.",
+     "start": 25.348,
+     "end": 25.626
+    }
+   ],
+   "captions": [
+    {
+     "text": "UNDER THEM:",
+     "start": 21.989,
+     "word_idx": 0,
+     "end": 22.744
+    },
+    {
+     "text": "[THERE IS NO BERTH 73.]",
+     "start": 22.744,
+     "word_idx": 2,
+     "end": 24.706
+    },
+    {
+     "text": "{DON'T SIT IN IT.}",
+     "start": 24.706,
+     "word_idx": 7,
+     "end": 25.746
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "Next station. You count. Seventy-three.",
+   "src_start": 25.988,
+   "src_end": 29.25,
+   "start": 26.076,
+   "end": 29.338,
+   "words": [
+    {
+     "text": "Next",
+     "start": 26.126,
+     "end": 26.277
+    },
+    {
+     "text": "station.",
+     "start": 26.352,
+     "end": 27.145
+    },
+    {
+     "text": "You",
+     "start": 27.183,
+     "end": 27.334
+    },
+    {
+     "text": "count.",
+     "start": 27.522,
+     "end": 27.975
+    },
+    {
+     "text": "Seventy-three.",
+     "start": 28.36,
+     "end": 29.338
+    }
+   ],
+   "captions": [
+    {
+     "text": "NEXT STATION.",
+     "start": 26.126,
+     "word_idx": 0,
+     "end": 27.183
+    },
+    {
+     "text": "YOU [COUNT.]",
+     "start": 27.183,
+     "word_idx": 2,
+     "end": 28.36
+    },
+    {
+     "text": "{73.}",
+     "start": 28.36,
+     "word_idx": 4,
+     "end": 29.458
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "The chart says seventy-two names.",
+   "src_start": 29.509,
+   "src_end": 31.42,
+   "start": 29.638,
+   "end": 31.549,
+   "words": [
+    {
+     "text": "The",
+     "start": 29.688,
+     "end": 29.714
+    },
+    {
+     "text": "chart",
+     "start": 29.789,
+     "end": 30.016
+    },
+    {
+     "text": "says",
+     "start": 30.091,
+     "end": 30.318
+    },
+    {
+     "text": "seventy-two",
+     "start": 30.393,
+     "end": 30.921
+    },
+    {
+     "text": "names.",
+     "start": 30.997,
+     "end": 31.549
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE CHART SAYS",
+     "start": 29.688,
+     "word_idx": 0,
+     "end": 30.393
+    },
+    {
+     "text": "[72 NAMES.]",
+     "start": 30.393,
+     "word_idx": 3,
+     "end": 31.669
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "Rule two. You don't count again.",
+   "src_start": 31.648,
+   "src_end": 33.8,
+   "start": 31.949,
+   "end": 34.101,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 31.999,
+     "end": 32.225
+    },
+    {
+     "text": "two.",
+     "start": 32.301,
+     "end": 32.867
+    },
+    {
+     "text": "You",
+     "start": 32.905,
+     "end": 33.055
+    },
+    {
+     "text": "don't",
+     "start": 33.131,
+     "end": 33.357
+    },
+    {
+     "text": "count",
+     "start": 33.471,
+     "end": 33.584
+    },
+    {
+     "text": "again.",
+     "start": 33.659,
+     "end": 34.101
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 2.]",
+     "start": 31.999,
+     "word_idx": 0,
+     "end": 32.905
+    },
+    {
+     "text": "YOU DON'T COUNT AGAIN.",
+     "start": 32.905,
+     "word_idx": 2,
+     "end": 34.221
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Above you, someone does. Seventy-one. Seventy-two.",
+   "src_start": 33.988,
+   "src_end": 37.92,
+   "start": 34.501,
+   "end": 38.433,
+   "words": [
+    {
+     "text": "Above",
+     "start": 34.551,
+     "end": 34.853
+    },
+    {
+     "text": "you,",
+     "start": 34.928,
+     "end": 35.343
+    },
+    {
+     "text": "someone",
+     "start": 35.381,
+     "end": 35.683
+    },
+    {
+     "text": "does.",
+     "start": 35.758,
+     "end": 36.475
+    },
+    {
+     "text": "Seventy-one.",
+     "start": 36.513,
+     "end": 37.607
+    },
+    {
+     "text": "Seventy-two.",
+     "start": 37.645,
+     "end": 38.433
+    }
+   ],
+   "captions": [
+    {
+     "text": "{ABOVE YOU,}",
+     "start": 34.551,
+     "word_idx": 0,
+     "end": 35.381
+    },
+    {
+     "text": "SOMEONE [DOES.]",
+     "start": 35.381,
+     "word_idx": 2,
+     "end": 36.513
+    },
+    {
+     "text": "71.",
+     "start": 36.513,
+     "word_idx": 4,
+     "end": 37.645
+    },
+    {
+     "text": "72.",
+     "start": 37.645,
+     "word_idx": 5,
+     "end": 38.553
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "Seventy-three.",
+   "src_start": 38.214,
+   "src_end": 39.17,
+   "start": 38.733,
+   "end": 39.689,
+   "words": [
+    {
+     "text": "Seventy-three.",
+     "start": 38.783,
+     "end": 39.689
+    }
+   ],
+   "captions": [
+    {
+     "text": "{73.}",
+     "start": 38.783,
+     "word_idx": 0,
+     "end": 39.809
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "Rule three. Never look up.",
+   "src_start": 39.346,
+   "src_end": 41.34,
+   "start": 40.139,
+   "end": 42.133,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 40.189,
+     "end": 40.415
+    },
+    {
+     "text": "three.",
+     "start": 40.491,
+     "end": 41.17
+    },
+    {
+     "text": "Never",
+     "start": 41.245,
+     "end": 41.472
+    },
+    {
+     "text": "look",
+     "start": 41.547,
+     "end": 41.698
+    },
+    {
+     "text": "up.",
+     "start": 41.774,
+     "end": 42.133
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 3.]",
+     "start": 40.189,
+     "word_idx": 0,
+     "end": 41.245
+    },
+    {
+     "text": "{NEVER LOOK UP.}",
+     "start": 41.245,
+     "word_idx": 2,
+     "end": 42.253
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "You look up.",
+   "src_start": 41.61,
+   "src_end": 42.51,
+   "start": 42.533,
+   "end": 43.432,
+   "words": [
+    {
+     "text": "You",
+     "start": 42.583,
+     "end": 42.734
+    },
+    {
+     "text": "look",
+     "start": 42.847,
+     "end": 42.96
+    },
+    {
+     "text": "up.",
+     "start": 43.035,
+     "end": 43.432
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU {LOOK UP.}",
+     "start": 42.583,
+     "word_idx": 0,
+     "end": 43.552
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "A man hangs upside down from the top berth.",
+   "src_start": 42.717,
+   "src_end": 45.22,
+   "start": 43.732,
+   "end": 46.235,
+   "words": [
+    {
+     "text": "A",
+     "start": 43.782,
+     "end": 43.808
+    },
+    {
+     "text": "man",
+     "start": 43.883,
+     "end": 44.11
+    },
+    {
+     "text": "hangs",
+     "start": 44.185,
+     "end": 44.412
+    },
+    {
+     "text": "upside",
+     "start": 44.487,
+     "end": 44.864
+    },
+    {
+     "text": "down",
+     "start": 44.978,
+     "end": 45.091
+    },
+    {
+     "text": "from",
+     "start": 45.166,
+     "end": 45.242
+    },
+    {
+     "text": "the",
+     "start": 45.317,
+     "end": 45.393
+    },
+    {
+     "text": "top",
+     "start": 45.468,
+     "end": 45.695
+    },
+    {
+     "text": "berth.",
+     "start": 45.808,
+     "end": 46.235
+    }
+   ],
+   "captions": [
+    {
+     "text": "A MAN",
+     "start": 43.782,
+     "word_idx": 0,
+     "end": 44.185
+    },
+    {
+     "text": "{HANGS UPSIDE DOWN}",
+     "start": 44.185,
+     "word_idx": 2,
+     "end": 45.166
+    },
+    {
+     "text": "FROM THE [TOP BERTH.]",
+     "start": 45.166,
+     "word_idx": 5,
+     "end": 46.355
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "His face is level with yours.",
+   "src_start": 45.308,
+   "src_end": 47.19,
+   "start": 46.535,
+   "end": 48.417,
+   "words": [
+    {
+     "text": "His",
+     "start": 46.585,
+     "end": 46.736
+    },
+    {
+     "text": "face",
+     "start": 46.812,
+     "end": 47.114
+    },
+    {
+     "text": "is",
+     "start": 47.189,
+     "end": 47.34
+    },
+    {
+     "text": "level",
+     "start": 47.415,
+     "end": 47.642
+    },
+    {
+     "text": "with",
+     "start": 47.717,
+     "end": 47.868
+    },
+    {
+     "text": "yours.",
+     "start": 47.906,
+     "end": 48.417
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIS [FACE] IS",
+     "start": 46.585,
+     "word_idx": 0,
+     "end": 47.415
+    },
+    {
+     "text": "{LEVEL WITH YOURS.}",
+     "start": 47.415,
+     "word_idx": 3,
+     "end": 48.537
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "He smiles. You forgot to count yourself.",
+   "src_start": 47.447,
+   "src_end": 49.95,
+   "start": 48.867,
+   "end": 51.37,
+   "words": [
+    {
+     "text": "He",
+     "start": 48.917,
+     "end": 48.967
+    },
+    {
+     "text": "smiles.",
+     "start": 49.042,
+     "end": 49.922
+    },
+    {
+     "text": "You",
+     "start": 49.973,
+     "end": 50.023
+    },
+    {
+     "text": "forgot",
+     "start": 50.174,
+     "end": 50.325
+    },
+    {
+     "text": "to",
+     "start": 50.401,
+     "end": 50.476
+    },
+    {
+     "text": "count",
+     "start": 50.589,
+     "end": 50.703
+    },
+    {
+     "text": "yourself.",
+     "start": 50.778,
+     "end": 51.37
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE {SMILES.}",
+     "start": 48.917,
+     "word_idx": 0,
+     "end": 49.973
+    },
+    {
+     "text": "YOU FORGOT TO",
+     "start": 49.973,
+     "word_idx": 2,
+     "end": 50.589
+    },
+    {
+     "text": "{COUNT YOURSELF.}",
+     "start": 50.589,
+     "word_idx": 5,
+     "end": 51.49
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "A tunnel. The lights die.",
+   "src_start": 50.264,
+   "src_end": 51.9,
+   "start": 51.87,
+   "end": 53.505,
+   "words": [
+    {
+     "text": "A",
+     "start": 51.92,
+     "end": 51.945
+    },
+    {
+     "text": "tunnel.",
+     "start": 52.146,
+     "end": 52.587
+    },
+    {
+     "text": "The",
+     "start": 52.624,
+     "end": 52.7
+    },
+    {
+     "text": "lights",
+     "start": 52.851,
+     "end": 53.002
+    },
+    {
+     "text": "die.",
+     "start": 53.077,
+     "end": 53.505
+    }
+   ],
+   "captions": [
+    {
+     "text": "A [TUNNEL.]",
+     "start": 51.92,
+     "word_idx": 0,
+     "end": 52.624
+    },
+    {
+     "text": "THE LIGHTS {DIE.}",
+     "start": 52.624,
+     "word_idx": 2,
+     "end": 53.625
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "When they come back, he's gone.",
+   "src_start": 52.159,
+   "src_end": 53.86,
+   "start": 54.005,
+   "end": 55.706,
+   "words": [
+    {
+     "text": "When",
+     "start": 54.055,
+     "end": 54.072
+    },
+    {
+     "text": "they",
+     "start": 54.148,
+     "end": 54.223
+    },
+    {
+     "text": "come",
+     "start": 54.299,
+     "end": 54.374
+    },
+    {
+     "text": "back,",
+     "start": 54.45,
+     "end": 55.004
+    },
+    {
+     "text": "he's",
+     "start": 55.028,
+     "end": 55.205
+    },
+    {
+     "text": "gone.",
+     "start": 55.28,
+     "end": 55.706
+    }
+   ],
+   "captions": [
+    {
+     "text": "WHEN THEY COME BACK,",
+     "start": 54.055,
+     "word_idx": 0,
+     "end": 55.028
+    },
+    {
+     "text": "HE'S [GONE.]",
+     "start": 55.028,
+     "word_idx": 4,
+     "end": 55.826
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "The chart has a new line. Berth seventy-three.",
+   "src_start": 54.122,
+   "src_end": 56.88,
+   "start": 56.156,
+   "end": 58.914,
+   "words": [
+    {
+     "text": "The",
+     "start": 56.206,
+     "end": 56.223
+    },
+    {
+     "text": "chart",
+     "start": 56.374,
+     "end": 56.525
+    },
+    {
+     "text": "has",
+     "start": 56.6,
+     "end": 56.676
+    },
+    {
+     "text": "a",
+     "start": 56.714,
+     "end": 56.751
+    },
+    {
+     "text": "new",
+     "start": 56.827,
+     "end": 56.978
+    },
+    {
+     "text": "line.",
+     "start": 57.053,
+     "end": 57.707
+    },
+    {
+     "text": "Berth",
+     "start": 57.758,
+     "end": 58.034
+    },
+    {
+     "text": "seventy-three.",
+     "start": 58.11,
+     "end": 58.914
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE CHART HAS",
+     "start": 56.206,
+     "word_idx": 0,
+     "end": 56.714
+    },
+    {
+     "text": "A [NEW LINE.]",
+     "start": 56.714,
+     "word_idx": 3,
+     "end": 57.758
+    },
+    {
+     "text": "{BERTH 73.}",
+     "start": 57.758,
+     "word_idx": 6,
+     "end": 59.034
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "Your name. And you're sitting in it.",
+   "src_start": 57.082,
+   "src_end": 59.11,
+   "start": 59.314,
+   "end": 61.342,
+   "words": [
+    {
+     "text": "Your",
+     "start": 59.364,
+     "end": 59.591
+    },
+    {
+     "text": "name.",
+     "start": 59.666,
+     "end": 60.232
+    },
+    {
+     "text": "And",
+     "start": 60.27,
+     "end": 60.345
+    },
+    {
+     "text": "you're",
+     "start": 60.421,
+     "end": 60.572
+    },
+    {
+     "text": "sitting",
+     "start": 60.647,
+     "end": 60.874
+    },
+    {
+     "text": "in",
+     "start": 60.949,
+     "end": 61.025
+    },
+    {
+     "text": "it.",
+     "start": 61.1,
+     "end": 61.342
+    }
+   ],
+   "captions": [
+    {
+     "text": "{YOUR NAME.}",
+     "start": 59.364,
+     "word_idx": 0,
+     "end": 60.27
+    },
+    {
+     "text": "AND YOU'RE",
+     "start": 60.27,
+     "word_idx": 2,
+     "end": 60.647
+    },
+    {
+     "text": "[SITTING IN IT.]",
+     "start": 60.647,
+     "word_idx": 4,
+     "end": 61.462
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "Which rule would you break? A, two. B, three.",
+   "src_start": 59.346,
+   "src_end": 63.36,
+   "start": 61.942,
+   "end": 65.956,
+   "words": [
+    {
+     "text": "Which",
+     "start": 61.992,
+     "end": 62.219
+    },
+    {
+     "text": "rule",
+     "start": 62.294,
+     "end": 62.445
+    },
+    {
+     "text": "would",
+     "start": 62.521,
+     "end": 62.672
+    },
+    {
+     "text": "you",
+     "start": 62.747,
+     "end": 62.822
+    },
+    {
+     "text": "break?",
+     "start": 62.898,
+     "end": 63.615
+    },
+    {
+     "text": "A,",
+     "start": 63.653,
+     "end": 64.143
+    },
+    {
+     "text": "two.",
+     "start": 64.181,
+     "end": 64.822
+    },
+    {
+     "text": "B,",
+     "start": 64.86,
+     "end": 65.589
+    },
+    {
+     "text": "three.",
+     "start": 65.791,
+     "end": 65.956
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 23,
+   "text": "Comment A or B.",
+   "src_start": 63.422,
+   "src_end": 64.71,
+   "start": 66.256,
+   "end": 67.544,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 66.306,
+     "end": 66.683
+    },
+    {
+     "text": "A",
+     "start": 66.91,
+     "end": 66.985
+    },
+    {
+     "text": "or",
+     "start": 67.061,
+     "end": 67.212
+    },
+    {
+     "text": "B.",
+     "start": 67.325,
+     "end": 67.544
+    }
+   ],
+   "captions": []
+  }
+ ]
+}

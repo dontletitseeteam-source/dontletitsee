@@ -176,7 +176,73 @@ def part1():
     return m1, hum
 
 
-music, beds = {1: part1}[PART]()
+def part2():
+    """NIGHT SHIFT Ep.2 — the sleeper train."""
+    lights_off = load("lights_off.mp3")
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    paper = noise_burst(0.6, 800, 5000, 41, 0.03) * 0.5
+    pen = noise_burst(0.5, 1500, 6000, 31, 0.02) * 0.4
+    click = noise_burst(0.05, 2500, 9000, 13, 0.001) * 0.7
+    clack = noise_burst(0.12, 80, 900, 5, 0.002)
+    # the train: low rumble bed + rail clacks (two per 1.1 s), muffled in the night, sharp in the tunnel
+    rng = np.random.default_rng(9); x = rng.standard_normal(N).astype(np.float32)
+    X_ = np.fft.rfft(x); f = np.fft.rfftfreq(N, 1 / SR); X_[(f < 30) | (f > 240)] = 0
+    x = np.fft.irfft(X_, N).astype(np.float32); x /= (np.abs(x).max() + 1e-9)
+    x *= (0.85 + 0.15 * np.sin(np.arange(N) / SR * 2 * np.pi * 0.9)).astype(np.float32)
+    rb = np.stack([x, x], 1) * db(-14)
+    t0 = 0.3
+    while t0 < DUR:
+        place(clack, t0, -16, buf=rb); place(clack, t0 + 0.16, -19, buf=rb); t0 += 1.1
+    rb = rb * automation([(0, 0), (K["rule2"], 0), (K["rule2"] + 0.6, -3), (K["tunnelW"] - 0.3, -3), (K["tunnelW"], 3),
+                          (K["dieW"], 3), (K["backW"], 0), (K["choice"], -2), (DUR - 1, -2), (DUR, -40)])
+    m1 = np.pad(load("music_p3.mp3"), ((0, N), (0, 0)))[:N] * automation([
+        (0, -16), (K["arms"], -15), (K["me"], -19), (K["r1"], -18), (K["last"], -16), (K["station"], -16),
+        (K["s73W"], -11), (K["chart"], -16), (K["rule2"], -16), (K["above"], -14), (K["n73W"], -11), (K["rule3"], -15),
+        (K["upW"], -11), (K["man"], -12), (K["smile"], -13), (K["dieW"], -40), (K["backW"], -16), (K["chart2"], -15),
+        (K["nameW"], -11), (K["sittingW"], -10), (K["choice"], -15), (DUR - 1.2, -15), (DUR, -40)])
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0)
+    place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    for i in range(9): place(click, K["youW"] + i * 0.06, -10)
+    place(stinger, K["c73W"] - 0.03, -11, fo=0.5, maxlen=1.2); place(boom, K["c73W"], -11, fo=0.6, maxlen=1.6)
+    place(breath, K["arms"] + 0.1, -14, fi=0.2, fo=0.5, maxlen=1.8)
+    place(boom, K["armsW"], -14, fo=0.6, maxlen=1.6)
+    place(ding_far, K["me"] + 0.1, -18, fo=0.6, maxlen=1.6)
+    place(paper, K["lastW"] - 0.1, -13)
+    for k in ("r1", "r2", "r3"): place(tick, K[k] + 0.02, -13)
+    place(boom, K["neverW"], -14, fo=0.6, maxlen=1.6)
+    place(pen, K["noW"] - 0.6, -14); place(breath, K["last"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.8)
+    place(load("buzz.mp3", "lowpass=f=1200"), K["station"], -18, maxlen=1.2, fo=0.4)
+    for i in range(33): place(click, K["countW"] + i * 0.03, -12)
+    place(riser, K["s73W"] - 0.06 - len(riser) / SR, -21, fi=1.2, fo=0.004)
+    place(stinger, K["s73W"] - 0.03, -10, fo=0.5, maxlen=1.4); place(boom, K["s73W"], -9, fo=0.6, maxlen=2.0)
+    place(paper, K["chart"] + 0.05, -13)
+    place(lights_off, K["rule2"] + 0.05, -18, maxlen=0.8, fo=0.3)
+    place(heartbeat, K["rule2"] + 0.4, -15, fi=0.1, fo=0.4, maxlen=K["above"] - K["rule2"])
+    place(breath, K["aboveW"], -12, fi=0.2, fo=0.5, maxlen=2.2)
+    place(click, K["n71"], -6); place(click, K["n72"], -6); place(click, K["n73W"], -4)
+    place(riser, K["n73W"] - 0.06 - len(riser) / SR, -19, fi=1.5, fo=0.004)
+    place(stinger, K["n73W"] - 0.03, -10, fo=0.5, maxlen=1.4); place(boom, K["n73W"], -9, fo=0.6, maxlen=2.0)
+    place(heartbeat, K["rule3"], -13, fi=0.1, fo=0.3, maxlen=K["man"] - K["rule3"])
+    place(riser, K["upW"] - 0.06 - len(riser) / SR, -18, fi=1.5, fo=0.004)
+    place(stinger, K["upW"] - 0.03, -9, fo=0.5, maxlen=1.4); place(boom, K["upW"], -8, fo=0.8, maxlen=2.2)
+    place(load("stretch.mp3"), K["hangsW"], -15, fo=0.5, maxlen=1.6)
+    place(breath, K["face"] + 0.1, -13, fi=0.2, fo=0.5, maxlen=2.0)
+    place(load("smile_stinger.mp3"), K["smilesW"] - 0.05, -10, fo=0.5, maxlen=1.6)
+    place(stinger, K["yourselfW"] - 0.03, -9, fo=0.5, maxlen=1.4); place(boom, K["yourselfW"], -8, fo=0.8, maxlen=2.2)
+    place(lights_off, K["dieW"] - 0.05, -10, maxlen=1.2, fo=0.3)
+    place(buzz, K["backW"] - 0.2, -14, maxlen=0.6, fo=0.2)
+    place(boom, K["goneW"], -14, fo=0.6, maxlen=1.6)
+    place(pen, K["lineW"] - 0.2, -13); place(pen, K["b73W"] - 0.1, -13)
+    place(stinger, K["nameW"] - 0.03, -10, fo=0.5, maxlen=1.2); place(boom, K["nameW"], -10, fo=0.6, maxlen=1.8)
+    place(riser, K["sittingW"] - 0.06 - len(riser) / SR, -18, fi=1.5, fo=0.004)
+    place(stinger, K["sittingW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["sittingW"], -7, fo=0.8, maxlen=2.4)
+    place(boom, K["choice"] - 0.1, -17, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2}[PART]()
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice
