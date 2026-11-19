@@ -17,7 +17,9 @@ poster. They communicate only through `queue.json` in this repo. **Always `git p
 - Word-synced bold captions (Montserrat Black, uppercase, 1–4 words per chunk). Script markup:
   `[word]` = lime key word, `{word}` = red threat word.
 - **Owner directive 2026-11-18: from the series after BLOCK C on, read `series/RESEARCH.md` first. It overrides
-  the older lines of this section where they differ.** In short: every post is a **standalone episode** a
+  the older lines of this section where they differ.** The creator's scheduled-task prompt could not be edited
+  from the owner's session; where it still says "80-100 seconds" or that credits run out around Dec 2-4, follow
+  this playbook (55–70 s, credits to 2026-12-08). In short: every post is a **standalone episode** a
   stranger understands with zero context (complete story, a scare you can SEE, twist inside the video); a series
   is a repeatable format, not one continuing plot; no "previously" recap; one nameable poster-image entity per
   episode, shown, on the cover and in the title.
