@@ -317,8 +317,77 @@ def part3():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3}[PART]()
-if PART == 3: sfx *= db(-1.2)
+def part4():
+    """NIGHT SHIFT Ep.4 — the petrol pump (the white car whose passengers all face backwards)."""
+    lights_off = load("lights_off.mp3"); slam = load("door_slam.mp3")
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    button = load("button.mp3")
+    clunk = noise_burst(0.12, 300, 3000, 31, 0.001) * 0.9           # nozzle clunk / pump click
+    pour = noise_burst(1.0, 400, 3500, 33, 0.05) * 0.35               # fuel pouring (looped under the meter)
+    # the highway at night: low wind + canopy hum (synth) + hum loop very low
+    rng = np.random.default_rng(4); x = rng.standard_normal(N).astype(np.float32)
+    X_ = np.fft.rfft(x); f = np.fft.rfftfreq(N, 1 / SR); X_[(f < 50) | (f > 600)] = 0
+    x = np.fft.irfft(X_, N).astype(np.float32); x /= (np.abs(x).max() + 1e-9)
+    x *= (0.7 + 0.3 * np.sin(np.arange(N) / SR * 2 * np.pi * 0.05)).astype(np.float32)
+    tone = (0.5 * np.sin(np.arange(N) / SR * 2 * np.pi * 100) + 0.25 * np.sin(np.arange(N) / SR * 2 * np.pi * 200)).astype(np.float32)
+    rb = np.stack([x, x], 1) * db(-16) + np.stack([tone, tone], 1) * db(-40) + bed("hum.mp3", "lowpass=f=400") * db(-24)
+    rb = rb * automation([(0, 0), (K["noteW"], -4), (K["fill"], 0), (K["faces"], -2), (K["full"], -2), (K["choice"], -4), (DUR - 1, -4), (DUR, -40)])
+    mu = load("music_p2.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    loop = np.pad(loop, ((0, max(0, N - len(loop))), (0, 0)))[:N]
+    m1 = loop * automation([
+        (0, -16), (K["back"], -14), (K["me"], -19), (K["r1"], -18), (K["last"], -16), (K["fill"], -16),
+        (K["l80"], -13), (K["stare"], -15), (K["rule2"], -15), (K["faceW"], -11), (K["middle"], -13),
+        (K["mouths"], -16), (K["rule3"], -15), (K["plateW"], -12), (K["numberW"], -10), (K["full"], -15),
+        (K["empty"], -13), (K["goneW"], -11), (K["newline"], -15), (K["backW"], -10),
+        (K["choice"], -15), (DUR - 1.2, -15), (DUR, -40)])
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0)
+    place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(motor, 0.0, -18, fi=0.05, fo=0.8, maxlen=K["inW"] + 0.6)
+    place(stinger, K["driverW"] - 0.03, -12, fo=0.5, maxlen=1.2)
+    place(stinger, K["backwardsW"] - 0.03, -11, fo=0.5, maxlen=1.2); place(boom, K["backwardsW"], -11, fo=0.6, maxlen=1.6)
+    place(breath, K["back"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.6)
+    place(load("shutter.mp3"), K["noteW"] - 0.05, -16)
+    for k in ("r1", "r2", "r3"): place(tick, K[k] + 0.02, -13)
+    place(breath, K["last"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.8)
+    place(stinger, K["meW"] - 0.03, -12, fo=0.5, maxlen=1.2); place(boom, K["meW"], -13, fo=0.6, maxlen=1.6)
+    place(clunk, K["fillW"], -10)
+    tpour = K["fillW"] + 0.1
+    while tpour < K["stare"] - 0.3:
+        place(pour, tpour, -17, fi=0.1, fo=0.1); tpour += 0.9
+    for i in range(int((K["stare"] - K["meterW"]) / 0.12)): place(tick, K["meterW"] + i * 0.12, -24, maxlen=0.05)
+    place(riser, K["l80"] - 0.06 - len(riser) / SR, -21, fi=1.2, fo=0.004)
+    place(boom, K["l80"], -12, fo=0.6, maxlen=1.8)
+    place(breath, K["stare"] + 0.1, -12, fi=0.2, fo=0.5, maxlen=1.8)
+    place(clunk, K["jamsW"] - 0.05, -8); place(clunk, K["jamsW"] + 0.15, -10)
+    place(heartbeat, K["stepW"], -15, fi=0.1, fo=0.3, maxlen=K["faces"] - K["stepW"] + 0.2)
+    place(riser, K["faceW"] - 0.06 - len(riser) / SR, -18, fi=1.5, fo=0.004)
+    place(stinger, K["faceW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["faceW"], -8, fo=0.8, maxlen=2.2)
+    place(load("smile_stinger.mp3"), K["youW"] - 0.05, -11, fo=0.5, maxlen=1.6)
+    place(stinger, K["attW"] - 0.03, -12, fo=0.5, maxlen=1.2)
+    place(breath, K["mouthsW"] - 0.1, -10, fi=0.1, fo=0.5, maxlen=2.0)
+    place(heartbeat, K["rule3"], -13, fi=0.1, fo=0.3, maxlen=K["bike"] - K["rule3"])
+    place(stinger, K["plateW"] - 0.03, -10, fo=0.5, maxlen=1.2); place(boom, K["plateW"], -11, fo=0.6, maxlen=1.6)
+    place(riser, K["numberW"] - 0.06 - len(riser) / SR, -19, fi=1.5, fo=0.004)
+    place(stinger, K["numberW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["numberW"], -7, fo=0.8, maxlen=2.4)
+    place(clunk, K["clicksW"] - 0.02, -6); place(ding, K["clicksW"] + 0.05, -16, fo=0.4, maxlen=0.8)
+    place(motor, K["carGo"] - 0.1, -14, fi=0.1, fo=1.0, maxlen=2.4)
+    place(breath, K["empty"] + 0.1, -12, fi=0.2, fo=0.5, maxlen=2.0)
+    place(stinger, K["waitingW"] - 0.03, -10, fo=0.5, maxlen=1.2)
+    place(riser, K["goneW"] - 0.06 - len(riser) / SR, -20, fi=1.5, fo=0.004)
+    place(boom, K["goneW"], -9, fo=0.8, maxlen=2.0)
+    place(load("typing.mp3"), K["handW"] - 0.3, -18, fo=0.3, maxlen=1.4)
+    place(breath, K["imW"] - 0.1, -11, fi=0.1, fo=0.5, maxlen=1.6)
+    place(stinger, K["backW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["backW"], -7, fo=0.8, maxlen=2.4)
+    place(boom, K["choice"] - 0.1, -17, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4}[PART]()
+if PART in (3, 4): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

@@ -1,0 +1,1461 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 69.562,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Two twenty-two. A white car rolls in. No driver.",
+   "src_start": 0.101,
+   "src_end": 4.81,
+   "start": 0.15,
+   "end": 4.859,
+   "words": [
+    {
+     "text": "Two",
+     "start": 0.2,
+     "end": 0.275
+    },
+    {
+     "text": "twenty-two.",
+     "start": 0.426,
+     "end": 1.408
+    },
+    {
+     "text": "A",
+     "start": 1.709,
+     "end": 1.785
+    },
+    {
+     "text": "white",
+     "start": 1.86,
+     "end": 2.087
+    },
+    {
+     "text": "car",
+     "start": 2.162,
+     "end": 2.389
+    },
+    {
+     "text": "rolls",
+     "start": 2.464,
+     "end": 2.766
+    },
+    {
+     "text": "in.",
+     "start": 2.842,
+     "end": 3.294
+    },
+    {
+     "text": "No",
+     "start": 3.596,
+     "end": 3.672
+    },
+    {
+     "text": "driver.",
+     "start": 3.747,
+     "end": 4.502
+    }
+   ],
+   "captions": [
+    {
+     "text": "[2:22.]",
+     "start": 0.2,
+     "word_idx": 0,
+     "end": 1.709
+    },
+    {
+     "text": "A WHITE [CAR] ROLLS IN.",
+     "start": 1.709,
+     "word_idx": 2,
+     "end": 3.596
+    },
+    {
+     "text": "{NO DRIVER.}",
+     "start": 3.596,
+     "word_idx": 7,
+     "end": 4.979
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "Every passenger sits facing backwards.",
+   "src_start": 4.78,
+   "src_end": 7.57,
+   "start": 5.079,
+   "end": 7.869,
+   "words": [
+    {
+     "text": "Every",
+     "start": 5.129,
+     "end": 5.356
+    },
+    {
+     "text": "passenger",
+     "start": 5.431,
+     "end": 5.884
+    },
+    {
+     "text": "sits",
+     "start": 6.035,
+     "end": 6.261
+    },
+    {
+     "text": "facing",
+     "start": 6.337,
+     "end": 6.639
+    },
+    {
+     "text": "backwards.",
+     "start": 6.714,
+     "end": 7.337
+    }
+   ],
+   "captions": [
+    {
+     "text": "EVERY PASSENGER",
+     "start": 5.129,
+     "word_idx": 0,
+     "end": 6.035
+    },
+    {
+     "text": "SITS {FACING BACKWARDS.}",
+     "start": 6.035,
+     "word_idx": 2,
+     "end": 7.989
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Your first night at the pump. The last attendant left a note.",
+   "src_start": 7.648,
+   "src_end": 11.22,
+   "start": 8.189,
+   "end": 11.761,
+   "words": [
+    {
+     "text": "Your",
+     "start": 8.239,
+     "end": 8.39
+    },
+    {
+     "text": "first",
+     "start": 8.465,
+     "end": 8.692
+    },
+    {
+     "text": "night",
+     "start": 8.767,
+     "end": 8.918
+    },
+    {
+     "text": "at",
+     "start": 8.956,
+     "end": 8.994
+    },
+    {
+     "text": "the",
+     "start": 9.069,
+     "end": 9.145
+    },
+    {
+     "text": "pump.",
+     "start": 9.22,
+     "end": 9.748
+    },
+    {
+     "text": "The",
+     "start": 9.975,
+     "end": 10.05
+    },
+    {
+     "text": "last",
+     "start": 10.164,
+     "end": 10.277
+    },
+    {
+     "text": "attendant",
+     "start": 10.352,
+     "end": 10.805
+    },
+    {
+     "text": "left",
+     "start": 10.881,
+     "end": 10.956
+    },
+    {
+     "text": "a",
+     "start": 11.032,
+     "end": 11.107
+    },
+    {
+     "text": "note.",
+     "start": 11.258,
+     "end": 11.711
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR FIRST NIGHT AT",
+     "start": 8.239,
+     "word_idx": 0,
+     "end": 9.069
+    },
+    {
+     "text": "THE [PUMP.]",
+     "start": 9.069,
+     "word_idx": 4,
+     "end": 9.975
+    },
+    {
+     "text": "THE LAST ATTENDANT",
+     "start": 9.975,
+     "word_idx": 6,
+     "end": 10.881
+    },
+    {
+     "text": "LEFT A [NOTE.]",
+     "start": 10.881,
+     "word_idx": 9,
+     "end": 11.881
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "One. Fill the white car. Full tank. Take no money.",
+   "src_start": 11.497,
+   "src_end": 15.59,
+   "start": 12.031,
+   "end": 16.124,
+   "words": [
+    {
+     "text": "One.",
+     "start": 12.081,
+     "end": 12.609
+    },
+    {
+     "text": "Fill",
+     "start": 12.836,
+     "end": 12.987
+    },
+    {
+     "text": "the",
+     "start": 13.062,
+     "end": 13.138
+    },
+    {
+     "text": "white",
+     "start": 13.213,
+     "end": 13.364
+    },
+    {
+     "text": "car.",
+     "start": 13.439,
+     "end": 13.968
+    },
+    {
+     "text": "Full",
+     "start": 14.194,
+     "end": 14.345
+    },
+    {
+     "text": "tank.",
+     "start": 14.421,
+     "end": 14.949
+    },
+    {
+     "text": "Take",
+     "start": 15.1,
+     "end": 15.251
+    },
+    {
+     "text": "no",
+     "start": 15.477,
+     "end": 15.553
+    },
+    {
+     "text": "money.",
+     "start": 15.704,
+     "end": 16.124
+    }
+   ],
+   "captions": [
+    {
+     "text": "ONE.",
+     "start": 12.081,
+     "word_idx": 0,
+     "end": 12.836
+    },
+    {
+     "text": "FILL THE [WHITE CAR.]",
+     "start": 12.836,
+     "word_idx": 1,
+     "end": 14.194
+    },
+    {
+     "text": "FULL TANK.",
+     "start": 14.194,
+     "word_idx": 5,
+     "end": 15.1
+    },
+    {
+     "text": "{TAKE NO MONEY.}",
+     "start": 15.1,
+     "word_idx": 7,
+     "end": 16.244
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "Two. Never stand behind it.",
+   "src_start": 15.875,
+   "src_end": 18.07,
+   "start": 16.394,
+   "end": 18.589,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 16.444,
+     "end": 17.01
+    },
+    {
+     "text": "Never",
+     "start": 17.274,
+     "end": 17.5
+    },
+    {
+     "text": "stand",
+     "start": 17.651,
+     "end": 17.878
+    },
+    {
+     "text": "behind",
+     "start": 17.953,
+     "end": 18.255
+    },
+    {
+     "text": "it.",
+     "start": 18.331,
+     "end": 18.589
+    }
+   ],
+   "captions": [
+    {
+     "text": "TWO.",
+     "start": 16.444,
+     "word_idx": 0,
+     "end": 17.274
+    },
+    {
+     "text": "{NEVER STAND} [BEHIND IT.]",
+     "start": 17.274,
+     "word_idx": 1,
+     "end": 18.709
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Three. Never read the number plate.",
+   "src_start": 18.365,
+   "src_end": 20.58,
+   "start": 18.859,
+   "end": 21.074,
+   "words": [
+    {
+     "text": "Three.",
+     "start": 18.909,
+     "end": 19.438
+    },
+    {
+     "text": "Never",
+     "start": 19.664,
+     "end": 19.89
+    },
+    {
+     "text": "read",
+     "start": 20.041,
+     "end": 20.192
+    },
+    {
+     "text": "the",
+     "start": 20.23,
+     "end": 20.268
+    },
+    {
+     "text": "number",
+     "start": 20.343,
+     "end": 20.57
+    },
+    {
+     "text": "plate.",
+     "start": 20.645,
+     "end": 21.074
+    }
+   ],
+   "captions": [
+    {
+     "text": "THREE.",
+     "start": 18.909,
+     "word_idx": 0,
+     "end": 19.664
+    },
+    {
+     "text": "{NEVER READ}",
+     "start": 19.664,
+     "word_idx": 1,
+     "end": 20.23
+    },
+    {
+     "text": "THE [NUMBER PLATE.]",
+     "start": 20.23,
+     "word_idx": 3,
+     "end": 21.194
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Under them: Don't wait for me.",
+   "src_start": 20.78,
+   "src_end": 22.75,
+   "start": 21.344,
+   "end": 23.314,
+   "words": [
+    {
+     "text": "Under",
+     "start": 21.394,
+     "end": 21.621
+    },
+    {
+     "text": "them:",
+     "start": 21.696,
+     "end": 22.149
+    },
+    {
+     "text": "Don't",
+     "start": 22.375,
+     "end": 22.526
+    },
+    {
+     "text": "wait",
+     "start": 22.602,
+     "end": 22.753
+    },
+    {
+     "text": "for",
+     "start": 22.828,
+     "end": 22.979
+    },
+    {
+     "text": "me.",
+     "start": 23.092,
+     "end": 23.314
+    }
+   ],
+   "captions": [
+    {
+     "text": "UNDER THEM:",
+     "start": 21.394,
+     "word_idx": 0,
+     "end": 22.375
+    },
+    {
+     "text": "[DON'T WAIT FOR ME.]",
+     "start": 22.375,
+     "word_idx": 2,
+     "end": 23.434
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "Rule one. You fill it. The meter won't stop.",
+   "src_start": 23.044,
+   "src_end": 26.27,
+   "start": 23.684,
+   "end": 26.91,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 23.734,
+     "end": 23.885
+    },
+    {
+     "text": "one.",
+     "start": 24.036,
+     "end": 24.526
+    },
+    {
+     "text": "You",
+     "start": 24.715,
+     "end": 24.866
+    },
+    {
+     "text": "fill",
+     "start": 24.942,
+     "end": 25.092
+    },
+    {
+     "text": "it.",
+     "start": 25.206,
+     "end": 25.432
+    },
+    {
+     "text": "The",
+     "start": 25.545,
+     "end": 25.621
+    },
+    {
+     "text": "meter",
+     "start": 25.696,
+     "end": 25.923
+    },
+    {
+     "text": "won't",
+     "start": 26.074,
+     "end": 26.3
+    },
+    {
+     "text": "stop.",
+     "start": 26.375,
+     "end": 26.904
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 1.]",
+     "start": 23.734,
+     "word_idx": 0,
+     "end": 24.715
+    },
+    {
+     "text": "YOU FILL IT.",
+     "start": 24.715,
+     "word_idx": 2,
+     "end": 25.545
+    },
+    {
+     "text": "THE METER {WON'T STOP.}",
+     "start": 25.545,
+     "word_idx": 5,
+     "end": 27.03
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Forty litres. Eighty. It never fills.",
+   "src_start": 26.441,
+   "src_end": 29.27,
+   "start": 27.13,
+   "end": 29.959,
+   "words": [
+    {
+     "text": "Forty",
+     "start": 27.18,
+     "end": 27.406
+    },
+    {
+     "text": "litres.",
+     "start": 27.482,
+     "end": 28.198
+    },
+    {
+     "text": "Eighty.",
+     "start": 28.236,
+     "end": 28.915
+    },
+    {
+     "text": "It",
+     "start": 28.991,
+     "end": 29.066
+    },
+    {
+     "text": "never",
+     "start": 29.217,
+     "end": 29.368
+    },
+    {
+     "text": "fills.",
+     "start": 29.444,
+     "end": 29.959
+    }
+   ],
+   "captions": [
+    {
+     "text": "[40 LITRES.]",
+     "start": 27.18,
+     "word_idx": 0,
+     "end": 28.236
+    },
+    {
+     "text": "[80.]",
+     "start": 28.236,
+     "word_idx": 2,
+     "end": 28.991
+    },
+    {
+     "text": "IT {NEVER FILLS.}",
+     "start": 28.991,
+     "word_idx": 3,
+     "end": 30.079
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "They stare at the road behind.",
+   "src_start": 29.459,
+   "src_end": 31.06,
+   "start": 30.229,
+   "end": 31.83,
+   "words": [
+    {
+     "text": "They",
+     "start": 30.279,
+     "end": 30.43
+    },
+    {
+     "text": "stare",
+     "start": 30.505,
+     "end": 30.732
+    },
+    {
+     "text": "at",
+     "start": 30.77,
+     "end": 30.807
+    },
+    {
+     "text": "the",
+     "start": 30.883,
+     "end": 30.958
+    },
+    {
+     "text": "road",
+     "start": 31.072,
+     "end": 31.185
+    },
+    {
+     "text": "behind.",
+     "start": 31.26,
+     "end": 31.83
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEY {STARE}",
+     "start": 30.279,
+     "word_idx": 0,
+     "end": 30.77
+    },
+    {
+     "text": "AT THE ROAD [BEHIND.]",
+     "start": 30.77,
+     "word_idx": 2,
+     "end": 31.95
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Rule two. The nozzle jams. You step behind the car.",
+   "src_start": 31.271,
+   "src_end": 34.64,
+   "start": 32.2,
+   "end": 35.569,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 32.25,
+     "end": 32.476
+    },
+    {
+     "text": "two.",
+     "start": 32.552,
+     "end": 33.105
+    },
+    {
+     "text": "The",
+     "start": 33.13,
+     "end": 33.155
+    },
+    {
+     "text": "nozzle",
+     "start": 33.231,
+     "end": 33.533
+    },
+    {
+     "text": "jams.",
+     "start": 33.608,
+     "end": 34.325
+    },
+    {
+     "text": "You",
+     "start": 34.363,
+     "end": 34.438
+    },
+    {
+     "text": "step",
+     "start": 34.514,
+     "end": 34.665
+    },
+    {
+     "text": "behind",
+     "start": 34.74,
+     "end": 34.967
+    },
+    {
+     "text": "the",
+     "start": 35.042,
+     "end": 35.118
+    },
+    {
+     "text": "car.",
+     "start": 35.268,
+     "end": 35.569
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 2.]",
+     "start": 32.25,
+     "word_idx": 0,
+     "end": 33.13
+    },
+    {
+     "text": "THE NOZZLE {JAMS.}",
+     "start": 33.13,
+     "word_idx": 2,
+     "end": 34.363
+    },
+    {
+     "text": "YOU STEP {BEHIND THE CAR.}",
+     "start": 34.363,
+     "word_idx": 5,
+     "end": 35.689
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "Every face in the back window is looking at you.",
+   "src_start": 34.818,
+   "src_end": 38.03,
+   "start": 35.889,
+   "end": 39.101,
+   "words": [
+    {
+     "text": "Every",
+     "start": 35.939,
+     "end": 36.316
+    },
+    {
+     "text": "face",
+     "start": 36.392,
+     "end": 36.694
+    },
+    {
+     "text": "in",
+     "start": 36.769,
+     "end": 36.845
+    },
+    {
+     "text": "the",
+     "start": 36.92,
+     "end": 36.995
+    },
+    {
+     "text": "back",
+     "start": 37.071,
+     "end": 37.297
+    },
+    {
+     "text": "window",
+     "start": 37.373,
+     "end": 37.977
+    },
+    {
+     "text": "is",
+     "start": 38.052,
+     "end": 38.203
+    },
+    {
+     "text": "looking",
+     "start": 38.278,
+     "end": 38.505
+    },
+    {
+     "text": "at",
+     "start": 38.58,
+     "end": 38.731
+    },
+    {
+     "text": "you.",
+     "start": 38.807,
+     "end": 39.101
+    }
+   ],
+   "captions": [
+    {
+     "text": "EVERY {FACE}",
+     "start": 35.939,
+     "word_idx": 0,
+     "end": 36.769
+    },
+    {
+     "text": "IN THE BACK WINDOW",
+     "start": 36.769,
+     "word_idx": 2,
+     "end": 38.052
+    },
+    {
+     "text": "IS {LOOKING AT YOU.}",
+     "start": 38.052,
+     "word_idx": 6,
+     "end": 39.221
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "In the middle: the last attendant. Still in uniform.",
+   "src_start": 38.29,
+   "src_end": 41.42,
+   "start": 39.421,
+   "end": 42.551,
+   "words": [
+    {
+     "text": "In",
+     "start": 39.471,
+     "end": 39.546
+    },
+    {
+     "text": "the",
+     "start": 39.584,
+     "end": 39.622
+    },
+    {
+     "text": "middle:",
+     "start": 39.697,
+     "end": 40.276
+    },
+    {
+     "text": "the",
+     "start": 40.327,
+     "end": 40.377
+    },
+    {
+     "text": "last",
+     "start": 40.49,
+     "end": 40.603
+    },
+    {
+     "text": "attendant.",
+     "start": 40.678,
+     "end": 41.471
+    },
+    {
+     "text": "Still",
+     "start": 41.509,
+     "end": 41.735
+    },
+    {
+     "text": "in",
+     "start": 41.811,
+     "end": 41.886
+    },
+    {
+     "text": "uniform.",
+     "start": 41.962,
+     "end": 42.551
+    }
+   ],
+   "captions": [
+    {
+     "text": "IN THE MIDDLE:",
+     "start": 39.471,
+     "word_idx": 0,
+     "end": 40.327
+    },
+    {
+     "text": "THE {LAST ATTENDANT.}",
+     "start": 40.327,
+     "word_idx": 3,
+     "end": 41.509
+    },
+    {
+     "text": "STILL IN [UNIFORM.]",
+     "start": 41.509,
+     "word_idx": 6,
+     "end": 42.671
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "He mouths: Don't read it.",
+   "src_start": 41.675,
+   "src_end": 43.26,
+   "start": 42.821,
+   "end": 44.406,
+   "words": [
+    {
+     "text": "He",
+     "start": 42.871,
+     "end": 42.882
+    },
+    {
+     "text": "mouths:",
+     "start": 43.07,
+     "end": 43.611
+    },
+    {
+     "text": "Don't",
+     "start": 43.662,
+     "end": 43.863
+    },
+    {
+     "text": "read",
+     "start": 43.976,
+     "end": 44.089
+    },
+    {
+     "text": "it.",
+     "start": 44.165,
+     "end": 44.406
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE {MOUTHS:}",
+     "start": 42.871,
+     "word_idx": 0,
+     "end": 43.662
+    },
+    {
+     "text": "[DON'T READ IT.]",
+     "start": 43.662,
+     "word_idx": 2,
+     "end": 44.526
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "Rule three. Your eyes drop to the plate.",
+   "src_start": 43.422,
+   "src_end": 45.85,
+   "start": 44.776,
+   "end": 47.204,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 44.826,
+     "end": 45.052
+    },
+    {
+     "text": "three.",
+     "start": 45.128,
+     "end": 45.782
+    },
+    {
+     "text": "Your",
+     "start": 45.832,
+     "end": 45.882
+    },
+    {
+     "text": "eyes",
+     "start": 45.958,
+     "end": 46.184
+    },
+    {
+     "text": "drop",
+     "start": 46.26,
+     "end": 46.486
+    },
+    {
+     "text": "to",
+     "start": 46.524,
+     "end": 46.562
+    },
+    {
+     "text": "the",
+     "start": 46.637,
+     "end": 46.713
+    },
+    {
+     "text": "plate.",
+     "start": 46.788,
+     "end": 47.204
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 3.]",
+     "start": 44.826,
+     "word_idx": 0,
+     "end": 45.832
+    },
+    {
+     "text": "YOUR EYES DROP",
+     "start": 45.832,
+     "word_idx": 2,
+     "end": 46.524
+    },
+    {
+     "text": "TO THE {PLATE.}",
+     "start": 46.524,
+     "word_idx": 5,
+     "end": 47.324
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "It's your bike's number.",
+   "src_start": 46.063,
+   "src_end": 47.63,
+   "start": 47.524,
+   "end": 49.091,
+   "words": [
+    {
+     "text": "It's",
+     "start": 47.574,
+     "end": 47.801
+    },
+    {
+     "text": "your",
+     "start": 47.876,
+     "end": 48.102
+    },
+    {
+     "text": "bike's",
+     "start": 48.178,
+     "end": 48.48
+    },
+    {
+     "text": "number.",
+     "start": 48.555,
+     "end": 49.091
+    }
+   ],
+   "captions": [
+    {
+     "text": "IT'S {YOUR BIKE'S} NUMBER.",
+     "start": 47.574,
+     "word_idx": 0,
+     "end": 49.211
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "The pump clicks full. The car pulls away.",
+   "src_start": 47.799,
+   "src_end": 50.35,
+   "start": 49.511,
+   "end": 52.062,
+   "words": [
+    {
+     "text": "The",
+     "start": 49.561,
+     "end": 49.636
+    },
+    {
+     "text": "pump",
+     "start": 49.712,
+     "end": 49.863
+    },
+    {
+     "text": "clicks",
+     "start": 49.938,
+     "end": 50.24
+    },
+    {
+     "text": "full.",
+     "start": 50.316,
+     "end": 50.806
+    },
+    {
+     "text": "The",
+     "start": 50.844,
+     "end": 50.919
+    },
+    {
+     "text": "car",
+     "start": 50.995,
+     "end": 51.221
+    },
+    {
+     "text": "pulls",
+     "start": 51.297,
+     "end": 51.674
+    },
+    {
+     "text": "away.",
+     "start": 51.901,
+     "end": 52.062
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE PUMP CLICKS [FULL.]",
+     "start": 49.561,
+     "word_idx": 0,
+     "end": 50.844
+    },
+    {
+     "text": "THE CAR PULLS AWAY.",
+     "start": 50.844,
+     "word_idx": 4,
+     "end": 52.182
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "One back seat is empty. Waiting.",
+   "src_start": 50.592,
+   "src_end": 52.64,
+   "start": 52.382,
+   "end": 54.43,
+   "words": [
+    {
+     "text": "One",
+     "start": 52.432,
+     "end": 52.507
+    },
+    {
+     "text": "back",
+     "start": 52.621,
+     "end": 52.734
+    },
+    {
+     "text": "seat",
+     "start": 52.809,
+     "end": 52.96
+    },
+    {
+     "text": "is",
+     "start": 53.036,
+     "end": 53.111
+    },
+    {
+     "text": "empty.",
+     "start": 53.187,
+     "end": 53.866
+    },
+    {
+     "text": "Waiting.",
+     "start": 53.941,
+     "end": 54.43
+    }
+   ],
+   "captions": [
+    {
+     "text": "ONE BACK SEAT",
+     "start": 52.432,
+     "word_idx": 0,
+     "end": 53.036
+    },
+    {
+     "text": "IS {EMPTY.}",
+     "start": 53.036,
+     "word_idx": 3,
+     "end": 53.941
+    },
+    {
+     "text": "{WAITING.}",
+     "start": 53.941,
+     "word_idx": 5,
+     "end": 54.55
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "You look for your bike. It's gone.",
+   "src_start": 52.923,
+   "src_end": 54.71,
+   "start": 54.8,
+   "end": 56.588,
+   "words": [
+    {
+     "text": "You",
+     "start": 54.85,
+     "end": 54.859
+    },
+    {
+     "text": "look",
+     "start": 54.934,
+     "end": 55.01
+    },
+    {
+     "text": "for",
+     "start": 55.048,
+     "end": 55.085
+    },
+    {
+     "text": "your",
+     "start": 55.161,
+     "end": 55.236
+    },
+    {
+     "text": "bike.",
+     "start": 55.312,
+     "end": 55.878
+    },
+    {
+     "text": "It's",
+     "start": 55.915,
+     "end": 56.066
+    },
+    {
+     "text": "gone.",
+     "start": 56.142,
+     "end": 56.588
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU LOOK FOR YOUR [BIKE.]",
+     "start": 54.85,
+     "word_idx": 0,
+     "end": 55.915
+    },
+    {
+     "text": "{IT'S GONE.}",
+     "start": 55.915,
+     "word_idx": 5,
+     "end": 56.708
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "A new line on the note. In your handwriting.",
+   "src_start": 54.952,
+   "src_end": 57.32,
+   "start": 56.958,
+   "end": 59.326,
+   "words": [
+    {
+     "text": "A",
+     "start": 57.008,
+     "end": 57.025
+    },
+    {
+     "text": "new",
+     "start": 57.1,
+     "end": 57.176
+    },
+    {
+     "text": "line",
+     "start": 57.251,
+     "end": 57.402
+    },
+    {
+     "text": "on",
+     "start": 57.478,
+     "end": 57.553
+    },
+    {
+     "text": "the",
+     "start": 57.591,
+     "end": 57.628
+    },
+    {
+     "text": "note.",
+     "start": 57.704,
+     "end": 58.195
+    },
+    {
+     "text": "In",
+     "start": 58.232,
+     "end": 58.383
+    },
+    {
+     "text": "your",
+     "start": 58.459,
+     "end": 58.61
+    },
+    {
+     "text": "handwriting.",
+     "start": 58.685,
+     "end": 59.326
+    }
+   ],
+   "captions": [
+    {
+     "text": "A NEW LINE",
+     "start": 57.008,
+     "word_idx": 0,
+     "end": 57.478
+    },
+    {
+     "text": "ON THE [NOTE.]",
+     "start": 57.478,
+     "word_idx": 3,
+     "end": 58.232
+    },
+    {
+     "text": "IN {YOUR HANDWRITING.}",
+     "start": 58.232,
+     "word_idx": 6,
+     "end": 59.446
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "I'm in the back.",
+   "src_start": 57.535,
+   "src_end": 58.42,
+   "start": 59.646,
+   "end": 60.531,
+   "words": [
+    {
+     "text": "I'm",
+     "start": 59.696,
+     "end": 59.771
+    },
+    {
+     "text": "in",
+     "start": 59.847,
+     "end": 59.922
+    },
+    {
+     "text": "the",
+     "start": 59.998,
+     "end": 60.073
+    },
+    {
+     "text": "back.",
+     "start": 60.262,
+     "end": 60.531
+    }
+   ],
+   "captions": [
+    {
+     "text": "{I'M IN THE BACK.}",
+     "start": 59.696,
+     "word_idx": 0,
+     "end": 60.651
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "Which rule would you break? A, step behind. B, read the plate.",
+   "src_start": 58.667,
+   "src_end": 63.37,
+   "start": 61.051,
+   "end": 65.754,
+   "words": [
+    {
+     "text": "Which",
+     "start": 61.101,
+     "end": 61.252
+    },
+    {
+     "text": "rule",
+     "start": 61.327,
+     "end": 61.478
+    },
+    {
+     "text": "would",
+     "start": 61.554,
+     "end": 61.705
+    },
+    {
+     "text": "you",
+     "start": 61.78,
+     "end": 61.856
+    },
+    {
+     "text": "break?",
+     "start": 61.931,
+     "end": 62.686
+    },
+    {
+     "text": "A,",
+     "start": 62.761,
+     "end": 63.252
+    },
+    {
+     "text": "step",
+     "start": 63.29,
+     "end": 63.441
+    },
+    {
+     "text": "behind.",
+     "start": 63.516,
+     "end": 64.308
+    },
+    {
+     "text": "B,",
+     "start": 64.346,
+     "end": 64.912
+    },
+    {
+     "text": "read",
+     "start": 64.95,
+     "end": 65.101
+    },
+    {
+     "text": "the",
+     "start": 65.176,
+     "end": 65.252
+    },
+    {
+     "text": "plate.",
+     "start": 65.592,
+     "end": 65.754
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 23,
+   "text": "Just type A or B.",
+   "src_start": 63.573,
+   "src_end": 65.261,
+   "start": 65.974,
+   "end": 67.662,
+   "words": [
+    {
+     "text": "Just",
+     "start": 66.024,
+     "end": 66.175
+    },
+    {
+     "text": "type",
+     "start": 66.25,
+     "end": 66.477
+    },
+    {
+     "text": "A",
+     "start": 66.703,
+     "end": 66.779
+    },
+    {
+     "text": "or",
+     "start": 66.854,
+     "end": 66.93
+    },
+    {
+     "text": "B.",
+     "start": 67.005,
+     "end": 67.382
+    }
+   ],
+   "captions": []
+  }
+ ]
+}
