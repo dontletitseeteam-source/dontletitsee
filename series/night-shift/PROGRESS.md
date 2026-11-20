@@ -1,8 +1,31 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-20 ~01:45 IST (creator run):** Episode 2 built and QUEUED for 2026-11-21. Credits left 25,443
-(17 episodes to make 2026-11-22 … 12-08 -> ~1,497 each; pace OK). Next: Episode 3 (food-delivery rider) for 2026-11-22;
+**Status 2026-11-20 ~11:45 IST (creator run):** Episode 3 built and QUEUED for 2026-11-22. Credits left 24,046
+(16 episodes to make 2026-11-23 … 12-08 -> ~1,503 each; pace OK). Next: Episode 4 (petrol pump night attendant) for 2026-11-23;
 standalone, no vote dependency. Competitor scan due on the first run on/after Monday 2026-11-23.
+
+## Episode 3 "The last delivery" — QUEUED for 2026-11-22
+- Output: `outputs/night-shift-p3.mp4` (69.9 s, 12.0 MB, −14.2 LUFS; stems: VO −18.6 dB RMS, SFX −27.1, beds −37.1, music −34.7)
+  + `outputs/night-shift-p3.jpg` (cover: her face pressed into the door gap, smiling, chain across her chin, seven fingers over the
+  door edge, "SHE HAS {7 FINGERS}", "NIGHT SHIFT · 2:47 AM"); jsDelivr @ `80b0bcc` (mp4 + jpg HTTP 200 first try). Queue id `night-shift-p3`.
+- Voice: 1,397 credits (eleven_v4, Jack), transcript 0. 24 lines / 167 words. Files in `night-shift/p3/audio/`.
+- Standard kept: bright frame 1 (the lit cream house at 47 Lantern Lane, red door open on a chain, the grey seven-fingered hand
+  reaching out; your scooter at the gate), hook box "2:47 AM DELIVERY. / 7 FINGERS."; entity SHOWN: hand at 0-4 s, close-up 4-6 s,
+  hand slides out 37-40 s, fingers counted 1..7 with number badges 42-45 s, her face (poster image) 46-48.5 s and 50.6-51.8 s.
+  YT title keeps "my" + the concrete image: "A hand with seven fingers took my 2:47 AM delivery through the door chain".
+- Story: 2:47, a hand through a door chain, seven fingers; first night delivering; the last rider's pinned chat message (1 always
+  accept the 2:47 order, 2 never hand the bag through the chain, 3 never count her fingers) + red "My phone ordered it. Not me.";
+  order pops up (customer note "Hand it to me."), accepted; Lantern Lane wasn't on yesterday's map; one lit house, door opens on a
+  chain; rule 2: bag on the step; whisper "Hand it to me. Please."; you lift it to the chain (bent); grey hand, too many knuckles;
+  rule 3 broken: you count 5, 6, 7; her face slides into the gap, smiling; seven fingers take the bag, "See you tomorrow"; door
+  shuts, light out; Order delivered — placed from YOUR phone; tomorrow's 2:47 order already placed, deliver to: your location, RM 13.
+- HUD: SHIFT 3 · 2:41→2:47→2:51→2:52 · RIDER FIRST NIGHT · ORDERS 0 → #2147 ACCEPTED → NEW ROAD → DELIVERED → PLACED BY YOUR PHONE →
+  NEXT DROP YOUR ROOM · RULES 3 → RULE 1 KEPT → RULE 2 KEPT/BENT → RULE 3 BROKEN · FINGERS ? → 5 → 6 → 7.
+- Choice offered: **Which rule would you break? A) RULE 2 · HAND IT OVER  B) RULE 3 · COUNT HER FINGERS**.
+- Engine: new `engine/sets_delivery.js` (drawHouse with door-on-chain/hand/eye/bag/scooter/you, drawHandClose with finger-count
+  badges and bag take, drawGapFace poster image, drawPhone rider app: chat/order/map/delivered/tomorrow, streetBG); `part3.js`;
+  `mix.py` part3 (synth night wind + hum bed, music_p2 looped with a 2 s crossfade, chain rattles, count pops, phone buzz; SFX −1.2 dB).
+  Easter eggs: the last rider signs "R." again (as on the train note); RM 13 (Room 13).
 
 ## Episode 2 "The sleeper train" — QUEUED for 2026-11-21
 - Output: `outputs/night-shift-p2.mp4` (69.7 s, 11.7 MB, −13.8 LUFS; stems: VO −18.1 dB RMS, SFX −26.1, beds −32.3, music −35.2)
