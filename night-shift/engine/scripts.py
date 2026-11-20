@@ -69,5 +69,43 @@ P2 = [
 ]
 P2_HOLD = 2.2
 
-LINES = {1: P1, 2: P2}
-HOLD = {1: P1_HOLD, 2: P2_HOLD}
+# Episode 3 — The food-delivery rider (the woman with seven fingers behind the door chain)
+P3 = [
+    ("Two forty-seven. A hand reaches through a door chain.", 0.15,
+     [(2, "[2:47.]"), (3, "A {HAND} REACHES"), (4, "THROUGH A [DOOR CHAIN.]")]),
+    ("It has seven fingers.", 0.30, [(2, "IT HAS"), (2, "{SEVEN FINGERS.}")]),
+    ("Your first night delivering. The last rider left a message.", 0.40,
+     [(4, "YOUR FIRST NIGHT [DELIVERING.]"), (3, "THE LAST RIDER"), (3, "LEFT A [MESSAGE.]")]),
+    ("One. Always accept the two forty-seven order.", 0.35,
+     [(1, "ONE."), (2, "ALWAYS [ACCEPT]"), (4, "THE [2:47] ORDER.")]),
+    ("Two. Never hand the bag through the chain.", 0.35,
+     [(1, "TWO."), (4, "{NEVER HAND} THE BAG"), (3, "THROUGH THE [CHAIN.]")]),
+    ("Three. Never count her fingers.", 0.35, [(1, "THREE."), (2, "{NEVER COUNT}"), (2, "HER [FINGERS.]")]),
+    ("Under it: My phone ordered it. Not me.", 0.35, [(2, "UNDER IT:"), (4, "[MY PHONE ORDERED IT.]"), (2, "{NOT ME.}")]),
+    ("Two forty-seven. The order pops up. You accept.", 0.45,
+     [(2, "[2:47.]"), (4, "THE ORDER POPS UP."), (2, "YOU [ACCEPT.]")]),
+    ("The address wasn't on the map yesterday.", 0.30, [(2, "THE ADDRESS"), (5, "{WASN'T} ON THE MAP [YESTERDAY.]")]),
+    ("One lit house. The door opens on a chain.", 0.40,
+     [(3, "ONE [LIT HOUSE.]"), (3, "THE DOOR OPENS"), (3, "ON A {CHAIN.}")]),
+    ("Rule two. You leave it on the step.", 0.40, [(2, "[RULE 2.]"), (3, "YOU LEAVE IT"), (3, "ON THE [STEP.]")]),
+    ("A whisper: Hand it to me. Please.", 0.40, [(2, "A {WHISPER:}"), (4, "[HAND IT TO ME.]"), (1, "{PLEASE.}")]),
+    ("You lift it to the chain.", 0.35, [(3, "YOU [LIFT IT]"), (3, "TO THE {CHAIN.}")]),
+    ("A grey hand slides out. Too many knuckles.", 0.35,
+     [(3, "A GREY {HAND}"), (2, "SLIDES OUT."), (3, "TOO MANY {KNUCKLES.}")]),
+    ("Rule three. Don't count.", 0.45, [(2, "[RULE 3.]"), (2, "{DON'T COUNT.}")]),
+    ("You count. Five. Six. Seven.", 0.40, [(2, "YOU {COUNT.}"), (1, "[5.]"), (1, "[6.]"), (1, "{7.}")]),
+    ("Her face slides into the gap. Smiling.", 0.40, [(3, "HER {FACE} SLIDES"), (3, "INTO THE GAP."), (1, "{SMILING.}")]),
+    ("Seven fingers take the bag. See you tomorrow.", 0.40,
+     [(2, "{SEVEN FINGERS}"), (3, "TAKE THE BAG."), (3, "[SEE YOU TOMORROW.]")]),
+    ("The door shuts. The light goes out.", 0.50, [(3, "THE DOOR {SHUTS.}"), (4, "THE LIGHT GOES [OUT.]")]),
+    ("Your phone buzzes. Order delivered.", 0.50, [(3, "YOUR PHONE [BUZZES.]"), (2, "ORDER DELIVERED.")]),
+    ("It was placed from your phone.", 0.35, [(3, "IT WAS PLACED"), (3, "FROM {YOUR PHONE.}")]),
+    ("Tomorrow's order is placed. The address is yours.", 0.45,
+     [(2, "[TOMORROW'S] ORDER"), (2, "IS PLACED."), (4, "THE ADDRESS IS {YOURS.}")]),
+    ("Which rule would you break? A, two. B, three.", 0.60, []),
+    ("Comment A or B.", 0.30, []),
+]
+P3_HOLD = 2.2
+
+LINES = {1: P1, 2: P2, 3: P3}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD}
