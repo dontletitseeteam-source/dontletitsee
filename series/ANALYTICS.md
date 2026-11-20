@@ -14,10 +14,49 @@ Full brief, post-mortem and competitor scan: `series/RESEARCH.md`; weekly resear
 2. **YouTube title = a hook sentence that states the scary image, no "Part n" — STANDARD** (test #5 confirmed 2026-11-19: P6 314
    views at 34 h vs P5 246 / P4 185; P7 766 at 34 h, P8 273 at 10 h). Series name after the bar, part number only in the
    description. Best shape: first-person "my/your" + one concrete wrong detail in the first 6 words.
-3. **Next test = the standalone episode format** (series after BLOCK C, `series/RESEARCH.md`): one nameable entity SHOWN in the
-   first 3 s and on the cover, complete story + twist in 55-70 s. Compare its IG reach/skip and YT 34-h views with BLOCK C P5-P7.
+3. **Standalone episode format = first read POSITIVE (Ep 1: IG skip 37.7%, reach 160, YT 350 at 10 h, all best-ever 10-h).** Keep
+   it. ONE new test from Ep 4 (2026-11-23): end the A/B card with a one-word, low-effort ask on screen and in the voice
+   ("Type A or B." + the two options as huge letters) instead of the longer question; watch comment counts on Ep 4 vs Ep 1-3.
 
 ## Day log
+## 2026-11-21 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 274 | 799 | 640 | 17 | 2 | 0 / 0 | 17.3 s | 46.7% |
+| floor0-p2 | Instagram (media 17961343959258765) | 250 | 184 | 156 | 2 | 0 | 0 / 0 | 8.3 s | 71.4% |
+| floor0-p3 | Instagram (media 18139990045726049) | 226 | 143 | 116 | 1 | 0 | 0 / 0 | 13.4 s | 51.2% |
+| block-c-p1 | Instagram (media 17998129476019732) | 202 | 143 | 110 | 0 | 0 | 0 / 0 | 16.5 s | 52.2% |
+| block-c-p2 | Instagram (media 18120370895001266) | 178 | 148 | 110 | 4 | 0 | 0 / 0 | 22.0 s | 54.2% |
+| block-c-p3 | Instagram (media 18025383203947619) | 154 | 124 | 107 | 3 | 0 | 1 / 0 | 7.6 s | 62.3% |
+| block-c-p4 | Instagram (media 18121550692965483) | 130 | 122 | 105 | 1 | 0 | 0 / 0 | 10.3 s | 69.0% |
+| block-c-p5 | Instagram (media 18170937118477416) | 106 | 127 | 106 | 5 | 0 | 0 / 0 | 15.5 s | 44.3% |
+| block-c-p6 | Instagram (media 18099611141131915) | 82 | 105 | 86 | 3 | 0 | 0 / 0 | 12.0 s | 55.9% |
+| block-c-p7 | Instagram (media 18221781823348380) | 58 | 152 | 132 | 2 | 0 | 1 / 0 | 21.1 s | 45.0% |
+| block-c-p8 | Instagram (media 18117069296233249) | 34 | 123 | 99 | 0 | 0 | 1 / 0 | 11.3 s | 44.2% |
+| night-shift-p1 | Instagram (media 17880950040563546) | 10 | **195** | **160** | 0 | 0 | 0 / 0 | **19.4 s** | **37.7%** |
+| floor0-p1 | YouTube @dontletitsee (Dwb3U1DZWv0) | 274 | 199 | n/a | 5 | 0 | n/a | n/a | n/a |
+| floor0-p2 | YouTube @dontletitsee (5BlBOAPvHxg) | 250 | 449 | n/a | 9 | 0 | n/a | n/a | n/a |
+| floor0-p3 | YouTube @dontletitsee (TND9mmqAZtw) | 226 | 293 | n/a | 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 | YouTube @dontletitsee (hxEWbQl3dCE) | 202 | 438 | n/a | 10 | 1 | n/a | n/a | n/a |
+| block-c-p2 | YouTube @dontletitsee (WTSKylWgYpM) | 178 | 735 | n/a | 14 | 0 | n/a | n/a | n/a |
+| block-c-p3 | YouTube @dontletitsee (qlkqMo9AiCM) | 154 | 226 | n/a | 6 | 0 | n/a | n/a | n/a |
+| block-c-p4 | YouTube @dontletitsee (ukrud0UGmYY) | 130 | 227 | n/a | 5 | 1 | n/a | n/a | n/a |
+| block-c-p5 | YouTube @dontletitsee (nZ98OLaMWPw) | 106 | 348 | n/a | 5 | 5 | n/a | n/a | n/a |
+| block-c-p6 | YouTube @dontletitsee (q3U-mDEVkEU) | 82 | 450 | n/a | 7 | 4 | n/a | n/a | n/a |
+| block-c-p7 | YouTube @dontletitsee (OWkQH00IxPY) | 58 | **997** | n/a | **20** | 0 | n/a | n/a | n/a |
+| block-c-p8 | YouTube @dontletitsee (EYT6ES7onKs) | 34 | 485 | n/a | 5 | 0 | n/a | n/a | n/a |
+| night-shift-p1 | YouTube @dontletitsee (XC9NOCwKw6E) | 10 | **350** | n/a | 3 | 0 | n/a | n/a | n/a |
+| all 12 uploads | YouTube @lexter2025 | 10-274 | 16 / 15 / 150 / 6 / 2 / 2 / 0 / 2 / 0 / 1 / 0 / 1 | n/a | 0-2 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- First standalone episode (NIGHT SHIFT Ep 1, toe-tag customer) had the best 10-h start on BOTH platforms: IG reach 160 (BLOCK C
+  10-h range 36-132), skip rate 37.7% (best ever; previous best 44.2%), avg watch 19.4 s; YT 350 views at 10 h (P8 273, P7 145).
+  One post only, but it fits the pattern of the last 4 posts (bright frame 1 + entity shown + image-title). Keep the format.
+- YT P7 (my message) keeps compounding: 997 views at 58 h, 20 likes; P8 485 at 34 h (P7 had 766). Image-titles keep earning.
+- Comments are still 0 on IG and YT for Ep 1 (the A/B "which rule would you break" card did not pull replies either). Next lever to
+  test (one change): a sharper, lower-effort comment ask in the last 3 s, keeping the A/B card.
+- @lexter2025 still 0-2 views per upload (nothing the creator can change).
+
 ## 2026-11-20 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
