@@ -242,7 +242,83 @@ def part2():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2}[PART]()
+def part3():
+    """NIGHT SHIFT Ep.3 — the last delivery (seven fingers behind the door chain)."""
+    lights_off = load("lights_off.mp3"); slam = load("door_slam_wood.mp3"); creak = load("door_creak.mp3")
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    sent = load("sent.mp3"); button = load("button.mp3")
+    rattle = noise_burst(0.35, 1800, 9000, 21, 0.002) * 0.6       # chain links
+    bagr = noise_burst(0.5, 700, 5000, 23, 0.02) * 0.5             # paper bag rustle
+    pop = noise_burst(0.06, 2000, 8000, 11, 0.001) * 0.7           # count pops
+    # the night street: wind + far traffic (synth), hum loop very low
+    rng = np.random.default_rng(3); x = rng.standard_normal(N).astype(np.float32)
+    X_ = np.fft.rfft(x); f = np.fft.rfftfreq(N, 1 / SR); X_[(f < 60) | (f > 700)] = 0
+    x = np.fft.irfft(X_, N).astype(np.float32); x /= (np.abs(x).max() + 1e-9)
+    x *= (0.7 + 0.3 * np.sin(np.arange(N) / SR * 2 * np.pi * 0.07)).astype(np.float32)
+    rb = np.stack([x, x], 1) * db(-16) + bed("hum.mp3", "lowpass=f=400") * db(-24)
+    rb = rb * automation([(0, 0), (K["msgW"], -4), (K["order"], -4), (K["house"], 0), (K["outW"], 0), (K["outW"] + 0.1, -6),
+                          (K["choice"], -4), (DUR - 1, -4), (DUR, -40)])
+    # score: music_p2 looped with a 2 s crossfade (episode is longer than the 60 s cue)
+    mu = load("music_p2.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    loop = np.pad(loop, ((0, max(0, N - len(loop))), (0, 0)))[:N]
+    m1 = loop * automation([
+        (0, -16), (K["seven"], -14), (K["me"], -19), (K["r1"], -18), (K["last"], -16), (K["order"], -16),
+        (K["yestW"], -13), (K["house"], -16), (K["whisper"], -15), (K["hand"], -14), (K["knucklesW"], -12),
+        (K["rule3"], -15), (K["n7"], -10), (K["face"], -12), (K["smilingW"], -10), (K["take"], -14), (K["shutsW"], -12),
+        (K["outW"], -40), (K["buzz"], -18), (K["phone21W"], -11), (K["tmr"], -14), (K["yoursW"], -10),
+        (K["choice"], -15), (DUR - 1.2, -15), (DUR, -40)])
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0)
+    place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(rattle, K["chainW"] - 0.05, -12)
+    place(load("stretch.mp3"), K["handW"], -17, fo=0.4, maxlen=1.4)
+    place(stinger, K["sevenW"] - 0.03, -11, fo=0.5, maxlen=1.2); place(boom, K["sevenW"], -11, fo=0.6, maxlen=1.6)
+    place(breath, K["seven"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.6)
+    place(motor, K["me"], -24, fi=0.3, fo=0.6, maxlen=2.0)
+    place(sent, K["msgW"] - 0.05, -14)
+    for k in ("r1", "r2", "r3"): place(tick, K[k] + 0.02, -13)
+    place(breath, K["last"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.8)
+    place(stinger, K["notW"] - 0.03, -12, fo=0.5, maxlen=1.2); place(boom, K["notW"], -13, fo=0.6, maxlen=1.6)
+    place(ding, K["order"] + 0.02, -12, fo=0.4, maxlen=1.0)
+    place(button, K["acceptW"], -10)
+    place(riser, K["yestW"] - 0.06 - len(riser) / SR, -22, fi=1.2, fo=0.004)
+    place(boom, K["yestW"], -12, fo=0.6, maxlen=1.8)
+    place(load("buzz.mp3", "lowpass=f=1500"), K["litW"] - 0.1, -18, maxlen=0.8, fo=0.3)
+    place(creak, K["opensW"] - 0.1, -12, fo=0.4, maxlen=1.6)
+    place(rattle, K["chain10W"], -9); place(boom, K["chain10W"], -14, fo=0.6, maxlen=1.6)
+    place(bagr, K["stepW"] - 0.25, -12)
+    place(breath, K["whisperW"] - 0.1, -10, fi=0.1, fo=0.5, maxlen=2.4)
+    place(heartbeat, K["whisper"] + 0.3, -15, fi=0.1, fo=0.4, maxlen=K["hand"] - K["whisper"])
+    place(bagr, K["liftW"], -13); place(rattle, K["chain13W"], -11)
+    place(load("stretch.mp3"), K["slidesW"] - 0.2, -12, fo=0.5, maxlen=1.8)
+    place(stinger, K["greyW"] - 0.03, -12, fo=0.5, maxlen=1.2); place(boom, K["knucklesW"], -12, fo=0.6, maxlen=1.6)
+    place(heartbeat, K["rule3"], -13, fi=0.1, fo=0.3, maxlen=K["face"] - K["rule3"])
+    for i in range(4): place(pop, K["countW"] + 0.2 + i * 0.15, -12)
+    place(pop, K["n5"], -8); place(pop, K["n6"], -6)
+    place(riser, K["n7"] - 0.06 - len(riser) / SR, -19, fi=1.5, fo=0.004)
+    place(stinger, K["n7"] - 0.03, -9, fo=0.5, maxlen=1.4); place(boom, K["n7"], -8, fo=0.8, maxlen=2.2)
+    place(rattle, K["faceW"], -12); place(breath, K["face"] + 0.1, -12, fi=0.2, fo=0.5, maxlen=2.0)
+    place(load("smile_stinger.mp3"), K["smilingW"] - 0.05, -9, fo=0.5, maxlen=1.6)
+    place(bagr, K["takeW"], -11)
+    place(stinger, K["seeW"] - 0.03, -11, fo=0.5, maxlen=1.2)
+    place(slam, K["shutsW"] - 0.05, -7, fo=0.4, maxlen=1.6); place(boom, K["shutsW"], -10, fo=0.6, maxlen=1.8)
+    place(lights_off, K["outW"] - 0.05, -10, maxlen=1.2, fo=0.3)
+    vib = noise_burst(0.5, 60, 220, 17, 0.01) * 0.9
+    place(vib, K["buzzW"] - 0.1, -8); place(vib, K["buzzW"] + 0.35, -10)
+    place(ding, K["deliveredW"], -14, fo=0.4, maxlen=1.0)
+    place(riser, K["phone21W"] - 0.06 - len(riser) / SR, -19, fi=1.5, fo=0.004)
+    place(stinger, K["phone21W"] - 0.03, -9, fo=0.5, maxlen=1.4); place(boom, K["phone21W"], -9, fo=0.8, maxlen=2.0)
+    place(breath, K["tmr"] + 0.1, -13, fi=0.2, fo=0.5, maxlen=2.0)
+    place(stinger, K["yoursW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["yoursW"], -7, fo=0.8, maxlen=2.4)
+    place(boom, K["choice"] - 0.1, -17, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3}[PART]()
+if PART == 3: sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice
