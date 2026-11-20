@@ -1,8 +1,33 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-20 ~11:45 IST (creator run):** Episode 3 built and QUEUED for 2026-11-22. Credits left 24,046
-(16 episodes to make 2026-11-23 … 12-08 -> ~1,503 each; pace OK). Next: Episode 4 (petrol pump night attendant) for 2026-11-23;
+**Status 2026-11-21 ~01:55 IST (creator run):** Episode 4 built and QUEUED for 2026-11-23. Credits left 22,628
+(15 episodes to make 2026-11-24 … 12-08 -> ~1,508 each; pace OK). Next: Episode 5 (school night watchman) for 2026-11-24;
 standalone, no vote dependency. Competitor scan due on the first run on/after Monday 2026-11-23.
+
+## Episode 4 "The petrol pump" — QUEUED for 2026-11-23
+- Output: `outputs/night-shift-p4.mp4` (69.6 s, 11.7 MB, −13.8 LUFS) + `outputs/night-shift-p4.jpg` (cover: the back window full
+  of pale faces, the last attendant in his cap in the middle, palms on the glass, "THEY {STARE BACK}", "NIGHT SHIFT · 2:22 AM");
+  jsDelivr @ `fc4961a` (mp4 + jpg HTTP 200 first try). Queue id `night-shift-p4`.
+- Voice: 1,418 credits (eleven_v4, Jack), transcript 0. 23 lines / 171 words (gaps tightened 0.08 s, hold 1.9 s to land < 70 s).
+  Files in `night-shift/p4/audio/`.
+- Standard kept: bright frame 1 (lit forecourt under the HIGHWAY FUELS canopy, the white car rolling in to pump 3, empty driver's
+  seat, two pale heads in the back turned the wrong way), hook box "2:22 AM. NO DRIVER. / ALL FACING BACK." (moved above the car,
+  clear of captions); entity SHOWN: side view 0-5 s and 30-33 s, the back window full of faces (poster image) 37-48 s.
+- Story: 2:22, white car, no driver, everyone faces backwards; first night at the pump; note (1 fill the white car, full tank, take
+  no money; 2 never stand behind it; 3 never read the number plate) + "Don't wait for me. — R."; rule 1: the meter won't stop,
+  40, 80 litres, never fills; they stare at the road behind; rule 2 broken: nozzle jams, you step behind the car; every face in
+  the back window is looking at you; in the middle the last attendant, still in uniform; he mouths "Don't read it"; rule 3
+  broken: the plate KA 13 NS 2222 = your bike's number; pump clicks full, car pulls away; one back seat empty, waiting; your bike
+  is gone; a new line on the note in your handwriting: "I'm in the back."
+- HUD: SHIFT 4 · 2:22→2:27 · PUMP 3 FIRST NIGHT · LITRES 0→99.9 → NEVER FULL → FULL · RS 0 · RULE 1 KEPT → RULE 2 BROKEN → RULE 3
+  BROKEN · CAR NO DRIVER → FACES ON YOU → PLATE → YOUR BIKE → BIKE GONE → SEAT BACK ROW · YOU.
+- Choice offered: **Which rule would you break? A) RULE 2 · STEP BEHIND IT  B) RULE 3 · READ THE PLATE**.
+- TEST (ANALYTICS improvement #3): lower-effort comment ask — the VO ends "Just type A or B." and the card shows a big
+  "TYPE A OR B" (120 px) instead of "COMMENT A OR B"; IG caption "Just type A or B 👇". Compare comment counts vs Ep 1-3.
+- Engine: new `engine/sets_pump.js` (drawForecourt with car roll/hose/nozzle jam/bike + ghost, carSide with backwards heads and
+  empty driver seat, drawCarRear poster image with faces/palms/talking mouth/empty seat/plate reveal, drawMeter, drawPumpNote with
+  your handwritten line, drawPlates); `part4.js`; `mix.py` part4 (synth highway wind + canopy hum, music_p2 loop, pour + meter
+  ticks, nozzle clunks; SFX −1.2 dB). Easter eggs: the note is signed "R." again (badge "R." on his uniform); plate "13" (Room 13).
 
 ## Episode 3 "The last delivery" — QUEUED for 2026-11-22
 - Output: `outputs/night-shift-p3.mp4` (69.9 s, 12.0 MB, −14.2 LUFS; stems: VO −18.6 dB RMS, SFX −27.1, beds −37.1, music −34.7)
