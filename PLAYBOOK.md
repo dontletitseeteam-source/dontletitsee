@@ -23,7 +23,11 @@ poster. They communicate only through `queue.json` in this repo. **Always `git p
   stranger understands with zero context (complete story, a scare you can SEE, twist inside the video); a series
   is a repeatable format, not one continuing plot; no "previously" recap; one nameable poster-image entity per
   episode, shown, on the cover and in the title.
-- Each episode **55–70 s**, 18–24 VO lines, 135–170 spoken words (see the credit pace in section 5). (BLOCK C's
+- **Owner directives v2 (2026-11-21), top of `series/RESEARCH.md`: clearer stories (one place, one monster, 2
+  rules, one plainly-stated twist, clarity test), better voice (120–145 words, no speed-up, real pauses, ≤ 10
+  tags) and better animation (a face for "you", more movement, 18–26 varied shots, light reveals, a scale shot).
+  They override the numbers below where they differ.**
+- Each episode **55–70 s**, 14–20 VO lines, 120–145 spoken words (see the credit pace in section 5). (BLOCK C's
   finale, Part 8, keeps its format; aim for ≤ 80 s.) Hook in the first second: picture + on-screen text + voice
   together, on a bright readable frame. Something changes every 1–3 s (caption, cut, camera move, sound hit); never
   hold one picture longer than 3 s.
@@ -118,12 +122,13 @@ scenes*.js). Use `python3` wherever older notes say `python`.
   days (around 2026-12-02 … 12-04), but use them well and make them last as long as is sensible.** Ledger:
   `series/ELEVENLABS.md` (balance + every spend). Text-to-speech costs **1 credit per character sent, tags
   included** (BLOCK C Part 1: 1,644 characters = 1,643 credits).
-  - **Pace (updated 2026-11-18): about 1,300 credits per episode** (voice + transcript). With 55–70 s episodes
-    the balance (29,538 after BLOCK C Part 7) now lasts the whole run, to 2026-12-08: one post every day.
-    Before writing the voice text, read the ledger and compute `remaining ÷ episodes still to make up to
-    2026-12-08`; if that is above 1,300 you may spend more (richer delivery, a key SFX), if below, tighten.
+  - **Pace (updated 2026-11-21): about 1,100 credits per episode** (voice + transcript; 120–145 words and ≤ 10
+    tags). The balance (21,014 after NIGHT SHIFT Ep 5) lasts the whole run, to 2026-12-08, with room for the
+    rebuilds of queued old-style episodes allowed in `series/RESEARCH.md`. Before writing the voice text, read
+    the ledger and compute `remaining ÷ episodes still to make up to 2026-12-08`; if that is above 1,100 you may
+    spend more (a key SFX, a second take of a broken line), if below, tighten. Spend on clarity, not on more words.
   - Spend where it shows: expressive delivery tags (`[whispering]`, `[low, tense]`, `[slow]`, `[short pause]`
-    at real beats), a full 135–170-word script. Do not waste: no throwaway takes; regenerate only when a take
+    at real beats, at most 8–10 per episode), a clear 120–145-word script. Do not waste: no throwaway takes; regenerate only when a take
     is broken (wrong words, cut off, garbled, flat at the key line). A new SFX or sting only when it clearly
     lifts a key moment and `floor-0/audio/` has nothing close (log its cost).
   - Count characters (`python3 -c "print(len(open('vo_prompt.txt').read()))"`) BEFORE

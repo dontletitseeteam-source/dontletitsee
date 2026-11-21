@@ -3,7 +3,12 @@
 Slug: `night-shift` · Workspace: `night-shift/` · Caption name: `NIGHT SHIFT` · Designed 2026-11-19 from the BLOCK C post-mortem
 and the owner directives in `series/RESEARCH.md` (read both first).
 
-## Format (every episode, 55–70 s, 18–24 VO lines, 135–170 spoken words, ~1,300–1,480 credits)
+**Owner directives v2 (2026-11-21), from Episode 6 on (see top of `series/RESEARCH.md`):** 14–20 VO lines,
+120–145 spoken words, no voice speed-up, real pauses, ≤ 10 tags, ~1,100 credits; the note has exactly **2** rules
+(they are the A/B options); no number puzzles or required easter eggs; twist said plainly; "you" gets a face and
+moves; 18–26 varied shots; a scale shot of the entity. Episodes 1–5 below were made under the older rules.
+
+## Format (every episode, 55–70 s, 18–24 VO lines, 135–170 spoken words, ~1,300–1,480 credits; superseded by v2 above)
 One ordinary night job in an everyday place. Second person, present tense ("Your first night at…").
 1. **0–2 s:** a BRIGHT, readable wide shot of the workplace (lit counter / platform / forecourt), the entity small but visible
    somewhere wrong; burned-in hook ≤ 6 words that names it; first VO line states the wrong detail.

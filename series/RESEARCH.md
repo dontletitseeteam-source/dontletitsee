@@ -4,7 +4,69 @@ Owner's order (2026-11-18): "post after analysing mistakes, improve stories and 
 different channels like this which are actually gaining something." This file is the creator's standing brief.
 Read it before designing a series and before writing every script. PLAYBOOK section 7 says how to keep it fresh.
 
-## Owner directives (2026-11-18), in force from the series after BLOCK C
+## Owner directives v2 (2026-11-21): clearer stories, better voice, better animation. In force from now.
+The owner watched NIGHT SHIFT Ep 1-2: the format works (Ep 2 = best reel ever), but the stories are **hard to
+understand**, the **voiceover could be better**, and the **animation should look more like the animated horror
+reels that already work**. Keep researching and improving. (The owner had shared metro screen recordings as a
+style reference in another chat; they are not available here. If reference videos ever appear in `refs/` in this
+repo, study their frames first.)
+
+**Why Ep 1-5 are hard to follow (measured 2026-11-21):** 220-240 spoken words in ~69 s (190-210 words/min as
+recorded), then sped up another 6-8% by `prep_vo.py` (about 205-225 words/min on screen), **zero pauses of 0.5 s
+or more**, 32-39 delivery tags each (the tone flips almost every line), 3 rules + note + countdown/number puzzle +
+signature easter eggs ("R.", 13, plates) packed into one minute. Horror narration lands through control: slowing
+down, softening, leaving deliberate silences; reading too fast makes a story hard to follow.
+
+**Clarity rules (every episode):**
+1. **One place, one monster, two rules, one twist.** The handover note has exactly **2** short rules (they are
+   the A/B choices). No number/counting puzzles, no clue the viewer must decode, no easter egg the story needs.
+2. **Say what happens in plain words**, short sentences, everyday vocabulary (many viewers are not native English
+   speakers). The twist is stated once, plainly, in the VO AND shown on screen ("The passenger in berth 73 was
+   you."). If a beat needs explaining, it is too clever: cut it.
+3. **Beat map for 60-70 s:** 0-3 s monster + hook line; 3-12 s who you are and where (one line) + the note with
+   its 2 rules on screen; 12-40 s rule 1 holds, rule 2 is tested, one escalation; 40-52 s full reveal of the
+   monster (clear, lit, close); 52-60 s the twist in one sentence; 60-70 s the A/B card.
+4. **Clarity test before paying for the voice:** (a) write the story as 3 sentences a 12-year-old understands; if
+   you can't, simplify; (b) after the render, read ONLY the caption chunks and the stills at 1 s intervals:
+   could a stranger retell the story? If not, fix the script or the shots. Log both in PROGRESS.md.
+
+**Voice rules:**
+5. **120-145 spoken words** per episode (14-20 VO lines), aiming at about 130-150 words per minute on screen.
+6. **No speed-up:** `prep_vo.py` SPEED = 1.00 for every new episode (never above 1.02). If the take is too long,
+   cut words, don't speed the voice.
+7. **Real silence:** 4-6 pauses of 0.6-1.0 s, placed right before reveals and after the twist (use the line gaps
+   in `scripts.py`/`build_timeline.py`; never tighten gaps below natural to hit a length). Music and SFX drop out
+   in those gaps, then a sting.
+8. **Fewer tags:** at most 8-10 per episode. One steady base delivery (low, calm, close, like a campfire
+   storyteller talking to one person), `[whispering]` only for the 1-2 creepiest lines, `[slow]` only on the
+   twist. No tone flip every line.
+9. After pace is fixed (Ep 6 and 7), if the voice still sounds flat, test ONE other deep storyteller voice from
+   `creative_list_voices` on one episode and compare skip rate and average watch (one change at a time).
+
+**Animation rules (from the animated horror Shorts that are winning; learn the pattern, never copy):**
+10. **Give "you" a face.** Add a simple face option to `drawStick` (dot eyes that can widen and glance, short
+    brows, a small mouth: neutral / worried / scared / screaming) and use it on every reaction shot. Keep the
+    navy 2D vector look and the round head. The winning English animated horror Shorts all use characters whose
+    fear you can read (game-engine avatars, cartoon faces); an empty head can't show it.
+11. **More movement:** "you" walks, turns, flinches, steps back, drops things; the monster MOVES (head tilt,
+    slow approach, crawl, sudden lean into frame), never a still cut-out. Parallax layers in wide shots; slow
+    push-ins for dread; a quick cut + shake + sting on each scare; low angle on the monster.
+12. **Shot variety, one focal point each:** 18-26 shots per episode, mixing wide (where), medium (what you do),
+    close-up on your face (fear), POV (what you see), insert (the note, the object). Nothing important under the
+    captions.
+13. **Light tells the story:** torch beam, phone glow, flickering tube, headlights reveal the monster in pieces
+    before the full reveal; then one clear, well-lit shot of it.
+14. **Scale shot:** at least once, show the monster next to "you" so its size and wrongness read in one glance
+    (top hits even title it "how tall is X next to a person").
+
+**Already-queued old-style episodes:** when a creator run finds the queue full (every date today…today+3 has an
+entry), it may rebuild ONE queued NIGHT SHIFT episode made before 2026-11-22 under these rules, but only if it
+posts at least 24 h after the run starts, has not been uploaded anywhere, and the credit reserve still covers
+~1,100 per remaining day to 2026-12-08. Write new files (`outputs/night-shift-pN-v2.mp4/.jpg`), check the
+jsDelivr URLs (HTTP 200), then update that queue entry IN PLACE (video_url, cover_url, captions, title) in one
+commit. Never delete the old files or the entry.
+
+## Owner directives (2026-11-18), in force from the series after BLOCK C (item 2's word count is now 120-145)
 1. **Standalone episodes.** Every post is a complete story a stranger can enjoy with zero context: setup,
    escalation, a scare they can SEE, and a twist or payoff inside the same video. A series is a repeatable
    FORMAT (same structure, title pattern, look), not one continuing plot. Links to earlier episodes are bonus
@@ -119,6 +181,25 @@ the one apartment whose lights stay on in a power cut. A/B options: "which rule 
 next?". Stay clear of the @play.malo premises listed in PLAYBOOK section 1.
 
 ## Research log (newest first; PLAYBOOK section 7)
+### 2026-11-21 (owner session: animation and voice)
+Our numbers: NIGHT SHIFT Ep 2 (train) 964 IG views in 4.5 h (best ever, skip 37.2%, avg watch 30.4 s, first
+shares); Ep 1 252 IG / 872 YT. Main YouTube 29 subs. @lexter2025 still 0-1 views per upload.
+YouTube scan, English animated horror Shorts published since 10-22 (6 queries, 67 results 15-180 s, median of the
+top 25: 62 s). Original-story hits (fan/IP pieces skipped; never use other people's characters):
+| Views | Length | Channel | Title / what it does |
+|---|---|---|---|
+| 3.6M | 126 s | Gelo Stories | "In This Town, If You Get Hurt, You Die": the title IS the one rule; game-engine avatars with readable faces |
+| 3.5M | 37 s | Size Cipher | "he ate them - STEAK": one creature, one gift, one twist; description invites "how tall is X next to a person?" |
+| 3.0M | 117 s | Ruckus Town | "The Scarecrows Play RED ROVER": a recurring town of characters, a childhood game turned deadly |
+| 3.0M | 87 s | Afterpast | "He Sold the Most Famous Fried Chicken on Route 66. He Never Bought One Chicken....": the twist is implied by the title in plain words |
+| 1.4M | 142 s | Gelo Stories | "Nobody Tells Their Age!": again one rule for a whole place |
+| 1.2M | 46 s | Size Cipher | "Don't turn around. It only moves when you do.": one rule, one monster |
+Patterns: one rule or one wrong fact per story, stated in the title in plain words; characters with faces that
+show fear; the creature shown with scale; most hits 37-126 s. Trend to watch: creature "lore" Shorts ("What is
+Elephant 2028?") built on one invented creature; our poster-image entities could get their own short "what is it"
+lore episode later.
+Applied: owner directives v2 above (clarity, voice, animation).
+
 ### 2026-11-19 (creator run, BLOCK C finale queued)
 No new competitor scan (last one 2026-11-18, next due on/after Monday 2026-11-23). YouTube retention (YOUTUBE_QUERY_ANALYTICS,
 youtube_regin-mont, 11-09..11-18; needs maxResults with the video dimension): engaged/views P1 43%, P2 47%, P3 53%, FLOOR 0

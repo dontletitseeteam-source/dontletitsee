@@ -6,6 +6,10 @@ How it works: PLAYBOOK section 6. Newest day first. Write "n/a" for any metric t
 From the series after BLOCK C: standalone episodes in a repeatable format, 55–70 s, one nameable poster-image
 entity per episode (shown, on the cover, in the title), titles that state the scary image not the series name.
 Full brief, post-mortem and competitor scan: `series/RESEARCH.md`; weekly research loop: PLAYBOOK section 7.
+**v2 (2026-11-21):** the owner finds the stories hard to follow and wants a better voice and animation. From
+Episode 6: one place, one monster, 2 rules, a plainly-stated twist, 120–145 words, NO voice speed-up, real pauses,
+≤ 10 tags, a face and movement for "you", 18–26 varied shots, a scale shot. Details at the top of RESEARCH.md.
+Measure it: IG skip rate + avg watch and YouTube stay rate of Ep 6+ vs Ep 1-5.
 
 ## Next improvements (max 3, read before writing every script)
 1. **Bright, recognizable frame 1 is the STANDARD** (4 bright openers 44.6-53% IG skip vs 3 dark 62.8-71.9%; P7 44.6% + 21.2 s
