@@ -1,8 +1,35 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-21 ~01:55 IST (creator run):** Episode 4 built and QUEUED for 2026-11-23. Credits left 22,628
-(15 episodes to make 2026-11-24 … 12-08 -> ~1,508 each; pace OK). Next: Episode 5 (school night watchman) for 2026-11-24;
+**Status 2026-11-21 ~11:30 IST (creator run):** Episode 5 built and QUEUED for 2026-11-24. Credits left 21,014
+(14 episodes to make 2026-11-25 … 12-08 -> ~1,500 each; pace OK). Next: Episode 6 (cinema projectionist) for 2026-11-25;
 standalone, no vote dependency. Competitor scan due on the first run on/after Monday 2026-11-23.
+
+## Episode 5 "The school night watchman" — QUEUED for 2026-11-24
+- Output: `outputs/night-shift-p5.mp4` (69.8 s, 12.1 MB, −14.0 LUFS; stems: VO −18.1 dB RMS, SFX −26.8, beds −36.0, music −34.3)
+  + `outputs/night-shift-p5.jpg` (cover: her face at the barred classroom window, smiling, chains to the sky, the yard below,
+  "THE GIRL ON {THE SWING}", "NIGHT SHIFT · 3 AM"); jsDelivr @ `dfc0b20` (mp4 + jpg HTTP 200 first try). Queue id `night-shift-p5`.
+- Voice: 1,449 credits (eleven_v4, Jack) + transcript (tool quoted 165; logged as 1,614 to be safe). 24 lines / 170 words.
+  Take ran 74.9 s raw, so this part uses tempo 1.08 (prep_vo.py per-part SPEED; others stay 1.06), gaps −0.06 s, hold 1.7 s.
+- Standard kept: bright frame 1 (floodlit schoolyard, cream two-storey "GOVT. SCHOOL NO. 13", red swing set, the girl mid-arc with
+  legs dead straight), hook box "3 AM. SHE SWINGS. / LEGS DON'T MOVE."; entity SHOWN: 0-5.5 s (wide + legs close-up), 29-38 s
+  swinging higher, POSTER (her face rising to your 2nd-floor window between the grille bars) 38-48 s.
+- Story: 3 AM, a girl swings in the empty yard, legs never move; first night as watchman; the night register's 3 rules (1 let the
+  bell ring at three, 2 if the swing moves stay inside, 3 if she calls the roll never answer present) + "She marked me present. — R.";
+  the bell rings by itself 13 times (rule 1 kept); a swing creaks; you stay inside at the window (rule 2 kept/bent); higher,
+  legs dead still; at the top her face reaches your window; a small voice calls the roll, every name; she calls yours; you hear
+  yourself say "present" (rule 3 broken); swing stops, yard empty; the register: MEERA S. ticked present every night since 1998;
+  below, your name (SAM · WATCHMAN) ticked; the second swing starts moving.
+- HUD: SHIFT 5 · 2:51→3:00→3:04 · SCHOOL 13 WATCHMAN · BELL SILENT → RINGING n/13 → SWING CREAKING → HIGHER → AT YOUR WINDOW →
+  STOPPED → SWING 2 MOVING · RULES 3 → RULE 1 KEPT → RULE 2 KEPT · INSIDE → RULE 3 BROKEN · ROLL — → CALLING → SAM? → SAM · PRESENT →
+  MEERA S. SINCE 1998 → SAM TICKED · PRESENT.
+- Choice offered: **Which rule would you break? A) RULE 2 · GO OUTSIDE  B) RULE 3 · SAY PRESENT** (kept the Ep 4 "Just type A or B"
+  test unchanged so it can be measured across 2 posts).
+- Engine: new `engine/sets_school.js` (drawYard with pendulum swings/girl/bell/your lit window, drawWindow classroom POV + poster
+  face rise, drawBell close-up with n/13 badge, drawRules register page, drawRoll attendance grid with drawn ticks + SINCE 1998
+  stamp); `part5.js`; `mix.py` part5 (synth night wind + crickets, music_p3 loop, synthesized brass bell strokes ×13, synth
+  chain creaks at each end of the arc). Easter eggs: signed "R." again; GOVT. SCHOOL NO. 13; you are SAM.
+- QA fixes: removed a misaligned legs marker, shrank the handwritten last line (was clipped), moved the 13/13 badge above the
+  captions, moved/faded the 1998 stamp off your row, drew tick marks as paths (the font has no ✓ glyph).
 
 ## Episode 4 "The petrol pump" — QUEUED for 2026-11-23
 - Output: `outputs/night-shift-p4.mp4` (69.6 s, 11.7 MB, −13.8 LUFS) + `outputs/night-shift-p4.jpg` (cover: the back window full
