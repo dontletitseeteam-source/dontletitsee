@@ -23,6 +23,40 @@ Measure it: IG skip rate + avg watch and YouTube stay rate of Ep 6+ vs Ep 1-5.
    ("Type A or B." + the two options as huge letters) instead of the longer question; watch comment counts on Ep 4 vs Ep 1-3.
 
 ## Day log
+## 2026-11-22 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram (media 18124268906319453) | 298 | 799 | 640 | 17 | 2 | 0 / 0 | 17.3 s | 46.7% |
+| floor0-p2 | Instagram (media 17961343959258765) | 274 | 184 | 156 | 2 | 0 | 0 / 0 | 8.3 s | 71.4% |
+| floor0-p3 | Instagram (media 18139990045726049) | 250 | 144 | 117 | 1 | 0 | 0 / 0 | 13.3 s | 51.6% |
+| block-c-p1 | Instagram (media 17998129476019732) | 226 | 144 | 111 | 0 | 0 | 0 / 0 | 17.2 s | 51.7% |
+| block-c-p2 | Instagram (media 18120370895001266) | 202 | 151 | 111 | 4 | 0 | 0 / 0 | 22.6 s | 54.6% |
+| block-c-p3 | Instagram (media 18025383203947619) | 178 | 127 | 108 | 3 | 0 | 1 / 0 | 8.2 s | 62.6% |
+| block-c-p4 | Instagram (media 18121550692965483) | 154 | 128 | 106 | 1 | 0 | 0 / 0 | 10.9 s | 68.4% |
+| block-c-p5 | Instagram (media 18170937118477416) | 130 | 131 | 107 | 5 | 0 | 0 / 0 | 16.2 s | 44.0% |
+| block-c-p6 | Instagram (media 18099611141131915) | 106 | 112 | 87 | 3 | 0 | 0 / 0 | 12.8 s | 55.3% |
+| block-c-p7 | Instagram (media 18221781823348380) | 82 | 155 | 133 | 2 | 0 | 1 / 0 | 21.8 s | 45.4% |
+| block-c-p8 | Instagram (media 18117069296233249) | 58 | 125 | 100 | 0 | 0 | 1 / 0 | 12.0 s | 44.7% |
+| night-shift-p1 | Instagram (media 17880950040563546) | 34 | **257** | **202** | 1 | 0 | 0 / 0 | **22.8 s** | **36.8%** |
+| night-shift-p2 | Instagram (media 18139497040738111) | 10 | **1,205** | **1,023** | **35** | 1 | **3 / 3** | **29.8 s** | **37.5%** |
+| all 13 uploads | YouTube @dontletitsee (youtube_regin-mont) | 10-298 | n/a | n/a | n/a | n/a | n/a | n/a | n/a |
+| all 13 uploads | YouTube @lexter2025 (youtube_rachel-brod) | 10-298 | n/a | n/a | n/a | n/a | n/a | n/a | n/a |
+
+YouTube: n/a today. YOUTUBE_GET_VIDEO_DETAILS_BATCH returned 403 quotaExceeded on BOTH accounts at 01:12 IST (the YouTube Data
+API daily quota resets at midnight Pacific = 13:30 IST, one minute before the YouTube uploader starts). Not retried, to leave
+nothing in the way of today's upload. If the uploader also hits the quota, check how many calls the YouTube routine makes.
+
+Lessons:
+- NIGHT SHIFT Ep 2 (sleeper train, upside-down man) is the first breakout: IG 1,205 views / 1,023 reach in 10 h (BLOCK C parts
+  plateau at 87-133 reach), 35 likes, first 3 shares and 3 saves, avg watch 29.8 s (best ever), skip 37.5%.
+- Standalone format, 2 for 2: Ep 1 skip 36.8% / 22.8 s avg watch, Ep 2 37.5% / 29.8 s; every BLOCK C part was 44-68% skip.
+  The bright-opener + one-named-entity + image-title recipe is now confirmed across Ep 1-2 + BLOCK C P5-P8 (6 posts).
+- What Ep 2 had that Ep 1 lacked: a numeric wrongness the eye checks at once ("72 BERTHS. / 73 PASSENGERS.") and a body-horror
+  image you can picture from the title alone (a face level with yours, upside down). One post: watch Ep 3-5 before acting.
+- Comments are still ~0 (Ep 2: 1 on IG). The "Just type A or B" test starts with Ep 4 (posts 2026-11-23); judge it on Ep 4-5.
+- Ep 6 is the first episode under the owner's v2 directives (clarity, slower voice, faces, more shots): compare its skip rate,
+  avg watch and YT stay rate against Ep 1-5 (Ep 1-2 baseline: 37% skip, 23-30 s avg watch).
+
 ## 2026-11-21 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
