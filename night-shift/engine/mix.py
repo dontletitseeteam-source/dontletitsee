@@ -386,8 +386,85 @@ def part4():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4}[PART]()
-if PART in (3, 4): sfx *= db(-1.2)
+def part5():
+    """NIGHT SHIFT Ep.5 — the school night watchman (the girl who swings without moving her legs)."""
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    t_ = np.arange(int(3.0 * SR)) / SR
+    # a brass school bell stroke (inharmonic partials, long decay)
+    bl = sum(a * np.sin(2 * np.pi * f * t_) * np.exp(-t_ * d) for f, a, d in [(620, 1.0, 1.6), (1480, 0.5, 2.4), (2210, 0.3, 3.2), (3130, 0.18, 4.5), (311, 0.35, 1.2)])
+    bl = (bl / np.abs(bl).max()).astype(np.float32); bell_hit = np.stack([bl, bl], 1)
+    # a chain/swing creak: a short pitched squeal sweeping down
+    tc = np.arange(int(0.45 * SR)) / SR
+    fq = 900 - 500 * tc / 0.45
+    cr = np.sin(2 * np.pi * np.cumsum(fq) / SR) * np.sin(np.pi * tc / 0.45) ** 2 * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 38 * tc)))
+    cr = (cr / np.abs(cr).max()).astype(np.float32); creak = np.stack([cr, cr], 1)
+    # bed: night wind + crickets (synth) + hum very low
+    rng = np.random.default_rng(5); x = rng.standard_normal(N).astype(np.float32)
+    X_ = np.fft.rfft(x); f = np.fft.rfftfreq(N, 1 / SR); X_[(f < 60) | (f > 500)] = 0
+    x = np.fft.irfft(X_, N).astype(np.float32); x /= (np.abs(x).max() + 1e-9)
+    tt = np.arange(N) / SR
+    cri = (np.sin(2 * np.pi * 4300 * tt) * (np.sin(2 * np.pi * 28 * tt) > 0.3) * (np.sin(2 * np.pi * 0.9 * tt) > 0)).astype(np.float32)
+    rb = np.stack([x, x], 1) * db(-16) + np.stack([cri, cri * 0.8], 1) * db(-42) + bed("hum.mp3", "lowpass=f=400") * db(-26)
+    rb = rb * automation([(0, 0), (K["threeW"], -4), (K["rule1"], 0), (K["top"], -3), (K["stopsW"], 0), (K["reg"], -4), (K["andW"], 0), (K["choice"], -4), (DUR - 1, -4), (DUR, -40)])
+    mu = load("music_p3.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    while len(loop) < N: loop = np.concatenate([loop, loop])
+    loop = loop[:N]
+    m1 = loop * automation([
+        (0, -16), (K["legs"], -14), (K["me"], -19), (K["r1"], -18), (K["last"], -16), (K["rule1"], -17),
+        (K["thirteenW"], -13), (K["creak"], -16), (K["rule2"], -16), (K["higher"], -14), (K["faceW"], -10),
+        (K["voice"], -15), (K["rule3"], -14), (K["presentW"], -10), (K["stops"], -16), (K["reg"], -16),
+        (K["nineteenW"], -12), (K["yourW"], -11), (K["movingW"], -10), (K["choice"], -15), (DUR - 1.2, -15), (DUR, -40)])
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0)
+    place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    # her swing creaks at each end of its arc (period 2*pi/2.3)
+    tt0 = np.pi / 2 / 2.3
+    for tc0 in np.arange(tt0, K["me"], np.pi / 2.3): place(creak, tc0, -22, fo=0.08)
+    place(stinger, K["neverW"] - 0.03, -11, fo=0.5, maxlen=1.2); place(boom, K["neverW"], -12, fo=0.6, maxlen=1.6)
+    place(breath, K["legs"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.4)
+    place(noise_burst(0.35, 800, 6000, 51, 0.02) * 0.6, K["threeW"] - 0.05, -14)
+    for k in ("r1", "r2", "r3"): place(tick, K[k] + 0.02, -13)
+    place(breath, K["last"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.8)
+    place(stinger, K["presW"] - 0.03, -12, fo=0.5, maxlen=1.2); place(boom, K["presW"], -13, fo=0.6, maxlen=1.6)
+    # the 13 bell strokes (rings -> Thirteen); the first and the last louder
+    for i in range(13):
+        tb = K["ringsW"] + (K["thirteenW"] + 0.15 - K["ringsW"]) * i / 12
+        place(bell_hit, tb, -15 if i in (0, 12) else -20, fo=0.4, maxlen=1.6 if i < 12 else 3.0)
+    place(boom, K["thirteenW"] + 0.15, -12, fo=0.8, maxlen=2.0)
+    for tc0 in np.arange(K["swingW"], K["stopsW"], np.pi / 2.3):
+        g = -14 if K["higher"] <= tc0 < K["top"] else -18
+        if K["top"] <= tc0 < K["stops"]: continue
+        place(creak, tc0, g, fo=0.08)
+    place(breath, K["creak"] + 0.1, -12, fi=0.2, fo=0.5, maxlen=1.8)
+    place(heartbeat, K["rule2"], -15, fi=0.1, fo=0.3, maxlen=K["top"] - K["rule2"])
+    place(riser, K["faceW"] - 0.06 - len(riser) / SR, -17, fi=1.5, fo=0.004)
+    place(creak, K["topW"] - 0.1, -10, fo=0.1)
+    place(stinger, K["faceW"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["faceW"], -7, fo=0.8, maxlen=2.4)
+    place(load("smile_stinger.mp3"), K["winW"] - 0.05, -11, fo=0.5, maxlen=1.6)
+    place(breath, K["voiceW"] - 0.1, -10, fi=0.1, fo=0.5, maxlen=2.4)
+    place(noise_burst(0.3, 800, 6000, 52, 0.02) * 0.6, K["every"], -15)
+    place(heartbeat, K["rule3"], -13, fi=0.1, fo=0.3, maxlen=K["say"] - K["rule3"] + 0.6)
+    place(stinger, K["nameW"] - 0.03, -9, fo=0.5, maxlen=1.2); place(boom, K["nameW"], -10, fo=0.6, maxlen=1.6)
+    place(riser, K["presentW"] - 0.06 - len(riser) / SR, -18, fi=1.5, fo=0.004)
+    place(stinger, K["presentW"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["presentW"], -7, fo=0.8, maxlen=2.4)
+    place(bell_hit, K["stopsW"], -14, fo=0.6, maxlen=2.5)
+    place(noise_burst(0.35, 800, 6000, 53, 0.02) * 0.6, K["reg"], -14)
+    place(stinger, K["nineteenW"] - 0.03, -10, fo=0.5, maxlen=1.2); place(boom, K["nineteenW"], -11, fo=0.6, maxlen=1.6)
+    place(breath, K["below"] + 0.05, -11, fi=0.1, fo=0.5, maxlen=1.4)
+    place(stinger, K["yourW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["yourW"], -8, fo=0.8, maxlen=2.0)
+    place(noise_burst(0.15, 1500, 7000, 54, 0.005) * 0.7, K["tick2W"], -12)
+    for tc0 in np.arange(K["andW"] + 0.5, K["choice"] + 1.5, np.pi / 2.3): place(creak, tc0, -13, fo=0.08)
+    place(riser, K["movingW"] - 0.06 - len(riser) / SR, -19, fi=1.5, fo=0.004)
+    place(stinger, K["movingW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["movingW"], -7, fo=0.8, maxlen=2.4)
+    place(boom, K["choice"] - 0.1, -17, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5}[PART]()
+if PART in (3, 4, 5): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

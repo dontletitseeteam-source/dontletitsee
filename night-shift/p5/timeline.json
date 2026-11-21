@@ -1,0 +1,1492 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 69.842,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Three AM. A girl swings in the empty schoolyard.",
+   "src_start": 0.098,
+   "src_end": 3.7,
+   "start": 0.12,
+   "end": 3.722,
+   "words": [
+    {
+     "text": "Three",
+     "start": 0.17,
+     "end": 0.392
+    },
+    {
+     "text": "AM.",
+     "start": 0.54,
+     "end": 1.059
+    },
+    {
+     "text": "A",
+     "start": 1.577,
+     "end": 1.651
+    },
+    {
+     "text": "girl",
+     "start": 1.726,
+     "end": 1.948
+    },
+    {
+     "text": "swings",
+     "start": 2.022,
+     "end": 2.392
+    },
+    {
+     "text": "in",
+     "start": 2.466,
+     "end": 2.503
+    },
+    {
+     "text": "the",
+     "start": 2.54,
+     "end": 2.614
+    },
+    {
+     "text": "empty",
+     "start": 2.689,
+     "end": 2.911
+    },
+    {
+     "text": "schoolyard.",
+     "start": 2.985,
+     "end": 3.722
+    }
+   ],
+   "captions": [
+    {
+     "text": "[3 AM.]",
+     "start": 0.17,
+     "word_idx": 0,
+     "end": 1.577
+    },
+    {
+     "text": "A {GIRL} SWINGS",
+     "start": 1.577,
+     "word_idx": 2,
+     "end": 2.466
+    },
+    {
+     "text": "IN THE EMPTY [SCHOOLYARD.]",
+     "start": 2.466,
+     "word_idx": 5,
+     "end": 3.842
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "Her legs never move.",
+   "src_start": 4.295,
+   "src_end": 5.7,
+   "start": 3.882,
+   "end": 5.286,
+   "words": [
+    {
+     "text": "Her",
+     "start": 3.932,
+     "end": 3.957
+    },
+    {
+     "text": "legs",
+     "start": 4.105,
+     "end": 4.253
+    },
+    {
+     "text": "never",
+     "start": 4.401,
+     "end": 4.624
+    },
+    {
+     "text": "move.",
+     "start": 4.772,
+     "end": 5.161
+    }
+   ],
+   "captions": [
+    {
+     "text": "HER {LEGS}",
+     "start": 3.932,
+     "word_idx": 0,
+     "end": 4.401
+    },
+    {
+     "text": "{NEVER MOVE.}",
+     "start": 4.401,
+     "word_idx": 2,
+     "end": 5.406
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Your first night as the school watchman. The last one left three rules.",
+   "src_start": 6.369,
+   "src_end": 10.34,
+   "start": 5.546,
+   "end": 9.517,
+   "words": [
+    {
+     "text": "Your",
+     "start": 5.596,
+     "end": 5.621
+    },
+    {
+     "text": "first",
+     "start": 5.733,
+     "end": 5.844
+    },
+    {
+     "text": "night",
+     "start": 5.918,
+     "end": 6.14
+    },
+    {
+     "text": "as",
+     "start": 6.214,
+     "end": 6.288
+    },
+    {
+     "text": "the",
+     "start": 6.362,
+     "end": 6.399
+    },
+    {
+     "text": "school",
+     "start": 6.436,
+     "end": 6.659
+    },
+    {
+     "text": "watchman.",
+     "start": 6.733,
+     "end": 7.473
+    },
+    {
+     "text": "The",
+     "start": 7.696,
+     "end": 7.733
+    },
+    {
+     "text": "last",
+     "start": 7.77,
+     "end": 8.066
+    },
+    {
+     "text": "one",
+     "start": 8.14,
+     "end": 8.288
+    },
+    {
+     "text": "left",
+     "start": 8.362,
+     "end": 8.584
+    },
+    {
+     "text": "three",
+     "start": 8.659,
+     "end": 8.881
+    },
+    {
+     "text": "rules.",
+     "start": 8.955,
+     "end": 9.517
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR FIRST NIGHT AS",
+     "start": 5.596,
+     "word_idx": 0,
+     "end": 6.362
+    },
+    {
+     "text": "THE SCHOOL [WATCHMAN.]",
+     "start": 6.362,
+     "word_idx": 4,
+     "end": 7.696
+    },
+    {
+     "text": "THE LAST ONE",
+     "start": 7.696,
+     "word_idx": 7,
+     "end": 8.362
+    },
+    {
+     "text": "LEFT [3 RULES.]",
+     "start": 8.362,
+     "word_idx": 10,
+     "end": 9.637
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "One. When the bell rings at three, let it ring.",
+   "src_start": 10.765,
+   "src_end": 13.94,
+   "start": 9.727,
+   "end": 12.902,
+   "words": [
+    {
+     "text": "One.",
+     "start": 9.777,
+     "end": 10.296
+    },
+    {
+     "text": "When",
+     "start": 10.518,
+     "end": 10.592
+    },
+    {
+     "text": "the",
+     "start": 10.666,
+     "end": 10.703
+    },
+    {
+     "text": "bell",
+     "start": 10.74,
+     "end": 10.962
+    },
+    {
+     "text": "rings",
+     "start": 11.036,
+     "end": 11.184
+    },
+    {
+     "text": "at",
+     "start": 11.259,
+     "end": 11.333
+    },
+    {
+     "text": "three,",
+     "start": 11.407,
+     "end": 12.073
+    },
+    {
+     "text": "let",
+     "start": 12.147,
+     "end": 12.221
+    },
+    {
+     "text": "it",
+     "start": 12.296,
+     "end": 12.37
+    },
+    {
+     "text": "ring.",
+     "start": 12.444,
+     "end": 12.814
+    }
+   ],
+   "captions": [
+    {
+     "text": "ONE.",
+     "start": 9.777,
+     "word_idx": 0,
+     "end": 10.518
+    },
+    {
+     "text": "WHEN THE [BELL] RINGS",
+     "start": 10.518,
+     "word_idx": 1,
+     "end": 11.259
+    },
+    {
+     "text": "AT THREE,",
+     "start": 11.259,
+     "word_idx": 5,
+     "end": 12.147
+    },
+    {
+     "text": "{LET IT RING.}",
+     "start": 12.147,
+     "word_idx": 7,
+     "end": 13.022
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "Two. If the swing moves, stay inside.",
+   "src_start": 14.5,
+   "src_end": 17.19,
+   "start": 13.112,
+   "end": 15.802,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 13.162,
+     "end": 13.279
+    },
+    {
+     "text": "If",
+     "start": 13.649,
+     "end": 13.723
+    },
+    {
+     "text": "the",
+     "start": 13.797,
+     "end": 13.834
+    },
+    {
+     "text": "swing",
+     "start": 13.871,
+     "end": 14.168
+    },
+    {
+     "text": "moves,",
+     "start": 14.242,
+     "end": 14.834
+    },
+    {
+     "text": "stay",
+     "start": 14.909,
+     "end": 15.057
+    },
+    {
+     "text": "inside.",
+     "start": 15.131,
+     "end": 15.723
+    }
+   ],
+   "captions": [
+    {
+     "text": "TWO.",
+     "start": 13.162,
+     "word_idx": 0,
+     "end": 13.649
+    },
+    {
+     "text": "IF THE [SWING] MOVES,",
+     "start": 13.649,
+     "word_idx": 1,
+     "end": 14.909
+    },
+    {
+     "text": "{STAY INSIDE.}",
+     "start": 14.909,
+     "word_idx": 5,
+     "end": 15.922
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Three. If she calls the roll, never answer present.",
+   "src_start": 17.749,
+   "src_end": 20.92,
+   "start": 16.012,
+   "end": 19.183,
+   "words": [
+    {
+     "text": "Three.",
+     "start": 16.062,
+     "end": 16.189
+    },
+    {
+     "text": "If",
+     "start": 16.485,
+     "end": 16.559
+    },
+    {
+     "text": "she",
+     "start": 16.634,
+     "end": 16.708
+    },
+    {
+     "text": "calls",
+     "start": 16.782,
+     "end": 17.004
+    },
+    {
+     "text": "the",
+     "start": 17.041,
+     "end": 17.078
+    },
+    {
+     "text": "roll,",
+     "start": 17.152,
+     "end": 17.819
+    },
+    {
+     "text": "never",
+     "start": 17.893,
+     "end": 18.189
+    },
+    {
+     "text": "answer",
+     "start": 18.263,
+     "end": 18.559
+    },
+    {
+     "text": "present.",
+     "start": 18.634,
+     "end": 19.152
+    }
+   ],
+   "captions": [
+    {
+     "text": "THREE.",
+     "start": 16.062,
+     "word_idx": 0,
+     "end": 16.485
+    },
+    {
+     "text": "IF SHE CALLS THE [ROLL,]",
+     "start": 16.485,
+     "word_idx": 1,
+     "end": 17.893
+    },
+    {
+     "text": "{NEVER ANSWER} [PRESENT.]",
+     "start": 17.893,
+     "word_idx": 6,
+     "end": 19.303
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "Under them: She marked me present.",
+   "src_start": 21.209,
+   "src_end": 23.47,
+   "start": 19.393,
+   "end": 21.654,
+   "words": [
+    {
+     "text": "Under",
+     "start": 19.443,
+     "end": 19.665
+    },
+    {
+     "text": "them:",
+     "start": 19.739,
+     "end": 20.332
+    },
+    {
+     "text": "She",
+     "start": 20.406,
+     "end": 20.554
+    },
+    {
+     "text": "marked",
+     "start": 20.665,
+     "end": 20.776
+    },
+    {
+     "text": "me",
+     "start": 20.851,
+     "end": 20.925
+    },
+    {
+     "text": "present.",
+     "start": 21.073,
+     "end": 21.591
+    }
+   ],
+   "captions": [
+    {
+     "text": "UNDER THEM:",
+     "start": 19.443,
+     "word_idx": 0,
+     "end": 20.406
+    },
+    {
+     "text": "{SHE MARKED ME} [PRESENT.]",
+     "start": 20.406,
+     "word_idx": 2,
+     "end": 21.774
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "Rule one. At three, the bell rings by itself.",
+   "src_start": 23.802,
+   "src_end": 27.17,
+   "start": 21.964,
+   "end": 25.332,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 22.014,
+     "end": 22.236
+    },
+    {
+     "text": "one.",
+     "start": 22.31,
+     "end": 22.681
+    },
+    {
+     "text": "At",
+     "start": 23.051,
+     "end": 23.199
+    },
+    {
+     "text": "three,",
+     "start": 23.273,
+     "end": 23.792
+    },
+    {
+     "text": "the",
+     "start": 23.829,
+     "end": 23.866
+    },
+    {
+     "text": "bell",
+     "start": 23.94,
+     "end": 24.162
+    },
+    {
+     "text": "rings",
+     "start": 24.236,
+     "end": 24.458
+    },
+    {
+     "text": "by",
+     "start": 24.532,
+     "end": 24.606
+    },
+    {
+     "text": "itself.",
+     "start": 24.681,
+     "end": 25.273
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 1.]",
+     "start": 22.014,
+     "word_idx": 0,
+     "end": 23.051
+    },
+    {
+     "text": "AT THREE,",
+     "start": 23.051,
+     "word_idx": 2,
+     "end": 23.829
+    },
+    {
+     "text": "THE [BELL] RINGS {BY ITSELF.}",
+     "start": 23.829,
+     "word_idx": 4,
+     "end": 25.452
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Thirteen times. You let it ring.",
+   "src_start": 27.357,
+   "src_end": 29.71,
+   "start": 25.492,
+   "end": 27.845,
+   "words": [
+    {
+     "text": "Thirteen",
+     "start": 25.542,
+     "end": 25.912
+    },
+    {
+     "text": "times.",
+     "start": 26.061,
+     "end": 26.579
+    },
+    {
+     "text": "You",
+     "start": 26.875,
+     "end": 27.024
+    },
+    {
+     "text": "let",
+     "start": 27.098,
+     "end": 27.172
+    },
+    {
+     "text": "it",
+     "start": 27.246,
+     "end": 27.32
+    },
+    {
+     "text": "ring.",
+     "start": 27.394,
+     "end": 27.764
+    }
+   ],
+   "captions": [
+    {
+     "text": "[13 TIMES.]",
+     "start": 25.542,
+     "word_idx": 0,
+     "end": 26.875
+    },
+    {
+     "text": "YOU {LET IT RING.}",
+     "start": 26.875,
+     "word_idx": 2,
+     "end": 27.965
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "Outside, a swing starts creaking.",
+   "src_start": 29.95,
+   "src_end": 32.14,
+   "start": 28.105,
+   "end": 30.295,
+   "words": [
+    {
+     "text": "Outside,",
+     "start": 28.155,
+     "end": 28.821
+    },
+    {
+     "text": "a",
+     "start": 28.895,
+     "end": 28.969
+    },
+    {
+     "text": "swing",
+     "start": 29.118,
+     "end": 29.266
+    },
+    {
+     "text": "starts",
+     "start": 29.34,
+     "end": 29.636
+    },
+    {
+     "text": "creaking.",
+     "start": 29.71,
+     "end": 30.229
+    }
+   ],
+   "captions": [
+    {
+     "text": "OUTSIDE,",
+     "start": 28.155,
+     "word_idx": 0,
+     "end": 28.895
+    },
+    {
+     "text": "A [SWING] STARTS {CREAKING.}",
+     "start": 28.895,
+     "word_idx": 1,
+     "end": 30.415
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "Rule two. You stay inside, at the window.",
+   "src_start": 32.32,
+   "src_end": 35.19,
+   "start": 30.605,
+   "end": 33.474,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 30.655,
+     "end": 30.803
+    },
+    {
+     "text": "two.",
+     "start": 30.951,
+     "end": 31.321
+    },
+    {
+     "text": "You",
+     "start": 31.618,
+     "end": 31.692
+    },
+    {
+     "text": "stay",
+     "start": 31.766,
+     "end": 31.914
+    },
+    {
+     "text": "inside,",
+     "start": 31.988,
+     "end": 32.655
+    },
+    {
+     "text": "at",
+     "start": 32.729,
+     "end": 32.803
+    },
+    {
+     "text": "the",
+     "start": 32.84,
+     "end": 32.877
+    },
+    {
+     "text": "window.",
+     "start": 32.951,
+     "end": 33.395
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 2.]",
+     "start": 30.655,
+     "word_idx": 0,
+     "end": 31.618
+    },
+    {
+     "text": "YOU STAY INSIDE,",
+     "start": 31.618,
+     "word_idx": 2,
+     "end": 32.729
+    },
+    {
+     "text": "AT THE [WINDOW.]",
+     "start": 32.729,
+     "word_idx": 5,
+     "end": 33.594
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "Higher. Higher. Her legs hang dead still.",
+   "src_start": 35.357,
+   "src_end": 38.42,
+   "start": 33.684,
+   "end": 36.747,
+   "words": [
+    {
+     "text": "Higher.",
+     "start": 33.734,
+     "end": 34.29
+    },
+    {
+     "text": "Higher.",
+     "start": 34.475,
+     "end": 34.919
+    },
+    {
+     "text": "Her",
+     "start": 35.142,
+     "end": 35.216
+    },
+    {
+     "text": "legs",
+     "start": 35.364,
+     "end": 35.586
+    },
+    {
+     "text": "hang",
+     "start": 35.66,
+     "end": 35.882
+    },
+    {
+     "text": "dead",
+     "start": 35.956,
+     "end": 36.179
+    },
+    {
+     "text": "still.",
+     "start": 36.253,
+     "end": 36.697
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIGHER.",
+     "start": 33.734,
+     "word_idx": 0,
+     "end": 34.475
+    },
+    {
+     "text": "[HIGHER.]",
+     "start": 34.475,
+     "word_idx": 1,
+     "end": 35.142
+    },
+    {
+     "text": "HER LEGS HANG {DEAD STILL.}",
+     "start": 35.142,
+     "word_idx": 2,
+     "end": 36.867
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "At the top, her face reaches your window.",
+   "src_start": 38.677,
+   "src_end": 41.51,
+   "start": 36.957,
+   "end": 39.79,
+   "words": [
+    {
+     "text": "At",
+     "start": 37.007,
+     "end": 37.021
+    },
+    {
+     "text": "the",
+     "start": 37.095,
+     "end": 37.169
+    },
+    {
+     "text": "top,",
+     "start": 37.243,
+     "end": 37.91
+    },
+    {
+     "text": "her",
+     "start": 38.021,
+     "end": 38.132
+    },
+    {
+     "text": "face",
+     "start": 38.206,
+     "end": 38.502
+    },
+    {
+     "text": "reaches",
+     "start": 38.65,
+     "end": 39.021
+    },
+    {
+     "text": "your",
+     "start": 39.095,
+     "end": 39.169
+    },
+    {
+     "text": "window.",
+     "start": 39.243,
+     "end": 39.687
+    }
+   ],
+   "captions": [
+    {
+     "text": "AT THE TOP,",
+     "start": 37.007,
+     "word_idx": 0,
+     "end": 38.021
+    },
+    {
+     "text": "HER {FACE}",
+     "start": 38.021,
+     "word_idx": 3,
+     "end": 38.65
+    },
+    {
+     "text": "REACHES {YOUR WINDOW.}",
+     "start": 38.65,
+     "word_idx": 5,
+     "end": 39.91
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "Then a small voice calls the roll.",
+   "src_start": 41.791,
+   "src_end": 43.71,
+   "start": 40.1,
+   "end": 42.019,
+   "words": [
+    {
+     "text": "Then",
+     "start": 40.15,
+     "end": 40.161
+    },
+    {
+     "text": "a",
+     "start": 40.198,
+     "end": 40.235
+    },
+    {
+     "text": "small",
+     "start": 40.309,
+     "end": 40.606
+    },
+    {
+     "text": "voice",
+     "start": 40.68,
+     "end": 40.976
+    },
+    {
+     "text": "calls",
+     "start": 41.05,
+     "end": 41.272
+    },
+    {
+     "text": "the",
+     "start": 41.346,
+     "end": 41.383
+    },
+    {
+     "text": "roll.",
+     "start": 41.42,
+     "end": 41.976
+    }
+   ],
+   "captions": [
+    {
+     "text": "THEN A SMALL [VOICE]",
+     "start": 40.15,
+     "word_idx": 0,
+     "end": 41.05
+    },
+    {
+     "text": "CALLS THE {ROLL.}",
+     "start": 41.05,
+     "word_idx": 4,
+     "end": 42.139
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "Every name in the register.",
+   "src_start": 43.802,
+   "src_end": 45.29,
+   "start": 42.179,
+   "end": 43.667,
+   "words": [
+    {
+     "text": "Every",
+     "start": 42.229,
+     "end": 42.526
+    },
+    {
+     "text": "name",
+     "start": 42.6,
+     "end": 42.822
+    },
+    {
+     "text": "in",
+     "start": 42.859,
+     "end": 42.896
+    },
+    {
+     "text": "the",
+     "start": 42.97,
+     "end": 43.007
+    },
+    {
+     "text": "register.",
+     "start": 43.044,
+     "end": 43.667
+    }
+   ],
+   "captions": [
+    {
+     "text": "EVERY NAME IN",
+     "start": 42.229,
+     "word_idx": 0,
+     "end": 42.97
+    },
+    {
+     "text": "THE [REGISTER.]",
+     "start": 42.97,
+     "word_idx": 3,
+     "end": 43.787
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "Rule three. She calls your name.",
+   "src_start": 45.506,
+   "src_end": 47.57,
+   "start": 43.977,
+   "end": 46.042,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 44.027,
+     "end": 44.176
+    },
+    {
+     "text": "three.",
+     "start": 44.324,
+     "end": 44.694
+    },
+    {
+     "text": "She",
+     "start": 44.99,
+     "end": 45.139
+    },
+    {
+     "text": "calls",
+     "start": 45.287,
+     "end": 45.435
+    },
+    {
+     "text": "your",
+     "start": 45.509,
+     "end": 45.583
+    },
+    {
+     "text": "name.",
+     "start": 45.731,
+     "end": 45.953
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 3.]",
+     "start": 44.027,
+     "word_idx": 0,
+     "end": 44.99
+    },
+    {
+     "text": "SHE CALLS {YOUR NAME.}",
+     "start": 44.99,
+     "word_idx": 2,
+     "end": 46.162
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "You hear yourself say: present.",
+   "src_start": 47.728,
+   "src_end": 49.96,
+   "start": 46.302,
+   "end": 48.534,
+   "words": [
+    {
+     "text": "You",
+     "start": 46.352,
+     "end": 46.5
+    },
+    {
+     "text": "hear",
+     "start": 46.574,
+     "end": 46.722
+    },
+    {
+     "text": "yourself",
+     "start": 46.796,
+     "end": 47.241
+    },
+    {
+     "text": "say:",
+     "start": 47.315,
+     "end": 47.907
+    },
+    {
+     "text": "present.",
+     "start": 48.167,
+     "end": 48.534
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU HEAR YOURSELF SAY:",
+     "start": 46.352,
+     "word_idx": 0,
+     "end": 48.167
+    },
+    {
+     "text": "{PRESENT.}",
+     "start": 48.167,
+     "word_idx": 4,
+     "end": 48.654
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "The swing stops. The yard is empty.",
+   "src_start": 50.168,
+   "src_end": 52.58,
+   "start": 48.894,
+   "end": 51.306,
+   "words": [
+    {
+     "text": "The",
+     "start": 48.944,
+     "end": 48.949
+    },
+    {
+     "text": "swing",
+     "start": 49.023,
+     "end": 49.245
+    },
+    {
+     "text": "stops.",
+     "start": 49.319,
+     "end": 49.986
+    },
+    {
+     "text": "The",
+     "start": 50.134,
+     "end": 50.208
+    },
+    {
+     "text": "yard",
+     "start": 50.282,
+     "end": 50.504
+    },
+    {
+     "text": "is",
+     "start": 50.578,
+     "end": 50.726
+    },
+    {
+     "text": "empty.",
+     "start": 50.801,
+     "end": 51.306
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE SWING [STOPS.]",
+     "start": 48.944,
+     "word_idx": 0,
+     "end": 50.134
+    },
+    {
+     "text": "THE YARD IS {EMPTY.}",
+     "start": 50.134,
+     "word_idx": 3,
+     "end": 51.426
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "The register. Her name. Ticked present.",
+   "src_start": 52.746,
+   "src_end": 55.63,
+   "start": 51.616,
+   "end": 54.5,
+   "words": [
+    {
+     "text": "The",
+     "start": 51.666,
+     "end": 51.685
+    },
+    {
+     "text": "register.",
+     "start": 51.981,
+     "end": 52.426
+    },
+    {
+     "text": "Her",
+     "start": 52.574,
+     "end": 52.722
+    },
+    {
+     "text": "name.",
+     "start": 52.796,
+     "end": 53.166
+    },
+    {
+     "text": "Ticked",
+     "start": 53.463,
+     "end": 53.759
+    },
+    {
+     "text": "present.",
+     "start": 53.907,
+     "end": 54.426
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE [REGISTER.]",
+     "start": 51.666,
+     "word_idx": 0,
+     "end": 52.574
+    },
+    {
+     "text": "HER NAME.",
+     "start": 52.574,
+     "word_idx": 2,
+     "end": 53.463
+    },
+    {
+     "text": "TICKED {PRESENT.}",
+     "start": 53.463,
+     "word_idx": 4,
+     "end": 54.62
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Every night since nineteen ninety-eight.",
+   "src_start": 55.981,
+   "src_end": 57.87,
+   "start": 54.66,
+   "end": 56.549,
+   "words": [
+    {
+     "text": "Every",
+     "start": 54.71,
+     "end": 54.753
+    },
+    {
+     "text": "night",
+     "start": 54.827,
+     "end": 55.123
+    },
+    {
+     "text": "since",
+     "start": 55.234,
+     "end": 55.345
+    },
+    {
+     "text": "nineteen",
+     "start": 55.419,
+     "end": 55.79
+    },
+    {
+     "text": "ninety-eight.",
+     "start": 55.864,
+     "end": 56.549
+    }
+   ],
+   "captions": [
+    {
+     "text": "EVERY NIGHT SINCE",
+     "start": 54.71,
+     "word_idx": 0,
+     "end": 55.419
+    },
+    {
+     "text": "{1998.}",
+     "start": 55.419,
+     "word_idx": 3,
+     "end": 56.669
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "text": "Below it, your name.",
+   "src_start": 58.225,
+   "src_end": 59.49,
+   "start": 56.859,
+   "end": 58.124,
+   "words": [
+    {
+     "text": "Below",
+     "start": 56.909,
+     "end": 56.93
+    },
+    {
+     "text": "it,",
+     "start": 57.004,
+     "end": 57.374
+    },
+    {
+     "text": "your",
+     "start": 57.449,
+     "end": 57.597
+    },
+    {
+     "text": "name.",
+     "start": 57.671,
+     "end": 58.124
+    }
+   ],
+   "captions": [
+    {
+     "text": "BELOW IT,",
+     "start": 56.909,
+     "word_idx": 0,
+     "end": 57.449
+    },
+    {
+     "text": "{YOUR NAME.}",
+     "start": 57.449,
+     "word_idx": 2,
+     "end": 58.244
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "text": "Ticked present. And the second swing is moving.",
+   "src_start": 59.654,
+   "src_end": 62.93,
+   "start": 58.384,
+   "end": 61.66,
+   "words": [
+    {
+     "text": "Ticked",
+     "start": 58.434,
+     "end": 58.656
+    },
+    {
+     "text": "present.",
+     "start": 58.804,
+     "end": 59.545
+    },
+    {
+     "text": "And",
+     "start": 59.681,
+     "end": 59.693
+    },
+    {
+     "text": "the",
+     "start": 59.73,
+     "end": 59.767
+    },
+    {
+     "text": "second",
+     "start": 59.915,
+     "end": 60.211
+    },
+    {
+     "text": "swing",
+     "start": 60.36,
+     "end": 60.73
+    },
+    {
+     "text": "is",
+     "start": 60.878,
+     "end": 60.952
+    },
+    {
+     "text": "moving.",
+     "start": 61.1,
+     "end": 61.66
+    }
+   ],
+   "captions": [
+    {
+     "text": "TICKED [PRESENT.]",
+     "start": 58.434,
+     "word_idx": 0,
+     "end": 59.681
+    },
+    {
+     "text": "AND THE",
+     "start": 59.681,
+     "word_idx": 2,
+     "end": 59.915
+    },
+    {
+     "text": "[SECOND SWING]",
+     "start": 59.915,
+     "word_idx": 4,
+     "end": 60.878
+    },
+    {
+     "text": "{IS MOVING.}",
+     "start": 60.878,
+     "word_idx": 6,
+     "end": 61.78
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "text": "Which rule would you break? A, go outside. B, say present.",
+   "src_start": 63.135,
+   "src_end": 67.76,
+   "start": 62.12,
+   "end": 66.745,
+   "words": [
+    {
+     "text": "Which",
+     "start": 62.17,
+     "end": 62.318
+    },
+    {
+     "text": "rule",
+     "start": 62.392,
+     "end": 62.54
+    },
+    {
+     "text": "would",
+     "start": 62.614,
+     "end": 62.763
+    },
+    {
+     "text": "you",
+     "start": 62.837,
+     "end": 62.911
+    },
+    {
+     "text": "break?",
+     "start": 62.985,
+     "end": 63.355
+    },
+    {
+     "text": "A,",
+     "start": 63.726,
+     "end": 64.022
+    },
+    {
+     "text": "go",
+     "start": 64.244,
+     "end": 64.318
+    },
+    {
+     "text": "outside.",
+     "start": 64.392,
+     "end": 64.985
+    },
+    {
+     "text": "B,",
+     "start": 65.355,
+     "end": 65.874
+    },
+    {
+     "text": "say",
+     "start": 65.948,
+     "end": 66.096
+    },
+    {
+     "text": "present.",
+     "start": 66.17,
+     "end": 66.689
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 24,
+   "text": "Just type A or B.",
+   "src_start": 68.003,
+   "src_end": 69.24,
+   "start": 66.905,
+   "end": 68.142,
+   "words": [
+    {
+     "text": "Just",
+     "start": 66.955,
+     "end": 66.976
+    },
+    {
+     "text": "type",
+     "start": 67.05,
+     "end": 67.272
+    },
+    {
+     "text": "A",
+     "start": 67.346,
+     "end": 67.569
+    },
+    {
+     "text": "or",
+     "start": 67.643,
+     "end": 67.717
+    },
+    {
+     "text": "B.",
+     "start": 67.791,
+     "end": 68.142
+    }
+   ],
+   "captions": []
+  }
+ ]
+}

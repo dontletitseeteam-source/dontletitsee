@@ -147,7 +147,7 @@ function drawBell(ctx, t, st = {}) {
   if (st.count > 0) {
     const n = Math.min(13, Math.floor(st.count));
     const pop = 1 + 0.25 * Math.exp(-(st.count - n) * 6);
-    ctx.save(); ctx.translate(540, 1270); ctx.scale(pop, pop);
+    ctx.save(); ctx.translate(540, 1140); ctx.scale(pop * 0.8, pop * 0.8);
     rrect(ctx, -200, -90, 400, 180, 24); ctx.fillStyle = n >= 13 ? C.red : 'rgba(11,16,34,0.9)'; ctx.fill();
     ctx.font = '130px Osw700'; ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(`${n}/13`, 0, 8);
     ctx.restore();
@@ -236,8 +236,8 @@ function drawRules(ctx, t, st = {}) {
   const so = clamp(st.last ?? 1);
   if (so > 0) {
     ctx.save(); ctx.beginPath(); ctx.rect(x0, 1330, (x1 - x0) * so, 140); ctx.clip();
-    ctx.font = '60px Inter700'; ctx.fillStyle = REDINK;
-    let x = x0 + 130; ['She', 'marked', 'me', 'present.'].forEach((w, i) => { ctx.save(); ctx.translate(x, 1420 + Math.sin(i * 2.1) * 7); ctx.rotate((hash(i * 4) - 0.5) * 0.1); ctx.fillText(w, 0, 0); ctx.restore(); x += ctx.measureText(w).width + 20; });
+    ctx.font = '54px Inter700'; ctx.fillStyle = REDINK;
+    let x = x0 + 60; ['She', 'marked', 'me', 'present.'].forEach((w, i) => { ctx.save(); ctx.translate(x, 1420 + Math.sin(i * 2.1) * 7); ctx.rotate((hash(i * 4) - 0.5) * 0.1); ctx.fillText(w, 0, 0); ctx.restore(); x += ctx.measureText(w).width + 20; });
     ctx.restore();
     ctx.font = '46px Inter700'; ctx.fillStyle = INK; ctx.fillText('— R.', x1 - 200, 1520);
   }
@@ -276,7 +276,9 @@ function drawRoll(ctx, t, st = {}) {
       else mark = hash(i * 13 + c) > 0.6 ? '✓' : '·';
       if (!mark) continue;
       ctx.save(); if (mine) ctx.globalAlpha *= clamp(st.tick ?? 0);
-      ctx.fillStyle = her || mine ? REDINK : 'rgba(20,26,54,0.55)'; ctx.fillText(mark, 560 + c * 44, y);
+      const col = her || mine ? REDINK : 'rgba(20,26,54,0.55)';
+      if (mark === '✓') { ctx.strokeStyle = col; ctx.lineWidth = mine ? 7 : 5; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; const cx = 560 + c * 44; ctx.beginPath(); ctx.moveTo(cx - 14, y - 14); ctx.lineTo(cx - 4, y - 2); ctx.lineTo(cx + 16, y - 30); ctx.stroke(); }
+      else { ctx.fillStyle = col; ctx.fillText(mark, 560 + c * 44, y); }
       ctx.restore();
     }
     ctx.restore();
@@ -289,7 +291,7 @@ function drawRoll(ctx, t, st = {}) {
     ctx.restore();
   }
   if (st.since > 0) {
-    ctx.save(); ctx.globalAlpha = clamp(st.since); ctx.translate(560, 1560); ctx.rotate(-0.06); const s = lerp(1.4, 1, E.outBack(clamp(st.since))); ctx.scale(s, s);
+    ctx.save(); ctx.globalAlpha = clamp(st.since) * (1 - clamp(st.mine || 0)); ctx.translate(560, 1180); ctx.rotate(-0.06); const s = lerp(1.4, 1, E.outBack(clamp(st.since))); ctx.scale(s, s);
     rrect(ctx, -330, -80, 660, 160, 18); ctx.lineWidth = 10; ctx.strokeStyle = REDINK; ctx.stroke();
     ctx.font = '50px Osw700'; ctx.fillStyle = REDINK; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.fillText('MEERA S. · PRESENT', 0, -26); ctx.font = '40px Mono700'; ctx.fillText(`EVERY NIGHT SINCE 1998`, 0, 36);
