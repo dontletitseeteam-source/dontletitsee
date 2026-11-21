@@ -1,7 +1,7 @@
 """Prepare a part's VO: wav, 6% tempo tighten, RMS map, scaled word timings, silence map."""
 import sys, json, subprocess, pathlib, numpy as np
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-P = int(sys.argv[1]); A = ROOT / f"p{P}" / "audio"; SPEED = {5: 1.08}.get(P, 1.06)
+P = int(sys.argv[1]); A = ROOT / f"p{P}" / "audio"; SPEED = {5: 1.08}.get(P, 1.06) if P < 6 else 1.00  # v2: no speed-up from Ep 6
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(A / "vo.mp3"), "-ac", "1", "-ar", "48000", str(A / "vo.wav")], check=True)
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(A / "vo.wav"), "-af", f"atempo={SPEED}", "-ar", "48000", str(A / "vo_fast.wav")], check=True)
 raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(A / "vo_fast.wav"), "-f", "f32le", "-ac", "1", "-ar", "48000", "-"], capture_output=True).stdout

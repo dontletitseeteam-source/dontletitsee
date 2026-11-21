@@ -1,0 +1,1253 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 61.643,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Three AM. One man in the cinema.",
+   "src_start": 0.11,
+   "src_end": 3.23,
+   "start": 0.12,
+   "end": 3.24,
+   "words": [
+    {
+     "text": "Three",
+     "start": 0.17,
+     "end": 0.41
+    },
+    {
+     "text": "AM.",
+     "start": 0.57,
+     "end": 1.37
+    },
+    {
+     "text": "One",
+     "start": 1.77,
+     "end": 1.93
+    },
+    {
+     "text": "man",
+     "start": 2.01,
+     "end": 2.33
+    },
+    {
+     "text": "in",
+     "start": 2.37,
+     "end": 2.41
+    },
+    {
+     "text": "the",
+     "start": 2.49,
+     "end": 2.57
+    },
+    {
+     "text": "cinema.",
+     "start": 2.65,
+     "end": 3.24
+    }
+   ],
+   "captions": [
+    {
+     "text": "[3 AM.]",
+     "start": 0.17,
+     "word_idx": 0,
+     "end": 1.77
+    },
+    {
+     "text": "ONE MAN IN THE [CINEMA.]",
+     "start": 1.77,
+     "word_idx": 2,
+     "end": 3.36
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "His face is a screen.",
+   "src_start": 3.67,
+   "src_end": 5.19,
+   "start": 3.44,
+   "end": 4.96,
+   "words": [
+    {
+     "text": "His",
+     "start": 3.49,
+     "end": 3.61
+    },
+    {
+     "text": "face",
+     "start": 3.69,
+     "end": 4.01
+    },
+    {
+     "text": "is",
+     "start": 4.09,
+     "end": 4.17
+    },
+    {
+     "text": "a",
+     "start": 4.25,
+     "end": 4.33
+    },
+    {
+     "text": "screen.",
+     "start": 4.57,
+     "end": 4.96
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIS {FACE}",
+     "start": 3.49,
+     "word_idx": 0,
+     "end": 4.09
+    },
+    {
+     "text": "IS A {SCREEN.}",
+     "start": 4.09,
+     "word_idx": 2,
+     "end": 5.08
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Your first night as the projectionist.",
+   "src_start": 5.67,
+   "src_end": 7.78,
+   "start": 5.41,
+   "end": 7.52,
+   "words": [
+    {
+     "text": "Your",
+     "start": 5.46,
+     "end": 5.58
+    },
+    {
+     "text": "first",
+     "start": 5.74,
+     "end": 5.9
+    },
+    {
+     "text": "night",
+     "start": 5.98,
+     "end": 6.22
+    },
+    {
+     "text": "as",
+     "start": 6.3,
+     "end": 6.38
+    },
+    {
+     "text": "the",
+     "start": 6.46,
+     "end": 6.54
+    },
+    {
+     "text": "projectionist.",
+     "start": 6.82,
+     "end": 7.52
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR FIRST NIGHT",
+     "start": 5.46,
+     "word_idx": 0,
+     "end": 6.3
+    },
+    {
+     "text": "AS THE [PROJECTIONIST.]",
+     "start": 6.3,
+     "word_idx": 3,
+     "end": 7.64
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "The old one left you two rules.",
+   "src_start": 8.11,
+   "src_end": 10.1,
+   "start": 7.77,
+   "end": 9.76,
+   "words": [
+    {
+     "text": "The",
+     "start": 7.82,
+     "end": 7.9
+    },
+    {
+     "text": "old",
+     "start": 7.98,
+     "end": 8.14
+    },
+    {
+     "text": "one",
+     "start": 8.22,
+     "end": 8.38
+    },
+    {
+     "text": "left",
+     "start": 8.46,
+     "end": 8.62
+    },
+    {
+     "text": "you",
+     "start": 8.7,
+     "end": 8.86
+    },
+    {
+     "text": "two",
+     "start": 8.98,
+     "end": 9.1
+    },
+    {
+     "text": "rules.",
+     "start": 9.18,
+     "end": 9.76
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE OLD ONE",
+     "start": 7.82,
+     "word_idx": 0,
+     "end": 8.46
+    },
+    {
+     "text": "LEFT YOU [2 RULES.]",
+     "start": 8.46,
+     "word_idx": 3,
+     "end": 9.88
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "One. Never stop the film.",
+   "src_start": 10.59,
+   "src_end": 12.59,
+   "start": 10.06,
+   "end": 12.06,
+   "words": [
+    {
+     "text": "One.",
+     "start": 10.11,
+     "end": 10.75
+    },
+    {
+     "text": "Never",
+     "start": 10.83,
+     "end": 10.99
+    },
+    {
+     "text": "stop",
+     "start": 11.15,
+     "end": 11.39
+    },
+    {
+     "text": "the",
+     "start": 11.47,
+     "end": 11.55
+    },
+    {
+     "text": "film.",
+     "start": 11.75,
+     "end": 12.06
+    }
+   ],
+   "captions": [
+    {
+     "text": "ONE.",
+     "start": 10.11,
+     "word_idx": 0,
+     "end": 10.83
+    },
+    {
+     "text": "{NEVER STOP} THE [FILM.]",
+     "start": 10.83,
+     "word_idx": 1,
+     "end": 12.18
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Two. Never look at his face.",
+   "src_start": 12.99,
+   "src_end": 15.14,
+   "start": 12.36,
+   "end": 14.51,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 12.41,
+     "end": 13.13
+    },
+    {
+     "text": "Never",
+     "start": 13.21,
+     "end": 13.45
+    },
+    {
+     "text": "look",
+     "start": 13.53,
+     "end": 13.61
+    },
+    {
+     "text": "at",
+     "start": 13.69,
+     "end": 13.77
+    },
+    {
+     "text": "his",
+     "start": 13.85,
+     "end": 13.93
+    },
+    {
+     "text": "face.",
+     "start": 14.01,
+     "end": 14.51
+    }
+   ],
+   "captions": [
+    {
+     "text": "TWO.",
+     "start": 12.41,
+     "word_idx": 0,
+     "end": 13.21
+    },
+    {
+     "text": "{NEVER LOOK} AT HIS [FACE.]",
+     "start": 13.21,
+     "word_idx": 1,
+     "end": 14.63
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "You press play.",
+   "src_start": 15.63,
+   "src_end": 16.62,
+   "start": 15.01,
+   "end": 16.0,
+   "words": [
+    {
+     "text": "You",
+     "start": 15.06,
+     "end": 15.14
+    },
+    {
+     "text": "press",
+     "start": 15.26,
+     "end": 15.38
+    },
+    {
+     "text": "play.",
+     "start": 15.46,
+     "end": 16.0
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU PRESS [PLAY.]",
+     "start": 15.06,
+     "word_idx": 0,
+     "end": 16.12
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "The film shows a small room. A man, from behind.",
+   "src_start": 16.99,
+   "src_end": 20.61,
+   "start": 16.7,
+   "end": 20.32,
+   "words": [
+    {
+     "text": "The",
+     "start": 16.75,
+     "end": 16.83
+    },
+    {
+     "text": "film",
+     "start": 16.91,
+     "end": 17.15
+    },
+    {
+     "text": "shows",
+     "start": 17.23,
+     "end": 17.47
+    },
+    {
+     "text": "a",
+     "start": 17.55,
+     "end": 17.63
+    },
+    {
+     "text": "small",
+     "start": 17.79,
+     "end": 17.95
+    },
+    {
+     "text": "room.",
+     "start": 18.03,
+     "end": 18.75
+    },
+    {
+     "text": "A",
+     "start": 18.83,
+     "end": 18.91
+    },
+    {
+     "text": "man,",
+     "start": 19.07,
+     "end": 19.47
+    },
+    {
+     "text": "from",
+     "start": 19.55,
+     "end": 19.63
+    },
+    {
+     "text": "behind.",
+     "start": 19.71,
+     "end": 20.32
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE FILM SHOWS",
+     "start": 16.75,
+     "word_idx": 0,
+     "end": 17.55
+    },
+    {
+     "text": "A SMALL [ROOM.]",
+     "start": 17.55,
+     "word_idx": 3,
+     "end": 18.83
+    },
+    {
+     "text": "A [MAN,]",
+     "start": 18.83,
+     "word_idx": 6,
+     "end": 19.55
+    },
+    {
+     "text": "FROM BEHIND.",
+     "start": 19.55,
+     "word_idx": 8,
+     "end": 20.44
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "He's wearing your jacket.",
+   "src_start": 20.79,
+   "src_end": 22.09,
+   "start": 20.62,
+   "end": 21.92,
+   "words": [
+    {
+     "text": "He's",
+     "start": 20.67,
+     "end": 20.87
+    },
+    {
+     "text": "wearing",
+     "start": 20.977,
+     "end": 21.19
+    },
+    {
+     "text": "your",
+     "start": 21.27,
+     "end": 21.35
+    },
+    {
+     "text": "jacket.",
+     "start": 21.39,
+     "end": 21.92
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE'S WEARING",
+     "start": 20.67,
+     "word_idx": 0,
+     "end": 21.27
+    },
+    {
+     "text": "{YOUR JACKET.}",
+     "start": 21.27,
+     "word_idx": 2,
+     "end": 22.04
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "You wave. On the screen, he waves.",
+   "src_start": 22.43,
+   "src_end": 25.08,
+   "start": 22.27,
+   "end": 24.92,
+   "words": [
+    {
+     "text": "You",
+     "start": 22.32,
+     "end": 22.4
+    },
+    {
+     "text": "wave.",
+     "start": 22.6,
+     "end": 23.12
+    },
+    {
+     "text": "On",
+     "start": 23.2,
+     "end": 23.28
+    },
+    {
+     "text": "the",
+     "start": 23.32,
+     "end": 23.36
+    },
+    {
+     "text": "screen,",
+     "start": 23.44,
+     "end": 24.08
+    },
+    {
+     "text": "he",
+     "start": 24.2,
+     "end": 24.32
+    },
+    {
+     "text": "waves.",
+     "start": 24.56,
+     "end": 24.92
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOU [WAVE.]",
+     "start": 22.32,
+     "word_idx": 0,
+     "end": 23.2
+    },
+    {
+     "text": "ON THE SCREEN,",
+     "start": 23.2,
+     "word_idx": 2,
+     "end": 24.2
+    },
+    {
+     "text": "{HE WAVES.}",
+     "start": 24.2,
+     "word_idx": 5,
+     "end": 25.04
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "The film is you. Right now.",
+   "src_start": 25.31,
+   "src_end": 27.72,
+   "start": 25.62,
+   "end": 28.03,
+   "words": [
+    {
+     "text": "The",
+     "start": 25.67,
+     "end": 25.83
+    },
+    {
+     "text": "film",
+     "start": 25.99,
+     "end": 26.15
+    },
+    {
+     "text": "is",
+     "start": 26.23,
+     "end": 26.39
+    },
+    {
+     "text": "you.",
+     "start": 26.47,
+     "end": 27.19
+    },
+    {
+     "text": "Right",
+     "start": 27.27,
+     "end": 27.51
+    },
+    {
+     "text": "now.",
+     "start": 27.59,
+     "end": 28.03
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE FILM {IS YOU.}",
+     "start": 25.67,
+     "word_idx": 0,
+     "end": 27.27
+    },
+    {
+     "text": "[RIGHT NOW.]",
+     "start": 27.27,
+     "word_idx": 4,
+     "end": 28.15
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "On the screen, a tall shape steps up behind you.",
+   "src_start": 28.11,
+   "src_end": 31.06,
+   "start": 28.83,
+   "end": 31.78,
+   "words": [
+    {
+     "text": "On",
+     "start": 28.88,
+     "end": 28.96
+    },
+    {
+     "text": "the",
+     "start": 29.04,
+     "end": 29.12
+    },
+    {
+     "text": "screen,",
+     "start": 29.32,
+     "end": 29.76
+    },
+    {
+     "text": "a",
+     "start": 29.84,
+     "end": 29.92
+    },
+    {
+     "text": "tall",
+     "start": 29.96,
+     "end": 30.24
+    },
+    {
+     "text": "shape",
+     "start": 30.32,
+     "end": 30.56
+    },
+    {
+     "text": "steps",
+     "start": 30.64,
+     "end": 30.88
+    },
+    {
+     "text": "up",
+     "start": 30.96,
+     "end": 31.04
+    },
+    {
+     "text": "behind",
+     "start": 31.12,
+     "end": 31.44
+    },
+    {
+     "text": "you.",
+     "start": 31.52,
+     "end": 31.78
+    }
+   ],
+   "captions": [
+    {
+     "text": "ON THE SCREEN,",
+     "start": 28.88,
+     "word_idx": 0,
+     "end": 29.84
+    },
+    {
+     "text": "A {TALL SHAPE}",
+     "start": 29.84,
+     "word_idx": 3,
+     "end": 30.64
+    },
+    {
+     "text": "STEPS UP {BEHIND YOU.}",
+     "start": 30.64,
+     "word_idx": 6,
+     "end": 31.9
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "His seat is empty.",
+   "src_start": 31.31,
+   "src_end": 32.49,
+   "start": 32.13,
+   "end": 33.31,
+   "words": [
+    {
+     "text": "His",
+     "start": 32.18,
+     "end": 32.34
+    },
+    {
+     "text": "seat",
+     "start": 32.42,
+     "end": 32.66
+    },
+    {
+     "text": "is",
+     "start": 32.74,
+     "end": 32.82
+    },
+    {
+     "text": "empty.",
+     "start": 33.02,
+     "end": 33.31
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIS SEAT",
+     "start": 32.18,
+     "word_idx": 0,
+     "end": 32.74
+    },
+    {
+     "text": "IS {EMPTY.}",
+     "start": 32.74,
+     "word_idx": 2,
+     "end": 33.43
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "Rule one. You let the film run.",
+   "src_start": 32.87,
+   "src_end": 35.12,
+   "start": 33.76,
+   "end": 36.01,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 33.81,
+     "end": 33.93
+    },
+    {
+     "text": "one.",
+     "start": 34.09,
+     "end": 34.73
+    },
+    {
+     "text": "You",
+     "start": 34.77,
+     "end": 34.81
+    },
+    {
+     "text": "let",
+     "start": 34.89,
+     "end": 35.05
+    },
+    {
+     "text": "the",
+     "start": 35.13,
+     "end": 35.21
+    },
+    {
+     "text": "film",
+     "start": 35.37,
+     "end": 35.53
+    },
+    {
+     "text": "run.",
+     "start": 35.61,
+     "end": 36.01
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 1.]",
+     "start": 33.81,
+     "word_idx": 0,
+     "end": 34.77
+    },
+    {
+     "text": "YOU LET THE FILM [RUN.]",
+     "start": 34.77,
+     "word_idx": 2,
+     "end": 36.13
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "A cold hand rests on your shoulder.",
+   "src_start": 35.39,
+   "src_end": 37.61,
+   "start": 36.81,
+   "end": 39.03,
+   "words": [
+    {
+     "text": "A",
+     "start": 36.86,
+     "end": 36.94
+    },
+    {
+     "text": "cold",
+     "start": 37.02,
+     "end": 37.34
+    },
+    {
+     "text": "hand",
+     "start": 37.42,
+     "end": 37.74
+    },
+    {
+     "text": "rests",
+     "start": 37.82,
+     "end": 38.14
+    },
+    {
+     "text": "on",
+     "start": 38.22,
+     "end": 38.3
+    },
+    {
+     "text": "your",
+     "start": 38.38,
+     "end": 38.46
+    },
+    {
+     "text": "shoulder.",
+     "start": 38.62,
+     "end": 39.03
+    }
+   ],
+   "captions": [
+    {
+     "text": "A {COLD HAND}",
+     "start": 36.86,
+     "word_idx": 0,
+     "end": 37.82
+    },
+    {
+     "text": "RESTS ON {YOUR SHOULDER.}",
+     "start": 37.82,
+     "word_idx": 3,
+     "end": 39.15
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "Rule two. You turn and look.",
+   "src_start": 37.87,
+   "src_end": 40.01,
+   "start": 39.63,
+   "end": 41.77,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 39.68,
+     "end": 39.92
+    },
+    {
+     "text": "two.",
+     "start": 40.0,
+     "end": 40.64
+    },
+    {
+     "text": "You",
+     "start": 40.72,
+     "end": 40.8
+    },
+    {
+     "text": "turn",
+     "start": 40.96,
+     "end": 41.12
+    },
+    {
+     "text": "and",
+     "start": 41.2,
+     "end": 41.36
+    },
+    {
+     "text": "look.",
+     "start": 41.52,
+     "end": 41.77
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 2.]",
+     "start": 39.68,
+     "word_idx": 0,
+     "end": 40.72
+    },
+    {
+     "text": "YOU {TURN AND LOOK.}",
+     "start": 40.72,
+     "word_idx": 2,
+     "end": 41.89
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "He bends under the ceiling, twice your height.",
+   "src_start": 40.31,
+   "src_end": 42.72,
+   "start": 42.12,
+   "end": 44.53,
+   "words": [
+    {
+     "text": "He",
+     "start": 42.17,
+     "end": 42.29
+    },
+    {
+     "text": "bends",
+     "start": 42.397,
+     "end": 42.61
+    },
+    {
+     "text": "under",
+     "start": 42.73,
+     "end": 42.85
+    },
+    {
+     "text": "the",
+     "start": 42.93,
+     "end": 43.01
+    },
+    {
+     "text": "ceiling,",
+     "start": 43.05,
+     "end": 43.57
+    },
+    {
+     "text": "twice",
+     "start": 43.65,
+     "end": 43.97
+    },
+    {
+     "text": "your",
+     "start": 44.05,
+     "end": 44.13
+    },
+    {
+     "text": "height.",
+     "start": 44.29,
+     "end": 44.53
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE BENDS UNDER",
+     "start": 42.17,
+     "word_idx": 0,
+     "end": 43.05
+    },
+    {
+     "text": "THE [CEILING,]",
+     "start": 43.05,
+     "word_idx": 4,
+     "end": 44.05
+    },
+    {
+     "text": "{TWICE} YOUR HEIGHT.",
+     "start": 44.05,
+     "word_idx": 6,
+     "end": 44.65
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "His face is a screen. On it, you're screaming.",
+   "src_start": 42.91,
+   "src_end": 46.34,
+   "start": 44.93,
+   "end": 48.36,
+   "words": [
+    {
+     "text": "His",
+     "start": 44.98,
+     "end": 45.22
+    },
+    {
+     "text": "face",
+     "start": 45.38,
+     "end": 45.54
+    },
+    {
+     "text": "is",
+     "start": 45.62,
+     "end": 45.7
+    },
+    {
+     "text": "a",
+     "start": 45.78,
+     "end": 45.86
+    },
+    {
+     "text": "screen.",
+     "start": 46.3,
+     "end": 46.793
+    },
+    {
+     "text": "On",
+     "start": 46.847,
+     "end": 46.9
+    },
+    {
+     "text": "it,",
+     "start": 46.98,
+     "end": 47.42
+    },
+    {
+     "text": "you're",
+     "start": 47.46,
+     "end": 47.62
+    },
+    {
+     "text": "screaming.",
+     "start": 47.7,
+     "end": 48.36
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIS {FACE}",
+     "start": 44.98,
+     "word_idx": 0,
+     "end": 45.62
+    },
+    {
+     "text": "IS A {SCREEN.}",
+     "start": 45.62,
+     "word_idx": 2,
+     "end": 46.847
+    },
+    {
+     "text": "ON IT,",
+     "start": 46.847,
+     "word_idx": 5,
+     "end": 47.46
+    },
+    {
+     "text": "{YOU'RE SCREAMING.}",
+     "start": 47.46,
+     "word_idx": 7,
+     "end": 48.48
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "He was never watching the film. He was watching you.",
+   "src_start": 46.647,
+   "src_end": 50.07,
+   "start": 49.26,
+   "end": 52.683,
+   "words": [
+    {
+     "text": "He",
+     "start": 49.31,
+     "end": 49.333
+    },
+    {
+     "text": "was",
+     "start": 49.413,
+     "end": 49.653
+    },
+    {
+     "text": "never",
+     "start": 49.813,
+     "end": 49.973
+    },
+    {
+     "text": "watching",
+     "start": 50.093,
+     "end": 50.373
+    },
+    {
+     "text": "the",
+     "start": 50.453,
+     "end": 50.533
+    },
+    {
+     "text": "film.",
+     "start": 50.733,
+     "end": 51.333
+    },
+    {
+     "text": "He",
+     "start": 51.373,
+     "end": 51.413
+    },
+    {
+     "text": "was",
+     "start": 51.493,
+     "end": 51.653
+    },
+    {
+     "text": "watching",
+     "start": 51.733,
+     "end": 52.213
+    },
+    {
+     "text": "you.",
+     "start": 52.293,
+     "end": 52.683
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE WAS NEVER",
+     "start": 49.31,
+     "word_idx": 0,
+     "end": 50.093
+    },
+    {
+     "text": "WATCHING THE [FILM.]",
+     "start": 50.093,
+     "word_idx": 3,
+     "end": 51.373
+    },
+    {
+     "text": "HE WAS {WATCHING YOU.}",
+     "start": 51.373,
+     "word_idx": 6,
+     "end": 52.803
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Which rule would you break? A, stop the film. B, look at him.",
+   "src_start": 50.56,
+   "src_end": 55.21,
+   "start": 53.683,
+   "end": 58.333,
+   "words": [
+    {
+     "text": "Which",
+     "start": 53.733,
+     "end": 53.763
+    },
+    {
+     "text": "rule",
+     "start": 53.843,
+     "end": 54.003
+    },
+    {
+     "text": "would",
+     "start": 54.083,
+     "end": 54.243
+    },
+    {
+     "text": "you",
+     "start": 54.323,
+     "end": 54.403
+    },
+    {
+     "text": "break?",
+     "start": 54.483,
+     "end": 55.203
+    },
+    {
+     "text": "A,",
+     "start": 55.283,
+     "end": 55.763
+    },
+    {
+     "text": "stop",
+     "start": 55.843,
+     "end": 56.083
+    },
+    {
+     "text": "the",
+     "start": 56.163,
+     "end": 56.243
+    },
+    {
+     "text": "film.",
+     "start": 56.403,
+     "end": 56.963
+    },
+    {
+     "text": "B,",
+     "start": 57.043,
+     "end": 57.603
+    },
+    {
+     "text": "look",
+     "start": 57.683,
+     "end": 57.763
+    },
+    {
+     "text": "at",
+     "start": 57.843,
+     "end": 57.923
+    },
+    {
+     "text": "him.",
+     "start": 58.163,
+     "end": 58.333
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 21,
+   "text": "Just type A or B.",
+   "src_start": 55.31,
+   "src_end": 56.82,
+   "start": 58.533,
+   "end": 60.043,
+   "words": [
+    {
+     "text": "Just",
+     "start": 58.583,
+     "end": 58.743
+    },
+    {
+     "text": "type",
+     "start": 58.823,
+     "end": 59.143
+    },
+    {
+     "text": "A",
+     "start": 59.223,
+     "end": 59.463
+    },
+    {
+     "text": "or",
+     "start": 59.543,
+     "end": 59.703
+    },
+    {
+     "text": "B.",
+     "start": 59.823,
+     "end": 60.043
+    }
+   ],
+   "captions": []
+  }
+ ]
+}

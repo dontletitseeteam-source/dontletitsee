@@ -181,5 +181,36 @@ P5 = [
 ]
 P5_HOLD = 1.7
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD}
+# Episode 6 — The cinema projectionist (the man whose face is a screen). Owner directives v2: 2 rules, 145 words, no speed-up.
+P6 = [
+    ("Three AM. One man in the cinema.", 0.12, [(2, "[3 AM.]"), (5, "ONE MAN IN THE [CINEMA.]")]),
+    ("His face is a screen.", 0.20, [(2, "HIS {FACE}"), (3, "IS A {SCREEN.}")]),
+    ("Your first night as the projectionist.", 0.45, [(3, "YOUR FIRST NIGHT"), (3, "AS THE [PROJECTIONIST.]")]),
+    ("The old one left you two rules.", 0.25, [(3, "THE OLD ONE"), (4, "LEFT YOU [2 RULES.]")]),
+    ("One. Never stop the film.", 0.30, [(1, "ONE."), (4, "{NEVER STOP} THE [FILM.]")]),
+    ("Two. Never look at his face.", 0.30, [(1, "TWO."), (5, "{NEVER LOOK} AT HIS [FACE.]")]),
+    ("You press play.", 0.50, [(3, "YOU PRESS [PLAY.]")]),
+    ("The film shows a small room. A man, from behind.", 0.70,
+     [(3, "THE FILM SHOWS"), (3, "A SMALL [ROOM.]"), (2, "A [MAN,]"), (2, "FROM BEHIND.")]),
+    ("He's wearing your jacket.", 0.30, [(2, "HE'S WEARING"), (2, "{YOUR JACKET.}")]),
+    ("You wave. On the screen, he waves.", 0.35, [(2, "YOU [WAVE.]"), (3, "ON THE SCREEN,"), (2, "{HE WAVES.}")]),
+    ("The film is you. Right now.", 0.70, [(4, "THE FILM {IS YOU.}"), (2, "[RIGHT NOW.]")]),
+    ("On the screen, a tall shape steps up behind you.", 0.80,
+     [(3, "ON THE SCREEN,"), (3, "A {TALL SHAPE}"), (4, "STEPS UP {BEHIND YOU.}")]),
+    ("His seat is empty.", 0.35, [(2, "HIS SEAT"), (2, "IS {EMPTY.}")]),
+    ("Rule one. You let the film run.", 0.45, [(2, "[RULE 1.]"), (5, "YOU LET THE FILM [RUN.]")]),
+    ("A cold hand rests on your shoulder.", 0.80, [(3, "A {COLD HAND}"), (4, "RESTS ON {YOUR SHOULDER.}")]),
+    ("Rule two. You turn and look.", 0.60, [(2, "[RULE 2.]"), (4, "YOU {TURN AND LOOK.}")]),
+    ("He bends under the ceiling, twice your height.", 0.35,
+     [(4, "HE BENDS UNDER"), (2, "THE [CEILING,]"), (2, "{TWICE} YOUR HEIGHT.")]),
+    ("His face is a screen. On it, you're screaming.", 0.40,
+     [(2, "HIS {FACE}"), (3, "IS A {SCREEN.}"), (2, "ON IT,"), (2, "{YOU'RE SCREAMING.}")]),
+    ("He was never watching the film. He was watching you.", 0.90,
+     [(3, "HE WAS NEVER"), (3, "WATCHING THE [FILM.]"), (4, "HE WAS {WATCHING YOU.}")]),
+    ("Which rule would you break? A, stop the film. B, look at him.", 1.00, []),
+    ("Just type A or B.", 0.20, []),
+]
+P6_HOLD = 1.6
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD}

@@ -463,8 +463,89 @@ def part5():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5}[PART]()
-if PART in (3, 4, 5): sfx *= db(-1.2)
+def part6():
+    """NIGHT SHIFT Ep.6 — the cinema projectionist (the man whose face is a screen). v2: real silences before the reveals."""
+    T6 = {L["id"]: L for L in T["lines"]}
+    gaps = [(T6[i - 1]["end"], T6[i]["start"]) for i in (8, 11, 12, 15, 16, 19)]   # the deliberate pauses
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    tt = np.arange(N) / SR
+    # projector clatter: 24 fps shutter clicks (filtered noise ticks) + a low motor, from PLAY on
+    rng = np.random.default_rng(6); clk = np.zeros(N, np.float32)
+    ck = (rng.standard_normal(int(0.012 * SR)) * np.exp(-np.linspace(0, 6, int(0.012 * SR)))).astype(np.float32)
+    for tc in np.arange(K["playW"] + 0.2, DUR, 1 / 24):
+        i = int(tc * SR); clk[i:i + len(ck)] += ck * (0.7 + 0.3 * rng.random())
+    C_ = np.fft.rfft(clk); f = np.fft.rfftfreq(N, 1 / SR); C_[(f < 900) | (f > 5000)] = 0
+    clk = np.fft.irfft(C_, N).astype(np.float32); clk /= (np.abs(clk).max() + 1e-9)
+    proj = np.stack([clk, clk * 0.9], 1) * db(-24) + bed("motor.mp3", "lowpass=f=500") * db(-13) * (tt >= K["playW"] + 0.1)[:, None].astype(np.float32)
+    # room tone: hall hum
+    rb = bed("hum.mp3", "lowpass=f=300") * db(-6) + proj
+    pts = [(0, 0), (K["me"], 0), (K["playW"], 0), (K["film"], -2), (K["hand"], 0), (K["poster"], -3), (K["choice"], -4), (DUR - 1, -4), (DUR, -40)]
+    rb = rb * automation(pts)
+    mu = load("music.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    while len(loop) < N: loop = np.concatenate([loop, loop])
+    loop = loop[:N]
+    mp = [(0, -16), (K["face"], -13), (K["me"], -19), (K["rules"], -18), (K["play"], -17), (K["film"], -16), (K["jacket"], -15),
+          (K["isyou"], -12), (K["shape"], -14), (K["empty"], -13), (K["rule1"], -15), (K["hand"], -14), (K["rule2"], -13),
+          (K["scale"], -11), (K["poster"], -10), (K["twist"], -14), (K["you2W"], -10), (K["choice"], -15), (DUR - 1.2, -15), (DUR, -40)]
+    # carve the silences: music + beds drop out across each pause, back in with the sting
+    for a, b in gaps:
+        mp += [(a - 0.05, None), (a + 0.12, -45), (b - 0.02, -45)]
+    mp = sorted(mp, key=lambda p: p[0])
+    # resolve None = keep previous level
+    out = []; last = -16
+    for tpt, g in mp:
+        if g is None: g = last
+        out.append((tpt, g)); last = g if g > -40 else last
+    m1 = loop * automation(out)
+    sil = np.ones((N, 1), np.float32)
+    for a, b in gaps:
+        sil *= 1 - (automation([(0, -100), (a + 0.02, -100), (a + 0.15, 0), (b - 0.05, 0), (b + 0.02, -100), (DUR + 1, -100)]) * 0.9)
+    rb = rb * sil
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0); place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(load("tv.mp3", "highpass=f=400"), 0.0, -26, fo=0.5, maxlen=K["face"])
+    place(stinger, K["screenW"] - 0.03, -10, fo=0.5, maxlen=1.2); place(boom, K["screenW"], -11, fo=0.6, maxlen=1.6)
+    place(load("tv.mp3", "highpass=f=400"), K["face"], -20, fi=0.05, fo=0.3, maxlen=1.6)
+    place(load("stairs.mp3"), K["me"] + 0.05, -20, fo=0.3, maxlen=1.6)
+    place(noise_burst(0.35, 800, 6000, 61, 0.02) * 0.6, K["rules"], -14)
+    for k in ("r1", "r2"): place(tick, K[k] + 0.02, -13)
+    place(load("button.mp3"), K["playW"] - 0.02, -10, maxlen=0.6)
+    place(motor, K["playW"] + 0.05, -16, fi=0.2, fo=0.5, maxlen=1.6)
+    place(riser, K["film"] - 0.06 - len(riser) / SR, -24, fi=1.0, fo=0.004)
+    place(boom, K["film"], -15, fo=0.8, maxlen=2.0)
+    place(stinger, K["jacketW"] - 0.03, -12, fo=0.5, maxlen=1.2)
+    place(breath, K["waveW"], -16, fi=0.1, fo=0.4, maxlen=1.2)
+    place(stinger, K["wavesW"] - 0.03, -11, fo=0.4, maxlen=0.9); place(boom, K["wavesW"], -12, fo=0.5, maxlen=1.0)
+    place(stinger, K["isyou"] + 0.02, -9, fo=0.5, maxlen=1.4); place(boom, K["youW"], -10, fo=0.8, maxlen=2.0)
+    place(heartbeat, K["isyou"], -16, fi=0.1, fo=0.3, maxlen=K["shape"] - K["isyou"] - 0.6)
+    place(stinger, K["shape"], -11, fo=0.5, maxlen=1.2)
+    place(riser, K["behind2W"] - 0.06 - len(riser) / SR, -18, fi=1.2, fo=0.004)
+    place(stinger, K["behind2W"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["behind2W"], -9, fo=0.8, maxlen=2.0)
+    place(load("lights_off.mp3"), K["emptyW"] - 0.05, -14, maxlen=1.0)
+    place(heartbeat, K["rule1"], -14, fi=0.1, fo=0.3, maxlen=K["hand"] - K["rule1"] - 0.6)
+    place(breath, K["hand"] + 0.05, -10, fi=0.1, fo=0.5, maxlen=1.6)
+    place(stinger, K["shoulderW"] - 0.03, -8, fo=0.4, maxlen=0.9); place(boom, K["shoulderW"], -9, fo=0.5, maxlen=1.0)
+    place(stinger, K["rule2"] + 0.02, -12, fo=0.5, maxlen=1.0)
+    place(riser, K["look2W"] - 0.06 - len(riser) / SR, -18, fi=1.2, fo=0.004)
+    place(stinger, K["look2W"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["look2W"], -7, fo=0.8, maxlen=2.4)
+    place(load("stretch.mp3"), K["bendsW"], -14, fo=0.4, maxlen=1.8)
+    place(boom, K["twiceW"], -11, fo=0.6, maxlen=1.6)
+    place(load("tv.mp3", "highpass=f=400"), K["poster"], -18, fi=0.05, fo=0.3, maxlen=1.2)
+    place(load("smile_stinger.mp3"), K["youreW"] - 0.05, -9, fo=0.5, maxlen=1.3)
+    place(stinger, K["youreW"] - 0.03, -7, fo=0.5, maxlen=1.2); place(boom, K["youreW"], -7, fo=0.6, maxlen=1.5)
+    place(stinger, K["twist"] + 0.02, -12, fo=0.5, maxlen=1.2)
+    place(breath, K["he2W"] - 0.1, -11, fi=0.1, fo=0.5, maxlen=1.6)
+    place(riser, K["you2W"] - 0.06 - len(riser) / SR, -19, fi=1.5, fo=0.004)
+    place(stinger, K["you2W"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["you2W"], -7, fo=0.8, maxlen=2.4)
+    place(boom, K["choice"] - 0.1, -17, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6}[PART]()
+if PART in (3, 4, 5, 6): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

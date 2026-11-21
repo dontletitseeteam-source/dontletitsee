@@ -142,6 +142,12 @@ function drawStick(ctx, o) {
   const hipY = -legL, neckY = hipY - torso, shY = neckY + 12;
   if (o.arm === 'phone' && o.lit > 0) glow(ctx, 0, shY + 34, 260, 'rgba(150,190,255,A)', 0.28 * o.lit);
   ctx.strokeStyle = col; ctx.lineWidth = lw; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  if (o.jacket) {  // a simple coloured jacket over the torso (Ep 6: "he's wearing your jacket")
+    ctx.beginPath(); ctx.moveTo(-34, shY - 2); ctx.lineTo(34, shY - 2); ctx.lineTo(40, hipY + 18); ctx.lineTo(-40, hipY + 18); ctx.closePath();
+    ctx.fillStyle = o.jacket; ctx.fill(); ctx.lineWidth = 4; ctx.strokeStyle = '#0b1022'; ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(-12, shY - 2); ctx.lineTo(0, shY + 30); ctx.lineTo(12, shY - 2); ctx.strokeStyle = 'rgba(11,16,34,0.7)'; ctx.stroke();
+    ctx.strokeStyle = col; ctx.lineWidth = lw;
+  }
   ctx.beginPath();
   if (!o.bust) {
     const ph = o.walk;
@@ -153,6 +159,8 @@ function drawStick(ctx, o) {
   const sw = o.walk !== undefined ? Math.sin(o.walk) * 18 : 0;
   const armDown = (side) => { ctx.moveTo(0, shY); ctx.lineTo(side * 30 - (side < 0 ? sw : -sw) * 0.5, shY + 62 * armK); ctx.lineTo(side * 40 - (side < 0 ? sw : -sw), shY + 128 * armK); };
   if (o.arm === 'phone') { armDown(-1); ctx.moveTo(0, shY); ctx.lineTo(26, shY + 65); ctx.lineTo(o.view === 'back' ? -2 : 6, shY + 34); }
+  else if (o.arm === 'wave') { armDown(-1); const wv = (o.wv || 0) * 0.5; ctx.moveTo(0, shY); ctx.lineTo(52, shY - 18); ctx.lineTo(52 + Math.sin(wv) * 70, shY - 18 - Math.cos(wv) * 70); }
+  else if (o.arm === 'reach') { armDown(-1); ctx.moveTo(0, shY); ctx.lineTo(60, shY + 40); ctx.lineTo(118, shY + 52 + (o.reachDY || 0)); }
   else if (o.arm === 'raise') { armDown(-1); ctx.moveTo(0, shY); ctx.lineTo(44, shY - 20); ctx.lineTo(30, shY - 92); }
   else if (o.arm === 'shield') { ctx.moveTo(0, shY); ctx.lineTo(-40, shY - 10); ctx.lineTo(-14, shY - 70); ctx.moveTo(0, shY); ctx.lineTo(40, shY - 10); ctx.lineTo(14, shY - 70); }
   else { armDown(-1); armDown(1); }
@@ -414,4 +422,4 @@ function vignette(ctx, strength = 0.6) {
   ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
 }
 
-module.exports = { W, H, C, clamp, lerp, inv, E, hash, noise1, flicker, shake, rrect, glow, spaced, drawIndicator, drawStick, drawEntity, drawHUD, drawCaption, vignette, parseMarkup, camera };
+module.exports = { W, H, C, clamp, lerp, inv, E, hash, noise1, flicker, shake, rrect, glow, spaced, drawIndicator, drawStick, drawFace, drawEntity, drawHUD, drawCaption, vignette, parseMarkup, camera };
