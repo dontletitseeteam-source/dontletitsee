@@ -143,5 +143,43 @@ P4 = [
 ]
 P4_HOLD = 1.9
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD}
+# Episode 5 — The school night watchman (the girl who swings without moving her legs)
+P5 = [
+    ("Three AM. A girl swings in the empty schoolyard.", 0.15,
+     [(2, "[3 AM.]"), (3, "A {GIRL} SWINGS"), (4, "IN THE EMPTY [SCHOOLYARD.]")]),
+    ("Her legs never move.", 0.22, [(2, "HER {LEGS}"), (2, "{NEVER MOVE.}")]),
+    ("Your first night as the school watchman. The last one left three rules.", 0.32,
+     [(4, "YOUR FIRST NIGHT AS"), (3, "THE SCHOOL [WATCHMAN.]"), (3, "THE LAST ONE"), (3, "LEFT [3 RULES.]")]),
+    ("One. When the bell rings at three, let it ring.", 0.27,
+     [(1, "ONE."), (4, "WHEN THE [BELL] RINGS"), (2, "AT THREE,"), (3, "{LET IT RING.}")]),
+    ("Two. If the swing moves, stay inside.", 0.27, [(1, "TWO."), (4, "IF THE [SWING] MOVES,"), (2, "{STAY INSIDE.}")]),
+    ("Three. If she calls the roll, never answer present.", 0.27,
+     [(1, "THREE."), (5, "IF SHE CALLS THE [ROLL,]"), (3, "{NEVER ANSWER} [PRESENT.]")]),
+    ("Under them: She marked me present.", 0.27, [(2, "UNDER THEM:"), (4, "{SHE MARKED ME} [PRESENT.]")]),
+    ("Rule one. At three, the bell rings by itself.", 0.37,
+     [(2, "[RULE 1.]"), (2, "AT THREE,"), (5, "THE [BELL] RINGS {BY ITSELF.}")]),
+    ("Thirteen times. You let it ring.", 0.22, [(2, "[13 TIMES.]"), (4, "YOU {LET IT RING.}")]),
+    ("Outside, a swing starts creaking.", 0.32, [(1, "OUTSIDE,"), (4, "A [SWING] STARTS {CREAKING.}")]),
+    ("Rule two. You stay inside, at the window.", 0.37,
+     [(2, "[RULE 2.]"), (3, "YOU STAY INSIDE,"), (3, "AT THE [WINDOW.]")]),
+    ("Higher. Higher. Her legs hang dead still.", 0.27, [(1, "HIGHER."), (1, "[HIGHER.]"), (5, "HER LEGS HANG {DEAD STILL.}")]),
+    ("At the top, her face reaches your window.", 0.27,
+     [(3, "AT THE TOP,"), (2, "HER {FACE}"), (3, "REACHES {YOUR WINDOW.}")]),
+    ("Then a small voice calls the roll.", 0.37, [(4, "THEN A SMALL [VOICE]"), (3, "CALLS THE {ROLL.}")]),
+    ("Every name in the register.", 0.22, [(3, "EVERY NAME IN"), (2, "THE [REGISTER.]")]),
+    ("Rule three. She calls your name.", 0.37, [(2, "[RULE 3.]"), (4, "SHE CALLS {YOUR NAME.}")]),
+    ("You hear yourself say: present.", 0.32, [(4, "YOU HEAR YOURSELF SAY:"), (1, "{PRESENT.}")]),
+    ("The swing stops. The yard is empty.", 0.42, [(3, "THE SWING [STOPS.]"), (4, "THE YARD IS {EMPTY.}")]),
+    ("The register. Her name. Ticked present.", 0.37,
+     [(2, "THE [REGISTER.]"), (2, "HER NAME."), (2, "TICKED {PRESENT.}")]),
+    ("Every night since nineteen ninety-eight.", 0.22, [(3, "EVERY NIGHT SINCE"), (2, "{1998.}")]),
+    ("Below it, your name.", 0.37, [(2, "BELOW IT,"), (2, "{YOUR NAME.}")]),
+    ("Ticked present. And the second swing is moving.", 0.32,
+     [(2, "TICKED [PRESENT.]"), (2, "AND THE"), (2, "[SECOND SWING]"), (2, "{IS MOVING.}")]),
+    ("Which rule would you break? A, go outside. B, say present.", 0.52, []),
+    ("Just type A or B.", 0.22, []),
+]
+P5_HOLD = 1.9
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD}
