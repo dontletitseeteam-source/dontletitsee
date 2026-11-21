@@ -1,8 +1,49 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-21 ~11:30 IST (creator run):** Episode 5 built and QUEUED for 2026-11-24. Credits left 21,014
-(14 episodes to make 2026-11-25 … 12-08 -> ~1,500 each; pace OK). Next: Episode 6 (cinema projectionist) for 2026-11-25;
-standalone, no vote dependency. Competitor scan due on the first run on/after Monday 2026-11-23.
+**Status 2026-11-22 ~01:35 IST (creator run):** Episode 6 built and QUEUED for 2026-11-25 (first episode under owner directives
+v2). Credits left 20,173 (13 episodes to make 2026-11-26 … 12-08 -> ~1,550 each; pace OK, v2 episodes cost ~850). Next: Episode 7
+(highway toll booth) for 2026-11-26; standalone, no vote dependency. Competitor scan due on the first run on/after Monday
+2026-11-23. YouTube Data API quota was exhausted at 01:12 IST today (analytics only; reset 13:30 IST).
+
+## Episode 6 "The cinema projectionist" — QUEUED for 2026-11-25
+- Output: `outputs/night-shift-p6.mp4` (61.6 s, 10.1 MB, −14.1 LUFS; stems: VO −18.1 dB RMS, SFX −25.7, beds −46.1, music −35.4)
+  + `outputs/night-shift-p6.jpg` (cover: his screen-face, close, showing YOUR face screaming; "HIS FACE IS {A SCREEN}",
+  "NIGHT SHIFT · 3 AM"); jsDelivr @ `1ab5905` (mp4 + jpg HTTP 200 first try). Queue id `night-shift-p6`.
+- Voice: 841 credits (eleven_v4, Jack), transcript 0. 21 lines / 145 words / 9 tags, base delivery `[low, calm]`,
+  `[whispering]` ×2, `[slow]` on the twist only. prep_vo SPEED = 1.00 (no speed-up from Ep 6 on). Raw take 56.9 s.
+- v2 checklist: one place (the cinema), one monster (THE VIEWER: too-tall man in a suit, a glowing screen for a face), 2 rules
+  (1 never stop the film, 2 never look at his face), the twist said plainly ("He was never watching the film. He was watching
+  you."); 6 real pauses of 0.6-1.0 s before the reveals (music and beds carved out, sting after); "you" now has a FACE
+  (new `drawFace` in draw.js: dot eyes that widen into rings, brows, mouth from line to scream; `fear` 0..1) and moves (walks in,
+  looks down at the jacket, waves, turns); a mustard jacket on "you" (new `jacket` option in drawStick) so "he's wearing your
+  jacket" is visible; 23 shots (wide hall, face close, booth medium, note inserts, panel close, POV through the booth window,
+  film-screen close, your face close, shoulder close, low angle turn, the SCALE SHOT with YOU / HIM · 2X height bars, poster,
+  twist two-shot); light reveals: house lights, the projector beam, his glowing face.
+- Clarity test (a), before the voice: "A projectionist runs a 3 AM film for one viewer whose face is a screen. The film turns out
+  to be live video of the projectionist's own booth, and a tall shape walks up behind him. He turns: it's the viewer, twice his
+  height, and on the viewer's face-screen is the projectionist screaming: he was watching you all along." (b) after the render,
+  captions + 1-s stills read as: 3 AM / one man in the cinema / his face is a screen / 2 rules / press play / the film shows a
+  man from behind / your jacket / you wave, he waves / the film is you / a tall shape behind you / his seat is empty / cold hand
+  / turn and look / twice your height / you're screaming / he was watching you. A stranger can retell it.
+- Story beats: frame 1 = the BRIGHT hall (red rows, house lights, sconces, EXIT sign), him in H13 with the glowing face; hook box
+  "HIS FACE / IS A SCREEN."; face close 3.4 s; you walk into the booth; the note (THE 3 AM SHOW · 1 TICKET SOLD · SEAT H13 + 2
+  rules, signed "— R."); PLAY; reels spin, beam on; POV: the film = your booth, a man from behind in your jacket; you wave, he
+  waves; LIVE; a tall shape steps up behind him; H13 empty; finger trembles over STOP, pulls back (rule 1 kept); the cold hand;
+  you turn (rule 2 broken); scale shot; poster (your screaming face on his screen); empty hall with the live film; he bends
+  over you, his screen shows you.
+- HUD: SHIFT 6 · 2:59→3:00→3:04→3:06 · CINEMA PROJECTIONIST · SEAT H13 SOLD 1 → NO FACE → EMPTY → BEHIND YOU · FILM READY →
+  RUNNING → LIVE · YOU · RULES 2 → RULE 1 KEPT → RULE 2 BROKEN.
+- Choice offered: **Which rule would you break? A) RULE 1 · STOP THE FILM  B) RULE 2 · LOOK AT HIM** (kept the "Just type A or
+  B" ask unchanged, the Ep 4 test is measured on Ep 4-6).
+- YT title (image-title standard): "The only man at my 3 AM movie had a screen for a face | NIGHT SHIFT #shorts".
+- Engine: new `engine/sets_cinema.js` (drawHall, drawFaceClose, drawBooth with drawViewer bending under the ceiling, drawPOV with
+  filmFrame = the live film, drawPanel, drawNote, drawShoulder, viewerHead); `part6.js`; `mix.py` part6 (24-fps projector
+  clatter synth + motor, hall hum, music.mp3 loop, carved silences in the 6 pauses, tv static on his face, button, stretch on
+  the bend). draw.js: `drawFace`, stick `jacket`, arms `wave`/`reach` (old parts unaffected: options are opt-in).
+- QA fixes: hook re-framed so he sits mid-frame under the hook box (was hidden behind it), seated Viewer enlarged, collar/suit of
+  the face close-up redrawn (read as legs), scale shot re-framed so his head stays in frame, two-shot re-framed above the
+  captions, the ×2 glyph (missing in Oswald) replaced by "HIM · 2X", sting tails shortened so the pauses stay quiet.
+- Measure (ANALYTICS): IG skip rate, avg watch and YT stay rate of Ep 6 vs Ep 1-5 (first v2 episode).
 
 ## Episode 5 "The school night watchman" — QUEUED for 2026-11-24
 - Output: `outputs/night-shift-p5.mp4` (69.8 s, 12.1 MB, −14.0 LUFS; stems: VO −18.1 dB RMS, SFX −26.8, beds −36.0, music −34.3)
