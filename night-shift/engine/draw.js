@@ -169,6 +169,7 @@ function drawStick(ctx, o) {
   ctx.beginPath(); ctx.arc(0, 0, 40, 0, Math.PI * 2);
   ctx.fillStyle = o.fill || C.navy1; ctx.fill();
   ctx.lineWidth = lw / Math.max(0.2, hsx); ctx.stroke();
+  if (o.face && o.view !== 'back') drawFace(ctx, o.face, col);
   if (o.grin > 0) {
     const g = o.grin, w = lerp(10, 64, E.out(clamp(g * 1.4))), dip = lerp(4, 22, g);
     ctx.lineWidth = 4.5; ctx.strokeStyle = col; ctx.fillStyle = '#000';
@@ -187,6 +188,32 @@ function drawStick(ctx, o) {
     ctx.save(); ctx.globalAlpha = o.rim; ctx.strokeStyle = '#dfe8ff'; ctx.lineWidth = 4;
     ctx.beginPath(); ctx.arc(hx, hy, 46, Math.PI * 1.05, Math.PI * 1.95); ctx.stroke(); ctx.restore();
   }
+  ctx.restore();
+}
+
+// ---------- a readable face for "you" (owner directive v2, 2026-11-21) ----------
+// f: {fear 0..1 (0 neutral, 0.4 worried, 0.7 scared, 1 screaming), look -1..1 (glance), blink 0..1, side -1/0/1 (3/4 turn)}
+function drawFace(ctx, f, col = C.white) {
+  const fear = clamp(f.fear || 0), lx = (f.look || 0) * 9, sd = (f.side || 0) * 10, bl = clamp(f.blink || 0);
+  ctx.save(); ctx.translate(sd, 0);
+  ctx.strokeStyle = col; ctx.fillStyle = col; ctx.lineCap = 'round';
+  // eyes: dots that widen into rings with fear
+  for (const ex of [-14, 14]) {
+    const r = lerp(4.5, 9, fear) * (1 - bl * 0.85);
+    if (fear > 0.45) { ctx.lineWidth = 3; ctx.beginPath(); ctx.ellipse(ex, -4, lerp(7, 11, fear), r + 2, 0, 0, 7); ctx.stroke(); ctx.beginPath(); ctx.arc(ex + lx, -4, 3, 0, 7); ctx.fill(); }
+    else { ctx.beginPath(); ctx.ellipse(ex + lx * 0.6, -4, 4.5, r, 0, 0, 7); ctx.fill(); }
+  }
+  // brows: flat -> raised and tilted up in the middle
+  ctx.lineWidth = 4;
+  for (const s of [-1, 1]) {
+    const y0 = -20 - fear * 8, tilt = fear * 7;
+    ctx.beginPath(); ctx.moveTo(s * 24, y0 + tilt * 0.4); ctx.lineTo(s * 7, y0 - tilt); ctx.stroke();
+  }
+  // mouth: line -> wobble -> open oval
+  ctx.lineWidth = 3.5;
+  if (fear < 0.3) { ctx.beginPath(); ctx.moveTo(-10, 20); ctx.lineTo(10, 20); ctx.stroke(); }
+  else if (fear < 0.75) { ctx.beginPath(); ctx.moveTo(-12, 21); ctx.quadraticCurveTo(-6, 16, 0, 20); ctx.quadraticCurveTo(6, 24, 12, 19); ctx.stroke(); }
+  else { const h = lerp(6, 15, (fear - 0.75) / 0.25); ctx.beginPath(); ctx.ellipse(0, 20, lerp(7, 10, (fear - 0.75) / 0.25), h, 0, 0, 7); ctx.fillStyle = '#000'; ctx.fill(); ctx.stroke(); }
   ctx.restore();
 }
 

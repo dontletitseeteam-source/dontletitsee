@@ -23,3 +23,4 @@ BLOCK C Part 1's voice was already paid before this balance and is saved in `blo
 | 2026-11-20 | NIGHT SHIFT · Episode 3 | voice (eleven_v4, Jack, 1,397 chars) + scribe transcript (0) | 1,397 | 24,046 |
 | 2026-11-21 | NIGHT SHIFT · Episode 4 | voice (eleven_v4, Jack, 1,418 chars) + scribe transcript (0) | 1,418 | 22,628 |
 | 2026-11-21 | NIGHT SHIFT · Episode 5 | voice (eleven_v4, Jack, 1,449 chars) + scribe transcript (tool quoted 165; counted to be safe) | 1,614 | 21,014 |
+| 2026-11-22 | NIGHT SHIFT · Episode 6 | voice (eleven_v4, Jack, 841 chars, v2 rules: 145 words, 9 tags) + scribe transcript (0) | 841 | 20,173 |
