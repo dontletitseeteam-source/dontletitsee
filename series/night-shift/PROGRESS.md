@@ -1,9 +1,42 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-22 ~01:35 IST (creator run):** Episode 6 built and QUEUED for 2026-11-25 (first episode under owner directives
-v2). Credits left 20,173 (13 episodes to make 2026-11-26 … 12-08 -> ~1,550 each; pace OK, v2 episodes cost ~850). Next: Episode 7
-(highway toll booth) for 2026-11-26; standalone, no vote dependency. Competitor scan due on the first run on/after Monday
-2026-11-23. YouTube Data API quota was exhausted at 01:12 IST today (analytics only; reset 13:30 IST).
+**Status 2026-11-23 ~01:55 IST (creator run):** Episode 7 built and QUEUED for 2026-11-26. Credits left 19,324 (12 episodes to make
+2026-11-27 … 12-08 -> ~1,610 each; v2 episodes cost ~850, pace is comfortable). Next: Episode 8 (wedding-hall caretaker, season
+finale) for 2026-11-27, then design the closing series (2026-11-28 … 12-08) per PLAYBOOK section 7 (post-mortem first). Daily
+review + weekly competitor scan done today (ANALYTICS / RESEARCH 2026-11-23).
+
+## Episode 7 "The highway toll booth" — QUEUED for 2026-11-26
+- Output: `outputs/night-shift-p7.mp4` (59.2 s, 10.1 MB, −14.2 LUFS; stems: VO −18.1 dB RMS, SFX −25.5, beds −45.3, music −34.4)
+  + `outputs/night-shift-p7.jpg` (cover: the driver in the cab window, hands on the wheel to the left, face pointing back to
+  the right; "HIS HEAD IS {ON BACKWARDS}", "NIGHT SHIFT · 3 AM"); jsDelivr @ `33f8577` (mp4 + jpg HTTP 200 first try).
+- Voice: 849 credits (eleven_v4, Jack), transcript 0. 21 lines / 145 words / 8 tags (`[low, calm]` base, `[whispering]` ×2,
+  `[slow]` on the twist, `[short pause]` ×4). SPEED 1.00. Raw take 56.0 s.
+- Change vs the bible: the old twist (receipts with tomorrow's date + an "accident" column) was too clever for v2. New plain twist:
+  he walks BACKWARDS to your window so his face can see you, makes you look in his mirror, your head is turning around, his vest
+  says TOLL STAFF: he was the last toll man, now it's your turn.
+- Applied today's ANALYTICS lesson (silhouette rule): the entity's wrongness is in his outline (chest + hands + toes one way,
+  face the other), shown big on frame 1, the cover, the walk and the scale shot. One change only; A/B card unchanged ("Just type
+  A or B", the Ep 4-6 test).
+- Clarity test (a): "A man on his first night at a highway toll booth meets a truck driver whose head is on backwards. The driver
+  climbs out, walks backwards to the booth so his face can see him, and points at his mirror. In the mirror the toll man's head is
+  turning around: the driver was the last toll man, and now it's his turn." (b) captions + 1-s stills read as: 3 AM / truck at
+  your toll booth / driver's head on backwards / first night / 2 rules / hands on the wheel, face looks back / pays without turning
+  / you lift the barrier / doesn't move / door opens / walks to your window backwards / now his face can see you / taller than
+  your booth / taps the glass, points at his mirror / you look / your head is turning around / toll staff / last toll man / your
+  turn. A stranger can retell it.
+- 23 shots: bright plaza hook, cab close (profile), you walk into the booth, note + 2 rule cards, hands -> face pan, wide road,
+  POV paying (arm bent the wrong way), UP button, barrier lifts (lane light X -> green arrow), still truck (pause), door opens
+  (dome light), the backwards walk, POSTER (his back in the TOLL STAFF vest, face on top, through your glass), SCALE shot (BOOTH /
+  HIM bars), knuckles on the glass, the glowing mirror, your face close, the mirror twist (your head turning), vest print push,
+  the photo of the last night staff on the booth wall, you with your head on backwards, choice card.
+- HUD: SHIFT 7 · 3:00→3:03 · TOLL PLAZA LANE 3 · TRUCK STOPPED → HEAD BACKWARDS → PAID → NOT MOVING → OUT OF CAB → AT YOUR WINDOW ·
+  BARRIER DOWN → UP · RULES 2 → RULE 1 KEPT → RULE 2 BROKEN.
+- Choice offered: **Which rule would you break? A) RULE 1 · KEEP THE BARRIER DOWN  B) RULE 2 · LOOK IN HIS MIRROR**.
+- YT title: "The truck driver at my 3 AM toll booth had his head on backwards | NIGHT SHIFT #shorts".
+- Engine: new `engine/sets_toll.js` (drawPlaza, truck, booth, manSide/manSeated/manBack, meHead, drawGlass, drawConsole,
+  drawNote, drawMirror), `part7.js`, `mix.py` part7 (diesel idle throb, plaza hum, low wind, carved silences in 5 pauses).
+- QA fixes: hook zoomed in on the cab (driver was small), poster moved up out of the caption band, tap shot re-framed (face was
+  under the HUD), mirror reflection enlarged 2x, final "your turn" shot closer.
 
 ## Episode 6 "The cinema projectionist" — QUEUED for 2026-11-25
 - Output: `outputs/night-shift-p6.mp4` (61.6 s, 10.1 MB, −14.1 LUFS; stems: VO −18.1 dB RMS, SFX −25.7, beds −46.1, music −35.4)
