@@ -212,5 +212,33 @@ P6 = [
 ]
 P6_HOLD = 1.6
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD}
+P7 = [
+    ("Three AM. A truck stops at your toll booth.", 0.12, [(2, "[3 AM.]"), (3, "A {TRUCK} STOPS"), (4, "AT YOUR [TOLL BOOTH.]")]),
+    ("The driver's head is on backwards.", 0.20, [(3, "THE DRIVER'S {HEAD}"), (3, "IS ON {BACKWARDS.}")]),
+    ("Your first night as the toll man.", 0.45, [(3, "YOUR FIRST NIGHT"), (4, "AS THE [TOLL MAN.]")]),
+    ("The old one left you two rules.", 0.25, [(3, "THE OLD ONE"), (4, "LEFT YOU [2 RULES.]")]),
+    ("One. Always lift the barrier.", 0.30, [(1, "ONE."), (4, "ALWAYS {LIFT} THE [BARRIER.]")]),
+    ("Two. Never look in his mirror.", 0.30, [(1, "TWO."), (5, "{NEVER LOOK} IN HIS [MIRROR.]")]),
+    ("His hands are on the wheel. His face looks back down the road.", 0.60,
+     [(3, "HIS HANDS ARE"), (3, "ON THE [WHEEL.]"), (3, "HIS {FACE} LOOKS"), (4, "BACK DOWN THE ROAD.")]),
+    ("He pays without turning around.", 0.30, [(2, "HE [PAYS]"), (3, "{WITHOUT TURNING} AROUND.")]),
+    ("Rule one. You lift the barrier.", 0.40, [(2, "[RULE 1.]"), (4, "YOU LIFT THE [BARRIER.]")]),
+    ("The truck doesn't move.", 0.70, [(2, "THE TRUCK"), (2, "{DOESN'T MOVE.}")]),
+    ("The door opens.", 0.45, [(3, "THE DOOR {OPENS.}")]),
+    ("He climbs down, walks to your window. Backwards.", 0.30,
+     [(2, "HE CLIMBS"), (5, "DOWN, WALKS TO YOUR [WINDOW.]"), (1, "{BACKWARDS.}")]),
+    ("Now his face can see you.", 0.70, [(3, "NOW HIS {FACE}"), (3, "CAN {SEE YOU.}")]),
+    ("He's taller than your booth.", 0.45, [(2, "HE'S {TALLER}"), (3, "THAN YOUR [BOOTH.]")]),
+    ("He taps the glass. Points at his mirror.", 0.40, [(4, "HE TAPS THE [GLASS.]"), (4, "POINTS AT HIS [MIRROR.]")]),
+    ("Rule two. You look.", 0.60, [(2, "[RULE 2.]"), (2, "YOU {LOOK.}")]),
+    ("In the mirror, your head is turning around.", 0.90, [(3, "IN THE [MIRROR,]"), (5, "YOUR HEAD IS {TURNING AROUND.}")]),
+    ("His vest says toll staff. He was the last toll man.", 0.70,
+     [(2, "HIS VEST"), (3, "SAYS [TOLL STAFF.]"), (6, "HE WAS {THE LAST TOLL MAN.}")]),
+    ("Now it's your turn.", 0.60, [(4, "{NOW IT'S YOUR TURN.}")]),
+    ("Which rule would you break? A, keep the barrier down. B, look in his mirror.", 1.00, []),
+    ("Just type A or B.", 0.20, []),
+]
+P7_HOLD = 1.6
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD}
