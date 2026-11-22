@@ -544,8 +544,88 @@ def part6():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6}[PART]()
-if PART in (3, 4, 5, 6): sfx *= db(-1.2)
+def part7():
+    """NIGHT SHIFT Ep.7 — the highway toll booth (the Backwards Man). v2: real silences before the reveals."""
+    T7 = {L["id"]: L for L in T["lines"]}
+    gaps = [(T7[i - 1]["end"], T7[i]["start"]) for i in (10, 13, 16, 17, 18)]   # the deliberate pauses
+    breath = load("whisper.mp3", "lowpass=f=900,asetrate=48000*0.8,aresample=48000")
+    tt = np.arange(N) / SR
+    # the truck's diesel idle (low motor, slow throb) + the plaza hum + distant highway wind
+    throb = (0.75 + 0.25 * np.sin(2 * np.pi * 7.5 * tt)).astype(np.float32)[:, None]
+    idle = bed("motor.mp3", "lowpass=f=220,asetrate=48000*0.7,aresample=48000") * db(-9) * throb
+    rng = np.random.default_rng(77); wn = rng.standard_normal(N).astype(np.float32)
+    WX = np.fft.rfft(wn); fw = np.fft.rfftfreq(N, 1 / SR); WX[(fw < 80) | (fw > 600)] = 0
+    wn = np.fft.irfft(WX, N).astype(np.float32); wn /= (np.abs(wn).max() + 1e-9)
+    wind = np.stack([wn, wn], 1) * db(-30)
+    rb = bed("hum.mp3", "lowpass=f=300") * db(-10) + idle + wind
+    pts = [(0, 0), (K["still"], 0), (K["moveW"], 2), (K["door"], 0), (K["poster"], -4), (K["mirror"], -6), (K["choice"], -6), (DUR - 1, -6), (DUR, -40)]
+    rb = rb * automation(pts)
+    mu = load("music.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    while len(loop) < N: loop = np.concatenate([loop, loop])
+    loop = loop[:N]
+    mp = [(0, -16), (K["drv"], -13), (K["me"], -19), (K["rules"], -18), (K["hands"], -16), (K["pay"], -15), (K["rule1"], -17),
+          (K["still"], -15), (K["walk"], -13), (K["poster"], -10), (K["scale"], -12), (K["tap"], -13), (K["rule2"], -12),
+          (K["mirror"], -10), (K["vest"], -13), (K["turn"], -10), (K["choice"], -15), (DUR - 1.2, -15), (DUR, -40)]
+    for a, b in gaps:
+        mp += [(a - 0.05, None), (a + 0.12, -45), (b - 0.02, -45)]
+    mp = sorted(mp, key=lambda p: p[0])
+    out = []; last = -16
+    for tpt, g in mp:
+        if g is None: g = last
+        out.append((tpt, g)); last = g if g > -40 else last
+    m1 = loop * automation(out)
+    sil = np.ones((N, 1), np.float32)
+    for a, b in gaps:
+        sil *= 1 - (automation([(0, -100), (a + 0.02, -100), (a + 0.15, 0), (b - 0.05, 0), (b + 0.02, -100), (DUR + 1, -100)]) * 0.8)
+    rb = rb * sil
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0); place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(load("buzz.mp3", "lowpass=f=1200"), K["truckW"], -24, fo=0.4, maxlen=0.8)   # air brakes hiss stand-in
+    place(noise_burst(0.6, 1500, 7000, 71, 0.01) * 0.7, K["truckW"] + 0.1, -16)
+    place(stinger, K["backW"] - 0.03, -9, fo=0.5, maxlen=1.2); place(boom, K["backW"], -10, fo=0.6, maxlen=1.6)
+    place(door_open, K["me"] + 0.05, -20, fo=0.3, maxlen=1.0)
+    place(noise_burst(0.35, 800, 6000, 61, 0.02) * 0.6, K["rules"], -14)
+    for k in ("r1", "r2"): place(tick, K[k] + 0.02, -13)
+    place(stinger, K["faceW"] - 0.03, -13, fo=0.4, maxlen=0.9)
+    place(breath, K["roadW"] - 0.2, -16, fi=0.1, fo=0.4, maxlen=1.2)
+    place(load("door_creak.mp3"), K["paysW"] - 0.1, -16, fo=0.3, maxlen=1.0)   # the elbow bending the wrong way
+    place(load("sent.mp3", "highpass=f=1500"), K["aroundW"] - 0.2, -18, maxlen=0.6)   # coins
+    place(boom, K["aroundW"], -13, fo=0.5, maxlen=1.2)
+    place(load("button.mp3"), K["lift2W"] - 0.02, -10, maxlen=0.6)
+    place(motor, K["barrierW"] - 0.1, -15, fi=0.05, fo=0.3, maxlen=1.1)
+    place(ding, K["barrierW"] + 0.3, -22, maxlen=0.8)
+    place(heartbeat, K["still"], -15, fi=0.1, fo=0.3, maxlen=K["door"] - K["still"] - 0.1)
+    place(door_open, K["opensW"] - 0.1, -11, fo=0.3, maxlen=1.4)
+    place(load("stairs.mp3"), K["climbW"], -15, fo=0.3, maxlen=1.0)
+    for i in range(5): place(load("stairs.mp3", "lowpass=f=900"), K["walksW"] + i * 0.36, -20, maxlen=0.25)
+    place(riser, K["bwW"] - 0.06 - len(riser) / SR, -18, fi=1.0, fo=0.004)
+    place(stinger, K["bwW"] - 0.03, -8, fo=0.5, maxlen=1.4); place(boom, K["bwW"], -9, fo=0.8, maxlen=2.0)
+    place(breath, K["poster"] + 0.05, -11, fi=0.1, fo=0.5, maxlen=1.6)
+    place(load("smile_stinger.mp3"), K["seeW"] - 0.05, -10, fo=0.5, maxlen=1.3)
+    place(boom, K["youW"], -9, fo=0.8, maxlen=2.0)
+    place(load("stretch.mp3"), K["tallerW"], -14, fo=0.4, maxlen=1.6)
+    place(boom, K["booth2W"], -12, fo=0.6, maxlen=1.4)
+    for i in range(3): place(load("door_slam_wood.mp3", "highpass=f=700"), K["tapsW"] + i * 0.34, -14, maxlen=0.22)
+    place(stinger, K["mirror2W"] - 0.03, -12, fo=0.4, maxlen=0.9)
+    place(stinger, K["rule2"] + 0.02, -12, fo=0.5, maxlen=1.0)
+    place(riser, K["look2W"] - 0.06 - len(riser) / SR, -18, fi=1.2, fo=0.004)
+    place(stinger, K["look2W"] - 0.03, -8, fo=0.5, maxlen=1.2); place(boom, K["look2W"], -8, fo=0.8, maxlen=2.0)
+    place(load("stretch.mp3", "asetrate=48000*0.8,aresample=48000"), K["turningW"] - 0.2, -11, fo=0.5, maxlen=1.8)  # the neck twisting
+    place(stinger, K["aroundW2"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["aroundW2"], -7, fo=0.8, maxlen=2.4)
+    place(stinger, K["vest"] + 0.02, -13, fo=0.5, maxlen=1.0)
+    place(boom, K["manW"], -10, fo=0.6, maxlen=1.6)
+    place(riser, K["turnW"] - 0.06 - len(riser) / SR, -19, fi=1.2, fo=0.004)
+    place(load("lights_off.mp3"), K["turn"] + 0.1, -15, maxlen=1.0)
+    place(stinger, K["turnW"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["turnW"], -7, fo=0.8, maxlen=2.4)
+    place(boom, K["choice"] - 0.1, -17, fo=0.8, maxlen=2.5)
+    place(tick, K["optA"], -12); place(tick, K["optB"], -12)
+    place(tick, K["ctaA"], -14); place(tick, K["ctaB"], -14)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7}[PART]()
+if PART in (3, 4, 5, 6, 7): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

@@ -1,0 +1,1229 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 59.248,
+ "lines": [
+  {
+   "id": 1,
+   "text": "Three AM. A truck stops at your toll booth.",
+   "src_start": 0.11,
+   "src_end": 3.67,
+   "start": 0.12,
+   "end": 3.68,
+   "words": [
+    {
+     "text": "Three",
+     "start": 0.17,
+     "end": 0.41
+    },
+    {
+     "text": "AM.",
+     "start": 0.49,
+     "end": 1.25
+    },
+    {
+     "text": "A",
+     "start": 1.61,
+     "end": 1.69
+    },
+    {
+     "text": "truck",
+     "start": 1.77,
+     "end": 2.01
+    },
+    {
+     "text": "stops",
+     "start": 2.09,
+     "end": 2.41
+    },
+    {
+     "text": "at",
+     "start": 2.45,
+     "end": 2.49
+    },
+    {
+     "text": "your",
+     "start": 2.57,
+     "end": 2.73
+    },
+    {
+     "text": "toll",
+     "start": 2.77,
+     "end": 2.97
+    },
+    {
+     "text": "booth.",
+     "start": 3.05,
+     "end": 3.68
+    }
+   ],
+   "captions": [
+    {
+     "text": "[3 AM.]",
+     "start": 0.17,
+     "word_idx": 0,
+     "end": 1.61
+    },
+    {
+     "text": "A {TRUCK} STOPS",
+     "start": 1.61,
+     "word_idx": 2,
+     "end": 2.45
+    },
+    {
+     "text": "AT YOUR [TOLL BOOTH.]",
+     "start": 2.45,
+     "word_idx": 5,
+     "end": 3.8
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "The driver's head is on backwards.",
+   "src_start": 3.87,
+   "src_end": 5.92,
+   "start": 3.88,
+   "end": 5.93,
+   "words": [
+    {
+     "text": "The",
+     "start": 3.93,
+     "end": 4.01
+    },
+    {
+     "text": "driver's",
+     "start": 4.17,
+     "end": 4.49
+    },
+    {
+     "text": "head",
+     "start": 4.61,
+     "end": 4.73
+    },
+    {
+     "text": "is",
+     "start": 4.81,
+     "end": 4.89
+    },
+    {
+     "text": "on",
+     "start": 5.01,
+     "end": 5.13
+    },
+    {
+     "text": "backwards.",
+     "start": 5.25,
+     "end": 5.93
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE DRIVER'S {HEAD}",
+     "start": 3.93,
+     "word_idx": 0,
+     "end": 4.81
+    },
+    {
+     "text": "IS ON {BACKWARDS.}",
+     "start": 4.81,
+     "word_idx": 3,
+     "end": 6.05
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Your first night as the toll man.",
+   "src_start": 6.39,
+   "src_end": 8.29,
+   "start": 6.38,
+   "end": 8.28,
+   "words": [
+    {
+     "text": "Your",
+     "start": 6.43,
+     "end": 6.55
+    },
+    {
+     "text": "first",
+     "start": 6.71,
+     "end": 6.87
+    },
+    {
+     "text": "night",
+     "start": 6.95,
+     "end": 7.19
+    },
+    {
+     "text": "as",
+     "start": 7.27,
+     "end": 7.35
+    },
+    {
+     "text": "the",
+     "start": 7.43,
+     "end": 7.51
+    },
+    {
+     "text": "toll",
+     "start": 7.55,
+     "end": 7.75
+    },
+    {
+     "text": "man.",
+     "start": 7.83,
+     "end": 8.28
+    }
+   ],
+   "captions": [
+    {
+     "text": "YOUR FIRST NIGHT",
+     "start": 6.43,
+     "word_idx": 0,
+     "end": 7.27
+    },
+    {
+     "text": "AS THE [TOLL MAN.]",
+     "start": 7.27,
+     "word_idx": 3,
+     "end": 8.4
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "The old one left you two rules.",
+   "src_start": 8.67,
+   "src_end": 10.65,
+   "start": 8.53,
+   "end": 10.51,
+   "words": [
+    {
+     "text": "The",
+     "start": 8.58,
+     "end": 8.66
+    },
+    {
+     "text": "old",
+     "start": 8.74,
+     "end": 8.9
+    },
+    {
+     "text": "one",
+     "start": 8.98,
+     "end": 9.14
+    },
+    {
+     "text": "left",
+     "start": 9.26,
+     "end": 9.38
+    },
+    {
+     "text": "you",
+     "start": 9.46,
+     "end": 9.54
+    },
+    {
+     "text": "two",
+     "start": 9.62,
+     "end": 9.78
+    },
+    {
+     "text": "rules.",
+     "start": 9.86,
+     "end": 10.51
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE OLD ONE",
+     "start": 8.58,
+     "word_idx": 0,
+     "end": 9.26
+    },
+    {
+     "text": "LEFT YOU [2 RULES.]",
+     "start": 9.26,
+     "word_idx": 3,
+     "end": 10.63
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "One. Always lift the barrier.",
+   "src_start": 10.99,
+   "src_end": 13.22,
+   "start": 10.81,
+   "end": 13.04,
+   "words": [
+    {
+     "text": "One.",
+     "start": 10.86,
+     "end": 11.58
+    },
+    {
+     "text": "Always",
+     "start": 11.82,
+     "end": 12.06
+    },
+    {
+     "text": "lift",
+     "start": 12.14,
+     "end": 12.3
+    },
+    {
+     "text": "the",
+     "start": 12.38,
+     "end": 12.46
+    },
+    {
+     "text": "barrier.",
+     "start": 12.54,
+     "end": 13.04
+    }
+   ],
+   "captions": [
+    {
+     "text": "ONE.",
+     "start": 10.86,
+     "word_idx": 0,
+     "end": 11.82
+    },
+    {
+     "text": "ALWAYS {LIFT} THE [BARRIER.]",
+     "start": 11.82,
+     "word_idx": 1,
+     "end": 13.16
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Two. Never look in his mirror.",
+   "src_start": 13.63,
+   "src_end": 15.77,
+   "start": 13.34,
+   "end": 15.48,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 13.39,
+     "end": 14.11
+    },
+    {
+     "text": "Never",
+     "start": 14.19,
+     "end": 14.43
+    },
+    {
+     "text": "look",
+     "start": 14.51,
+     "end": 14.67
+    },
+    {
+     "text": "in",
+     "start": 14.71,
+     "end": 14.75
+    },
+    {
+     "text": "his",
+     "start": 14.83,
+     "end": 14.99
+    },
+    {
+     "text": "mirror.",
+     "start": 15.19,
+     "end": 15.48
+    }
+   ],
+   "captions": [
+    {
+     "text": "TWO.",
+     "start": 13.39,
+     "word_idx": 0,
+     "end": 14.19
+    },
+    {
+     "text": "{NEVER LOOK} IN HIS [MIRROR.]",
+     "start": 14.19,
+     "word_idx": 1,
+     "end": 15.6
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "His hands are on the wheel. His face looks back down the road.",
+   "src_start": 16.647,
+   "src_end": 20.08,
+   "start": 16.08,
+   "end": 19.513,
+   "words": [
+    {
+     "text": "His",
+     "start": 16.13,
+     "end": 16.153
+    },
+    {
+     "text": "hands",
+     "start": 16.313,
+     "end": 16.473
+    },
+    {
+     "text": "are",
+     "start": 16.513,
+     "end": 16.553
+    },
+    {
+     "text": "on",
+     "start": 16.633,
+     "end": 16.713
+    },
+    {
+     "text": "the",
+     "start": 16.793,
+     "end": 16.873
+    },
+    {
+     "text": "wheel.",
+     "start": 17.033,
+     "end": 17.593
+    },
+    {
+     "text": "His",
+     "start": 17.673,
+     "end": 17.833
+    },
+    {
+     "text": "face",
+     "start": 17.913,
+     "end": 18.153
+    },
+    {
+     "text": "looks",
+     "start": 18.233,
+     "end": 18.473
+    },
+    {
+     "text": "back",
+     "start": 18.593,
+     "end": 18.713
+    },
+    {
+     "text": "down",
+     "start": 18.793,
+     "end": 18.873
+    },
+    {
+     "text": "the",
+     "start": 18.953,
+     "end": 19.033
+    },
+    {
+     "text": "road.",
+     "start": 19.233,
+     "end": 19.513
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIS HANDS ARE",
+     "start": 16.13,
+     "word_idx": 0,
+     "end": 16.633
+    },
+    {
+     "text": "ON THE [WHEEL.]",
+     "start": 16.633,
+     "word_idx": 3,
+     "end": 17.673
+    },
+    {
+     "text": "HIS {FACE} LOOKS",
+     "start": 17.673,
+     "word_idx": 6,
+     "end": 18.593
+    },
+    {
+     "text": "BACK DOWN THE ROAD.",
+     "start": 18.593,
+     "word_idx": 9,
+     "end": 19.633
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "He pays without turning around.",
+   "src_start": 20.43,
+   "src_end": 22.1,
+   "start": 19.813,
+   "end": 21.483,
+   "words": [
+    {
+     "text": "He",
+     "start": 19.863,
+     "end": 19.943
+    },
+    {
+     "text": "pays",
+     "start": 19.983,
+     "end": 20.263
+    },
+    {
+     "text": "without",
+     "start": 20.343,
+     "end": 20.663
+    },
+    {
+     "text": "turning",
+     "start": 20.743,
+     "end": 20.903
+    },
+    {
+     "text": "around.",
+     "start": 20.983,
+     "end": 21.483
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE [PAYS]",
+     "start": 19.863,
+     "word_idx": 0,
+     "end": 20.343
+    },
+    {
+     "text": "{WITHOUT TURNING} AROUND.",
+     "start": 20.343,
+     "word_idx": 2,
+     "end": 21.603
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "Rule one. You lift the barrier.",
+   "src_start": 22.75,
+   "src_end": 24.92,
+   "start": 21.883,
+   "end": 24.053,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 21.933,
+     "end": 22.093
+    },
+    {
+     "text": "one.",
+     "start": 22.253,
+     "end": 22.893
+    },
+    {
+     "text": "You",
+     "start": 22.973,
+     "end": 23.053
+    },
+    {
+     "text": "lift",
+     "start": 23.133,
+     "end": 23.293
+    },
+    {
+     "text": "the",
+     "start": 23.373,
+     "end": 23.453
+    },
+    {
+     "text": "barrier.",
+     "start": 23.573,
+     "end": 24.053
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 1.]",
+     "start": 21.933,
+     "word_idx": 0,
+     "end": 22.973
+    },
+    {
+     "text": "YOU LIFT THE [BARRIER.]",
+     "start": 22.973,
+     "word_idx": 2,
+     "end": 24.173
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "The truck doesn't move.",
+   "src_start": 25.27,
+   "src_end": 26.54,
+   "start": 24.753,
+   "end": 26.023,
+   "words": [
+    {
+     "text": "The",
+     "start": 24.803,
+     "end": 24.843
+    },
+    {
+     "text": "truck",
+     "start": 24.923,
+     "end": 25.163
+    },
+    {
+     "text": "doesn't",
+     "start": 25.243,
+     "end": 25.483
+    },
+    {
+     "text": "move.",
+     "start": 25.683,
+     "end": 26.023
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE TRUCK",
+     "start": 24.803,
+     "word_idx": 0,
+     "end": 25.243
+    },
+    {
+     "text": "{DOESN'T MOVE.}",
+     "start": 25.243,
+     "word_idx": 2,
+     "end": 26.143
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "The door opens.",
+   "src_start": 26.75,
+   "src_end": 27.81,
+   "start": 26.473,
+   "end": 27.533,
+   "words": [
+    {
+     "text": "The",
+     "start": 26.523,
+     "end": 26.603
+    },
+    {
+     "text": "door",
+     "start": 26.723,
+     "end": 26.843
+    },
+    {
+     "text": "opens.",
+     "start": 26.923,
+     "end": 27.533
+    }
+   ],
+   "captions": [
+    {
+     "text": "THE DOOR {OPENS.}",
+     "start": 26.523,
+     "word_idx": 0,
+     "end": 27.653
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "He climbs down, walks to your window. Backwards.",
+   "src_start": 27.99,
+   "src_end": 31.43,
+   "start": 27.833,
+   "end": 31.273,
+   "words": [
+    {
+     "text": "He",
+     "start": 27.883,
+     "end": 27.923
+    },
+    {
+     "text": "climbs",
+     "start": 28.003,
+     "end": 28.323
+    },
+    {
+     "text": "down,",
+     "start": 28.403,
+     "end": 28.963
+    },
+    {
+     "text": "walks",
+     "start": 29.083,
+     "end": 29.283
+    },
+    {
+     "text": "to",
+     "start": 29.323,
+     "end": 29.363
+    },
+    {
+     "text": "your",
+     "start": 29.443,
+     "end": 29.523
+    },
+    {
+     "text": "window.",
+     "start": 29.603,
+     "end": 30.483
+    },
+    {
+     "text": "Backwards.",
+     "start": 30.603,
+     "end": 31.273
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE CLIMBS",
+     "start": 27.883,
+     "word_idx": 0,
+     "end": 28.403
+    },
+    {
+     "text": "DOWN, WALKS TO YOUR [WINDOW.]",
+     "start": 28.403,
+     "word_idx": 2,
+     "end": 30.603
+    },
+    {
+     "text": "{BACKWARDS.}",
+     "start": 30.603,
+     "word_idx": 7,
+     "end": 31.393
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "Now his face can see you.",
+   "src_start": 31.71,
+   "src_end": 33.46,
+   "start": 31.973,
+   "end": 33.723,
+   "words": [
+    {
+     "text": "Now",
+     "start": 32.023,
+     "end": 32.183
+    },
+    {
+     "text": "his",
+     "start": 32.263,
+     "end": 32.423
+    },
+    {
+     "text": "face",
+     "start": 32.503,
+     "end": 32.743
+    },
+    {
+     "text": "can",
+     "start": 32.823,
+     "end": 32.983
+    },
+    {
+     "text": "see",
+     "start": 33.143,
+     "end": 33.303
+    },
+    {
+     "text": "you.",
+     "start": 33.383,
+     "end": 33.723
+    }
+   ],
+   "captions": [
+    {
+     "text": "NOW HIS {FACE}",
+     "start": 32.023,
+     "word_idx": 0,
+     "end": 32.823
+    },
+    {
+     "text": "CAN {SEE YOU.}",
+     "start": 32.823,
+     "word_idx": 3,
+     "end": 33.843
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "He's taller than your booth.",
+   "src_start": 33.86,
+   "src_end": 35.29,
+   "start": 34.173,
+   "end": 35.603,
+   "words": [
+    {
+     "text": "He's",
+     "start": 34.223,
+     "end": 34.393
+    },
+    {
+     "text": "taller",
+     "start": 34.433,
+     "end": 34.713
+    },
+    {
+     "text": "than",
+     "start": 34.793,
+     "end": 34.873
+    },
+    {
+     "text": "your",
+     "start": 34.953,
+     "end": 35.113
+    },
+    {
+     "text": "booth.",
+     "start": 35.193,
+     "end": 35.603
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE'S {TALLER}",
+     "start": 34.223,
+     "word_idx": 0,
+     "end": 34.793
+    },
+    {
+     "text": "THAN YOUR [BOOTH.]",
+     "start": 34.793,
+     "word_idx": 2,
+     "end": 35.723
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "He taps the glass. Points at his mirror.",
+   "src_start": 35.55,
+   "src_end": 37.87,
+   "start": 36.003,
+   "end": 38.323,
+   "words": [
+    {
+     "text": "He",
+     "start": 36.053,
+     "end": 36.133
+    },
+    {
+     "text": "taps",
+     "start": 36.173,
+     "end": 36.453
+    },
+    {
+     "text": "the",
+     "start": 36.493,
+     "end": 36.533
+    },
+    {
+     "text": "glass.",
+     "start": 36.813,
+     "end": 37.333
+    },
+    {
+     "text": "Points",
+     "start": 37.453,
+     "end": 37.573
+    },
+    {
+     "text": "at",
+     "start": 37.653,
+     "end": 37.733
+    },
+    {
+     "text": "his",
+     "start": 37.813,
+     "end": 37.893
+    },
+    {
+     "text": "mirror.",
+     "start": 38.053,
+     "end": 38.323
+    }
+   ],
+   "captions": [
+    {
+     "text": "HE TAPS THE [GLASS.]",
+     "start": 36.053,
+     "word_idx": 0,
+     "end": 37.453
+    },
+    {
+     "text": "POINTS AT HIS [MIRROR.]",
+     "start": 37.453,
+     "word_idx": 4,
+     "end": 38.443
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "Rule two. You look.",
+   "src_start": 38.27,
+   "src_end": 39.99,
+   "start": 38.923,
+   "end": 40.643,
+   "words": [
+    {
+     "text": "Rule",
+     "start": 38.973,
+     "end": 39.133
+    },
+    {
+     "text": "two.",
+     "start": 39.293,
+     "end": 40.013
+    },
+    {
+     "text": "You",
+     "start": 40.093,
+     "end": 40.173
+    },
+    {
+     "text": "look.",
+     "start": 40.253,
+     "end": 40.643
+    }
+   ],
+   "captions": [
+    {
+     "text": "[RULE 2.]",
+     "start": 38.973,
+     "word_idx": 0,
+     "end": 40.093
+    },
+    {
+     "text": "YOU {LOOK.}",
+     "start": 40.093,
+     "word_idx": 2,
+     "end": 40.763
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "In the mirror, your head is turning around.",
+   "src_start": 40.419,
+   "src_end": 42.72,
+   "start": 41.543,
+   "end": 43.844,
+   "words": [
+    {
+     "text": "In",
+     "start": 41.593,
+     "end": 41.604
+    },
+    {
+     "text": "the",
+     "start": 41.684,
+     "end": 41.764
+    },
+    {
+     "text": "mirror,",
+     "start": 41.964,
+     "end": 42.324
+    },
+    {
+     "text": "your",
+     "start": 42.444,
+     "end": 42.564
+    },
+    {
+     "text": "head",
+     "start": 42.644,
+     "end": 42.724
+    },
+    {
+     "text": "is",
+     "start": 42.804,
+     "end": 42.964
+    },
+    {
+     "text": "turning",
+     "start": 43.044,
+     "end": 43.204
+    },
+    {
+     "text": "around.",
+     "start": 43.284,
+     "end": 43.844
+    }
+   ],
+   "captions": [
+    {
+     "text": "IN THE [MIRROR,]",
+     "start": 41.593,
+     "word_idx": 0,
+     "end": 42.444
+    },
+    {
+     "text": "YOUR HEAD IS {TURNING AROUND.}",
+     "start": 42.444,
+     "word_idx": 3,
+     "end": 43.964
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "His vest says toll staff. He was the last toll man.",
+   "src_start": 43.276,
+   "src_end": 47.07,
+   "start": 44.544,
+   "end": 48.338,
+   "words": [
+    {
+     "text": "His",
+     "start": 44.594,
+     "end": 44.628
+    },
+    {
+     "text": "vest",
+     "start": 44.708,
+     "end": 45.028
+    },
+    {
+     "text": "says",
+     "start": 45.108,
+     "end": 45.428
+    },
+    {
+     "text": "toll",
+     "start": 45.588,
+     "end": 45.908
+    },
+    {
+     "text": "staff.",
+     "start": 45.988,
+     "end": 46.868
+    },
+    {
+     "text": "He",
+     "start": 46.948,
+     "end": 47.028
+    },
+    {
+     "text": "was",
+     "start": 47.108,
+     "end": 47.188
+    },
+    {
+     "text": "the",
+     "start": 47.268,
+     "end": 47.348
+    },
+    {
+     "text": "last",
+     "start": 47.508,
+     "end": 47.668
+    },
+    {
+     "text": "toll",
+     "start": 47.708,
+     "end": 47.908
+    },
+    {
+     "text": "man.",
+     "start": 47.988,
+     "end": 48.338
+    }
+   ],
+   "captions": [
+    {
+     "text": "HIS VEST",
+     "start": 44.594,
+     "word_idx": 0,
+     "end": 45.108
+    },
+    {
+     "text": "SAYS [TOLL STAFF.]",
+     "start": 45.108,
+     "word_idx": 2,
+     "end": 46.948
+    },
+    {
+     "text": "HE WAS {THE LAST TOLL MAN.}",
+     "start": 46.948,
+     "word_idx": 5,
+     "end": 48.458
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "Now it's your turn.",
+   "src_start": 47.39,
+   "src_end": 48.36,
+   "start": 48.938,
+   "end": 49.908,
+   "words": [
+    {
+     "text": "Now",
+     "start": 48.988,
+     "end": 49.068
+    },
+    {
+     "text": "it's",
+     "start": 49.148,
+     "end": 49.308
+    },
+    {
+     "text": "your",
+     "start": 49.388,
+     "end": 49.468
+    },
+    {
+     "text": "turn.",
+     "start": 49.548,
+     "end": 49.908
+    }
+   ],
+   "captions": [
+    {
+     "text": "{NOW IT'S YOUR TURN.}",
+     "start": 48.988,
+     "word_idx": 0,
+     "end": 50.028
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Which rule would you break? A, keep the barrier down. B, look in his mirror.",
+   "src_start": 48.96,
+   "src_end": 54.12,
+   "start": 50.908,
+   "end": 56.068,
+   "words": [
+    {
+     "text": "Which",
+     "start": 50.958,
+     "end": 50.988
+    },
+    {
+     "text": "rule",
+     "start": 51.068,
+     "end": 51.228
+    },
+    {
+     "text": "would",
+     "start": 51.308,
+     "end": 51.468
+    },
+    {
+     "text": "you",
+     "start": 51.548,
+     "end": 51.628
+    },
+    {
+     "text": "break?",
+     "start": 51.828,
+     "end": 52.428
+    },
+    {
+     "text": "A,",
+     "start": 52.508,
+     "end": 53.068
+    },
+    {
+     "text": "keep",
+     "start": 53.148,
+     "end": 53.228
+    },
+    {
+     "text": "the",
+     "start": 53.308,
+     "end": 53.388
+    },
+    {
+     "text": "barrier",
+     "start": 53.468,
+     "end": 53.788
+    },
+    {
+     "text": "down.",
+     "start": 53.868,
+     "end": 54.588
+    },
+    {
+     "text": "B,",
+     "start": 54.708,
+     "end": 55.148
+    },
+    {
+     "text": "look",
+     "start": 55.228,
+     "end": 55.388
+    },
+    {
+     "text": "in",
+     "start": 55.428,
+     "end": 55.468
+    },
+    {
+     "text": "his",
+     "start": 55.548,
+     "end": 55.628
+    },
+    {
+     "text": "mirror.",
+     "start": 55.708,
+     "end": 56.068
+    }
+   ],
+   "captions": []
+  },
+  {
+   "id": 21,
+   "text": "Just type A or B.",
+   "src_start": 54.47,
+   "src_end": 55.85,
+   "start": 56.268,
+   "end": 57.648,
+   "words": [
+    {
+     "text": "Just",
+     "start": 56.318,
+     "end": 56.438
+    },
+    {
+     "text": "type",
+     "start": 56.598,
+     "end": 56.758
+    },
+    {
+     "text": "A",
+     "start": 56.838,
+     "end": 57.078
+    },
+    {
+     "text": "or",
+     "start": 57.158,
+     "end": 57.318
+    },
+    {
+     "text": "B.",
+     "start": 57.438,
+     "end": 57.648
+    }
+   ],
+   "captions": []
+  }
+ ]
+}
