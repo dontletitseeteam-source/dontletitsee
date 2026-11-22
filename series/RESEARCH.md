@@ -181,6 +181,27 @@ the one apartment whose lights stay on in a power cut. A/B options: "which rule 
 next?". Stay clear of the @play.malo premises listed in PLAYBOOK section 1.
 
 ## Research log (newest first; PLAYBOOK section 7)
+### 2026-11-23 (creator run, weekly scan)
+YouTube scan (youtube_regin-mont; 4 queries: "animated horror story #shorts", "scary story animation shorts", "rules horror story
+#shorts", "night shift horror animation"; Shorts since 11-09 by views; 75 unique). The top is dominated by Hindi "bhoot wala
+cartoon" channels and kids' Minecraft/Roblox skits (not our audience). Useful original-story hits:
+| Views | Length | Channel | Title / what it does |
+|---|---|---|---|
+| 4.3M | 42 s | Lovelyhorrorshow | "Bhutiya Grandmother": Hindi 2D cartoon, one creature in a family home |
+| 2.0M | 96 s | FanFabolix | "Never draw a face on the wall at night!" (Indonesian): the title IS one prohibition |
+| 1.5M | 60 s | stor.ybrick | "The 2:17 bus: nobody who boarded it came back" (Malayalam): a time + a vehicle + a plain consequence |
+| 1.3M | 50 s | AuraRoblox | "His sister saved him from the night ice cream TRUCK": an everyday vehicle at night turned monster |
+| 1.1M | 147 s | Movie Flash Français | "The easel that erases people": one object, one plain power |
+| 1.1M | 29 s | Deniverse | "This ice cream truck hides a terrifying secret" (Indonesian) |
+| 0.8-2.0M | 11-59 s | Tudicore Darr TV, Sinotal, DARKNISHI, Khooni Kohra | Hindi 2D horror cartoons with a visible creature in frame 1 |
+Patterns: (1) titles state one rule or one plain consequence with a time ("2:17", "at night"); (2) night-time vehicles and
+everyday places beat abstract settings; (3) Indian-language 2D horror cartoons are a huge market (our audience is largely
+Indian: Ep 2 sleeper train was our hit); (4) the creature is in frame 1, big. Compared with us: matches our standalone
+recipe; our Ep 7 (highway toll booth + truck) fits pattern 2.
+YouTube retention 11-09..11-22 (lag, NIGHT SHIFT not in yet): BLOCK C stay rate 43-62% (P4/P5/P7 best), FLOOR 0 34-52%.
+Applied: nothing new on the voice/animation side (one change at a time); the silhouette rule (ANALYTICS item 3) comes from our
+own numbers. Candidate next test after the A/B test: a prohibition-style YouTube title ("Never ... at 3 AM").
+
 ### 2026-11-21 (owner session: animation and voice)
 Our numbers: NIGHT SHIFT Ep 2 (train) 964 IG views in 4.5 h (best ever, skip 37.2%, avg watch 30.4 s, first
 shares); Ep 1 252 IG / 872 YT. Main YouTube 29 subs. @lexter2025 still 0-1 views per upload.

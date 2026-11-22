@@ -18,11 +18,49 @@ Measure it: IG skip rate + avg watch and YouTube stay rate of Ep 6+ vs Ep 1-5.
 2. **YouTube title = a hook sentence that states the scary image, no "Part n" — STANDARD** (test #5 confirmed 2026-11-19: P6 314
    views at 34 h vs P5 246 / P4 185; P7 766 at 34 h, P8 273 at 10 h). Series name after the bar, part number only in the
    description. Best shape: first-person "my/your" + one concrete wrong detail in the first 6 words.
-3. **Standalone episode format = first read POSITIVE (Ep 1: IG skip 37.7%, reach 160, YT 350 at 10 h, all best-ever 10-h).** Keep
-   it. ONE new test from Ep 4 (2026-11-23): end the A/B card with a one-word, low-effort ask on screen and in the voice
-   ("Type A or B." + the two options as huge letters) instead of the longer question; watch comment counts on Ep 4 vs Ep 1-3.
+3. **Silhouette rule (new 2026-11-23, from Ep 1-3):** the entity's wrongness must read in its OUTLINE at thumbnail size
+   (pose, size, orientation: upside down, head turned backwards, too tall), never a detail you count (fingers, tags). Frame 1
+   and the cover show the whole wrong silhouette, big. Running test, unchanged: "Type A or B" card from Ep 4 (judge Ep 4-6).
+(Standalone format is now the standard: Ep 1-3 all beat BLOCK C on YouTube; see RESEARCH.md.)
 
 ## Day log
+## 2026-11-23 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 | Instagram | 322 | 799 | 640 | 17 | 2 | 0 / 0 | 17.3 s | 46.7% |
+| floor0-p2 | Instagram | 298 | 184 | 156 | 2 | 0 | 0 / 0 | 8.3 s | 71.4% |
+| floor0-p3 | Instagram | 274 | 144 | 117 | 1 | 0 | 0 / 0 | 13.3 s | 51.6% |
+| block-c-p1 | Instagram | 250 | 144 | 111 | 0 | 0 | 0 / 0 | 17.2 s | 51.7% |
+| block-c-p2 | Instagram | 226 | 151 | 111 | 4 | 0 | 0 / 0 | 22.6 s | 54.6% |
+| block-c-p3 | Instagram | 202 | 127 | 108 | 3 | 0 | 1 / 0 | 8.2 s | 62.6% |
+| block-c-p4 | Instagram | 178 | 128 | 106 | 1 | 0 | 0 / 0 | 10.9 s | 68.4% |
+| block-c-p5 | Instagram | 154 | 131 | 107 | 5 | 0 | 0 / 0 | 16.2 s | 44.0% |
+| block-c-p6 | Instagram | 130 | 112 | 87 | 3 | 0 | 0 / 0 | 12.8 s | 55.3% |
+| block-c-p7 | Instagram | 106 | 155 | 133 | 2 | 0 | 1 / 0 | 21.8 s | 45.4% |
+| block-c-p8 | Instagram | 82 | 125 | 100 | 0 | 0 | 1 / 0 | 12.0 s | 44.7% |
+| night-shift-p1 | Instagram | 58 | 257 | 202 | 1 | 0 | 0 / 0 | 22.8 s | 36.8% |
+| night-shift-p2 | Instagram | 34 | **1,228** | **1,044** | **36** | 1 | 3 / 3 | **29.5 s** | 37.6% |
+| night-shift-p3 | Instagram | 10 | 144 | 134 | 1 | 0 | 0 / 0 | 16.0 s | 45.5% |
+| floor0-p1 / p2 / p3 | YouTube @dontletitsee (youtube_regin-mont) | 274-322 | 203 / 451 / 293 | n/a | 5 / 9 / 3 | 0 / 0 / 0 | n/a | n/a | n/a |
+| block-c-p1 … p4 | YouTube @dontletitsee | 178-250 | 439 / 737 / 226 / 231 | n/a | 10 / 14 / 6 / 5 | 1 / 0 / 0 / 1 | n/a | n/a | n/a |
+| block-c-p5 … p8 | YouTube @dontletitsee | 82-154 | 353 / 457 / **1,008** / 571 | n/a | 5 / 7 / 20 / 5 | 5 / 4 / 0 / 0 | n/a | n/a | n/a |
+| night-shift-p1 / p2 / p3 | YouTube @dontletitsee | 10-58 | 876 / **1,134** / 112 | n/a | 12 / 12 / 3 | 1 / 0 / 2 | n/a | n/a | n/a |
+| all 14 uploads | YouTube @lexter2025 (youtube_rachel-brod) | 10-322 | 16, 15, 150, 6, 2, 2, 0, 3, 0, 1, 0, 1, 0, 0 | n/a | 0-2 | 0 | n/a | n/a | n/a |
+
+YouTube retention (YOUTUBE_QUERY_ANALYTICS, 11-09..11-22, lags ~2 days, NIGHT SHIFT not in it yet): stay rate (engaged/views)
+BLOCK C P7 61%, P5 61%, P4 62%, P6 53%, P3 54%, P8 51%, P2 48%, P1 43%; FLOOR 0 P2 49%, P3 34%, P1 52%.
+
+Lessons:
+- NIGHT SHIFT is 3 for 3 on YouTube vs BLOCK C at the same age (Ep 1 876, Ep 2 1,134 at 34 h), but Instagram is 1 hit + 2
+  normal (Ep 1 257, Ep 2 1,228, Ep 3 144 at 10 h). Ep 3 (delivery rider) is the weakest so far: IG skip 45.5% (Ep 1-2: 37%),
+  avg watch 16.0 s, YT 112 at 10 h.
+- Pattern across Ep 1-3: what decides frame 1 is whether the WHOLE-BODY wrongness reads at thumbnail size. Ep 2's upside-down
+  man reads in 0.3 s; Ep 3's "seven fingers" (a count on a small hand) and Ep 1's toe tag (a small paper tag) do not. Entities
+  must be wrong in silhouette (pose, size, orientation), not in a detail you have to count.
+- Comments are still 0-2 per post on both platforms; the "Type A or B" test starts today with Ep 4 (judge on Ep 4-6).
+- @lexter2025 still gets 0-3 views on new uploads: the reposts are not helping; no action possible from here (posting is
+  another routine's job).
+
 ## 2026-11-22 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
