@@ -4,6 +4,46 @@ Owner's order (2026-11-18): "post after analysing mistakes, improve stories and 
 different channels like this which are actually gaining something." This file is the creator's standing brief.
 Read it before designing a series and before writing every script. PLAYBOOK section 7 says how to keep it fresh.
 
+## Owner directive v4 (2026-11-23 22:00 IST): the animation looks template-made. Improve it a lot.
+The owner: "the animation is too common; anyone can tell it's made by Claude because the layout and quality are
+always the same." The contact sheets of Ep 2-7 confirm it. The giveaways, in order:
+1. The same HUD block (clock + tiny mono lines) top-left in every frame of every episode.
+2. The same caption system every video: dark box, all-caps condensed font, lime/red keyword.
+3. The white-outline stick figure as the hero.
+4. Flat vector geometry, perfect gradients, no texture, centred symmetric compositions, the same navy palette.
+5. Full-screen text cards (notes, phones, charts, pump displays).
+6. One camera move only: the slow push.
+
+**Free fixes (code), from the next episode built:**
+- a. **No permanent HUD.** The time appears once, in the world (a wall clock, a phone lock screen, a ticket).
+- b. **A new caption style, not a box:** sentence case, white with a soft dark shadow, lower third, 1-4 words, one
+  accent colour, moved when the subject is low. Different from FLOOR 0/BLOCK C/NIGHT SHIFT Ep 1-7.
+- c. **Retire the stick figure.** "You" is a textured dark silhouette with real proportions (shoulders, hair,
+  clothes, hands) and readable eye highlights, or is shown through POV, hands and a face close-up.
+- d. **Texture and light:** paper/grain texture over everything, soft chromatic edge, real cast shadows from the
+  light source, volumetric beams (torch, headlights, projector), flicker, fog and dust particles.
+- e. **Camera language:** handheld drift under tension, rack focus (blurred foreground/background layers), smash
+  cut or whip pan on each scare, dutch angle on the reveal, extreme close-ups (eye, hand, mouth), parallax depth.
+- f. **Composition:** off-centre, foreground objects framing the shot; each episode its own palette (sodium
+  orange + teal for a petrol pump, sick green for a hospital), not the house navy every time.
+- g. **Notes and screens in the world** (paper in a hand, tilted, half in shadow), 2 short lines, at most 3 s.
+
+**Painted plates (credits), after the 2026-11-30 credit reset and only within budget (see ELEVENLABS.md):**
+- Style test, owner session 2026-11-23, ElevenLabs flow `VzTEkKkkEe1PzMk57p3h`: **Krea 3** (generation
+  `vFOkQ8HBW5fSPcrfsrXu`, 9:16, 1K, 151 credits): a painterly, cinematic illustration that looks made by an artist
+  (Indian sleeper coach, TTE in khaki with a torch, the upside-down man). **Recraft v4.1 flash** (generation
+  `dMa4ufLLAIrdj5x1UEn1`, 9:16, 48 credits): a bold inked-comic look, also far from our template. Download both as
+  references into `refs/style/` (creative_get_generations -> signed full_res_url -> curl).
+- Set the 9:16 aspect with `creative_add_flow_node` + `model_parameters` ({"aspect_ratio": "9:16"}, plus
+  "resolution": "1K" for Krea 3), then `creative_run_flow_nodes` with generations_count 1;
+  `creative_generate_image` alone gives 16:9.
+- Per episode: 2-4 plates with ONE style-anchor prompt per series (place wide; place close/POV; monster key art,
+  which is also the cover). Animate them in the engine: parallax layers (cut-outs via `birefnet-v2-bg-removal` if
+  budget allows, or masks), camera moves, light overlays, particles, an eye/mouth overlay on the monster; captions
+  and effects drawn in code on top. Same anchor across a series, so it looks like one show.
+- Art budget per episode = (balance - days left in the cycle x real voice cost) / days left, capped at 450. At 0
+  or below: free fixes only.
+
 ## Owner directive v3 (2026-11-23): analyse properly, keep improving
 The owner: "keep improving, take inspiration from reels in this genre that actually work and from our own reels
 that work, and analyse them properly." PLAYBOOK sections 6-7 now include a second-by-second retention check and a

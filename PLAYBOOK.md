@@ -24,6 +24,9 @@ poster. They communicate only through `queue.json` in this repo. **Always `git p
   stranger understands with zero context (complete story, a scare you can SEE, twist inside the video); a series
   is a repeatable format, not one continuing plot; no "previously" recap; one nameable poster-image entity per
   episode, shown, on the cover and in the title.
+- **Owner directive v4 (2026-11-23): the look is too template-like. Overhaul the art (no permanent HUD, new
+  caption style, no stick figure, texture, light, camera language, per-episode palette) and, within budget,
+  painted plates. Top of `series/RESEARCH.md`.**
 - **Owner directives v2 (2026-11-21), top of `series/RESEARCH.md`: clearer stories (one place, one monster, 2
   rules, one plainly-stated twist, clarity test), better voice (120–145 words, no speed-up, real pauses, ≤ 10
   tags) and better animation (a face for "you", more movement, 18–26 varied shots, light reveals, a scale shot).
@@ -123,6 +126,10 @@ scenes*.js). Use `python3` wherever older notes say `python`.
   days (around 2026-12-02 … 12-04), but use them well and make them last as long as is sensible.** Ledger:
   `series/ELEVENLABS.md` (balance + every spend). Text-to-speech costs **1 credit per character sent, tags
   included** (BLOCK C Part 1: 1,644 characters = 1,643 credits).
+  - **REAL balance first (2026-11-23):** call ElevenLabs `account_get_usage` at the start of every run and before
+    and after each paid generation; the ledger undercounted (it said 19,324 when 3,893 were left). Credits reset
+    monthly (next: 2026-11-30 17:36 IST, 40,000). Never write CREDITS USED UP while a reset is due. See the top of
+    `series/ELEVENLABS.md` for the no-voice fallback and the monthly plan.
   - **Pace (updated 2026-11-23): about 850–1,100 credits per episode** (voice + transcript; 120–145 words, ≤ 10
     tags). **No end date** (owner, 2026-11-23): keep one post a day after 2026-12-08 while credits last. Every run,
     `days of credit left = balance ÷ 1,000`; plan seasons so a finale lands on the last ~1–3 episodes the balance

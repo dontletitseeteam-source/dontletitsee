@@ -5,6 +5,21 @@ Rules: PLAYBOOK section 5. Owner's wish: spend the credits on quality; running o
 transcript, SFX) with the balance after it. When the balance is too low for another part, write
 **CREDITS USED UP** at the top of this file.
 
+**REAL BALANCE CHECK (owner session, 2026-11-23 22:00 IST): `account_get_usage` (now permitted) says starter tier,
+36,107 of 40,000 used -> only 3,893 credits left, and the monthly reset is 2026-11-30 17:36 IST (12:06 UTC), after
+which 40,000 are available again. This ledger said 19,324: it undercounted (transcripts logged as 0, retries, or
+eleven_v4 costing more than 1 credit per character). 199 of the 36,107 are two style-test images from the owner
+session. From now on:**
+- **Call `account_get_usage` at the start of every run and right before and after every paid generation; log the
+  REAL difference as the cost** (keep the chars too). Trust the API, not this table.
+- **Never write CREDITS USED UP while a monthly reset is due** (the original creator task stops for good on that
+  phrase). Write `PAUSED UNTIL RESET <date time IST>` instead.
+- Until the reset the 3,893 must cover the posts of 2026-11-27, 28, 29 and 30. Measure the real cost of the next
+  episode. If the balance can't pay for a voiced episode, make a **no-voice episode** (the story told in on-screen
+  text, with library music and SFX: zero credits) rather than leave a day empty.
+- After each reset, plan the month: (real voice cost per episode x days in the cycle) first, then the rest for art
+  plates (RESEARCH.md v4), capped at 450 per episode.
+
 **Owner extension (2026-11-23): no end date. Keep posting daily after 2026-12-08 while credits last; before
 writing CREDITS USED UP, check the real balance with `account_get_usage` (the Starter plan may refill monthly)
 and log any refill as a row.**
