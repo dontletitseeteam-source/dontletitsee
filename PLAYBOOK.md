@@ -178,8 +178,9 @@ already has a section for today), do a short review (about 10 tool calls, keep i
 The owner wants every part made after studying our own mistakes and the horror channels that are actually
 growing. `series/RESEARCH.md` holds the brief, the post-mortems and the research log; read it before designing a
 series and before writing every script.
-1. **Weekly competitor scan**: in the first creator run on or after each Monday (IST), and whenever you design a
-   new series; skip it if the RESEARCH.md log already has an entry from the last 6 days. About 6 tool calls:
+1. **Competitor scan, twice a week** (owner directive v3, 2026-11-23): in the first creator run on or after each
+   Monday AND each Thursday (IST), and whenever you design a new series; skip it if the RESEARCH.md log already
+   has an entry from the last 3 days. About 6-8 tool calls:
    - Composio workbench, account `youtube_regin-mont` (never proxy_execute for YouTube): YOUTUBE_SEARCH_YOU_TUBE
      with type `video`, videoDuration `short`, order `viewCount`, maxResults 25, publishedAfter = 14 days ago, for
      3–4 queries ("animated horror story #shorts", "scary story animation shorts", "rules horror story #shorts",
@@ -187,7 +188,9 @@ series and before writing every script.
      statistics, contentDetails) and YOUTUBE_LIST_CHANNELS (part statistics,snippet; ids comma-separated) for the
      top channels. In workbench code give each tool result its own variable name (the code checker rejects a
      result variable that is reused for other data). On a YouTube quota error, skip the scan this run.
-   - If a web search tool is available, 2–3 searches for Shorts/Reels ranking news or breakout horror formats.
+   - Instagram and TikTok can't be searched through the API, so if a web search tool is available, run 2–3
+     searches for horror Reels/TikTok trend reports (e.g. "horror storytelling reels trending", "animated horror
+     tiktok viral") and Shorts/Reels ranking news; note formats that are breaking out there.
    - Log a dated entry under "Research log" in RESEARCH.md: the 8–12 most useful hits (views, length, channel
      subscribers and start date, title/format) and 3–5 patterns, compared with our last week. Turn at most ONE
      finding into the next test in the ANALYTICS "Next improvements" list.
@@ -197,6 +200,18 @@ series and before writing every script.
    `channel==MINE`, startDate `2026-11-09`, endDate today, dimensions `video`, metrics
    `views,engagedViews,averageViewDuration,averageViewPercentage`). Stay rate = engagedViews ÷ views (YouTube's
    twin of the Instagram skip rate). The report lags ~2 days. Log it in the same entry.
+2b. **Second-by-second retention, every daily review** (works; tested 2026-11-23): for each main-channel video that
+   is 3-10 days old and not yet logged, YOUTUBE_QUERY_ANALYTICS (account `youtube_regin-mont`, ids `channel==MINE`,
+   startDate `2026-11-09`, endDate today, dimensions `elapsedVideoTimeRatio`, metrics
+   `audienceWatchRatio,relativeRetentionPerformance`, filters `video==<id>`). Rows come back empty until YouTube
+   has enough data (~3 days). Turn the ratio into seconds (ratio × video length), find the 2 biggest drops, grab
+   the frame at each with ffmpeg from `outputs/<id>.mp4`, and log "drop at N s: what was on screen and being
+   said". A cause that repeats in 2+ videos becomes a rule in RESEARCH.md.
+2c. **Winners and losers breakdown**: whenever a post gets at least 2x the median views of our last 7 posts on
+   any platform (a winner), or is the lowest of the last 7 (a loser), build a contact sheet (frames at 0, 1, 2,
+   3, 5, 10, 20, 30, 40, 50 s; ffmpeg select + tile) of it next to one typical post, LOOK at it, and write under
+   "Winners & losers" in RESEARCH.md what differs: frame-1 image, hook line, title, seconds until the monster
+   appears, how much text on screen, words per minute, the ending. Keep what winners share; cut what losers share.
 3. **Series post-mortem**: when a series' last part is queued, before designing the next one, add
    "Post-mortem: <series>" to RESEARCH.md: one row per part (IG views, skip rate, avg watch; YouTube views, stay
    rate; comments), 3 things that worked, 3 mistakes, 3 rules for the next series. Design the next series from it.

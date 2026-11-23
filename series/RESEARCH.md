@@ -4,6 +4,30 @@ Owner's order (2026-11-18): "post after analysing mistakes, improve stories and 
 different channels like this which are actually gaining something." This file is the creator's standing brief.
 Read it before designing a series and before writing every script. PLAYBOOK section 7 says how to keep it fresh.
 
+## Owner directive v3 (2026-11-23): analyse properly, keep improving
+The owner: "keep improving, take inspiration from reels in this genre that actually work and from our own reels
+that work, and analyse them properly." PLAYBOOK sections 6-7 now include a second-by-second retention check and a
+winners-and-losers frame breakdown (below). First findings, 2026-11-23 (owner session):
+1. **The rules note loses viewers.** YouTube's retention curve for Ep 1 (pharmacy, the first NIGHT SHIFT video with
+   data): 104% at 6% of the video (rewatches), 86% at 11%, **58% at 21%** (about 8-15 s in: the stretch where the
+   handover note fills the screen), then a slow slide to 38% at 81%. The contact sheets (frames at 0/1/2/3/5/10/
+   20/30/40/50 s) of Ep 2-4 show the same thing: the middle is full of text screens (note, phone, chart, pump
+   display). Ep 3 (weakest) kept its phone-screen of rules up for about 20 s.
+   -> **Note on screen at most 3 s, 2 rules of at most 6 words each, read aloud once. Then show each rule being
+   tested in ACTION (the hand reaching, the head turning), not on paper. No reading screens (charts, counters,
+   displays) longer than ~2 s unless the number itself is the scare.**
+2. **The end card loses half of who's left:** Ep 1 falls from 38% at 81% to 19% at 96%, i.e. during the A/B card.
+   -> **No separate end card.** Say the A/B question over the last scary shot (max 3 s, text on screen), and cut
+   so the last frame flows into the first one (a loop invites a replay).
+3. **The first 3 s are still one held shot** in Ep 2-7 (a slow push at most). -> The monster MOVES within 0.5 s
+   (turns its head, leans in, flickers closer) and there is a cut to a closer shot by ~1.5 s.
+4. **"You" now has a face in Ep 7 (worried eyes) but not in Ep 6.** -> A face on every reaction shot, every episode.
+5. **What the winner did** (Ep 2 train, 1,228 IG / 1,134 YT, the only Instagram breakout): a hook anyone gets in
+   one glance ("72 berths. 73 passengers."), a setting most of our viewers know (Indian sleeper train), and a
+   payoff image that reads as a silhouette (a man hanging upside down). The weakest (Ep 3) needed you to count
+   fingers and read a phone screen. Keep choosing everyday Indian night places, contradictions you get instantly,
+   and silhouette-wrong monsters.
+
 ## Owner directives v2 (2026-11-21): clearer stories, better voice, better animation. In force from now.
 The owner watched NIGHT SHIFT Ep 1-2: the format works (Ep 2 = best reel ever), but the stories are **hard to
 understand**, the **voiceover could be better**, and the **animation should look more like the animated horror

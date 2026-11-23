@@ -10,6 +10,10 @@ Full brief, post-mortem and competitor scan: `series/RESEARCH.md`; weekly resear
 Episode 6: one place, one monster, 2 rules, a plainly-stated twist, 120–145 words, NO voice speed-up, real pauses,
 ≤ 10 tags, a face and movement for "you", 18–26 varied shots, a scale shot. Details at the top of RESEARCH.md.
 Measure it: IG skip rate + avg watch and YouTube stay rate of Ep 6+ vs Ep 1-5.
+**v3 (2026-11-23):** analyse properly: second-by-second YouTube retention for every video (PLAYBOOK 2b), winners &
+losers contact sheets (2c), competitor scan twice a week. First findings (RESEARCH.md v3): the rules note costs ~30%
+of viewers at 8-15 s (note ≤ 3 s, then show rules in action); the end card loses half of who's left (A/B over the
+last shot, no card, loop to frame 1); the monster must move within 0.5 s; a face for "you" every episode.
 
 ## Next improvements (max 3, read before writing every script)
 1. **Bright, recognizable frame 1 is the STANDARD** (4 bright openers 44.6-53% IG skip vs 3 dark 62.8-71.9%; P7 44.6% + 21.2 s
