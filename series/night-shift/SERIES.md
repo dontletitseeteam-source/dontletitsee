@@ -3,6 +3,10 @@
 Slug: `night-shift` · Workspace: `night-shift/` · Caption name: `NIGHT SHIFT` · Designed 2026-11-19 from the BLOCK C post-mortem
 and the owner directives in `series/RESEARCH.md` (read both first).
 
+**Owner extension (2026-11-23): the run does NOT end on 2026-12-08.** Keep one post a day while credits last
+(PLAYBOOK section 5). The series after NIGHT SHIFT is a normal season sized to the credits, not a "closing" series;
+the channel only ends on a finale when the balance (checked with `account_get_usage`) can't pay for more.
+
 **Owner directives v2 (2026-11-21), from Episode 6 on (see top of `series/RESEARCH.md`):** 14–20 VO lines,
 120–145 spoken words, no voice speed-up, real pauses, ≤ 10 tags, ~1,100 credits; the note has exactly **2** rules
 (they are the A/B options); no number puzzles or required easter eggs; twist said plainly; "you" gets a face and

@@ -62,7 +62,7 @@ down, softening, leaving deliberate silences; reading too fast makes a story har
 **Already-queued old-style episodes:** when a creator run finds the queue full (every date today…today+3 has an
 entry), it may rebuild ONE queued NIGHT SHIFT episode made before 2026-11-22 under these rules, but only if it
 posts at least 24 h after the run starts, has not been uploaded anywhere, and the credit reserve still covers
-~1,100 per remaining day to 2026-12-08. Write new files (`outputs/night-shift-pN-v2.mp4/.jpg`), check the
+~1,000 credits for each of the next 7 days. Write new files (`outputs/night-shift-pN-v2.mp4/.jpg`), check the
 jsDelivr URLs (HTTP 200), then update that queue entry IN PLACE (video_url, cover_url, captions, title) in one
 commit. Never delete the old files or the entry.
 

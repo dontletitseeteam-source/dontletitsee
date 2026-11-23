@@ -5,6 +5,10 @@ Rules: PLAYBOOK section 5. Owner's wish: spend the credits on quality; running o
 transcript, SFX) with the balance after it. When the balance is too low for another part, write
 **CREDITS USED UP** at the top of this file.
 
+**Owner extension (2026-11-23): no end date. Keep posting daily after 2026-12-08 while credits last; before
+writing CREDITS USED UP, check the real balance with `account_get_usage` (the Starter plan may refill monthly)
+and log any refill as a row.**
+
 Starting balance: **39,717 credits** (owner's screenshot, 2026-11-09, Starter plan, 40,000 total).
 BLOCK C Part 1's voice was already paid before this balance and is saved in `block-c/p1/audio/`.
 

@@ -2,7 +2,8 @@
 
 You are the showrunner for the faceless horror channel **"Don't Let It See"** (Instagram + YouTube
 @dontletitsee). The owner lives in a hostel; their PC is OFF and they are not available. They asked Claude to
-create AND post one reel every day for 30 days (2026-11-09 → 2026-12-08), fully unattended, from Anthropic's
+create AND post one reel every day (first 30 days 2026-11-09 → 2026-12-08; **owner extension 2026-11-23: keep posting
+one reel every day after 2026-12-08 for as long as the ElevenLabs credits last**), fully unattended, from Anthropic's
 cloud. Everything lives in this GitHub repo (public): `dontletitseeteam-source/dontletitsee`, branch `main`.
 Three cloud routines share it: the **creator** (this playbook), the **YouTube** uploader and the **Instagram**
 poster. They communicate only through `queue.json` in this repo. **Always `git pull --rebase` before you read
@@ -19,7 +20,7 @@ poster. They communicate only through `queue.json` in this repo. **Always `git p
 - **Owner directive 2026-11-18: from the series after BLOCK C on, read `series/RESEARCH.md` first. It overrides
   the older lines of this section where they differ.** The creator's scheduled-task prompt could not be edited
   from the owner's session; where it still says "80-100 seconds" or that credits run out around Dec 2-4, follow
-  this playbook (55–70 s, credits to 2026-12-08). In short: every post is a **standalone episode** a
+  this playbook (55–70 s; no end date: post daily while credits last). In short: every post is a **standalone episode** a
   stranger understands with zero context (complete story, a scare you can SEE, twist inside the video); a series
   is a repeatable format, not one continuing plot; no "previously" recap; one nameable poster-image entity per
   episode, shown, on the cover and in the title.
@@ -122,11 +123,12 @@ scenes*.js). Use `python3` wherever older notes say `python`.
   days (around 2026-12-02 … 12-04), but use them well and make them last as long as is sensible.** Ledger:
   `series/ELEVENLABS.md` (balance + every spend). Text-to-speech costs **1 credit per character sent, tags
   included** (BLOCK C Part 1: 1,644 characters = 1,643 credits).
-  - **Pace (updated 2026-11-21): about 1,100 credits per episode** (voice + transcript; 120–145 words and ≤ 10
-    tags). The balance (21,014 after NIGHT SHIFT Ep 5) lasts the whole run, to 2026-12-08, with room for the
-    rebuilds of queued old-style episodes allowed in `series/RESEARCH.md`. Before writing the voice text, read
-    the ledger and compute `remaining ÷ episodes still to make up to 2026-12-08`; if that is above 1,100 you may
-    spend more (a key SFX, a second take of a broken line), if below, tighten. Spend on clarity, not on more words.
+  - **Pace (updated 2026-11-23): about 850–1,100 credits per episode** (voice + transcript; 120–145 words, ≤ 10
+    tags). **No end date** (owner, 2026-11-23): keep one post a day after 2026-12-08 while credits last. Every run,
+    `days of credit left = balance ÷ 1,000`; plan seasons so a finale lands on the last ~1–3 episodes the balance
+    can pay for. Before writing CREDITS USED UP, check the real balance with the ElevenLabs connector
+    (`account_get_usage`): the Starter plan may refill each month; if it did, log the refill as a ledger row and
+    carry on. Spend on clarity, not on more words.
   - Spend where it shows: expressive delivery tags (`[whispering]`, `[low, tense]`, `[slow]`, `[short pause]`
     at real beats, at most 8–10 per episode), a clear 120–145-word script. Do not waste: no throwaway takes; regenerate only when a take
     is broken (wrong words, cut off, garbled, flat at the key line). A new SFX or sting only when it clearly
