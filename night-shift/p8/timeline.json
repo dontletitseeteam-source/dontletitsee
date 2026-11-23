@@ -1,0 +1,1189 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 57.773,
+ "lines": [
+  {
+   "id": 1,
+   "text": "The wedding is over. But the bride is still on the stage.",
+   "src_start": 0.03,
+   "src_end": 3.78,
+   "start": 0.12,
+   "end": 3.87,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.17,
+     "end": 0.25
+    },
+    {
+     "text": "wedding",
+     "start": 0.33,
+     "end": 0.65
+    },
+    {
+     "text": "is",
+     "start": 0.73,
+     "end": 0.81
+    },
+    {
+     "text": "over.",
+     "start": 0.89,
+     "end": 1.61
+    },
+    {
+     "text": "But",
+     "start": 1.93,
+     "end": 2.01
+    },
+    {
+     "text": "the",
+     "start": 2.09,
+     "end": 2.17
+    },
+    {
+     "text": "bride",
+     "start": 2.25,
+     "end": 2.49
+    },
+    {
+     "text": "is",
+     "start": 2.57,
+     "end": 2.65
+    },
+    {
+     "text": "still",
+     "start": 2.73,
+     "end": 2.89
+    },
+    {
+     "text": "on",
+     "start": 2.97,
+     "end": 3.05
+    },
+    {
+     "text": "the",
+     "start": 3.09,
+     "end": 3.13
+    },
+    {
+     "text": "stage.",
+     "start": 3.21,
+     "end": 3.87
+    }
+   ],
+   "captions": [
+    {
+     "text": "The wedding is over.",
+     "start": 0.17,
+     "word_idx": 0,
+     "end": 1.93
+    },
+    {
+     "text": "But the {bride}",
+     "start": 1.93,
+     "word_idx": 4,
+     "end": 2.57
+    },
+    {
+     "text": "is still on the stage.",
+     "start": 2.57,
+     "word_idx": 7,
+     "end": 3.99
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "Her veil is sewn shut.",
+   "src_start": 4.19,
+   "src_end": 5.73,
+   "start": 4.27,
+   "end": 5.81,
+   "words": [
+    {
+     "text": "Her",
+     "start": 4.32,
+     "end": 4.48
+    },
+    {
+     "text": "veil",
+     "start": 4.56,
+     "end": 4.8
+    },
+    {
+     "text": "is",
+     "start": 4.88,
+     "end": 4.96
+    },
+    {
+     "text": "sewn",
+     "start": 5.04,
+     "end": 5.28
+    },
+    {
+     "text": "shut.",
+     "start": 5.36,
+     "end": 5.81
+    }
+   ],
+   "captions": [
+    {
+     "text": "Her veil",
+     "start": 4.32,
+     "word_idx": 0,
+     "end": 4.88
+    },
+    {
+     "text": "is {sewn shut.}",
+     "start": 4.88,
+     "word_idx": 2,
+     "end": 5.93
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "Your first night as caretaker of the wedding hall.",
+   "src_start": 6.43,
+   "src_end": 8.95,
+   "start": 6.31,
+   "end": 8.83,
+   "words": [
+    {
+     "text": "Your",
+     "start": 6.36,
+     "end": 6.52
+    },
+    {
+     "text": "first",
+     "start": 6.6,
+     "end": 6.84
+    },
+    {
+     "text": "night",
+     "start": 6.92,
+     "end": 7.08
+    },
+    {
+     "text": "as",
+     "start": 7.16,
+     "end": 7.32
+    },
+    {
+     "text": "caretaker",
+     "start": 7.48,
+     "end": 7.88
+    },
+    {
+     "text": "of",
+     "start": 7.92,
+     "end": 7.96
+    },
+    {
+     "text": "the",
+     "start": 8.04,
+     "end": 8.08
+    },
+    {
+     "text": "wedding",
+     "start": 8.12,
+     "end": 8.36
+    },
+    {
+     "text": "hall.",
+     "start": 8.44,
+     "end": 8.76
+    }
+   ],
+   "captions": [
+    {
+     "text": "Your first night as",
+     "start": 6.36,
+     "word_idx": 0,
+     "end": 7.48
+    },
+    {
+     "text": "caretaker of the [wedding hall.]",
+     "start": 7.48,
+     "word_idx": 4,
+     "end": 8.95
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "The note says two rules.",
+   "src_start": 9.47,
+   "src_end": 11.19,
+   "start": 9.13,
+   "end": 10.85,
+   "words": [
+    {
+     "text": "The",
+     "start": 9.18,
+     "end": 9.26
+    },
+    {
+     "text": "note",
+     "start": 9.38,
+     "end": 9.5
+    },
+    {
+     "text": "says",
+     "start": 9.58,
+     "end": 9.82
+    },
+    {
+     "text": "two",
+     "start": 9.98,
+     "end": 10.14
+    },
+    {
+     "text": "rules.",
+     "start": 10.22,
+     "end": 10.85
+    }
+   ],
+   "captions": [
+    {
+     "text": "The note says [two rules.]",
+     "start": 9.18,
+     "word_idx": 0,
+     "end": 10.97
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "One. Never lift her veil.",
+   "src_start": 11.55,
+   "src_end": 13.69,
+   "start": 11.15,
+   "end": 13.29,
+   "words": [
+    {
+     "text": "One.",
+     "start": 11.2,
+     "end": 11.92
+    },
+    {
+     "text": "Never",
+     "start": 12.0,
+     "end": 12.24
+    },
+    {
+     "text": "lift",
+     "start": 12.4,
+     "end": 12.56
+    },
+    {
+     "text": "her",
+     "start": 12.64,
+     "end": 12.8
+    },
+    {
+     "text": "veil.",
+     "start": 12.88,
+     "end": 13.29
+    }
+   ],
+   "captions": [
+    {
+     "text": "One.",
+     "start": 11.2,
+     "word_idx": 0,
+     "end": 12.0
+    },
+    {
+     "text": "Never [lift her veil.]",
+     "start": 12.0,
+     "word_idx": 1,
+     "end": 13.41
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "Two. Never sign her book.",
+   "src_start": 14.19,
+   "src_end": 16.12,
+   "start": 13.59,
+   "end": 15.52,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 13.64,
+     "end": 14.2
+    },
+    {
+     "text": "Never",
+     "start": 14.28,
+     "end": 14.52
+    },
+    {
+     "text": "sign",
+     "start": 14.68,
+     "end": 14.84
+    },
+    {
+     "text": "her",
+     "start": 14.92,
+     "end": 15.08
+    },
+    {
+     "text": "book.",
+     "start": 15.24,
+     "end": 15.52
+    }
+   ],
+   "captions": [
+    {
+     "text": "Two.",
+     "start": 13.64,
+     "word_idx": 0,
+     "end": 14.28
+    },
+    {
+     "text": "Never [sign her book.]",
+     "start": 14.28,
+     "word_idx": 1,
+     "end": 15.64
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "You switch off the lights. The band starts playing.",
+   "src_start": 16.967,
+   "src_end": 19.83,
+   "start": 16.52,
+   "end": 19.383,
+   "words": [
+    {
+     "text": "You",
+     "start": 16.57,
+     "end": 16.593
+    },
+    {
+     "text": "switch",
+     "start": 16.713,
+     "end": 16.833
+    },
+    {
+     "text": "off",
+     "start": 16.913,
+     "end": 16.993
+    },
+    {
+     "text": "the",
+     "start": 17.073,
+     "end": 17.153
+    },
+    {
+     "text": "lights.",
+     "start": 17.393,
+     "end": 18.033
+    },
+    {
+     "text": "The",
+     "start": 18.113,
+     "end": 18.193
+    },
+    {
+     "text": "band",
+     "start": 18.313,
+     "end": 18.433
+    },
+    {
+     "text": "starts",
+     "start": 18.513,
+     "end": 18.833
+    },
+    {
+     "text": "playing.",
+     "start": 19.033,
+     "end": 19.383
+    }
+   ],
+   "captions": [
+    {
+     "text": "You switch off the lights.",
+     "start": 16.57,
+     "word_idx": 0,
+     "end": 18.113
+    },
+    {
+     "text": "The band {starts playing.}",
+     "start": 18.113,
+     "word_idx": 5,
+     "end": 19.503
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "Lights on. Every chair is full again.",
+   "src_start": 20.11,
+   "src_end": 22.75,
+   "start": 20.283,
+   "end": 22.923,
+   "words": [
+    {
+     "text": "Lights",
+     "start": 20.333,
+     "end": 20.573
+    },
+    {
+     "text": "on.",
+     "start": 20.653,
+     "end": 21.293
+    },
+    {
+     "text": "Every",
+     "start": 21.453,
+     "end": 21.613
+    },
+    {
+     "text": "chair",
+     "start": 21.773,
+     "end": 22.013
+    },
+    {
+     "text": "is",
+     "start": 22.093,
+     "end": 22.173
+    },
+    {
+     "text": "full",
+     "start": 22.253,
+     "end": 22.413
+    },
+    {
+     "text": "again.",
+     "start": 22.613,
+     "end": 22.923
+    }
+   ],
+   "captions": [
+    {
+     "text": "Lights on.",
+     "start": 20.333,
+     "word_idx": 0,
+     "end": 21.453
+    },
+    {
+     "text": "Every chair is {full again.}",
+     "start": 21.453,
+     "word_idx": 2,
+     "end": 23.043
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "And every guest is looking at you.",
+   "src_start": 22.95,
+   "src_end": 24.99,
+   "start": 23.223,
+   "end": 25.263,
+   "words": [
+    {
+     "text": "And",
+     "start": 23.273,
+     "end": 23.393
+    },
+    {
+     "text": "every",
+     "start": 23.473,
+     "end": 23.713
+    },
+    {
+     "text": "guest",
+     "start": 23.793,
+     "end": 24.193
+    },
+    {
+     "text": "is",
+     "start": 24.273,
+     "end": 24.433
+    },
+    {
+     "text": "looking",
+     "start": 24.593,
+     "end": 24.753
+    },
+    {
+     "text": "at",
+     "start": 24.833,
+     "end": 24.913
+    },
+    {
+     "text": "you.",
+     "start": 24.993,
+     "end": 25.263
+    }
+   ],
+   "captions": [
+    {
+     "text": "And every guest",
+     "start": 23.273,
+     "word_idx": 0,
+     "end": 24.273
+    },
+    {
+     "text": "is {looking at you.}",
+     "start": 24.273,
+     "word_idx": 3,
+     "end": 25.383
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "The bride stands up.",
+   "src_start": 25.607,
+   "src_end": 26.82,
+   "start": 26.263,
+   "end": 27.476,
+   "words": [
+    {
+     "text": "The",
+     "start": 26.313,
+     "end": 26.336
+    },
+    {
+     "text": "bride",
+     "start": 26.376,
+     "end": 26.656
+    },
+    {
+     "text": "stands",
+     "start": 26.736,
+     "end": 27.056
+    },
+    {
+     "text": "up.",
+     "start": 27.136,
+     "end": 27.476
+    }
+   ],
+   "captions": [
+    {
+     "text": "The {bride} stands up.",
+     "start": 26.313,
+     "word_idx": 0,
+     "end": 27.596
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "She is taller than the marigold strings.",
+   "src_start": 27.15,
+   "src_end": 29.37,
+   "start": 27.776,
+   "end": 29.996,
+   "words": [
+    {
+     "text": "She",
+     "start": 27.826,
+     "end": 27.906
+    },
+    {
+     "text": "is",
+     "start": 28.026,
+     "end": 28.146
+    },
+    {
+     "text": "taller",
+     "start": 28.186,
+     "end": 28.546
+    },
+    {
+     "text": "than",
+     "start": 28.626,
+     "end": 28.706
+    },
+    {
+     "text": "the",
+     "start": 28.786,
+     "end": 28.826
+    },
+    {
+     "text": "marigold",
+     "start": 28.866,
+     "end": 29.346
+    },
+    {
+     "text": "strings.",
+     "start": 29.426,
+     "end": 29.996
+    }
+   ],
+   "captions": [
+    {
+     "text": "She is {taller}",
+     "start": 27.826,
+     "word_idx": 0,
+     "end": 28.626
+    },
+    {
+     "text": "than the [marigold strings.]",
+     "start": 28.626,
+     "word_idx": 3,
+     "end": 30.116
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "She walks to you, and puts your hand on her veil.",
+   "src_start": 29.71,
+   "src_end": 32.6,
+   "start": 30.596,
+   "end": 33.486,
+   "words": [
+    {
+     "text": "She",
+     "start": 30.646,
+     "end": 30.806
+    },
+    {
+     "text": "walks",
+     "start": 30.886,
+     "end": 31.206
+    },
+    {
+     "text": "to",
+     "start": 31.286,
+     "end": 31.366
+    },
+    {
+     "text": "you,",
+     "start": 31.446,
+     "end": 31.766
+    },
+    {
+     "text": "and",
+     "start": 31.846,
+     "end": 31.926
+    },
+    {
+     "text": "puts",
+     "start": 32.006,
+     "end": 32.166
+    },
+    {
+     "text": "your",
+     "start": 32.246,
+     "end": 32.406
+    },
+    {
+     "text": "hand",
+     "start": 32.526,
+     "end": 32.646
+    },
+    {
+     "text": "on",
+     "start": 32.726,
+     "end": 32.806
+    },
+    {
+     "text": "her",
+     "start": 32.886,
+     "end": 32.966
+    },
+    {
+     "text": "veil.",
+     "start": 33.046,
+     "end": 33.486
+    }
+   ],
+   "captions": [
+    {
+     "text": "She walks to you,",
+     "start": 30.646,
+     "word_idx": 0,
+     "end": 31.846
+    },
+    {
+     "text": "and puts your hand on her [veil.]",
+     "start": 31.846,
+     "word_idx": 4,
+     "end": 33.606
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "You pull it away. Rule one, kept.",
+   "src_start": 32.91,
+   "src_end": 35.55,
+   "start": 33.886,
+   "end": 36.526,
+   "words": [
+    {
+     "text": "You",
+     "start": 33.936,
+     "end": 34.096
+    },
+    {
+     "text": "pull",
+     "start": 34.176,
+     "end": 34.256
+    },
+    {
+     "text": "it",
+     "start": 34.296,
+     "end": 34.336
+    },
+    {
+     "text": "away.",
+     "start": 34.416,
+     "end": 35.136
+    },
+    {
+     "text": "Rule",
+     "start": 35.216,
+     "end": 35.376
+    },
+    {
+     "text": "one,",
+     "start": 35.536,
+     "end": 36.016
+    },
+    {
+     "text": "kept.",
+     "start": 36.096,
+     "end": 36.526
+    }
+   ],
+   "captions": [
+    {
+     "text": "You pull it away.",
+     "start": 33.936,
+     "word_idx": 0,
+     "end": 35.216
+    },
+    {
+     "text": "[Rule one, kept.]",
+     "start": 35.216,
+     "word_idx": 4,
+     "end": 36.646
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "She holds out a book and a pen.",
+   "src_start": 35.95,
+   "src_end": 37.62,
+   "start": 37.026,
+   "end": 38.696,
+   "words": [
+    {
+     "text": "She",
+     "start": 37.076,
+     "end": 37.156
+    },
+    {
+     "text": "holds",
+     "start": 37.236,
+     "end": 37.396
+    },
+    {
+     "text": "out",
+     "start": 37.476,
+     "end": 37.556
+    },
+    {
+     "text": "a",
+     "start": 37.636,
+     "end": 37.716
+    },
+    {
+     "text": "book",
+     "start": 37.836,
+     "end": 37.956
+    },
+    {
+     "text": "and",
+     "start": 38.036,
+     "end": 38.116
+    },
+    {
+     "text": "a",
+     "start": 38.156,
+     "end": 38.196
+    },
+    {
+     "text": "pen.",
+     "start": 38.276,
+     "end": 38.696
+    }
+   ],
+   "captions": [
+    {
+     "text": "She holds out",
+     "start": 37.076,
+     "word_idx": 0,
+     "end": 37.636
+    },
+    {
+     "text": "a [book] and a pen.",
+     "start": 37.636,
+     "word_idx": 3,
+     "end": 38.816
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "The guests start clapping.",
+   "src_start": 37.87,
+   "src_end": 39.35,
+   "start": 38.996,
+   "end": 40.476,
+   "words": [
+    {
+     "text": "The",
+     "start": 39.046,
+     "end": 39.126
+    },
+    {
+     "text": "guests",
+     "start": 39.286,
+     "end": 39.526
+    },
+    {
+     "text": "start",
+     "start": 39.606,
+     "end": 39.846
+    },
+    {
+     "text": "clapping.",
+     "start": 39.926,
+     "end": 40.476
+    }
+   ],
+   "captions": [
+    {
+     "text": "The guests start {clapping.}",
+     "start": 39.046,
+     "word_idx": 0,
+     "end": 40.596
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "So you sign it. Anything to make her leave.",
+   "src_start": 39.59,
+   "src_end": 42.08,
+   "start": 41.076,
+   "end": 43.566,
+   "words": [
+    {
+     "text": "So",
+     "start": 41.126,
+     "end": 41.166
+    },
+    {
+     "text": "you",
+     "start": 41.246,
+     "end": 41.326
+    },
+    {
+     "text": "sign",
+     "start": 41.406,
+     "end": 41.646
+    },
+    {
+     "text": "it.",
+     "start": 41.726,
+     "end": 42.126
+    },
+    {
+     "text": "Anything",
+     "start": 42.366,
+     "end": 42.606
+    },
+    {
+     "text": "to",
+     "start": 42.686,
+     "end": 42.766
+    },
+    {
+     "text": "make",
+     "start": 42.846,
+     "end": 42.926
+    },
+    {
+     "text": "her",
+     "start": 43.006,
+     "end": 43.086
+    },
+    {
+     "text": "leave.",
+     "start": 43.286,
+     "end": 43.513
+    }
+   ],
+   "captions": [
+    {
+     "text": "So you {sign it.}",
+     "start": 41.126,
+     "word_idx": 0,
+     "end": 42.366
+    },
+    {
+     "text": "Anything to make her leave.",
+     "start": 42.366,
+     "word_idx": 4,
+     "end": 43.686
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "It was not the guest book.",
+   "src_start": 42.643,
+   "src_end": 44.18,
+   "start": 44.566,
+   "end": 46.103,
+   "words": [
+    {
+     "text": "It",
+     "start": 44.616,
+     "end": 44.643
+    },
+    {
+     "text": "was",
+     "start": 44.763,
+     "end": 44.883
+    },
+    {
+     "text": "not",
+     "start": 45.003,
+     "end": 45.123
+    },
+    {
+     "text": "the",
+     "start": 45.203,
+     "end": 45.243
+    },
+    {
+     "text": "guest",
+     "start": 45.283,
+     "end": 45.603
+    },
+    {
+     "text": "book.",
+     "start": 45.683,
+     "end": 46.103
+    }
+   ],
+   "captions": [
+    {
+     "text": "It was not the [guest book.]",
+     "start": 44.616,
+     "word_idx": 0,
+     "end": 46.223
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "It was the marriage register. You just married her.",
+   "src_start": 44.47,
+   "src_end": 47.7,
+   "start": 46.603,
+   "end": 49.833,
+   "words": [
+    {
+     "text": "It",
+     "start": 46.653,
+     "end": 46.693
+    },
+    {
+     "text": "was",
+     "start": 46.773,
+     "end": 46.853
+    },
+    {
+     "text": "the",
+     "start": 46.933,
+     "end": 47.013
+    },
+    {
+     "text": "marriage",
+     "start": 47.093,
+     "end": 47.413
+    },
+    {
+     "text": "register.",
+     "start": 47.493,
+     "end": 48.533
+    },
+    {
+     "text": "You",
+     "start": 48.613,
+     "end": 48.693
+    },
+    {
+     "text": "just",
+     "start": 48.773,
+     "end": 49.013
+    },
+    {
+     "text": "married",
+     "start": 49.093,
+     "end": 49.493
+    },
+    {
+     "text": "her.",
+     "start": 49.613,
+     "end": 49.833
+    }
+   ],
+   "captions": [
+    {
+     "text": "It was the {marriage register.}",
+     "start": 46.653,
+     "word_idx": 0,
+     "end": 48.613
+    },
+    {
+     "text": "You just {married her.}",
+     "start": 48.613,
+     "word_idx": 5,
+     "end": 49.953
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "text": "And her veil starts to open.",
+   "src_start": 48.01,
+   "src_end": 49.58,
+   "start": 50.833,
+   "end": 52.403,
+   "words": [
+    {
+     "text": "And",
+     "start": 50.883,
+     "end": 50.903
+    },
+    {
+     "text": "her",
+     "start": 50.983,
+     "end": 51.063
+    },
+    {
+     "text": "veil",
+     "start": 51.143,
+     "end": 51.383
+    },
+    {
+     "text": "starts",
+     "start": 51.463,
+     "end": 51.783
+    },
+    {
+     "text": "to",
+     "start": 51.863,
+     "end": 51.943
+    },
+    {
+     "text": "open.",
+     "start": 52.023,
+     "end": 52.403
+    }
+   ],
+   "captions": [
+    {
+     "text": "And her veil {starts to open.}",
+     "start": 50.883,
+     "word_idx": 0,
+     "end": 52.523
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "text": "Which rule would you break? Just type A or B.",
+   "src_start": 50.08,
+   "src_end": 52.95,
+   "start": 53.303,
+   "end": 56.173,
+   "words": [
+    {
+     "text": "Which",
+     "start": 53.353,
+     "end": 53.383
+    },
+    {
+     "text": "rule",
+     "start": 53.463,
+     "end": 53.623
+    },
+    {
+     "text": "would",
+     "start": 53.703,
+     "end": 53.863
+    },
+    {
+     "text": "you",
+     "start": 53.943,
+     "end": 54.023
+    },
+    {
+     "text": "break?",
+     "start": 54.183,
+     "end": 54.743
+    },
+    {
+     "text": "Just",
+     "start": 54.823,
+     "end": 54.903
+    },
+    {
+     "text": "type",
+     "start": 54.983,
+     "end": 55.223
+    },
+    {
+     "text": "A",
+     "start": 55.303,
+     "end": 55.623
+    },
+    {
+     "text": "or",
+     "start": 55.663,
+     "end": 55.703
+    },
+    {
+     "text": "B.",
+     "start": 55.863,
+     "end": 56.173
+    }
+   ],
+   "captions": [
+    {
+     "text": "Which rule would you break?",
+     "start": 53.353,
+     "word_idx": 0,
+     "end": 54.823
+    },
+    {
+     "text": "Just type [A] or {B.}",
+     "start": 54.823,
+     "word_idx": 5,
+     "end": 56.293
+    }
+   ]
+  }
+ ]
+}

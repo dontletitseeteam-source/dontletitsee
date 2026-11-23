@@ -243,27 +243,27 @@ P7_HOLD = 1.6
 P8 = [  # v4 captions: sentence case; [x] = marigold accent, {x} = red threat
     ("The wedding is over. But the bride is still on the stage.", 0.12,
      [(4, "The wedding is over."), (3, "But the {bride}"), (5, "is still on the stage.")]),
-    ("Her veil is sewn shut.", 0.25, [(2, "Her veil"), (3, "is {sewn shut.}")]),
+    ("Her veil is sewn shut.", 0.40, [(2, "Her veil"), (3, "is {sewn shut.}")]),
     ("Your first night as caretaker of the wedding hall.", 0.50, [(4, "Your first night as"), (5, "caretaker of the [wedding hall.]")]),
     ("The note says two rules.", 0.30, [(5, "The note says [two rules.]")]),
     ("One. Never lift her veil.", 0.30, [(1, "One."), (4, "Never [lift her veil.]")]),
     ("Two. Never sign her book.", 0.30, [(1, "Two."), (4, "Never [sign her book.]")]),
-    ("You switch off the lights. The band starts playing.", 0.70, [(5, "You switch off the lights."), (4, "The band {starts playing.}")]),
-    ("Lights on. Every chair is full again.", 0.50, [(2, "Lights on."), (5, "Every chair is {full again.}")]),
+    ("You switch off the lights. The band starts playing.", 1.00, [(5, "You switch off the lights."), (4, "The band {starts playing.}")]),
+    ("Lights on. Every chair is full again.", 0.90, [(2, "Lights on."), (5, "Every chair is {full again.}")]),
     ("And every guest is looking at you.", 0.30, [(3, "And every guest"), (4, "is {looking at you.}")]),
-    ("The bride stands up.", 0.80, [(4, "The {bride} stands up.")]),
+    ("The bride stands up.", 1.00, [(4, "The {bride} stands up.")]),
     ("She is taller than the marigold strings.", 0.30, [(3, "She is {taller}"), (4, "than the [marigold strings.]")]),
-    ("She walks to you, and puts your hand on her veil.", 0.50, [(4, "She walks to you,"), (7, "and puts your hand on her [veil.]")]),
+    ("She walks to you, and puts your hand on her veil.", 0.60, [(4, "She walks to you,"), (7, "and puts your hand on her [veil.]")]),
     ("You pull it away. Rule one, kept.", 0.40, [(4, "You pull it away."), (3, "[Rule one, kept.]")]),
     ("She holds out a book and a pen.", 0.50, [(3, "She holds out"), (5, "a [book] and a pen.")]),
     ("The guests start clapping.", 0.30, [(4, "The guests start {clapping.}")]),
-    ("So you sign it. Anything to make her leave.", 0.40, [(4, "So you {sign it.}"), (5, "Anything to make her leave.")]),
-    ("It was not the guest book.", 0.90, [(6, "It was not the [guest book.]")]),
+    ("So you sign it. Anything to make her leave.", 0.60, [(4, "So you {sign it.}"), (5, "Anything to make her leave.")]),
+    ("It was not the guest book.", 1.00, [(6, "It was not the [guest book.]")]),
     ("It was the marriage register. You just married her.", 0.50, [(5, "It was the {marriage register.}"), (4, "You just {married her.}")]),
-    ("And her veil starts to open.", 0.90, [(6, "And her veil {starts to open.}")]),
-    ("Which rule would you break? Just type A or B.", 0.80, [(5, "Which rule would you break?"), (5, "Just type [A] or {B.}")]),
+    ("And her veil starts to open.", 1.00, [(6, "And her veil {starts to open.}")]),
+    ("Which rule would you break? Just type A or B.", 0.90, [(5, "Which rule would you break?"), (5, "Just type [A] or {B.}")]),
 ]
-P8_HOLD = 1.2
+P8_HOLD = 1.6
 
 LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8}
 HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD}

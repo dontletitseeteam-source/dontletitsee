@@ -624,8 +624,112 @@ def part7():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7}[PART]()
-if PART in (3, 4, 5, 6, 7): sfx *= db(-1.2)
+def part8():
+    """NIGHT SHIFT Ep.8 — the wedding hall (the bride with the sewn veil). v4: synth dhol + harmonium drone for the band
+    that plays by itself, clapping in unison, pen scratch, stitches snapping; carved silences before the reveals."""
+    T8 = {L["id"]: L for L in T["lines"]}
+    gaps = [(T8[i - 1]["end"], T8[i]["start"]) for i in (7, 10, 17, 19, 20)]
+    tt = np.arange(N) / SR
+    rng = np.random.default_rng(88)
+    # room: hall hum + a faint dead-wedding murmur (crowd, far, lowpassed) while the lights are on
+    lit = automation([(0, 0), (K["lightsW"] - 0.05, 0), (K["lightsW"] + 0.05, -60), (K["on"] - 0.02, -60), (K["on"] + 0.05, 0), (DUR, 0)])
+    hum = bed("hum.mp3", "lowpass=f=320") * db(-11)
+    murmur = bed("crowd.mp3", "lowpass=f=700,aecho=0.8:0.7:120|260:0.4|0.3") * db(-27)
+    mur_gate = automation([(0, 0), (K["sw"], -6), (K["lightsW"], -60), (K["on"], -60), (K["on"] + 0.02, -60), (DUR, -60)])
+    rb = hum * lit + murmur * mur_gate
+    # harmonium drone (detuned saw-ish chord) + dhol (pitch-dropping thumps): the band that plays itself
+    def saw(f): return 2 * ((tt * f) % 1) - 1
+    drone = (saw(146.8) + saw(147.6) + 0.7 * saw(220.0) + 0.6 * saw(174.6)).astype(np.float32)
+    D_ = np.fft.rfft(drone); fq = np.fft.rfftfreq(N, 1 / SR); D_[fq > 1400] *= 0.05; D_[fq > 3000] = 0
+    drone = np.fft.irfft(D_, N).astype(np.float32); drone /= np.abs(drone).max() + 1e-9
+    wob = (0.8 + 0.2 * np.sin(2 * np.pi * 0.83 * tt)).astype(np.float32)
+    band = np.stack([drone * wob, drone * wob], 1)
+    band_gate = automation([(0, -80), (K["playW"] - 0.45, -80), (K["playW"] - 0.3, -14), (K["on"] - 0.05, -12), (K["on"], -26),
+                            (K["everyW"], -30), (K["guest"], -34), (K["stand"], -30), (K["walk"], -24), (K["pull"], -80), (K["book"], -30),
+                            (K["sign"], -26), (K["notW"], -80), (K["married"], -16), (K["open"] - 0.1, -80), (DUR, -80)])
+    m1 = band * band_gate
+    def thump(f0=95, dur=0.42):
+        n = int(dur * SR); x = np.arange(n) / SR; f = f0 * (1 + 0.6 * np.exp(-x * 30))
+        y = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-x * 9); y[:200] += rng.standard_normal(200) * 0.3
+        return np.stack([y, y], 1).astype(np.float32)
+    dh, slap = thump(), thump(180, 0.18)
+    t0 = K["playW"] - 0.35
+    while t0 < K["on"] - 0.1:
+        place(dh, t0, -8); place(slap, t0 + 0.21, -14); place(slap, t0 + 0.31, -17); t0 += 1 / 1.2
+    # wedding dhol returns, slow, under the married shot
+    t0 = K["married"]
+    while t0 < K["open"] - 0.3:
+        place(dh, t0, -12); t0 += 0.75
+    # music: the shared horror score, low, carved out in the pauses
+    mu = load("music.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    while len(loop) < N: loop = np.concatenate([loop, loop])
+    loop = loop[:N]
+    mp = [(0, -16), (K["veil"], -15), (K["me"], -20), (K["note"], -19), (K["sw"], -20), (K["bandW"], -40), (K["on"], -16),
+          (K["guest"], -14), (K["stand"], -12), (K["scale"], -11), (K["walk"], -11), (K["pull"], -12), (K["book"], -13),
+          (K["clap"], -14), (K["sign"], -12), (K["notW"], -14), (K["married"], -12), (K["open"], -9), (K["ask"], -12), (DUR - 1, -14), (DUR, -40)]
+    for a, b in gaps:
+        mp += [(a - 0.05, None), (a + 0.12, -45), (b - 0.02, -45)]
+    mp = sorted(mp, key=lambda p: p[0]); out = []; last = -16
+    for tpt, g in mp:
+        if g is None: g = last
+        out.append((tpt, g)); last = g if g > -40 else last
+    m1 = m1 + loop * automation(out)
+    sil = np.ones((N, 1), np.float32)
+    for a, b in gaps:
+        sil *= 1 - (automation([(0, -100), (a + 0.02, -100), (a + 0.15, 0), (b - 0.05, 0), (b + 0.02, -100), (DUR + 1, -100)]) * 0.8)
+    rb = rb * sil
+    # ---- cues
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0); place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(load("stretch.mp3"), 0.25, -16, fo=0.4, maxlen=1.0)                       # her head jerking over
+    place(stinger, K["brideW"] - 0.03, -13, fo=0.4, maxlen=1.0)
+    place(whisper, K["veil"], -18, fi=0.2, fo=0.5, maxlen=1.8); place(boom, K["sewnW"], -11, fo=0.6, maxlen=1.6)
+    place(door_open, K["me"] + 0.05, -19, fo=0.3, maxlen=1.0)
+    for i in range(4): place(load("stairs.mp3", "lowpass=f=900"), K["me"] + 0.2 + i * 0.38, -22, maxlen=0.25)
+    place(noise_burst(0.35, 800, 6000, 81, 0.02) * 0.6, K["note"], -15)               # paper
+    place(tick, K["oneW"], -14); place(tick, K["twoW"], -14)
+    place(stinger, K["r1"] + 0.05, -16, fo=0.4, maxlen=0.8)
+    for i in range(6): place(load("button.mp3"), K["offW"] + (K["lightsW"] - K["offW"]) * i / 6, -15, maxlen=0.3)
+    place(load("lights_off.mp3"), K["lightsW"], -10, maxlen=1.2)
+    place(boom, K["bandW"] + 0.2, -14, fo=0.6, maxlen=1.4)
+    place(load("lights_off.mp3", "areverse"), K["on"] - 0.25, -16, maxlen=0.3)
+    place(stinger, K["on"] - 0.02, -8, fo=0.5, maxlen=1.2); place(boom, K["on"], -9, fo=0.8, maxlen=2.0)
+    place(riser, K["lookW"] - 0.06 - len(riser) / SR, -19, fi=1.0, fo=0.004)
+    for i in range(8): place(load("door_creak.mp3", "highpass=f=900"), K["guest"] + 0.35 + i * 0.1, -26, maxlen=0.25)  # chairs creak as they turn
+    place(stinger, K["face"], -8, fo=0.5, maxlen=1.3); place(boom, K["face"] + 0.03, -9, fo=0.8, maxlen=2.0)
+    place(heartbeat, K["face"] + 0.3, -16, fi=0.1, fo=0.3, maxlen=K["stand"] - K["face"] - 0.4)
+    place(load("stretch.mp3", "asetrate=48000*0.75,aresample=48000"), K["standsW"] - 0.1, -10, fo=0.5, maxlen=2.0)
+    place(boom, K["standsW"] + 0.9, -11, fo=0.6, maxlen=1.6)
+    place(noise_burst(0.8, 300, 3000, 82, 0.05) * 0.5, K["mariW"] - 0.2, -18)          # marigold strings rustle
+    place(load("smile_stinger.mp3"), K["mariW"], -12, fo=0.5, maxlen=1.3)
+    for i in range(4): place(load("stairs.mp3", "lowpass=f=700"), K["walksW"] + i * 0.42, -18, maxlen=0.3)
+    for i in range(10): place(noise_burst(0.05, 2000, 6000, 90 + i, 0.002) * 0.5, K["walksW"] + i * 0.15, -24)  # anklets
+    place(whisper, K["puts"], -12, fi=0.1, fo=0.5, maxlen=1.6)
+    place(stinger, K["veilW"] - 0.03, -10, fo=0.5, maxlen=1.0)
+    place(noise_burst(0.3, 400, 5000, 83, 0.005) * 0.9, K["awayW"] - 0.15, -10); place(boom, K["awayW"] - 0.1, -10, fo=0.6, maxlen=1.4)
+    place(ding_far, K["rule1"] + 0.3, -24, maxlen=1.0)
+    place(noise_burst(0.45, 600, 5000, 84, 0.03) * 0.6, K["book"] + 0.2, -16)          # pages
+    place(stinger, K["bookW"] - 0.03, -14, fo=0.4, maxlen=0.9)
+    # clapping in unison, slow, matching the picture (2.2 claps / s)
+    t0 = K["clapW"] - 0.5 + 0.227
+    while t0 < K["notW"] - 0.2:
+        for v in range(6): place(noise_burst(0.09, 900, 4500, 100 + v + int(t0 * 10), 0.002) * 0.5, t0 + v * 0.008, -13 - v)
+        t0 += 1 / 2.2
+    for i in range(12): place(noise_burst(0.12, 2500, 9000, 120 + i, 0.01) * 0.5, K["signW"] - 0.05 + i * 0.11, -22)  # pen scratch
+    place(riser, K["regW"] - 0.06 - len(riser) / SR, -18, fi=1.2, fo=0.004)
+    place(stinger, K["regW"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["regW"], -7, fo=0.8, maxlen=2.4)
+    place(load("smile_stinger.mp3"), K["marriedW"] - 0.05, -10, fo=0.5, maxlen=1.3); place(boom, K["marriedW"], -10, fo=0.6, maxlen=1.6)
+    for i in range(11): place(load("tick.mp3", "highpass=f=2500"), K["openW"] + 0.1 + (1 - (10 - i) / 11) * 2.0 * 0.8, -12, maxlen=0.2)   # stitches snapping
+    place(load("stretch.mp3", "asetrate=48000*0.9,aresample=48000"), K["openW"] + 0.2, -10, fo=0.6, maxlen=2.2)
+    place(stinger, K["openW"] + 0.9, -7, fo=0.5, maxlen=1.4); place(boom, K["openW"] + 0.9, -7, fo=0.8, maxlen=2.4)
+    place(whisper, K["ask"] + 0.5, -14, fi=0.2, fo=0.5, maxlen=2.0)
+    place(boom, K["loop"] - 0.05, -14, fo=0.6, maxlen=1.0)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7, 8: part8}[PART]()
+if PART in (3, 4, 5, 6, 7, 8): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice

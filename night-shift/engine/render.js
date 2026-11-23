@@ -17,7 +17,9 @@ const FPS = TL.fps, DUR = TL.duration;
 const P = require(`./part${PART}.js`)(TL);
 P.shots.sort((a, b) => a.start - b.start);
 
+let L4 = null;
 function renderFrame(ctx, t) {
+  if (P.look === 'v4') return renderV4(ctx, t);
   ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over'; ctx.filter = 'none';
   ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
@@ -35,6 +37,28 @@ function renderFrame(ctx, t) {
   }
   if (P.overlay) P.overlay(ctx, t, cur);
   if (!(m.hideHud && m.hideHud(lt))) D.drawHUD(ctx, P.hudState(t));
+}
+
+// v4 pipeline (opt-in): shot -> P.post (bloom/grade) -> serif captions -> overlay -> grain. No HUD.
+function renderV4(ctx, t) {
+  if (!L4) L4 = require('./look4');
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over'; ctx.filter = 'none';
+  ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
+  let cur = P.shots[0];
+  for (const s of P.shots) if (t >= s.start) cur = s;
+  const lt = t - cur.start;
+  ctx.save(); cur.draw(ctx, t, lt); ctx.restore();
+  ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.filter = 'none'; ctx.globalCompositeOperation = 'source-over';
+  if (P.post) P.post(ctx, ctx.canvas, t, cur, lt);
+  const m = cur.meta || {};
+  if (m.captions !== false) {
+    for (const Ln of TL.lines) for (const c of Ln.captions) {
+      if (t >= c.start - 0.02 && t < c.end) L4.caption(ctx, c.text, t - c.start + 0.02, { y: (m.capY && m.capY(lt)) || P.capY || 1530 });
+    }
+  }
+  if (P.overlay) P.overlay(ctx, t, cur, lt);
+  L4.grain(ctx, t, P.grainAmt || 0.07);
 }
 
 async function main() {
@@ -57,6 +81,10 @@ async function main() {
     }
     console.log('stills done');
     return;
+  }
+  if (args[0] === '--cover' && P.cover) {
+    P.cover(ctx, parseFloat(args[1]));
+    fs.writeFileSync(args[2], await canvas.encode('jpeg', 92)); console.log('cover', args[2]); return;
   }
   if (args[0] === '--cover') {  // --cover t outfile : clean frame + series title, no HUD or captions
     const t = parseFloat(args[1]);
