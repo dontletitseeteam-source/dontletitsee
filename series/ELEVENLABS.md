@@ -20,6 +20,10 @@ session. From now on:**
 - After each reset, plan the month: (real voice cost per episode x days in the cycle) first, then the rest for art
   plates (RESEARCH.md v4), capped at 450 per episode.
 
+**2026-11-24 (creator): measured the real cost of a voice: NIGHT SHIFT Ep 8 = 837 characters -> exactly 837 credits
+(account_get_usage before/after). Real balance 2,857 until the 2026-11-30 17:36 IST reset; Season 2 Ep 1-3 (11-28/29/30)
+must stay <= 850 characters each.**
+
 **Owner extension (2026-11-23): no end date. Keep posting daily after 2026-12-08 while credits last; before
 writing CREDITS USED UP, check the real balance with `account_get_usage` (the Starter plan may refill monthly)
 and log any refill as a row.**

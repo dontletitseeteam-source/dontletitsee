@@ -1,6 +1,36 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-24 ~01:30 IST (creator run, in progress):** Episode 8 voice + transcript saved in `night-shift/p8/audio/` (paid, REUSE). Build in progress for 2026-11-27.
+**COMPLETE (2026-11-24 ~02:10 IST): all 8 episodes queued (Ep 8 = season finale for 2026-11-27).** Next series: NIGHT SHIFT
+Season 2, bible in `series/night-shift-2/SERIES.md` (Ep 1 for 2026-11-28). Post-mortem in RESEARCH.md. Real credits left: 2,857
+(reset 2026-11-30 17:36 IST).
+
+## Episode 8 "The wedding hall" (season finale) — QUEUED for 2026-11-27
+- Output: `outputs/night-shift-p8.mp4` (57.8 s, 9.5 MB, −14.3 LUFS; stems VO −18.7 dB RMS, SFX −26.0, music −33.3, beds −51.6)
+  + `outputs/night-shift-p8.jpg` (cover: the too-tall bride on the stage, head bent against the marigold strings, "Her veil is /
+  {sewn shut.}", "NIGHT SHIFT · the wedding hall"); jsDelivr @ `57fde5d` (mp4 + jpg HTTP 200 first try).
+- Voice: 837 credits (REAL, account_get_usage 36,306 -> 37,143; voice costs exactly 1 credit per character), transcript 0.
+  20 lines / 145 words / 8 tags. SPEED 1.00. Raw take 53.0 s; gaps widened to 57.8 s.
+- **First v4-look episode (owner directive v4):** no HUD; new serif sentence-case captions (DM Serif Display, white with a soft
+  shadow, accent marigold / threat red, word-by-word rise, no box); film grain + paper texture, bloom, warm grade; handheld camera
+  on every shot, rack focus via low-res layers, whip-pan smears on the scare cuts, dutch angles; no stick figure ("you" is a
+  rim-lit silhouette with real proportions + a face close-up); own palette (ivory/gold stage, crimson bride, marigold strings;
+  teal moonlight when the lights go off); the time only once, on a wall clock (2:14); the note in a hand, 2.8 s. New files:
+  `engine/look4.js` (pipeline, opt-in via `look: 'v4'` in render.js), `engine/sets_wedding.js`, `part8.js`, mix.py `part8`
+  (synth dhol + harmonium drone for the band, unison clapping, pen scratch, stitches snapping, 5 carved pauses).
+- Story (clarity test a): "A caretaker locks up a wedding hall, but the hall fills again with silent guests and a bride taller
+  than the marigold strings, her veil sewn shut. She hands him a book and he signs it to make her leave. It was the marriage
+  register: he just married her, and her veil starts to open." (b) captions + stills read as: the wedding is over / the bride on
+  the stage / veil sewn shut / caretaker / 2 rules / lights off / band plays / every chair full / every guest looking at you / she
+  stands, taller than the strings / walks to you / your hand on her veil / pull away, rule 1 kept / book and pen / clapping / you
+  sign / not the guest book / marriage register / you married her / the veil opens (eyes inside). A stranger can retell it.
+- 24 shots: bright hall hook (head jerks over at 0.3 s, cut closer at 1.75 s), veil ECU with rack focus, you in the doorway, note,
+  low angle past a soft chair, register insert, switchboard + clock, dark band corner (dutch), smash to lights-on full hall, rows,
+  heads turning, your face, she stands up into the strings, SCALE shot, she walks down the aisle at you, hands, pull-away whip,
+  your face, POV book held out, clapping (dutch), signing, tilt up to "Marriage Register", you on the groom's throne with a
+  garland, the veil splitting + stitches snapping + two eyes (A/B over it), loop cut back to frame 1.
+- Choice offered: **Which rule would you break? A) lift her veil  B) sign her book** ("Just type A or B", unchanged).
+- YT title: "The bride in my empty wedding hall had her veil sewn shut | NIGHT SHIFT #shorts".
+- Measure: IG skip rate / avg watch and YT views at 24 h vs Ep 6-7 (same story rules, old look) = the v4 look test.
 
 **Status (previous) 2026-11-23 ~01:55 IST (creator run):** Episode 7 built and QUEUED for 2026-11-26. Credits left 19,324 (12 episodes to make
 2026-11-27 … 12-08 -> ~1,610 each; v2 episodes cost ~850, pace is comfortable). Next: Episode 8 (wedding-hall caretaker, season

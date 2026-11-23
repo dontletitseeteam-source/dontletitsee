@@ -236,6 +236,22 @@ Mistakes: (1) a continuing plot shown to strangers: IG reach stayed flat at ~105
 Rules for the next series: standalone 55-70 s episodes with one SHOWN entity (title + cover + first 3 s); A/B answerable
 inside the episode ("which rule would you break"); every episode must work as somebody's first video.
 
+## Post-mortem: NIGHT SHIFT (Ep 1-8, 2026-11-20 … 11-27; numbers pulled 2026-11-24 01:15 IST, Ep 5-8 not live yet)
+| Ep | Place / monster | IG views | IG skip | IG avg watch | YT views (@dontletitsee) | YT comments |
+|---|---|---|---|---|---|---|
+| 1 | pharmacy / toe-tag customer | 257 | 36.8% | 22.8 s | 877 | 1 |
+| 2 | sleeper train / upside-down passenger | **1,228** | 37.6% | **29.5 s** | **1,141** | 1 |
+| 3 | delivery / too many fingers | 144 | 45.5% | 16.0 s | 199 | 2 |
+| 4 | petrol pump / backwards passengers | 125 (10 h) | **32.7%** | 21.8 s | 704 (10 h) | 3 |
+| 5-8 | school / cinema / toll / wedding | n/a | n/a | n/a | n/a | n/a |
+Worked: (1) standalone episodes beat the continuing BLOCK C on YouTube 3 of 4 times; (2) silhouette-wrong monsters
+(upside down, facing backwards) win, detail-wrong ones (a tag, fingers) lose; (3) bright, familiar Indian night places in frame 1.
+Mistakes: (1) Ep 1-5 were too fast and too clever (220+ words, 3 rules, puzzles) - fixed by v2 from Ep 6; (2) the rules note and
+the end card cost viewers (v3); (3) the same template look in every frame (v4 - first applied in Ep 8).
+Rules for Season 2: keep the NIGHT SHIFT format and title shape (it is our only proven format); v4 look in every episode (Ep 8 is
+the reference: look4.js + sets_wedding.js); a silhouette-wrong monster, shown big in frame 1 and on the cover; 145 words, ~840
+credits per voice (measured: exactly 1 credit per character).
+
 ## Ideas for the next series (creator decides; all original, none of them a copy)
 Format sketch: **"NIGHT SHIFT"**: each episode is one ordinary night job, the handover note with its rules, the
 rule that breaks, one poster-image entity, a twist. The bible's candidate premises fit as episodes: 24-hour
