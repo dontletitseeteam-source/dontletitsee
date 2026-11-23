@@ -1,6 +1,8 @@
 # NIGHT SHIFT — progress log
 
-**Status 2026-11-23 ~01:55 IST (creator run):** Episode 7 built and QUEUED for 2026-11-26. Credits left 19,324 (12 episodes to make
+**Status 2026-11-24 ~01:30 IST (creator run, in progress):** Episode 8 voice + transcript saved in `night-shift/p8/audio/` (paid, REUSE). Build in progress for 2026-11-27.
+
+**Status (previous) 2026-11-23 ~01:55 IST (creator run):** Episode 7 built and QUEUED for 2026-11-26. Credits left 19,324 (12 episodes to make
 2026-11-27 … 12-08 -> ~1,610 each; v2 episodes cost ~850, pace is comfortable). Next: Episode 8 (wedding-hall caretaker, season
 finale) for 2026-11-27, then design the closing series (2026-11-28 … 12-08) per PLAYBOOK section 7 (post-mortem first). Daily
 review + weekly competitor scan done today (ANALYTICS / RESEARCH 2026-11-23).
