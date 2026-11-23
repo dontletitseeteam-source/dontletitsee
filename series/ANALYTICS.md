@@ -30,6 +30,35 @@ last shot, no card, loop to frame 1); the monster must move within 0.5 s; a face
 (Standalone format is now the standard: Ep 1-3 all beat BLOCK C on YouTube; see RESEARCH.md.)
 
 ## Day log
+## 2026-11-24 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| floor0-p1 … p3 | Instagram | 346-298 | 799 / 184 / 144 | 640 / 156 / 117 | 17 / 2 / 1 | 2 / 0 / 0 | 0 / 0 | 17.3 / 8.3 / 13.3 s | 46.7 / 71.4 / 51.6% |
+| block-c-p1 … p8 | Instagram | 274-106 | 144 / 151 / 127 / 128 / 131 / 112 / 155 / 125 | 111 / 111 / 108 / 106 / 107 / 87 / 133 / 100 | 0 / 4 / 3 / 1 / 5 / 3 / 2 / 0 | 0 | 0-1 / 0 | 17.2 / 22.6 / 8.2 / 10.9 / 16.2 / 12.8 / 21.8 / 12.0 s | 51.7 / 54.6 / 62.6 / 68.4 / 44.0 / 55.3 / 45.4 / 44.7% |
+| night-shift-p1 | Instagram | 82 | 257 | 202 | 1 | 0 | 0 / 0 | 22.8 s | 36.8% |
+| night-shift-p2 | Instagram | 58 | 1,228 | 1,044 | 36 | 1 | 3 / 3 | 29.5 s | 37.6% |
+| night-shift-p3 | Instagram | 34 | 144 | 134 | 1 | 0 | 0 / 0 | 16.0 s | 45.5% |
+| night-shift-p4 | Instagram | 10 | 125 | 106 | 2 | 0 | 1 / 0 | 21.8 s | **32.7%** (best ever) |
+| floor0-p1 / p2 / p3 | YouTube @dontletitsee (youtube_regin-mont) | 346-298 | 203 / 451 / 293 | n/a | 5 / 9 / 3 | 0 | n/a | n/a | n/a |
+| block-c-p1 … p8 | YouTube @dontletitsee | 274-106 | 439 / 738 / 228 / 232 / 353 / 457 / 1,010 / 555 | n/a | 10 / 14 / 6 / 5 / 5 / 7 / 20 / 5 | 1 / 0 / 0 / 1 / 5 / 4 / 0 / 0 | n/a | n/a | n/a |
+| night-shift-p1 / p2 / p3 / p4 | YouTube @dontletitsee | 82 / 58 / 34 / 10 | 877 / 1,141 / 199 / **704** | n/a | 12 / 13 / 5 / 11 | 1 / 1 / 2 / **3** | n/a | n/a | n/a |
+| all 15 uploads | YouTube @lexter2025 (youtube_rachel-brod) | 10-346 | 16, 15, 150, 6, 4, 2, 0, 3, 0, 1, 0, 1, 0, 0, 0 | n/a | 0-2 | 0 | n/a | n/a | n/a |
+
+YouTube stay rate (engaged/views, report through ~11-22): NIGHT SHIFT Ep 1 55% (479/866, avg 34 s, 49%); BLOCK C P7 61%, P8 51%.
+Second-by-second retention for Ep 2 (DUkQyIGaxU4): rows still empty (too new), retry next review.
+A/B on Ep 4 (YouTube, "Type A or B" test): 3 comments, A 2 / B 1, two with a reason; Instagram 0.
+
+Lessons:
+- Ep 4 (bright sodium-lit petrol pump, a car whose passengers all face backwards) is the best opener we have made: IG skip rate
+  32.7% (Ep 1-3: 36.8 / 37.6 / 45.5%) and YouTube 704 views at 10 h (Ep 3 had 112 at the same age). With Ep 2 (upside-down man)
+  that makes 2 of 2 silhouette-wrong monsters strong vs the 2 detail-wrong ones (toe tag, fingers) weaker: the silhouette rule holds.
+- "Type A or B" (Ep 4) gave the most YouTube comments of any NIGHT SHIFT episode (3, with reasons); Instagram still 0. Keep it
+  unchanged until Ep 6 has been live 24 h, then judge.
+- Ep 3 YouTube climbed 112 -> 199 but stays the weakest; Ep 2 has stalled at ~1,140. Views come in the first 24 h: frame 1 decides.
+- @lexter2025 still 0-4 views on new uploads (nothing actionable from the creator side).
+- Applied to Ep 8 (wedding hall finale, first v4-look episode): one change only on top of the owner-mandated v4 art overhaul: none
+  new; keep bright frame 1, image-title, silhouette-wrong bride (whole veiled figure too tall, head bent at the ceiling).
+
 ## 2026-11-23 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
