@@ -265,5 +265,33 @@ P8 = [  # v4 captions: sentence case; [x] = marigold accent, {x} = red threat
 ]
 P8_HOLD = 1.6
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD}
+# Season 2 · Episode 1 (part 9) — The railway level crossing (the man who walks the tracks on all fours, back bent the wrong way)
+P9 = [  # v4 captions: sentence case; [x] = signal-green accent, {x} = red threat
+    ("Something is coming down the tracks. On all fours.", 0.12,
+     [(3, "Something is coming"), (3, "down the tracks."), (3, "On {all fours.}")]),
+    ("Its back is bent the wrong way.", 0.35, [(3, "Its back is"), (4, "bent the {wrong way.}")]),
+    ("Your first night as gatekeeper at the level crossing.", 0.50, [(5, "Your first night as gatekeeper"), (4, "at the [level crossing.]")]),
+    ("The note says two rules.", 0.30, [(5, "The note says [two rules.]")]),
+    ("One. When the bell rings, close the gate.", 0.25, [(1, "One."), (4, "When the bell rings,"), (3, "[close the gate.]")]),
+    ("Two. Never open it for anyone on foot.", 0.25, [(1, "Two."), (3, "Never open it"), (4, "for [anyone on foot.]")]),
+    ("The bell rings. You close the gate. Rule one, kept.", 0.90, [(3, "The bell {rings.}"), (4, "You close the gate."), (3, "[Rule one, kept.]")]),
+    ("But no train comes.", 0.40, [(4, "But {no train} comes.")]),
+    ("Only him, crawling toward your lamp.", 0.30, [(2, "Only {him,}"), (4, "crawling toward your [lamp.]")]),
+    ("At the gate, he stands up.", 1.00, [(3, "At the gate,"), (3, "he {stands up.}")]),
+    ("He is taller than the signal post.", 0.30, [(3, "He is {taller}"), (4, "than the [signal post.]")]),
+    ("A small voice calls: Bhaiya, it's me. Open the gate.", 0.80,
+     [(4, "A small voice calls:"), (3, "[Bhaiya, it's me.]"), (3, "Open the gate.")]),
+    ("It's your little brother.", 0.30, [(4, "It's your {little brother.}")]),
+    ("You lift the gate. Rule two, broken.", 0.60, [(4, "You lift the gate."), (3, "{Rule two, broken.}")]),
+    ("Nobody is there.", 1.00, [(3, "{Nobody} is there.")]),
+    ("Just the last gatekeeper's lamp, lying on the tracks.", 0.35,
+     [(5, "Just the last gatekeeper's [lamp,]"), (4, "lying on the tracks.")]),
+    ("He was never waiting for a train.", 0.90, [(7, "He was never waiting for a [train.]")]),
+    ("He was waiting for the gate to open.", 0.30, [(4, "He was waiting for"), (4, "the gate {to open.}")]),
+    ("And now he's on your side.", 0.90, [(6, "And now he's {on your side.}")]),
+    ("Which rule would you break? Just type A or B.", 0.90, [(5, "Which rule would you break?"), (5, "Just type [A] or {B.}")]),
+]
+P9_HOLD = 1.6
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8, 9: P9}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD, 9: P9_HOLD}
