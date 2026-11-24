@@ -30,6 +30,35 @@ last shot, no card, loop to frame 1); the monster must move within 0.5 s; a face
 (Standalone format is now the standard: Ep 1-3 all beat BLOCK C on YouTube; see RESEARCH.md.)
 
 ## Day log
+## 2026-11-25 (IST 01:20 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| night-shift-p1 | Instagram | 106 | 258 | 203 | 1 | 0 | 0 / 0 | 22.9 s | n/a |
+| night-shift-p2 | Instagram | 82 | 1,230 | 1,046 | 36 | 1 | 3 / 3 | 29.5 s | n/a |
+| night-shift-p3 | Instagram | 58 | 146 | 135 | 1 | 0 | 0 / 0 | 16.0 s | n/a |
+| night-shift-p4 | Instagram | 34 | 127 | 108 | 2 | 0 | 1 / 0 | 21.5 s | 33.0% |
+| night-shift-p5 | Instagram | 10 | **751** | 630 | 16 | 0 | 0 / 1 | 23.7 s | 35.5% |
+| night-shift-p1 / p2 / p3 / p4 / p5 | YouTube @dontletitsee (youtube_regin-mont) | 106 / 82 / 58 / 34 / 10 | 879 / 1,144 / 216 / **983** / **25** | n/a | 12 / 13 / 5 / 14 / 1 | 1 / 1 / 2 / 3 / 0 | n/a | n/a | n/a |
+| night-shift-p1 … p5 | YouTube @lexter2025 (youtube_rachel-brod) | 106-10 | 1 / 0 / 1 / 1 / 0 | n/a | n/a | n/a | n/a | n/a | n/a |
+(Older posts not re-collected, to keep the review cheap.)
+
+Second-by-second retention, Ep 2 (DUkQyIGaxU4, 69.7 s): 112% at 1% (rewatches) -> 86% at 14% -> 69% at 20% (**drop 1: ~10-14 s**,
+the handover-note/rules stretch) -> slow slide to 40% at 90% -> **drop 2: 38% at 91% to 15% at 100% (~63-70 s, the A/B end card)**.
+The same two drops as Ep 1 (RESEARCH.md v3): both causes now repeat in 2 videos and are already rules (note <= 3 s; A/B over the
+last shot, no card). Season 1 Ep 6-8 and Season 2 follow them; measure Ep 6+ curves when they are 3 days old.
+A/B: Ep 4 YouTube 3 comments (unchanged); Ep 5 Instagram 0 comments.
+
+Lessons:
+- Ep 5 (schoolyard swing girl) is our 2nd-best Instagram opening ever (751 plays / 630 reach at 10 h, skip 35.5%) but the worst
+  YouTube start of the season (25 views at 10 h vs Ep 4 704). The platforms disagree on one post; no reaction yet. Possible cause
+  to watch: the YouTube title puts the wrong detail at the end ("...her face reached my window", 13 words) while Ep 2/Ep 4 put it
+  in the first 6-8 words. Re-check Ep 5 at 34 h.
+- Ep 4 YouTube kept climbing (704 -> 983): silhouette-wrong monsters (Ep 2, 4, 5) are 3 of 3 strong on at least one platform;
+  detail-wrong (Ep 1 toe tag, Ep 3 fingers) 2 of 2 weaker. The silhouette rule holds across 5 posts.
+- Instagram skip rate stays in the low-30s for bright-opener episodes (Ep 4 33.0%, Ep 5 35.5%): bright frame 1 holds.
+- @lexter2025 still 0-1 views per upload.
+- Applied to Season 2 Ep 1 (railway crossing, 2026-11-28): YouTube title with the silhouette-wrong detail in the first 8 words.
+
 ## 2026-11-24 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
