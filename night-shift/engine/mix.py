@@ -728,8 +728,105 @@ def part8():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7, 8: part8}[PART]()
-if PART in (3, 4, 5, 6, 7, 8): sfx *= db(-1.2)
+def part9():
+    """NIGHT SHIFT S2 Ep.1 — the railway level crossing (the man who crawls the tracks). Synth crossing bell (electric, 18 Hz
+    hammer) under red lamps, floodlight hum + night wind, knuckles and knees on the sleepers, barrier motor, winch creak,
+    a child's whisper from the wrong mouth; carved silences before the reveals."""
+    T9 = {L["id"]: L for L in T["lines"]}
+    gaps = [(T9[i - 1]["end"], T9[i]["start"]) for i in (7, 10, 15, 17, 19, 20)]
+    tt = np.arange(N) / SR
+    rng = np.random.default_rng(99)
+    # room: floodlight transformer hum + night wind (filtered noise, slow swell)
+    hum = bed("hum.mp3", "lowpass=f=260") * db(-14)
+    wn = rng.standard_normal(N).astype(np.float32)
+    Wf = np.fft.rfft(wn); fq = np.fft.rfftfreq(N, 1 / SR); Wf[(fq < 120) | (fq > 900)] = 0
+    wn = np.fft.irfft(Wf, N).astype(np.float32); wn /= np.abs(wn).max() + 1e-9
+    wn *= (0.6 + 0.4 * np.sin(2 * np.pi * 0.11 * tt)).astype(np.float32)
+    rb = hum + np.stack([wn, np.roll(wn, 900)], 1) * db(-24)
+    # electric crossing bell: inharmonic partials struck at 18 Hz while it rings
+    def bell(dur):
+        n = int(dur * SR); x = np.arange(n) / SR; y = np.zeros(n, np.float32)
+        for f, a in ((1180, 1.0), (2710, 0.6), (3990, 0.35), (5230, 0.2)):
+            y += a * np.sin(2 * np.pi * f * x)
+        env = np.exp(-((x * 18) % 1) * 7)
+        y = y * env * np.minimum(1, x / 0.01); y /= np.abs(y).max() + 1e-9
+        return np.stack([y, y], 1).astype(np.float32)
+    ring_on = K["ringW"] - 0.45
+    place(bell(K["lower"] - ring_on + 0.4), ring_on, -17, fo=0.3)
+    place(bell(4.0) * 0.6, K["lower"] + 0.4, -27, fo=1.5)                      # keeps ringing, far, while the lamps flash
+    place(bell(0.25), K["rings1W"], -24, fo=0.1)                                # the rule-1 shot: one tiny shiver
+    # music bed (shared score), low, carved out in the pauses
+    mu = load("music.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    while len(loop) < N: loop = np.concatenate([loop, loop])
+    loop = loop[:N]
+    mp = [(0, -15), (K["back"], -15), (K["me"], -21), (K["note"], -20), (K["r2"], -19), (K["ring"], -24), (K["kept"], -18),
+          (K["noTrain"], -16), (K["him"], -13), (K["stand"], -11), (K["scale"], -10), (K["voice"], -16), (K["bro"], -13),
+          (K["lift"], -11), (K["nobody"], -17), (K["lamp"], -14), (K["never"], -12), (K["gate"], -12), (K["side"], -9), (K["ask"], -11),
+          (DUR - 1, -14), (DUR, -40)]
+    for a, b in gaps:
+        mp += [(a - 0.05, None), (a + 0.12, -45), (b - 0.02, -45)]
+    mp = sorted(mp, key=lambda p: p[0]); out = []; last = -16
+    for tpt, g in mp:
+        if g is None: g = last
+        out.append((tpt, g)); last = g if g > -40 else last
+    m1 = loop * automation(out)
+    sil = np.ones((N, 1), np.float32)
+    for a, b in gaps:
+        sil *= 1 - (automation([(0, -100), (a + 0.02, -100), (a + 0.15, 0), (b - 0.05, 0), (b + 0.02, -100), (DUR + 1, -100)]) * 0.75)
+    rb = rb * sil
+    # ---- cues
+    knock = noise_burst(0.06, 300, 2500, 7, 0.002)
+    def crawl(t0, t1, gain, rate=4.2 / np.pi):
+        t = t0; i = 0
+        while t < t1:
+            place(knock * 0.8, t, gain - (i % 2) * 3); place(load("tick.mp3", "lowpass=f=1500"), t + 0.02, gain - 6, maxlen=0.12)
+            t += 1 / rate; i += 1
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0); place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(bell(1.6) * 0.7, 0.0, -22, fo=0.6)                                    # frame 1: the lamps are flashing, the bell is dying away
+    place(load("stretch.mp3"), 0.25, -15, fo=0.4, maxlen=1.0)                   # his head jerks
+    crawl(0.3, K["me"] - 0.2, -17)
+    place(stinger, K["foursW"] - 0.03, -12, fo=0.4, maxlen=1.0)
+    place(load("stretch.mp3", "asetrate=48000*0.8,aresample=48000"), K["back"] + 0.1, -14, fo=0.5, maxlen=1.4)
+    place(boom, K["wrongW"], -11, fo=0.6, maxlen=1.6)
+    place(door_open, K["me"] + 0.05, -19, fo=0.3, maxlen=1.0)
+    place(noise_burst(0.35, 800, 6000, 81, 0.02) * 0.6, K["note"], -15)
+    place(load("door_creak.mp3", "lowpass=f=2200"), K["close1"] + 0.1, -18, maxlen=0.9)
+    place(stinger, K["footW"] - 0.05, -17, fo=0.4, maxlen=0.8)
+    place(motor, K["closeW"] - 0.05, -17, fo=0.4, maxlen=1.5); place(load("door_slam_wood.mp3"), K["closeW"] + 1.2, -14, maxlen=0.8)
+    place(ding_far, K["kept"] + 0.3, -24, maxlen=1.0)
+    place(riser, K["trainW"] + 0.2, -22, fi=0.6, fo=0.3, maxlen=1.2)
+    crawl(K["him"] + 0.1, K["lamp9W"] - 0.05, -14, 1.9)
+    place(stinger, K["himW"] - 0.03, -10, fo=0.4, maxlen=1.0)
+    place(stinger, K["lamp9W"], -8, fo=0.5, maxlen=1.3); place(boom, K["lamp9W"] + 0.03, -9, fo=0.8, maxlen=2.0)
+    place(heartbeat, K["lamp9W"] + 0.3, -16, fi=0.1, fo=0.3, maxlen=K["stand"] - K["lamp9W"] - 0.4)
+    place(load("stretch.mp3", "asetrate=48000*0.7,aresample=48000"), K["standsW"] - 0.15, -9, fo=0.5, maxlen=2.2)
+    for i in range(6): place(load("tick.mp3", "lowpass=f=1800"), K["standsW"] + i * 0.2, -16, maxlen=0.15)   # joints cracking
+    place(boom, K["standsW"] + 1.0, -10, fo=0.6, maxlen=1.6)
+    place(load("smile_stinger.mp3"), K["signalW"] - 0.05, -12, fo=0.5, maxlen=1.3)
+    place(whisper, K["voice"] + 0.1, -15, fi=0.2, fo=0.5, maxlen=1.4)
+    place(stinger, K["bhaiyaW"] - 0.05, -14, fo=0.4, maxlen=0.9)
+    place(load("door_creak.mp3", "lowpass=f=1800"), K["open"] + 0.6, -17, maxlen=1.2)
+    place(heartbeat, K["bro"], -15, fi=0.1, fo=0.3, maxlen=K["lift"] - K["bro"])
+    place(motor, K["liftW"] - 0.05, -14, fo=0.4, maxlen=1.6)
+    place(stinger, K["broken"], -8, fo=0.5, maxlen=1.2); place(boom, K["broken"] + 0.02, -8, fo=0.8, maxlen=2.0)
+    place(load("buzz.mp3", "lowpass=f=3000"), K["nobody"] + 0.4, -20, maxlen=0.7)   # floodlight stutter
+    place(noise_burst(0.5, 200, 1800, 85, 0.05) * 0.4, K["lamp"] + 0.1, -20)
+    place(load("smile_stinger.mp3"), K["lampW"] - 0.05, -13, fo=0.5, maxlen=1.2)
+    place(load("button.mp3"), K["trainW2"] - 0.1, -16, maxlen=0.3)              # signal clicks to red
+    place(riser, K["openW"] - 0.06 - len(riser) / SR, -18, fi=1.2, fo=0.004)
+    place(boom, K["openW"], -9, fo=0.8, maxlen=2.2)
+    place(whisper, K["side"] + 0.2, -11, fi=0.1, fo=0.5, maxlen=1.6)
+    place(stinger, K["sideW"] - 0.03, -6, fo=0.5, maxlen=1.4); place(boom, K["sideW"], -7, fo=0.8, maxlen=2.4)
+    place(load("buzz.mp3", "lowpass=f=3000"), K["ask"] + 1.6, -20, maxlen=0.35)
+    place(whisper, K["ask"] + 0.5, -15, fi=0.2, fo=0.5, maxlen=2.0)
+    place(boom, K["loop"] - 0.05, -14, fo=0.6, maxlen=1.0)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7, 8: part8, 9: part9}[PART]()
+if PART in (3, 4, 5, 6, 7, 8, 9): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice
