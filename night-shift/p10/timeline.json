@@ -1,0 +1,1167 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "duration": 59.304,
+ "lines": [
+  {
+   "id": 1,
+   "text": "A woman is using the ATM. Bent backwards. Her head is at her heels.",
+   "src_start": 0.03,
+   "src_end": 5.48,
+   "start": 0.12,
+   "end": 5.57,
+   "words": [
+    {
+     "text": "A",
+     "start": 0.17,
+     "end": 0.25
+    },
+    {
+     "text": "woman",
+     "start": 0.33,
+     "end": 0.65
+    },
+    {
+     "text": "is",
+     "start": 0.73,
+     "end": 0.81
+    },
+    {
+     "text": "using",
+     "start": 0.89,
+     "end": 1.21
+    },
+    {
+     "text": "the",
+     "start": 1.25,
+     "end": 1.29
+    },
+    {
+     "text": "ATM.",
+     "start": 1.45,
+     "end": 2.41
+    },
+    {
+     "text": "Bent",
+     "start": 2.73,
+     "end": 2.89
+    },
+    {
+     "text": "backwards.",
+     "start": 2.97,
+     "end": 3.81
+    },
+    {
+     "text": "Her",
+     "start": 4.01,
+     "end": 4.09
+    },
+    {
+     "text": "head",
+     "start": 4.17,
+     "end": 4.41
+    },
+    {
+     "text": "is",
+     "start": 4.49,
+     "end": 4.57
+    },
+    {
+     "text": "at",
+     "start": 4.65,
+     "end": 4.73
+    },
+    {
+     "text": "her",
+     "start": 4.81,
+     "end": 4.89
+    },
+    {
+     "text": "heels.",
+     "start": 4.97,
+     "end": 5.57
+    }
+   ],
+   "captions": [
+    {
+     "text": "A woman is",
+     "start": 0.17,
+     "word_idx": 0,
+     "end": 0.89
+    },
+    {
+     "text": "using the ATM.",
+     "start": 0.89,
+     "word_idx": 3,
+     "end": 2.73
+    },
+    {
+     "text": "{Bent backwards.}",
+     "start": 2.73,
+     "word_idx": 6,
+     "end": 4.01
+    },
+    {
+     "text": "Her head is {at her heels.}",
+     "start": 4.01,
+     "word_idx": 8,
+     "end": 5.69
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "text": "Your first night as the ATM guard.",
+   "src_start": 6.27,
+   "src_end": 8.55,
+   "start": 6.02,
+   "end": 8.3,
+   "words": [
+    {
+     "text": "Your",
+     "start": 6.07,
+     "end": 6.23
+    },
+    {
+     "text": "first",
+     "start": 6.31,
+     "end": 6.55
+    },
+    {
+     "text": "night",
+     "start": 6.63,
+     "end": 6.87
+    },
+    {
+     "text": "as",
+     "start": 6.95,
+     "end": 7.03
+    },
+    {
+     "text": "the",
+     "start": 7.11,
+     "end": 7.19
+    },
+    {
+     "text": "ATM",
+     "start": 7.27,
+     "end": 7.67
+    },
+    {
+     "text": "guard.",
+     "start": 7.75,
+     "end": 8.3
+    }
+   ],
+   "captions": [
+    {
+     "text": "Your first night as",
+     "start": 6.07,
+     "word_idx": 0,
+     "end": 7.11
+    },
+    {
+     "text": "the [ATM guard.]",
+     "start": 7.11,
+     "word_idx": 4,
+     "end": 8.42
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "text": "The note says two rules.",
+   "src_start": 8.83,
+   "src_end": 10.62,
+   "start": 8.6,
+   "end": 10.39,
+   "words": [
+    {
+     "text": "The",
+     "start": 8.65,
+     "end": 8.73
+    },
+    {
+     "text": "note",
+     "start": 8.85,
+     "end": 8.97
+    },
+    {
+     "text": "says",
+     "start": 9.05,
+     "end": 9.29
+    },
+    {
+     "text": "two",
+     "start": 9.37,
+     "end": 9.53
+    },
+    {
+     "text": "rules.",
+     "start": 9.69,
+     "end": 10.39
+    }
+   ],
+   "captions": [
+    {
+     "text": "The note says [two rules.]",
+     "start": 8.65,
+     "word_idx": 0,
+     "end": 10.51
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "text": "One. One customer at a time.",
+   "src_start": 10.75,
+   "src_end": 12.94,
+   "start": 10.64,
+   "end": 12.83,
+   "words": [
+    {
+     "text": "One.",
+     "start": 10.69,
+     "end": 11.33
+    },
+    {
+     "text": "One",
+     "start": 11.41,
+     "end": 11.49
+    },
+    {
+     "text": "customer",
+     "start": 11.65,
+     "end": 12.05
+    },
+    {
+     "text": "at",
+     "start": 12.13,
+     "end": 12.21
+    },
+    {
+     "text": "a",
+     "start": 12.25,
+     "end": 12.29
+    },
+    {
+     "text": "time.",
+     "start": 12.37,
+     "end": 12.83
+    }
+   ],
+   "captions": [
+    {
+     "text": "One.",
+     "start": 10.69,
+     "word_idx": 0,
+     "end": 11.41
+    },
+    {
+     "text": "[One customer at a time.]",
+     "start": 11.41,
+     "word_idx": 1,
+     "end": 12.95
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "text": "Two. Never look at the mirror above the machine.",
+   "src_start": 13.39,
+   "src_end": 16.13,
+   "start": 13.08,
+   "end": 15.82,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 13.13,
+     "end": 13.69
+    },
+    {
+     "text": "Never",
+     "start": 13.77,
+     "end": 14.01
+    },
+    {
+     "text": "look",
+     "start": 14.09,
+     "end": 14.17
+    },
+    {
+     "text": "at",
+     "start": 14.25,
+     "end": 14.33
+    },
+    {
+     "text": "the",
+     "start": 14.37,
+     "end": 14.41
+    },
+    {
+     "text": "mirror",
+     "start": 14.49,
+     "end": 14.73
+    },
+    {
+     "text": "above",
+     "start": 14.81,
+     "end": 15.05
+    },
+    {
+     "text": "the",
+     "start": 15.09,
+     "end": 15.13
+    },
+    {
+     "text": "machine.",
+     "start": 15.21,
+     "end": 15.82
+    }
+   ],
+   "captions": [
+    {
+     "text": "Two.",
+     "start": 13.13,
+     "word_idx": 0,
+     "end": 13.77
+    },
+    {
+     "text": "Never look at the {mirror}",
+     "start": 13.77,
+     "word_idx": 1,
+     "end": 14.81
+    },
+    {
+     "text": "above the machine.",
+     "start": 14.81,
+     "word_idx": 6,
+     "end": 15.94
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "text": "At three ten, a man walks up to the door.",
+   "src_start": 16.727,
+   "src_end": 19.24,
+   "start": 16.72,
+   "end": 19.233,
+   "words": [
+    {
+     "text": "At",
+     "start": 16.77,
+     "end": 16.793
+    },
+    {
+     "text": "three",
+     "start": 16.873,
+     "end": 17.033
+    },
+    {
+     "text": "ten,",
+     "start": 17.193,
+     "end": 17.673
+    },
+    {
+     "text": "a",
+     "start": 17.713,
+     "end": 17.753
+    },
+    {
+     "text": "man",
+     "start": 17.833,
+     "end": 17.993
+    },
+    {
+     "text": "walks",
+     "start": 18.073,
+     "end": 18.313
+    },
+    {
+     "text": "up",
+     "start": 18.393,
+     "end": 18.473
+    },
+    {
+     "text": "to",
+     "start": 18.513,
+     "end": 18.553
+    },
+    {
+     "text": "the",
+     "start": 18.633,
+     "end": 18.713
+    },
+    {
+     "text": "door.",
+     "start": 18.873,
+     "end": 19.233
+    }
+   ],
+   "captions": [
+    {
+     "text": "At three ten,",
+     "start": 16.77,
+     "word_idx": 0,
+     "end": 17.713
+    },
+    {
+     "text": "a man walks up to the door.",
+     "start": 17.713,
+     "word_idx": 3,
+     "end": 19.353
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "text": "She's still inside. You stop him. Rule one, kept.",
+   "src_start": 19.47,
+   "src_end": 23.19,
+   "start": 19.433,
+   "end": 23.153,
+   "words": [
+    {
+     "text": "She's",
+     "start": 19.483,
+     "end": 19.643
+    },
+    {
+     "text": "still",
+     "start": 19.723,
+     "end": 19.883
+    },
+    {
+     "text": "inside.",
+     "start": 20.163,
+     "end": 20.763
+    },
+    {
+     "text": "You",
+     "start": 20.843,
+     "end": 20.923
+    },
+    {
+     "text": "stop",
+     "start": 21.043,
+     "end": 21.163
+    },
+    {
+     "text": "him.",
+     "start": 21.243,
+     "end": 21.803
+    },
+    {
+     "text": "Rule",
+     "start": 21.923,
+     "end": 22.043
+    },
+    {
+     "text": "one,",
+     "start": 22.123,
+     "end": 22.683
+    },
+    {
+     "text": "kept.",
+     "start": 22.883,
+     "end": 23.153
+    }
+   ],
+   "captions": [
+    {
+     "text": "She's still inside.",
+     "start": 19.483,
+     "word_idx": 0,
+     "end": 20.843
+    },
+    {
+     "text": "You stop him.",
+     "start": 20.843,
+     "word_idx": 3,
+     "end": 21.923
+    },
+    {
+     "text": "[Rule one, kept.]",
+     "start": 21.923,
+     "word_idx": 6,
+     "end": 23.273
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "text": "He looks past you, and runs.",
+   "src_start": 23.55,
+   "src_end": 25.39,
+   "start": 23.453,
+   "end": 25.293,
+   "words": [
+    {
+     "text": "He",
+     "start": 23.503,
+     "end": 23.583
+    },
+    {
+     "text": "looks",
+     "start": 23.703,
+     "end": 23.823
+    },
+    {
+     "text": "past",
+     "start": 23.903,
+     "end": 24.143
+    },
+    {
+     "text": "you,",
+     "start": 24.223,
+     "end": 24.543
+    },
+    {
+     "text": "and",
+     "start": 24.623,
+     "end": 24.703
+    },
+    {
+     "text": "runs.",
+     "start": 24.783,
+     "end": 25.293
+    }
+   ],
+   "captions": [
+    {
+     "text": "He looks {past you,}",
+     "start": 23.503,
+     "word_idx": 0,
+     "end": 24.623
+    },
+    {
+     "text": "and {runs.}",
+     "start": 24.623,
+     "word_idx": 4,
+     "end": 25.413
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "text": "She types upside down. She takes no money.",
+   "src_start": 25.71,
+   "src_end": 28.5,
+   "start": 25.993,
+   "end": 28.783,
+   "words": [
+    {
+     "text": "She",
+     "start": 26.043,
+     "end": 26.123
+    },
+    {
+     "text": "types",
+     "start": 26.203,
+     "end": 26.443
+    },
+    {
+     "text": "upside",
+     "start": 26.523,
+     "end": 26.923
+    },
+    {
+     "text": "down.",
+     "start": 27.003,
+     "end": 27.643
+    },
+    {
+     "text": "She",
+     "start": 27.723,
+     "end": 27.803
+    },
+    {
+     "text": "takes",
+     "start": 27.923,
+     "end": 28.043
+    },
+    {
+     "text": "no",
+     "start": 28.203,
+     "end": 28.363
+    },
+    {
+     "text": "money.",
+     "start": 28.443,
+     "end": 28.783
+    }
+   ],
+   "captions": [
+    {
+     "text": "She types {upside down.}",
+     "start": 26.043,
+     "word_idx": 0,
+     "end": 27.723
+    },
+    {
+     "text": "She takes no money.",
+     "start": 27.723,
+     "word_idx": 4,
+     "end": 28.903
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "text": "Then she speaks. Guard, it's stuck. Look up.",
+   "src_start": 28.75,
+   "src_end": 32.28,
+   "start": 29.383,
+   "end": 32.913,
+   "words": [
+    {
+     "text": "Then",
+     "start": 29.433,
+     "end": 29.593
+    },
+    {
+     "text": "she",
+     "start": 29.673,
+     "end": 29.833
+    },
+    {
+     "text": "speaks.",
+     "start": 29.953,
+     "end": 30.593
+    },
+    {
+     "text": "Guard,",
+     "start": 30.793,
+     "end": 31.273
+    },
+    {
+     "text": "it's",
+     "start": 31.353,
+     "end": 31.513
+    },
+    {
+     "text": "stuck.",
+     "start": 31.593,
+     "end": 32.313
+    },
+    {
+     "text": "Look",
+     "start": 32.393,
+     "end": 32.473
+    },
+    {
+     "text": "up.",
+     "start": 32.553,
+     "end": 32.913
+    }
+   ],
+   "captions": [
+    {
+     "text": "Then she speaks.",
+     "start": 29.433,
+     "word_idx": 0,
+     "end": 30.793
+    },
+    {
+     "text": "[Guard, it's stuck.]",
+     "start": 30.793,
+     "word_idx": 3,
+     "end": 32.393
+    },
+    {
+     "text": "{Look up.}",
+     "start": 32.393,
+     "word_idx": 6,
+     "end": 33.033
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "text": "You look at the mirror. Rule two, broken.",
+   "src_start": 32.55,
+   "src_end": 35.32,
+   "start": 33.513,
+   "end": 36.283,
+   "words": [
+    {
+     "text": "You",
+     "start": 33.563,
+     "end": 33.603
+    },
+    {
+     "text": "look",
+     "start": 33.683,
+     "end": 33.763
+    },
+    {
+     "text": "at",
+     "start": 33.803,
+     "end": 33.843
+    },
+    {
+     "text": "the",
+     "start": 33.923,
+     "end": 33.963
+    },
+    {
+     "text": "mirror.",
+     "start": 34.003,
+     "end": 34.723
+    },
+    {
+     "text": "Rule",
+     "start": 34.803,
+     "end": 34.963
+    },
+    {
+     "text": "two,",
+     "start": 35.123,
+     "end": 35.683
+    },
+    {
+     "text": "broken.",
+     "start": 35.923,
+     "end": 36.243
+    }
+   ],
+   "captions": [
+    {
+     "text": "You look at the mirror.",
+     "start": 33.563,
+     "word_idx": 0,
+     "end": 34.803
+    },
+    {
+     "text": "{Rule two, broken.}",
+     "start": 34.803,
+     "word_idx": 5,
+     "end": 36.403
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "text": "In the mirror, nobody is at the machine.",
+   "src_start": 35.859,
+   "src_end": 38.21,
+   "start": 37.283,
+   "end": 39.634,
+   "words": [
+    {
+     "text": "In",
+     "start": 37.333,
+     "end": 37.344
+    },
+    {
+     "text": "the",
+     "start": 37.424,
+     "end": 37.504
+    },
+    {
+     "text": "mirror,",
+     "start": 37.584,
+     "end": 38.144
+    },
+    {
+     "text": "nobody",
+     "start": 38.304,
+     "end": 38.624
+    },
+    {
+     "text": "is",
+     "start": 38.704,
+     "end": 38.784
+    },
+    {
+     "text": "at",
+     "start": 38.864,
+     "end": 38.944
+    },
+    {
+     "text": "the",
+     "start": 38.984,
+     "end": 39.024
+    },
+    {
+     "text": "machine.",
+     "start": 39.264,
+     "end": 39.634
+    }
+   ],
+   "captions": [
+    {
+     "text": "In the mirror,",
+     "start": 37.333,
+     "word_idx": 0,
+     "end": 38.304
+    },
+    {
+     "text": "{nobody} is at the machine.",
+     "start": 38.304,
+     "word_idx": 3,
+     "end": 39.754
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "text": "She's standing straight up, right behind you.",
+   "src_start": 38.47,
+   "src_end": 40.77,
+   "start": 40.034,
+   "end": 42.334,
+   "words": [
+    {
+     "text": "She's",
+     "start": 40.084,
+     "end": 40.204
+    },
+    {
+     "text": "standing",
+     "start": 40.284,
+     "end": 40.604
+    },
+    {
+     "text": "straight",
+     "start": 40.684,
+     "end": 41.004
+    },
+    {
+     "text": "up,",
+     "start": 41.084,
+     "end": 41.404
+    },
+    {
+     "text": "right",
+     "start": 41.484,
+     "end": 41.644
+    },
+    {
+     "text": "behind",
+     "start": 41.724,
+     "end": 42.044
+    },
+    {
+     "text": "you.",
+     "start": 42.124,
+     "end": 42.334
+    }
+   ],
+   "captions": [
+    {
+     "text": "She's standing straight up,",
+     "start": 40.084,
+     "word_idx": 0,
+     "end": 41.484
+    },
+    {
+     "text": "{right behind you.}",
+     "start": 41.484,
+     "word_idx": 4,
+     "end": 42.454
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "text": "You look down. The machine is empty.",
+   "src_start": 41.03,
+   "src_end": 43.41,
+   "start": 43.134,
+   "end": 45.514,
+   "words": [
+    {
+     "text": "You",
+     "start": 43.184,
+     "end": 43.224
+    },
+    {
+     "text": "look",
+     "start": 43.304,
+     "end": 43.464
+    },
+    {
+     "text": "down.",
+     "start": 43.624,
+     "end": 44.184
+    },
+    {
+     "text": "The",
+     "start": 44.224,
+     "end": 44.264
+    },
+    {
+     "text": "machine",
+     "start": 44.504,
+     "end": 44.744
+    },
+    {
+     "text": "is",
+     "start": 44.824,
+     "end": 44.984
+    },
+    {
+     "text": "empty.",
+     "start": 45.064,
+     "end": 45.514
+    }
+   ],
+   "captions": [
+    {
+     "text": "You look down.",
+     "start": 43.184,
+     "word_idx": 0,
+     "end": 44.224
+    },
+    {
+     "text": "The machine is {empty.}",
+     "start": 44.224,
+     "word_idx": 3,
+     "end": 45.634
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "text": "She was never at the machine. She was behind you all night.",
+   "src_start": 43.71,
+   "src_end": 47.76,
+   "start": 46.214,
+   "end": 50.264,
+   "words": [
+    {
+     "text": "She",
+     "start": 46.264,
+     "end": 46.424
+    },
+    {
+     "text": "was",
+     "start": 46.504,
+     "end": 46.584
+    },
+    {
+     "text": "never",
+     "start": 46.744,
+     "end": 47.064
+    },
+    {
+     "text": "at",
+     "start": 47.144,
+     "end": 47.224
+    },
+    {
+     "text": "the",
+     "start": 47.304,
+     "end": 47.344
+    },
+    {
+     "text": "machine.",
+     "start": 47.384,
+     "end": 48.344
+    },
+    {
+     "text": "She",
+     "start": 48.424,
+     "end": 48.504
+    },
+    {
+     "text": "was",
+     "start": 48.584,
+     "end": 48.664
+    },
+    {
+     "text": "behind",
+     "start": 48.784,
+     "end": 49.064
+    },
+    {
+     "text": "you",
+     "start": 49.144,
+     "end": 49.384
+    },
+    {
+     "text": "all",
+     "start": 49.464,
+     "end": 49.624
+    },
+    {
+     "text": "night.",
+     "start": 49.704,
+     "end": 50.264
+    }
+   ],
+   "captions": [
+    {
+     "text": "She was never at the [machine.]",
+     "start": 46.264,
+     "word_idx": 0,
+     "end": 48.424
+    },
+    {
+     "text": "She was {behind you} all night.",
+     "start": 48.424,
+     "word_idx": 6,
+     "end": 50.384
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "text": "That's why the man ran.",
+   "src_start": 48.03,
+   "src_end": 49.27,
+   "start": 50.664,
+   "end": 51.904,
+   "words": [
+    {
+     "text": "That's",
+     "start": 50.714,
+     "end": 50.874
+    },
+    {
+     "text": "why",
+     "start": 50.954,
+     "end": 51.034
+    },
+    {
+     "text": "the",
+     "start": 51.114,
+     "end": 51.194
+    },
+    {
+     "text": "man",
+     "start": 51.314,
+     "end": 51.434
+    },
+    {
+     "text": "ran.",
+     "start": 51.514,
+     "end": 51.904
+    }
+   ],
+   "captions": [
+    {
+     "text": "That's why the man {ran.}",
+     "start": 50.714,
+     "word_idx": 0,
+     "end": 52.024
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "text": "And she's still there.",
+   "src_start": 49.61,
+   "src_end": 50.84,
+   "start": 52.604,
+   "end": 53.834,
+   "words": [
+    {
+     "text": "And",
+     "start": 52.654,
+     "end": 52.674
+    },
+    {
+     "text": "she's",
+     "start": 52.754,
+     "end": 52.994
+    },
+    {
+     "text": "still",
+     "start": 53.074,
+     "end": 53.314
+    },
+    {
+     "text": "there.",
+     "start": 53.394,
+     "end": 53.834
+    }
+   ],
+   "captions": [
+    {
+     "text": "And she's {still there.}",
+     "start": 52.654,
+     "word_idx": 0,
+     "end": 53.954
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "text": "Which rule would you break? Just type A or B.",
+   "src_start": 51.23,
+   "src_end": 54.2,
+   "start": 54.734,
+   "end": 57.704,
+   "words": [
+    {
+     "text": "Which",
+     "start": 54.784,
+     "end": 54.944
+    },
+    {
+     "text": "rule",
+     "start": 55.024,
+     "end": 55.184
+    },
+    {
+     "text": "would",
+     "start": 55.264,
+     "end": 55.344
+    },
+    {
+     "text": "you",
+     "start": 55.424,
+     "end": 55.584
+    },
+    {
+     "text": "break?",
+     "start": 55.744,
+     "end": 56.304
+    },
+    {
+     "text": "Just",
+     "start": 56.384,
+     "end": 56.464
+    },
+    {
+     "text": "type",
+     "start": 56.544,
+     "end": 56.784
+    },
+    {
+     "text": "A",
+     "start": 56.864,
+     "end": 57.184
+    },
+    {
+     "text": "or",
+     "start": 57.224,
+     "end": 57.264
+    },
+    {
+     "text": "B.",
+     "start": 57.424,
+     "end": 57.704
+    }
+   ],
+   "captions": [
+    {
+     "text": "Which rule would you break?",
+     "start": 54.784,
+     "word_idx": 0,
+     "end": 56.384
+    },
+    {
+     "text": "Just type [A] or {B.}",
+     "start": 56.384,
+     "word_idx": 5,
+     "end": 57.824
+    }
+   ]
+  }
+ ]
+}

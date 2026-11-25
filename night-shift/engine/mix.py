@@ -825,8 +825,98 @@ def part9():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7, 8: part8, 9: part9}[PART]()
-if PART in (3, 4, 5, 6, 7, 8, 9): sfx *= db(-1.2)
+def part10():
+    """NIGHT SHIFT S2 Ep.2 — the ATM booth (the woman bent backwards). Fluorescent tube buzz + the machine's fan hum, far
+    traffic wash, ATM key beeps (synth 1.4 kHz), the man's footsteps and his running away, joint cracks in the arch, a
+    CCTV hiss for the camera shots, carved silences before the mirror and the reveal."""
+    T10 = {L["id"]: L for L in T["lines"]}
+    gaps = [(T10[i - 1]["end"], T10[i]["start"]) for i in (6, 12, 14, 17, 18)]
+    tt = np.arange(N) / SR
+    rng = np.random.default_rng(1010)
+    # room: tube hum (50 Hz + harmonics, slight buzz) + machine fan + far traffic wash
+    tube = (np.sin(2 * np.pi * 100 * tt) * 0.5 + np.sin(2 * np.pi * 200 * tt) * 0.25 + np.sin(2 * np.pi * 300 * tt) * 0.12).astype(np.float32)
+    tube *= (0.85 + 0.15 * np.sin(2 * np.pi * 0.3 * tt)).astype(np.float32)
+    wn = rng.standard_normal(N).astype(np.float32)
+    Wf = np.fft.rfft(wn); fq = np.fft.rfftfreq(N, 1 / SR); Wf[(fq < 80) | (fq > 600)] = 0
+    wn = np.fft.irfft(Wf, N).astype(np.float32); wn /= np.abs(wn).max() + 1e-9
+    wn *= (0.6 + 0.4 * np.sin(2 * np.pi * 0.07 * tt)).astype(np.float32)
+    rb = bed("hum.mp3", "lowpass=f=400") * db(-16) + np.stack([tube, tube], 1) * db(-36) + np.stack([wn, np.roll(wn, 700)], 1) * db(-25)
+    def beep(f=1400, d=0.09):
+        n = int(d * SR); x = np.arange(n) / SR; y = np.sin(2 * np.pi * f * x) * np.minimum(1, (d - x) / 0.01) * np.minimum(1, x / 0.003)
+        return np.stack([y, y], 1).astype(np.float32)
+    def hiss(d):
+        n = int(d * SR); x = rng.standard_normal(n).astype(np.float32)
+        X = np.fft.rfft(x); f = np.fft.rfftfreq(n, 1 / SR); X[(f < 1500) | (f > 9000)] = 0
+        x = np.fft.irfft(X, n).astype(np.float32); x /= np.abs(x).max() + 1e-9
+        return np.stack([x, x], 1)
+    # music bed (shared score), carved out in the pauses
+    mu = load("music.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    while len(loop) < N: loop = np.concatenate([loop, loop])
+    loop = loop[:N]
+    mp = [(0, -15), (K["bent"], -14), (K["me"], -21), (K["note"], -20), (K["clock"], -19), (K["man"], -18), (K["stop"], -16),
+          (K["kept"], -19), (K["past"], -14), (K["types"], -16), (K["speaks"], -13), (K["look"], -12), (K["mirror11"], -10),
+          (K["mirror"], -15), (K["behind"], -10), (K["down"], -14), (K["never"], -11), (K["ran"], -12), (K["still"], -9),
+          (K["ask"], -11), (DUR - 1, -14), (DUR, -40)]
+    for a, b in gaps:
+        mp += [(a - 0.05, None), (a + 0.12, -45), (b - 0.02, -45)]
+    mp = sorted(mp, key=lambda p: p[0]); out = []; last = -16
+    for tpt, g in mp:
+        if g is None: g = last
+        out.append((tpt, g)); last = g if g > -40 else last
+    m1 = loop * automation(out)
+    sil = np.ones((N, 1), np.float32)
+    for a, b in gaps:
+        sil *= 1 - (automation([(0, -100), (a + 0.02, -100), (a + 0.15, 0), (b - 0.05, 0), (b + 0.02, -100), (DUR + 1, -100)]) * 0.75)
+    rb = rb * sil
+    # ---- cues
+    step = noise_burst(0.07, 120, 1800, 31, 0.003)
+    def steps(t0, t1, gain, rate):
+        t = t0; i = 0
+        while t < t1:
+            place(step, t, gain - (i % 2) * 2); t += 1 / rate; i += 1
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0); place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(load("stretch.mp3"), 0.25, -15, fo=0.4, maxlen=1.0)                    # her head jerks
+    for i in range(4): place(beep(), 0.5 + i * 0.32, -26)                         # keys being pressed
+    place(stinger, K["backW"] - 0.03, -11, fo=0.4, maxlen=1.0)
+    for i in range(5): place(load("tick.mp3", "lowpass=f=1800"), K["bent"] + 0.15 + i * 0.17, -17, maxlen=0.15)   # spine cracks
+    place(boom, K["heelsW"], -11, fo=0.6, maxlen=1.6); place(whisper, K["heels"] + 0.2, -22, fi=0.2, fo=0.4, maxlen=1.2)
+    place(noise_burst(0.35, 800, 6000, 81, 0.02) * 0.6, K["note"], -15)
+    place(load("smile_stinger.mp3"), K["mirrorW"] - 0.05, -14, fo=0.5, maxlen=1.1)
+    place(hiss(K["man"] - K["clock"]), K["clock"], -30, fo=0.1)
+    steps(K["man"] + 0.1, K["man"] + 2.0, -20, 2.2)
+    place(door_open, K["doorW"] - 0.05, -21, fo=0.3, maxlen=0.6)
+    place(load("door_slam.mp3", "lowpass=f=2500"), K["stopW"] - 0.02, -16, maxlen=0.6)   # your palm on the glass
+    place(ding_far, K["kept"] + 0.3, -24, maxlen=1.0)
+    place(stinger, K["pastW"] + 0.1, -12, fo=0.4, maxlen=1.0)
+    steps(K["runsW"] - 0.1, K["runsW"] + 1.6, -17, 6.5)
+    t = K["types"] + 0.2; i = 0
+    while t < K["money"]:
+        place(beep(1400 + (i % 3) * 90), t, -24); t += 0.21 + (i % 2) * 0.07; i += 1
+    place(beep(520, 0.4), K["noW"] - 0.05, -22)                                     # transaction cancelled
+    place(whisper, K["speaks"] + 0.05, -15, fi=0.2, fo=0.5, maxlen=1.4)
+    place(stinger, K["lookUpW"] - 0.05, -12, fo=0.4, maxlen=0.9)
+    place(heartbeat, K["look"], -15, fi=0.1, fo=0.3, maxlen=K["mirror11"] - K["look"] + 0.2)
+    place(stinger, K["broken"], -8, fo=0.5, maxlen=1.2); place(boom, K["broken"] + 0.02, -8, fo=0.8, maxlen=2.0)
+    place(riser, K["behindW"] - 0.06 - len(riser) / SR, -18, fi=1.2, fo=0.004)
+    place(load("stretch.mp3", "asetrate=48000*0.7,aresample=48000"), K["standW"] - 0.1, -11, fo=0.5, maxlen=2.0)
+    place(stinger, K["behindW"] - 0.03, -6, fo=0.5, maxlen=1.4); place(boom, K["behindW"], -7, fo=0.8, maxlen=2.4)
+    place(load("buzz.mp3", "lowpass=f=3000"), K["emptyW"] - 0.1, -19, maxlen=0.6)       # tubes stutter
+    place(hiss(K["still"] - K["never"]), K["never"], -30, fo=0.1)
+    for i in range(3): place(load("button.mp3"), K["allW"] - 0.3 + i * 0.55, -18, maxlen=0.25)   # the tape jumps back
+    place(load("smile_stinger.mp3"), K["nightW"], -11, fo=0.5, maxlen=1.3)
+    place(boom, K["ranW"], -10, fo=0.6, maxlen=1.6)
+    place(whisper, K["still"] + 0.1, -11, fi=0.1, fo=0.5, maxlen=1.6)
+    place(stinger, K["thereW"] - 0.03, -6, fo=0.5, maxlen=1.4); place(boom, K["thereW"], -7, fo=0.8, maxlen=2.4)
+    place(load("buzz.mp3", "lowpass=f=3000"), K["ask"] + 1.6, -20, maxlen=0.35)
+    place(whisper, K["ask"] + 0.5, -15, fi=0.2, fo=0.5, maxlen=2.0)
+    place(boom, K["loop"] - 0.05, -14, fo=0.6, maxlen=1.0)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7, 8: part8, 9: part9, 10: part10}[PART]()
+if PART in (3, 4, 5, 6, 7, 8, 9, 10): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice
