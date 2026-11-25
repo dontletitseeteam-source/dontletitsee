@@ -295,12 +295,12 @@ P9_HOLD = 1.6
 
 P10 = [  # v4 captions: sentence case; [x] = mint accent, {x} = red threat
     ("A woman is using the ATM. Bent backwards. Her head is at her heels.", 0.12,
-     [(3, "A woman is"), (3, "using the ATM."), (2, "{Bent backwards.}"), (5, "Her head is {at her heels.}")]),
+     [(3, "A woman is"), (3, "using the ATM."), (2, "{Bent backwards.}"), (6, "Her head is {at her heels.}")]),
     ("Your first night as the ATM guard.", 0.45, [(4, "Your first night as"), (3, "the [ATM guard.]")]),
     ("The note says two rules.", 0.30, [(5, "The note says [two rules.]")]),
     ("One. One customer at a time.", 0.25, [(1, "One."), (5, "[One customer at a time.]")]),
     ("Two. Never look at the mirror above the machine.", 0.25, [(1, "Two."), (5, "Never look at the {mirror}"), (3, "above the machine.")]),
-    ("At three ten, a man walks up to the door.", 0.90, [(3, "At three ten,"), (6, "a man walks up to the door.")]),
+    ("At three ten, a man walks up to the door.", 0.90, [(3, "At three ten,"), (7, "a man walks up to the door.")]),
     ("She's still inside. You stop him. Rule one, kept.", 0.20, [(3, "She's still inside."), (3, "You stop him."), (3, "[Rule one, kept.]")]),
     ("He looks past you, and runs.", 0.30, [(4, "He looks {past you,}"), (2, "and {runs.}")]),
     ("She types upside down. She takes no money.", 0.70, [(4, "She types {upside down.}"), (4, "She takes no money.")]),
