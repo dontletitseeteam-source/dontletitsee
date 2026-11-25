@@ -293,5 +293,29 @@ P9 = [  # v4 captions: sentence case; [x] = signal-green accent, {x} = red threa
 ]
 P9_HOLD = 1.6
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8, 9: P9}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD, 9: P9_HOLD}
+P10 = [  # v4 captions: sentence case; [x] = mint accent, {x} = red threat
+    ("A woman is using the ATM. Bent backwards. Her head is at her heels.", 0.12,
+     [(3, "A woman is"), (3, "using the ATM."), (2, "{Bent backwards.}"), (5, "Her head is {at her heels.}")]),
+    ("Your first night as the ATM guard.", 0.45, [(4, "Your first night as"), (3, "the [ATM guard.]")]),
+    ("The note says two rules.", 0.30, [(5, "The note says [two rules.]")]),
+    ("One. One customer at a time.", 0.25, [(1, "One."), (5, "[One customer at a time.]")]),
+    ("Two. Never look at the mirror above the machine.", 0.25, [(1, "Two."), (5, "Never look at the {mirror}"), (3, "above the machine.")]),
+    ("At three ten, a man walks up to the door.", 0.90, [(3, "At three ten,"), (6, "a man walks up to the door.")]),
+    ("She's still inside. You stop him. Rule one, kept.", 0.20, [(3, "She's still inside."), (3, "You stop him."), (3, "[Rule one, kept.]")]),
+    ("He looks past you, and runs.", 0.30, [(4, "He looks {past you,}"), (2, "and {runs.}")]),
+    ("She types upside down. She takes no money.", 0.70, [(4, "She types {upside down.}"), (4, "She takes no money.")]),
+    ("Then she speaks. Guard, it's stuck. Look up.", 0.60, [(3, "Then she speaks."), (3, "[Guard, it's stuck.]"), (2, "{Look up.}")]),
+    ("You look at the mirror. Rule two, broken.", 0.60, [(5, "You look at the mirror."), (3, "{Rule two, broken.}")]),
+    ("In the mirror, nobody is at the machine.", 1.00, [(3, "In the mirror,"), (5, "{nobody} is at the machine.")]),
+    ("She's standing straight up, right behind you.", 0.40, [(4, "She's standing straight up,"), (3, "{right behind you.}")]),
+    ("You look down. The machine is empty.", 0.80, [(3, "You look down."), (4, "The machine is {empty.}")]),
+    ("She was never at the machine. She was behind you all night.", 0.70,
+     [(6, "She was never at the [machine.]"), (6, "She was {behind you} all night.")]),
+    ("That's why the man ran.", 0.40, [(5, "That's why the man {ran.}")]),
+    ("And she's still there.", 0.70, [(4, "And she's {still there.}")]),
+    ("Which rule would you break? Just type A or B.", 0.90, [(5, "Which rule would you break?"), (5, "Just type [A] or {B.}")]),
+]
+P10_HOLD = 1.6
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8, 9: P9, 10: P10}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD, 9: P9_HOLD, 10: P10_HOLD}

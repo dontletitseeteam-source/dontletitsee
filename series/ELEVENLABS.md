@@ -50,3 +50,4 @@ BLOCK C Part 1's voice was already paid before this balance and is saved in `blo
 | 2026-11-23 | NIGHT SHIFT · Episode 7 | voice (eleven_v4, Jack, 849 chars, v2: 145 words, 8 tags) + scribe transcript (0) | 849 | 19,324 |
 | 2026-11-24 | NIGHT SHIFT · Episode 8 (finale) | voice (eleven_v4, Jack, 837 chars, 145 words, 8 tags) + scribe transcript (0). REAL: account_get_usage 36,306 -> 37,143 used = 837 (voice costs exactly 1 credit/char) | 837 | **2,857 (real)** |
 | 2026-11-25 | NIGHT SHIFT S2 · Episode 1 (railway crossing; engine part 9) | voice (eleven_v4, Jack, 845 chars, 143 words, 8 tags) + scribe transcript (0). REAL: account_get_usage 37,143 -> 37,988 used = 845 | 845 | **2,012 (real)** |
+| 2026-11-26 | NIGHT SHIFT S2 · Episode 2 (ATM booth; engine part 10) | voice (eleven_v4, Jack, 820 chars, 143 words, 8 tags) + scribe transcript (0). Tool-quoted 820; account_get_usage before = 37,988 used | 820 | **1,192 (real)** |
