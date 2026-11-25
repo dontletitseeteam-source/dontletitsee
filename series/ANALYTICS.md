@@ -30,6 +30,30 @@ last shot, no card, loop to frame 1); the monster must move within 0.5 s; a face
 (Standalone format is now the standard: Ep 1-3 all beat BLOCK C on YouTube; see RESEARCH.md.)
 
 ## Day log
+## 2026-11-26 (IST 01:20 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| night-shift-p3 | Instagram | 82 | 146 | 135 | 1 | 0 | 0 / 0 | 16.0 s | 45.1% |
+| night-shift-p4 | Instagram | 58 | 127 | 108 | 2 | 0 | 1 / 0 | 21.5 s | 33.0% |
+| night-shift-p5 | Instagram | 34 | **920** | 782 | 22 | 0 | 0 / 2 | 22.7 s | 37.2% |
+| night-shift-p6 | Instagram | 10 | 127 | 112 | 1 | 1 | 0 / 0 | **12.3 s** | 46.6% |
+| night-shift-p1 / p2 / p3 | YouTube @dontletitsee (Analytics API, lags ~2 days) | 130 / 106 / 82 | 877 / 1,135 / 157 | n/a | 12 / 12 / 5 | 1 / 0 / 2 | n/a | 34 / 39 / 44 s (49 / 57 / 64%) | stay 56% / 60% / 49% |
+| night-shift-p4 / p5 / p6 | YouTube @dontletitsee | 58 / 34 / 10 | n/a (Data API quotaExceeded on both accounts this run) | | | | | | |
+| night-shift-p3 … p6 | YouTube @lexter2025 (youtube_rachel-brod) | 82-10 | n/a (quotaExceeded) | | | | | | |
+
+Second-by-second retention, Ep 3 (TVmj3tXeJFw, 69.9 s): 117% at 1% -> 104% at 6% -> **drop 1: 104% -> 75% at 6-16% (~4-11 s, the
+handover-note stretch again)** -> flat 60-57% from 46% to 86% -> **drop 2: 57% -> 42% at 86-96% (~60-67 s, the end/A-B)**. Third video
+with the same two drops; the end drop is milder than Ep 2's (57->42 vs 38->15). Ep 4 curve still empty (not enough data).
+
+Lessons:
+- Ep 6 (cinema, "a screen for a face") is the weakest Instagram start of the season: 127 plays at 10 h, skip 46.6%, avg watch 12.3 s
+  (Ep 5 751 at 10 h). Its wrongness is a DETAIL inside a normal outline (a man sitting in a seat), not a wrong silhouette. Detail-wrong
+  monsters are now 0 of 3 (Ep 1 toe tag, Ep 3 fingers, Ep 6 screen face); silhouette-wrong 3 of 3 strong (Ep 2, 4, 5). Rule holds at 6 posts.
+- Ep 5 kept growing on Instagram (751 -> 920) with no comments: strong reach, weak choice card on IG (A/B comments 0 on Ep 4-6 IG).
+- Ep 1-3 YouTube stay rate 49-60%, avg view 49-64%: the season format holds ~half the audience on YouTube.
+- Applied to Season 2 Ep 2 (2026-11-29): the monster is silhouette-wrong at thumbnail size (frame 1 + cover show the whole outline),
+  YouTube title keeps the wrong detail in the first 6 words; rules note stays <= 3 s.
+
 ## 2026-11-25 (IST 01:20 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
