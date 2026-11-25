@@ -4,9 +4,34 @@ Workspace: reuses `night-shift/engine` (same v4 engine). Season 2 episode n = en
 `p10` = Ep 2 ...); outputs are `outputs/night-shift-2-p<n>.mp4/.jpg`. Render: `cd night-shift/engine && node render.js <8+n> ...`,
 `python3 mix.py <8+n>`, `bash finalize.sh <8+n> NIGHTSHIFT2`.
 
-**Status 2026-11-25 ~02:25 IST (creator run): Episode 1 QUEUED for 2026-11-28.** Real ElevenLabs balance 2,012 until the
-2026-11-30 17:36 IST reset: Ep 2 (11-29) and Ep 3 (11-30) must each stay <= 850 characters (both are built before the reset).
-Next: Ep 2 "The ATM guard" for 2026-11-29 (standalone; A/B votes only break ties between ready episodes).
+**Status 2026-11-26 ~01:45 IST (creator run): Episode 2 QUEUED for 2026-11-29.** Real ElevenLabs balance 1,192 until the
+2026-11-30 17:36 IST reset: Ep 3 (11-30, built 11-27) must stay <= 850 characters. Next: Ep 3 "The night bus conductor".
+(YouTube Data API returned quotaExceeded on both accounts in the 11-26 review; Analytics API still worked.)
+
+## Episode 2 "The ATM booth" — QUEUED for 2026-11-29
+- Output: `outputs/night-shift-2-p2.mp4` (59.3 s, 10.2 MB, -14.4 LUFS) + `outputs/night-shift-2-p2.jpg` (cover: her whole arch at
+  the machine, "She's bent / {backwards.}", "NIGHT SHIFT · the ATM booth"); jsDelivr @ `de3daae` (mp4 + jpg HTTP 200 first try).
+- Voice: 820 credits (REAL, account_get_usage 37,988 -> 38,808), transcript 0. 18 lines / 143 words / 8 tags. Raw take 54.3 s,
+  gaps widened to 59.3 s.
+- Look (v4): own palette = hard cold-white tube light in a glass booth, cobalt sign band, one sodium streetlight on a wet road,
+  green-mono CCTV. New files: `engine/sets_atm.js` (booth world, `arch` = her backbend side silhouette with typing fingers,
+  `tall` = her standing, hair over the face, `guard` with cap, note, keypad close with pale upside-down hands, `cctv` feed with
+  timestamp (the only clock: 03:10), `mirrorView`), `part10.js`, mix.py `part10` (tube hum, fan, traffic wash, synth key beeps,
+  footsteps + running, spine cracks, CCTV hiss, tape-jump clicks). Reuses `X.faceClose` for her upside-down talking face.
+- Story (clarity test): "A new ATM guard has two rules: one customer at a time, never look at the mirror. A woman bent backwards
+  is using the machine; he stops a man at the door (rule 1 kept), the man looks past him and runs. She asks him to look up; in the
+  mirror nobody is at the machine, she is standing behind him. The machine is empty; the CCTV shows she was behind him all night —
+  that's why the man ran." Plant: the 03:10 CCTV insert (line 6) already shows her faintly behind you.
+- 23 shots: bright booth hook (head jerk at 0.3 s, cut closer at 1.3 s), arch profile (dutch), floor-level heels + upside-down face
+  (rack focus), you getting up off the plastic chair, note (1.8 s), door sticker, tilt up to the mirror, CCTV 03:10, the man
+  walking up, over-shoulder through glass, arm out at the door, your face, the man's eyes, the man running, keypad with her hands,
+  her upside-down face talking, your face, punch-in on the mirror, mirror (empty), SCALE in the mirror (her far taller than you,
+  head bent), empty machine with tube stutter, CCTV rolling back through the night, CCTV with the man looking past you, your face
+  with her face lowering behind (focus pull), A/B over the last shot (you at the door, her right behind you), loop cut to frame 1.
+- Choice offered: **Which rule would you break? A) let the man in  B) look in the mirror** ("Just type A or B").
+- Hook title (frame 1, 1.3 s): "Never look at the mirror." YT title: "Bent backwards, a woman used my ATM upside down at 3 AM |
+  NIGHT SHIFT #shorts" (silhouette-wrong detail in the first 2 words).
+- Measure: vs Ep 1 (crossing) and Season 1 Ep 5/6 at 10 h (IG 751 vs 127 plays); does a silhouette-wrong woman match Ep 5?
 
 ## Episode 1 "The railway level crossing" — QUEUED for 2026-11-28
 - Output: `outputs/night-shift-2-p1.mp4` (59.7 s, 10.2 MB, −14.3 LUFS; stems VO −18.1 dB RMS, SFX −27.5, music −34.5, beds −44.8)
