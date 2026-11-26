@@ -1,832 +1,832 @@
 {
-  "channel": {
-    "name": "Don't Let It See",
-    "instagram": {
-      "composio_account": "instagram_deash-cooker",
-      "username": "dontletitsee"
-    },
-    "youtube": {
-      "composio_account": "youtube_regin-mont",
-      "channel_id": "UCz8ROLj5ujxy15MeVs3QA2Q",
-      "handle": "@dontletitsee"
-    },
-    "post_time_ist": "15:00",
-    "hashtags": "#horror #scarystories #horrorstory"
+ "channel": {
+  "name": "Don't Let It See",
+  "instagram": {
+   "composio_account": "instagram_deash-cooker",
+   "username": "dontletitsee"
   },
-  "posts": [
-    {
-      "id": "floor0-p1",
-      "date": "2026-11-09",
-      "local_video": "C:/reels/floor-0/FLOOR_0_part1.mp4",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/a4d49760-a142-4ea6-810c-14598060ad5a.mp4",
-      "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/5a7874cf-8693-46a7-8959-477179eea783.jpg",
-      "ig_caption": "The elevator in my building just stopped at a floor that doesn't exist.\n\nFLOOR 0 · Part 1 of 3\nA or B? Tell me in the comments 👇\nPart 2 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "The elevator stopped at a floor that doesn't exist | FLOOR 0 · Part 1 #shorts",
-      "yt_description": "The elevator in your building just stopped at a floor that doesn't exist. Something inside is texting you.\n\nFLOOR 0 · Part 1 of 3. A or B? Tell me in the comments. Part 2 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18123140524807960",
-        "media_id": "18124268906319453",
-        "permalink": "https://www.instagram.com/reel/Dfg_wMkDxMV/",
-        "updated": "2026-11-09T15:00:11+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "Dwb3U1DZWv0",
-        "url": "https://youtube.com/shorts/Dwb3U1DZWv0",
-        "note": "uploaded manually by the owner on 2026-11-09 (Composio quota was exhausted)",
-        "updated": "2026-11-09T10:34:25Z"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "fYJ1fkaSb9I",
-        "url": "https://youtube.com/shorts/fYJ1fkaSb9I",
-        "updated": "2026-11-10T08:06:00Z"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "Dwb3U1DZWv0",
-          "url": "https://youtube.com/shorts/Dwb3U1DZWv0",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "fYJ1fkaSb9I",
-          "url": "https://youtube.com/shorts/fYJ1fkaSb9I",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
+  "youtube": {
+   "composio_account": "youtube_regin-mont",
+   "channel_id": "UCz8ROLj5ujxy15MeVs3QA2Q",
+   "handle": "@dontletitsee"
+  },
+  "post_time_ist": "15:00",
+  "hashtags": "#horror #scarystories #horrorstory"
+ },
+ "posts": [
+  {
+   "id": "floor0-p1",
+   "date": "2026-11-09",
+   "local_video": "C:/reels/floor-0/FLOOR_0_part1.mp4",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/a4d49760-a142-4ea6-810c-14598060ad5a.mp4",
+   "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/5a7874cf-8693-46a7-8959-477179eea783.jpg",
+   "ig_caption": "The elevator in my building just stopped at a floor that doesn't exist.\n\nFLOOR 0 · Part 1 of 3\nA or B? Tell me in the comments 👇\nPart 2 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "The elevator stopped at a floor that doesn't exist | FLOOR 0 · Part 1 #shorts",
+   "yt_description": "The elevator in your building just stopped at a floor that doesn't exist. Something inside is texting you.\n\nFLOOR 0 · Part 1 of 3. A or B? Tell me in the comments. Part 2 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18123140524807960",
+    "media_id": "18124268906319453",
+    "permalink": "https://www.instagram.com/reel/Dfg_wMkDxMV/",
+    "updated": "2026-11-09T15:00:11+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "Dwb3U1DZWv0",
+    "url": "https://youtube.com/shorts/Dwb3U1DZWv0",
+    "note": "uploaded manually by the owner on 2026-11-09 (Composio quota was exhausted)",
+    "updated": "2026-11-09T10:34:25Z"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "fYJ1fkaSb9I",
+    "url": "https://youtube.com/shorts/fYJ1fkaSb9I",
+    "updated": "2026-11-10T08:06:00Z"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "Dwb3U1DZWv0",
+     "url": "https://youtube.com/shorts/Dwb3U1DZWv0",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
     },
-    {
-      "id": "floor0-p2",
-      "date": "2026-11-10",
-      "local_video": "C:/reels/floor-0/FLOOR_0_part2.mp4",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/c8527513-5f63-4b2a-8b4f-46284e10a045.mp4",
-      "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/6a6d2250-2ca7-4882-a686-fc543cf01350.jpg",
-      "ig_caption": "I went home. Someone was already there.\n\nFLOOR 0 · Part 2 of 3\nMissed Part 1? It's on the profile.\nPart 3 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "I went home. Someone was already there. | FLOOR 0 · Part 2 #shorts",
-      "yt_description": "You took the stairs home. Your door was open. Someone was on your couch.\n\nFLOOR 0 · Part 2 of 3. Part 3 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18123411505807960",
-        "media_id": "17961343959258765",
-        "permalink": "https://www.instagram.com/reel/Dfjm753FI6_/",
-        "updated": "2026-11-10T09:45:00Z"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "5BlBOAPvHxg",
-        "url": "https://youtube.com/shorts/5BlBOAPvHxg",
-        "updated": "2026-11-10T09:45:00Z",
-        "note": "uploaded private 13:32 IST; publish at 14:55+"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "p_vUipPE5Do",
-        "url": "https://youtube.com/shorts/p_vUipPE5Do",
-        "updated": "2026-11-10T09:45:00Z",
-        "note": "uploaded private 13:32 IST; publish at 14:55+"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "5BlBOAPvHxg",
-          "url": "https://youtube.com/shorts/5BlBOAPvHxg",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "p_vUipPE5Do",
-          "url": "https://youtube.com/shorts/p_vUipPE5Do",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "floor0-p3",
-      "date": "2026-11-11",
-      "local_video": "C:/reels/floor-0/FLOOR_0_part3.mp4",
-      "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/af628cf8-f879-4b1a-9f3b-a24605c9d315.mp4",
-      "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/8e646521-276a-4327-b68d-e4498b5ddbf0.jpg",
-      "ig_caption": "I got in. There was only one button.\n\nFLOOR 0 · Part 3 of 3 (finale)\nNow go back and read Part 1's texts again.\nA new series starts tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "There was only one button: 0 | FLOOR 0 · Part 3 (finale) #shorts",
-      "yt_description": "You got in. Floor 0 is your lobby, backwards, and it is full.\n\nFLOOR 0 · Part 3 of 3 (finale). Watch Part 1 again after this. A new series starts tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18123704338807960",
-        "media_id": "18139990045726049",
-        "permalink": "https://www.instagram.com/reel/DfmMBQ7nNqn/",
-        "updated": "2026-11-11T09:46:00Z"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "TND9mmqAZtw",
-        "url": "https://youtube.com/shorts/TND9mmqAZtw",
-        "updated": "2026-11-11T09:46:00Z"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "JCo1PoJNhIM",
-        "url": "https://youtube.com/shorts/JCo1PoJNhIM",
-        "updated": "2026-11-11T09:46:00Z"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "TND9mmqAZtw",
-          "url": "https://youtube.com/shorts/TND9mmqAZtw",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "JCo1PoJNhIM",
-          "url": "https://youtube.com/shorts/JCo1PoJNhIM",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p1",
-      "date": "2026-11-12",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@66cf2851278a85cde10d52e3881d83f9392c4556/outputs/block-c-p1.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@66cf2851278a85cde10d52e3881d83f9392c4556/outputs/block-c-p1.jpg",
-      "ig_caption": "The last student in my hostel room left a list of rules. Roll call is at 12:07 AM. The warden died six years ago.\n\nBLOCK C · Part 1\nIt just called your name. A) answer \"Present\" or B) stay silent? Comment A or B 👇\nPart 2 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "The dead warden still takes roll call at 12:07 AM | BLOCK C · Part 1 #shorts",
-      "yt_description": "You move into Room 13, Block C. Taped inside the wardrobe: the night rules. The warden died six years ago. Roll call never stopped. Tonight it calls your name.\n\nBLOCK C · Part 1. A) answer \"Present\" or B) stay silent? Comment A or B. Part 2 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18124009273807960",
-        "media_id": "17998129476019732",
-        "permalink": "https://www.instagram.com/reel/DfowyuoguKp/",
-        "updated": "2026-11-12T09:45:11Z"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "hxEWbQl3dCE",
-        "url": "https://youtube.com/shorts/hxEWbQl3dCE",
-        "updated": "2026-11-12T09:46:00Z"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "OkUHaOECktc",
-        "url": "https://youtube.com/shorts/OkUHaOECktc",
-        "updated": "2026-11-12T09:46:00Z"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "hxEWbQl3dCE",
-          "url": "https://youtube.com/shorts/hxEWbQl3dCE",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "OkUHaOECktc",
-          "url": "https://youtube.com/shorts/OkUHaOECktc",
-          "updated": "2026-11-12T14:02:50+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p2",
-      "date": "2026-11-13",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@4001efdba7612a2f7eba086b7917da34594bfb28/outputs/block-c-p2.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@4001efdba7612a2f7eba086b7917da34594bfb28/outputs/block-c-p2.jpg",
-      "ig_caption": "A dead warden called my name at 12:07 AM. I answered. Now something is knocking on my hostel door... in my voice.\n\nBLOCK C · Part 2\nA) open the door or B) look under the gap? Comment A or B 👇\nPart 3 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "Something knocked on my hostel door... in my voice | BLOCK C · Part 2 #shorts",
-      "yt_description": "You answered the dead warden's roll call. Now your name is in the register in red ink, your roommate's bed is empty, and something outside your door is asking to come in. In your voice.\n\nBLOCK C · Part 2. A) open the door or B) look under the gap? Comment A or B. Part 1 is on the channel. Part 3 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18124295809807960",
-        "media_id": "18120370895001266",
-        "permalink": "https://www.instagram.com/reel/DfrVlvpiem0/",
-        "updated": "2026-11-13T09:45:32+00:00"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "WTSKylWgYpM",
-        "url": "https://youtube.com/shorts/WTSKylWgYpM",
-        "updated": "2026-11-13T09:45:32+00:00"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "9VpoKsAuj_Y",
-        "url": "https://youtube.com/shorts/9VpoKsAuj_Y",
-        "updated": "2026-11-13T09:45:32+00:00"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "WTSKylWgYpM",
-          "url": "https://youtube.com/shorts/WTSKylWgYpM",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "9VpoKsAuj_Y",
-          "url": "https://youtube.com/shorts/9VpoKsAuj_Y",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p3",
-      "date": "2026-11-14",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@8c0764dba06bb1043251c369618c1e7f471748bc/outputs/block-c-p3.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@8c0764dba06bb1043251c369618c1e7f471748bc/outputs/block-c-p3.jpg",
-      "ig_caption": "I opened my hostel door. Nobody there. Just tomorrow's register, with my name marked LEFT. And my roommate texts that he's been in the washroom since 12... so what was breathing under his bed all night?\n\nBLOCK C · Part 3\nA) look under the bed or B) get out of the room? Comment A or B 👇 the most votes decide Part 4.\nPart 4 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "My roommate is in the washroom. So what's breathing under his bed? | BLOCK C · Part 3 #shorts",
-      "yt_description": "Something outside your hostel room talked in your voice, and you opened the door. Nobody. Only tomorrow's roll-call register on the floor, your name in red, and one word where the mark should be: LEFT. Your roommate has been in the washroom since 12. So what was breathing under his blanket all night?\n\nBLOCK C · Part 3. A) look under the bed or B) get out of the room? Comment A or B, the most votes decide Part 4. Parts 1-2 are on the channel. Part 4 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18124615606807960",
-        "media_id": "18025383203947619",
-        "permalink": "https://www.instagram.com/reel/Dft6ciNglpN/",
-        "updated": "2026-11-14T09:47:00Z"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "qlkqMo9AiCM",
-        "url": "https://youtube.com/shorts/qlkqMo9AiCM",
-        "updated": "2026-11-14T09:48:00Z",
-        "note": "uploaded private; publish at 14:55 IST"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "EXSttZutpns",
-        "url": "https://youtube.com/shorts/EXSttZutpns",
-        "updated": "2026-11-14T09:48:00Z",
-        "note": "uploaded private; publish at 14:55 IST"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "qlkqMo9AiCM",
-          "url": "https://youtube.com/shorts/qlkqMo9AiCM",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "EXSttZutpns",
-          "url": "https://youtube.com/shorts/EXSttZutpns",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p4",
-      "date": "2026-11-15",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@7b788ef84e746bf9b58f596e5cbf812f0d39586f/outputs/block-c-p4.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@7b788ef84e746bf9b58f596e5cbf812f0d39586f/outputs/block-c-p4.jpg",
-      "ig_caption": "I looked under my roommate's bed. It was wrapped in his blanket. It had no face. And it whispered \"present\" in MY voice.\n\nBLOCK C · Part 4\nA) follow them to the mess or B) hide in the washroom? Comment A or B 👇 the most votes decide Part 5.\nPart 5 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "I looked under my roommate's bed. It had no face. | BLOCK C · Part 4 #shorts",
-      "yt_description": "Something was breathing under your roommate's bed, and you looked. A shape too long to be a person, wrapped in his blanket, no face, whispering \"present\" in your voice. Then two hours vanish, and at 3 AM the mess bell rings for the whole hostel.\n\nBLOCK C · Part 4. A) follow them to the mess or B) hide in the washroom? Comment A or B, the most votes decide Part 5. Parts 1-3 are on the channel. Part 5 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18124940023807960",
-        "media_id": "18121550692965483",
-        "permalink": "https://www.instagram.com/reel/DfwfLeNEgSS/",
-        "updated": "2026-11-15T09:45:32.479558+00:00"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "ukrud0UGmYY",
-        "url": "https://youtube.com/shorts/ukrud0UGmYY",
-        "updated": "2026-11-15T09:45:32.479558+00:00"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "7k7CA5H1L6I",
-        "url": "https://youtube.com/shorts/7k7CA5H1L6I",
-        "updated": "2026-11-15T09:45:32.479558+00:00"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "ukrud0UGmYY",
-          "url": "https://youtube.com/shorts/ukrud0UGmYY",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "7k7CA5H1L6I",
-          "url": "https://youtube.com/shorts/7k7CA5H1L6I",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p5",
-      "date": "2026-11-16",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@927c89cd98ae0deb61957cd8c4a669334bcacd12/outputs/block-c-p5.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@927c89cd98ae0deb61957cd8c4a669334bcacd12/outputs/block-c-p5.jpg",
-      "ig_caption": "42 students were eating dinner in my hostel mess at 3 AM. Nobody was chewing. And the only empty chair had a plate with my room number on it... and tomorrow's date.\n\nBLOCK C · Part 5\nA) leave the group or B) scroll up and see who member 43 is? Comment A or B 👇 the most votes decide Part 6.\nPart 6 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "42 students eating dinner at 3 AM. Nobody is chewing. | BLOCK C · Part 5 #shorts",
-      "yt_description": "At 3 AM the whole hostel walks to the mess. 42 students, sitting perfectly straight, lifting their spoons in unison, nobody chewing. A very tall warden serves behind the counter. At the end of the last table, one empty chair: a covered plate with a card on top. Room 13. And tomorrow's date. Then every head turns toward you, and the group chat says 43 members.\n\nBLOCK C · Part 5. A) leave the group or B) scroll up and see who member 43 is? Comment A or B, the most votes decide Part 6. Parts 1-4 are on the channel. Part 6 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18125280583807960",
-        "media_id": "18170937118477416",
-        "permalink": "https://www.instagram.com/reel/DfzEAVqiXXT/",
-        "updated": "2026-11-16T15:00:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "nZ98OLaMWPw",
-        "url": "https://youtube.com/shorts/nZ98OLaMWPw",
-        "updated": "2026-11-16T15:00:00+05:30",
-        "note": "uploaded private; publish at 14:55 IST"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "YQQRKnVqCzU",
-        "url": "https://youtube.com/shorts/YQQRKnVqCzU",
-        "updated": "2026-11-16T15:00:00+05:30",
-        "note": "uploaded private; publish at 14:55 IST"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "nZ98OLaMWPw",
-          "url": "https://youtube.com/shorts/nZ98OLaMWPw",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "YQQRKnVqCzU",
-          "url": "https://youtube.com/shorts/YQQRKnVqCzU",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p6",
-      "date": "2026-11-17",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@2a87c8bfabc4b6a37292d2caa30610df2af04a6e/outputs/block-c-p6.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@2a87c8bfabc4b6a37292d2caa30610df2af04a6e/outputs/block-c-p6.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/2a87c8bfabc4b6a37292d2caa30610df2af04a6e/outputs/block-c-p6.mp4",
-      "ig_caption": "Someone new joined my hostel group chat at 3 AM. Same number as mine. Same room. And their profile photo is me... taken from behind, one second ago.\n\nBLOCK C · Part 6\nA) warn everyone or B) stay quiet? Comment A or B 👇 the most votes decide Part 7.\nPart 7 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "The new member of my hostel group chat has my face | BLOCK C #shorts",
-      "yt_description": "At 3 AM you leave the hostel group chat. Seconds later, member 43 adds you back. Same number as yours. Same room. Their profile photo is you, standing in the mess hall, taken from behind one second ago. Then 'you' start sending messages, asking someone to open their door.\n\nBLOCK C · Part 6 of 8. A) warn everyone or B) stay quiet? Comment A or B, the most votes decide Part 7. Parts 1-5 are on the channel. Part 7 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18125595751807960",
-        "media_id": "18099611141131915",
-        "permalink": "https://www.instagram.com/reel/Df1oxIiDJn7/",
-        "updated": "2026-11-17T15:16:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "q3U-mDEVkEU",
-        "url": "https://youtube.com/shorts/q3U-mDEVkEU",
-        "updated": "2026-11-17T15:16:00+05:30",
-        "note": "uploaded private; publish at 14:55 IST"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "aNEiQD4olF0",
-        "url": "https://youtube.com/shorts/aNEiQD4olF0",
-        "updated": "2026-11-17T15:16:00+05:30",
-        "note": "uploaded private; publish at 14:55 IST"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "q3U-mDEVkEU",
-          "url": "https://youtube.com/shorts/q3U-mDEVkEU",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "aNEiQD4olF0",
-          "url": "https://youtube.com/shorts/aNEiQD4olF0",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p7",
-      "date": "2026-11-18",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@f099e9c1565679c93543b767fd99486198de2e99/outputs/block-c-p7.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@f099e9c1565679c93543b767fd99486198de2e99/outputs/block-c-p7.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/f099e9c1565679c93543b767fd99486198de2e99/outputs/block-c-p7.mp4",
-      "ig_caption": "I warned my hostel group chat: \"that's not me, don't open your doors.\" One second later, someone with my number sent the exact same words. Then I found the rule the last student scratched out.\n\nBLOCK C · Part 7\nA) run for the gate or B) find who wrote the list? Comment A or B 👇 the most votes decide the FINALE.\nPart 8 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "Someone in my hostel group chat sent my message before I did | BLOCK C #shorts",
-      "yt_description": "At 3 AM, 42 students stand outside one open hostel door. You warn the group chat: that's not me, don't open your doors. One second later, member 43, with your number and your room, sends the exact same words. Then the lights go out, the dead warden calls your name for the second time, and the scratched-out rule 6 shows through the paper.\n\nBLOCK C · Part 7 of 8. A) run for the gate or B) find who wrote the list? Comment A or B, the most votes decide the finale. Parts 1-6 are on the channel. The finale is tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18125907073807960",
-        "media_id": "18221781823348380",
-        "permalink": "https://www.instagram.com/reel/Df4NkEDkebT/",
-        "updated": "2026-11-18T09:46:00Z"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "OWkQH00IxPY",
-        "url": "https://youtube.com/shorts/OWkQH00IxPY",
-        "updated": "2026-11-18T09:46:00Z",
-        "note": "uploaded private before 14:55 IST; publish later"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "PaO36I-cqHI",
-        "url": "https://youtube.com/shorts/PaO36I-cqHI",
-        "updated": "2026-11-18T09:46:00Z",
-        "note": "uploaded private before 14:55 IST; publish later"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "OWkQH00IxPY",
-          "url": "https://youtube.com/shorts/OWkQH00IxPY",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "PaO36I-cqHI",
-          "url": "https://youtube.com/shorts/PaO36I-cqHI",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "block-c-p8",
-      "date": "2026-11-19",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@a9f1c67319030ee0bb7952e9e16b0bd86cd4623f/outputs/block-c-p8.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@a9f1c67319030ee0bb7952e9e16b0bd86cd4623f/outputs/block-c-p8.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/a9f1c67319030ee0bb7952e9e16b0bd86cd4623f/outputs/block-c-p8.mp4",
-      "ig_caption": "My hostel register says I left six years ago. Then I found hundreds of tally marks behind the wardrobe, and my own name under them, in my handwriting.\n\nBLOCK C · Part 8 (FINALE)\nWould you answer when it calls your name? A) yes or B) never. Comment A or B 👇\nA new story starts tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "My hostel register says I left six years ago. I'm still in Room 13. | BLOCK C #shorts",
-      "yt_description": "At 3 AM the dead warden is coming up the stairs. Instead of running, you look for whoever wrote the night rules taped in your wardrobe. Behind it: hundreds of tally marks scratched into the wall, and your name under them, in your own handwriting. Then the door opens on its own and the warden holds out the register, and a pen.\n\nBLOCK C · Part 8 of 8, the finale. Would you answer when it calls your name? Comment A (yes) or B (never). Parts 1-7 are on the channel. A new story starts tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18126204310807960",
-        "media_id": "18117069296233249",
-        "permalink": "https://www.instagram.com/reel/Df6yXqNDd8J/",
-        "updated": "2026-11-19T15:15:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "EYT6ES7onKs",
-        "url": "https://youtube.com/shorts/EYT6ES7onKs",
-        "updated": "2026-11-19T15:15:00+05:30",
-        "note": "uploaded private pre-14:55; publish at 14:55+"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "3RRonpLzlQk",
-        "url": "https://youtube.com/shorts/3RRonpLzlQk",
-        "updated": "2026-11-19T15:15:00+05:30",
-        "note": "uploaded private pre-14:55; publish at 14:55+"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "EYT6ES7onKs",
-          "url": "https://youtube.com/shorts/EYT6ES7onKs",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "3RRonpLzlQk",
-          "url": "https://youtube.com/shorts/3RRonpLzlQk",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "night-shift-p1",
-      "date": "2026-11-20",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33a76fa03b04e5866051ff2ca3aa0916d9e0493e/outputs/night-shift-p1.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33a76fa03b04e5866051ff2ca3aa0916d9e0493e/outputs/night-shift-p1.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/33a76fa03b04e5866051ff2ca3aa0916d9e0493e/outputs/night-shift-p1.mp4",
-      "ig_caption": "A barefoot man came to my pharmacy counter at 2 AM. There was a tag tied to his big toe, and his name was in today's obituaries.\n\nNIGHT SHIFT · Episode 1\nWhich rule would you break? A) rule 2, let him wait inside, or B) rule 3, ask why he's cold. Comment A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "A barefoot man with a toe tag came for his medicine at 2 AM | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night shift at an all-night pharmacy. The last pharmacist left you three rules, and a note: I left early. Sorry. At 2 AM a barefoot man slides a wet, freezing prescription across the counter. There's a paper tag on his big toe, and his name is in today's obituaries. Then you ask the one question you were told never to ask.\n\nNIGHT SHIFT · Episode 1: every episode is a new night job with its own rules. Which rule would you break? Comment A (rule 2, let him wait inside) or B (rule 3, ask why he's cold). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18126501538807960",
-        "media_id": "17880950040563546",
-        "permalink": "https://www.instagram.com/reel/Df9XJtnGW9d/",
-        "updated": "2026-11-20T15:15:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "XC9NOCwKw6E",
-        "url": "https://youtube.com/shorts/XC9NOCwKw6E",
-        "updated": "2026-11-20T15:16:00+05:30",
-        "note": "uploaded private pre-14:55; publish at 14:55+"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "lv0pIt8cbJI",
-        "url": "https://youtube.com/shorts/lv0pIt8cbJI",
-        "updated": "2026-11-20T15:16:00+05:30",
-        "note": "uploaded private pre-14:55; publish at 14:55+"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "XC9NOCwKw6E",
-          "url": "https://youtube.com/shorts/XC9NOCwKw6E",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "lv0pIt8cbJI",
-          "url": "https://youtube.com/shorts/lv0pIt8cbJI",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "night-shift-p2",
-      "date": "2026-11-21",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@bb4c237adab9a40b684435fa5f617dd52fbd3a6a/outputs/night-shift-p2.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@bb4c237adab9a40b684435fa5f617dd52fbd3a6a/outputs/night-shift-p2.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/bb4c237adab9a40b684435fa5f617dd52fbd3a6a/outputs/night-shift-p2.mp4",
-      "ig_caption": "My sleeper coach has 72 berths. I counted 73 passengers. The extra one was hanging upside down from a top berth, his face level with mine.\n\nNIGHT SHIFT · Episode 2\nWhich rule would you break? A) rule 2, count again, or B) rule 3, look up. Comment A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "A man hung upside down from my train's top berth, face level with mine | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as the ticket checker on a sleeper train. Coach S7 has 72 berths, but you count 73. The last checker left three rules on the chart, and one line in red: there is no berth 73, don't sit in it. Then someone above you starts counting too. You look up.\n\nNIGHT SHIFT · Episode 2: every episode is a new night job with its own rules. Which rule would you break? Comment A (rule 2, count again) or B (rule 3, look up). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18126810613807960",
-        "media_id": "18139497040738111",
-        "permalink": "https://www.instagram.com/reel/Df_78pmlLF_/",
-        "updated": "2026-11-21T15:20:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "DUkQyIGaxU4",
-        "url": "https://youtube.com/shorts/DUkQyIGaxU4",
-        "updated": "2026-11-21T15:20:00+05:30",
-        "note": "published public (privacyStatus confirmed public)"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "2wXHxjUg0GA",
-        "url": "https://youtube.com/shorts/2wXHxjUg0GA",
-        "updated": "2026-11-21T15:20:00+05:30",
-        "note": "published public (privacyStatus confirmed public)"
-      },
-      "post": {
-        "youtube": {
-          "status": "published",
-          "video_id": "DUkQyIGaxU4",
-          "url": "https://youtube.com/shorts/DUkQyIGaxU4",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        },
-        "youtube_old": {
-          "status": "published",
-          "video_id": "2wXHxjUg0GA",
-          "url": "https://youtube.com/shorts/2wXHxjUg0GA",
-          "updated": "2026-11-21T11:02:18+00:00",
-          "note": "found existing public upload via duplicate check"
-        }
-      }
-    },
-    {
-      "id": "night-shift-p3",
-      "date": "2026-11-22",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@80b0bcc938a3f2ea1267f27c7b5a8c12011485cc/outputs/night-shift-p3.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@80b0bcc938a3f2ea1267f27c7b5a8c12011485cc/outputs/night-shift-p3.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/80b0bcc938a3f2ea1267f27c7b5a8c12011485cc/outputs/night-shift-p3.mp4",
-      "ig_caption": "My last delivery was at 2:47 AM. A grey hand with seven fingers reached through the door chain for the bag. Then the order receipt said who placed it: my own phone.\n\nNIGHT SHIFT · Episode 3\nWhich rule would you break? A) rule 2, hand the bag through the chain, or B) rule 3, count her fingers. Comment A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "A hand with seven fingers took my 2:47 AM delivery through the door chain | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as a food-delivery rider. At 2:47 AM the app sends you to 47 Lantern Lane, a street that wasn't on the map yesterday. The last rider pinned three rules in the group chat, and one line in red: my phone ordered it, not me. The door opens on a chain. A whisper asks you to hand it over.\n\nNIGHT SHIFT · Episode 3: every episode is a new night job with its own rules. Which rule would you break? Comment A (rule 2, hand the bag through the chain) or B (rule 3, count her fingers). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18127121122807960",
-        "media_id": "17919045621549826",
-        "permalink": "https://www.instagram.com/reel/DgCgw0nlOCG/",
-        "updated": "2026-11-22T15:16:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "TVmj3tXeJFw",
-        "url": "https://youtube.com/shorts/TVmj3tXeJFw",
-        "updated": "2026-11-22T15:16:00+05:30",
-        "note": "uploaded private; publish at/after 14:55 IST"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "2BR0YX0yVNU",
-        "url": "https://youtube.com/shorts/2BR0YX0yVNU",
-        "updated": "2026-11-22T15:16:00+05:30",
-        "note": "uploaded private; publish at/after 14:55 IST"
-      }
-    },
-    {
-      "id": "night-shift-p4",
-      "date": "2026-11-23",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@fc4961ac781c45fc8a1cb22ae07b69364eb98c5a/outputs/night-shift-p4.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@fc4961ac781c45fc8a1cb22ae07b69364eb98c5a/outputs/night-shift-p4.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/fc4961ac781c45fc8a1cb22ae07b69364eb98c5a/outputs/night-shift-p4.mp4",
-      "ig_caption": "At 2:22 AM a white car rolled into my petrol pump with no driver. Every passenger inside sat facing backwards. Then I read the number plate. It was my bike's.\n\nNIGHT SHIFT · Episode 4\nWhich rule would you break? A) step behind the car, or B) read the plate. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "A car with no driver stopped at my pump. Everyone inside sat facing backwards | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night shift at a highway petrol pump. At 2:22 AM a white car rolls in to pump 3. Nobody is driving. Every passenger sits facing backwards. The last attendant left three rules on a note: fill the white car and take no money, never stand behind it, never read the number plate. Under them: don't wait for me.\n\nNIGHT SHIFT · Episode 4: every episode is a new night job with its own rules. Which rule would you break? Just type A (step behind the car) or B (read the plate). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18127445755807960",
-        "media_id": "17891593347687334",
-        "permalink": "https://www.instagram.com/reel/DgFFltFiB3O/",
-        "updated": "2026-11-23T15:15:28+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "IKZgEaKzlgI",
-        "url": "https://youtube.com/shorts/IKZgEaKzlgI",
-        "updated": "2026-11-23T15:15:28+05:30"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "Ipku6RASTAc",
-        "url": "https://youtube.com/shorts/Ipku6RASTAc",
-        "updated": "2026-11-23T15:15:28+05:30"
-      }
-    },
-    {
-      "id": "night-shift-p5",
-      "date": "2026-11-24",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@dfc0b200d4a8667903f8f0cdba9c8c6ba560239d/outputs/night-shift-p5.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@dfc0b200d4a8667903f8f0cdba9c8c6ba560239d/outputs/night-shift-p5.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/dfc0b200d4a8667903f8f0cdba9c8c6ba560239d/outputs/night-shift-p5.mp4",
-      "ig_caption": "At 3 AM a girl was swinging in my empty schoolyard. Her legs never moved. At the top of the arc, her face reached my second-floor window. Then she called the roll.\n\nNIGHT SHIFT · Episode 5\nWhich rule would you break? A) go outside, or B) answer \"present\". Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "A girl swung so high in my empty schoolyard, her face reached my window | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as a school watchman. At 3 AM the bell rings by itself, thirteen times. Outside, a girl in a school uniform swings higher and higher, and her legs never move. The last watchman left three rules in the night register: let the bell ring, stay inside if the swing moves, and if she calls the roll, never answer present. Under them: she marked me present.\n\nNIGHT SHIFT · Episode 5: every episode is a new night job with its own rules. Which rule would you break? Just type A (go outside) or B (say present). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18127743460807960",
-        "media_id": "18120372841999297",
-        "permalink": "https://www.instagram.com/reel/DgHqWX5k6Z6/",
-        "updated": "2026-11-24T15:16:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "G7PiWY7c2MU",
-        "url": "https://youtube.com/shorts/G7PiWY7c2MU",
-        "updated": "2026-11-24T15:16:00+05:30",
-        "note": "published public (privacyStatus confirmed public)"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "4p3X2H7dAw8",
-        "url": "https://youtube.com/shorts/4p3X2H7dAw8",
-        "updated": "2026-11-24T15:16:00+05:30",
-        "note": "published public (privacyStatus confirmed public)"
-      }
-    },
-    {
-      "id": "night-shift-p6",
-      "date": "2026-11-25",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@1ab59059275c09e492b3b963e1b982e9538f6746/outputs/night-shift-p6.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@1ab59059275c09e492b3b963e1b982e9538f6746/outputs/night-shift-p6.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/1ab59059275c09e492b3b963e1b982e9538f6746/outputs/night-shift-p6.mp4",
-      "ig_caption": "One man bought a ticket for the 3 AM show. His face was a screen. When I pressed play, the film showed my own booth... live.\n\nNIGHT SHIFT · Episode 6\nWhich rule would you break? A) stop the film, or B) look at his face. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "The only man at my 3 AM movie had a screen for a face | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as a cinema projectionist. One ticket sold for the 3 AM show: seat H13. The man in it has a glowing screen where his face should be. The old projectionist left two rules: never stop the film, and never look at his face. You press play, and the film shows a small room, and a man from behind, wearing your jacket.\n\nNIGHT SHIFT · Episode 6: every episode is a new night job with its own rules. Which rule would you break? Just type A (stop the film) or B (look at him). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18128032678807960",
-        "media_id": "18086413187338439",
-        "permalink": "https://www.instagram.com/reel/DgKPKMfsJ_c/",
-        "updated": "2026-11-25T15:15:14+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "sd4T0ZMSMxQ",
-        "url": "https://youtube.com/shorts/sd4T0ZMSMxQ",
-        "updated": "2026-11-25T15:15:14+05:30",
-        "note": "uploaded private before 14:55 IST; publish at 14:55+"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "gfSQbqkz6D8",
-        "url": "https://youtube.com/shorts/gfSQbqkz6D8",
-        "updated": "2026-11-25T15:15:14+05:30",
-        "note": "uploaded private before 14:55 IST; publish at 14:55+"
-      }
-    },
-    {
-      "id": "night-shift-p7",
-      "date": "2026-11-26",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33f857706980a6a43cef61046d58209d5114f887/outputs/night-shift-p7.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33f857706980a6a43cef61046d58209d5114f887/outputs/night-shift-p7.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/33f857706980a6a43cef61046d58209d5114f887/outputs/night-shift-p7.mp4",
-      "ig_caption": "At 3 AM a truck stopped at my toll booth. The driver's hands were on the wheel, but his face looked back down the road. Then he climbed out and walked to my window... backwards.\n\nNIGHT SHIFT · Episode 7\nWhich rule would you break? A) keep the barrier down, or B) look in his mirror. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "The truck driver at my 3 AM toll booth had his head on backwards | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as a highway toll man. At 3 AM a truck stops at your booth, and the driver's head is on backwards: hands on the wheel, face looking back down the road. The old toll man left two rules: always lift the barrier, and never look in his mirror. He pays without turning around. You lift the barrier. The truck doesn't move.\n\nNIGHT SHIFT · Episode 7: every episode is a new night job with its own rules. Which rule would you break? Just type A (keep the barrier down) or B (look in his mirror). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "published",
-        "container_id": "18128345299807960",
-        "media_id": "17928890613205094",
-        "permalink": "https://www.instagram.com/reel/DgMz95MuCN3/",
-        "updated": "2026-11-26T15:16:00+05:30"
-      },
-      "youtube": {
-        "status": "published",
-        "video_id": "5vIuskqMO_A",
-        "url": "https://youtube.com/shorts/5vIuskqMO_A",
-        "updated": "2026-11-26T15:16:00+05:30",
-        "note": "made public by daily routine"
-      },
-      "youtube_old": {
-        "status": "published",
-        "video_id": "XA3FBm9_-XQ",
-        "url": "https://youtube.com/shorts/XA3FBm9_-XQ",
-        "updated": "2026-11-26T15:16:00+05:30",
-        "note": "made public by daily routine"
-      }
-    },
-    {
-      "id": "night-shift-p8",
-      "date": "2026-11-27",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@57fde5d49f0e2b4a1819c0770be09af7d70a9308/outputs/night-shift-p8.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@57fde5d49f0e2b4a1819c0770be09af7d70a9308/outputs/night-shift-p8.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/57fde5d49f0e2b4a1819c0770be09af7d70a9308/outputs/night-shift-p8.mp4",
-      "ig_caption": "The wedding was over, but the bride was still on the stage. Her veil was sewn shut. Then she handed me a book and a pen...\n\nNIGHT SHIFT · Episode 8 (season finale)\nWhich rule would you break? A) lift her veil, or B) sign her book. Just type A or B 👇\nNew series tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "The bride in my empty wedding hall had her veil sewn shut | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as the caretaker of a wedding hall. The wedding is over, but the bride is still on the stage, and her veil is sewn shut. The old caretaker left two rules: never lift her veil, and never sign her book. You switch off the lights. The band starts playing.\n\nNIGHT SHIFT · Episode 8, the season finale: every episode is a new night job with its own rules. Which rule would you break? Just type A (lift her veil) or B (sign her book). A new series starts tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "queued"
-      },
-      "youtube": {
-        "status": "queued"
-      }
-    },
-    {
-      "id": "night-shift-2-p1",
-      "date": "2026-11-28",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@da372f812d710ab9c074a7f03491045ca22ca7f1/outputs/night-shift-2-p1.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@da372f812d710ab9c074a7f03491045ca22ca7f1/outputs/night-shift-2-p1.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/da372f812d710ab9c074a7f03491045ca22ca7f1/outputs/night-shift-2-p1.mp4",
-      "ig_caption": "Something was crawling down the railway tracks toward my gate. On all fours. Its back was bent the wrong way. Then it called me in my little brother's voice...\n\nNIGHT SHIFT · Season 2 · Episode 1\nWhich rule would you break? A) leave the gate up when the bell rings, or B) open it for him. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "Bent backwards on all fours, a man crawled to my railway gate | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as the gatekeeper of a railway level crossing. The old gatekeeper left two rules: when the bell rings, close the gate, and never open it for anyone on foot. Then the bell rings, but no train comes. Only him, crawling down the tracks with his back bent the wrong way.\n\nNIGHT SHIFT · Season 2 · Episode 1: every episode is a new night job with its own rules. Which rule would you break? Just type A (leave the gate up) or B (open it for him). New shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "queued"
-      },
-      "youtube": {
-        "status": "queued"
-      }
-    },
-    {
-      "id": "night-shift-2-p2",
-      "date": "2026-11-29",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@de3daae2aa7f802b3f47970f78854346a56ad77a/outputs/night-shift-2-p2.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@de3daae2aa7f802b3f47970f78854346a56ad77a/outputs/night-shift-2-p2.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/de3daae2aa7f802b3f47970f78854346a56ad77a/outputs/night-shift-2-p2.mp4",
-      "ig_caption": "At 3 AM a woman was using my ATM, bent backwards, her head at her heels. She typed upside down and took no money. Then she asked me to look in the mirror...\n\nNIGHT SHIFT · Season 2 · Episode 2\nWhich rule would you break? A) let the man in, or B) look in the mirror. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "Bent backwards, a woman used my ATM upside down at 3 AM | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as the guard of a 24-hour ATM booth. The note leaves two rules: one customer at a time, and never look at the mirror above the machine. At 3:10 a woman is at the machine, bent backwards, her head at her heels, typing upside down. A man walks up to the door, looks past you, and runs.\n\nNIGHT SHIFT · Season 2 · Episode 2: every episode is a new night job with its own rules. Which rule would you break? Just type A (let the man in) or B (look in the mirror). New shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "queued"
-      },
-      "youtube": {
-        "status": "queued"
-      }
-    },
-    {
-      "id": "night-shift-2-p3",
-      "date": "2026-11-30",
-      "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@6970f962b2a0d549b5386a936ac4153b4cda2b46/outputs/night-shift-2-p3.mp4",
-      "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@6970f962b2a0d549b5386a936ac4153b4cda2b46/outputs/night-shift-2-p3.jpg",
-      "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/6970f962b2a0d549b5386a936ac4153b4cda2b46/outputs/night-shift-2-p3.mp4",
-      "ig_caption": "On the last bus a man was hanging from the roof rail. His arms were three metres long and his feet still touched the floor. He paid. Then his ticket printed my village...\n\nNIGHT SHIFT · Season 2 · Episode 3\nWhich rule would you break? A) let him ride free, or B) ring the bell twice. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
-      "yt_title": "His arms were three metres long, hanging from my night bus rail | NIGHT SHIFT #shorts",
-      "yt_description": "Your first night as the conductor of the last bus. Two rules are taped to the ticket machine: every passenger needs a ticket, and never ring the bell twice. At 2:40 a man is hanging from the roof rail by arms three metres long, his feet still touching the floor. He pays. Then the machine prints his stop: your village.\n\nNIGHT SHIFT · Season 2 · Episode 3: every episode is a new night job with its own rules. Which rule would you break? Just type A (let him ride free) or B (ring the bell twice). New shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
-      "instagram": {
-        "status": "queued"
-      },
-      "youtube": {
-        "status": "queued"
-      }
+    "youtube_old": {
+     "status": "published",
+     "video_id": "fYJ1fkaSb9I",
+     "url": "https://youtube.com/shorts/fYJ1fkaSb9I",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
     }
-  ]
+   }
+  },
+  {
+   "id": "floor0-p2",
+   "date": "2026-11-10",
+   "local_video": "C:/reels/floor-0/FLOOR_0_part2.mp4",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/c8527513-5f63-4b2a-8b4f-46284e10a045.mp4",
+   "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/6a6d2250-2ca7-4882-a686-fc543cf01350.jpg",
+   "ig_caption": "I went home. Someone was already there.\n\nFLOOR 0 · Part 2 of 3\nMissed Part 1? It's on the profile.\nPart 3 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "I went home. Someone was already there. | FLOOR 0 · Part 2 #shorts",
+   "yt_description": "You took the stairs home. Your door was open. Someone was on your couch.\n\nFLOOR 0 · Part 2 of 3. Part 3 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18123411505807960",
+    "media_id": "17961343959258765",
+    "permalink": "https://www.instagram.com/reel/Dfjm753FI6_/",
+    "updated": "2026-11-10T09:45:00Z"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "5BlBOAPvHxg",
+    "url": "https://youtube.com/shorts/5BlBOAPvHxg",
+    "updated": "2026-11-10T09:45:00Z",
+    "note": "uploaded private 13:32 IST; publish at 14:55+"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "p_vUipPE5Do",
+    "url": "https://youtube.com/shorts/p_vUipPE5Do",
+    "updated": "2026-11-10T09:45:00Z",
+    "note": "uploaded private 13:32 IST; publish at 14:55+"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "5BlBOAPvHxg",
+     "url": "https://youtube.com/shorts/5BlBOAPvHxg",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "p_vUipPE5Do",
+     "url": "https://youtube.com/shorts/p_vUipPE5Do",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "floor0-p3",
+   "date": "2026-11-11",
+   "local_video": "C:/reels/floor-0/FLOOR_0_part3.mp4",
+   "video_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/af628cf8-f879-4b1a-9f3b-a24605c9d315.mp4",
+   "cover_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3LM7MkLX3RY3tL2K6FaTMNKwORe/8e646521-276a-4327-b68d-e4498b5ddbf0.jpg",
+   "ig_caption": "I got in. There was only one button.\n\nFLOOR 0 · Part 3 of 3 (finale)\nNow go back and read Part 1's texts again.\nA new series starts tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "There was only one button: 0 | FLOOR 0 · Part 3 (finale) #shorts",
+   "yt_description": "You got in. Floor 0 is your lobby, backwards, and it is full.\n\nFLOOR 0 · Part 3 of 3 (finale). Watch Part 1 again after this. A new series starts tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18123704338807960",
+    "media_id": "18139990045726049",
+    "permalink": "https://www.instagram.com/reel/DfmMBQ7nNqn/",
+    "updated": "2026-11-11T09:46:00Z"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "TND9mmqAZtw",
+    "url": "https://youtube.com/shorts/TND9mmqAZtw",
+    "updated": "2026-11-11T09:46:00Z"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "JCo1PoJNhIM",
+    "url": "https://youtube.com/shorts/JCo1PoJNhIM",
+    "updated": "2026-11-11T09:46:00Z"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "TND9mmqAZtw",
+     "url": "https://youtube.com/shorts/TND9mmqAZtw",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "JCo1PoJNhIM",
+     "url": "https://youtube.com/shorts/JCo1PoJNhIM",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p1",
+   "date": "2026-11-12",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@66cf2851278a85cde10d52e3881d83f9392c4556/outputs/block-c-p1.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@66cf2851278a85cde10d52e3881d83f9392c4556/outputs/block-c-p1.jpg",
+   "ig_caption": "The last student in my hostel room left a list of rules. Roll call is at 12:07 AM. The warden died six years ago.\n\nBLOCK C · Part 1\nIt just called your name. A) answer \"Present\" or B) stay silent? Comment A or B 👇\nPart 2 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "The dead warden still takes roll call at 12:07 AM | BLOCK C · Part 1 #shorts",
+   "yt_description": "You move into Room 13, Block C. Taped inside the wardrobe: the night rules. The warden died six years ago. Roll call never stopped. Tonight it calls your name.\n\nBLOCK C · Part 1. A) answer \"Present\" or B) stay silent? Comment A or B. Part 2 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18124009273807960",
+    "media_id": "17998129476019732",
+    "permalink": "https://www.instagram.com/reel/DfowyuoguKp/",
+    "updated": "2026-11-12T09:45:11Z"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "hxEWbQl3dCE",
+    "url": "https://youtube.com/shorts/hxEWbQl3dCE",
+    "updated": "2026-11-12T09:46:00Z"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "OkUHaOECktc",
+    "url": "https://youtube.com/shorts/OkUHaOECktc",
+    "updated": "2026-11-12T09:46:00Z"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "hxEWbQl3dCE",
+     "url": "https://youtube.com/shorts/hxEWbQl3dCE",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "OkUHaOECktc",
+     "url": "https://youtube.com/shorts/OkUHaOECktc",
+     "updated": "2026-11-12T14:02:50+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p2",
+   "date": "2026-11-13",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@4001efdba7612a2f7eba086b7917da34594bfb28/outputs/block-c-p2.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@4001efdba7612a2f7eba086b7917da34594bfb28/outputs/block-c-p2.jpg",
+   "ig_caption": "A dead warden called my name at 12:07 AM. I answered. Now something is knocking on my hostel door... in my voice.\n\nBLOCK C · Part 2\nA) open the door or B) look under the gap? Comment A or B 👇\nPart 3 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "Something knocked on my hostel door... in my voice | BLOCK C · Part 2 #shorts",
+   "yt_description": "You answered the dead warden's roll call. Now your name is in the register in red ink, your roommate's bed is empty, and something outside your door is asking to come in. In your voice.\n\nBLOCK C · Part 2. A) open the door or B) look under the gap? Comment A or B. Part 1 is on the channel. Part 3 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18124295809807960",
+    "media_id": "18120370895001266",
+    "permalink": "https://www.instagram.com/reel/DfrVlvpiem0/",
+    "updated": "2026-11-13T09:45:32+00:00"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "WTSKylWgYpM",
+    "url": "https://youtube.com/shorts/WTSKylWgYpM",
+    "updated": "2026-11-13T09:45:32+00:00"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "9VpoKsAuj_Y",
+    "url": "https://youtube.com/shorts/9VpoKsAuj_Y",
+    "updated": "2026-11-13T09:45:32+00:00"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "WTSKylWgYpM",
+     "url": "https://youtube.com/shorts/WTSKylWgYpM",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "9VpoKsAuj_Y",
+     "url": "https://youtube.com/shorts/9VpoKsAuj_Y",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p3",
+   "date": "2026-11-14",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@8c0764dba06bb1043251c369618c1e7f471748bc/outputs/block-c-p3.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@8c0764dba06bb1043251c369618c1e7f471748bc/outputs/block-c-p3.jpg",
+   "ig_caption": "I opened my hostel door. Nobody there. Just tomorrow's register, with my name marked LEFT. And my roommate texts that he's been in the washroom since 12... so what was breathing under his bed all night?\n\nBLOCK C · Part 3\nA) look under the bed or B) get out of the room? Comment A or B 👇 the most votes decide Part 4.\nPart 4 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "My roommate is in the washroom. So what's breathing under his bed? | BLOCK C · Part 3 #shorts",
+   "yt_description": "Something outside your hostel room talked in your voice, and you opened the door. Nobody. Only tomorrow's roll-call register on the floor, your name in red, and one word where the mark should be: LEFT. Your roommate has been in the washroom since 12. So what was breathing under his blanket all night?\n\nBLOCK C · Part 3. A) look under the bed or B) get out of the room? Comment A or B, the most votes decide Part 4. Parts 1-2 are on the channel. Part 4 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18124615606807960",
+    "media_id": "18025383203947619",
+    "permalink": "https://www.instagram.com/reel/Dft6ciNglpN/",
+    "updated": "2026-11-14T09:47:00Z"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "qlkqMo9AiCM",
+    "url": "https://youtube.com/shorts/qlkqMo9AiCM",
+    "updated": "2026-11-14T09:48:00Z",
+    "note": "uploaded private; publish at 14:55 IST"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "EXSttZutpns",
+    "url": "https://youtube.com/shorts/EXSttZutpns",
+    "updated": "2026-11-14T09:48:00Z",
+    "note": "uploaded private; publish at 14:55 IST"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "qlkqMo9AiCM",
+     "url": "https://youtube.com/shorts/qlkqMo9AiCM",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "EXSttZutpns",
+     "url": "https://youtube.com/shorts/EXSttZutpns",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p4",
+   "date": "2026-11-15",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@7b788ef84e746bf9b58f596e5cbf812f0d39586f/outputs/block-c-p4.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@7b788ef84e746bf9b58f596e5cbf812f0d39586f/outputs/block-c-p4.jpg",
+   "ig_caption": "I looked under my roommate's bed. It was wrapped in his blanket. It had no face. And it whispered \"present\" in MY voice.\n\nBLOCK C · Part 4\nA) follow them to the mess or B) hide in the washroom? Comment A or B 👇 the most votes decide Part 5.\nPart 5 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "I looked under my roommate's bed. It had no face. | BLOCK C · Part 4 #shorts",
+   "yt_description": "Something was breathing under your roommate's bed, and you looked. A shape too long to be a person, wrapped in his blanket, no face, whispering \"present\" in your voice. Then two hours vanish, and at 3 AM the mess bell rings for the whole hostel.\n\nBLOCK C · Part 4. A) follow them to the mess or B) hide in the washroom? Comment A or B, the most votes decide Part 5. Parts 1-3 are on the channel. Part 5 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18124940023807960",
+    "media_id": "18121550692965483",
+    "permalink": "https://www.instagram.com/reel/DfwfLeNEgSS/",
+    "updated": "2026-11-15T09:45:32.479558+00:00"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "ukrud0UGmYY",
+    "url": "https://youtube.com/shorts/ukrud0UGmYY",
+    "updated": "2026-11-15T09:45:32.479558+00:00"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "7k7CA5H1L6I",
+    "url": "https://youtube.com/shorts/7k7CA5H1L6I",
+    "updated": "2026-11-15T09:45:32.479558+00:00"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "ukrud0UGmYY",
+     "url": "https://youtube.com/shorts/ukrud0UGmYY",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "7k7CA5H1L6I",
+     "url": "https://youtube.com/shorts/7k7CA5H1L6I",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p5",
+   "date": "2026-11-16",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@927c89cd98ae0deb61957cd8c4a669334bcacd12/outputs/block-c-p5.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@927c89cd98ae0deb61957cd8c4a669334bcacd12/outputs/block-c-p5.jpg",
+   "ig_caption": "42 students were eating dinner in my hostel mess at 3 AM. Nobody was chewing. And the only empty chair had a plate with my room number on it... and tomorrow's date.\n\nBLOCK C · Part 5\nA) leave the group or B) scroll up and see who member 43 is? Comment A or B 👇 the most votes decide Part 6.\nPart 6 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "42 students eating dinner at 3 AM. Nobody is chewing. | BLOCK C · Part 5 #shorts",
+   "yt_description": "At 3 AM the whole hostel walks to the mess. 42 students, sitting perfectly straight, lifting their spoons in unison, nobody chewing. A very tall warden serves behind the counter. At the end of the last table, one empty chair: a covered plate with a card on top. Room 13. And tomorrow's date. Then every head turns toward you, and the group chat says 43 members.\n\nBLOCK C · Part 5. A) leave the group or B) scroll up and see who member 43 is? Comment A or B, the most votes decide Part 6. Parts 1-4 are on the channel. Part 6 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18125280583807960",
+    "media_id": "18170937118477416",
+    "permalink": "https://www.instagram.com/reel/DfzEAVqiXXT/",
+    "updated": "2026-11-16T15:00:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "nZ98OLaMWPw",
+    "url": "https://youtube.com/shorts/nZ98OLaMWPw",
+    "updated": "2026-11-16T15:00:00+05:30",
+    "note": "uploaded private; publish at 14:55 IST"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "YQQRKnVqCzU",
+    "url": "https://youtube.com/shorts/YQQRKnVqCzU",
+    "updated": "2026-11-16T15:00:00+05:30",
+    "note": "uploaded private; publish at 14:55 IST"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "nZ98OLaMWPw",
+     "url": "https://youtube.com/shorts/nZ98OLaMWPw",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "YQQRKnVqCzU",
+     "url": "https://youtube.com/shorts/YQQRKnVqCzU",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p6",
+   "date": "2026-11-17",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@2a87c8bfabc4b6a37292d2caa30610df2af04a6e/outputs/block-c-p6.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@2a87c8bfabc4b6a37292d2caa30610df2af04a6e/outputs/block-c-p6.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/2a87c8bfabc4b6a37292d2caa30610df2af04a6e/outputs/block-c-p6.mp4",
+   "ig_caption": "Someone new joined my hostel group chat at 3 AM. Same number as mine. Same room. And their profile photo is me... taken from behind, one second ago.\n\nBLOCK C · Part 6\nA) warn everyone or B) stay quiet? Comment A or B 👇 the most votes decide Part 7.\nPart 7 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "The new member of my hostel group chat has my face | BLOCK C #shorts",
+   "yt_description": "At 3 AM you leave the hostel group chat. Seconds later, member 43 adds you back. Same number as yours. Same room. Their profile photo is you, standing in the mess hall, taken from behind one second ago. Then 'you' start sending messages, asking someone to open their door.\n\nBLOCK C · Part 6 of 8. A) warn everyone or B) stay quiet? Comment A or B, the most votes decide Part 7. Parts 1-5 are on the channel. Part 7 tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18125595751807960",
+    "media_id": "18099611141131915",
+    "permalink": "https://www.instagram.com/reel/Df1oxIiDJn7/",
+    "updated": "2026-11-17T15:16:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "q3U-mDEVkEU",
+    "url": "https://youtube.com/shorts/q3U-mDEVkEU",
+    "updated": "2026-11-17T15:16:00+05:30",
+    "note": "uploaded private; publish at 14:55 IST"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "aNEiQD4olF0",
+    "url": "https://youtube.com/shorts/aNEiQD4olF0",
+    "updated": "2026-11-17T15:16:00+05:30",
+    "note": "uploaded private; publish at 14:55 IST"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "q3U-mDEVkEU",
+     "url": "https://youtube.com/shorts/q3U-mDEVkEU",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "aNEiQD4olF0",
+     "url": "https://youtube.com/shorts/aNEiQD4olF0",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p7",
+   "date": "2026-11-18",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@f099e9c1565679c93543b767fd99486198de2e99/outputs/block-c-p7.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@f099e9c1565679c93543b767fd99486198de2e99/outputs/block-c-p7.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/f099e9c1565679c93543b767fd99486198de2e99/outputs/block-c-p7.mp4",
+   "ig_caption": "I warned my hostel group chat: \"that's not me, don't open your doors.\" One second later, someone with my number sent the exact same words. Then I found the rule the last student scratched out.\n\nBLOCK C · Part 7\nA) run for the gate or B) find who wrote the list? Comment A or B 👇 the most votes decide the FINALE.\nPart 8 tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "Someone in my hostel group chat sent my message before I did | BLOCK C #shorts",
+   "yt_description": "At 3 AM, 42 students stand outside one open hostel door. You warn the group chat: that's not me, don't open your doors. One second later, member 43, with your number and your room, sends the exact same words. Then the lights go out, the dead warden calls your name for the second time, and the scratched-out rule 6 shows through the paper.\n\nBLOCK C · Part 7 of 8. A) run for the gate or B) find who wrote the list? Comment A or B, the most votes decide the finale. Parts 1-6 are on the channel. The finale is tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18125907073807960",
+    "media_id": "18221781823348380",
+    "permalink": "https://www.instagram.com/reel/Df4NkEDkebT/",
+    "updated": "2026-11-18T09:46:00Z"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "OWkQH00IxPY",
+    "url": "https://youtube.com/shorts/OWkQH00IxPY",
+    "updated": "2026-11-18T09:46:00Z",
+    "note": "uploaded private before 14:55 IST; publish later"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "PaO36I-cqHI",
+    "url": "https://youtube.com/shorts/PaO36I-cqHI",
+    "updated": "2026-11-18T09:46:00Z",
+    "note": "uploaded private before 14:55 IST; publish later"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "OWkQH00IxPY",
+     "url": "https://youtube.com/shorts/OWkQH00IxPY",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "PaO36I-cqHI",
+     "url": "https://youtube.com/shorts/PaO36I-cqHI",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "block-c-p8",
+   "date": "2026-11-19",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@a9f1c67319030ee0bb7952e9e16b0bd86cd4623f/outputs/block-c-p8.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@a9f1c67319030ee0bb7952e9e16b0bd86cd4623f/outputs/block-c-p8.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/a9f1c67319030ee0bb7952e9e16b0bd86cd4623f/outputs/block-c-p8.mp4",
+   "ig_caption": "My hostel register says I left six years ago. Then I found hundreds of tally marks behind the wardrobe, and my own name under them, in my handwriting.\n\nBLOCK C · Part 8 (FINALE)\nWould you answer when it calls your name? A) yes or B) never. Comment A or B 👇\nA new story starts tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "My hostel register says I left six years ago. I'm still in Room 13. | BLOCK C #shorts",
+   "yt_description": "At 3 AM the dead warden is coming up the stairs. Instead of running, you look for whoever wrote the night rules taped in your wardrobe. Behind it: hundreds of tally marks scratched into the wall, and your name under them, in your own handwriting. Then the door opens on its own and the warden holds out the register, and a pen.\n\nBLOCK C · Part 8 of 8, the finale. Would you answer when it calls your name? Comment A (yes) or B (never). Parts 1-7 are on the channel. A new story starts tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18126204310807960",
+    "media_id": "18117069296233249",
+    "permalink": "https://www.instagram.com/reel/Df6yXqNDd8J/",
+    "updated": "2026-11-19T15:15:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "EYT6ES7onKs",
+    "url": "https://youtube.com/shorts/EYT6ES7onKs",
+    "updated": "2026-11-19T15:15:00+05:30",
+    "note": "uploaded private pre-14:55; publish at 14:55+"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "3RRonpLzlQk",
+    "url": "https://youtube.com/shorts/3RRonpLzlQk",
+    "updated": "2026-11-19T15:15:00+05:30",
+    "note": "uploaded private pre-14:55; publish at 14:55+"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "EYT6ES7onKs",
+     "url": "https://youtube.com/shorts/EYT6ES7onKs",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "3RRonpLzlQk",
+     "url": "https://youtube.com/shorts/3RRonpLzlQk",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "night-shift-p1",
+   "date": "2026-11-20",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33a76fa03b04e5866051ff2ca3aa0916d9e0493e/outputs/night-shift-p1.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33a76fa03b04e5866051ff2ca3aa0916d9e0493e/outputs/night-shift-p1.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/33a76fa03b04e5866051ff2ca3aa0916d9e0493e/outputs/night-shift-p1.mp4",
+   "ig_caption": "A barefoot man came to my pharmacy counter at 2 AM. There was a tag tied to his big toe, and his name was in today's obituaries.\n\nNIGHT SHIFT · Episode 1\nWhich rule would you break? A) rule 2, let him wait inside, or B) rule 3, ask why he's cold. Comment A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "A barefoot man with a toe tag came for his medicine at 2 AM | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night shift at an all-night pharmacy. The last pharmacist left you three rules, and a note: I left early. Sorry. At 2 AM a barefoot man slides a wet, freezing prescription across the counter. There's a paper tag on his big toe, and his name is in today's obituaries. Then you ask the one question you were told never to ask.\n\nNIGHT SHIFT · Episode 1: every episode is a new night job with its own rules. Which rule would you break? Comment A (rule 2, let him wait inside) or B (rule 3, ask why he's cold). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18126501538807960",
+    "media_id": "17880950040563546",
+    "permalink": "https://www.instagram.com/reel/Df9XJtnGW9d/",
+    "updated": "2026-11-20T15:15:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "XC9NOCwKw6E",
+    "url": "https://youtube.com/shorts/XC9NOCwKw6E",
+    "updated": "2026-11-20T15:16:00+05:30",
+    "note": "uploaded private pre-14:55; publish at 14:55+"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "lv0pIt8cbJI",
+    "url": "https://youtube.com/shorts/lv0pIt8cbJI",
+    "updated": "2026-11-20T15:16:00+05:30",
+    "note": "uploaded private pre-14:55; publish at 14:55+"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "XC9NOCwKw6E",
+     "url": "https://youtube.com/shorts/XC9NOCwKw6E",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "lv0pIt8cbJI",
+     "url": "https://youtube.com/shorts/lv0pIt8cbJI",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "night-shift-p2",
+   "date": "2026-11-21",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@bb4c237adab9a40b684435fa5f617dd52fbd3a6a/outputs/night-shift-p2.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@bb4c237adab9a40b684435fa5f617dd52fbd3a6a/outputs/night-shift-p2.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/bb4c237adab9a40b684435fa5f617dd52fbd3a6a/outputs/night-shift-p2.mp4",
+   "ig_caption": "My sleeper coach has 72 berths. I counted 73 passengers. The extra one was hanging upside down from a top berth, his face level with mine.\n\nNIGHT SHIFT · Episode 2\nWhich rule would you break? A) rule 2, count again, or B) rule 3, look up. Comment A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "A man hung upside down from my train's top berth, face level with mine | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as the ticket checker on a sleeper train. Coach S7 has 72 berths, but you count 73. The last checker left three rules on the chart, and one line in red: there is no berth 73, don't sit in it. Then someone above you starts counting too. You look up.\n\nNIGHT SHIFT · Episode 2: every episode is a new night job with its own rules. Which rule would you break? Comment A (rule 2, count again) or B (rule 3, look up). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18126810613807960",
+    "media_id": "18139497040738111",
+    "permalink": "https://www.instagram.com/reel/Df_78pmlLF_/",
+    "updated": "2026-11-21T15:20:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "DUkQyIGaxU4",
+    "url": "https://youtube.com/shorts/DUkQyIGaxU4",
+    "updated": "2026-11-21T15:20:00+05:30",
+    "note": "published public (privacyStatus confirmed public)"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "2wXHxjUg0GA",
+    "url": "https://youtube.com/shorts/2wXHxjUg0GA",
+    "updated": "2026-11-21T15:20:00+05:30",
+    "note": "published public (privacyStatus confirmed public)"
+   },
+   "post": {
+    "youtube": {
+     "status": "published",
+     "video_id": "DUkQyIGaxU4",
+     "url": "https://youtube.com/shorts/DUkQyIGaxU4",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    },
+    "youtube_old": {
+     "status": "published",
+     "video_id": "2wXHxjUg0GA",
+     "url": "https://youtube.com/shorts/2wXHxjUg0GA",
+     "updated": "2026-11-21T11:02:18+00:00",
+     "note": "found existing public upload via duplicate check"
+    }
+   }
+  },
+  {
+   "id": "night-shift-p3",
+   "date": "2026-11-22",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@80b0bcc938a3f2ea1267f27c7b5a8c12011485cc/outputs/night-shift-p3.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@80b0bcc938a3f2ea1267f27c7b5a8c12011485cc/outputs/night-shift-p3.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/80b0bcc938a3f2ea1267f27c7b5a8c12011485cc/outputs/night-shift-p3.mp4",
+   "ig_caption": "My last delivery was at 2:47 AM. A grey hand with seven fingers reached through the door chain for the bag. Then the order receipt said who placed it: my own phone.\n\nNIGHT SHIFT · Episode 3\nWhich rule would you break? A) rule 2, hand the bag through the chain, or B) rule 3, count her fingers. Comment A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "A hand with seven fingers took my 2:47 AM delivery through the door chain | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as a food-delivery rider. At 2:47 AM the app sends you to 47 Lantern Lane, a street that wasn't on the map yesterday. The last rider pinned three rules in the group chat, and one line in red: my phone ordered it, not me. The door opens on a chain. A whisper asks you to hand it over.\n\nNIGHT SHIFT · Episode 3: every episode is a new night job with its own rules. Which rule would you break? Comment A (rule 2, hand the bag through the chain) or B (rule 3, count her fingers). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18127121122807960",
+    "media_id": "17919045621549826",
+    "permalink": "https://www.instagram.com/reel/DgCgw0nlOCG/",
+    "updated": "2026-11-22T15:16:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "TVmj3tXeJFw",
+    "url": "https://youtube.com/shorts/TVmj3tXeJFw",
+    "updated": "2026-11-22T15:16:00+05:30",
+    "note": "uploaded private; publish at/after 14:55 IST"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "2BR0YX0yVNU",
+    "url": "https://youtube.com/shorts/2BR0YX0yVNU",
+    "updated": "2026-11-22T15:16:00+05:30",
+    "note": "uploaded private; publish at/after 14:55 IST"
+   }
+  },
+  {
+   "id": "night-shift-p4",
+   "date": "2026-11-23",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@fc4961ac781c45fc8a1cb22ae07b69364eb98c5a/outputs/night-shift-p4.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@fc4961ac781c45fc8a1cb22ae07b69364eb98c5a/outputs/night-shift-p4.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/fc4961ac781c45fc8a1cb22ae07b69364eb98c5a/outputs/night-shift-p4.mp4",
+   "ig_caption": "At 2:22 AM a white car rolled into my petrol pump with no driver. Every passenger inside sat facing backwards. Then I read the number plate. It was my bike's.\n\nNIGHT SHIFT · Episode 4\nWhich rule would you break? A) step behind the car, or B) read the plate. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "A car with no driver stopped at my pump. Everyone inside sat facing backwards | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night shift at a highway petrol pump. At 2:22 AM a white car rolls in to pump 3. Nobody is driving. Every passenger sits facing backwards. The last attendant left three rules on a note: fill the white car and take no money, never stand behind it, never read the number plate. Under them: don't wait for me.\n\nNIGHT SHIFT · Episode 4: every episode is a new night job with its own rules. Which rule would you break? Just type A (step behind the car) or B (read the plate). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18127445755807960",
+    "media_id": "17891593347687334",
+    "permalink": "https://www.instagram.com/reel/DgFFltFiB3O/",
+    "updated": "2026-11-23T15:15:28+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "IKZgEaKzlgI",
+    "url": "https://youtube.com/shorts/IKZgEaKzlgI",
+    "updated": "2026-11-23T15:15:28+05:30"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "Ipku6RASTAc",
+    "url": "https://youtube.com/shorts/Ipku6RASTAc",
+    "updated": "2026-11-23T15:15:28+05:30"
+   }
+  },
+  {
+   "id": "night-shift-p5",
+   "date": "2026-11-24",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@dfc0b200d4a8667903f8f0cdba9c8c6ba560239d/outputs/night-shift-p5.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@dfc0b200d4a8667903f8f0cdba9c8c6ba560239d/outputs/night-shift-p5.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/dfc0b200d4a8667903f8f0cdba9c8c6ba560239d/outputs/night-shift-p5.mp4",
+   "ig_caption": "At 3 AM a girl was swinging in my empty schoolyard. Her legs never moved. At the top of the arc, her face reached my second-floor window. Then she called the roll.\n\nNIGHT SHIFT · Episode 5\nWhich rule would you break? A) go outside, or B) answer \"present\". Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "A girl swung so high in my empty schoolyard, her face reached my window | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as a school watchman. At 3 AM the bell rings by itself, thirteen times. Outside, a girl in a school uniform swings higher and higher, and her legs never move. The last watchman left three rules in the night register: let the bell ring, stay inside if the swing moves, and if she calls the roll, never answer present. Under them: she marked me present.\n\nNIGHT SHIFT · Episode 5: every episode is a new night job with its own rules. Which rule would you break? Just type A (go outside) or B (say present). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18127743460807960",
+    "media_id": "18120372841999297",
+    "permalink": "https://www.instagram.com/reel/DgHqWX5k6Z6/",
+    "updated": "2026-11-24T15:16:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "G7PiWY7c2MU",
+    "url": "https://youtube.com/shorts/G7PiWY7c2MU",
+    "updated": "2026-11-24T15:16:00+05:30",
+    "note": "published public (privacyStatus confirmed public)"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "4p3X2H7dAw8",
+    "url": "https://youtube.com/shorts/4p3X2H7dAw8",
+    "updated": "2026-11-24T15:16:00+05:30",
+    "note": "published public (privacyStatus confirmed public)"
+   }
+  },
+  {
+   "id": "night-shift-p6",
+   "date": "2026-11-25",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@1ab59059275c09e492b3b963e1b982e9538f6746/outputs/night-shift-p6.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@1ab59059275c09e492b3b963e1b982e9538f6746/outputs/night-shift-p6.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/1ab59059275c09e492b3b963e1b982e9538f6746/outputs/night-shift-p6.mp4",
+   "ig_caption": "One man bought a ticket for the 3 AM show. His face was a screen. When I pressed play, the film showed my own booth... live.\n\nNIGHT SHIFT · Episode 6\nWhich rule would you break? A) stop the film, or B) look at his face. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "The only man at my 3 AM movie had a screen for a face | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as a cinema projectionist. One ticket sold for the 3 AM show: seat H13. The man in it has a glowing screen where his face should be. The old projectionist left two rules: never stop the film, and never look at his face. You press play, and the film shows a small room, and a man from behind, wearing your jacket.\n\nNIGHT SHIFT · Episode 6: every episode is a new night job with its own rules. Which rule would you break? Just type A (stop the film) or B (look at him). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18128032678807960",
+    "media_id": "18086413187338439",
+    "permalink": "https://www.instagram.com/reel/DgKPKMfsJ_c/",
+    "updated": "2026-11-25T15:15:14+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "sd4T0ZMSMxQ",
+    "url": "https://youtube.com/shorts/sd4T0ZMSMxQ",
+    "updated": "2026-11-25T15:15:14+05:30",
+    "note": "uploaded private before 14:55 IST; publish at 14:55+"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "gfSQbqkz6D8",
+    "url": "https://youtube.com/shorts/gfSQbqkz6D8",
+    "updated": "2026-11-25T15:15:14+05:30",
+    "note": "uploaded private before 14:55 IST; publish at 14:55+"
+   }
+  },
+  {
+   "id": "night-shift-p7",
+   "date": "2026-11-26",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33f857706980a6a43cef61046d58209d5114f887/outputs/night-shift-p7.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@33f857706980a6a43cef61046d58209d5114f887/outputs/night-shift-p7.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/33f857706980a6a43cef61046d58209d5114f887/outputs/night-shift-p7.mp4",
+   "ig_caption": "At 3 AM a truck stopped at my toll booth. The driver's hands were on the wheel, but his face looked back down the road. Then he climbed out and walked to my window... backwards.\n\nNIGHT SHIFT · Episode 7\nWhich rule would you break? A) keep the barrier down, or B) look in his mirror. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "The truck driver at my 3 AM toll booth had his head on backwards | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as a highway toll man. At 3 AM a truck stops at your booth, and the driver's head is on backwards: hands on the wheel, face looking back down the road. The old toll man left two rules: always lift the barrier, and never look in his mirror. He pays without turning around. You lift the barrier. The truck doesn't move.\n\nNIGHT SHIFT · Episode 7: every episode is a new night job with its own rules. Which rule would you break? Just type A (keep the barrier down) or B (look in his mirror). A new shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "published",
+    "container_id": "18128345299807960",
+    "media_id": "17928890613205094",
+    "permalink": "https://www.instagram.com/reel/DgMz95MuCN3/",
+    "updated": "2026-11-26T15:16:00+05:30"
+   },
+   "youtube": {
+    "status": "published",
+    "video_id": "5vIuskqMO_A",
+    "url": "https://youtube.com/shorts/5vIuskqMO_A",
+    "updated": "2026-11-26T15:16:00+05:30",
+    "note": "made public by daily routine"
+   },
+   "youtube_old": {
+    "status": "published",
+    "video_id": "XA3FBm9_-XQ",
+    "url": "https://youtube.com/shorts/XA3FBm9_-XQ",
+    "updated": "2026-11-26T15:16:00+05:30",
+    "note": "made public by daily routine"
+   }
+  },
+  {
+   "id": "night-shift-p8",
+   "date": "2026-11-27",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@57fde5d49f0e2b4a1819c0770be09af7d70a9308/outputs/night-shift-p8.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@57fde5d49f0e2b4a1819c0770be09af7d70a9308/outputs/night-shift-p8.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/57fde5d49f0e2b4a1819c0770be09af7d70a9308/outputs/night-shift-p8.mp4",
+   "ig_caption": "The wedding was over, but the bride was still on the stage. Her veil was sewn shut. Then she handed me a book and a pen...\n\nNIGHT SHIFT · Episode 8 (season finale)\nWhich rule would you break? A) lift her veil, or B) sign her book. Just type A or B 👇\nNew series tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "The bride in my empty wedding hall had her veil sewn shut | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as the caretaker of a wedding hall. The wedding is over, but the bride is still on the stage, and her veil is sewn shut. The old caretaker left two rules: never lift her veil, and never sign her book. You switch off the lights. The band starts playing.\n\nNIGHT SHIFT · Episode 8, the season finale: every episode is a new night job with its own rules. Which rule would you break? Just type A (lift her veil) or B (sign her book). A new series starts tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "queued"
+   },
+   "youtube": {
+    "status": "queued"
+   }
+  },
+  {
+   "id": "night-shift-2-p1",
+   "date": "2026-11-28",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@da372f812d710ab9c074a7f03491045ca22ca7f1/outputs/night-shift-2-p1.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@da372f812d710ab9c074a7f03491045ca22ca7f1/outputs/night-shift-2-p1.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/da372f812d710ab9c074a7f03491045ca22ca7f1/outputs/night-shift-2-p1.mp4",
+   "ig_caption": "Something was crawling down the railway tracks toward my gate. On all fours. Its back was bent the wrong way. Then it called me in my little brother's voice...\n\nNIGHT SHIFT · Season 2 · Episode 1\nWhich rule would you break? A) leave the gate up when the bell rings, or B) open it for him. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "Bent backwards on all fours, a man crawled to my railway gate | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as the gatekeeper of a railway level crossing. The old gatekeeper left two rules: when the bell rings, close the gate, and never open it for anyone on foot. Then the bell rings, but no train comes. Only him, crawling down the tracks with his back bent the wrong way.\n\nNIGHT SHIFT · Season 2 · Episode 1: every episode is a new night job with its own rules. Which rule would you break? Just type A (leave the gate up) or B (open it for him). New shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "queued"
+   },
+   "youtube": {
+    "status": "queued"
+   }
+  },
+  {
+   "id": "night-shift-2-p2",
+   "date": "2026-11-29",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@de3daae2aa7f802b3f47970f78854346a56ad77a/outputs/night-shift-2-p2.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@de3daae2aa7f802b3f47970f78854346a56ad77a/outputs/night-shift-2-p2.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/de3daae2aa7f802b3f47970f78854346a56ad77a/outputs/night-shift-2-p2.mp4",
+   "ig_caption": "At 3 AM a woman was using my ATM, bent backwards, her head at her heels. She typed upside down and took no money. Then she asked me to look in the mirror...\n\nNIGHT SHIFT · Season 2 · Episode 2\nWhich rule would you break? A) let the man in, or B) look in the mirror. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "Bent backwards, a woman used my ATM upside down at 3 AM | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as the guard of a 24-hour ATM booth. The note leaves two rules: one customer at a time, and never look at the mirror above the machine. At 3:10 a woman is at the machine, bent backwards, her head at her heels, typing upside down. A man walks up to the door, looks past you, and runs.\n\nNIGHT SHIFT · Season 2 · Episode 2: every episode is a new night job with its own rules. Which rule would you break? Just type A (let the man in) or B (look in the mirror). New shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "queued"
+   },
+   "youtube": {
+    "status": "queued"
+   }
+  },
+  {
+   "id": "night-shift-2-p3",
+   "date": "2026-11-30",
+   "video_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@6970f962b2a0d549b5386a936ac4153b4cda2b46/outputs/night-shift-2-p3.mp4",
+   "cover_url": "https://cdn.jsdelivr.net/gh/dontletitseeteam-source/dontletitsee@6970f962b2a0d549b5386a936ac4153b4cda2b46/outputs/night-shift-2-p3.jpg",
+   "video_url_fallback": "https://raw.githubusercontent.com/dontletitseeteam-source/dontletitsee/6970f962b2a0d549b5386a936ac4153b4cda2b46/outputs/night-shift-2-p3.mp4",
+   "ig_caption": "On the last bus a man was hanging from the roof rail. His arms were three metres long and his feet still touched the floor. He paid. Then his ticket printed my village...\n\nNIGHT SHIFT · Season 2 · Episode 3\nWhich rule would you break? A) let him ride free, or B) ring the bell twice. Just type A or B 👇\nNew shift tomorrow, 3 PM.\n\n#horror #scarystories #horrorstory",
+   "yt_title": "His arms were three metres long, hanging from my night bus rail | NIGHT SHIFT #shorts",
+   "yt_description": "Your first night as the conductor of the last bus. Two rules are taped to the ticket machine: every passenger needs a ticket, and never ring the bell twice. At 2:40 a man is hanging from the roof rail by arms three metres long, his feet still touching the floor. He pays. Then the machine prints his stop: your village.\n\nNIGHT SHIFT · Season 2 · Episode 3: every episode is a new night job with its own rules. Which rule would you break? Just type A (let him ride free) or B (ring the bell twice). New shift tomorrow at 3 PM IST.\n\n#horror #scarystories #horrorstory #shorts",
+   "instagram": {
+    "status": "queued"
+   },
+   "youtube": {
+    "status": "queued"
+   }
+  }
+ ]
 }
