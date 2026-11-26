@@ -4,9 +4,39 @@ Workspace: reuses `night-shift/engine` (same v4 engine). Season 2 episode n = en
 `p10` = Ep 2 ...); outputs are `outputs/night-shift-2-p<n>.mp4/.jpg`. Render: `cd night-shift/engine && node render.js <8+n> ...`,
 `python3 mix.py <8+n>`, `bash finalize.sh <8+n> NIGHTSHIFT2`.
 
-**Status 2026-11-26 ~01:45 IST (creator run): Episode 2 QUEUED for 2026-11-29.** Real ElevenLabs balance 1,192 until the
-2026-11-30 17:36 IST reset: Ep 3 (11-30, built 11-27) must stay <= 850 characters. Next: Ep 3 "The night bus conductor".
-(YouTube Data API returned quotaExceeded on both accounts in the 11-26 review; Analytics API still worked.)
+**Status 2026-11-27 ~02:30 IST (creator run): Episode 3 QUEUED for 2026-11-30.** Real ElevenLabs balance 358 until the
+2026-11-30 17:36 IST reset (40,000 then). Ep 4 (12-01) is built on 11-28: 358 < 800, so either wait for a run AFTER the reset
+(the 11-28 01:xx run is before it; 12-01's post is still 3 days out) or make Ep 4 a no-voice episode. Recommended: the 11-28
+run builds nothing if the queue already reaches 11-30 and D=12-01 can wait; the first run after 11-30 17:36 IST builds Ep 4 with
+a full voice. Next: Ep 4 "The hostel night warden". (YouTube Data API quotaExceeded again on 11-27; Analytics API worked.)
+
+## Episode 3 "The last bus" — QUEUED for 2026-11-30
+- Output: `outputs/night-shift-2-p3.mp4` + `outputs/night-shift-2-p3.jpg` (cover: his whole hanging silhouette in the aisle,
+  "His arms are / {three metres long.}", "NIGHT SHIFT · the last bus").
+- Voice: 834 credits (REAL, account_get_usage 38,808 -> 39,642), transcript 0. 18 lines / 141 words / 7 tags. Raw take 55.8 s,
+  gaps widened to 59.9 s.
+- Look (v4): own palette = sick mint-white tubes in an old red state bus, blue rexine seats, brass roof rails, amber streetlights
+  sweeping the windows, black-green fields, red STOP lamp. New files: `engine/sets_bus.js` (one-point-perspective aisle
+  `interior` with sweeping light, `hanger` = him hanging by zigzag double-jointed arms, toes dragging, head below the shoulders,
+  `fold` arm, `conductor` with cash bag + ticket machine, `busSide` exterior with door/brakes, `busRear` driving away past the
+  green "Kesarpur 12 km" sign with his arm out of the back window, `etm` ticket machine (02:40 = the only clock, taped rules
+  note, printed ticket "to: Kesarpur"), `coinHand`, `cord` + STOP lamp, `village` house with one warm window, `hangerFace`),
+  `part11.js`, mix.py `part11` (diesel drone + road rumble that stops at the brakes, rail creaks with the sway, joint ticks,
+  ding per cord pull, air brakes + pneumatic doors, the bus pulling away).
+- Story (clarity test): "A night bus conductor has two rules: every passenger needs a ticket, never ring the bell twice. A man
+  hangs from the roof rail by arms three metres long; he pays (rule 1 kept), but his ticket says your village, where your
+  mother sleeps. You pull the cord twice to stop the bus (rule 2 broken). He doesn't move: two bells means the CONDUCTOR gets
+  off. You're left on the road; the bus drives on to your village with him, his arm waving from the back window."
+- 24 shots: bright aisle hook (jerk at 0.3 s, title "Never ring the bell twice." 1.2 s), hands on the rail, dutch tilt down the
+  zigzag arm, floor-level toes with rack focus, bus on the highway, you by the door, machine + taped note (2.5 s), over-shoulder
+  on him for rule 1 (analytics 11-27: rule said over the monster), along the bell cord, 02:40 screen, POV walk, "Ticket,
+  please" low angle, arm folding down, coin into your palm, your face, ticket printing (Kesarpur turns red), village window,
+  cord pulled twice + STOP lamp, his head snapping up, air brakes, doors, SCALE (him floor-to-ceiling, you small by the door),
+  your face, STOP lamp over him, you put off on the road, doors close, bus driving off past the sign, arm waving out of the back
+  window, A/B over the last shot, loop cut to frame 1.
+- Choice offered: **Which rule would you break? A) let him ride free  B) ring the bell twice** ("Just type A or B").
+- YT title: "His arms were three metres long, hanging from my night bus rail | NIGHT SHIFT #shorts" (silhouette-wrong detail in
+  the first 6 words).
 
 ## Episode 2 "The ATM booth" — QUEUED for 2026-11-29
 - Output: `outputs/night-shift-2-p2.mp4` (59.3 s, 10.2 MB, -14.4 LUFS) + `outputs/night-shift-2-p2.jpg` (cover: her whole arch at

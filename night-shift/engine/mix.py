@@ -915,8 +915,87 @@ def part10():
     return m1, rb
 
 
-music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7, 8: part8, 9: part9, 10: part10}[PART]()
-if PART in (3, 4, 5, 6, 7, 8, 9, 10): sfx *= db(-1.2)
+def part11():
+    """NIGHT SHIFT S2 Ep.3 — the last bus (the man hanging from the roof rail). Diesel engine drone + road rumble, tube hum,
+    rail creak with the sway, the bell (ding) for each pull, air brakes, pneumatic doors, the bus driving away, carved
+    silences before the reveal lines."""
+    T11 = {L["id"]: L for L in T["lines"]}
+    gaps = [(T11[i - 1]["end"], T11[i]["start"]) for i in (6, 12, 14, 18)]
+    tt = np.arange(N) / SR
+    rng = np.random.default_rng(1111)
+    # engine: low diesel drone (38 Hz + harmonics, wobble) + road rumble noise; it stops at the brake and leaves at the end
+    eng = (np.sin(2 * np.pi * 38 * tt) * 0.5 + np.sin(2 * np.pi * 76 * tt + 0.3) * 0.35 + np.sin(2 * np.pi * 114 * tt) * 0.15).astype(np.float32)
+    eng *= (0.8 + 0.2 * np.sin(2 * np.pi * 1.3 * tt)).astype(np.float32)
+    wn = rng.standard_normal(N).astype(np.float32)
+    Wf = np.fft.rfft(wn); fq = np.fft.rfftfreq(N, 1 / SR); Wf[(fq < 40) | (fq > 400)] = 0
+    wn = np.fft.irfft(Wf, N).astype(np.float32); wn /= np.abs(wn).max() + 1e-9
+    run = automation([(0, 0), (K["stopsW"], 0), (K["stopsW"] + 1.2, -14), (K["close"] + 0.4, -14), (K["drive"], -4), (K["drive"] + 3, -10), (DUR, -22)])
+    rb = (np.stack([eng, eng], 1) * db(-24) + np.stack([wn, np.roll(wn, 900)], 1) * db(-22)) * run + bed("hum.mp3", "lowpass=f=500") * db(-22)
+    mu = load("music.mp3"); xf = int(2 * SR)
+    ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
+    loop = np.concatenate([mu[:-xf], mu[-xf:] * (1 - ramp) + mu[:xf] * ramp, mu[xf:]])
+    while len(loop) < N: loop = np.concatenate([loop, loop])
+    loop = loop[:N]
+    mp = [(0, -15), (K["arms"], -14), (K["bus"], -20), (K["note"], -20), (K["r1"], -18), (K["clock"], -19), (K["walk"], -15),
+          (K["fold"], -13), (K["kept"], -19), (K["print"], -15), (K["mother"], -13), (K["pull"], -12), (K["broken"], -9),
+          (K["stops"], -15), (K["still"], -11), (K["route"], -13), (K["off"], -10), (K["close"], -13), (K["drive"], -11),
+          (K["wave"], -9), (K["ask"], -11), (DUR - 1, -14), (DUR, -40)]
+    for a, b in gaps:
+        mp += [(a - 0.05, None), (a + 0.12, -45), (b - 0.02, -45)]
+    mp = sorted(mp, key=lambda p: p[0]); out = []; last = -16
+    for tpt, g in mp:
+        if g is None: g = last
+        out.append((tpt, g)); last = g if g > -40 else last
+    m1 = loop * automation(out)
+    sil = np.ones((N, 1), np.float32)
+    for a, b in gaps:
+        sil *= 1 - (automation([(0, -100), (a + 0.02, -100), (a + 0.15, 0), (b - 0.05, 0), (b + 0.02, -100), (DUR + 1, -100)]) * 0.6)
+    rb = rb * sil
+    creak = load("door_creak.mp3", "lowpass=f=2200")
+    air = noise_burst(0.9, 600, 7000, 41, 0.01)
+    step = noise_burst(0.07, 120, 1800, 31, 0.003)
+    place(boom, 0.05, -13, fo=0.8, maxlen=2.0); place(stinger, 0.0, -15, fo=0.5, maxlen=1.2)
+    place(creak, 0.25, -16, fo=0.4, maxlen=1.2)                                         # the rail creaks as he jerks
+    for i in range(4): place(creak, 3.0 + i * 2.6, -26, fo=0.5, maxlen=1.0)              # sway creaks
+    place(stinger, K["longW"] - 0.03, -11, fo=0.4, maxlen=1.0)
+    for i in range(3): place(load("tick.mp3", "lowpass=f=1800"), K["arms"] + 0.3 + i * 0.3, -18, maxlen=0.15)   # joints
+    place(boom, K["floorW"], -12, fo=0.6, maxlen=1.6); place(whisper, K["feet"] + 0.2, -23, fi=0.2, fo=0.4, maxlen=1.2)
+    place(noise_burst(0.35, 800, 6000, 81, 0.02) * 0.6, K["note"] + 0.1, -16)          # tape / paper
+    place(ding_far, K["twiceW"] - 0.02, -20, maxlen=0.8); place(ding_far, K["twiceW"] + 0.3, -20, maxlen=0.8)
+    place(load("smile_stinger.mp3"), K["twiceW"] + 0.5, -15, fo=0.5, maxlen=1.0)
+    place(load("button.mp3"), K["clock"] + 0.1, -20, maxlen=0.25)
+    t = K["walk"] + 0.05; i = 0
+    while t < K["ask1"]: place(step, t, -19 - (i % 2) * 2); t += 0.42; i += 1
+    for i in range(4): place(load("tick.mp3", "lowpass=f=1500"), K["foldW"] - 0.1 + i * 0.22, -15, maxlen=0.15)   # the arm unfolds
+    place(load("stretch.mp3"), K["fold"] + 0.4, -15, fo=0.4, maxlen=1.2)
+    place(load("ding.mp3", "highpass=f=1500,volume=0.5"), K["dropW"] + 0.35, -18, maxlen=0.5)            # coin lands
+    place(ding_far, K["kept"] + 0.4, -25, maxlen=1.0)
+    place(load("typing.mp3", "highpass=f=900"), K["printW"], -18, maxlen=1.0)          # printer
+    place(stinger, K["villageW"] - 0.03, -9, fo=0.5, maxlen=1.2); place(boom, K["villageW"], -10, fo=0.6, maxlen=1.8)
+    place(load("ding.mp3"), K["pull1"] + 0.12, -13, maxlen=1.2)
+    place(load("ding.mp3"), K["pull2"] + 0.08, -10, maxlen=1.5)
+    place(heartbeat, K["pull"], -17, fi=0.1, fo=0.3, maxlen=K["broken"] - K["pull"])
+    place(load("stretch.mp3", "asetrate=48000*0.7,aresample=48000"), K["brokenW"] - 0.3, -12, fo=0.4, maxlen=1.2)
+    place(stinger, K["brokenW"] - 0.03, -7, fo=0.5, maxlen=1.3); place(boom, K["brokenW"], -8, fo=0.8, maxlen=2.2)
+    place(air * 0.8, K["stopsW"] - 0.05, -14); place(load("descent.mp3", "lowpass=f=900"), K["stops"], -20, maxlen=1.4)
+    place(air * 0.7, K["openW"] - 0.1, -16); place(door_open, K["openW"], -20, maxlen=0.8)
+    place(riser, K["moveW"] - len(riser) / SR + 0.1, -19, fi=1.0, fo=0.004)
+    place(boom, K["moveW"] + 0.05, -11, fo=0.7, maxlen=2.0)
+    place(whisper, K["bells"] + 0.1, -16, fi=0.1, fo=0.5, maxlen=1.3)
+    place(stinger, K["offW"] - 0.03, -7, fo=0.5, maxlen=1.4); place(boom, K["offW"], -8, fo=0.8, maxlen=2.4)
+    for i in range(2): place(step, K["off"] + 0.2 + i * 0.3, -14)
+    place(air * 0.8, K["closeW"] - 0.05, -14); place(slam, K["closeW"] + 0.35, -15, maxlen=0.8)
+    place(motor, K["drive"], -16, fi=0.3, fo=1.5, maxlen=4.0)
+    place(load("smile_stinger.mp3"), K["withW"], -10, fo=0.5, maxlen=1.3)
+    place(stinger, K["wavesW"] - 0.03, -8, fo=0.5, maxlen=1.3); place(boom, K["wavesW"], -9, fo=0.8, maxlen=2.0)
+    place(whisper, K["ask"] + 0.4, -15, fi=0.2, fo=0.5, maxlen=2.0)
+    place(creak, K["ask"] + 1.3, -20, fo=0.5, maxlen=1.0)
+    place(boom, K["loop"] - 0.05, -14, fo=0.6, maxlen=1.0)
+    return m1, rb
+
+
+music, beds = {1: part1, 2: part2, 3: part3, 4: part4, 5: part5, 6: part6, 7: part7, 8: part8, 9: part9, 10: part10, 11: part11}[PART]()
+if PART in (3, 4, 5, 6, 7, 8, 9, 10, 11): sfx *= db(-1.2)
 music = music * duck_gain
 beds = beds * duck_gain
 sfx = sfx * db(-5 * duck).astype(np.float32)[:, None]  # keep SFX >= 8 dB under the voice
