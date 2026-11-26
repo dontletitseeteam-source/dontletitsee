@@ -12,7 +12,8 @@ a full voice. Next: Ep 4 "The hostel night warden". (YouTube Data API quotaExcee
 
 ## Episode 3 "The last bus" — QUEUED for 2026-11-30
 - Output: `outputs/night-shift-2-p3.mp4` + `outputs/night-shift-2-p3.jpg` (cover: his whole hanging silhouette in the aisle,
-  "His arms are / {three metres long.}", "NIGHT SHIFT · the last bus").
+  "His arms are / {three metres long.}", "NIGHT SHIFT · the last bus"); 59.9 s, 10.3 MB, -14.2 LUFS (stems VO -18.1 dB RMS, SFX -28.0, music -32.2, beds -36.5); jsDelivr @ `6970f96`
+  (mp4 + jpg HTTP 200 first try).
 - Voice: 834 credits (REAL, account_get_usage 38,808 -> 39,642), transcript 0. 18 lines / 141 words / 7 tags. Raw take 55.8 s,
   gaps widened to 59.9 s.
 - Look (v4): own palette = sick mint-white tubes in an old red state bus, blue rexine seats, brass roof rails, amber streetlights
