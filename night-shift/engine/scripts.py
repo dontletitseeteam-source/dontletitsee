@@ -317,5 +317,28 @@ P10 = [  # v4 captions: sentence case; [x] = mint accent, {x} = red threat
 ]
 P10_HOLD = 1.6
 
-LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8, 9: P9, 10: P10}
-HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD, 9: P9_HOLD, 10: P10_HOLD}
+P11 = [  # v4 captions: sentence case; [x] = accent, {x} = red threat
+    ("A man is hanging from the roof rail. His arms are three metres long. His feet still touch the floor.", 0.12,
+     [(4, "A man is hanging"), (4, "from the roof rail."), (6, "His arms are {three metres long.}"), (6, "His feet still {touch the floor.}")]),
+    ("The last bus. You're the night conductor.", 0.45, [(3, "The last bus."), (4, "You're the [night conductor.]")]),
+    ("Two rules, taped to the ticket machine.", 0.30, [(2, "[Two rules,]"), (5, "taped to the ticket machine.")]),
+    ("One. Every passenger needs a ticket.", 0.25, [(1, "One."), (5, "[Every passenger needs a ticket.]")]),
+    ("Two. Never ring the bell twice.", 0.25, [(1, "Two."), (5, "Never ring the {bell twice.}")]),
+    ("At two forty, you walk up to him. Ticket, please.", 0.90, [(3, "At two forty,"), (5, "you walk up to him."), (2, "[Ticket, please.]")]),
+    ("His long arm folds down. A coin drops in your hand.", 0.40, [(5, "His long arm {folds down.}"), (6, "A coin drops in your hand.")]),
+    ("Rule one, kept.", 0.30, [(3, "[Rule one, kept.]")]),
+    ("The machine prints his stop. Your village.", 0.70, [(5, "The machine prints his stop."), (2, "{Your village.}")]),
+    ("Your mother is asleep there.", 0.50, [(5, "Your mother is {asleep there.}")]),
+    ("You pull the cord. Twice. Rule two, broken.", 0.60, [(4, "You pull the cord."), (1, "{Twice.}"), (3, "{Rule two, broken.}")]),
+    ("The bus stops. The doors open.", 0.90, [(3, "The bus stops."), (3, "The doors open.")]),
+    ("But he doesn't move.", 0.50, [(4, "But he {doesn't move.}")]),
+    ("On this route, two bells means the conductor gets off.", 0.80, [(3, "On this route,"), (3, "[two bells means]"), (4, "{the conductor gets off.}")]),
+    ("The doors close behind you.", 0.50, [(5, "The doors {close behind you.}")]),
+    ("The bus drives on to your village, with him.", 0.70, [(7, "The bus drives on to your village,"), (2, "{with him.}")]),
+    ("His arm waves from the back window.", 0.40, [(7, "His arm {waves} from the back window.")]),
+    ("Which rule would you break? Just type A or B.", 0.90, [(5, "Which rule would you break?"), (5, "Just type [A] or {B.}")]),
+]
+P11_HOLD = 1.6
+
+LINES = {1: P1, 2: P2, 3: P3, 4: P4, 5: P5, 6: P6, 7: P7, 8: P8, 9: P9, 10: P10, 11: P11}
+HOLD = {1: P1_HOLD, 2: P2_HOLD, 3: P3_HOLD, 4: P4_HOLD, 5: P5_HOLD, 6: P6_HOLD, 7: P7_HOLD, 8: P8_HOLD, 9: P9_HOLD, 10: P10_HOLD, 11: P11_HOLD}
