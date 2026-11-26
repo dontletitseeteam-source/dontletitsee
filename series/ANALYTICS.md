@@ -30,6 +30,34 @@ last shot, no card, loop to frame 1); the monster must move within 0.5 s; a face
 (Standalone format is now the standard: Ep 1-3 all beat BLOCK C on YouTube; see RESEARCH.md.)
 
 ## Day log
+## 2026-11-27 (IST 01:20 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| night-shift-p3 | Instagram | 106 | 146 | 135 | 1 | 0 | 0 / 0 | 16.0 s | n/a (not re-pulled) |
+| night-shift-p4 | Instagram | 82 | 127 | 108 | 2 | 0 | 1 / 0 | 21.5 s | n/a (not re-pulled) |
+| night-shift-p5 | Instagram | 58 | 922 | 784 | 22 | 0 | 0 / 2 | 22.6 s | n/a (not re-pulled) |
+| night-shift-p6 | Instagram | 34 | 138 | 122 | 1 | 1 | 0 / 0 | 12.0 s | 47.2% |
+| night-shift-p7 | Instagram | 10 | **213** | 176 | 0 | 0 | 0 / 0 | 16.2 s | 37.3% |
+| night-shift-p1 / p2 / p3 / p4 | YouTube @dontletitsee (Analytics API, lags ~2 days) | 154 / 130 / 106 / 82 | 879 / 1,144 / 216 / 973 | n/a | n/a | n/a | n/a | 34 / 40 / 43 / 40 s (49 / 57 / 62 / 58%) | stay 56% / 60% / 50% / 55% |
+| night-shift-p5 / p6 / p7 | YouTube @dontletitsee | 58 / 34 / 10 | n/a (Data API quotaExceeded again, 2nd day; Analytics rows not in yet) | | | | | | |
+| night-shift-p3 … p7 | YouTube @lexter2025 (youtube_rachel-brod) | 106-10 | n/a (quotaExceeded) | | | | | | |
+
+Second-by-second retention, Season 1 Ep 4 (IKZgEaKzlgI, 69.6 s): 114% at 1% -> 106% at 6% -> **drop 1: 106% -> 71% at 6-16% (~4-11 s)**
+-> flat 65-49% from 21% to 86% -> **drop 2: 49% -> 33% at 86-96% (~60-67 s, the end/A-B)**. Fourth video in a row with the same two drops
+(Ep 1-4 all made before the v3 rules). Ep 6+ (note <= 3 s, A/B over the last shot) curves are the real test; not in yet.
+
+Lessons:
+- Ep 7 (toll booth, "head on backwards") 213 IG plays at 10 h, skip 37.3%: better than Ep 6 (127, detail-wrong screen face, 47.2%)
+  but far below Ep 5 (751). Silhouette-wrong vs detail-wrong skip rate across 7 posts: 33-37% vs 45-47%. Rule holds.
+- The 4-11 s drop repeats in all 4 measured YouTube curves: the setup (job + note) still costs ~30%. Season 2 already keeps the
+  note <= 3 s; next lever is to get the monster DOING something before 4 s and say rule 1 over the monster, not over the note.
+- IG A/B comments stay at 0-1 per post: the card does not drive comments on Instagram; keep it (test runs to Ep 6) but phrase it as a
+  question about the monster's image rather than "which rule".
+- YouTube Data API quotaExceeded two days running on both accounts (the upload routines likely use the shared quota); the competitor
+  scan is skipped this run (PLAYBOOK 7: skip on quota error).
+- Applied to Season 2 Ep 3 (2026-11-30, night bus): monster moving in frame 1 and visible again by 4 s; rule 1 said over the
+  monster shot, the note 2 s.
+
 ## 2026-11-26 (IST 01:20 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
