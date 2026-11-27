@@ -26,10 +26,37 @@ last shot, no card, loop to frame 1); the monster must move within 0.5 s; a face
    description. Best shape: first-person "my/your" + one concrete wrong detail in the first 6 words.
 3. **Silhouette rule (new 2026-11-23, from Ep 1-3):** the entity's wrongness must read in its OUTLINE at thumbnail size
    (pose, size, orientation: upside down, head turned backwards, too tall), never a detail you count (fingers, tags). Frame 1
-   and the cover show the whole wrong silhouette, big. Running test, unchanged: "Type A or B" card from Ep 4 (judge Ep 4-6).
+   and the cover show the whole wrong silhouette, big. Running test (from 2026-11-28; the "Type A or B" card got 0-1 IG comments on Ep 4-8, keep the card but stop judging by it): a **family-impersonation** beat (the monster speaks with or wears a family member's face) named in the YT title, as in the top Indian horror shorts; judge on Season 2 Ep 4-6.
 (Standalone format is now the standard: Ep 1-3 all beat BLOCK C on YouTube; see RESEARCH.md.)
 
 ## Day log
+## 2026-11-28 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| night-shift-p4 | Instagram | 106 | 127 | 108 | 2 | 0 | 1 / 0 | 21.5 s | n/a (not pulled) |
+| night-shift-p5 | Instagram | 82 | 922 | 784 | 22 | 0 | 0 / 2 | 22.6 s | n/a |
+| night-shift-p6 | Instagram | 58 | 139 | 123 | 1 | 1 | 0 / 0 | 11.9 s | n/a |
+| night-shift-p7 | Instagram | 34 | 319 | 279 | 1 | 0 | 0 / 0 | 16.0 s | n/a |
+| night-shift-p8 | Instagram | 10 | **1,568** | 1,220 | 27 | 0 | 3 / 2 | **27.3 s** | n/a |
+| night-shift-p4 / p5 / p6 / p7 / p8 | YouTube @dontletitsee (Data API) | 106 / 82 / 58 / 34 / 10 | 1,105 / 77 / 193 / 25 / 2 | n/a | 15 / 3 / 7 / 0 / 0 | 3 / 0 / 4 / 0 / 0 | n/a | Ep 5: 35 s (50%), stay 54% (Analytics) | n/a |
+| night-shift-p4 … p8 | YouTube @lexter2025 (youtube_rachel-brod) | 106-10 | 1 / 0 / 11 / 1 / 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Second-by-second retention, Season 1 Ep 5 (G7PiWY7c2MU, ~70 s): 108% at 1-2% -> 100% at 7% -> **drop 1: 100% -> 51% at 7-16% (~5-11 s)**
+-> flat 51-46% to 38%. Fifth curve in a row with the 4-11 s setup drop (Ep 5 was still a pre-v2 build). Ep 6 curve empty.
+
+Lessons:
+- **Ep 8 (wedding bride, veil sewn shut) = best Instagram reel ever: 1,568 plays at 10 h (Ep 5 had 751 at 10 h), 27.3 s avg watch
+  (best; Ep 1-7 12-23 s), 27 likes, 3 saves.** It is the FIRST v4-look episode (no HUD, serif captions, grain/bloom, own palette).
+  One post, but the watch-time jump is large: keep the v4 look as the Season 2 standard (it already is).
+- **YouTube main channel collapsed for Ep 5-8: 77 / 193 / 25 / 2 views vs Ep 1-4 ~880-1,150.** Not explained by look or title shape
+  (Ep 6/7 have the best title shape). It began around the Data API quotaExceeded days (11-26/27): likely distribution, not content.
+  Watch Season 2 Ep 1 (11-28) at 34 h; if it is < 100 again, flag it to the owner.
+- @lexter2025 stays at 0-11 views per post: no signal there.
+- IG comments 0 on 4 of 5 posts (A/B card): comments are not where this channel grows; watch time and saves are.
+- Competitor scan (RESEARCH.md log 2026-11-28): Indian "chudail / a ghost wearing your mother's form" shorts dominate the 14-day
+  horror top list (2.3M views on a 16k-sub channel). Next build (Season 2 Ep 4/5) gets a family-impersonation beat in story + title.
+- Nothing built this run (queue full to 11-30; ElevenLabs account now shows pay-as-you-go, see ELEVENLABS.md top).
+
 ## 2026-11-27 (IST 01:20 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|

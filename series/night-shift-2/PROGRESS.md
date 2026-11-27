@@ -4,6 +4,14 @@ Workspace: reuses `night-shift/engine` (same v4 engine). Season 2 episode n = en
 `p10` = Ep 2 ...); outputs are `outputs/night-shift-2-p<n>.mp4/.jpg`. Render: `cd night-shift/engine && node render.js <8+n> ...`,
 `python3 mix.py <8+n>`, `bash finalize.sh <8+n> NIGHTSHIFT2`.
 
+**Status 2026-11-28 01:15 IST (creator run): nothing built, by plan.** Queue is full to 11-30; D = 12-01 (Ep 4, hostel warden).
+ElevenLabs `account_get_usage` now says tier **payg**, 0/10,000 used, reset 2026-12-28 (was Starter, 358 left, reset 11-30 17:36).
+Owner notified; no paid spend on payg without their OK (ELEVENLABS.md top). Next runs: the 11-29 run waits if D = 12-01 is still
+2+ days out; the 11-30 run (or any run where D is <= 1 day out) checks the tier: `starter`/refilled -> voiced Ep 4; still `payg`
+-> build Ep 4 as a **no-voice episode** (story in serif on-screen text, library music + SFX, 0 credits) so 12-01 is not empty.
+Apply to Ep 4: family-impersonation beat (the thing in the extra bed uses your mother's / brother's voice) + v4 look (S1 Ep 8 =
+best IG reel ever: 1,568 plays at 10 h, 27.3 s avg watch).
+
 **Status 2026-11-27 ~02:30 IST (creator run): Episode 3 QUEUED for 2026-11-30.** Real ElevenLabs balance 358 until the
 2026-11-30 17:36 IST reset (40,000 then). Ep 4 (12-01) is built on 11-28: 358 < 800, so either wait for a run AFTER the reset
 (the 11-28 01:xx run is before it; 12-01's post is still 3 days out) or make Ep 4 a no-voice episode. Recommended: the 11-28

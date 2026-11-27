@@ -261,6 +261,21 @@ the one apartment whose lights stay on in a power cut. A/B options: "which rule 
 next?". Stay clear of the @play.malo premises listed in PLAYBOOK section 1.
 
 ## Research log (newest first; PLAYBOOK section 7)
+### 2026-11-28 (creator run, twice-weekly scan; YouTube Data API worked again)
+Search (account youtube_regin-mont, shorts, viewCount, published after 2026-11-14), 4 queries, 78 videos. Most useful hits:
+- 2.43M / 12 s "Chudail Chhipkili dar gai | Bhutiya Daravana Chudail" (Sinotal Team, 24.7k subs) + re-uploads on a 19M channel (2.15M / 7 s, 1.98M / 18 s).
+- 2.28M / 44 s "Haunted Maa Ke Roop Me Chudail" (a ghost in the form of your mother; Taletrekking, 16.4k subs, started 2026-01).
+- 2.33M / 81 s "PART 874 : KAKU KAKU HORROR STORY" (Amar Raghu, Telugu narrated horror, 3.6M subs; numbered daily parts).
+- 2.58M / 50 s "O Monstro das Cocegas Saiu de Debaixo da Cama" (RareSnap, 112k subs, started 2026-09); 4.88M / 42 s "Tickle monster" (Roblox
+  animation, 220k subs): one simple creature + a family member who saves or betrays.
+- 3.99M / 2:58 "Ibu dari Danau Mengambil Anak Kedua" (the mother from the lake takes the second child; Indonesian, 243k subs, started 2026-07).
+- Many non-horror hits (GTA / Minecraft / Gacha, 8-17 s) pollute these queries.
+Patterns: (1) regional titles with a local monster word (chudail, bhoot) outperform English; (2) a **family member impersonated or
+taken** is the top premise across 3 countries; (3) small new channels (16k-112k subs, started 2026) reach millions: the format carries,
+not channel size; (4) long numbered daily series work when each part is a complete story. vs our week: our two best IG reels
+(S1 Ep 5 bus-stop woman, Ep 8 bride) are also a woman in an Indian setting. Next test (ANALYTICS item 3): family-impersonation beat.
+Retention: Analytics `dimensions=video` needs `sort=-views` + `maxResults` (400 without them).
+
 ### 2026-11-23 (creator run, weekly scan)
 YouTube scan (youtube_regin-mont; 4 queries: "animated horror story #shorts", "scary story animation shorts", "rules horror story
 #shorts", "night shift horror animation"; Shorts since 11-09 by views; 75 unique). The top is dominated by Hindi "bhoot wala

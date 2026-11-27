@@ -5,6 +5,13 @@ Rules: PLAYBOOK section 5. Owner's wish: spend the credits on quality; running o
 transcript, SFX) with the balance after it. When the balance is too low for another part, write
 **CREDITS USED UP** at the top of this file.
 
+
+**2026-11-28 01:15 IST (creator): `account_get_usage` CHANGED: tier `payg` (was `starter`), status active, 0 of 10,000 characters
+used, next reset 2026-12-28 06:12 IST, overage 0 INR. The Starter subscription (and its 2026-11-30 40,000 reset) seems to have
+ended or been switched to pay-as-you-go, which may bill the owner per character. Nothing was generated this run (queue full to
+11-30). Rule until the owner confirms: do NOT spend on `payg` (real money). If the tier is still `payg` when an episode must be
+built, make it a no-voice episode (0 credits). If it shows `starter`/a refill again, carry on with voice as planned. Owner notified.**
+
 **REAL BALANCE CHECK (owner session, 2026-11-23 22:00 IST): `account_get_usage` (now permitted) says starter tier,
 36,107 of 40,000 used -> only 3,893 credits left, and the monthly reset is 2026-11-30 17:36 IST (12:06 UTC), after
 which 40,000 are available again. This ledger said 19,324: it undercounted (transcripts logged as 0, retries, or
