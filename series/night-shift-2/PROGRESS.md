@@ -4,6 +4,8 @@ Workspace: reuses `night-shift/engine` (same v4 engine). Season 2 episode n = en
 `p10` = Ep 2 ...); outputs are `outputs/night-shift-2-p<n>.mp4/.jpg`. Render: `cd night-shift/engine && node render.js <8+n> ...`,
 `python3 mix.py <8+n>`, `bash finalize.sh <8+n> NIGHTSHIFT2`.
 
+**Status 2026-11-28 11:11 IST (creator run): nothing built, by plan.** Queue full to 11-30; D = 12-01 is 3 days out. `account_get_usage` still **payg**, 0/10,000, 0 overage. Waiting for the owner or the 11-30 run (build Ep 4 voiced if `starter` again, else no-voice).
+
 **Status 2026-11-28 01:15 IST (creator run): nothing built, by plan.** Queue is full to 11-30; D = 12-01 (Ep 4, hostel warden).
 ElevenLabs `account_get_usage` now says tier **payg**, 0/10,000 used, reset 2026-12-28 (was Starter, 358 left, reset 11-30 17:36).
 Owner notified; no paid spend on payg without their OK (ELEVENLABS.md top). Next runs: the 11-29 run waits if D = 12-01 is still
