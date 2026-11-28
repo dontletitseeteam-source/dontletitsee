@@ -35,6 +35,27 @@ last shot, no card, loop to frame 1); the monster must move within 0.5 s; a face
 (Standalone format is now the standard: Ep 1-3 all beat BLOCK C on YouTube; see RESEARCH.md.)
 
 ## Day log
+## 2026-11-29 (IST 01:15 review)
+| Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
+|---|---|---|---|---|---|---|---|---|---|
+| night-shift-p5 | Instagram | 106 | 922 | 784 | 22 | 0 | 0 / 2 | 22.6 s | n/a |
+| night-shift-p6 | Instagram | 82 | 139 | 123 | 1 | 1 | 0 / 0 | 11.9 s | n/a |
+| night-shift-p7 | Instagram | 58 | 319 | 279 | 1 | 0 | 0 / 0 | 16.0 s | n/a |
+| night-shift-p8 | Instagram | 34 | **1,598** | 1,245 | 27 | 0 | 3 / 2 | **27.2 s** | n/a |
+| night-shift-2-p1 | Instagram | 10 | 187 | 153 | 1 | 0 | 0 / 0 | 13.5 s | n/a |
+| night-shift-p5 / p6 / p7 / p8 / S2 p1 | YouTube @dontletitsee (youtube_regin-mont) | 106 / 82 / 58 / 34 / 10 | 77 / 195 / 26 / **4** / **0** | n/a | 3 / 7 / 0 / 0 / 0 | 0 / 3 / 0 / 0 / 0 | n/a | n/a | n/a |
+| same five | YouTube @lexter2025 (youtube_rachel-brod) | 106-10 | 0 / 13 / 1 / 1 / 0 | n/a | 0 | 0 | n/a | n/a | n/a |
+
+Lessons:
+- Instagram has plateaued for every post after ~34 h (Ep 5 922, Ep 8 1,568 -> 1,598): the first day decides a reel's reach.
+- S2 Ep 1 (level crossing, stock crawler, dark-ish opening) at 10 h: 187 plays / 13.5 s avg watch vs Ep 8's 1,568 / 27.3 s at
+  10 h. This fits the v5 diagnosis (job-only place, stock creature): v5 checks are the standard from Ep 4 on.
+- **YouTube main channel still collapsed: the wedding has 4 views at 34 h (Season 1 Ep 1-4 had ~700-1,000), S2 Ep 1 has 0.**
+  Third day in a row of < 30 views on fresh uploads although Instagram did its best: this is distribution, not content
+  (duplicate uploads to 2 channels at the same second is the leading suspect, RESEARCH.md v5 note). Flagged to the owner again.
+- No A/B comments anywhere (0 on IG for 5 posts): keep the card as the ending, do not rely on it.
+- Applied this run: S2 Ep 3 opening relit to pass hookcheck (v5 check 5). Next improvements unchanged (they already hold the v5 rules).
+
 ## 2026-11-28 (IST 01:15 review)
 | Post | Platform | Age (h) | Views | Reach | Likes | Comments | Saves / shares | Avg watch | Skip rate (first 3 s) |
 |---|---|---|---|---|---|---|---|---|---|
