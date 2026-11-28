@@ -808,7 +808,18 @@
         "status": "queued"
       },
       "youtube": {
-        "status": "queued"
+        "status": "uploaded_private",
+        "video_id": "jVFrz8YBzec",
+        "url": "https://youtube.com/shorts/jVFrz8YBzec",
+        "updated": "2026-11-28T13:32:40+05:30",
+        "note": "uploaded private; publish at/after 14:55 IST"
+      },
+      "youtube_old": {
+        "status": "uploaded_private",
+        "video_id": "MddVNfmXghk",
+        "url": "https://youtube.com/shorts/MddVNfmXghk",
+        "updated": "2026-11-28T13:32:40+05:30",
+        "note": "uploaded private; publish at/after 14:55 IST"
       }
     },
     {
