@@ -34,25 +34,27 @@ const pulse = (ctx, t, t0, a = 0.35, k = 2.2) => { if (t < t0) return; const v =
 const flick = (t, t0, t1) => (t >= t0 && t < t1 && hash(Math.floor(t * 14)) < 0.4 ? 0.75 : 0);
 const under = (ctx) => { const g = ctx.createLinearGradient(0, 1420, 0, 1920); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(0.35, 'rgba(0,0,0,0.8)'); g.addColorStop(1, 'rgba(0,0,0,0.9)'); ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = g; ctx.fillRect(0, 1420, W, 500); ctx.restore(); };
 const HIM = (o = {}) => ({ z: 6.4, ...o });
+// v5 fix (2026-11-29): the opening is lit warm and bright, then the light drains to the sick mint look by ~3.6 s
+const WARM = (t) => 1 - E.inOut(inv(2.9, 3.7, t));
 const myFace = (ctx, t, o) => Wd.myFace(ctx, t, { bg0: '#0c1a16', bg1: '#020605', rim: '#d8fff0', light: 0.75, ...o });
 const aisleBg = (t, o = {}) => (x) => L4.blurLayer(x, 'ab' + (o.key || ''), o.scale || 0.06, (y) => { y.translate(540, 960); y.scale(1.6, 1.6); y.translate(-540, -900); B.interior(y, t, { him: o.him ? HIM(o.him) : null }); }, 0.85);
 
 // 1. HOOK (frame 1): the bright aisle, his whole silhouette hanging from the rail, toes on the floor; he jerks at 0.3 s.
 shot('hook', 0, (ctx, t, lt) => {
   L4.cam(ctx, 540, 900, lerp(1.32, 1.4, E.out(clamp(lt / 1.3))), t, { hand: 4 });
-  B.interior(ctx, t, { him: HIM({ jerk: E.outBack(inv(0.25, 0.55, t)) * (1 - inv(0.6, 1.2, t)) * 0.8 }) });
+  B.interior(ctx, t, { warm: WARM(t), him: HIM({ jerk: E.outBack(inv(0.25, 0.55, t)) * (1 - inv(0.6, 1.2, t)) * 0.8 }) });
 }, {});
 // 1b. from the roof rail. — closer: his hands locked on the rail, the head hanging between the shoulders
 shot('rail', K.rail, (ctx, t, lt) => {
   L4.cam(ctx, 540, lerp(640, 610, clamp(lt / 1.5)), lerp(2.3, 2.45, clamp(lt / 1.5)), t, { hand: 4, seed: 2 });
-  B.interior(ctx, t, { him: HIM() });
+  B.interior(ctx, t, { warm: WARM(t), him: HIM() });
   pulse(ctx, t, K.railW, 0.2);
 }, {});
 // 1c. His arms are three metres long. — dutch tilt DOWN the zigzag arm from the hand to the shoulder
 shot('arms', K.arms, (ctx, t, lt) => {
   const k = E.inOut(clamp(lt / 1.6));
   L4.cam(ctx, lerp(700, 600, k), lerp(560, 860, k), lerp(3.0, 2.6, k), t, { hand: 3, seed: 3, rot: -0.09 });
-  B.interior(ctx, t, { him: HIM() });
+  B.interior(ctx, t, { warm: WARM(t), him: HIM() });
   pulse(ctx, t, K.longW, 0.3);
 }, {});
 // 1d. His feet still touch the floor. — floor level: the toes dragging with the sway, rack focus from the rubber floor
@@ -218,16 +220,21 @@ shot('ask', K.ask, (ctx, t, lt) => {
 // loop: back to the frame-1 picture so the replay is seamless
 shot('loop', K.loop, (ctx, t, lt) => {
   L4.cam(ctx, 540, 900, 1.32, t, { hand: 4 });
-  B.interior(ctx, 0.1, { him: HIM() });
+  B.interior(ctx, 0.1, { warm: 1, him: HIM() });
 }, { captions: false });
 
 const outside = new Set(['bus', 'stops', 'doors', 'off', 'close', 'mother']), red = new Set(['drive', 'wave', 'ask', 'pull', 'bells']);
 function post(ctx, canvas, t, cur) {
   L4.bloom(ctx, canvas, 0.3);
-  L4.grade(ctx, red.has(cur.name) ? '#ff6a4a' : outside.has(cur.name) ? '#5fb0a0' : '#9fffd0', 0.05, ['broken', 'route', 'kept', 'still'].includes(cur.name) ? 0.7 : 0.55);
+  const wk = cur.name === 'loop' ? 1 : WARM(t);
+  L4.grade(ctx, wk > 0.5 ? '#ffb060' : red.has(cur.name) ? '#ff6a4a' : outside.has(cur.name) ? '#5fb0a0' : '#9fffd0', 0.05, lerp(['broken', 'route', 'kept', 'still'].includes(cur.name) ? 0.7 : 0.55, 0.3, wk));
+  whipAll(ctx, canvas, t);
+}
+function whipAll(ctx, canvas, t) {
   for (const [t0, dir] of [[K.rail, 1], [K.feet, -1], [K.bus, 1], [K.walk, 1], [K.coin, -1], [K.broken, 1], [K.still, -1], [K.off, 1], [K.drive, -1], [K.ask, 1]]) { const k = 1 - clamp((t - t0) / 0.14); if (t >= t0 && k > 0) L4.whip(ctx, canvas, k, dir); }
 }
 function overlay(ctx, t, cur) {
+  if (t < K.rail) { const ta = clamp(t / 0.15) * clamp((K.rail - t) / 0.15); const g = ctx.createLinearGradient(0, 0, 0, 260); g.addColorStop(0, `rgba(30,16,8,${0.75 * ta})`); g.addColorStop(1, 'rgba(30,16,8,0)'); ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = g; ctx.fillRect(0, 0, W, 260); ctx.restore(); }
   if (t < K.rail) L4.title(ctx, 'Never ring the bell twice.', 540, 120, 62, '#fbf6ee', clamp(t / 0.15) * clamp((K.rail - t) / 0.15), true);
   if (t >= K.ask && t < K.loop) {
     const a = clamp((t - K.ask) / 0.25) * clamp((K.loop - t) / 0.2);

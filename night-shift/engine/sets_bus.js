@@ -75,30 +75,32 @@ function conductor(ctx, x, y, h, o = {}) {
 
 // ------------------------------------------------------------------ the bus interior (aisle view toward the back)
 function interior(ctx, t, o = {}) {
-  const lt = o.light ?? 1, fl = o.flick || 0;
-  ctx.fillStyle = '#020403'; ctx.fillRect(-500, -500, 2080, 2920);
+  const lt = o.light ?? 1, fl = o.flick || 0, wm = o.warm || 0;
+  // warm (v5 opening fix, 2026-11-29): every tube + warm bulbs on, cream walls, so frames 0-3 s are bright and colourful
+  const W_ = (c, to, k = 1) => (wm > 0 ? mix(c, to, wm * k) : c);
+  ctx.fillStyle = W_('#020403', '#6a4a2c', 0.9); ctx.fillRect(-500, -500, 2080, 2920);
   // back wall + back window (night road behind, far headlights)
   const bw = [P(-HW, CE, BACK), P(HW, CE, BACK), P(HW, FL, BACK), P(-HW, FL, BACK)];
-  quad(ctx, ...bw, mix(COL.wall, '#1a2420', 1 - lt * 0.85));
+  quad(ctx, ...bw, W_(mix(COL.wall, '#1a2420', 1 - lt * 0.85), '#f4c27c', 0.9));
   const w0 = P(-0.95, -0.75, BACK), w1 = P(0.95, 0.05, BACK);
-  ctx.fillStyle = '#050a0c'; ctx.fillRect(w0[0], w0[1], w1[0] - w0[0], w1[1] - w0[1]);
+  ctx.fillStyle = W_('#050a0c', '#3a2a40', 0.6); ctx.fillRect(w0[0], w0[1], w1[0] - w0[0], w1[1] - w0[1]);
   D.glow(ctx, VP.x + Math.sin(t * 0.3) * 40, w1[1] - 30, 60, 'rgba(255,220,170,A)', 0.25);
   if (o.backArm) { /* the arm out of the back window is drawn in busRear */ }
   // walls, floor, ceiling as strips from front to back
   const zs = [1.2, 2.2, 3.4, 4.6, 5.8, 7.0, 8.2, 9.4, 10.6, BACK];
   for (let i = zs.length - 2; i >= 0; i--) {
     const za = zs[i], zb = zs[i + 1], am = sweep(t, (za + zb) / 2) * (o.sweep ?? 1);
-    const wallC = mix(mix(COL.wall, '#18221e', 1 - lt * 0.9), COL.amber, am * 0.25);
+    const wallC = W_(mix(mix(COL.wall, '#18221e', 1 - lt * 0.9), COL.amber, am * 0.25), '#f7c27a', 0.88);
     for (const s of [-1, 1]) {
       // wall below the window, window, wall above
       quad(ctx, P(s * HW, 0.05, za), P(s * HW, 0.05, zb), P(s * HW, FL, zb), P(s * HW, FL, za), mix(wallC, '#000', 0.12));
-      quad(ctx, P(s * HW, -0.62, za), P(s * HW, -0.62, zb), P(s * HW, 0.05, zb), P(s * HW, 0.05, za), mix('#0c2420', COL.amber, am * 0.55));
+      quad(ctx, P(s * HW, -0.62, za), P(s * HW, -0.62, zb), P(s * HW, 0.05, zb), P(s * HW, 0.05, za), W_(mix('#0c2420', COL.amber, am * 0.55), '#e08a3c', 0.85));
       quad(ctx, P(s * HW, CE, za), P(s * HW, CE, zb), P(s * HW, -0.62, zb), P(s * HW, -0.62, za), wallC);
       // window pillar
-      quad(ctx, P(s * HW, -0.62, zb - 0.12), P(s * HW, -0.62, zb), P(s * HW, 0.05, zb), P(s * HW, 0.05, zb - 0.12), mix('#9aa8a0', '#141a18', 1 - lt * 0.8));
+      quad(ctx, P(s * HW, -0.62, zb - 0.12), P(s * HW, -0.62, zb), P(s * HW, 0.05, zb), P(s * HW, 0.05, zb - 0.12), W_(mix('#9aa8a0', '#141a18', 1 - lt * 0.8), '#c8402c', 0.85));
     }
-    quad(ctx, P(-HW, FL, za), P(HW, FL, za), P(HW, FL, zb), P(-HW, FL, zb), mix(COL.floor, COL.amber, am * 0.08));
-    quad(ctx, P(-HW, CE, za), P(HW, CE, za), P(HW, CE, zb), P(-HW, CE, zb), mix(mix('#cfe3d8', '#1c2622', 1 - lt * 0.9), COL.amber, am * 0.15));
+    quad(ctx, P(-HW, FL, za), P(HW, FL, za), P(HW, FL, zb), P(-HW, FL, zb), W_(mix(COL.floor, COL.amber, am * 0.08), '#b4865a', 0.85));
+    quad(ctx, P(-HW, CE, za), P(HW, CE, za), P(HW, CE, zb), P(-HW, CE, zb), W_(mix(mix('#cfe3d8', '#1c2622', 1 - lt * 0.9), COL.amber, am * 0.15), '#ffd590', 0.9));
     // floor ribs
     ctx.strokeStyle = 'rgba(0,0,0,0.25)'; ctx.lineWidth = Math.max(1, 6 / za); ctx.beginPath(); ctx.moveTo(...P(-0.4, FL, za)); ctx.lineTo(...P(0.4, FL, za)); ctx.stroke();
   }
@@ -107,6 +109,7 @@ function interior(ctx, t, o = {}) {
     const a = P(-0.12, CE + 0.02, z), b = P(0.12, CE + 0.02, z + 0.9);
     ctx.fillStyle = lt > 0.1 && !fl ? COL.tube : '#38423e'; ctx.fillRect(a[0], a[1], b[0] - a[0], Math.max(3, 40 / z));
     if (lt > 0.1 && !fl) D.glow(ctx, (a[0] + b[0]) / 2, a[1], 900 / z, 'rgba(210,255,232,A)', 0.35 * lt);
+    if (wm > 0) for (const s of [-1, 1]) { const q = P(s * 0.85, CE + 0.08, z + 0.4); ctx.fillStyle = '#fff3c0'; ctx.beginPath(); ctx.arc(q[0], q[1], Math.max(3, 70 / z), 0, Math.PI * 2); ctx.fill(); D.glow(ctx, q[0], q[1], 1100 / z, 'rgba(255,190,90,A)', 0.45 * wm); }
   }
   // seats (both sides), back to front
   for (let z = 10.4; z >= 2.0; z -= 1.3) {
@@ -114,7 +117,7 @@ function interior(ctx, t, o = {}) {
     const am = sweep(t, z) * (o.sweep ?? 1);
     for (const s of [-1, 1]) {
       const x0 = s * 0.38, x1 = s * HW;
-      quad(ctx, P(x0, -0.05, z), P(x1, -0.05, z), P(x1, FL, z), P(x0, FL, z), mix(mix(COL.seat, '#0a1020', 1 - lt * 0.95), COL.amber, am * 0.2));
+      quad(ctx, P(x0, -0.05, z), P(x1, -0.05, z), P(x1, FL, z), P(x0, FL, z), W_(mix(mix(COL.seat, '#0a1020', 1 - lt * 0.95), COL.amber, am * 0.2), '#2f6ae8', 0.8));
       quad(ctx, P(x0, -0.05, z), P(x1, -0.05, z), P(x1, -0.02, z - 0.08), P(x0, -0.02, z - 0.08), rgba('#ffffff', 0.18 * lt));
       // grab handle on the seat top
       const g = P(x0 + s * 0.06, -0.12, z); ctx.strokeStyle = mix(COL.rail, '#2a281c', 1 - lt * 0.8); ctx.lineWidth = Math.max(1.5, 30 / z); ctx.beginPath(); ctx.arc(g[0] + s * 30 / z, g[1] + 10 / z, 50 / z, Math.PI, 0); ctx.stroke();
