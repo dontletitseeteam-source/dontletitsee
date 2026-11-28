@@ -1,5 +1,10 @@
 # NIGHT SHIFT Season 2 — progress log
 
+**OWNER ACTION (2026-11-28 18:00 IST, directive v5, RESEARCH.md top): before 2026-11-30 09:00 UTC, fix S2 Ep 3's opening
+(night bus, `night-shift/p11`): hookcheck says V 37-57, it must be >= 130 (Ep 8 wedding: 144-173). Light the bus interior for
+the first ~3 s (or regrade), same voice, 0 credits; rerun `python3 night-shift/engine/hookcheck.py outputs/night-shift-2-p3.mp4`;
+re-host and update the queue URL. From Ep 4 on, log the 7 v5 checks (pass/fail) in each episode entry before spending credits.**
+
 Workspace: reuses `night-shift/engine` (same v4 engine). Season 2 episode n = engine part 8+n (`night-shift/p9` = S2 Ep 1,
 `p10` = Ep 2 ...); outputs are `outputs/night-shift-2-p<n>.mp4/.jpg`. Render: `cd night-shift/engine && node render.js <8+n> ...`,
 `python3 mix.py <8+n>`, `bash finalize.sh <8+n> NIGHTSHIFT2`.

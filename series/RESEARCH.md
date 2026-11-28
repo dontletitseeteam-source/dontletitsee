@@ -4,6 +4,87 @@ Owner's order (2026-11-18): "post after analysing mistakes, improve stories and 
 different channels like this which are actually gaining something." This file is the creator's standing brief.
 Read it before designing a series and before writing every script. PLAYBOOK section 7 says how to keep it fresh.
 
+## Owner directive v5 (2026-11-28 18:00 IST): "check why the wedding worked and make accordingly" — THE WEDDING RECIPE
+Every new episode must pass the 7 checks below before any voice or art is spent. They come from comparing the
+wedding bride (Season 1 Ep 8) with every other NIGHT SHIFT episode on Instagram (YouTube showed none of them, see
+the end of this block).
+
+| Ep | Place: have most viewers been there themselves? | Monster | IG views | Skip (first 3 s) | Avg watch | Opening V / S (hookcheck) |
+|---|---|---|---|---|---|---|
+| S1 Ep 8 wedding hall | **yes** (everyone has been to a wedding) | the bride, taller than the marigold strings, veil sewn shut | **1,594** | **21.4%** | 27.3 s | **144-173 / 137-148** |
+| S1 Ep 2 sleeper coach | **yes** | the 73rd passenger | 1,230 | 37.7% | 29.5 s | 134-139 / 66 |
+| S1 Ep 5 school | **yes** | a schoolgirl swinging, legs never move | 922 | 37.3% | 22.6 s | 132-138 / 70-73 |
+| S1 Ep 7 toll booth | no, only toll staff | driver's head on backwards (small, inside a cab) | 319 | 41.9% | 16.0 s | 119-124 / 78-80 |
+| S1 Ep 1 pharmacy counter | partly | barefoot man | 258 | 36.7% | 22.9 s | n/a |
+| S1 Ep 3 delivery | partly | grey hand | 146 | 45.1% | 16.0 s | 101-114 / 80-88 |
+| S1 Ep 6 projection room | no | face is a screen | 139 | 47.7% | 11.9 s | 102-104 / 131-140 |
+| S1 Ep 4 petrol pump | no | a white car | 127 | 33.0% | 21.5 s | 140-143 / 64-66 |
+| S2 Ep 1 level crossing (v4 look) | no | stock "bent-backwards crawler" | 180 at 2.6 h | 45.8% | 13.5 s | 91-101 / 75-78 |
+
+**Why the wedding worked (ranked):**
+1. **A place everyone has been to, as a normal person.** The top 3 reels are a wedding hall, a sleeper coach and a
+   school; all 6 others are places you only see if you do that job (toll booth, projection room, petrol pump
+   forecourt, level crossing). The night-shift job is fine; the PLACE must be one the viewer already knows from life.
+2. **The monster is the most familiar figure of that place, made wrong in its outline.** A bride is the first
+   thing anyone pictures at a wedding; this one is taller than the decorations and has no face. Not a stock genre
+   creature dropped into a place (the bent-backwards crawler and the bent-backwards woman are on every horror
+   channel; S2 Ep 1 lost viewers in 3 s even with the new look).
+3. **The trap is the place's own ritual.** Signing the register at a wedding (Ep 8), answering "present" at roll
+   call (Ep 5), counting passengers against the chart (Ep 2). Losers had arbitrary rules (look in the mirror, lift
+   the barrier, stop the film). The viewer does the normal thing, and the normal thing is the trap.
+4. **The twist is a life-changing consequence in 4 plain words about "you": "You just married her."** It is
+   dark, a bit funny and easy to repeat to a friend, which is what earned the likes, saves and shares that pushed
+   reach past followers. Compare "now he's on your side" (vague) or "now it's your turn" (generic).
+5. **The opening looks like a celebration, not a horror reel.** Ep 8 is the only episode with frames 0-3 s both
+   bright AND warm-colourful (saturation 137-148; every other episode 64-88 except the dark cinema). In a feed of
+   dark blue horror it stands out, and the wrong thing is visible at once: the giant bride fills the centre of
+   the frame, whole, with 3 iconic props (marigold strings, red carpet, rows of chairs) saying "wedding" in 0.2 s.
+   One small serif line, no text box. The darkness arrives later as a story beat ("you switch off the lights").
+6. **Two short sentences set it up:** "The wedding is over. But the bride is still on the stage." Place + the one
+   wrong fact, no "something is coming", no time stamp needed.
+7. **Shortest recent episode: 57.8 s**, 2 rules, 145 words, 8 tags. 47% of it watched on average (best ever).
+Probably helping too: it is peak Indian wedding season (Nov-Feb), so the setting is on everyone's mind right now.
+Not the reason on its own: the v4 look. S2 Ep 1 has the same look and a 45.8% skip. Keep the look (owner's order),
+but the look does not rescue a job-only place, a stock creature or a dark opening.
+
+**The 7 checks (write them into PROGRESS.md for every episode, pass/fail, before spending credits):**
+1. Place: most Indian viewers have been there themselves (wedding/baraat/sangeet, sleeper train, school or exam
+   hall, hospital ward, city bus, apartment lift/society, mela, birthday or family function, coaching class).
+2. Monster: that place's most familiar figure (bride, groom, schoolgirl, passenger, patient, band player,
+   relative in the family photo), wrong in outline (too tall, faceless, wrong way round, too many). No religious
+   figures or deities. No stock creatures.
+3. Rules and twist come from that place's ritual; the broken rule = the viewer doing the normal ritual.
+4. Twist line: the consequence for "you" in <= 5 plain words ("You just married her.").
+5. Opening: `python3 night-shift/engine/hookcheck.py outputs/<id>.mp4` must PASS brightness (every sample V >= 130)
+   and should reach the colour target (avg S >= 100): warm practical light (bulbs, string lights, tube lights),
+   the monster whole and centred, >= half the frame height, 2-3 iconic props, one serif line. Dark only later.
+6. First VO line: place + the wrong fact in two short sentences.
+7. 55-60 s, 2 rules, 130-145 words, <= 8 tags. Title: "The <figure> in my <place> <wrong outline detail>".
+
+**Next episodes (replaces Season 2 Ep 4-8 in `series/night-shift-2/SERIES.md`; old Ep 4-8 become backups).** It is
+wedding season, so lean on it first, then the worlds of the other two winners. The creator writes the scripts.
+- Ep 4 **The baraat band** (you play in the wedding band): the groom on the white horse, flower sehra hiding his
+  face, sitting taller than the light-carriers; ritual = notes waved over the groom's head and handed to the band.
+- Ep 5 **The sleeper coach, return journey** (you are the TTE again): the passenger asleep on the top berth whose
+  legs reach the floor; ritual = the reservation chart and the ticket check.
+- Ep 6 **The exam hall** (night exam / you are the invigilator): the student too tall for his bench, head down on
+  the paper; ritual = roll number, signing the answer sheet.
+- Ep 7 **The mela giant wheel** (you run the wheel, last ride): the child in the top cabin who never comes down,
+  bright bulb-lit wheel; ritual = one ticket, one round, counting the cabins.
+- Ep 8 **The wedding family photo** (you are the wedding photographer): the relative taller than the backdrop in
+  every group photo, standing behind the couple; ritual = "everyone together for one family photo".
+The running family-impersonation test (ANALYTICS) fits inside these (a voice calling in your mother's voice).
+
+**Fix before it posts (2026-11-30 15:00 IST): S2 Ep 3 night bus.** Its place, figure and ritual pass checks 1-3, but
+its opening FAILS check 5 badly (V 37-57). First job of the next creator run: re-render the first ~3 s with the bus
+interior lit (tube lights on, warm bulbs, the hanging man whole against a bright aisle) or regrade them, keep the same
+voice (0 credits), rerun hookcheck until it passes, re-host, update the queue URL, push before 2026-11-30 09:00 UTC.
+If it cannot be done safely, post it unchanged and log why. S2 Ep 2 (ATM, 11-29) passes brightness: leave it.
+
+**YouTube note:** the wedding got 2 views on @dontletitsee in 26 h and S2 Ep 1 got 0, while Instagram had its best
+day. The same file is uploaded to @dontletitsee and @lexter2025 at the same second; YouTube may be treating them as
+duplicates. The owner has been asked whether to stop the @lexter2025 uploads; until then, do not change uploads.
+
 ## Owner directive v4 (2026-11-23 22:00 IST): the animation looks template-made. Improve it a lot.
 The owner: "the animation is too common; anyone can tell it's made by Claude because the layout and quality are
 always the same." The contact sheets of Ep 2-7 confirm it. The giveaways, in order:

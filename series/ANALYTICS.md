@@ -12,6 +12,11 @@ Episode 6: one place, one monster, 2 rules, a plainly-stated twist, 120–145 wo
 Measure it: IG skip rate + avg watch and YouTube stay rate of Ep 6+ vs Ep 1-5.
 **v4 (2026-11-23 22:00):** the owner says the animation looks template/Claude-made: overhaul the look (RESEARCH.md
 v4). Credits: the REAL balance was 3,893 until the 2026-11-30 reset (ELEVENLABS.md top).
+**v5 (2026-11-28 18:00):** the owner asked why the wedding worked. Answer (RESEARCH.md v5): a place everyone has been
+to, that place's most familiar figure made wrong in outline, the place's own ritual as the trap, a 4-word twist about
+"you", and the only bright AND warm-colourful opening (hookcheck V 144-173, S 137-148). Correction to the 11-28
+review: the v4 look is NOT the reason on its own (S2 Ep 1 has it and skipped 45.8%). Measure every new episode
+against Ep 8: skip <= 30%, avg watch >= 40% of length, likes per 1,000 views; log the 7 checks per episode.
 **v3 (2026-11-23):** analyse properly: second-by-second YouTube retention for every video (PLAYBOOK 2b), winners &
 losers contact sheets (2c), competitor scan twice a week. First findings (RESEARCH.md v3): the rules note costs ~30%
 of viewers at 8-15 s (note ≤ 3 s, then show rules in action); the end card loses half of who's left (A/B over the

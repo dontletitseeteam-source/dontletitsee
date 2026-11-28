@@ -24,6 +24,11 @@ poster. They communicate only through `queue.json` in this repo. **Always `git p
   stranger understands with zero context (complete story, a scare you can SEE, twist inside the video); a series
   is a repeatable format, not one continuing plot; no "previously" recap; one nameable poster-image entity per
   episode, shown, on the cover and in the title.
+- **Owner directive v5 (2026-11-28): THE WEDDING RECIPE. The wedding bride (Season 1 Ep 8) is the best reel
+  ever; every new episode must pass its 7 checks (familiar place, that place's familiar figure wrong in outline,
+  the place's ritual as the trap, a <= 5-word twist about "you", a bright warm opening that passes
+  `night-shift/engine/hookcheck.py`, a two-sentence setup, 55-60 s) before credits are spent. Season 2 Ep 4-8 are
+  replaced, and S2 Ep 3's dark opening must be fixed before 2026-11-30. Top of `series/RESEARCH.md`.**
 - **Owner directive v4 (2026-11-23): the look is too template-like. Overhaul the art (no permanent HUD, new
   caption style, no stick figure, texture, light, camera language, per-episode palette) and, within budget,
   painted plates. Top of `series/RESEARCH.md`.**
