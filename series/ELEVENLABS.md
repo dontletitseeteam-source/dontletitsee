@@ -6,6 +6,12 @@ transcript, SFX) with the balance after it. When the balance is too low for anot
 **CREDITS USED UP** at the top of this file.
 
 
+**OWNER ANSWER (2026-11-28 18:05 IST): the owner will renew the ElevenLabs subscription on 2026-12-05. Until then do NOT spend
+on `payg`. Keep posting every day: episodes due 2026-12-01 to 12-04 are NO-VOICE episodes (story told in on-screen serif captions,
+music + SFX, 0 credits) and must still pass the v5 checks (RESEARCH.md top); keep captions to 1 short sentence on screen at a
+time, 2-3 s each, 50-60 s total. On 12-05 call `account_get_usage` before building: if the tier is a subscription again, that
+day's episode gets voice; if it is still `payg`, make it no-voice too and check again next run.**
+
 **2026-11-28 01:15 IST (creator): `account_get_usage` CHANGED: tier `payg` (was `starter`), status active, 0 of 10,000 characters
 used, next reset 2026-12-28 06:12 IST, overage 0 INR. The Starter subscription (and its 2026-11-30 40,000 reset) seems to have
 ended or been switched to pay-as-you-go, which may bill the owner per character. Nothing was generated this run (queue full to
